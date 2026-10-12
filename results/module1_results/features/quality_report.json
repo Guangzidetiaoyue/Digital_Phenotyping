@@ -1,0 +1,30 @@
+{
+  "total_users": 722346,
+  "patients": 127169,
+  "controls": 595177,
+  "linguistically_reliable": 721715,
+  "temporally_reliable": 719607,
+  "liwc_coverage_mean": 0.9991264574040695,
+  "nrc_coverage_mean": 0.0,
+  "regex_coverage_mean": 0.0008735425959304821,
+  "n_features": 126,
+  "effective_source": "liwc",
+  "pipeline_version": "v1.2",
+  "extraction_timestamp": "2026-06-11T23:49:28.545044",
+  "feature_dimensions": {
+    "affective": 15,
+    "pronoun": 8,
+    "cognitive": 7,
+    "temporal_linguistic": 4,
+    "risk": 5,
+    "behavioral": 5,
+    "readability": 3,
+    "post_length": 3,
+    "temporal": 23,
+    "social": 19,
+    "community": 10,
+    "quality": 10,
+    "log_transforms": 6,
+    "signed_log_transforms": 1
+  }
+}

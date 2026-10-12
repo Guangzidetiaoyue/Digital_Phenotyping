@@ -1,0 +1,43 @@
+{
+  "disorders": [
+    "adhd",
+    "anxiety",
+    "autism",
+    "bipolar",
+    "bpd",
+    "depression",
+    "eating_disorders",
+    "ocd",
+    "ptsd",
+    "schizophrenia"
+  ],
+  "empirical_jaccard": {
+    "mantel_r": 0.4008046974340034,
+    "pearson_p": 0.006363317174801911,
+    "perm_p": 0.007799220077992201,
+    "n_pairs": 45
+  },
+  "empirical_phi": {
+    "mantel_r": 0.4112292357737012,
+    "pearson_p": 0.005011160782013198,
+    "perm_p": 0.005599440055994401,
+    "n_pairs": 45
+  },
+  "external_sourced_comorbidity": {
+    "mantel_r": 0.2466300824734997,
+    "pearson_p": 0.2811435906025173,
+    "perm_p": 0.28447155284471554,
+    "n_pairs": 21,
+    "measure": "adjusted OR",
+    "refs": [
+      "10.1001/jamapsychiatry.2017.4602",
+      "10.1002/eat.23004",
+      "10.1016/j.biopsych.2005.04.034",
+      "10.1016/j.biopsych.2006.03.040",
+      "10.1016/j.jpsychires.2016.06.022",
+      "10.1016/j.neubiorev.2023.105209",
+      "10.1038/mp.2008.94"
+    ]
+  },
+  "note": "Empirical matrices share cohort with phenotype classifiers -> internal consistency, not external convergence. Primary Mantel uses the externally sourced comorbidity matrix."
+}

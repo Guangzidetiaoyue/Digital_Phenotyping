@@ -1,0 +1,9 @@
+{
+  "true_did": 0.016064410241311194,
+  "n_placebos": 100,
+  "placebo_did_mean": 0.006101046252826009,
+  "placebo_did_std": 0.04371973719116974,
+  "n_exceeding_true": 100,
+  "placebo_p_value": 1.0,
+  "conclusion": "INCONCLUSIVE"
+}

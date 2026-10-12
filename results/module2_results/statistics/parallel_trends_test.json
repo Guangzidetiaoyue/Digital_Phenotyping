@@ -1,0 +1,6 @@
+{
+  "n_pre_windows_tested": 22,
+  "n_sig_fdr_005": 17,
+  "conclusion": "FAIL",
+  "message": "Significant pre-t0 differences: 17 windows significant at FDR<0.05"
+}

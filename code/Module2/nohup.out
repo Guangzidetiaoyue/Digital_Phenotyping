@@ -1,0 +1,450 @@
+2026-06-28 19:19:09,181 - INFO - ================================================================================
+2026-06-28 19:19:09,181 - INFO - MODULE 2 - Step 07: Longitudinal Trajectory Construction (v1.2)
+2026-06-28 19:19:09,181 - INFO - Window: 90d / Step: 30d
+2026-06-28 19:19:09,181 - INFO - Range: t0-720d to t0+720d
+2026-06-28 19:19:09,181 - INFO - ================================================================================
+2026-06-28 19:19:09,181 - INFO - Loading p-factor weights and directions...
+2026-06-28 19:19:09,199 - INFO -   Loaded Factor 1 weights: 93 features, 2 matched
+2026-06-28 19:19:09,536 - INFO - Loading t0 mapping (v2.1 - multi-source with Silver augmentation)...
+2026-06-28 19:19:09,569 - INFO -   Source 1: PSM matched file → /path/to/project/cohort_v1/intermediate_results/step_3.4_psm_matched.parquet
+2026-06-28 19:19:11,267 - INFO -     PSM disorder_group: 722769/128003 patients known
+2026-06-28 19:19:11,488 - INFO -   Attempting to reconstruct pair information from PSM...
+2026-06-28 19:19:11,494 - INFO -     Pair info already exists: /path/to/project/module1_results/features/psm_pair_info.parquet
+2026-06-28 19:19:12,498 - INFO -   [augment] s01 features recovered: 0/805
+2026-06-28 19:19:12,535 - INFO -   [disorder_scan] Full partition scan for remaining 805 users...
+2026-06-28 19:19:12,539 - INFO -   [discover] Found 11 partitions in /path/to/project/cohort_v1/silver_v2/data_test
+2026-06-28 19:19:25,053 - WARNING -   [disorder_scan] Still missing 790 users after full scan
+2026-06-28 19:19:25,054 - INFO -   [disorder_scan] Total recovered: 15/805
+2026-06-28 19:19:25,054 - INFO -   [augment] After Silver scan: 15/805
+2026-06-28 19:19:25,376 - INFO -   ✓ Final t0 mapping: 723574 valid users (patient=128003, control=595571)
+2026-06-28 19:19:25,376 - INFO -     disorder_group known: 595586/128003 patients
+2026-06-28 19:19:25,776 - INFO - Users with valid t0: 723574
+2026-06-28 19:19:25,776 - INFO - Building user groups via build_user_groups()...
+2026-06-28 19:19:45,213 - INFO -   [build_user_groups] IPTW weights: 723574/723574 loaded
+2026-06-28 19:19:45,213 - INFO -   [build_user_groups] EB weights: 723574/723574 loaded
+2026-06-28 19:20:00,320 - INFO -   [build_user_groups] Pair IDs: 669630/723574 users have pair_id
+2026-06-28 19:20:00,745 - INFO -   [build_user_groups] Final: 723574 users (patient=128003, control=595571)
+2026-06-28 19:20:00,745 - INFO -     With pair_id: 669630
+2026-06-28 19:20:00,745 - INFO -     With iptw_att_weight: 723574
+2026-06-28 19:20:00,978 - INFO - User metadata loaded: 723574 users
+2026-06-28 19:20:00,987 - INFO - Found 11 Silver Data partitions
+2026-06-28 19:20:01,021 - INFO - Parallel processing 11 partitions with 12 cores...
+2026-06-28 19:20:01,112 - INFO - Initializing dictionaries in PID 1140279
+2026-06-28 19:20:01,126 - INFO - VADER initialized
+2026-06-28 19:20:01,127 - INFO - Initializing dictionaries in PID 1140280
+2026-06-28 19:20:01,140 - INFO - VADER initialized
+2026-06-28 19:20:01,142 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,143 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,143 - INFO - LIWC initialized
+2026-06-28 19:20:01,145 - INFO - Initializing dictionaries in PID 1140282
+2026-06-28 19:20:01,154 - INFO - VADER initialized
+2026-06-28 19:20:01,156 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,156 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,156 - INFO - LIWC initialized
+2026-06-28 19:20:01,160 - INFO - Initializing dictionaries in PID 1140283
+2026-06-28 19:20:01,167 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,168 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,168 - INFO - LIWC initialized
+2026-06-28 19:20:01,169 - INFO - VADER initialized
+2026-06-28 19:20:01,176 - INFO - Initializing dictionaries in PID 1140284
+2026-06-28 19:20:01,181 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,181 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,181 - INFO - LIWC initialized
+2026-06-28 19:20:01,185 - INFO - VADER initialized
+2026-06-28 19:20:01,192 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,192 - INFO - NRC initialized
+2026-06-28 19:20:01,192 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,193 - INFO - Initializing dictionaries in PID 1140285
+2026-06-28 19:20:01,198 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,199 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,199 - INFO - LIWC initialized
+2026-06-28 19:20:01,205 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,205 - INFO - NRC initialized
+2026-06-28 19:20:01,205 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,209 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,209 - INFO - NRC initialized
+2026-06-28 19:20:01,209 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,209 - INFO - VADER initialized
+2026-06-28 19:20:01,228 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,228 - INFO - NRC initialized
+2026-06-28 19:20:01,228 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,233 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,233 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,233 - INFO - LIWC initialized
+2026-06-28 19:20:01,236 - INFO - Initializing dictionaries in PID 1140309
+2026-06-28 19:20:01,243 - INFO - Initializing dictionaries in PID 1140310
+2026-06-28 19:20:01,260 - INFO - VADER initialized
+2026-06-28 19:20:01,271 - INFO - VADER initialized
+2026-06-28 19:20:01,290 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,290 - INFO - NRC initialized
+2026-06-28 19:20:01,290 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,292 - INFO - Initializing dictionaries in PID 1140311
+2026-06-28 19:20:01,293 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,293 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,293 - INFO - LIWC initialized
+2026-06-28 19:20:01,304 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,304 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,304 - INFO - LIWC initialized
+2026-06-28 19:20:01,314 - INFO - VADER initialized
+2026-06-28 19:20:01,316 - INFO - Initializing dictionaries in PID 1140313
+2026-06-28 19:20:01,317 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,318 - INFO - NRC initialized
+2026-06-28 19:20:01,318 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,334 - INFO - VADER initialized
+2026-06-28 19:20:01,337 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,337 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,338 - INFO - LIWC initialized
+2026-06-28 19:20:01,339 - INFO - Initializing dictionaries in PID 1140314
+2026-06-28 19:20:01,350 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,351 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,351 - INFO - LIWC initialized
+2026-06-28 19:20:01,352 - INFO - VADER initialized
+2026-06-28 19:20:01,357 - INFO - Initializing dictionaries in PID 1140315
+2026-06-28 19:20:01,362 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,362 - INFO - NRC initialized
+2026-06-28 19:20:01,362 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,364 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,364 - INFO - NRC initialized
+2026-06-28 19:20:01,364 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,368 - INFO - VADER initialized
+2026-06-28 19:20:01,368 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,368 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,368 - INFO - LIWC initialized
+2026-06-28 19:20:01,379 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 19:20:01,379 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 19:20:01,379 - INFO - LIWC initialized
+2026-06-28 19:20:01,388 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,388 - INFO - NRC initialized
+2026-06-28 19:20:01,388 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,394 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,395 - INFO - NRC initialized
+2026-06-28 19:20:01,395 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,415 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,415 - INFO - NRC initialized
+2026-06-28 19:20:01,415 - INFO - Effective source for this process: liwc
+2026-06-28 19:20:01,418 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 19:20:01,418 - INFO - NRC initialized
+2026-06-28 19:20:01,419 - INFO - Effective source for this process: liwc
+
+Partitions (Parallel):   0%|          | 0/11 [00:00<?, ?it/s]2026-06-28 19:20:03,202 - INFO - Processing part_0000
+2026-06-28 19:20:04,346 - INFO - Processing part_0001
+2026-06-28 19:20:05,610 - INFO - Processing part_0002
+2026-06-28 19:20:06,744 - INFO - Processing part_0003
+2026-06-28 19:20:07,884 - INFO - Processing part_0004
+2026-06-28 19:20:08,890 - INFO - Processing part_0005
+2026-06-28 19:20:10,018 - INFO - Processing part_0006
+2026-06-28 19:20:11,247 - INFO - Processing part_0007
+2026-06-28 19:20:12,685 - INFO - Processing part_0008
+2026-06-28 19:20:13,834 - INFO - Processing part_0009
+2026-06-28 19:20:14,997 - INFO - Processing part_0010
+
+Partitions (Parallel): 100%|██████████| 11/11 [1:33:16<00:00, 142.42s/it]
+Partitions (Parallel): 100%|██████████| 11/11 [1:33:16<00:00, 508.80s/it]
+2026-06-28 20:53:19,293 - INFO - Building trajectory DataFrame from temp files...
+2026-06-28 20:53:21,687 - INFO - Saving checkpoint to /path/to/project/module2_results/trajectories/_checkpoint_raw_traj.parquet ...
+2026-06-28 20:53:26,118 - INFO - Checkpoint saved successfully.
+2026-06-28 20:53:26,355 - INFO - Raw trajectory shape: (737597, 131)
+2026-06-28 20:53:26,399 - INFO - Unique users: 15053
+2026-06-28 20:53:26,401 - INFO - Reliable windows: 382084/737597 (51.8%)
+2026-06-28 20:53:26,401 - INFO - Computing derived indices (fully vectorized)...
+2026-06-28 20:53:26,606 - INFO -   [Derived Indices] Matched 93/93 p-factor features. Target cols: 94
+2026-06-28 20:53:27,364 - INFO -   Applying vectorized MNAR imputation (quantile=0.9)...
+2026-06-28 20:53:28,345 - INFO -     MNAR imputed 355513 silent windows
+2026-06-28 20:53:32,667 - INFO - Applying MNAR-aware imputation: high-withdrawal proxy for silent periods...
+
+MNAR Imputation:   0%|          | 0/15053 [00:00<?, ?it/s]
+MNAR Imputation:   0%|          | 1/15053 [00:00<1:27:11,  2.88it/s]
+MNAR Imputation:   2%|▏         | 276/15053 [00:00<00:18, 803.03it/s]
+MNAR Imputation:   4%|▍         | 570/15053 [00:00<00:10, 1430.89it/s]
+MNAR Imputation:   6%|▌         | 836/15053 [00:00<00:07, 1792.45it/s]
+MNAR Imputation:   7%|▋         | 1111/15053 [00:00<00:06, 2076.23it/s]
+MNAR Imputation:   9%|▉         | 1381/15053 [00:00<00:06, 2260.08it/s]
+MNAR Imputation:  11%|█         | 1669/15053 [00:00<00:05, 2444.47it/s]
+MNAR Imputation:  13%|█▎        | 1942/15053 [00:01<00:05, 2529.26it/s]
+MNAR Imputation:  15%|█▍        | 2239/15053 [00:01<00:04, 2658.74it/s]
+MNAR Imputation:  17%|█▋        | 2524/15053 [00:01<00:04, 2715.83it/s]
+MNAR Imputation:  19%|█▊        | 2816/15053 [00:01<00:04, 2773.94it/s]
+MNAR Imputation:  21%|██        | 3104/15053 [00:01<00:04, 2803.44it/s]
+MNAR Imputation:  23%|██▎       | 3391/15053 [00:01<00:04, 2822.47it/s]
+MNAR Imputation:  24%|██▍       | 3677/15053 [00:01<00:04, 2788.77it/s]
+MNAR Imputation:  26%|██▋       | 3963/15053 [00:01<00:03, 2809.28it/s]
+MNAR Imputation:  28%|██▊       | 4256/15053 [00:01<00:03, 2844.43it/s]
+MNAR Imputation:  30%|███       | 4542/15053 [00:01<00:03, 2836.43it/s]
+MNAR Imputation:  32%|███▏      | 4828/15053 [00:02<00:03, 2842.92it/s]
+MNAR Imputation:  34%|███▍      | 5113/15053 [00:02<00:03, 2772.35it/s]
+MNAR Imputation:  36%|███▌      | 5391/15053 [00:02<00:03, 2743.64it/s]
+MNAR Imputation:  38%|███▊      | 5677/15053 [00:02<00:03, 2774.83it/s]
+MNAR Imputation:  40%|███▉      | 5955/15053 [00:02<00:03, 2437.09it/s]
+MNAR Imputation:  41%|████▏     | 6245/15053 [00:02<00:03, 2560.66it/s]
+MNAR Imputation:  43%|████▎     | 6525/15053 [00:02<00:03, 2624.48it/s]
+MNAR Imputation:  45%|████▌     | 6798/15053 [00:02<00:03, 2654.20it/s]
+MNAR Imputation:  47%|████▋     | 7078/15053 [00:02<00:02, 2695.83it/s]
+MNAR Imputation:  49%|████▉     | 7351/15053 [00:03<00:02, 2647.95it/s]
+MNAR Imputation:  51%|█████     | 7625/15053 [00:03<00:02, 2673.78it/s]
+MNAR Imputation:  52%|█████▏    | 7894/15053 [00:03<00:02, 2666.56it/s]
+MNAR Imputation:  54%|█████▍    | 8177/15053 [00:03<00:02, 2713.90it/s]
+MNAR Imputation:  56%|█████▌    | 8450/15053 [00:03<00:02, 2679.52it/s]
+MNAR Imputation:  58%|█████▊    | 8723/15053 [00:03<00:02, 2693.06it/s]
+MNAR Imputation:  60%|█████▉    | 9018/15053 [00:03<00:02, 2766.40it/s]
+MNAR Imputation:  62%|██████▏   | 9304/15053 [00:03<00:02, 2792.25it/s]
+MNAR Imputation:  64%|██████▍   | 9597/15053 [00:03<00:01, 2831.91it/s]
+MNAR Imputation:  66%|██████▌   | 9891/15053 [00:03<00:01, 2861.69it/s]
+MNAR Imputation:  68%|██████▊   | 10178/15053 [00:04<00:01, 2816.03it/s]
+MNAR Imputation:  69%|██████▉   | 10460/15053 [00:04<00:01, 2785.90it/s]
+MNAR Imputation:  71%|███████▏  | 10746/15053 [00:04<00:01, 2804.78it/s]
+MNAR Imputation:  73%|███████▎  | 11041/15053 [00:04<00:01, 2845.57it/s]
+MNAR Imputation:  75%|███████▌  | 11326/15053 [00:04<00:01, 2780.14it/s]
+MNAR Imputation:  77%|███████▋  | 11632/15053 [00:04<00:01, 2861.02it/s]
+MNAR Imputation:  79%|███████▉  | 11932/15053 [00:04<00:01, 2900.25it/s]
+MNAR Imputation:  81%|████████▏ | 12235/15053 [00:04<00:00, 2936.15it/s]
+MNAR Imputation:  83%|████████▎ | 12534/15053 [00:04<00:00, 2950.52it/s]
+MNAR Imputation:  85%|████████▌ | 12830/15053 [00:04<00:00, 2896.96it/s]
+MNAR Imputation:  87%|████████▋ | 13121/15053 [00:05<00:00, 2864.63it/s]
+MNAR Imputation:  89%|████████▉ | 13408/15053 [00:05<00:00, 2854.28it/s]
+MNAR Imputation:  91%|█████████ | 13694/15053 [00:05<00:00, 2848.89it/s]
+MNAR Imputation:  93%|█████████▎| 13982/15053 [00:05<00:00, 2857.87it/s]
+MNAR Imputation:  95%|█████████▍| 14268/15053 [00:05<00:00, 2817.24it/s]
+MNAR Imputation:  97%|█████████▋| 14560/15053 [00:05<00:00, 2845.72it/s]
+MNAR Imputation:  99%|█████████▊| 14845/15053 [00:05<00:00, 2827.92it/s]
+MNAR Imputation: 100%|██████████| 15053/15053 [00:05<00:00, 2618.47it/s]
+2026-06-28 20:53:38,583 - INFO -   MNAR update: Applied 0.9 quantile withdrawal value to 0 missing windows.
+2026-06-28 20:53:38,594 - INFO - Social Withdrawal Index coverage: 67.6%
+2026-06-28 20:53:38,595 - INFO - Validating t0 linguistic shift proxy...
+2026-06-28 20:53:39,694 - INFO -   patient t0 shift: mean=-0.005, d=-0.024, p=0.0655 (wilcoxon)
+2026-06-28 20:53:44,420 - INFO -   control t0 shift: mean=-0.028, d=-0.143, p=0.0000 (ttest_1samp)
+2026-06-28 20:53:49,509 - INFO - Saved trajectories to: /path/to/project/module2_results/trajectories/user_trajectories.parquet
+2026-06-28 20:53:49,548 - INFO - Final shape: (737597, 136)
+2026-06-28 20:53:49,818 - INFO - Aggregating trajectories for visualization...
+2026-06-28 20:53:50,758 - INFO - Saved aggregated trajectories for visualization: /path/to/project/module2_results/trajectories/trajectory_aggregated_by_window.csv
+2026-06-28 20:53:50,916 - INFO - Trajectory Quality Report:
+2026-06-28 20:53:50,916 - INFO -   n_users_total: 15053
+2026-06-28 20:53:50,917 - INFO -   n_users_with_sufficient_pre: 13653
+2026-06-28 20:53:50,917 - INFO -   n_users_with_sufficient_post: 13104
+2026-06-28 20:53:50,917 - INFO -   n_users_with_both: 11793
+2026-06-28 20:53:50,917 - INFO -   mean_windows_per_user: 49.0
+2026-06-28 20:53:50,917 - INFO -   mean_reliable_windows: 25.382581545206936
+2026-06-28 20:53:50,917 - INFO -   mean_high_quality_windows: 15.725968245532451
+2026-06-28 20:53:50,917 - INFO -   patient_n_users: 2726
+2026-06-28 20:53:50,917 - INFO -   patient_with_sufficient_pre: 2411
+2026-06-28 20:53:50,917 - INFO -   patient_with_sufficient_post: 2457
+2026-06-28 20:53:50,917 - INFO -   control_n_users: 12327
+2026-06-28 20:53:50,917 - INFO -   control_with_sufficient_pre: 11242
+2026-06-28 20:53:50,917 - INFO -   control_with_sufficient_post: 10647
+2026-06-28 20:53:50,917 - INFO -   reliable_rate_median: 0.5102040816326531
+2026-06-28 20:53:50,917 - INFO -   reliable_rate_q25: 0.2857142857142857
+2026-06-28 20:53:50,918 - INFO - ================================================================================
+2026-06-28 20:53:50,918 - INFO - TRAJECTORY CONSTRUCTION COMPLETE
+2026-06-28 20:53:50,918 - INFO - ================================================================================
+
+
+2026-06-28 21:07:49,382 - INFO - ================================================================================
+2026-06-28 21:07:49,382 - INFO - MODULE 2 - Step 07: Longitudinal Trajectory Construction (v1.2)
+2026-06-28 21:07:49,382 - INFO - Window: 90d / Step: 30d
+2026-06-28 21:07:49,382 - INFO - Range: t0-720d to t0+720d
+2026-06-28 21:07:49,382 - INFO - ================================================================================
+2026-06-28 21:07:49,382 - INFO - Loading p-factor weights and directions...
+2026-06-28 21:07:49,465 - INFO -   Loaded Factor 1 weights: 93 features, 36 matched (after translation)
+2026-06-28 21:07:49,492 - INFO - Loading t0 mapping (v2.1 - multi-source with Silver augmentation)...
+2026-06-28 21:07:49,588 - INFO -   Source 1: PSM matched file → /path/to/project/cohort_v1/intermediate_results/step_3.4_psm_matched.parquet
+2026-06-28 21:07:51,592 - INFO -     PSM disorder_group: 722769/128003 patients known
+2026-06-28 21:07:51,849 - INFO -   Attempting to reconstruct pair information from PSM...
+2026-06-28 21:07:51,899 - INFO -     Pair info already exists: /path/to/project/module1_results/features/psm_pair_info.parquet
+2026-06-28 21:07:53,121 - INFO -   [augment] s01 features recovered: 0/805
+2026-06-28 21:07:53,250 - INFO -   [disorder_scan] Full partition scan for remaining 805 users...
+2026-06-28 21:08:08,650 - INFO -   [discover] Found 500 partitions in /path/to/project/cohort_v1/silver_v2/data
+2026-06-28 21:23:02,905 - WARNING -   [disorder_scan] Still missing 50 users after full scan
+2026-06-28 21:23:02,905 - INFO -   [disorder_scan] Total recovered: 755/805
+2026-06-28 21:23:02,905 - INFO -   [augment] After Silver scan: 755/805
+2026-06-28 21:23:03,249 - INFO -   ✓ Final t0 mapping: 723574 valid users (patient=128003, control=595571)
+2026-06-28 21:23:03,249 - INFO -     disorder_group known: 596326/128003 patients
+2026-06-28 21:23:03,651 - INFO - Users with valid t0: 723574
+2026-06-28 21:23:03,652 - INFO - Building user groups via build_user_groups()...
+2026-06-28 21:23:21,671 - INFO -   [build_user_groups] IPTW weights: 723574/723574 loaded
+2026-06-28 21:23:21,671 - INFO -   [build_user_groups] EB weights: 723574/723574 loaded
+2026-06-28 21:23:35,597 - INFO -   [build_user_groups] Pair IDs: 669630/723574 users have pair_id
+2026-06-28 21:23:35,991 - INFO -   [build_user_groups] Final: 723574 users (patient=128003, control=595571)
+2026-06-28 21:23:35,992 - INFO -     With pair_id: 669630
+2026-06-28 21:23:35,992 - INFO -     With iptw_att_weight: 723574
+2026-06-28 21:23:36,216 - INFO - User metadata loaded: 723574 users
+2026-06-28 21:23:43,510 - INFO - Found 500 Silver Data partitions
+2026-06-28 21:23:43,562 - INFO - Parallel processing 500 partitions with 12 cores...
+2026-06-28 21:23:43,597 - INFO - Initializing dictionaries in PID 1173256
+2026-06-28 21:23:43,613 - INFO - VADER initialized
+2026-06-28 21:23:43,620 - INFO - Initializing dictionaries in PID 1173258
+2026-06-28 21:23:43,626 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,626 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,626 - INFO - LIWC initialized
+2026-06-28 21:23:43,636 - INFO - VADER initialized
+2026-06-28 21:23:43,641 - INFO - Initializing dictionaries in PID 1173259
+2026-06-28 21:23:43,654 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,654 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,654 - INFO - LIWC initialized
+2026-06-28 21:23:43,654 - INFO - VADER initialized
+2026-06-28 21:23:43,661 - INFO - Initializing dictionaries in PID 1173260
+2026-06-28 21:23:43,662 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,662 - INFO - NRC initialized
+2026-06-28 21:23:43,662 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,672 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,672 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,672 - INFO - LIWC initialized
+2026-06-28 21:23:43,675 - INFO - VADER initialized
+2026-06-28 21:23:43,679 - INFO - Initializing dictionaries in PID 1173261
+2026-06-28 21:23:43,692 - INFO - VADER initialized
+2026-06-28 21:23:43,694 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,694 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,694 - INFO - LIWC initialized
+2026-06-28 21:23:43,697 - INFO - Initializing dictionaries in PID 1173262
+2026-06-28 21:23:43,702 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,702 - INFO - NRC initialized
+2026-06-28 21:23:43,702 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,709 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,709 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,709 - INFO - LIWC initialized
+2026-06-28 21:23:43,711 - INFO - VADER initialized
+2026-06-28 21:23:43,715 - INFO - Initializing dictionaries in PID 1173263
+2026-06-28 21:23:43,721 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,721 - INFO - NRC initialized
+2026-06-28 21:23:43,721 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,728 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,728 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,728 - INFO - LIWC initialized
+2026-06-28 21:23:43,728 - INFO - VADER initialized
+2026-06-28 21:23:43,734 - INFO - Initializing dictionaries in PID 1173264
+2026-06-28 21:23:43,742 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,742 - INFO - NRC initialized
+2026-06-28 21:23:43,742 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,745 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,745 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,746 - INFO - LIWC initialized
+2026-06-28 21:23:43,747 - INFO - VADER initialized
+2026-06-28 21:23:43,751 - INFO - Initializing dictionaries in PID 1173265
+2026-06-28 21:23:43,757 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,757 - INFO - NRC initialized
+2026-06-28 21:23:43,757 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,759 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,759 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,759 - INFO - LIWC initialized
+2026-06-28 21:23:43,764 - INFO - VADER initialized
+2026-06-28 21:23:43,771 - INFO - Initializing dictionaries in PID 1173266
+2026-06-28 21:23:43,776 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,776 - INFO - NRC initialized
+2026-06-28 21:23:43,776 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,781 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,782 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,782 - INFO - LIWC initialized
+2026-06-28 21:23:43,785 - INFO - VADER initialized
+2026-06-28 21:23:43,789 - INFO - Initializing dictionaries in PID 1173267
+2026-06-28 21:23:43,793 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,793 - INFO - NRC initialized
+2026-06-28 21:23:43,793 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,793 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,793 - INFO - NRC initialized
+2026-06-28 21:23:43,793 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,800 - INFO - VADER initialized
+2026-06-28 21:23:43,802 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,802 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,802 - INFO - LIWC initialized
+2026-06-28 21:23:43,807 - INFO - Initializing dictionaries in PID 1173268
+2026-06-28 21:23:43,812 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,812 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,812 - INFO - LIWC initialized
+2026-06-28 21:23:43,820 - INFO - VADER initialized
+2026-06-28 21:23:43,830 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,830 - INFO - NRC initialized
+2026-06-28 21:23:43,830 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,837 - INFO - LIWC Dictionary loaded: 73 categories, 4072 exact words, 2473 wildcards
+2026-06-28 21:23:43,837 - WARNING - LIWC missing essential categories: {'inhib'}
+2026-06-28 21:23:43,837 - INFO - LIWC initialized
+2026-06-28 21:23:43,846 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,846 - INFO - NRC initialized
+2026-06-28 21:23:43,846 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,850 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,850 - INFO - NRC initialized
+2026-06-28 21:23:43,850 - INFO - Effective source for this process: liwc
+2026-06-28 21:23:43,885 - INFO - NRC Lexicon loaded: 10 emotions, 6453 unique words
+2026-06-28 21:23:43,885 - INFO - NRC initialized
+2026-06-28 21:23:43,885 - INFO - Effective source for this process: liwc
+
+Partitions (Parallel):   0%|          | 0/500 [00:00<?, ?it/s]2026-06-28 21:23:45,472 - INFO - Processing part_0000
+2026-06-28 21:23:46,628 - INFO - Processing part_0001
+2026-06-28 21:23:47,864 - INFO - Processing part_0002
+2026-06-28 21:23:48,835 - INFO - Processing part_0003
+2026-06-28 21:23:49,871 - INFO - Processing part_0004
+2026-06-28 21:23:51,081 - INFO - Processing part_0005
+2026-06-28 21:23:52,244 - INFO - Processing part_0006
+2026-06-28 21:23:53,371 - INFO - Processing part_0007
+2026-06-28 21:23:54,530 - INFO - Processing part_0008
+2026-06-28 21:23:55,688 - INFO - Processing part_0009
+2026-06-28 21:23:56,707 - INFO - Processing part_0010
+2026-06-28 21:23:57,762 - INFO - Processing part_0011
+
+2026-07-02 04:12:41,724 - INFO - Building trajectory DataFrame from temp files...
+2026-07-02 04:14:42,630 - INFO - Saving checkpoint to /path/to/project/module2_results/trajectories/_checkpoint_raw_traj.parquet ...
+2026-07-02 04:16:39,364 - INFO - Checkpoint saved successfully.
+2026-07-02 04:16:44,082 - INFO - Raw trajectory shape: (33789616, 131)
+2026-07-02 04:16:46,660 - INFO - Unique users: 689584
+2026-07-02 04:16:46,701 - INFO - Reliable windows: 17451019/33789616 (51.6%)
+2026-07-02 04:16:46,701 - INFO - Computing derived indices (fully vectorized)...
+2026-07-02 04:17:00,839 - INFO -   [Derived Indices] Matched 93/93 p-factor features. Target cols: 94
+2026-07-02 04:17:38,672 - INFO -   Applying vectorized MNAR imputation (quantile=0.9)...
+2026-07-02 04:18:24,704 - INFO -     MNAR imputed 16338597 silent windows
+2026-07-02 04:22:34,448 - INFO - Applying MNAR-aware imputation: high-withdrawal proxy for silent periods...
+
+2026-07-02 04:26:50,311 - INFO -   MNAR update: Applied 0.9 quantile withdrawal value to 0 missing windows.
+2026-07-02 04:26:50,821 - INFO - Social Withdrawal Index coverage: 67.0%
+2026-07-02 04:26:50,821 - INFO - Validating t0 linguistic shift proxy...
+2026-07-02 04:27:40,076 - INFO -   patient t0 shift: mean=0.001, d=0.006, p=0.1359 (ttest_1samp)
+2026-07-02 04:31:19,469 - INFO -   control t0 shift: mean=-0.028, d=-0.137, p=0.0000 (ttest_1samp)
+2026-07-02 04:33:17,683 - INFO - Saved trajectories to: /path/to/project/module2_results/trajectories/user_trajectories.parquet
+2026-07-02 04:33:17,683 - INFO - Final shape: (33789616, 136)
+2026-07-02 04:33:30,170 - INFO - Aggregating trajectories for visualization...
+2026-07-02 04:34:22,732 - INFO - Saved aggregated trajectories for visualization: /path/to/project/module2_results/trajectories/trajectory_aggregated_by_window.csv
+2026-07-02 04:34:27,809 - INFO - Trajectory Quality Report:
+2026-07-02 04:34:27,809 - INFO -   n_users_total: 689584
+2026-07-02 04:34:27,809 - INFO -   n_users_with_sufficient_pre: 625090
+2026-07-02 04:34:27,809 - INFO -   n_users_with_sufficient_post: 600247
+2026-07-02 04:34:27,809 - INFO -   n_users_with_both: 539346
+2026-07-02 04:34:27,809 - INFO -   mean_windows_per_user: 49.0
+2026-07-02 04:34:27,809 - INFO -   mean_reliable_windows: 25.30658919000441
+2026-07-02 04:34:27,809 - INFO -   mean_high_quality_windows: 15.656859787930115
+2026-07-02 04:34:27,809 - INFO -   patient_n_users: 123986
+2026-07-02 04:34:27,809 - INFO -   patient_with_sufficient_pre: 110438
+2026-07-02 04:34:27,809 - INFO -   patient_with_sufficient_post: 112037
+2026-07-02 04:34:27,809 - INFO -   control_n_users: 565598
+2026-07-02 04:34:27,809 - INFO -   control_with_sufficient_pre: 514652
+2026-07-02 04:34:27,809 - INFO -   control_with_sufficient_post: 488210
+2026-07-02 04:34:27,809 - INFO -   reliable_rate_median: 0.5102040816326531
+2026-07-02 04:34:27,809 - INFO -   reliable_rate_q25: 0.2857142857142857
+2026-07-02 04:34:27,825 - INFO - ================================================================================
+2026-07-02 04:34:27,825 - INFO - TRAJECTORY CONSTRUCTION COMPLETE
+2026-07-02 04:34:27,825 - INFO - ================================================================================
+
+
+2026-08-18 20:13:12,414 - INFO - ================================================================================
+2026-08-18 20:13:12,414 - INFO - MODULE 2 - Step 08: Trajectory Morphology Analysis
+2026-08-18 20:13:12,415 - INFO - ================================================================================
+2026-08-18 20:15:07,699 - INFO - Loaded trajectories: (33789616, 136)
+2026-08-18 20:15:17,771 - INFO - Group distribution after normalization: {'control': 27714302, 'patient': 6075314}
+2026-08-18 20:15:24,083 - INFO - Users: 689584
+2026-08-18 20:15:24,083 - INFO - ============================================================
+2026-08-18 20:15:24,083 - INFO - Analysis 1: Event Study (TWFE Panel Regression)
+2026-08-18 20:15:24,084 - INFO - ============================================================
+2026-08-18 20:17:20,749 - INFO -   Reliable observations for TWFE: 13838068
+2026-08-18 20:40:16,267 - INFO -   Earliest significant signal: t0-675d (coef=-0.0676, p_FDR=0.0000), Cohen's d=-0.068
+2026-08-18 20:40:17,174 - INFO - ============================================================
+2026-08-18 20:40:17,176 - INFO - Analysis 2: Changepoint Detection (PELT via ruptures)
+2026-08-18 20:40:17,177 - INFO - ============================================================
+
+Multi-var PELT: 100%|██████████| 689584/689584 [8:09:02<00:00, 34.86it/s]
+Multi-var PELT: 100%|██████████| 689584/689584 [8:09:02<00:00, 23.50it/s]
+2026-08-19 07:54:13,036 - INFO -   Multi-variable consensus changepoints: 15728
+2026-08-19 07:54:13,192 - INFO -   Pre-t0: 4514 (28.7%)
+2026-08-19 07:54:13,213 - INFO -   Most common variable pairs:
+2026-08-19 07:54:13,222 - INFO -     volatility_index × social_withdrawal_index: 9103
+2026-08-19 07:54:13,223 - INFO -     social_withdrawal_index × volatility_index: 5612
+2026-08-19 07:54:13,223 - INFO -     p_factor_severity_z × social_withdrawal_index: 695
+2026-08-19 07:54:13,223 - INFO -     p_factor_severity_z × volatility_index: 210
+2026-08-19 07:54:13,223 - INFO -     social_withdrawal_index × p_factor_severity_z: 77
+2026-08-19 07:54:14,486 - INFO - ================================================================================
+2026-08-19 07:54:14,486 - INFO - TRAJECTORY MORPHOLOGY ANALYSIS COMPLETE
+2026-08-19 07:54:14,486 - INFO - ================================================================================

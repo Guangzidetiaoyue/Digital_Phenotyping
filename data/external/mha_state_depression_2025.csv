@@ -1,0 +1,53 @@
+rank,state,adult_depression_pct,count
+1,New Jersey,19.69,1416000
+2,Florida,19.97,3551000
+3,Mississippi,20.47,450000
+4,South Carolina,20.52,843000
+5,California,20.99,6316000
+6,Texas,21.02,4689000
+7,Hawaii,21.16,231000
+8,New York,21.29,3293000
+9,North Carolina,21.32,1759000
+10,Delaware,21.90,176000
+11,Alabama,22.09,860000
+12,Oklahoma,22.20,665000
+13,Maryland,22.29,1055000
+14,Louisiana,22.59,774000
+15,Illinois,22.61,2192000
+16,Georgia,23.08,1906000
+17,Michigan,23.16,1812000
+18,Nevada,23.16,571000
+19,Virginia,23.25,1542000
+20,Ohio,23.37,2113000
+21,Alaska,23.47,124000
+22,North Dakota,23.53,137000
+23,Kansas,23.72,519000
+24,Indiana,23.73,1229000
+25,Minnesota,23.74,1038000
+26,Massachusetts,23.99,1342000
+27,Connecticut,24.13,689000
+28,South Dakota,24.14,163000
+29,Rhode Island,24.37,214000
+30,Pennsylvania,24.39,2480000
+31,Nebraska,24.43,359000
+32,Arkansas,24.47,564000
+33,Montana,24.60,216000
+34,Wisconsin,24.81,1141000
+35,New Mexico,24.88,404000
+36,Wyoming,24.89,110000
+37,Kentucky,25.22,864000
+38,Arizona,25.70,1468000
+39,Iowa,25.72,626000
+40,Maine,25.76,290000
+41,Missouri,26.08,1233000
+42,Tennessee,26.48,1441000
+43,Idaho,26.72,391000
+44,New Hampshire,26.93,305000
+45,Vermont,27.02,143000
+46,Colorado,27.73,1263000
+47,Washington,27.99,1695000
+48,District of Columbia,28.55,155000
+49,West Virginia,29.33,408000
+50,Utah,29.93,732000
+51,Oregon,30.16,1015000
+,National,22.95,58969000

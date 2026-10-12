@@ -1,0 +1,11 @@
+SERIES=naive
+                      signal       external  n_years  raw_r  raw_p  firstdiff_r  detrended_r  neweywest_p  block_permutation_p  loyo_range  bootstrap_ci_lo  bootstrap_ci_hi
+    p_factor_severity_z_diff   suicide_rate       15  0.184  0.511        0.214       -0.073        0.550                0.286       0.715           -0.114            0.774
+    p_factor_severity_z_diff MDE_prevalence        8  0.523  0.183       -0.306       -0.245        0.048                0.413       0.862           -0.788            0.979
+      posting_intensity_diff   suicide_rate       15 -0.561  0.030        0.102       -0.053        0.019                0.000       0.526           -0.986           -0.028
+      posting_intensity_diff MDE_prevalence        8 -0.834  0.010       -0.058        0.095        0.000                0.084       0.100           -0.978            0.277
+social_withdrawal_index_diff   suicide_rate       15  0.614  0.015       -0.124        0.230        0.000                0.010       0.344            0.124            0.925
+social_withdrawal_index_diff MDE_prevalence        8 -0.221  0.598       -0.021       -0.010        0.556                0.751       1.134           -0.923            0.972
+       volatility_index_diff   suicide_rate       15  0.396  0.144        0.141       -0.075        0.301                0.086       0.715            0.064            0.990
+       volatility_index_diff MDE_prevalence        8  0.813  0.014       -0.372       -0.300        0.000                0.082       0.229            0.120            0.990
+DONE -> /path/to/project/module4_results/validation_r4/external_robustness_report_naive.json

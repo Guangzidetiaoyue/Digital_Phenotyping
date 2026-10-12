@@ -1,0 +1,7 @@
+python s01_feature_extraction.py
+python s02_feature_aggregation.py
+python s03_effect_sizes.py
+python s04_discrimination.py
+python s05_factor_analysis.py
+python s06_sensitivity.py
+python s07_visualization.py

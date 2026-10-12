@@ -1,0 +1,826 @@
+2026-04-17 17:40:35,104 - INFO - ================================================================================
+2026-04-17 17:40:35,105 - INFO - MODULE 1 - Step 02: Feature Aggregation & Matching Integration (v1.2)
+2026-04-17 17:40:35,105 - INFO - CRITICAL: All preprocessing statistics derived from training set only
+2026-04-17 17:40:35,106 - INFO - ================================================================================
+2026-04-17 17:40:39,549 - INFO - ============================================================
+2026-04-17 17:40:39,549 - INFO - PHASE 1: Loading and merging data sources
+2026-04-17 17:40:39,549 - INFO - ============================================================
+2026-04-17 17:40:39,820 - INFO - Loading raw features...
+2026-04-17 17:40:51,168 - INFO - ================================================================================
+2026-04-17 17:40:51,169 - INFO - MODULE 1 - Step 02: Feature Aggregation & Matching Integration (v1.2)
+2026-04-17 17:40:51,169 - INFO - CRITICAL: All preprocessing statistics derived from training set only
+2026-04-17 17:40:51,170 - INFO - ================================================================================
+2026-04-17 17:40:52,960 - INFO - ============================================================
+2026-04-17 17:40:52,998 - INFO - PHASE 1: Loading and merging data sources
+2026-04-17 17:40:53,046 - INFO - ============================================================
+2026-04-17 17:42:56,086 - INFO - Loading raw features...
+2026-04-17 17:43:07,247 - INFO -   Features shape: (722346, 130)
+2026-04-17 17:43:09,583 - INFO -   Groups (raw): {'control_candidate': 595177, 'patient': 127169}
+2026-04-17 17:44:26,362 - INFO -   Groups (standardized): {'control': 595177, 'patient': 127169}
+2026-04-17 17:44:33,927 - INFO -   Disorder groups: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-04-17 17:45:10,861 - WARNING -   Dropping 3 PSM columns leaked from Step 01: ['iptw_att_weight', 'ps_score', 'eb_weight']
+2026-04-17 17:45:44,603 - INFO - Loading PSM matching results...
+2026-04-17 17:49:57,185 - INFO -   PSM shape: 723574
+2026-04-17 17:50:29,262 - INFO -   Total matched users: 723574
+2026-04-17 17:50:49,214 - INFO -   Features after matching filter: 722346 users (100.0% retained)
+2026-04-17 17:51:16,311 - INFO -   Merged PSM weights: ['group', 'real_t0_date', 'is_retrospective', 'posts_per_day', 'tenure_days', 'submission_ratio', 'readability_grade', 'vocab_density', 'subreddit_entropy', 'circadian_mean_hour', 'circadian_regularity', 'avg_word_len', 'total_posts', 'first_post_ts', 'last_post_ts', 'shadow_t0_ts', 'is_patient', 'log_posts_per_day', 'log_tenure', 'log_total_posts', 'circadian_mean_hour_sin', 'circadian_mean_hour_cos', 'active_days_ratio', 'tenure_quartile', 'ps_logit', 'ps_score', 'iptw_att_weight', 'eb_weight']
+2026-04-17 17:51:38,347 - INFO - Loading user metadata...
+2026-04-17 17:51:42,014 - INFO -   User meta shape: (723574, 8)
+2026-04-17 17:52:07,226 - INFO -   Final merged shape: (722346, 155)
+2026-04-17 18:58:08,880 - INFO - ================================================================================
+2026-04-17 18:58:08,909 - INFO - MODULE 1 - Step 02: Feature Aggregation & Matching Integration (v1.3)
+2026-04-17 18:58:08,910 - INFO - CRITICAL: All preprocessing statistics derived from training set only
+2026-04-17 18:58:08,911 - INFO - ================================================================================
+2026-04-17 18:58:12,331 - INFO - ============================================================
+2026-04-17 18:58:12,756 - INFO - PHASE 1: Loading and merging data sources
+2026-04-17 18:58:13,164 - INFO - ============================================================
+2026-04-17 18:58:15,215 - INFO - Loading raw features...
+2026-04-17 18:58:23,759 - INFO -   Features shape: (722346, 130)
+2026-04-17 18:59:04,079 - INFO -   Groups (raw): {'control_candidate': 595177, 'patient': 127169}
+2026-04-17 18:59:36,644 - INFO -   Groups (standardized): {'control': 595177, 'patient': 127169}
+2026-04-17 18:59:47,358 - INFO -   Disorder groups: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-04-17 19:00:26,552 - WARNING -   Dropping 3 PSM columns leaked from Step 01: ['iptw_att_weight', 'ps_score', 'eb_weight']
+2026-04-17 19:00:33,079 - INFO - Loading PSM matching results...
+2026-04-17 19:00:38,183 - INFO -   PSM shape: 723574
+2026-04-17 19:00:38,702 - INFO -   PSM columns: ['user_id_hash', 'group', 'real_t0_date', 'is_retrospective', 'posts_per_day', 'tenure_days', 'submission_ratio', 'readability_grade', 'vocab_density', 'subreddit_entropy', 'circadian_mean_hour', 'circadian_regularity', 'avg_word_len', 'total_posts', 'first_post_ts', 'last_post_ts', 'shadow_t0_ts', 'is_patient', 'log_posts_per_day', 'log_tenure', 'log_total_posts', 'circadian_mean_hour_sin', 'circadian_mean_hour_cos', 'active_days_ratio', 'tenure_quartile', 'ps_logit', 'ps_score', 'iptw_att_weight', 'eb_weight']
+2026-04-17 19:00:50,918 - INFO -   Total matched users: 723574
+2026-04-17 19:01:04,219 - INFO -   Features after matching filter: 722346 users (100.0% retained)
+2026-04-17 19:01:44,968 - INFO -   Merged PSM weights: ['ps_score', 'iptw_att_weight', 'eb_weight']
+2026-04-17 19:01:50,211 - INFO - Loading user metadata...
+2026-04-17 19:01:55,542 - INFO -   User meta shape: (723574, 8)
+2026-04-17 19:02:25,070 - INFO -   Final merged shape: (722346, 130)
+2026-04-17 19:02:31,071 - INFO -   Final group distribution: {'control': 595177, 'patient': 127169}
+2026-04-17 19:02:38,228 - INFO -   Final disorder distribution: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-04-17 19:02:49,066 - INFO - ============================================================
+2026-04-17 19:02:49,590 - INFO - PHASE 2: Identifying feature columns
+2026-04-17 19:02:50,142 - INFO - ============================================================
+2026-04-17 19:04:20,472 - INFO -   Feature columns identified: 105
+2026-04-17 19:04:23,556 - INFO -   Excluded columns: 1
+2026-04-17 19:04:27,246 - INFO -     Excluded: self_post_ratio (all_nan)
+2026-04-17 19:04:41,741 - INFO -     affective: 12/12 columns retained as features
+2026-04-17 19:04:41,741 - INFO -     pronoun: 8/8 columns retained as features
+2026-04-17 19:04:41,741 - INFO -     cognitive: 7/7 columns retained as features
+2026-04-17 19:04:41,741 - INFO -     temporal_linguistic: 4/4 columns retained as features
+2026-04-17 19:04:41,741 - INFO -     risk: 5/5 columns retained as features
+2026-04-17 19:04:41,741 - INFO -     behavioral: 5/5 columns retained as features
+2026-04-17 19:04:41,741 - INFO -     readability: 3/3 columns retained as features
+2026-04-17 19:04:41,741 - INFO -     post_length: 3/3 columns retained as features
+2026-04-17 19:04:41,741 - INFO -     temporal: 23/23 columns retained as features
+2026-04-17 19:04:41,741 - INFO -     social: 18/19 columns retained as features
+2026-04-17 19:04:41,742 - INFO -     community: 10/10 columns retained as features
+2026-04-17 19:04:41,742 - INFO -     quality: 0/10 columns retained as features
+2026-04-17 19:04:41,742 - INFO -     log_transforms: 6/6 columns retained as features
+2026-04-17 19:04:41,742 - INFO -     signed_log_transforms: 1/1 columns retained as features
+2026-04-17 19:04:56,302 - INFO - ============================================================
+2026-04-17 19:04:56,933 - INFO - PHASE 3: Creating analysis splits (70/15/15)
+2026-04-17 19:04:57,461 - INFO - ============================================================
+2026-04-17 19:05:04,174 - INFO -   Stratification categories: 11
+2026-04-17 19:05:06,988 - INFO -   Min category size: 1687
+2026-04-17 19:05:13,517 - INFO -   Using STANDARD stratified splitting (no pair structure)
+2026-04-17 19:05:53,529 - INFO -   train: 505642 users (70.0%)
+2026-04-17 19:05:55,965 - INFO -     Distribution: {'control': 416624, 'adhd': 26342, 'depression': 21448, 'anxiety': 10096, 'autism': 7157, 'bipolar': 7004, 'ptsd': 5797, 'bpd': 4257, 'ocd': 4015, 'schizophrenia': 1721, 'eating_disorders': 1181}
+2026-04-17 19:06:01,064 - INFO -   val: 108352 users (15.0%)
+2026-04-17 19:06:01,071 - INFO -     Distribution: {'control': 89276, 'adhd': 5645, 'depression': 4596, 'anxiety': 2163, 'autism': 1534, 'bipolar': 1501, 'ptsd': 1243, 'bpd': 912, 'ocd': 861, 'schizophrenia': 368, 'eating_disorders': 253}
+2026-04-17 19:06:01,219 - INFO -   test: 108352 users (15.0%)
+2026-04-17 19:06:01,226 - INFO -     Distribution: {'control': 89277, 'adhd': 5645, 'depression': 4596, 'anxiety': 2164, 'autism': 1534, 'bipolar': 1500, 'ptsd': 1242, 'bpd': 912, 'ocd': 860, 'schizophrenia': 369, 'eating_disorders': 253}
+2026-04-17 19:06:23,503 - INFO - ============================================================
+2026-04-17 19:06:23,987 - INFO - PHASE 4: Handling missing values (train-statistics only)
+2026-04-17 19:06:24,619 - INFO - ============================================================
+2026-04-17 19:06:34,197 - INFO -   Excluding 246 users with >50% missing features (0.0%)
+2026-04-17 19:06:57,922 - INFO -   Temporal features: 33, Non-temporal: 72
+2026-04-17 19:07:04,653 - INFO -   Structural missingness analysis:
+2026-04-17 19:07:07,431 - INFO -     Users with unreliable temporal data: 2493 (0.3%)
+2026-04-17 19:07:15,678 - INFO -     Temporal feature missingness (these users): 66.7%
+2026-04-17 19:07:17,078 - INFO -     Non-temporal feature missingness (these users): 0.8%
+2026-04-17 19:07:21,879 - INFO -     Added is_temporal_structurally_imputed flag (2493 users marked)
+2026-04-17 19:07:27,943 - INFO -   Feature missingness range: 0.000 - 0.034
+2026-04-17 19:07:31,745 - INFO -   Computing imputation statistics from training set...
+2026-04-17 19:08:28,998 - INFO -   Total values imputed: 160028
+2026-04-17 19:08:39,835 - INFO -   Remaining missing values: 0
+2026-04-17 19:08:43,435 - INFO -   Remaining infinite values: 0
+2026-04-17 19:08:49,546 - INFO -   Saved imputation parameters to: /path/to/project/module1_results/features/imputation_params.json
+2026-04-17 19:08:56,713 - INFO - ============================================================
+2026-04-17 19:08:57,280 - INFO - PHASE 5: Winsorizing features at [0.5, 99.5] percentiles
+2026-04-17 19:08:57,997 - INFO -   (percentiles from training set only)
+2026-04-17 19:08:58,563 - INFO - ============================================================
+2026-04-17 19:09:20,498 - INFO -   Total values clipped: 607755
+2026-04-17 19:09:29,097 - INFO -   Saved winsorization parameters to: /path/to/project/module1_results/features/winsorize_params.json
+2026-04-17 19:09:36,416 - INFO - ============================================================
+2026-04-17 19:09:36,862 - INFO - PHASE 6: Standardizing features (RobustScaler, train-fit only)
+2026-04-17 19:09:37,317 - INFO - ============================================================
+2026-04-17 19:09:47,912 - WARNING -   2 features have zero IQR (constant in training set):
+2026-04-17 19:09:47,915 - WARNING -     inhibition_rate: value = 0.0
+2026-04-17 19:09:47,918 - WARNING -     inhibition_marker_rate: value = 0.0
+2026-04-17 19:09:47,918 - WARNING -   These features will be set to 0 after standardization
+2026-04-17 19:09:47,918 - INFO -   Valid features for scaling: 103
+2026-04-17 19:10:05,404 - INFO -   Saved scaler parameters to: /path/to/project/module1_results/features/robust_scaler_params.json
+2026-04-17 19:10:11,827 - INFO - ============================================================
+2026-04-17 19:10:12,826 - INFO - Saving outputs...
+2026-04-17 19:10:13,822 - INFO - ============================================================
+2026-04-17 19:10:17,150 - INFO -   Saved imputation flags: /path/to/project/module1_results/features/imputation_flags.parquet
+2026-04-17 19:10:28,376 - INFO -   Saved matched raw features: /path/to/project/module1_results/features/user_features_matched.parquet ((722100, 133))
+2026-04-17 19:10:40,941 - INFO -   Saved standardized features: /path/to/project/module1_results/features/user_features_standardized.parquet ((722100, 133))
+2026-04-17 19:10:46,074 - INFO - ============================================================
+2026-04-17 19:10:46,574 - INFO - PHASE 7: Generating quality report
+2026-04-17 19:10:47,138 - INFO - ============================================================
+2026-04-17 19:11:08,336 - INFO -   Saved quality report to: /path/to/project/module1_results/statistics/aggregation_report.json
+2026-04-17 19:11:09,069 - INFO - 
+  SUMMARY:
+2026-04-17 19:11:11,722 - INFO -     Users: 722100 (patients=127165, controls=594935)
+2026-04-17 19:11:13,155 - INFO -     Features: 103 valid, 2 constant (zero IQR)
+2026-04-17 19:11:15,831 - INFO -     Splits: train=505461, val=108326, test=108313
+2026-04-17 19:11:16,371 - INFO -     Leakage prevention: ✅ All statistics from training set only
+2026-04-17 19:11:17,958 - INFO - ================================================================================
+2026-04-17 19:11:18,870 - INFO - AGGREGATION COMPLETE
+2026-04-17 19:11:19,679 - INFO - ================================================================================
+2026-04-17 19:26:24,596 - INFO - ================================================================================
+2026-04-17 19:26:24,630 - INFO - MODULE 1 - Step 02: Feature Aggregation & Matching Integration (v1.3)
+2026-04-17 19:26:24,666 - INFO - CRITICAL: All preprocessing statistics derived from training set only
+2026-04-17 19:26:24,702 - INFO - ================================================================================
+2026-04-17 19:26:26,791 - INFO - ============================================================
+2026-04-17 19:26:26,804 - INFO - PHASE 1: Loading and merging data sources
+2026-04-17 19:26:26,840 - INFO - ============================================================
+2026-04-17 19:26:27,149 - INFO - Loading raw features...
+2026-04-17 19:26:33,833 - INFO -   Features shape: (722346, 130)
+2026-04-17 19:26:33,875 - INFO -   Groups (raw): {'control_candidate': 595177, 'patient': 127169}
+2026-04-17 19:26:36,565 - INFO -   Groups (standardized): {'control': 595177, 'patient': 127169}
+2026-04-17 19:26:36,600 - INFO -   Disorder groups: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-04-17 19:26:36,602 - WARNING -   Dropping 3 PSM columns leaked from Step 01: ['iptw_att_weight', 'ps_score', 'eb_weight']
+2026-04-17 19:26:36,832 - INFO - Loading PSM matching results...
+2026-04-17 19:26:38,224 - INFO -   PSM shape: 723574
+2026-04-17 19:26:38,225 - INFO -   PSM columns: ['user_id_hash', 'group', 'real_t0_date', 'is_retrospective', 'posts_per_day', 'tenure_days', 'submission_ratio', 'readability_grade', 'vocab_density', 'subreddit_entropy', 'circadian_mean_hour', 'circadian_regularity', 'avg_word_len', 'total_posts', 'first_post_ts', 'last_post_ts', 'shadow_t0_ts', 'is_patient', 'log_posts_per_day', 'log_tenure', 'log_total_posts', 'circadian_mean_hour_sin', 'circadian_mean_hour_cos', 'active_days_ratio', 'tenure_quartile', 'ps_logit', 'ps_score', 'iptw_att_weight', 'eb_weight']
+2026-04-17 19:26:38,667 - INFO -   Total matched users: 723574
+2026-04-17 19:26:40,241 - INFO -   Features after matching filter: 722346 users (100.0% retained)
+2026-04-17 19:26:41,304 - INFO -   Merged PSM weights: ['ps_score', 'iptw_att_weight', 'eb_weight']
+2026-04-17 19:26:41,322 - INFO - Loading user metadata...
+2026-04-17 19:26:42,247 - INFO -   User meta shape: (723574, 8)
+2026-04-17 19:26:42,248 - INFO -   Final merged shape: (722346, 130)
+2026-04-17 19:26:42,274 - INFO -   Final group distribution: {'control': 595177, 'patient': 127169}
+2026-04-17 19:26:42,301 - INFO -   Final disorder distribution: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-04-17 19:26:42,418 - INFO - ============================================================
+2026-04-17 19:26:42,418 - INFO - PHASE 2: Identifying feature columns
+2026-04-17 19:26:42,418 - INFO - ============================================================
+2026-04-17 19:26:44,427 - INFO -   Feature columns identified: 105
+2026-04-17 19:26:44,427 - INFO -   Excluded columns: 1
+2026-04-17 19:26:44,427 - INFO -     Excluded: self_post_ratio (all_nan)
+2026-04-17 19:26:44,762 - INFO -     affective: 12/12 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     pronoun: 8/8 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     cognitive: 7/7 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     temporal_linguistic: 4/4 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     risk: 5/5 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     behavioral: 5/5 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     readability: 3/3 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     post_length: 3/3 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     temporal: 23/23 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     social: 18/19 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     community: 10/10 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     quality: 0/10 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     log_transforms: 6/6 columns retained as features
+2026-04-17 19:26:44,762 - INFO -     signed_log_transforms: 1/1 columns retained as features
+2026-04-17 19:26:44,763 - INFO - ============================================================
+2026-04-17 19:26:44,763 - INFO - PHASE 3: Creating analysis splits (70/15/15)
+2026-04-17 19:26:44,763 - INFO - ============================================================
+2026-04-17 19:26:44,887 - INFO -   Stratification categories: 11
+2026-04-17 19:26:44,888 - INFO -   Min category size: 1687
+2026-04-17 19:26:44,888 - INFO -   Using STANDARD stratified splitting (no pair structure)
+2026-04-17 19:26:45,884 - INFO -   train: 505642 users (70.0%)
+2026-04-17 19:26:45,903 - INFO -     Distribution: {'control': 416624, 'adhd': 26342, 'depression': 21448, 'anxiety': 10096, 'autism': 7157, 'bipolar': 7004, 'ptsd': 5797, 'bpd': 4257, 'ocd': 4015, 'schizophrenia': 1721, 'eating_disorders': 1181}
+2026-04-17 19:26:46,047 - INFO -   val: 108352 users (15.0%)
+2026-04-17 19:26:46,052 - INFO -     Distribution: {'control': 89276, 'adhd': 5645, 'depression': 4596, 'anxiety': 2163, 'autism': 1534, 'bipolar': 1501, 'ptsd': 1243, 'bpd': 912, 'ocd': 861, 'schizophrenia': 368, 'eating_disorders': 253}
+2026-04-17 19:26:46,188 - INFO -   test: 108352 users (15.0%)
+2026-04-17 19:26:46,193 - INFO -     Distribution: {'control': 89277, 'adhd': 5645, 'depression': 4596, 'anxiety': 2164, 'autism': 1534, 'bipolar': 1500, 'ptsd': 1242, 'bpd': 912, 'ocd': 860, 'schizophrenia': 369, 'eating_disorders': 253}
+2026-04-17 19:26:46,202 - INFO - ============================================================
+2026-04-17 19:26:46,202 - INFO - PHASE 4: Handling missing values (train-statistics only)
+2026-04-17 19:26:46,202 - INFO - ============================================================
+2026-04-17 19:26:46,582 - INFO -   Excluding 246 users with >50% missing features (0.0%)
+2026-04-17 19:26:47,659 - INFO -   Temporal features: 33, Non-temporal: 72
+2026-04-17 19:26:47,660 - INFO -   Structural missingness analysis:
+2026-04-17 19:26:47,661 - INFO -     Users with unreliable temporal data: 2493 (0.3%)
+2026-04-17 19:26:47,849 - INFO -     Temporal feature missingness (these users): 66.7%
+2026-04-17 19:26:47,849 - INFO -     Non-temporal feature missingness (these users): 0.8%
+2026-04-17 19:26:47,850 - INFO -     Added is_temporal_structurally_imputed flag (2493 users marked)
+2026-04-17 19:26:48,134 - INFO -   Feature missingness range: 0.000 - 0.034
+2026-04-17 19:26:50,075 - INFO -   Computing imputation statistics from training set...
+2026-04-17 19:26:53,254 - INFO -   Building imputation flags...
+2026-04-17 19:26:53,375 - INFO -   Imputation flags shape: (722100, 106)
+2026-04-17 19:27:23,536 - INFO -   Total values imputed: 160028
+2026-04-17 19:27:24,040 - INFO -   Remaining missing values: 0
+2026-04-17 19:27:24,040 - INFO -   Remaining infinite values: 0
+2026-04-17 19:27:27,429 - INFO -   Saved imputation parameters to: /path/to/project/module1_results/features/imputation_params.json
+2026-04-17 19:27:27,491 - INFO - ============================================================
+2026-04-17 19:27:27,491 - INFO - PHASE 5: Winsorizing features at [0.5, 99.5] percentiles
+2026-04-17 19:27:27,491 - INFO -   (percentiles from training set only)
+2026-04-17 19:27:27,491 - INFO - ============================================================
+2026-04-17 19:27:31,834 - INFO -   Total values clipped: 607755
+2026-04-17 19:27:31,859 - INFO -   Saved winsorization parameters to: /path/to/project/module1_results/features/winsorize_params.json
+2026-04-17 19:27:31,882 - INFO - ============================================================
+2026-04-17 19:27:31,882 - INFO - PHASE 6: Standardizing features (RobustScaler, train-fit only)
+2026-04-17 19:27:31,882 - INFO - ============================================================
+2026-04-17 19:27:33,870 - WARNING -   2 features have zero IQR (constant or near-constant in training set):
+2026-04-17 19:27:39,224 - WARNING -     inhibition_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-04-17 19:27:39,234 - WARNING -     inhibition_marker_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-04-17 19:27:39,234 - INFO -   Checking for duplicate features among zero-IQR set...
+2026-04-17 19:27:39,235 - WARNING -     DUPLICATE: inhibition_rate == inhibition_marker_rate (identical values in training set)
+2026-04-17 19:27:39,235 - INFO -   These 2 features will be DROPPED from the modeling feature set (zero discriminative power)
+2026-04-17 19:27:39,236 - INFO -   They remain in the output parquet for audit purposes
+2026-04-17 19:27:39,236 - INFO -   Valid features for scaling: 103
+2026-04-17 19:27:42,624 - INFO -   Saved scaler parameters to: /path/to/project/module1_results/features/robust_scaler_params.json
+2026-04-17 19:27:42,642 - INFO -   Saved feature selection manifest to: /path/to/project/module1_results/features/feature_selection.json
+2026-04-17 19:27:42,643 - INFO - ============================================================
+2026-04-17 19:27:42,644 - INFO - Saving outputs...
+2026-04-17 19:27:42,644 - INFO - ============================================================
+2026-04-17 19:27:43,146 - INFO -   Saved imputation flags: /path/to/project/module1_results/features/imputation_flags.parquet
+2026-04-17 19:27:51,042 - INFO -   Saved matched raw features: /path/to/project/module1_results/features/user_features_matched.parquet ((722100, 133))
+2026-04-17 19:27:59,676 - INFO -   Saved standardized features: /path/to/project/module1_results/features/user_features_standardized.parquet ((722100, 133))
+2026-04-17 19:27:59,677 - INFO - ============================================================
+2026-04-17 19:27:59,677 - INFO - PHASE 7: Generating quality report
+2026-04-17 19:27:59,677 - INFO - ============================================================
+2026-04-17 19:28:00,973 - INFO -   Saved quality report to: /path/to/project/module1_results/statistics/aggregation_report.json
+2026-04-17 19:28:00,973 - INFO - 
+  SUMMARY:
+2026-04-17 19:28:00,973 - INFO -     Users: 722100 (patients=127165, controls=594935)
+2026-04-17 19:28:00,973 - INFO -     Features: 103 valid, 2 constant (zero IQR)
+2026-04-17 19:28:00,975 - INFO -     Splits: train=505461, val=108326, test=108313
+2026-04-17 19:28:00,975 - INFO -     Leakage prevention: ✅ All statistics from training set only
+2026-04-17 19:28:00,976 - INFO - ================================================================================
+2026-04-17 19:28:00,976 - INFO - AGGREGATION COMPLETE
+2026-04-17 19:28:00,976 - INFO - ================================================================================
+2026-04-17 20:05:01,151 - INFO - ================================================================================
+2026-04-17 20:05:01,156 - INFO - MODULE 1 - Step 02: Feature Aggregation & Matching Integration (v1.3)
+2026-04-17 20:05:01,157 - INFO - CRITICAL: All preprocessing statistics derived from training set only
+2026-04-17 20:05:01,157 - INFO - ================================================================================
+2026-04-17 20:05:01,158 - INFO - ============================================================
+2026-04-17 20:05:01,158 - INFO - PHASE 1: Loading and merging data sources
+2026-04-17 20:05:01,158 - INFO - ============================================================
+2026-04-17 20:05:01,228 - INFO - Loading raw features...
+2026-04-17 20:05:06,943 - INFO -   Features shape: (722346, 130)
+2026-04-17 20:05:06,982 - INFO -   Groups (raw): {'control_candidate': 595177, 'patient': 127169}
+2026-04-17 20:05:07,249 - INFO -   Groups (standardized): {'control': 595177, 'patient': 127169}
+2026-04-17 20:05:07,287 - INFO -   Disorder groups: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-04-17 20:05:07,288 - WARNING -   Dropping 3 PSM columns leaked from Step 01: ['iptw_att_weight', 'ps_score', 'eb_weight']
+2026-04-17 20:05:07,584 - INFO - Loading PSM matching results...
+2026-04-17 20:05:09,049 - INFO -   PSM shape: 723574
+2026-04-17 20:05:09,058 - INFO -   PSM columns: ['user_id_hash', 'group', 'real_t0_date', 'is_retrospective', 'posts_per_day', 'tenure_days', 'submission_ratio', 'readability_grade', 'vocab_density', 'subreddit_entropy', 'circadian_mean_hour', 'circadian_regularity', 'avg_word_len', 'total_posts', 'first_post_ts', 'last_post_ts', 'shadow_t0_ts', 'is_patient', 'log_posts_per_day', 'log_tenure', 'log_total_posts', 'circadian_mean_hour_sin', 'circadian_mean_hour_cos', 'active_days_ratio', 'tenure_quartile', 'ps_logit', 'ps_score', 'iptw_att_weight', 'eb_weight']
+2026-04-17 20:05:09,340 - INFO -   Total matched users: 723574
+2026-04-17 20:05:10,779 - INFO -   Features after matching filter: 722346 users (100.0% retained)
+2026-04-17 20:05:11,707 - INFO -   Merged PSM weights: ['ps_score', 'iptw_att_weight', 'eb_weight']
+2026-04-17 20:05:11,747 - INFO - Loading user metadata...
+2026-04-17 20:05:12,775 - INFO -   User meta shape: (723574, 8)
+2026-04-17 20:05:12,776 - INFO -   Final merged shape: (722346, 130)
+2026-04-17 20:05:12,806 - INFO -   Final group distribution: {'control': 595177, 'patient': 127169}
+2026-04-17 20:05:12,830 - INFO -   Final disorder distribution: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-04-17 20:05:12,886 - INFO - ============================================================
+2026-04-17 20:05:12,887 - INFO - PHASE 2: Identifying feature columns
+2026-04-17 20:05:12,887 - INFO - ============================================================
+2026-04-17 20:05:13,076 - INFO -   Feature columns identified: 105
+2026-04-17 20:05:13,076 - INFO -   Excluded columns: 1
+2026-04-17 20:05:13,077 - INFO -     Excluded: self_post_ratio (all_nan)
+2026-04-17 20:05:13,395 - INFO -     affective: 12/12 columns retained as features
+2026-04-17 20:05:13,396 - INFO -     pronoun: 8/8 columns retained as features
+2026-04-17 20:05:13,396 - INFO -     cognitive: 7/7 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     temporal_linguistic: 4/4 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     risk: 5/5 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     behavioral: 5/5 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     readability: 3/3 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     post_length: 3/3 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     temporal: 23/23 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     social: 18/19 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     community: 10/10 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     quality: 0/10 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     log_transforms: 6/6 columns retained as features
+2026-04-17 20:05:13,397 - INFO -     signed_log_transforms: 1/1 columns retained as features
+2026-04-17 20:05:13,397 - INFO - ============================================================
+2026-04-17 20:05:13,397 - INFO - PHASE 3: Creating analysis splits (70/15/15)
+2026-04-17 20:05:13,397 - INFO - ============================================================
+2026-04-17 20:05:13,512 - INFO -   Stratification categories: 11
+2026-04-17 20:05:13,512 - INFO -   Min category size: 1687
+2026-04-17 20:05:13,512 - INFO -   Using STANDARD stratified splitting (no pair structure)
+2026-04-17 20:05:14,432 - INFO -   train: 505642 users (70.0%)
+2026-04-17 20:05:14,450 - INFO -     Distribution: {'control': 416624, 'adhd': 26342, 'depression': 21448, 'anxiety': 10096, 'autism': 7157, 'bipolar': 7004, 'ptsd': 5797, 'bpd': 4257, 'ocd': 4015, 'schizophrenia': 1721, 'eating_disorders': 1181}
+2026-04-17 20:05:14,587 - INFO -   val: 108352 users (15.0%)
+2026-04-17 20:05:14,591 - INFO -     Distribution: {'control': 89276, 'adhd': 5645, 'depression': 4596, 'anxiety': 2163, 'autism': 1534, 'bipolar': 1501, 'ptsd': 1243, 'bpd': 912, 'ocd': 861, 'schizophrenia': 368, 'eating_disorders': 253}
+2026-04-17 20:05:14,717 - INFO -   test: 108352 users (15.0%)
+2026-04-17 20:05:14,721 - INFO -     Distribution: {'control': 89277, 'adhd': 5645, 'depression': 4596, 'anxiety': 2164, 'autism': 1534, 'bipolar': 1500, 'ptsd': 1242, 'bpd': 912, 'ocd': 860, 'schizophrenia': 369, 'eating_disorders': 253}
+2026-04-17 20:05:14,729 - INFO - ============================================================
+2026-04-17 20:05:14,729 - INFO - PHASE 4: Handling missing values (train-statistics only)
+2026-04-17 20:05:14,729 - INFO - ============================================================
+2026-04-17 20:05:15,078 - INFO -   Excluding 246 users with >50% missing features (0.0%)
+2026-04-17 20:05:16,145 - INFO -   Temporal features: 33, Non-temporal: 72
+2026-04-17 20:05:16,146 - INFO -   Structural missingness analysis:
+2026-04-17 20:05:16,146 - INFO -     Users with unreliable temporal data: 2493 (0.3%)
+2026-04-17 20:05:16,337 - INFO -     Temporal feature missingness (these users): 66.7%
+2026-04-17 20:05:16,338 - INFO -     Non-temporal feature missingness (these users): 0.8%
+2026-04-17 20:05:16,339 - INFO -     Added is_temporal_structurally_imputed flag (2493 users marked)
+2026-04-17 20:05:16,611 - INFO -   Feature missingness range: 0.000 - 0.034
+2026-04-17 20:05:16,611 - INFO -   Computing imputation statistics from training set...
+2026-04-17 20:05:19,905 - INFO -   Building imputation flags...
+2026-04-17 20:05:20,017 - INFO -   Imputation flags shape: (722100, 106)
+2026-04-17 20:05:50,999 - INFO -   Total values imputed: 160028
+2026-04-17 20:05:51,493 - INFO -   Remaining missing values: 0
+2026-04-17 20:05:51,493 - INFO -   Remaining infinite values: 0
+2026-04-17 20:05:51,612 - INFO -   Saved imputation parameters to: /path/to/project/module1_results/features/imputation_params.json
+2026-04-17 20:05:51,671 - INFO - ============================================================
+2026-04-17 20:05:51,671 - INFO - PHASE 5: Winsorizing features at [0.5, 99.5] percentiles
+2026-04-17 20:05:51,671 - INFO -   (percentiles from training set only)
+2026-04-17 20:05:51,671 - INFO - ============================================================
+2026-04-17 20:05:54,357 - INFO -   Total values clipped: 607755
+2026-04-17 20:05:54,373 - INFO -   Saved winsorization parameters to: /path/to/project/module1_results/features/winsorize_params.json
+2026-04-17 20:05:54,397 - INFO - ============================================================
+2026-04-17 20:05:54,398 - INFO - PHASE 6: Standardizing features (RobustScaler, train-fit only)
+2026-04-17 20:05:54,398 - INFO - ============================================================
+2026-04-17 20:05:56,650 - WARNING -   2 features have zero IQR (constant or near-constant in training set):
+2026-04-17 20:05:56,655 - WARNING -     inhibition_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-04-17 20:05:56,661 - WARNING -     inhibition_marker_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-04-17 20:05:56,661 - INFO -   Checking for duplicate features among zero-IQR set...
+2026-04-17 20:05:56,662 - WARNING -     DUPLICATE: inhibition_rate == inhibition_marker_rate (identical values in training set)
+2026-04-17 20:05:56,662 - INFO -   These 2 features will be DROPPED from the modeling feature set (zero discriminative power)
+2026-04-17 20:05:56,662 - INFO -   They remain in the output parquet for audit purposes
+2026-04-17 20:05:56,663 - INFO -   Valid features for scaling: 103
+2026-04-17 20:06:00,069 - INFO -   Saved scaler parameters to: /path/to/project/module1_results/features/robust_scaler_params.json
+2026-04-17 20:06:00,095 - INFO -   Saved feature selection manifest to: /path/to/project/module1_results/features/feature_selection.json
+2026-04-17 20:06:00,095 - INFO - ============================================================
+2026-04-17 20:06:00,095 - INFO - Saving outputs...
+2026-04-17 20:06:00,095 - INFO - ============================================================
+2026-04-17 20:06:00,859 - INFO -   Saved imputation flags: /path/to/project/module1_results/features/imputation_flags.parquet
+2026-04-17 20:06:09,183 - INFO -   Saved matched raw features: /path/to/project/module1_results/features/user_features_matched.parquet ((722100, 133))
+2026-04-17 20:06:18,119 - INFO -   Saved standardized features: /path/to/project/module1_results/features/user_features_standardized.parquet ((722100, 133))
+2026-04-17 20:06:18,119 - INFO - ============================================================
+2026-04-17 20:06:18,119 - INFO - PHASE 7: Generating quality report
+2026-04-17 20:06:18,119 - INFO - ============================================================
+2026-04-17 20:06:19,565 - INFO -   Saved quality report to: /path/to/project/module1_results/statistics/aggregation_report.json
+2026-04-17 20:06:19,565 - INFO - 
+  SUMMARY:
+2026-04-17 20:06:19,565 - INFO -     Users: 722100 (patients=127165, controls=594935)
+2026-04-17 20:06:19,566 - INFO -     Features: 103 valid, 2 constant (zero IQR)
+2026-04-17 20:06:19,568 - INFO -     Splits: train=505461, val=108326, test=108313
+2026-04-17 20:06:19,568 - INFO -     Leakage prevention: ✅ All statistics from training set only
+2026-04-17 20:06:19,569 - INFO - ================================================================================
+2026-04-17 20:06:19,569 - INFO - AGGREGATION COMPLETE
+2026-04-17 20:06:19,569 - INFO - ================================================================================
+2026-04-30 09:28:21,775 - INFO - ================================================================================
+2026-04-30 09:28:21,878 - INFO - MODULE 1 - Step 02: Feature Aggregation & Matching Integration (v1.3)
+2026-04-30 09:28:21,960 - INFO - CRITICAL: All preprocessing statistics derived from training set only
+2026-04-30 09:28:22,087 - INFO - ================================================================================
+2026-04-30 09:28:22,161 - INFO - ============================================================
+2026-04-30 09:28:22,221 - INFO - PHASE 1: Loading and merging data sources
+2026-04-30 09:28:22,221 - INFO - ============================================================
+2026-04-30 09:28:22,299 - INFO - Loading raw features...
+2026-04-30 09:28:32,470 - INFO -   Features shape: (722346, 130)
+2026-04-30 09:28:32,500 - INFO -   Groups (raw): {'control_candidate': 595177, 'patient': 127169}
+2026-04-30 09:28:32,684 - INFO -   Groups (standardized): {'control': 595177, 'patient': 127169}
+2026-04-30 09:28:32,710 - INFO -   Disorder groups: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-04-30 09:28:32,711 - WARNING -   Dropping 3 PSM columns leaked from Step 01: ['iptw_att_weight', 'ps_score', 'eb_weight']
+2026-04-30 09:28:33,004 - INFO - Loading PSM matching results...
+2026-04-30 09:28:34,821 - INFO -   PSM shape: 723574
+2026-04-30 09:28:34,821 - INFO -   PSM columns: ['user_id_hash', 'group', 'real_t0_date', 'is_retrospective', 'posts_per_day', 'tenure_days', 'submission_ratio', 'readability_grade', 'vocab_density', 'subreddit_entropy', 'circadian_mean_hour', 'circadian_regularity', 'avg_word_len', 'total_posts', 'first_post_ts', 'last_post_ts', 'shadow_t0_ts', 'is_patient', 'log_posts_per_day', 'log_tenure', 'log_total_posts', 'circadian_mean_hour_sin', 'circadian_mean_hour_cos', 'active_days_ratio', 'tenure_quartile', 'ps_logit', 'ps_score', 'iptw_att_weight', 'eb_weight']
+2026-04-30 09:28:35,125 - INFO -   Total matched users: 723574
+2026-04-30 09:28:36,441 - INFO -   Features after matching filter: 722346 users (100.0% retained)
+2026-04-30 09:28:37,472 - INFO -   Merged PSM weights: ['ps_score', 'iptw_att_weight', 'eb_weight']
+2026-04-30 09:28:37,687 - INFO - Loading user metadata...
+2026-04-30 09:28:39,911 - INFO -   User meta shape: (723574, 8)
+2026-04-30 09:28:39,911 - INFO -   Final merged shape: (722346, 130)
+2026-04-30 09:28:39,948 - INFO -   Final group distribution: {'control': 595177, 'patient': 127169}
+2026-04-30 09:28:39,979 - INFO -   Final disorder distribution: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-04-30 09:28:40,033 - INFO - ============================================================
+2026-04-30 09:28:40,033 - INFO - PHASE 2: Identifying feature columns
+2026-04-30 09:28:40,033 - INFO - ============================================================
+2026-04-30 09:28:40,491 - INFO -   Feature columns identified: 105
+2026-04-30 09:28:40,491 - INFO -   Excluded columns: 1
+2026-04-30 09:28:40,491 - INFO -     Excluded: self_post_ratio (all_nan)
+2026-04-30 09:28:40,826 - INFO -     affective: 12/12 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     pronoun: 8/8 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     cognitive: 7/7 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     temporal_linguistic: 4/4 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     risk: 5/5 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     behavioral: 5/5 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     readability: 3/3 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     post_length: 3/3 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     temporal: 23/23 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     social: 18/19 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     community: 10/10 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     quality: 0/10 columns retained as features
+2026-04-30 09:28:40,826 - INFO -     log_transforms: 6/6 columns retained as features
+2026-04-30 09:28:40,827 - INFO -     signed_log_transforms: 1/1 columns retained as features
+2026-04-30 09:28:40,827 - INFO - ============================================================
+2026-04-30 09:28:40,827 - INFO - PHASE 3: Creating analysis splits (70/15/15)
+2026-04-30 09:28:40,827 - INFO - ============================================================
+2026-04-30 09:28:40,974 - INFO -   Stratification categories: 11
+2026-04-30 09:28:40,974 - INFO -   Min category size: 1687
+2026-04-30 09:28:40,974 - INFO -   Using STANDARD stratified splitting (no pair structure)
+2026-04-30 09:28:42,065 - INFO -   train: 505642 users (70.0%)
+2026-04-30 09:28:42,083 - INFO -     Distribution: {'control': 416624, 'adhd': 26342, 'depression': 21448, 'anxiety': 10096, 'autism': 7157, 'bipolar': 7004, 'ptsd': 5797, 'bpd': 4257, 'ocd': 4015, 'schizophrenia': 1721, 'eating_disorders': 1181}
+2026-04-30 09:28:42,223 - INFO -   val: 108352 users (15.0%)
+2026-04-30 09:28:42,227 - INFO -     Distribution: {'control': 89276, 'adhd': 5645, 'depression': 4596, 'anxiety': 2163, 'autism': 1534, 'bipolar': 1501, 'ptsd': 1243, 'bpd': 912, 'ocd': 861, 'schizophrenia': 368, 'eating_disorders': 253}
+2026-04-30 09:28:42,352 - INFO -   test: 108352 users (15.0%)
+2026-04-30 09:28:42,356 - INFO -     Distribution: {'control': 89277, 'adhd': 5645, 'depression': 4596, 'anxiety': 2164, 'autism': 1534, 'bipolar': 1500, 'ptsd': 1242, 'bpd': 912, 'ocd': 860, 'schizophrenia': 369, 'eating_disorders': 253}
+2026-04-30 09:28:42,364 - INFO - ============================================================
+2026-04-30 09:28:42,364 - INFO - PHASE 4: Handling missing values (train-statistics only)
+2026-04-30 09:28:42,364 - INFO - ============================================================
+2026-04-30 09:28:42,716 - INFO -   Excluding 246 users with >50% missing features (0.0%)
+2026-04-30 09:28:43,789 - INFO -   Temporal features: 33, Non-temporal: 72
+2026-04-30 09:28:43,789 - INFO -   Structural missingness analysis:
+2026-04-30 09:28:43,790 - INFO -     Users with unreliable temporal data: 2493 (0.3%)
+2026-04-30 09:28:43,981 - INFO -     Temporal feature missingness (these users): 66.7%
+2026-04-30 09:28:43,981 - INFO -     Non-temporal feature missingness (these users): 0.8%
+2026-04-30 09:28:43,983 - INFO -     Added is_temporal_structurally_imputed flag (2493 users marked)
+2026-04-30 09:28:44,254 - INFO -   Feature missingness range: 0.000 - 0.034
+2026-04-30 09:28:44,254 - INFO -   Computing imputation statistics from training set...
+2026-04-30 09:28:47,494 - INFO -   Building imputation flags...
+2026-04-30 09:28:47,596 - INFO -   Imputation flags shape: (722100, 106)
+2026-04-30 09:29:18,083 - INFO -   Total values imputed: 160028
+2026-04-30 09:29:18,566 - INFO -   Remaining missing values: 0
+2026-04-30 09:29:18,566 - INFO -   Remaining infinite values: 0
+2026-04-30 09:29:19,265 - INFO -   Saved imputation parameters to: /path/to/project/module1_results/features/imputation_params.json
+2026-04-30 09:29:19,319 - INFO - ============================================================
+2026-04-30 09:29:19,319 - INFO - PHASE 5: Winsorizing features at [0.5, 99.5] percentiles
+2026-04-30 09:29:19,319 - INFO -   (percentiles from training set only)
+2026-04-30 09:29:19,319 - INFO - ============================================================
+2026-04-30 09:29:21,628 - INFO -   Total values clipped: 607755
+2026-04-30 09:29:21,697 - INFO -   Saved winsorization parameters to: /path/to/project/module1_results/features/winsorize_params.json
+2026-04-30 09:29:21,718 - INFO - ============================================================
+2026-04-30 09:29:21,718 - INFO - PHASE 6: Standardizing features (RobustScaler, train-fit only)
+2026-04-30 09:29:21,718 - INFO - ============================================================
+2026-04-30 09:29:23,650 - WARNING -   2 features have zero IQR (constant or near-constant in training set):
+2026-04-30 09:29:23,670 - WARNING -     inhibition_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-04-30 09:29:23,675 - WARNING -     inhibition_marker_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-04-30 09:29:23,675 - INFO -   Checking for duplicate features among zero-IQR set...
+2026-04-30 09:29:23,676 - WARNING -     DUPLICATE: inhibition_rate == inhibition_marker_rate (identical values in training set)
+2026-04-30 09:29:23,676 - INFO -   These 2 features will be DROPPED from the modeling feature set (zero discriminative power)
+2026-04-30 09:29:23,676 - INFO -   They remain in the output parquet for audit purposes
+2026-04-30 09:29:23,676 - INFO -   Valid features for scaling: 103
+2026-04-30 09:29:27,006 - INFO -   Saved scaler parameters to: /path/to/project/module1_results/features/robust_scaler_params.json
+2026-04-30 09:29:27,038 - INFO -   Saved feature selection manifest to: /path/to/project/module1_results/features/feature_selection.json
+2026-04-30 09:29:27,039 - INFO - ============================================================
+2026-04-30 09:29:27,039 - INFO - Saving outputs...
+2026-04-30 09:29:27,039 - INFO - ============================================================
+2026-04-30 09:29:27,940 - INFO -   Saved imputation flags: /path/to/project/module1_results/features/imputation_flags.parquet
+2026-04-30 09:29:37,369 - INFO -   Saved matched raw features: /path/to/project/module1_results/features/user_features_matched.parquet ((722100, 133))
+2026-04-30 09:29:45,543 - INFO -   Saved standardized features: /path/to/project/module1_results/features/user_features_standardized.parquet ((722100, 133))
+2026-04-30 09:29:45,544 - INFO - ============================================================
+2026-04-30 09:29:45,544 - INFO - PHASE 7: Generating quality report
+2026-04-30 09:29:45,544 - INFO - ============================================================
+2026-04-30 09:29:46,548 - INFO -   Saved quality report to: /path/to/project/module1_results/statistics/aggregation_report.json
+2026-04-30 09:29:46,549 - INFO - 
+  SUMMARY:
+2026-04-30 09:29:46,549 - INFO -     Users: 722100 (patients=127165, controls=594935)
+2026-04-30 09:29:46,549 - INFO -     Features: 103 valid, 2 constant (zero IQR)
+2026-04-30 09:29:46,551 - INFO -     Splits: train=505461, val=108326, test=108313
+2026-04-30 09:29:46,552 - INFO -     Leakage prevention: ✅ All statistics from training set only
+2026-04-30 09:29:46,552 - INFO - ================================================================================
+2026-04-30 09:29:46,552 - INFO - AGGREGATION COMPLETE
+2026-04-30 09:29:46,552 - INFO - ================================================================================
+2026-05-04 18:23:36,846 - INFO - ================================================================================
+2026-05-04 18:23:36,890 - INFO - MODULE 1 - Step 02: Feature Aggregation & Matching Integration (v1.3)
+2026-05-04 18:23:36,890 - INFO - CRITICAL: All preprocessing statistics derived from training set only
+2026-05-04 18:23:36,890 - INFO - ================================================================================
+2026-05-04 18:23:36,891 - INFO - ============================================================
+2026-05-04 18:23:36,891 - INFO - PHASE 1: Loading and merging data sources
+2026-05-04 18:23:36,891 - INFO - ============================================================
+2026-05-04 18:23:36,931 - INFO - Loading raw features...
+2026-05-04 18:23:42,472 - INFO -   Features shape: (722346, 130)
+2026-05-04 18:23:42,527 - INFO -   Groups (raw): {'control_candidate': 595177, 'patient': 127169}
+2026-05-04 18:23:42,691 - INFO -   Groups (standardized): {'control': 595177, 'patient': 127169}
+2026-05-04 18:23:42,713 - INFO -   Disorder groups: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-05-04 18:23:42,714 - WARNING -   Dropping 3 PSM columns leaked from Step 01: ['iptw_att_weight', 'ps_score', 'eb_weight']
+2026-05-04 18:23:42,995 - INFO - Loading PSM matching results...
+2026-05-04 18:23:44,265 - INFO -   PSM shape: 723574
+2026-05-04 18:23:44,265 - INFO -   PSM columns: ['user_id_hash', 'group', 'real_t0_date', 'is_retrospective', 'posts_per_day', 'tenure_days', 'submission_ratio', 'readability_grade', 'vocab_density', 'subreddit_entropy', 'circadian_mean_hour', 'circadian_regularity', 'avg_word_len', 'total_posts', 'first_post_ts', 'last_post_ts', 'shadow_t0_ts', 'is_patient', 'log_posts_per_day', 'log_tenure', 'log_total_posts', 'circadian_mean_hour_sin', 'circadian_mean_hour_cos', 'active_days_ratio', 'tenure_quartile', 'ps_logit', 'ps_score', 'iptw_att_weight', 'eb_weight']
+2026-05-04 18:23:44,605 - INFO -   Total matched users: 723574
+2026-05-04 18:23:45,910 - INFO -   Features after matching filter: 722346 users (100.0% retained)
+2026-05-04 18:23:47,042 - INFO -   Merged PSM weights: ['ps_score', 'iptw_att_weight', 'eb_weight']
+2026-05-04 18:23:47,068 - INFO - Loading user metadata...
+2026-05-04 18:23:48,015 - INFO -   User meta shape: (723574, 8)
+2026-05-04 18:23:48,015 - INFO -   Final merged shape: (722346, 130)
+2026-05-04 18:23:48,038 - INFO -   Final group distribution: {'control': 595177, 'patient': 127169}
+2026-05-04 18:23:48,060 - INFO -   Final disorder distribution: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-05-04 18:23:48,123 - INFO - ============================================================
+2026-05-04 18:23:48,123 - INFO - PHASE 2: Identifying feature columns
+2026-05-04 18:23:48,123 - INFO - ============================================================
+2026-05-04 18:23:48,260 - INFO -   Feature columns identified: 105
+2026-05-04 18:23:48,261 - INFO -   Excluded columns: 1
+2026-05-04 18:23:48,261 - INFO -     Excluded: self_post_ratio (all_nan)
+2026-05-04 18:23:48,587 - INFO -     affective: 12/12 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     pronoun: 8/8 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     cognitive: 7/7 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     temporal_linguistic: 4/4 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     risk: 5/5 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     behavioral: 5/5 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     readability: 3/3 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     post_length: 3/3 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     temporal: 23/23 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     social: 18/19 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     community: 10/10 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     quality: 0/10 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     log_transforms: 6/6 columns retained as features
+2026-05-04 18:23:48,588 - INFO -     signed_log_transforms: 1/1 columns retained as features
+2026-05-04 18:23:48,588 - INFO - ============================================================
+2026-05-04 18:23:48,588 - INFO - PHASE 3: Creating analysis splits (70/15/15)
+2026-05-04 18:23:48,588 - INFO - ============================================================
+2026-05-04 18:23:48,710 - INFO -   Stratification categories: 11
+2026-05-04 18:23:48,710 - INFO -   Min category size: 1687
+2026-05-04 18:23:48,710 - INFO -   Using STANDARD stratified splitting (no pair structure)
+2026-05-04 18:23:49,709 - INFO -   train: 505642 users (70.0%)
+2026-05-04 18:23:49,728 - INFO -     Distribution: {'control': 416624, 'adhd': 26342, 'depression': 21448, 'anxiety': 10096, 'autism': 7157, 'bipolar': 7004, 'ptsd': 5797, 'bpd': 4257, 'ocd': 4015, 'schizophrenia': 1721, 'eating_disorders': 1181}
+2026-05-04 18:23:49,872 - INFO -   val: 108352 users (15.0%)
+2026-05-04 18:23:49,877 - INFO -     Distribution: {'control': 89276, 'adhd': 5645, 'depression': 4596, 'anxiety': 2163, 'autism': 1534, 'bipolar': 1501, 'ptsd': 1243, 'bpd': 912, 'ocd': 861, 'schizophrenia': 368, 'eating_disorders': 253}
+2026-05-04 18:23:50,000 - INFO -   test: 108352 users (15.0%)
+2026-05-04 18:23:50,005 - INFO -     Distribution: {'control': 89277, 'adhd': 5645, 'depression': 4596, 'anxiety': 2164, 'autism': 1534, 'bipolar': 1500, 'ptsd': 1242, 'bpd': 912, 'ocd': 860, 'schizophrenia': 369, 'eating_disorders': 253}
+2026-05-04 18:23:50,013 - INFO - ============================================================
+2026-05-04 18:23:50,013 - INFO - PHASE 4: Handling missing values (train-statistics only)
+2026-05-04 18:23:50,013 - INFO - ============================================================
+2026-05-04 18:23:50,377 - INFO -   Excluding 246 users with >50% missing features (0.0%)
+2026-05-04 18:23:51,491 - INFO -   Temporal features: 33, Non-temporal: 72
+2026-05-04 18:23:51,491 - INFO -   Structural missingness analysis:
+2026-05-04 18:23:51,491 - INFO -     Users with unreliable temporal data: 2493 (0.3%)
+2026-05-04 18:23:51,686 - INFO -     Temporal feature missingness (these users): 66.7%
+2026-05-04 18:23:51,686 - INFO -     Non-temporal feature missingness (these users): 0.8%
+2026-05-04 18:23:51,687 - INFO -     Added is_temporal_structurally_imputed flag (2493 users marked)
+2026-05-04 18:23:51,962 - INFO -   Feature missingness range: 0.000 - 0.034
+2026-05-04 18:23:51,963 - INFO -   Computing imputation statistics from training set...
+2026-05-04 18:23:54,954 - INFO -   Building imputation flags...
+2026-05-04 18:23:55,053 - INFO -   Imputation flags shape: (722100, 106)
+2026-05-04 18:24:22,760 - INFO -   Total values imputed: 160028
+2026-05-04 18:24:23,236 - INFO -   Remaining missing values: 0
+2026-05-04 18:24:23,236 - INFO -   Remaining infinite values: 0
+2026-05-04 18:24:23,310 - INFO -   Saved imputation parameters to: /path/to/project/module1_results/features/imputation_params.json
+2026-05-04 18:24:23,367 - INFO - ============================================================
+2026-05-04 18:24:23,367 - INFO - PHASE 5: Winsorizing features at [0.5, 99.5] percentiles
+2026-05-04 18:24:23,367 - INFO -   (percentiles from training set only)
+2026-05-04 18:24:23,367 - INFO - ============================================================
+2026-05-04 18:24:25,641 - INFO -   Total values clipped: 609325
+2026-05-04 18:24:25,672 - INFO -   Saved winsorization parameters to: /path/to/project/module1_results/features/winsorize_params.json
+2026-05-04 18:24:25,695 - INFO - ============================================================
+2026-05-04 18:24:25,695 - INFO - PHASE 6: Standardizing features (RobustScaler, train-fit only)
+2026-05-04 18:24:25,695 - INFO - ============================================================
+2026-05-04 18:24:27,510 - WARNING -   2 features have zero IQR (constant or near-constant in training set):
+2026-05-04 18:24:27,516 - WARNING -     inhibition_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-05-04 18:24:27,522 - WARNING -     inhibition_marker_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-05-04 18:24:27,522 - INFO -   Checking for duplicate features among zero-IQR set...
+2026-05-04 18:24:27,523 - WARNING -     DUPLICATE: inhibition_rate == inhibition_marker_rate (identical values in training set)
+2026-05-04 18:24:27,523 - INFO -   These 2 features will be DROPPED from the modeling feature set (zero discriminative power)
+2026-05-04 18:24:27,523 - INFO -   They remain in the output parquet for audit purposes
+2026-05-04 18:24:27,523 - INFO -   Valid features for scaling: 103
+2026-05-04 18:24:30,611 - INFO -   Saved scaler parameters to: /path/to/project/module1_results/features/robust_scaler_params.json
+2026-05-04 18:24:30,617 - INFO -   Saved feature selection manifest to: /path/to/project/module1_results/features/feature_selection.json
+2026-05-04 18:24:30,617 - INFO - ============================================================
+2026-05-04 18:24:30,618 - INFO - Saving outputs...
+2026-05-04 18:24:30,618 - INFO - ============================================================
+2026-05-04 18:24:31,166 - INFO -   Saved imputation flags: /path/to/project/module1_results/features/imputation_flags.parquet
+2026-05-04 18:24:39,654 - INFO -   Saved matched raw features: /path/to/project/module1_results/features/user_features_matched.parquet ((722100, 133))
+2026-05-04 18:24:48,175 - INFO -   Saved standardized features: /path/to/project/module1_results/features/user_features_standardized.parquet ((722100, 133))
+2026-05-04 18:24:48,175 - INFO - ============================================================
+2026-05-04 18:24:48,175 - INFO - PHASE 7: Generating quality report
+2026-05-04 18:24:48,175 - INFO - ============================================================
+2026-05-04 18:24:49,514 - INFO -   Saved quality report to: /path/to/project/module1_results/statistics/aggregation_report.json
+2026-05-04 18:24:49,515 - INFO - 
+  SUMMARY:
+2026-05-04 18:24:49,515 - INFO -     Users: 722100 (patients=127165, controls=594935)
+2026-05-04 18:24:49,515 - INFO -     Features: 103 valid, 2 constant (zero IQR)
+2026-05-04 18:24:49,518 - INFO -     Splits: train=505464, val=108321, test=108315
+2026-05-04 18:24:49,518 - INFO -     Leakage prevention: ✅ All statistics from training set only
+2026-05-04 18:24:49,518 - INFO - ================================================================================
+2026-05-04 18:24:49,518 - INFO - AGGREGATION COMPLETE
+2026-05-04 18:24:49,518 - INFO - ================================================================================
+2026-06-05 03:07:01,002 - INFO - ================================================================================
+2026-06-05 03:07:01,077 - INFO - MODULE 1 - Step 02: Feature Aggregation & Matching Integration (v1.3)
+2026-06-05 03:07:01,077 - INFO - CRITICAL: All preprocessing statistics derived from training set only
+2026-06-05 03:07:01,078 - INFO - ================================================================================
+2026-06-05 03:07:01,078 - INFO - ============================================================
+2026-06-05 03:07:01,078 - INFO - PHASE 1: Loading and merging data sources
+2026-06-05 03:07:01,079 - INFO - ============================================================
+2026-06-05 03:07:01,126 - INFO - Loading raw features...
+2026-06-05 03:07:07,992 - INFO -   Features shape: (722346, 133)
+2026-06-05 03:07:08,034 - INFO -   Groups (raw): {'control_candidate': 595177, 'patient': 127169}
+2026-06-05 03:07:08,305 - INFO -   Groups (standardized): {'control': 595177, 'patient': 127169}
+2026-06-05 03:07:08,346 - INFO -   Disorder groups: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-06-05 03:07:08,350 - WARNING -   Dropping 3 PSM columns leaked from Step 01: ['iptw_att_weight', 'ps_score', 'eb_weight']
+2026-06-05 03:07:08,849 - INFO - Loading PSM matching results...
+2026-06-05 03:07:11,071 - INFO -   PSM shape: 723574
+2026-06-05 03:07:11,075 - INFO -   PSM columns: ['user_id_hash', 'group', 'real_t0_date', 'is_retrospective', 'posts_per_day', 'tenure_days', 'submission_ratio', 'readability_grade', 'vocab_density', 'subreddit_entropy', 'circadian_mean_hour', 'circadian_regularity', 'avg_word_len', 'total_posts', 'first_post_ts', 'last_post_ts', 'shadow_t0_ts', 'is_patient', 'log_posts_per_day', 'log_tenure', 'log_total_posts', 'circadian_mean_hour_sin', 'circadian_mean_hour_cos', 'active_days_ratio', 'tenure_quartile', 'ps_logit', 'ps_score', 'iptw_att_weight', 'eb_weight']
+2026-06-05 03:07:11,540 - INFO -   Total matched users: 723574
+2026-06-05 03:07:13,125 - INFO -   Features after matching filter: 722346 users (100.0% retained)
+2026-06-05 03:07:13,985 - INFO -   Merged PSM weights: ['ps_score', 'iptw_att_weight', 'eb_weight']
+2026-06-05 03:07:14,032 - INFO - Loading user metadata...
+2026-06-05 03:07:15,427 - INFO -   User meta shape: (723574, 8)
+2026-06-05 03:07:15,427 - INFO -   Final merged shape: (722346, 133)
+2026-06-05 03:07:15,464 - INFO -   Final group distribution: {'control': 595177, 'patient': 127169}
+2026-06-05 03:07:15,501 - INFO -   Final disorder distribution: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-06-05 03:07:15,567 - INFO - ============================================================
+2026-06-05 03:07:15,567 - INFO - PHASE 2: Identifying feature columns
+2026-06-05 03:07:15,567 - INFO - ============================================================
+2026-06-05 03:07:15,758 - INFO -   Feature columns identified: 104
+2026-06-05 03:07:15,758 - INFO -   Excluded columns: 1
+2026-06-05 03:07:15,758 - INFO -     Excluded: self_post_ratio (all_nan)
+2026-06-05 03:07:16,147 - INFO -     affective: 11/11 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     pronoun: 8/8 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     cognitive: 7/7 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     temporal_linguistic: 4/4 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     risk: 5/5 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     behavioral: 5/5 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     readability: 3/3 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     post_length: 3/3 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     temporal: 23/23 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     social: 18/19 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     community: 10/10 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     quality: 0/10 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     log_transforms: 6/6 columns retained as features
+2026-06-05 03:07:16,147 - INFO -     signed_log_transforms: 1/1 columns retained as features
+2026-06-05 03:07:16,147 - INFO -   检测到 7 对 log 共线特征，移除原始版本保留 log 版本:
+2026-06-05 03:07:16,147 - INFO -     移除: interval_median_hours
+2026-06-05 03:07:16,147 - INFO -     移除: max_gap_days
+2026-06-05 03:07:16,148 - INFO -     移除: n_posts_total
+2026-06-05 03:07:16,148 - INFO -     移除: posts_per_active_day
+2026-06-05 03:07:16,148 - INFO -     移除: posts_per_day
+2026-06-05 03:07:16,148 - INFO -     移除: score_mean
+2026-06-05 03:07:16,148 - INFO -     移除: tenure_days
+2026-06-05 03:07:16,148 - INFO - ============================================================
+2026-06-05 03:07:16,148 - INFO - PHASE 3: Creating analysis splits (70/15/15)
+2026-06-05 03:07:16,148 - INFO - ============================================================
+2026-06-05 03:07:16,325 - INFO -   Stratification categories: 11
+2026-06-05 03:07:16,325 - INFO -   Min category size: 1687
+2026-06-05 03:07:16,326 - INFO -   Using STANDARD stratified splitting (no pair structure)
+2026-06-05 03:07:17,595 - INFO -   train: 505642 users (70.0%)
+2026-06-05 03:07:17,609 - INFO -     Distribution: {'control': 416624, 'adhd': 26342, 'depression': 21448, 'anxiety': 10096, 'autism': 7157, 'bipolar': 7004, 'ptsd': 5797, 'bpd': 4257, 'ocd': 4015, 'schizophrenia': 1721, 'eating_disorders': 1181}
+2026-06-05 03:07:17,746 - INFO -   val: 108352 users (15.0%)
+2026-06-05 03:07:17,750 - INFO -     Distribution: {'control': 89276, 'adhd': 5645, 'depression': 4596, 'anxiety': 2163, 'autism': 1534, 'bipolar': 1501, 'ptsd': 1243, 'bpd': 912, 'ocd': 861, 'schizophrenia': 368, 'eating_disorders': 253}
+2026-06-05 03:07:17,869 - INFO -   test: 108352 users (15.0%)
+2026-06-05 03:07:17,873 - INFO -     Distribution: {'control': 89277, 'adhd': 5645, 'depression': 4596, 'anxiety': 2164, 'autism': 1534, 'bipolar': 1500, 'ptsd': 1242, 'bpd': 912, 'ocd': 860, 'schizophrenia': 369, 'eating_disorders': 253}
+2026-06-05 03:07:17,880 - INFO - ============================================================
+2026-06-05 03:07:17,881 - INFO - PHASE 4: Handling missing values (train-statistics only)
+2026-06-05 03:07:17,881 - INFO - ============================================================
+2026-06-05 03:07:18,192 - INFO -   Excluding 351 users with >50% missing features (0.0%)
+2026-06-05 03:07:19,247 - INFO -   Temporal features: 27, Non-temporal: 70
+2026-06-05 03:07:19,248 - INFO -   Structural missingness analysis:
+2026-06-05 03:07:19,248 - INFO -     Users with unreliable temporal data: 2540 (0.4%)
+2026-06-05 03:07:19,412 - INFO -     Temporal feature missingness (these users): 63.0%
+2026-06-05 03:07:19,412 - INFO -     Non-temporal feature missingness (these users): 0.9%
+2026-06-05 03:07:19,413 - INFO -     Added is_temporal_structurally_imputed flag (2540 users marked)
+2026-06-05 03:07:19,655 - INFO -   Feature missingness range: 0.000 - 0.034
+2026-06-05 03:07:19,655 - INFO -   Computing imputation statistics from training set...
+2026-06-05 03:07:20,508 - INFO -   Building imputation flags...
+2026-06-05 03:07:20,610 - INFO -   Imputation flags shape: (721995, 99)
+2026-06-05 03:07:20,741 - INFO -   Total values imputed: 135699
+2026-06-05 03:07:21,182 - INFO -   Remaining missing values: 0
+2026-06-05 03:07:21,182 - INFO -   Remaining infinite values: 0
+2026-06-05 03:07:21,264 - INFO -   Saved imputation parameters to: /path/to/project/module1_results/features/imputation_params.json
+2026-06-05 03:07:21,310 - INFO - ============================================================
+2026-06-05 03:07:21,310 - INFO - PHASE 5: Winsorizing features at [0.5, 99.5] percentiles
+2026-06-05 03:07:21,310 - INFO -   (percentiles from training set only)
+2026-06-05 03:07:21,310 - INFO - ============================================================
+2026-06-05 03:07:23,316 - INFO -   Total values clipped: 553772
+2026-06-05 03:07:23,327 - INFO -   Saved winsorization parameters to: /path/to/project/module1_results/features/winsorize_params.json
+2026-06-05 03:07:23,349 - INFO - ============================================================
+2026-06-05 03:07:23,349 - INFO - PHASE 6: Standardizing features (RobustScaler, train-fit only)
+2026-06-05 03:07:23,349 - INFO - ============================================================
+2026-06-05 03:07:24,996 - WARNING -   2 features have zero IQR (constant or near-constant in training set):
+2026-06-05 03:07:25,001 - WARNING -     inhibition_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-06-05 03:07:25,006 - WARNING -     inhibition_marker_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-06-05 03:07:25,006 - INFO -   Checking for duplicate features among zero-IQR set...
+2026-06-05 03:07:25,007 - WARNING -     DUPLICATE: inhibition_rate == inhibition_marker_rate (identical values in training set)
+2026-06-05 03:07:25,007 - INFO -   These 2 features will be DROPPED from the modeling feature set (zero discriminative power)
+2026-06-05 03:07:25,007 - INFO -   They remain in the output parquet for audit purposes
+2026-06-05 03:07:25,007 - INFO -   Valid features for scaling: 95
+2026-06-05 03:07:27,935 - INFO -   Saved scaler parameters to: /path/to/project/module1_results/features/robust_scaler_params.json
+2026-06-05 03:07:27,956 - INFO -   Saved feature selection manifest to: /path/to/project/module1_results/features/feature_selection.json
+2026-06-05 03:07:27,957 - INFO - ============================================================
+2026-06-05 03:07:27,957 - INFO - Saving outputs...
+2026-06-05 03:07:27,957 - INFO - ============================================================
+2026-06-05 03:07:29,103 - INFO -   Saved imputation flags: /path/to/project/module1_results/features/imputation_flags.parquet
+2026-06-05 03:07:37,136 - INFO -   Saved matched raw features: /path/to/project/module1_results/features/user_features_matched.parquet ((721995, 136))
+2026-06-05 03:07:46,093 - INFO -   Saved standardized features: /path/to/project/module1_results/features/user_features_standardized.parquet ((721995, 136))
+2026-06-05 03:07:46,094 - INFO - ============================================================
+2026-06-05 03:07:46,094 - INFO - PHASE 7: Generating quality report
+2026-06-05 03:07:46,094 - INFO - ============================================================
+2026-06-05 03:07:47,518 - INFO -   Saved quality report to: /path/to/project/module1_results/statistics/aggregation_report.json
+2026-06-05 03:07:47,518 - INFO - 
+  SUMMARY:
+2026-06-05 03:07:47,518 - INFO -     Users: 721995 (patients=127168, controls=594827)
+2026-06-05 03:07:47,518 - INFO -     Features: 95 valid, 2 constant (zero IQR)
+2026-06-05 03:07:47,521 - INFO -     Splits: train=505384, val=108305, test=108306
+2026-06-05 03:07:47,521 - INFO -     Leakage prevention: ✅ All statistics from training set only
+2026-06-05 03:07:47,521 - INFO - ================================================================================
+2026-06-05 03:07:47,521 - INFO - AGGREGATION COMPLETE
+2026-06-05 03:07:47,521 - INFO - ================================================================================
+2026-06-11 23:49:43,168 - INFO - ================================================================================
+2026-06-11 23:49:43,242 - INFO - MODULE 1 - Step 02: Feature Aggregation & Matching Integration (v1.3)
+2026-06-11 23:49:43,245 - INFO - CRITICAL: All preprocessing statistics derived from training set only
+2026-06-11 23:49:43,247 - INFO - ================================================================================
+2026-06-11 23:49:43,250 - INFO - ============================================================
+2026-06-11 23:49:43,253 - INFO - PHASE 1: Loading and merging data sources
+2026-06-11 23:49:43,256 - INFO - ============================================================
+2026-06-11 23:49:43,309 - INFO - Loading raw features...
+2026-06-11 23:49:49,235 - INFO -   Features shape: (722346, 133)
+2026-06-11 23:49:49,273 - INFO -   Groups (raw): {'control': 595177, 'patient': 127169}
+2026-06-11 23:49:49,543 - INFO -   Groups (standardized): {'control': 595177, 'patient': 127169}
+2026-06-11 23:49:49,580 - INFO -   Disorder groups: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-06-11 23:49:49,582 - WARNING -   Dropping 3 PSM columns leaked from Step 01: ['iptw_att_weight', 'ps_score', 'eb_weight']
+2026-06-11 23:49:50,090 - INFO - Loading PSM matching results...
+2026-06-11 23:49:51,633 - INFO -   PSM shape: 723574
+2026-06-11 23:49:51,634 - INFO -   PSM columns: ['user_id_hash', 'group', 'real_t0_date', 'is_retrospective', 'posts_per_day', 'tenure_days', 'submission_ratio', 'readability_grade', 'vocab_density', 'subreddit_entropy', 'circadian_mean_hour', 'circadian_regularity', 'avg_word_len', 'total_posts', 'first_post_ts', 'last_post_ts', 'shadow_t0_ts', 'is_patient', 'log_posts_per_day', 'log_tenure', 'log_total_posts', 'circadian_mean_hour_sin', 'circadian_mean_hour_cos', 'active_days_ratio', 'tenure_quartile', 'ps_logit', 'ps_score', 'iptw_att_weight', 'eb_weight']
+2026-06-11 23:49:52,113 - INFO -   Total matched users: 723574
+2026-06-11 23:49:54,049 - INFO -   Features after matching filter: 722346 users (100.0% retained)
+2026-06-11 23:49:54,951 - INFO -   Merged PSM weights: ['ps_score', 'iptw_att_weight', 'eb_weight']
+2026-06-11 23:49:54,964 - INFO - Loading user metadata...
+2026-06-11 23:49:55,997 - INFO -   User meta shape: (723574, 8)
+2026-06-11 23:49:55,997 - INFO -   Final merged shape: (722346, 133)
+2026-06-11 23:49:56,021 - INFO -   Final group distribution: {'control': 595177, 'patient': 127169}
+2026-06-11 23:49:56,044 - INFO -   Final disorder distribution: {'control': 595177, 'adhd': 37632, 'depression': 30640, 'anxiety': 14423, 'autism': 10225, 'bipolar': 10005, 'ptsd': 8282, 'bpd': 6081, 'ocd': 5736, 'schizophrenia': 2458, 'eating_disorders': 1687}
+2026-06-11 23:49:56,103 - INFO - ============================================================
+2026-06-11 23:49:56,103 - INFO - PHASE 2: Identifying feature columns
+2026-06-11 23:49:56,103 - INFO - ============================================================
+2026-06-11 23:49:56,231 - INFO -   Feature columns identified: 108
+2026-06-11 23:49:56,231 - INFO -   Excluded columns: 1
+2026-06-11 23:49:56,231 - INFO -     Excluded: self_post_ratio (all_nan)
+2026-06-11 23:49:56,553 - INFO -     affective: 15/15 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     pronoun: 8/8 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     cognitive: 7/7 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     temporal_linguistic: 4/4 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     risk: 5/5 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     behavioral: 5/5 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     readability: 3/3 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     post_length: 3/3 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     temporal: 23/23 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     social: 18/19 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     community: 10/10 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     quality: 0/10 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     log_transforms: 6/6 columns retained as features
+2026-06-11 23:49:56,553 - INFO -     signed_log_transforms: 1/1 columns retained as features
+2026-06-11 23:49:56,553 - INFO -   检测到 7 对 log 共线特征，移除原始版本保留 log 版本:
+2026-06-11 23:49:56,553 - INFO -     移除: interval_median_hours
+2026-06-11 23:49:56,553 - INFO -     移除: max_gap_days
+2026-06-11 23:49:56,553 - INFO -     移除: n_posts_total
+2026-06-11 23:49:56,553 - INFO -     移除: posts_per_active_day
+2026-06-11 23:49:56,553 - INFO -     移除: posts_per_day
+2026-06-11 23:49:56,553 - INFO -     移除: score_mean
+2026-06-11 23:49:56,553 - INFO -     移除: tenure_days
+2026-06-11 23:49:56,553 - INFO - ============================================================
+2026-06-11 23:49:56,553 - INFO - PHASE 3: Creating analysis splits (70/15/15)
+2026-06-11 23:49:56,553 - INFO - ============================================================
+2026-06-11 23:49:56,683 - INFO -   Stratification categories: 11
+2026-06-11 23:49:56,683 - INFO -   Min category size: 1687
+2026-06-11 23:49:56,683 - INFO -   Using STANDARD stratified splitting (no pair structure)
+2026-06-11 23:49:57,681 - INFO -   train: 505642 users (70.0%)
+2026-06-11 23:49:57,698 - INFO -     Distribution: {'control': 416624, 'adhd': 26342, 'depression': 21448, 'anxiety': 10096, 'autism': 7157, 'bipolar': 7004, 'ptsd': 5797, 'bpd': 4257, 'ocd': 4015, 'schizophrenia': 1721, 'eating_disorders': 1181}
+2026-06-11 23:49:57,838 - INFO -   val: 108352 users (15.0%)
+2026-06-11 23:49:57,842 - INFO -     Distribution: {'control': 89276, 'adhd': 5645, 'depression': 4596, 'anxiety': 2163, 'autism': 1534, 'bipolar': 1501, 'ptsd': 1243, 'bpd': 912, 'ocd': 861, 'schizophrenia': 368, 'eating_disorders': 253}
+2026-06-11 23:49:57,967 - INFO -   test: 108352 users (15.0%)
+2026-06-11 23:49:57,971 - INFO -     Distribution: {'control': 89277, 'adhd': 5645, 'depression': 4596, 'anxiety': 2164, 'autism': 1534, 'bipolar': 1500, 'ptsd': 1242, 'bpd': 912, 'ocd': 860, 'schizophrenia': 369, 'eating_disorders': 253}
+2026-06-11 23:49:57,979 - INFO - ============================================================
+2026-06-11 23:49:57,979 - INFO - PHASE 4: Handling missing values (train-statistics only)
+2026-06-11 23:49:57,979 - INFO - ============================================================
+2026-06-11 23:49:58,319 - INFO -   Excluding 361 users with >50% missing features (0.0%)
+2026-06-11 23:49:59,395 - INFO -   Temporal features: 27, Non-temporal: 74
+2026-06-11 23:49:59,395 - INFO -   Structural missingness analysis:
+2026-06-11 23:49:59,396 - INFO -     Users with unreliable temporal data: 2540 (0.4%)
+2026-06-11 23:49:59,569 - INFO -     Temporal feature missingness (these users): 63.0%
+2026-06-11 23:49:59,569 - INFO -     Non-temporal feature missingness (these users): 0.8%
+2026-06-11 23:49:59,570 - INFO -     Added is_temporal_structurally_imputed flag (2540 users marked)
+2026-06-11 23:49:59,827 - INFO -   Feature missingness range: 0.000 - 0.034
+2026-06-11 23:49:59,828 - INFO -   Computing imputation statistics from training set...
+2026-06-11 23:50:00,735 - INFO -   Building imputation flags...
+2026-06-11 23:50:00,840 - INFO -   Imputation flags shape: (721985, 103)
+2026-06-11 23:50:00,976 - INFO -   Total values imputed: 136029
+2026-06-11 23:50:01,442 - INFO -   Remaining missing values: 0
+2026-06-11 23:50:01,442 - INFO -   Remaining infinite values: 0
+2026-06-11 23:50:01,485 - INFO -   Saved imputation parameters to: /path/to/project/module1_results/features/imputation_params.json
+2026-06-11 23:50:01,532 - INFO - ============================================================
+2026-06-11 23:50:01,532 - INFO - PHASE 5: Winsorizing features at [0.5, 99.5] percentiles
+2026-06-11 23:50:01,532 - INFO -   (percentiles from training set only)
+2026-06-11 23:50:01,532 - INFO - ============================================================
+2026-06-11 23:50:03,829 - INFO -   Total values clipped: 571720
+2026-06-11 23:50:03,863 - INFO -   Saved winsorization parameters to: /path/to/project/module1_results/features/winsorize_params.json
+2026-06-11 23:50:03,885 - INFO - ============================================================
+2026-06-11 23:50:03,885 - INFO - PHASE 6: Standardizing features (RobustScaler, train-fit only)
+2026-06-11 23:50:03,885 - INFO - ============================================================
+2026-06-11 23:50:05,710 - WARNING -   3 features have zero IQR (constant or near-constant in training set):
+2026-06-11 23:50:05,716 - WARNING -     vader_truncation_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-06-11 23:50:05,721 - WARNING -     inhibition_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-06-11 23:50:05,727 - WARNING -     inhibition_marker_rate: median=0.000000, unique_values=1, nonzero=0.00%
+2026-06-11 23:50:05,727 - INFO -   Checking for duplicate features among zero-IQR set...
+2026-06-11 23:50:05,728 - WARNING -     DUPLICATE: vader_truncation_rate == inhibition_rate (identical values in training set)
+2026-06-11 23:50:05,729 - WARNING -     DUPLICATE: vader_truncation_rate == inhibition_marker_rate (identical values in training set)
+2026-06-11 23:50:05,729 - WARNING -     DUPLICATE: inhibition_rate == inhibition_marker_rate (identical values in training set)
+2026-06-11 23:50:05,729 - INFO -   These 3 features will be DROPPED from the modeling feature set (zero discriminative power)
+2026-06-11 23:50:05,729 - INFO -   They remain in the output parquet for audit purposes
+2026-06-11 23:50:05,730 - INFO -   Valid features for scaling: 98
+2026-06-11 23:50:08,872 - INFO -   Saved scaler parameters to: /path/to/project/module1_results/features/robust_scaler_params.json
+2026-06-11 23:50:08,902 - INFO -   Saved feature selection manifest to: /path/to/project/module1_results/features/feature_selection.json
+2026-06-11 23:50:08,903 - INFO - ============================================================
+2026-06-11 23:50:08,903 - INFO - Saving outputs...
+2026-06-11 23:50:08,903 - INFO - ============================================================
+2026-06-11 23:50:09,723 - INFO -   Saved imputation flags: /path/to/project/module1_results/features/imputation_flags.parquet
+2026-06-11 23:50:17,958 - INFO -   Saved matched raw features: /path/to/project/module1_results/features/user_features_matched.parquet ((721985, 136))
+2026-06-11 23:50:27,045 - INFO -   Saved standardized features: /path/to/project/module1_results/features/user_features_standardized.parquet ((721985, 136))
+2026-06-11 23:50:27,045 - INFO - ============================================================
+2026-06-11 23:50:27,046 - INFO - PHASE 7: Generating quality report
+2026-06-11 23:50:27,046 - INFO - ============================================================
+2026-06-11 23:50:28,665 - INFO -   Saved quality report to: /path/to/project/module1_results/statistics/aggregation_report.json
+2026-06-11 23:50:28,666 - INFO - 
+  SUMMARY:
+2026-06-11 23:50:28,666 - INFO -     Users: 721985 (patients=127168, controls=594817)
+2026-06-11 23:50:28,666 - INFO -     Features: 98 valid, 3 constant (zero IQR)
+2026-06-11 23:50:28,668 - INFO -     Splits: train=505370, val=108308, test=108307
+2026-06-11 23:50:28,668 - INFO -     Leakage prevention: ✅ All statistics from training set only
+2026-06-11 23:50:28,668 - INFO - ================================================================================
+2026-06-11 23:50:28,668 - INFO - AGGREGATION COMPLETE
+2026-06-11 23:50:28,668 - INFO - ================================================================================

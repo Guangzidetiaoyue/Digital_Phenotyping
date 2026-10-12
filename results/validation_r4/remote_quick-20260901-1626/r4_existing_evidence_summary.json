@@ -1,0 +1,215 @@
+{
+  "feature_family_auroc": {
+    "mean_across_disorders": {
+      "all_dimensions": 0.8855537525404502,
+      "only_affective": 0.8245579608316985,
+      "only_pronoun": 0.7992793462475801,
+      "only_cognitive": 0.7421623519370727,
+      "only_behavioral": 0.6662276222163368,
+      "only_readability": 0.7149331410223605,
+      "only_temporal": 0.5970861357437451,
+      "only_social": 0.6532431912299682
+    },
+    "delta_from_all": {
+      "all_dimensions": 0.0,
+      "only_affective": -0.06099579170875169,
+      "only_pronoun": -0.08627440629287009,
+      "only_cognitive": -0.14339140060337752,
+      "only_behavioral": -0.2193261303241134,
+      "only_readability": -0.17062061151808972,
+      "only_temporal": -0.2884676167967051,
+      "only_social": -0.232310561310482
+    },
+    "per_disorder": {
+      "depression": {
+        "all_dimensions": 0.8619234786188213,
+        "only_affective": 0.8070125587423697,
+        "only_pronoun": 0.7798509589764245,
+        "only_cognitive": 0.7048506260026791,
+        "only_behavioral": 0.6423727609276334,
+        "only_readability": 0.7004828330900379,
+        "only_temporal": 0.5751037102096538,
+        "only_social": 0.634936555240909
+      },
+      "bipolar": {
+        "all_dimensions": 0.9025201599547844,
+        "only_affective": 0.8425107799898228,
+        "only_pronoun": 0.8261191126520888,
+        "only_cognitive": 0.7674629498872318,
+        "only_behavioral": 0.6798324417067204,
+        "only_readability": 0.7381768375693516,
+        "only_temporal": 0.6230009252087768,
+        "only_social": 0.660156611544684
+      },
+      "anxiety": {
+        "all_dimensions": 0.8927725024730385,
+        "only_affective": 0.8587433576966959,
+        "only_pronoun": 0.80277865368642,
+        "only_cognitive": 0.7339693742282869,
+        "only_behavioral": 0.6673976288077894,
+        "only_readability": 0.719428002674914,
+        "only_temporal": 0.5795741067091473,
+        "only_social": 0.6625445154318201
+      },
+      "ocd": {
+        "all_dimensions": 0.8842399879791307,
+        "only_affective": 0.8384303606145604,
+        "only_pronoun": 0.8057132750177682,
+        "only_cognitive": 0.766748986581707,
+        "only_behavioral": 0.670398671580749,
+        "only_readability": 0.716109621100835,
+        "only_temporal": 0.5832006669871699,
+        "only_social": 0.654019194975311
+      },
+      "ptsd": {
+        "all_dimensions": 0.9047549581396348,
+        "only_affective": 0.8548932708656164,
+        "only_pronoun": 0.8318210065857439,
+        "only_cognitive": 0.7651490266658059,
+        "only_behavioral": 0.7043109988378099,
+        "only_readability": 0.7436390269886364,
+        "only_temporal": 0.581366605732395,
+        "only_social": 0.6484396522038567
+      },
+      "bpd": {
+        "all_dimensions": 0.9219792309924018,
+        "only_affective": 0.8800366458148152,
+        "only_pronoun": 0.8581533949980198,
+        "only_cognitive": 0.788648186842007,
+        "only_behavioral": 0.7038401930490782,
+        "only_readability": 0.7487260428222262,
+        "only_temporal": 0.6281461807866056,
+        "only_social": 0.6645641154442726
+      },
+      "eating_disorders": {
+        "all_dimensions": 0.9231139723690944,
+        "only_affective": 0.8901993055724763,
+        "only_pronoun": 0.8589073828610415,
+        "only_cognitive": 0.7504479349918375,
+        "only_behavioral": 0.7314115080041909,
+        "only_readability": 0.7374235886065155,
+        "only_temporal": 0.5776507565605127,
+        "only_social": 0.7217491947077315
+      },
+      "schizophrenia": {
+        "all_dimensions": 0.8780153961509978,
+        "only_affective": 0.7809021439420187,
+        "only_pronoun": 0.7824094923130043,
+        "only_cognitive": 0.7431712799360677,
+        "only_behavioral": 0.605477246104217,
+        "only_readability": 0.7055068930237219,
+        "only_temporal": 0.6389113582489854,
+        "only_social": 0.6441470899943524
+      },
+      "adhd": {
+        "all_dimensions": 0.8351264349311952,
+        "only_affective": 0.7602417518459947,
+        "only_pronoun": 0.7396964630292315,
+        "only_cognitive": 0.7143307351419856,
+        "only_behavioral": 0.6266193367511417,
+        "only_readability": 0.6883138917683598,
+        "only_temporal": 0.5691281283703681,
+        "only_social": 0.626425464167266
+      },
+      "autism": {
+        "all_dimensions": 0.851091403795402,
+        "only_affective": 0.7326094332326151,
+        "only_pronoun": 0.7073437223560586,
+        "only_cognitive": 0.6868444190931182,
+        "only_behavioral": 0.6306154363940388,
+        "only_readability": 0.6515246725790067,
+        "only_temporal": 0.6147789186238372,
+        "only_social": 0.6154495185894788
+      }
+    }
+  },
+  "confounder_adjustment": {
+    "correlation_with_original": 0.9892035020922838,
+    "mean_abs_difference": 0.033214097843831523
+  },
+  "sample_size_stability_auroc": {
+    "depression": {
+      "0.25": 0.86,
+      "0.5": 0.861,
+      "0.75": 0.861,
+      "1.0": 0.861
+    },
+    "bipolar": {
+      "0.25": 0.901,
+      "0.5": 0.902,
+      "0.75": 0.902,
+      "1.0": 0.902
+    },
+    "anxiety": {
+      "0.25": 0.887,
+      "0.5": 0.891,
+      "0.75": 0.891,
+      "1.0": 0.892
+    },
+    "ocd": {
+      "0.25": 0.877,
+      "0.5": 0.881,
+      "0.75": 0.882,
+      "1.0": 0.884
+    },
+    "ptsd": {
+      "0.25": 0.899,
+      "0.5": 0.901,
+      "0.75": 0.903,
+      "1.0": 0.904
+    },
+    "bpd": {
+      "0.25": 0.916,
+      "0.5": 0.92,
+      "0.75": 0.921,
+      "1.0": 0.923
+    },
+    "eating_disorders": {
+      "0.25": 0.901,
+      "0.5": 0.915,
+      "0.75": 0.92,
+      "1.0": 0.922
+    },
+    "schizophrenia": {
+      "0.25": 0.862,
+      "0.5": 0.867,
+      "0.75": 0.872,
+      "1.0": 0.874
+    },
+    "adhd": {
+      "0.25": 0.831,
+      "0.5": 0.833,
+      "0.75": 0.833,
+      "1.0": 0.834
+    },
+    "autism": {
+      "0.25": 0.844,
+      "0.5": 0.848,
+      "0.75": 0.849,
+      "1.0": 0.85
+    }
+  },
+  "temporal_stability": {
+    "n_rows": 500,
+    "n_strong_monotone": 271,
+    "frac_strong_monotone": 0.542
+  },
+  "heterogeneity": {
+    "median_I2": 97.32324446759678,
+    "pct_high_heterogeneity": 1.0,
+    "n_features": 93
+  },
+  "did_placebo_negative_control": {
+    "true_did": 0.016064410241311194,
+    "n_placebos": 100,
+    "placebo_did_mean": 0.006101046252826009,
+    "placebo_did_std": 0.04371973719116974,
+    "n_exceeding_true": 100,
+    "placebo_p_value": 1.0,
+    "conclusion": "INCONCLUSIVE"
+  },
+  "multiclass": {
+    "macro_auroc": 0.7186035796210465,
+    "balanced_acc": 0.2598804216841168
+  }
+}

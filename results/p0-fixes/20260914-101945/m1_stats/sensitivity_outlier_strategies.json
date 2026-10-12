@@ -1,0 +1,72 @@
+{
+  "no_outlier_treatment": {
+    "per_disorder": {
+      "depression": 0.8607895274763099,
+      "bipolar": 0.9020720224595348,
+      "anxiety": 0.8926432958190612
+    },
+    "mean_auroc": 0.8851682819183019,
+    "sample_retention_rate": 1.0,
+    "outliers_replaced": 0
+  },
+  "winsorize_1_99": {
+    "per_disorder": {
+      "depression": 0.8624565408175683,
+      "bipolar": 0.9012369777130426,
+      "anxiety": 0.8939197721529695
+    },
+    "mean_auroc": 0.8858710968945268,
+    "sample_retention_rate": 1.0,
+    "outliers_replaced": 1145933
+  },
+  "winsorize_5_95": {
+    "per_disorder": {
+      "depression": 0.8628317667361083,
+      "bipolar": 0.8998606443904484,
+      "anxiety": 0.8940210010151756
+    },
+    "mean_auroc": 0.8855711373805774,
+    "sample_retention_rate": 1.0,
+    "outliers_replaced": 6156647
+  },
+  "z3_median_replace": {
+    "per_disorder": {
+      "depression": 0.8549433837662296,
+      "bipolar": 0.8906649423913731,
+      "anxiety": 0.8829946487017324
+    },
+    "mean_auroc": 0.8762009916197783,
+    "sample_retention_rate": 1.0,
+    "outliers_replaced": "942889"
+  },
+  "z2.5_median_replace": {
+    "per_disorder": {
+      "depression": 0.8507460936304406,
+      "bipolar": 0.8870962519739631,
+      "anxiety": 0.8779491438447984
+    },
+    "mean_auroc": 0.8719304964830674,
+    "sample_retention_rate": 1.0,
+    "outliers_replaced": "1579774"
+  },
+  "trimmed_winsorize": {
+    "per_disorder": {
+      "depression": 0.8628317891042353,
+      "bipolar": 0.8998614635710632,
+      "anxiety": 0.8940188181007805
+    },
+    "mean_auroc": 0.885570690258693,
+    "sample_retention_rate": 1.0,
+    "outliers_replaced": 6156647
+  },
+  "baseline_s02": {
+    "per_disorder": {
+      "depression": 0.8604419822520807,
+      "bipolar": 0.9021551112090744,
+      "anxiety": 0.8898756807150492
+    },
+    "mean_auroc": 0.8841575913920682,
+    "sample_retention_rate": 1.0,
+    "outliers_replaced": -1
+  }
+}

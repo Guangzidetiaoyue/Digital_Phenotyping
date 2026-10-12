@@ -1,0 +1,716 @@
+2026-04-28 23:38:21,988 - INFO - ================================================================================
+2026-04-28 23:38:21,989 - INFO - MODULE 1 - Step 05: Transdiagnostic Factor Analysis (v1.2)
+2026-04-28 23:38:21,989 - INFO - Fixes: clean matrix, FA orientation, varimax rotation,
+2026-04-28 23:38:21,989 - INFO -        consistent features, train-only PCA, subsampled t-SNE
+2026-04-28 23:38:21,989 - INFO - ================================================================================
+2026-04-28 23:38:22,104 - INFO - Using CLEAN effect size matrix: (98, 10)
+2026-04-28 23:38:22,111 - INFO - Effect size matrix: (98, 10)
+2026-04-28 23:38:22,111 - INFO - Significance matrix: (98, 10)
+2026-04-28 23:38:22,111 - INFO - Loading analysis features (consistent with s03/s04)...
+2026-04-28 23:38:22,161 - INFO -   Analysis features: 98
+2026-04-28 23:38:28,463 - INFO - Loaded user features: (722100, 133)
+2026-04-28 23:38:28,463 - INFO - 
+--- Factor Analysis on Effect-Size Profiles ---
+2026-04-28 23:38:28,463 - INFO -   Matrix shape: (98, 10) (features × disorders)
+2026-04-28 23:38:28,463 - INFO -   Features: 98, Disorders: 10
+2026-04-28 23:38:28,463 - INFO - Determining optimal number of factors...
+2026-04-28 23:38:28,463 - INFO -   Matrix: 98 observations × 10 variables
+2026-04-28 23:38:28,463 - INFO -   Max factors to test: 4
+2026-04-28 23:38:28,501 - INFO -   Kaiser criterion: 1 factors
+2026-04-28 23:38:28,589 - INFO -   Parallel analysis: 1 factors
+2026-04-28 23:38:28,589 - INFO -   Scree heuristic: 4 factors
+2026-04-28 23:38:28,589 - INFO -   Selected n_factors = 2
+2026-04-30 14:20:10,072 - INFO - ================================================================================
+2026-04-30 14:20:10,073 - INFO - MODULE 1 - Step 05: Transdiagnostic Factor Analysis (v1.2)
+2026-04-30 14:20:10,073 - INFO - Fixes: clean matrix, FA orientation, varimax rotation,
+2026-04-30 14:20:10,073 - INFO -        consistent features, train-only PCA, subsampled t-SNE
+2026-04-30 14:20:10,074 - INFO - ================================================================================
+2026-04-30 14:20:10,088 - INFO - Using CLEAN effect size matrix: (98, 10)
+2026-04-30 14:20:10,104 - INFO - Effect size matrix: (98, 10)
+2026-04-30 14:20:10,104 - INFO - Significance matrix: (98, 10)
+2026-04-30 14:20:10,104 - INFO - Loading analysis features (consistent with s03/s04)...
+2026-04-30 14:20:10,123 - INFO -   Analysis features: 98
+2026-04-30 14:20:16,235 - INFO - Loaded user features: (722100, 133)
+2026-04-30 14:20:16,236 - INFO - 
+--- Factor Analysis on Effect-Size Profiles ---
+2026-04-30 14:20:16,236 - INFO -   Matrix shape: (98, 10) (features × disorders)
+2026-04-30 14:20:16,236 - INFO -   Features: 98, Disorders: 10
+2026-04-30 14:20:16,236 - INFO - Determining optimal number of factors...
+2026-04-30 14:20:16,237 - INFO -   Matrix: 98 observations × 10 variables
+2026-04-30 14:20:16,237 - INFO -   Max factors to test: 4
+2026-04-30 14:20:16,238 - INFO -   Kaiser criterion: 1 factors
+2026-04-30 14:20:16,302 - INFO -   Parallel analysis: 1 factors
+2026-04-30 14:20:16,302 - INFO -   Scree heuristic: 4 factors
+2026-04-30 14:20:16,302 - INFO -   Selected n_factors = 2
+2026-05-04 23:10:54,003 - INFO - ================================================================================
+2026-05-04 23:10:54,006 - INFO - MODULE 1 - Step 05: Transdiagnostic Factor Analysis (v1.2)
+2026-05-04 23:10:54,006 - INFO - Fixes: clean matrix, FA orientation, varimax rotation,
+2026-05-04 23:10:54,007 - INFO -        consistent features, train-only PCA, subsampled t-SNE
+2026-05-04 23:10:54,007 - INFO - ================================================================================
+2026-05-04 23:10:54,023 - INFO - Using CLEAN effect size matrix: (98, 10)
+2026-05-04 23:10:54,027 - INFO - Effect size matrix: (98, 10)
+2026-05-04 23:10:54,028 - INFO - Significance matrix: (98, 10)
+2026-05-04 23:10:54,028 - INFO - Loading analysis features (consistent with s03/s04)...
+2026-05-04 23:10:54,042 - INFO -   Analysis features: 98
+2026-05-04 23:11:00,130 - INFO - Loaded user features: (722100, 133)
+2026-05-04 23:11:00,130 - INFO - 
+--- Factor Analysis on Effect-Size Profiles ---
+2026-05-04 23:11:00,130 - INFO -   Matrix shape: (98, 10) (features × disorders)
+2026-05-04 23:11:00,130 - INFO -   Features: 98, Disorders: 10
+2026-05-04 23:11:00,131 - INFO - Determining optimal number of factors...
+2026-05-04 23:11:00,131 - INFO -   Matrix: 98 observations × 10 variables
+2026-05-04 23:11:00,131 - INFO -   Max factors to test: 4
+2026-05-04 23:11:00,131 - INFO -   Kaiser criterion: 1 factors
+2026-05-04 23:11:00,210 - INFO -   Parallel analysis: 1 factors
+2026-05-04 23:11:00,210 - INFO -   Scree heuristic: 4 factors
+2026-05-04 23:11:00,210 - INFO -   Selected n_factors = 2
+2026-05-04 23:11:00,268 - INFO - 
+  Factor Analysis Results (n_factors=2):
+2026-05-04 23:11:00,269 - INFO -   Variance explained: [0.936 0.027]
+2026-05-04 23:11:00,269 - INFO -   Cumulative: [0.936 0.963]
+2026-05-04 23:11:00,269 - INFO - 
+  Factor_1 (variance=0.936):
+2026-05-04 23:11:00,269 - INFO -     Direction: 8+/2-
+2026-05-04 23:11:00,269 - INFO -     Top features:
+2026-05-04 23:11:00,269 - INFO -       anxiety_rate: +4.026
+2026-05-04 23:11:00,269 - INFO -       other_sub_ratio: -2.737
+2026-05-04 23:11:00,269 - INFO -       first_person_rate: +2.616
+2026-05-04 23:11:00,269 - INFO -       sadness_rate: +2.321
+2026-05-04 23:11:00,269 - INFO -       emotional_volatility: +2.294
+2026-05-04 23:11:00,269 - INFO -     Disorder scores:
+2026-05-04 23:11:00,269 - INFO -       bpd: +0.374
+2026-05-04 23:11:00,269 - INFO -       eating_disorders: +0.354
+2026-05-04 23:11:00,269 - INFO -       ptsd: +0.337
+2026-05-04 23:11:00,269 - INFO -       bipolar: +0.331
+2026-05-04 23:11:00,269 - INFO -       anxiety: +0.315
+2026-05-04 23:11:00,269 - INFO -       ocd: +0.315
+2026-05-04 23:11:00,269 - INFO -       depression: +0.269
+2026-05-04 23:11:00,269 - INFO -       schizophrenia: +0.266
+2026-05-04 23:11:00,269 - INFO -       adhd: +0.222
+2026-05-04 23:11:00,269 - INFO -       autism: +0.197
+2026-05-04 23:11:00,269 - INFO - 
+  Factor_2 (variance=0.027):
+2026-05-04 23:11:00,269 - INFO -     Direction: 7+/3-
+2026-05-04 23:11:00,269 - INFO -     Top features:
+2026-05-04 23:11:00,269 - INFO -       posts_per_day_log: +2.108
+2026-05-04 23:11:00,269 - INFO -       active_day_ratio: +2.040
+2026-05-04 23:11:00,269 - INFO -       n_posts_total_log: +2.037
+2026-05-04 23:11:00,269 - INFO -       exclamation_ratio: -1.908
+2026-05-04 23:11:00,269 - INFO -       vader_positive_mean: -1.770
+2026-05-04 23:11:00,269 - INFO -     Disorder scores:
+2026-05-04 23:11:00,269 - INFO -       autism: +0.116
+2026-05-04 23:11:00,269 - INFO -       eating_disorders: -0.079
+2026-05-04 23:11:00,269 - INFO -       bpd: -0.073
+2026-05-04 23:11:00,269 - INFO -       bipolar: -0.066
+2026-05-04 23:11:00,269 - INFO -       anxiety: -0.055
+2026-05-04 23:11:00,270 - INFO -       ocd: -0.030
+2026-05-04 23:11:00,270 - INFO -       ptsd: -0.026
+2026-05-04 23:11:00,270 - INFO -       depression: -0.026
+2026-05-04 23:11:00,270 - INFO -       adhd: +0.009
+2026-05-04 23:11:00,270 - INFO -       schizophrenia: -0.004
+2026-05-04 23:11:00,270 - INFO - 
+--- Disorder Clustering Analysis ---
+2026-05-04 23:11:00,291 - INFO -   Optimal clusters: 2 (silhouette = 0.658)
+2026-05-04 23:11:00,291 - INFO -   Cluster assignments: {'adhd': 1, 'anxiety': 1, 'autism': 2, 'bipolar': 1, 'bpd': 1, 'depression': 1, 'eating_disorders': 1, 'ocd': 1, 'ptsd': 1, 'schizophrenia': 1}
+2026-05-04 23:11:00,313 - INFO -   ARI (data-driven vs HiTOP): 0.088
+2026-05-04 23:11:00,314 - INFO -   NMI (data-driven vs HiTOP): 0.355
+2026-05-04 23:11:00,333 - INFO -   Disorder PCA variance: [0.6   0.108 0.104 0.077 0.051]
+2026-05-04 23:11:00,333 - INFO - 
+--- User-Level PCA ---
+2026-05-04 23:11:00,757 - INFO -   Using training set: 505464 users
+2026-05-04 23:11:01,395 - INFO -   Variance explained (top 10 PCs): [0.199 0.165 0.093 0.058 0.051 0.036 0.031 0.029 0.026 0.022]
+2026-05-04 23:11:01,397 - INFO -   Cumulative: [0.199 0.364 0.457 0.515 0.566 0.602 0.633 0.662 0.688 0.711]
+2026-05-04 23:11:01,424 - INFO -   Running t-SNE on 50000 subsampled users...
+2026-05-05 18:30:42,127 - INFO - ================================================================================
+2026-05-05 18:30:42,171 - INFO - MODULE 1 - Step 05: Transdiagnostic Factor Analysis (v1.2)
+2026-05-05 18:30:42,206 - INFO - Fixes: clean matrix, FA orientation, varimax rotation,
+2026-05-05 18:30:42,242 - INFO -        consistent features, train-only PCA, subsampled t-SNE
+2026-05-05 18:30:42,278 - INFO - ================================================================================
+2026-05-05 18:30:42,423 - INFO - Using CLEAN effect size matrix: (98, 10)
+2026-05-05 18:30:42,667 - INFO - Effect size matrix: (98, 10)
+2026-05-05 18:30:42,701 - INFO - Significance matrix: (98, 10)
+2026-05-05 18:30:42,737 - INFO - Loading analysis features (consistent with s03/s04)...
+2026-05-05 18:30:42,985 - INFO -   Analysis features: 98
+2026-05-05 18:30:51,113 - INFO - Loaded user features: (722100, 133)
+2026-05-05 18:30:51,114 - INFO - 
+--- Factor Analysis on Effect-Size Profiles ---
+2026-05-05 18:30:51,115 - INFO -   Matrix shape: (98, 10) (features × disorders)
+2026-05-05 18:30:51,115 - INFO -   Features: 98, Disorders: 10
+2026-05-05 18:30:51,116 - INFO - Determining optimal number of factors...
+2026-05-05 18:30:51,116 - INFO -   Matrix: 98 observations × 10 variables
+2026-05-05 18:30:51,116 - INFO -   Max factors to test: 4
+2026-05-05 18:30:51,117 - INFO -   Kaiser criterion: 1 factors
+2026-05-05 18:30:51,218 - INFO -   Parallel analysis: 1 factors
+2026-05-05 18:30:51,219 - INFO -   Scree heuristic: 4 factors
+2026-05-05 18:30:51,219 - INFO -   Selected n_factors = 2
+2026-05-05 18:30:51,257 - INFO - 
+  Factor Analysis Results (n_factors=2):
+2026-05-05 18:30:51,258 - INFO -   Variance explained: [0.936 0.027]
+2026-05-05 18:30:51,258 - INFO -   Cumulative: [0.936 0.963]
+2026-05-05 18:30:51,258 - INFO - 
+  Factor_1 (variance=0.936):
+2026-05-05 18:30:51,259 - INFO -     Direction: 8+/2-
+2026-05-05 18:30:51,259 - INFO -     Top features:
+2026-05-05 18:30:51,259 - INFO -       anxiety_rate: +4.026
+2026-05-05 18:30:51,259 - INFO -       other_sub_ratio: -2.737
+2026-05-05 18:30:51,259 - INFO -       first_person_rate: +2.616
+2026-05-05 18:30:51,260 - INFO -       sadness_rate: +2.321
+2026-05-05 18:30:51,260 - INFO -       emotional_volatility: +2.294
+2026-05-05 18:30:51,260 - INFO -     Disorder scores:
+2026-05-05 18:30:51,260 - INFO -       bpd: +0.374
+2026-05-05 18:30:51,260 - INFO -       eating_disorders: +0.354
+2026-05-05 18:30:51,261 - INFO -       ptsd: +0.337
+2026-05-05 18:30:51,261 - INFO -       bipolar: +0.331
+2026-05-05 18:30:51,261 - INFO -       anxiety: +0.315
+2026-05-05 18:30:51,261 - INFO -       ocd: +0.315
+2026-05-05 18:30:51,261 - INFO -       depression: +0.269
+2026-05-05 18:30:51,262 - INFO -       schizophrenia: +0.266
+2026-05-05 18:30:51,262 - INFO -       adhd: +0.222
+2026-05-05 18:30:51,262 - INFO -       autism: +0.197
+2026-05-05 18:30:51,262 - INFO - 
+  Factor_2 (variance=0.027):
+2026-05-05 18:30:51,263 - INFO -     Direction: 7+/3-
+2026-05-05 18:30:51,263 - INFO -     Top features:
+2026-05-05 18:30:51,263 - INFO -       posts_per_day_log: +2.108
+2026-05-05 18:30:51,263 - INFO -       active_day_ratio: +2.040
+2026-05-05 18:30:51,263 - INFO -       n_posts_total_log: +2.037
+2026-05-05 18:30:51,264 - INFO -       exclamation_ratio: -1.908
+2026-05-05 18:30:51,264 - INFO -       vader_positive_mean: -1.770
+2026-05-05 18:30:51,264 - INFO -     Disorder scores:
+2026-05-05 18:30:51,264 - INFO -       autism: +0.116
+2026-05-05 18:30:51,264 - INFO -       eating_disorders: -0.079
+2026-05-05 18:30:51,265 - INFO -       bpd: -0.073
+2026-05-05 18:30:51,265 - INFO -       bipolar: -0.066
+2026-05-05 18:30:51,265 - INFO -       anxiety: -0.055
+2026-05-05 18:30:51,265 - INFO -       ocd: -0.030
+2026-05-05 18:30:51,265 - INFO -       ptsd: -0.026
+2026-05-05 18:30:51,266 - INFO -       depression: -0.026
+2026-05-05 18:30:51,266 - INFO -       adhd: +0.009
+2026-05-05 18:30:51,266 - INFO -       schizophrenia: -0.004
+2026-05-05 18:30:51,266 - INFO - 
+--- Disorder Clustering Analysis ---
+2026-05-05 18:30:51,271 - INFO -   Optimal clusters: 2 (silhouette = 0.658)
+2026-05-05 18:30:51,271 - INFO -   Cluster assignments: {'adhd': 1, 'anxiety': 1, 'autism': 2, 'bipolar': 1, 'bpd': 1, 'depression': 1, 'eating_disorders': 1, 'ocd': 1, 'ptsd': 1, 'schizophrenia': 1}
+2026-05-05 18:30:51,274 - INFO -   ARI (data-driven vs HiTOP): 0.088
+2026-05-05 18:30:51,275 - INFO -   NMI (data-driven vs HiTOP): 0.355
+2026-05-05 18:30:51,305 - INFO -   Disorder PCA variance: [0.6   0.108 0.104 0.077 0.051]
+2026-05-05 18:30:51,305 - INFO - 
+--- User-Level PCA ---
+2026-05-05 18:30:51,834 - INFO -   Using training set: 505464 users
+2026-05-05 18:30:52,507 - INFO -   Variance explained (top 10 PCs): [0.199 0.165 0.093 0.058 0.051 0.036 0.031 0.029 0.026 0.022]
+2026-05-05 18:30:52,508 - INFO -   Cumulative: [0.199 0.364 0.457 0.515 0.566 0.602 0.633 0.662 0.688 0.711]
+2026-05-05 18:30:52,516 - INFO -   Running t-SNE on 50000 subsampled users...
+2026-05-05 18:33:23,044 - INFO -   t-SNE complete: (50000, 4)
+2026-05-05 18:33:23,073 - INFO - 
+--- Transdiagnostic vs Specific Feature Classification ---
+2026-05-05 18:33:23,084 - INFO -   Feature categories:
+2026-05-05 18:33:23,084 - INFO -     non_significant: 39
+2026-05-05 18:33:23,085 - INFO -     transdiagnostic: 33
+2026-05-05 18:33:23,085 - INFO -     specific: 22
+2026-05-05 18:33:23,085 - INFO -     mixed: 4
+2026-05-05 18:33:23,085 - INFO - 
+  Top transdiagnostic features:
+2026-05-05 18:33:23,086 - INFO -     anxiety_rate: n_disorders=10, mean |g|=1.363, dir_consistency=1.00
+2026-05-05 18:33:23,086 - INFO -     first_person_rate: n_disorders=10, mean |g|=0.899, dir_consistency=1.00
+2026-05-05 18:33:23,086 - INFO -     emotional_volatility: n_disorders=10, mean |g|=0.789, dir_consistency=1.00
+2026-05-05 18:33:23,086 - INFO -     vader_compound_std: n_disorders=10, mean |g|=0.789, dir_consistency=1.00
+2026-05-05 18:33:23,086 - INFO -     sadness_rate: n_disorders=10, mean |g|=0.783, dir_consistency=1.00
+2026-05-05 18:33:23,086 - INFO -     insight_rate: n_disorders=10, mean |g|=0.764, dir_consistency=1.00
+2026-05-05 18:33:23,086 - INFO -     self_focus_index: n_disorders=10, mean |g|=0.761, dir_consistency=1.00
+2026-05-05 18:33:23,086 - INFO -     past_focus_rate: n_disorders=10, mean |g|=0.672, dir_consistency=1.00
+2026-05-05 18:33:23,087 - INFO -     other_sub_ratio: n_disorders=10, mean |g|=0.669, dir_consistency=1.00
+2026-05-05 18:33:23,087 - INFO -     temporal_balance: n_disorders=10, mean |g|=0.579, dir_consistency=1.00
+2026-05-05 18:33:23,087 - INFO - 
+  Top specific features:
+2026-05-05 18:33:23,087 - INFO -     score_median: specific to eating_disorders, max |g|=0.393
+2026-05-05 18:33:23,088 - INFO -     posts_per_day_log: specific to autism, max |g|=0.312
+2026-05-05 18:33:23,088 - INFO -     n_posts_total_log: specific to autism;bpd, max |g|=0.279
+2026-05-05 18:33:23,088 - INFO -     posts_per_active_day_log: specific to autism, max |g|=0.273
+2026-05-05 18:33:23,088 - INFO -     active_day_ratio: specific to autism, max |g|=0.272
+2026-05-05 18:33:23,088 - INFO -     information_sub_ratio: specific to bpd;eating_disorders, max |g|=0.265
+2026-05-05 18:33:23,088 - INFO -     anger_rate: specific to anxiety;eating_disorders, max |g|=0.262
+2026-05-05 18:33:23,088 - INFO -     question_ratio: specific to ptsd, max |g|=0.259
+2026-05-05 18:33:23,088 - INFO -     posts_per_day: specific to autism, max |g|=0.258
+2026-05-05 18:33:23,088 - INFO -     score_mean_log_signed: specific to eating_disorders, max |g|=0.251
+2026-05-05 18:33:23,088 - INFO - 
+--- Building Disorder Digital Phenotype Profiles ---
+2026-05-05 18:33:23,094 - INFO - 
+  ADHD:
+2026-05-05 18:33:23,094 - INFO -     anxiety_rate                             g=+0.863 (elevated) [affective] ***
+2026-05-05 18:33:23,095 - INFO -     insight_rate                             g=+0.651 (elevated) [cognitive] ***
+2026-05-05 18:33:23,095 - INFO -     emotional_volatility                     g=+0.638 (elevated) [affective] ***
+2026-05-05 18:33:23,095 - INFO -     vader_compound_std                       g=+0.638 (elevated) [affective] ***
+2026-05-05 18:33:23,095 - INFO -     first_person_rate                        g=+0.576 (elevated) [pronoun] ***
+2026-05-05 18:33:23,100 - INFO - 
+  Anxiety Disorders:
+2026-05-05 18:33:23,100 - INFO -     anxiety_rate                             g=+1.902 (elevated) [affective] ***
+2026-05-05 18:33:23,100 - INFO -     first_person_rate                        g=+0.901 (elevated) [pronoun] ***
+2026-05-05 18:33:23,100 - INFO -     self_focus_index                         g=+0.793 (elevated) [pronoun] ***
+2026-05-05 18:33:23,100 - INFO -     emotional_volatility                     g=+0.783 (elevated) [affective] ***
+2026-05-05 18:33:23,100 - INFO -     vader_compound_std                       g=+0.783 (elevated) [affective] ***
+2026-05-05 18:33:23,105 - INFO - 
+  Autism Spectrum:
+2026-05-05 18:33:23,106 - INFO -     anxiety_rate                             g=+0.797 (elevated) [affective] ***
+2026-05-05 18:33:23,106 - INFO -     insight_rate                             g=+0.638 (elevated) [cognitive] ***
+2026-05-05 18:33:23,106 - INFO -     other_sub_ratio                          g=-0.590 (reduced) [community] ***
+2026-05-05 18:33:23,106 - INFO -     vader_compound_std                       g=+0.514 (elevated) [affective] ***
+2026-05-05 18:33:23,106 - INFO -     emotional_volatility                     g=+0.514 (elevated) [affective] ***
+2026-05-05 18:33:23,111 - INFO - 
+  Bipolar Disorder:
+2026-05-05 18:33:23,111 - INFO -     anxiety_rate                             g=+1.352 (elevated) [affective] ***
+2026-05-05 18:33:23,111 - INFO -     first_person_rate                        g=+1.044 (elevated) [pronoun] ***
+2026-05-05 18:33:23,111 - INFO -     sadness_rate                             g=+0.974 (elevated) [affective] ***
+2026-05-05 18:33:23,111 - INFO -     other_sub_ratio                          g=-0.918 (reduced) [community] ***
+2026-05-05 18:33:23,111 - INFO -     self_focus_index                         g=+0.918 (elevated) [pronoun] ***
+2026-05-05 18:33:23,116 - INFO - 
+  Borderline PD:
+2026-05-05 18:33:23,117 - INFO -     anxiety_rate                             g=+1.610 (elevated) [affective] ***
+2026-05-05 18:33:23,117 - INFO -     first_person_rate                        g=+1.220 (elevated) [pronoun] ***
+2026-05-05 18:33:23,117 - INFO -     sadness_rate                             g=+1.178 (elevated) [affective] ***
+2026-05-05 18:33:23,117 - INFO -     emotional_volatility                     g=+1.028 (elevated) [affective] ***
+2026-05-05 18:33:23,117 - INFO -     vader_compound_std                       g=+1.028 (elevated) [affective] ***
+2026-05-05 18:33:23,122 - INFO - 
+  Depression:
+2026-05-05 18:33:23,122 - INFO -     anxiety_rate                             g=+1.073 (elevated) [affective] ***
+2026-05-05 18:33:23,122 - INFO -     sadness_rate                             g=+0.999 (elevated) [affective] ***
+2026-05-05 18:33:23,122 - INFO -     first_person_rate                        g=+0.852 (elevated) [pronoun] ***
+2026-05-05 18:33:23,122 - INFO -     vader_compound_std                       g=+0.714 (elevated) [affective] ***
+2026-05-05 18:33:23,122 - INFO -     emotional_volatility                     g=+0.714 (elevated) [affective] ***
+2026-05-05 18:33:23,128 - INFO - 
+  Eating Disorders:
+2026-05-05 18:33:23,128 - INFO -     anxiety_rate                             g=+1.672 (elevated) [affective] ***
+2026-05-05 18:33:23,128 - INFO -     first_person_rate                        g=+1.137 (elevated) [pronoun] ***
+2026-05-05 18:33:23,128 - INFO -     sadness_rate                             g=+1.110 (elevated) [affective] ***
+2026-05-05 18:33:23,128 - INFO -     self_focus_index                         g=+1.073 (elevated) [pronoun] ***
+2026-05-05 18:33:23,128 - INFO -     emotional_volatility                     g=+0.954 (elevated) [affective] ***
+2026-05-05 18:33:23,133 - INFO - 
+  OCD:
+2026-05-05 18:33:23,133 - INFO -     anxiety_rate                             g=+1.807 (elevated) [affective] ***
+2026-05-05 18:33:23,133 - INFO -     insight_rate                             g=+0.960 (elevated) [cognitive] ***
+2026-05-05 18:33:23,133 - INFO -     first_person_rate                        g=+0.837 (elevated) [pronoun] ***
+2026-05-05 18:33:23,133 - INFO -     vader_compound_std                       g=+0.765 (elevated) [affective] ***
+2026-05-05 18:33:23,133 - INFO -     emotional_volatility                     g=+0.765 (elevated) [affective] ***
+2026-05-05 18:33:23,138 - INFO - 
+  PTSD:
+2026-05-05 18:33:23,139 - INFO -     anxiety_rate                             g=+1.416 (elevated) [affective] ***
+2026-05-05 18:33:23,139 - INFO -     first_person_rate                        g=+1.055 (elevated) [pronoun] ***
+2026-05-05 18:33:23,139 - INFO -     emotional_volatility                     g=+1.013 (elevated) [affective] ***
+2026-05-05 18:33:23,139 - INFO -     vader_compound_std                       g=+1.013 (elevated) [affective] ***
+2026-05-05 18:33:23,139 - INFO -     past_focus_rate                          g=+0.884 (elevated) [temporal_linguistic] ***
+2026-05-05 18:33:23,144 - INFO - 
+  Schizophrenia:
+2026-05-05 18:33:23,144 - INFO -     anxiety_rate                             g=+1.136 (elevated) [affective] ***
+2026-05-05 18:33:23,144 - INFO -     insight_rate                             g=+0.891 (elevated) [cognitive] ***
+2026-05-05 18:33:23,144 - INFO -     first_person_rate                        g=+0.890 (elevated) [pronoun] ***
+2026-05-05 18:33:23,144 - INFO -     other_sub_ratio                          g=-0.831 (reduced) [community] ***
+2026-05-05 18:33:23,144 - INFO -     self_focus_index                         g=+0.701 (elevated) [pronoun] ***
+2026-05-05 18:33:23,144 - INFO - 
+Saving factor analysis results...
+2026-05-05 18:34:16,182 - INFO - 
+============================================================
+2026-05-05 18:34:16,182 - INFO - FACTOR ANALYSIS SUMMARY
+2026-05-05 18:34:16,182 - INFO - ============================================================
+2026-05-05 18:34:16,182 - INFO -   Features analyzed: 98 (artifacts excluded)
+2026-05-05 18:34:16,182 - INFO -   Factors extracted: 2
+2026-05-05 18:34:16,182 - INFO -   Variance explained: 96.3%
+2026-05-05 18:34:16,183 - INFO -   Optimal clusters: 2 (silhouette=0.658)
+2026-05-05 18:34:16,183 - INFO -   Transdiagnostic features: 33
+2026-05-05 18:34:16,183 - INFO -   Specific features: 22
+2026-05-05 18:34:16,183 - INFO -   Data-driven vs HiTOP: ARI=0.088, NMI=0.355
+2026-05-05 18:34:16,183 - INFO - ================================================================================
+2026-05-05 18:34:16,183 - INFO - FACTOR ANALYSIS COMPLETE
+2026-05-05 18:34:16,183 - INFO - ================================================================================
+2026-06-05 07:12:00,542 - INFO - ================================================================================
+2026-06-05 07:12:00,564 - INFO - MODULE 1 - Step 05: Transdiagnostic Factor Analysis (v1.2)
+2026-06-05 07:12:00,565 - INFO - Fixes: clean matrix, FA orientation, varimax rotation,
+2026-06-05 07:12:00,565 - INFO -        consistent features, train-only PCA, subsampled t-SNE
+2026-06-05 07:12:00,565 - INFO - ================================================================================
+2026-06-05 07:12:00,679 - INFO - Using CLEAN effect size matrix: (90, 10)
+2026-06-05 07:12:00,695 - INFO - Effect size matrix: (90, 10)
+2026-06-05 07:12:00,695 - INFO - Significance matrix: (90, 10)
+2026-06-05 07:12:00,695 - INFO - Loading analysis features (consistent with s03/s04)...
+2026-06-05 07:12:00,720 - INFO -   Analysis features: 90
+2026-06-05 07:12:07,711 - INFO - Loaded user features: (721995, 136)
+2026-06-05 07:12:07,712 - INFO - 
+--- Factor Analysis on Effect-Size Profiles ---
+2026-06-05 07:12:07,712 - INFO -   Matrix shape: (90, 10) (features × disorders)
+2026-06-05 07:12:07,712 - INFO -   Features: 90, Disorders: 10
+2026-06-05 07:12:07,712 - INFO - Determining optimal number of factors...
+2026-06-05 07:12:07,713 - INFO -   Matrix: 90 observations × 10 variables
+2026-06-05 07:12:07,713 - INFO -   Max factors to test: 4
+2026-06-05 07:12:07,751 - INFO -   Kaiser criterion: 1 factors
+2026-06-05 07:12:07,816 - INFO -   Parallel analysis: 1 factors
+2026-06-05 07:12:07,817 - INFO -   Scree heuristic: 4 factors
+2026-06-05 07:12:07,817 - INFO -   Selected n_factors = 2
+2026-06-05 07:12:07,952 - INFO - 
+  Factor Analysis Results (n_factors=2):
+2026-06-05 07:12:07,952 - INFO -   Variance explained: [0.941 0.023]
+2026-06-05 07:12:07,952 - INFO -   Cumulative: [0.941 0.964]
+2026-06-05 07:12:07,952 - INFO - 
+  Factor_1 (variance=0.941):
+2026-06-05 07:12:07,952 - INFO -     Direction: 8+/2-
+2026-06-05 07:12:07,952 - INFO -     Top features:
+2026-06-05 07:12:07,952 - INFO -       anxiety_rate: +3.773
+2026-06-05 07:12:07,952 - INFO -       first_person_rate: +3.086
+2026-06-05 07:12:07,952 - INFO -       other_sub_ratio: -2.581
+2026-06-05 07:12:07,952 - INFO -       self_focus_index: +2.535
+2026-06-05 07:12:07,952 - INFO -       mattr_vocabulary_diversity: -2.392
+2026-06-05 07:12:07,952 - INFO -     Disorder scores:
+2026-06-05 07:12:07,952 - INFO -       bpd: +0.380
+2026-06-05 07:12:07,952 - INFO -       eating_disorders: +0.366
+2026-06-05 07:12:07,952 - INFO -       bipolar: +0.347
+2026-06-05 07:12:07,952 - INFO -       ptsd: +0.345
+2026-06-05 07:12:07,952 - INFO -       ocd: +0.333
+2026-06-05 07:12:07,952 - INFO -       anxiety: +0.331
+2026-06-05 07:12:07,952 - INFO -       schizophrenia: +0.280
+2026-06-05 07:12:07,952 - INFO -       depression: +0.280
+2026-06-05 07:12:07,952 - INFO -       adhd: +0.236
+2026-06-05 07:12:07,952 - INFO -       autism: +0.210
+2026-06-05 07:12:07,952 - INFO - 
+  Factor_2 (variance=0.023):
+2026-06-05 07:12:07,952 - INFO -     Direction: 5+/5-
+2026-06-05 07:12:07,952 - INFO -     Top features:
+2026-06-05 07:12:07,952 - INFO -       posts_per_day_log: +2.184
+2026-06-05 07:12:07,952 - INFO -       active_day_ratio: +2.103
+2026-06-05 07:12:07,952 - INFO -       n_posts_total_log: +2.084
+2026-06-05 07:12:07,952 - INFO -       exclamation_ratio: -1.988
+2026-06-05 07:12:07,952 - INFO -       vader_positive_mean: -1.832
+2026-06-05 07:12:07,952 - INFO -     Disorder scores:
+2026-06-05 07:12:07,952 - INFO -       autism: +0.114
+2026-06-05 07:12:07,952 - INFO -       eating_disorders: -0.070
+2026-06-05 07:12:07,952 - INFO -       bpd: -0.065
+2026-06-05 07:12:07,952 - INFO -       bipolar: -0.062
+2026-06-05 07:12:07,952 - INFO -       anxiety: -0.055
+2026-06-05 07:12:07,952 - INFO -       ocd: -0.030
+2026-06-05 07:12:07,952 - INFO -       ptsd: -0.030
+2026-06-05 07:12:07,952 - INFO -       depression: -0.023
+2026-06-05 07:12:07,952 - INFO -       adhd: +0.007
+2026-06-05 07:12:07,952 - INFO -       schizophrenia: -0.004
+2026-06-05 07:12:07,952 - INFO - 
+--- Disorder Clustering Analysis ---
+2026-06-05 07:12:07,955 - INFO -   Optimal clusters: 2 (silhouette = 0.650)
+2026-06-05 07:12:07,955 - INFO -   Cluster assignments: {'adhd': 1, 'anxiety': 1, 'autism': 2, 'bipolar': 1, 'bpd': 1, 'depression': 1, 'eating_disorders': 1, 'ocd': 1, 'ptsd': 1, 'schizophrenia': 1}
+2026-06-05 07:12:07,993 - INFO -   ARI (data-driven vs HiTOP): 0.088
+2026-06-05 07:12:07,993 - INFO -   NMI (data-driven vs HiTOP): 0.355
+2026-06-05 07:12:08,018 - INFO -   Disorder PCA variance: [0.576 0.123 0.103 0.077 0.057]
+2026-06-05 07:12:08,018 - INFO - 
+--- User-Level PCA ---
+2026-06-05 07:12:08,466 - INFO -   Using training set: 505384 users
+2026-06-05 07:12:09,025 - INFO -   Variance explained (top 10 PCs): [0.21  0.168 0.09  0.063 0.052 0.038 0.033 0.026 0.022 0.021]
+2026-06-05 07:12:09,026 - INFO -   Cumulative: [0.21  0.378 0.468 0.531 0.583 0.62  0.653 0.679 0.701 0.722]
+2026-06-05 07:12:09,034 - INFO -   Running t-SNE on 50000 subsampled users...
+2026-06-05 07:14:04,145 - INFO -   t-SNE complete: (50000, 4)
+2026-06-05 07:14:04,168 - INFO - 
+--- Transdiagnostic vs Specific Feature Classification ---
+2026-06-05 07:14:04,174 - INFO -   Feature categories:
+2026-06-05 07:14:04,175 - INFO -     non_significant: 35
+2026-06-05 07:14:04,175 - INFO -     transdiagnostic: 31
+2026-06-05 07:14:04,175 - INFO -     specific: 20
+2026-06-05 07:14:04,175 - INFO -     mixed: 4
+2026-06-05 07:14:04,175 - INFO - 
+  Top transdiagnostic features:
+2026-06-05 07:14:04,175 - INFO -     anxiety_rate: n_disorders=10, mean |g|=1.326, dir_consistency=1.00
+2026-06-05 07:14:04,175 - INFO -     first_person_rate: n_disorders=10, mean |g|=1.062, dir_consistency=1.00
+2026-06-05 07:14:04,175 - INFO -     self_focus_index: n_disorders=10, mean |g|=0.882, dir_consistency=1.00
+2026-06-05 07:14:04,175 - INFO -     vader_compound_std: n_disorders=10, mean |g|=0.786, dir_consistency=1.00
+2026-06-05 07:14:04,175 - INFO -     sadness_rate: n_disorders=10, mean |g|=0.747, dir_consistency=1.00
+2026-06-05 07:14:04,175 - INFO -     insight_rate: n_disorders=10, mean |g|=0.716, dir_consistency=1.00
+2026-06-05 07:14:04,176 - INFO -     other_sub_ratio: n_disorders=10, mean |g|=0.675, dir_consistency=1.00
+2026-06-05 07:14:04,176 - INFO -     mattr_vocabulary_diversity: n_disorders=10, mean |g|=0.654, dir_consistency=1.00
+2026-06-05 07:14:04,176 - INFO -     past_focus_rate: n_disorders=10, mean |g|=0.639, dir_consistency=1.00
+2026-06-05 07:14:04,176 - INFO -     post_length_mean: n_disorders=10, mean |g|=0.603, dir_consistency=1.00
+2026-06-05 07:14:04,176 - INFO - 
+  Top specific features:
+2026-06-05 07:14:04,176 - INFO -     score_median: specific to eating_disorders, max |g|=0.404
+2026-06-05 07:14:04,176 - INFO -     posts_per_day_log: specific to autism, max |g|=0.318
+2026-06-05 07:14:04,176 - INFO -     causal_thinking_rate: specific to adhd;autism, max |g|=0.285
+2026-06-05 07:14:04,176 - INFO -     n_posts_total_log: specific to autism;bpd, max |g|=0.280
+2026-06-05 07:14:04,176 - INFO -     posts_per_active_day_log: specific to autism, max |g|=0.278
+2026-06-05 07:14:04,176 - INFO -     active_day_ratio: specific to autism, max |g|=0.275
+2026-06-05 07:14:04,176 - INFO -     anger_rate: specific to anxiety;eating_disorders, max |g|=0.272
+2026-06-05 07:14:04,176 - INFO -     information_sub_ratio: specific to bpd;eating_disorders, max |g|=0.258
+2026-06-05 07:14:04,176 - INFO -     question_ratio: specific to ptsd, max |g|=0.258
+2026-06-05 07:14:04,177 - INFO -     score_mean_log_signed: specific to eating_disorders, max |g|=0.257
+2026-06-05 07:14:04,177 - INFO - 
+--- Building Disorder Digital Phenotype Profiles ---
+2026-06-05 07:14:04,180 - INFO - 
+  ADHD:
+2026-06-05 07:14:04,180 - INFO -     anxiety_rate                             g=+0.844 (elevated) [affective] ***
+2026-06-05 07:14:04,180 - INFO -     first_person_rate                        g=+0.735 (elevated) [pronoun] ***
+2026-06-05 07:14:04,180 - INFO -     self_focus_index                         g=+0.678 (elevated) [pronoun] ***
+2026-06-05 07:14:04,180 - INFO -     vader_compound_std                       g=+0.634 (elevated) [affective] ***
+2026-06-05 07:14:04,180 - INFO -     insight_rate                             g=+0.626 (elevated) [cognitive] ***
+2026-06-05 07:14:04,183 - INFO - 
+  Anxiety Disorders:
+2026-06-05 07:14:04,183 - INFO -     anxiety_rate                             g=+1.871 (elevated) [affective] ***
+2026-06-05 07:14:04,183 - INFO -     first_person_rate                        g=+1.077 (elevated) [pronoun] ***
+2026-06-05 07:14:04,183 - INFO -     self_focus_index                         g=+0.923 (elevated) [pronoun] ***
+2026-06-05 07:14:04,183 - INFO -     vader_compound_std                       g=+0.782 (elevated) [affective] ***
+2026-06-05 07:14:04,183 - INFO -     past_focus_rate                          g=+0.700 (elevated) [temporal_linguistic] ***
+2026-06-05 07:14:04,185 - INFO - 
+  Autism Spectrum:
+2026-06-05 07:14:04,186 - INFO -     anxiety_rate                             g=+0.775 (elevated) [affective] ***
+2026-06-05 07:14:04,186 - INFO -     first_person_rate                        g=+0.644 (elevated) [pronoun] ***
+2026-06-05 07:14:04,186 - INFO -     insight_rate                             g=+0.604 (elevated) [cognitive] ***
+2026-06-05 07:14:04,186 - INFO -     other_sub_ratio                          g=-0.592 (reduced) [community] ***
+2026-06-05 07:14:04,186 - INFO -     self_focus_index                         g=+0.579 (elevated) [pronoun] ***
+2026-06-05 07:14:04,188 - INFO - 
+  Bipolar Disorder:
+2026-06-05 07:14:04,188 - INFO -     anxiety_rate                             g=+1.308 (elevated) [affective] ***
+2026-06-05 07:14:04,188 - INFO -     first_person_rate                        g=+1.233 (elevated) [pronoun] ***
+2026-06-05 07:14:04,188 - INFO -     self_focus_index                         g=+1.040 (elevated) [pronoun] ***
+2026-06-05 07:14:04,188 - INFO -     sadness_rate                             g=+0.937 (elevated) [affective] ***
+2026-06-05 07:14:04,188 - INFO -     other_sub_ratio                          g=-0.924 (reduced) [community] ***
+2026-06-05 07:14:04,191 - INFO - 
+  Borderline PD:
+2026-06-05 07:14:04,191 - INFO -     anxiety_rate                             g=+1.538 (elevated) [affective] ***
+2026-06-05 07:14:04,191 - INFO -     first_person_rate                        g=+1.349 (elevated) [pronoun] ***
+2026-06-05 07:14:04,191 - INFO -     sadness_rate                             g=+1.118 (elevated) [affective] ***
+2026-06-05 07:14:04,191 - INFO -     self_focus_index                         g=+1.051 (elevated) [pronoun] ***
+2026-06-05 07:14:04,191 - INFO -     vader_compound_std                       g=+1.024 (elevated) [affective] ***
+2026-06-05 07:14:04,194 - INFO - 
+  Depression:
+2026-06-05 07:14:04,194 - INFO -     anxiety_rate                             g=+1.041 (elevated) [affective] ***
+2026-06-05 07:14:04,194 - INFO -     first_person_rate                        g=+1.000 (elevated) [pronoun] ***
+2026-06-05 07:14:04,195 - INFO -     sadness_rate                             g=+0.963 (elevated) [affective] ***
+2026-06-05 07:14:04,195 - INFO -     self_focus_index                         g=+0.817 (elevated) [pronoun] ***
+2026-06-05 07:14:04,195 - INFO -     vader_compound_std                       g=+0.707 (elevated) [affective] ***
+2026-06-05 07:14:04,197 - INFO - 
+  Eating Disorders:
+2026-06-05 07:14:04,197 - INFO -     anxiety_rate                             g=+1.603 (elevated) [affective] ***
+2026-06-05 07:14:04,197 - INFO -     first_person_rate                        g=+1.318 (elevated) [pronoun] ***
+2026-06-05 07:14:04,197 - INFO -     self_focus_index                         g=+1.161 (elevated) [pronoun] ***
+2026-06-05 07:14:04,197 - INFO -     sadness_rate                             g=+1.046 (elevated) [affective] ***
+2026-06-05 07:14:04,197 - INFO -     vader_compound_std                       g=+0.957 (elevated) [affective] ***
+2026-06-05 07:14:04,200 - INFO - 
+  OCD:
+2026-06-05 07:14:04,200 - INFO -     anxiety_rate                             g=+1.766 (elevated) [affective] ***
+2026-06-05 07:14:04,200 - INFO -     first_person_rate                        g=+1.076 (elevated) [pronoun] ***
+2026-06-05 07:14:04,200 - INFO -     insight_rate                             g=+0.914 (elevated) [cognitive] ***
+2026-06-05 07:14:04,200 - INFO -     self_focus_index                         g=+0.867 (elevated) [pronoun] ***
+2026-06-05 07:14:04,200 - INFO -     vader_compound_std                       g=+0.772 (elevated) [affective] ***
+2026-06-05 07:14:04,203 - INFO - 
+  PTSD:
+2026-06-05 07:14:04,203 - INFO -     anxiety_rate                             g=+1.405 (elevated) [affective] ***
+2026-06-05 07:14:04,203 - INFO -     first_person_rate                        g=+1.094 (elevated) [pronoun] ***
+2026-06-05 07:14:04,203 - INFO -     vader_compound_std                       g=+1.018 (elevated) [affective] ***
+2026-06-05 07:14:04,203 - INFO -     self_focus_index                         g=+0.872 (elevated) [pronoun] ***
+2026-06-05 07:14:04,203 - INFO -     past_focus_rate                          g=+0.856 (elevated) [temporal_linguistic] ***
+2026-06-05 07:14:04,206 - INFO - 
+  Schizophrenia:
+2026-06-05 07:14:04,206 - INFO -     anxiety_rate                             g=+1.112 (elevated) [affective] ***
+2026-06-05 07:14:04,206 - INFO -     first_person_rate                        g=+1.098 (elevated) [pronoun] ***
+2026-06-05 07:14:04,206 - INFO -     other_sub_ratio                          g=-0.850 (reduced) [community] ***
+2026-06-05 07:14:04,206 - INFO -     insight_rate                             g=+0.845 (elevated) [cognitive] ***
+2026-06-05 07:14:04,206 - INFO -     self_focus_index                         g=+0.832 (elevated) [pronoun] ***
+2026-06-05 07:14:04,206 - INFO - 
+Saving factor analysis results...
+2026-06-05 07:14:07,438 - INFO - 
+============================================================
+2026-06-05 07:14:07,439 - INFO - FACTOR ANALYSIS SUMMARY
+2026-06-05 07:14:07,439 - INFO - ============================================================
+2026-06-05 07:14:07,439 - INFO -   Features analyzed: 90 (artifacts excluded)
+2026-06-05 07:14:07,439 - INFO -   Factors extracted: 2
+2026-06-05 07:14:07,439 - INFO -   Variance explained: 96.4%
+2026-06-05 07:14:07,439 - INFO -   Optimal clusters: 2 (silhouette=0.650)
+2026-06-05 07:14:07,439 - INFO -   Transdiagnostic features: 31
+2026-06-05 07:14:07,439 - INFO -   Specific features: 20
+2026-06-05 07:14:07,440 - INFO -   Data-driven vs HiTOP: ARI=0.088, NMI=0.355
+2026-06-05 07:14:07,440 - INFO - ================================================================================
+2026-06-05 07:14:07,440 - INFO - FACTOR ANALYSIS COMPLETE
+2026-06-05 07:14:07,440 - INFO - ================================================================================
+2026-06-12 04:30:57,042 - INFO - ================================================================================
+2026-06-12 04:30:57,104 - INFO - MODULE 1 - Step 05: Transdiagnostic Factor Analysis (v1.2)
+2026-06-12 04:30:57,104 - INFO - Fixes: clean matrix, FA orientation, varimax rotation,
+2026-06-12 04:30:57,105 - INFO -        consistent features, train-only PCA, subsampled t-SNE
+2026-06-12 04:30:57,105 - INFO - ================================================================================
+2026-06-12 04:30:57,187 - INFO - Using CLEAN effect size matrix: (93, 10)
+2026-06-12 04:30:57,202 - INFO - Effect size matrix: (93, 10)
+2026-06-12 04:30:57,203 - INFO - Significance matrix: (93, 10)
+2026-06-12 04:30:57,203 - INFO - Loading analysis features (consistent with s03/s04)...
+2026-06-12 04:30:57,228 - INFO -   Analysis features: 93
+2026-06-12 04:31:03,310 - INFO - Loaded user features: (721985, 136)
+2026-06-12 04:31:03,311 - INFO - 
+--- Factor Analysis on Effect-Size Profiles ---
+2026-06-12 04:31:03,311 - INFO -   Matrix shape: (93, 10) (features × disorders)
+2026-06-12 04:31:03,311 - INFO -   Features: 93, Disorders: 10
+2026-06-12 04:31:03,312 - INFO -   [强制设定] n_factors = 3 (基于HiTOP临床层次模型)
+2026-06-12 04:31:03,492 - INFO - 
+  Factor Analysis Results (n_factors=3):
+2026-06-12 04:31:03,493 - INFO -   Variance explained: [0.939 0.025 0.011]
+2026-06-12 04:31:03,493 - INFO -   Cumulative: [0.939 0.963 0.975]
+2026-06-12 04:31:03,494 - INFO - 
+  Factor_1 (variance=0.939):
+2026-06-12 04:31:03,495 - INFO -     Top features:
+2026-06-12 04:31:03,495 - INFO -       other_sub_ratio: -2.415
+2026-06-12 04:31:03,496 - INFO -       insight_rate: +1.929
+2026-06-12 04:31:03,496 - INFO -       mattr_vocabulary_diversity: -1.776
+2026-06-12 04:31:03,496 - INFO -       posts_per_day_log: +1.720
+2026-06-12 04:31:03,496 - INFO -       net_emotion_tone: -1.645
+2026-06-12 04:31:03,496 - INFO -     Top disorders:
+2026-06-12 04:31:03,497 - INFO -       autism: +0.216
+2026-06-12 04:31:03,497 - INFO -       ptsd: +0.172
+2026-06-12 04:31:03,497 - INFO -       bpd: +0.164
+2026-06-12 04:31:03,497 - INFO -       ocd: +0.161
+2026-06-12 04:31:03,497 - INFO -       schizophrenia: +0.161
+2026-06-12 04:31:03,498 - INFO - 
+  Factor_2 (variance=0.025):
+2026-06-12 04:31:03,498 - INFO -     Top features:
+2026-06-12 04:31:03,498 - INFO -       anxiety_rate: +5.726
+2026-06-12 04:31:03,498 - INFO -       first_person_rate: +2.411
+2026-06-12 04:31:03,498 - INFO -       self_focus_index: +2.000
+2026-06-12 04:31:03,499 - INFO -       past_focus_rate: +1.639
+2026-06-12 04:31:03,499 - INFO -       vader_compound_std: +1.621
+2026-06-12 04:31:03,499 - INFO -     Top disorders:
+2026-06-12 04:31:03,499 - INFO -       bpd: +0.319
+2026-06-12 04:31:03,499 - INFO -       eating_disorders: +0.316
+2026-06-12 04:31:03,500 - INFO -       anxiety: +0.306
+2026-06-12 04:31:03,500 - INFO -       bipolar: +0.294
+2026-06-12 04:31:03,500 - INFO -       ocd: +0.289
+2026-06-12 04:31:03,500 - INFO - 
+  Factor_3 (variance=0.011):
+2026-06-12 04:31:03,500 - INFO -     Top features:
+2026-06-12 04:31:03,500 - INFO -       anxiety_rate: +4.756
+2026-06-12 04:31:03,500 - INFO -       sadness_rate: -4.657
+2026-06-12 04:31:03,500 - INFO -       other_sub_ratio: +3.097
+2026-06-12 04:31:03,500 - INFO -       first_person_rate: -2.064
+2026-06-12 04:31:03,500 - INFO -       vader_compound_std: -1.388
+2026-06-12 04:31:03,500 - INFO -     Top disorders:
+2026-06-12 04:31:03,500 - INFO -       bpd: -0.130
+2026-06-12 04:31:03,500 - INFO -       bipolar: -0.120
+2026-06-12 04:31:03,500 - INFO -       ptsd: -0.102
+2026-06-12 04:31:03,500 - INFO -       eating_disorders: -0.102
+2026-06-12 04:31:03,500 - INFO -       depression: -0.096
+2026-06-12 04:31:03,500 - INFO - 
+--- Disorder Clustering Analysis ---
+2026-06-12 04:31:03,503 - INFO -   Optimal clusters: 2 (silhouette = 0.653)
+2026-06-12 04:31:03,503 - INFO -   Cluster assignments: {'adhd': 1, 'anxiety': 1, 'autism': 2, 'bipolar': 1, 'bpd': 1, 'depression': 1, 'eating_disorders': 1, 'ocd': 1, 'ptsd': 1, 'schizophrenia': 1}
+2026-06-12 04:31:03,576 - INFO -   ARI (data-driven vs HiTOP): 0.088
+2026-06-12 04:31:03,576 - INFO -   NMI (data-driven vs HiTOP): 0.355
+2026-06-12 04:31:03,594 - INFO -   Disorder PCA variance: [0.571 0.125 0.104 0.078 0.06 ]
+2026-06-12 04:31:03,594 - INFO - 
+--- User-Level PCA ---
+2026-06-12 04:31:04,028 - INFO -   Using training set: 505370 users
+2026-06-12 04:31:04,623 - INFO -   Variance explained (top 10 PCs): [0.186 0.151 0.115 0.08  0.056 0.046 0.033 0.029 0.021 0.021]
+2026-06-12 04:31:04,625 - INFO -   Cumulative: [0.186 0.336 0.451 0.531 0.587 0.633 0.666 0.695 0.716 0.737]
+2026-06-12 04:31:04,646 - INFO -   Running t-SNE on 50000 subsampled users...
+2026-06-12 04:32:53,177 - INFO -   t-SNE complete: (50000, 4)
+2026-06-12 04:32:53,200 - INFO - 
+--- Transdiagnostic vs Specific Feature Classification ---
+2026-06-12 04:32:53,206 - INFO -   Feature categories:
+2026-06-12 04:32:53,206 - INFO -     non_significant: 35
+2026-06-12 04:32:53,206 - INFO -     transdiagnostic: 32
+2026-06-12 04:32:53,206 - INFO -     specific: 21
+2026-06-12 04:32:53,206 - INFO -     mixed: 5
+2026-06-12 04:32:53,207 - INFO - 
+  Top transdiagnostic features:
+2026-06-12 04:32:53,207 - INFO -     anxiety_rate: n_disorders=10, mean |g|=1.324, dir_consistency=1.00
+2026-06-12 04:32:53,207 - INFO -     first_person_rate: n_disorders=10, mean |g|=1.060, dir_consistency=1.00
+2026-06-12 04:32:53,207 - INFO -     self_focus_index: n_disorders=10, mean |g|=0.879, dir_consistency=1.00
+2026-06-12 04:32:53,207 - INFO -     vader_compound_std: n_disorders=10, mean |g|=0.785, dir_consistency=1.00
+2026-06-12 04:32:53,207 - INFO -     sadness_rate: n_disorders=10, mean |g|=0.750, dir_consistency=1.00
+2026-06-12 04:32:53,207 - INFO -     insight_rate: n_disorders=10, mean |g|=0.715, dir_consistency=1.00
+2026-06-12 04:32:53,207 - INFO -     other_sub_ratio: n_disorders=10, mean |g|=0.673, dir_consistency=1.00
+2026-06-12 04:32:53,207 - INFO -     mattr_vocabulary_diversity: n_disorders=10, mean |g|=0.652, dir_consistency=1.00
+2026-06-12 04:32:53,207 - INFO -     past_focus_rate: n_disorders=10, mean |g|=0.637, dir_consistency=1.00
+2026-06-12 04:32:53,207 - INFO -     post_length_mean: n_disorders=10, mean |g|=0.602, dir_consistency=1.00
+2026-06-12 04:32:53,208 - INFO - 
+  Top specific features:
+2026-06-12 04:32:53,208 - INFO -     score_median: specific to eating_disorders, max |g|=0.413
+2026-06-12 04:32:53,208 - INFO -     posts_per_day_log: specific to autism, max |g|=0.321
+2026-06-12 04:32:53,208 - INFO -     causal_thinking_rate: specific to adhd;autism, max |g|=0.283
+2026-06-12 04:32:53,208 - INFO -     n_posts_total_log: specific to autism;bpd, max |g|=0.282
+2026-06-12 04:32:53,208 - INFO -     posts_per_active_day_log: specific to autism, max |g|=0.279
+2026-06-12 04:32:53,208 - INFO -     active_day_ratio: specific to autism, max |g|=0.279
+2026-06-12 04:32:53,208 - INFO -     score_mean_log_signed: specific to eating_disorders, max |g|=0.276
+2026-06-12 04:32:53,208 - INFO -     anger_rate: specific to anxiety;eating_disorders, max |g|=0.273
+2026-06-12 04:32:53,208 - INFO -     score_min: specific to bpd;eating_disorders, max |g|=0.262
+2026-06-12 04:32:53,208 - INFO -     information_sub_ratio: specific to bpd;eating_disorders, max |g|=0.258
+2026-06-12 04:32:53,208 - INFO - 
+--- Building Disorder Digital Phenotype Profiles ---
+2026-06-12 04:32:53,212 - INFO - 
+  ADHD:
+2026-06-12 04:32:53,212 - INFO -     anxiety_rate                             g=+0.843 (elevated) [affective] ***
+2026-06-12 04:32:53,212 - INFO -     first_person_rate                        g=+0.735 (elevated) [pronoun] ***
+2026-06-12 04:32:53,212 - INFO -     self_focus_index                         g=+0.677 (elevated) [pronoun] ***
+2026-06-12 04:32:53,212 - INFO -     vader_compound_std                       g=+0.632 (elevated) [affective] ***
+2026-06-12 04:32:53,212 - INFO -     insight_rate                             g=+0.624 (elevated) [cognitive] ***
+2026-06-12 04:32:53,215 - INFO - 
+  Anxiety Disorders:
+2026-06-12 04:32:53,215 - INFO -     anxiety_rate                             g=+1.867 (elevated) [affective] ***
+2026-06-12 04:32:53,215 - INFO -     first_person_rate                        g=+1.076 (elevated) [pronoun] ***
+2026-06-12 04:32:53,215 - INFO -     self_focus_index                         g=+0.921 (elevated) [pronoun] ***
+2026-06-12 04:32:53,215 - INFO -     vader_compound_std                       g=+0.782 (elevated) [affective] ***
+2026-06-12 04:32:53,215 - INFO -     past_focus_rate                          g=+0.695 (elevated) [temporal_linguistic] ***
+2026-06-12 04:32:53,218 - INFO - 
+  Autism Spectrum:
+2026-06-12 04:32:53,218 - INFO -     anxiety_rate                             g=+0.775 (elevated) [affective] ***
+2026-06-12 04:32:53,218 - INFO -     first_person_rate                        g=+0.647 (elevated) [pronoun] ***
+2026-06-12 04:32:53,218 - INFO -     insight_rate                             g=+0.607 (elevated) [cognitive] ***
+2026-06-12 04:32:53,218 - INFO -     other_sub_ratio                          g=-0.590 (reduced) [community] ***
+2026-06-12 04:32:53,218 - INFO -     self_focus_index                         g=+0.581 (elevated) [pronoun] ***
+2026-06-12 04:32:53,221 - INFO - 
+  Bipolar Disorder:
+2026-06-12 04:32:53,221 - INFO -     anxiety_rate                             g=+1.308 (elevated) [affective] ***
+2026-06-12 04:32:53,221 - INFO -     first_person_rate                        g=+1.231 (elevated) [pronoun] ***
+2026-06-12 04:32:53,221 - INFO -     self_focus_index                         g=+1.036 (elevated) [pronoun] ***
+2026-06-12 04:32:53,221 - INFO -     sadness_rate                             g=+0.937 (elevated) [affective] ***
+2026-06-12 04:32:53,221 - INFO -     other_sub_ratio                          g=-0.924 (reduced) [community] ***
+2026-06-12 04:32:53,224 - INFO - 
+  Borderline PD:
+2026-06-12 04:32:53,224 - INFO -     anxiety_rate                             g=+1.549 (elevated) [affective] ***
+2026-06-12 04:32:53,224 - INFO -     first_person_rate                        g=+1.360 (elevated) [pronoun] ***
+2026-06-12 04:32:53,224 - INFO -     sadness_rate                             g=+1.124 (elevated) [affective] ***
+2026-06-12 04:32:53,224 - INFO -     self_focus_index                         g=+1.062 (elevated) [pronoun] ***
+2026-06-12 04:32:53,224 - INFO -     vader_compound_std                       g=+1.027 (elevated) [affective] ***
+2026-06-12 04:32:53,227 - INFO - 
+  Depression:
+2026-06-12 04:32:53,227 - INFO -     anxiety_rate                             g=+1.041 (elevated) [affective] ***
+2026-06-12 04:32:53,227 - INFO -     first_person_rate                        g=+0.998 (elevated) [pronoun] ***
+2026-06-12 04:32:53,227 - INFO -     sadness_rate                             g=+0.964 (elevated) [affective] ***
+2026-06-12 04:32:53,227 - INFO -     self_focus_index                         g=+0.815 (elevated) [pronoun] ***
+2026-06-12 04:32:53,227 - INFO -     vader_compound_std                       g=+0.706 (elevated) [affective] ***
+2026-06-12 04:32:53,230 - INFO - 
+  Eating Disorders:
+2026-06-12 04:32:53,230 - INFO -     anxiety_rate                             g=+1.587 (elevated) [affective] ***
+2026-06-12 04:32:53,230 - INFO -     first_person_rate                        g=+1.303 (elevated) [pronoun] ***
+2026-06-12 04:32:53,230 - INFO -     self_focus_index                         g=+1.140 (elevated) [pronoun] ***
+2026-06-12 04:32:53,230 - INFO -     sadness_rate                             g=+1.044 (elevated) [affective] ***
+2026-06-12 04:32:53,230 - INFO -     vader_compound_std                       g=+0.946 (elevated) [affective] ***
+2026-06-12 04:32:53,233 - INFO - 
+  OCD:
+2026-06-12 04:32:53,233 - INFO -     anxiety_rate                             g=+1.760 (elevated) [affective] ***
+2026-06-12 04:32:53,233 - INFO -     first_person_rate                        g=+1.068 (elevated) [pronoun] ***
+2026-06-12 04:32:53,233 - INFO -     insight_rate                             g=+0.912 (elevated) [cognitive] ***
+2026-06-12 04:32:53,233 - INFO -     self_focus_index                         g=+0.863 (elevated) [pronoun] ***
+2026-06-12 04:32:53,233 - INFO -     vader_compound_std                       g=+0.772 (elevated) [affective] ***
+2026-06-12 04:32:53,236 - INFO - 
+  PTSD:
+2026-06-12 04:32:53,236 - INFO -     anxiety_rate                             g=+1.399 (elevated) [affective] ***
+2026-06-12 04:32:53,236 - INFO -     first_person_rate                        g=+1.085 (elevated) [pronoun] ***
+2026-06-12 04:32:53,236 - INFO -     vader_compound_std                       g=+1.010 (elevated) [affective] ***
+2026-06-12 04:32:53,236 - INFO -     self_focus_index                         g=+0.866 (elevated) [pronoun] ***
+2026-06-12 04:32:53,236 - INFO -     sadness_rate                             g=+0.853 (elevated) [affective] ***
+2026-06-12 04:32:53,239 - INFO - 
+  Schizophrenia:
+2026-06-12 04:32:53,239 - INFO -     anxiety_rate                             g=+1.111 (elevated) [affective] ***
+2026-06-12 04:32:53,239 - INFO -     first_person_rate                        g=+1.098 (elevated) [pronoun] ***
+2026-06-12 04:32:53,239 - INFO -     other_sub_ratio                          g=-0.852 (reduced) [community] ***
+2026-06-12 04:32:53,239 - INFO -     insight_rate                             g=+0.846 (elevated) [cognitive] ***
+2026-06-12 04:32:53,239 - INFO -     self_focus_index                         g=+0.830 (elevated) [pronoun] ***
+2026-06-12 04:32:53,239 - INFO - 
+Saving factor analysis results...
+2026-06-12 04:32:56,079 - INFO - 
+============================================================
+2026-06-12 04:32:56,079 - INFO - FACTOR ANALYSIS SUMMARY
+2026-06-12 04:32:56,079 - INFO - ============================================================
+2026-06-12 04:32:56,079 - INFO -   Features analyzed: 93 (artifacts excluded)
+2026-06-12 04:32:56,079 - INFO -   Factors extracted: 3
+2026-06-12 04:32:56,079 - INFO -   Variance explained: 97.5%
+2026-06-12 04:32:56,079 - INFO -   Optimal clusters: 2 (silhouette=0.653)
+2026-06-12 04:32:56,079 - INFO -   Transdiagnostic features: 32
+2026-06-12 04:32:56,079 - INFO -   Specific features: 21
+2026-06-12 04:32:56,079 - INFO -   Data-driven vs HiTOP: ARI=0.088, NMI=0.355
+2026-06-12 04:32:56,079 - INFO - ================================================================================
+2026-06-12 04:32:56,079 - INFO - FACTOR ANALYSIS COMPLETE
+2026-06-12 04:32:56,079 - INFO - ================================================================================

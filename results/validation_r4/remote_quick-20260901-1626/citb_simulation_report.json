@@ -1,0 +1,56 @@
+{
+  "method": "7 event-time bands; stable bands (excl. t0_surge) equal-weight; window-level OLS with cubic days_from_t0 + calendar + pair cluster",
+  "n_pairs": 150000,
+  "scenarios": [
+    {
+      "scenario": "A_true_trend",
+      "true_gamma": 0.03,
+      "naive_slope": 0.030157557384653724,
+      "naive_kendall_tau": 0.980952380952381,
+      "naive_kendall_p": 2.294149119545945e-11,
+      "naive_bias": 0.00015755738465372468,
+      "band_adjusted_slope": 0.027865916831164024,
+      "band_adjusted_kendall_tau": 0.980952380952381,
+      "band_adjusted_kendall_p": 2.294149119545945e-11,
+      "band_adjusted_bias": -0.002134083168835975,
+      "window_reg_cal_coef": 0.030030264776303148,
+      "window_reg_cal_bias": 3.0264776303148833e-05,
+      "n_windows": 5672763
+    },
+    {
+      "scenario": "B_no_trend_only_composition",
+      "true_gamma": 0.0,
+      "naive_slope": 0.0016437602920091002,
+      "naive_kendall_tau": 0.7714285714285715,
+      "naive_kendall_p": 1.0056000424717356e-05,
+      "naive_bias": 0.0016437602920091002,
+      "band_adjusted_slope": 0.00033150226999301586,
+      "band_adjusted_kendall_tau": 0.1619047619047619,
+      "band_adjusted_kendall_p": 0.43511891093211363,
+      "band_adjusted_bias": 0.00033150226999301586,
+      "window_reg_cal_coef": 2.358998394212868e-05,
+      "window_reg_cal_bias": 2.358998394212868e-05,
+      "n_windows": 5669735
+    },
+    {
+      "scenario": "C_trend_plus_composition",
+      "true_gamma": 0.01,
+      "naive_slope": 0.012000180508492901,
+      "naive_kendall_tau": 1.0,
+      "naive_kendall_p": 1.5294327463639633e-12,
+      "naive_bias": 0.0020001805084929013,
+      "band_adjusted_slope": 0.010784239583306815,
+      "band_adjusted_kendall_tau": 1.0,
+      "band_adjusted_kendall_p": 1.5294327463639633e-12,
+      "band_adjusted_bias": 0.0007842395833068151,
+      "window_reg_cal_coef": 0.010025216861033262,
+      "window_reg_cal_bias": 2.521686103326183e-05,
+      "n_windows": 5667771
+    }
+  ],
+  "interpretation": {
+    "A_true_trend": "band & window regression should recover ~+0.03; naive inflated",
+    "B_no_trend_only_composition": "naive should show spurious trend; band & window ~0",
+    "C_trend_plus_composition": "band & window should approximate +0.01; naive biased"
+  }
+}

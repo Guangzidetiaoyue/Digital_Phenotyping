@@ -1,0 +1,13 @@
+2026-08-31 20:17:59,798 - INFO - Reading trajectory (reliable windows only)...
+2026-08-31 20:18:15,161 - INFO - Reliable windows: 17451019
+/path/to/code/Module4/s41_calendar_aggregation.py:62: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  tr["period"] = ts.dt.to_period("M").astype(str)
+/path/to/code/Module4/s41_calendar_aggregation.py:63: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  tr["quarter"] = ts.dt.to_period("Q").astype(str)
+2026-08-31 20:18:27,465 - INFO - Main window 2008-2022: 17247283 reliable windows
+2026-08-31 20:18:29,229 - INFO - Saved monthly pooled (358) + diff (179)
+2026-08-31 20:18:30,399 - INFO - Per-disorder monthly: 1766 rows
+2026-08-31 20:18:45,103 - INFO - Per-disorder diff: 1766 rows
+2026-08-31 20:18:46,803 - INFO - Saved quarterly pooled (120) + diff (60)
+2026-08-31 20:18:48,169 - INFO - Saved annual pooled (30) + diff (15)
+2026-08-31 20:18:49,295 - INFO - DONE

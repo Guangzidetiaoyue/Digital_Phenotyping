@@ -1,0 +1,10 @@
+2026-09-07 10:38:48,524 - patient reliable rows: 3190038
+2026-09-07 10:38:48,542 - users with pre-t0 cp: 89
+2026-09-07 10:39:20,442 - patients with shape features: 61461
+2026-09-07 10:39:20,465 - shape matrix (57981, 8), features ['n_pre_t0_changepoints', 'baseline', 'post_level', 'pre_mean', 'post_mean', 'volatility', 'pre_slope', 'post_slope']
+2026-09-07 10:39:22,414 - k=1: BIC=855270, sil=nan
+2026-09-07 10:39:58,427 - k=2: BIC=274643, sil=0.622
+2026-09-07 10:40:39,483 - k=3: BIC=188447, sil=0.222
+2026-09-07 10:41:21,459 - k=4: BIC=166937, sil=0.165
+2026-09-07 10:42:17,796 - k=5: BIC=149439, sil=0.068
+2026-09-07 10:45:36,301 - DONE -> /path/to/project/module4_results/validation_r4

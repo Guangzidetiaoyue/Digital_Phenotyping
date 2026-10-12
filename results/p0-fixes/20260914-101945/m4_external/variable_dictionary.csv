@@ -1,0 +1,5 @@
+indicator,source,url,time_start,time_end,frequency,unit,population,methodological_break
+suicide_rate,CDC,data.cdc.gov/d/9j2v-jamp + d/w26f-tf3h,1990,2024,annual,per_100k,US_all,
+MDE_prevalence,NSDUH,SAMHSA Detailed Tables,2015,2024,annual,percent,US_18plus,2021
+suicide_deaths,CDC,data.cdc.gov/d/9dzk-mvmi,2020,2023,monthly,count,US_all,provisional
+adult_depression_prevalence,MHA,mhanational.org,2025,2025,cross-sectional,percent,US_adults,

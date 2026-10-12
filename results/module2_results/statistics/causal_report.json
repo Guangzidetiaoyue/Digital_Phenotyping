@@ -1,0 +1,123 @@
+{
+  "pipeline_version": "v1.0",
+  "did_summary": [
+    {
+      "variable": "p_factor_severity_z",
+      "method": "regression_clustered",
+      "did_estimate": 0.020160625337767427,
+      "se": 0.0008365515496467239,
+      "p_value": 3.0245073440056143e-128,
+      "p_fdr_global": 1.8147044064033687e-127
+    },
+    {
+      "variable": "p_factor_severity_z",
+      "method": "pair_fe",
+      "did_estimate": 0.013350145876766337,
+      "se": 0.0009749389151648831,
+      "p_value": 1.2832440734778698e-42,
+      "p_fdr_global": 2.1998469831049194e-42
+    },
+    {
+      "variable": "p_factor_severity_z",
+      "method": "iptw_weighted",
+      "did_estimate": 0.020197454149877628,
+      "se": 0.000837838914495407,
+      "p_value": 2.559235656491834e-128,
+      "p_fdr_global": 1.8147044064033687e-127
+    },
+    {
+      "variable": "volatility_index",
+      "method": "regression_clustered",
+      "did_estimate": 0.036623861175693016,
+      "se": 0.0023833007999207513,
+      "p_value": 2.814946056681737e-53,
+      "p_fdr_global": 6.755870536036169e-53
+    },
+    {
+      "variable": "volatility_index",
+      "method": "pair_fe",
+      "did_estimate": 0.03199247257551369,
+      "se": 0.003356965385387283,
+      "p_value": 1.6240989126226018e-21,
+      "p_fdr_global": 2.1654652168301357e-21
+    },
+    {
+      "variable": "volatility_index",
+      "method": "iptw_weighted",
+      "did_estimate": 0.03662478265714237,
+      "se": 0.0023919003805348026,
+      "p_value": 6.551075088056036e-53,
+      "p_fdr_global": 1.3102150176112071e-52
+    },
+    {
+      "variable": "social_withdrawal_index",
+      "method": "regression_clustered",
+      "did_estimate": -0.042040396157054176,
+      "se": 0.0022342350794412806,
+      "p_value": 5.926483895468097e-79,
+      "p_fdr_global": 2.370593558187239e-78
+    },
+    {
+      "variable": "social_withdrawal_index",
+      "method": "pair_fe",
+      "did_estimate": -0.02471204775624484,
+      "se": 0.002276673562918257,
+      "p_value": 2.0098809024223675e-27,
+      "p_fdr_global": 3.0148213536335514e-27
+    },
+    {
+      "variable": "social_withdrawal_index",
+      "method": "iptw_weighted",
+      "did_estimate": -0.042018157422043095,
+      "se": 0.002248804346720428,
+      "p_value": 7.051071203505401e-78,
+      "p_fdr_global": 2.1153213610516203e-77
+    },
+    {
+      "variable": "vader_compound_mean",
+      "method": "regression_clustered",
+      "did_estimate": 0.0005474176190115373,
+      "se": 0.0005976637448999058,
+      "p_value": 0.35970440044450125,
+      "p_fdr_global": 0.39240480048491044
+    },
+    {
+      "variable": "vader_compound_mean",
+      "method": "pair_fe",
+      "did_estimate": 0.00040434869733094593,
+      "se": 0.0008240770261266321,
+      "p_value": 0.6236619066046323,
+      "p_fdr_global": 0.6236619066046323
+    },
+    {
+      "variable": "vader_compound_mean",
+      "method": "iptw_weighted",
+      "did_estimate": 0.0006187943179269263,
+      "se": 0.000599488583350292,
+      "p_value": 0.3019770765663883,
+      "p_fdr_global": 0.3623724918796659
+    }
+  ],
+  "placebo_test": {
+    "true_did": 0.016064410241311194,
+    "n_placebos": 100,
+    "placebo_did_mean": 0.006101046252826009,
+    "placebo_did_std": 0.04371973719116974,
+    "n_exceeding_true": 100,
+    "placebo_p_value": 1.0,
+    "conclusion": "INCONCLUSIVE"
+  },
+  "cross_disorder_did": {
+    "depression": 0.012247108029679096,
+    "bipolar": 0.018941101493883523,
+    "anxiety": 0.015739633281687374,
+    "ocd": 0.019625216192555615,
+    "ptsd": 0.01531406382916995,
+    "bpd": 0.014222007634690953,
+    "eating_disorders": -0.00015506834462745574,
+    "schizophrenia": 0.031100596066740403,
+    "adhd": 0.02591180276435936,
+    "autism": 0.03381180393567955
+  },
+  "causal_evidence_strength": "WEAK"
+}

@@ -1,0 +1,19 @@
+{
+  "n_total_windows": 33789616,
+  "n_silent_windows": 16338597,
+  "pct_silent": 0.4835,
+  "n_paired_patients": 70747,
+  "dose": {
+    "pearson_mnar_na": 0.7344104415145165,
+    "mean_abs_rel_change_pct": 502.2668965372061,
+    "mean_dose_mnar": 14.823548454615652,
+    "mean_dose_na": 2.767326836664066
+  },
+  "response": {
+    "pearson_mnar_na": 0.7452292948032174,
+    "mean_resp_mnar": 0.02722834952499914,
+    "mean_resp_na": 0.024356274515542165
+  },
+  "note": "Headline individual-scale results (event study, parallel-trend, PELT, DID, temporal split) filter to is_reliable windows; baselines and z-scores in s07 are computed on reliable windows only, so those estimates are unaffected by MNAR imputation of silent windows. MNAR vs missing-as-NA only changes aggregates that span all windows (dose-response shown here).",
+  "headline_unaffected_by_construction": true
+}

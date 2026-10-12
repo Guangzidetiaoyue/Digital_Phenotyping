@@ -1,0 +1,73 @@
+2026-09-06 16:10:54,972 - loading matched features
+2026-09-06 16:11:01,126 - feature cols: 98
+2026-09-06 16:11:03,854 - X (706693, 98), eras={'E3': 495364, 'E2': 175357, 'E1': 35972}
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:12:01,892 - depression E1->E2: test-era AUROC=0.8572 (train in-sample 0.8576, atlas 0.8619)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:12:42,456 - depression E2->E3: test-era AUROC=0.8719 (train in-sample 0.8694, atlas 0.8619)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:13:13,874 - bipolar E1->E2: test-era AUROC=0.9070 (train in-sample 0.9114, atlas 0.9025)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:14:04,286 - bipolar E2->E3: test-era AUROC=0.9183 (train in-sample 0.9206, atlas 0.9025)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:14:33,005 - anxiety E1->E2: test-era AUROC=0.8885 (train in-sample 0.8957, atlas 0.8928)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:15:18,687 - anxiety E2->E3: test-era AUROC=0.8982 (train in-sample 0.9034, atlas 0.8928)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:15:58,262 - ocd E1->E2: test-era AUROC=0.8699 (train in-sample 0.8830, atlas 0.8842)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:16:35,539 - ocd E2->E3: test-era AUROC=0.8944 (train in-sample 0.8931, atlas 0.8842)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:17:11,073 - ptsd E1->E2: test-era AUROC=0.8976 (train in-sample 0.8863, atlas 0.9048)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 2000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=2000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+2026-09-06 16:18:14,830 - ptsd E2->E3: test-era AUROC=0.9119 (train in-sample 0.9178, atlas 0.9048)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:18:39,756 - bpd E1->E2: test-era AUROC=0.9171 (train in-sample 0.9521, atlas 0.9220)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:19:23,785 - bpd E2->E3: test-era AUROC=0.9268 (train in-sample 0.9414, atlas 0.9220)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:20:04,822 - eating_disorders E1->E2: test-era AUROC=0.9133 (train in-sample 0.9528, atlas 0.9231)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:20:51,669 - eating_disorders E2->E3: test-era AUROC=0.9318 (train in-sample 0.9477, atlas 0.9231)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:21:31,102 - schizophrenia E1->E2: test-era AUROC=0.8772 (train in-sample 0.9045, atlas 0.8780)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:22:24,823 - schizophrenia E2->E3: test-era AUROC=0.8724 (train in-sample 0.9204, atlas 0.8780)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:23:09,156 - adhd E1->E2: test-era AUROC=0.8354 (train in-sample 0.8149, atlas 0.8351)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:24:19,592 - adhd E2->E3: test-era AUROC=0.8552 (train in-sample 0.8513, atlas 0.8351)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:24:42,679 - autism E1->E2: test-era AUROC=0.8452 (train in-sample 0.8549, atlas 0.8511)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+2026-09-06 16:25:43,401 - autism E2->E3: test-era AUROC=0.8720 (train in-sample 0.8644, atlas 0.8511)
+2026-09-06 16:25:43,798 - DONE -> /path/to/project/module4_results/validation_r4

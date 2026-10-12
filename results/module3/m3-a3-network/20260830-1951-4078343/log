@@ -1,0 +1,53 @@
+2026-08-30 19:40:18,535 - INFO - Loading features...
+2026-08-30 19:40:25,493 - INFO - Features: 108, patients: 126114
+2026-08-30 19:40:25,496 - INFO - Disorders: ['adhd', 'anxiety', 'autism', 'bipolar', 'bpd', 'depression', 'eating_disorders', 'ocd', 'ptsd', 'schizophrenia']
+2026-08-30 19:40:26,154 - INFO -   adhd: 108 nodes, 854 edges (n=10000)
+2026-08-30 19:40:26,667 - INFO -   anxiety: 108 nodes, 1030 edges (n=10000)
+2026-08-30 19:40:29,710 - INFO -   autism: 108 nodes, 820 edges (n=10000)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -9.832e-03
+  warnings.warn(
+2026-08-30 19:40:35,378 - INFO -   bipolar: 108 nodes, 745 edges (n=9906)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: 4.114e-04
+  warnings.warn(
+2026-08-30 19:40:41,004 - INFO -   bpd: 108 nodes, 123 edges (n=6007)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -1.890e-02
+  warnings.warn(
+2026-08-30 19:40:46,986 - INFO -   depression: 108 nodes, 989 edges (n=10000)
+2026-08-30 19:40:47,416 - INFO -   eating_disorders: 108 nodes, 10 edges (n=1681)
+2026-08-30 19:40:48,628 - INFO -   ocd: 108 nodes, 852 edges (n=5691)
+2026-08-30 19:40:50,108 - INFO -   ptsd: 108 nodes, 862 edges (n=8223)
+2026-08-30 19:40:52,576 - INFO -   schizophrenia: 108 nodes, 972 edges (n=2435)
+2026-08-30 19:40:52,728 - INFO - 
+=== Network topology ===
+2026-08-30 19:40:52,730 - INFO -         disorder  n_nodes  n_edges  density  mean_degree  global_efficiency  n_users
+            adhd      108      854 0.147802    15.814815           0.009308    10000
+         anxiety      108     1030 0.178262    19.074074           0.009323    10000
+          autism      108      820 0.141918    15.185185           0.009346    10000
+         bipolar      108      745 0.128937    13.796296           0.009346     9906
+             bpd      108      123 0.021288     2.277778           0.009346     6007
+      depression      108      989 0.171166    18.314815           0.009341    10000
+eating_disorders      108       10 0.001731     0.185185           0.009346     1681
+             ocd      108      852 0.147456    15.777778           0.009297     5691
+            ptsd      108      862 0.149187    15.962963           0.009335     8223
+   schizophrenia      108      972 0.168224    18.000000           0.009256     2435
+2026-08-30 19:40:52,870 - INFO - 
+=== Top bridge features (mean across disorders) ===
+2026-08-30 19:40:52,871 - INFO -                          mean_bridge  n_disorders_bridge
+interval_median_hours      18.882568                   9
+total_comments_received    13.294899                  10
+score_max                  11.211369                  10
+score_range                11.170964                  10
+interval_kurtosis           9.890049                  10
+n_posts_total               8.433429                  10
+n_submissions               7.699470                  10
+score_std                   7.612958                  10
+n_comments                  6.761854                  10
+score_min                   6.181357                   9
+score_mean                  5.570267                  10
+interval_mean_hours         4.978078                   9
+posts_per_day               4.748779                  10
+mean_gap_days               4.536486                   9
+weekly_entropy              4.324736                   9
+2026-08-30 19:40:52,907 - INFO - 
+Edges shared by >=5 disorders: 911/1320 (69.0%)
+2026-08-30 19:40:52,912 - INFO - DONE

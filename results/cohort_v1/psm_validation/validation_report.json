@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-04-02T19:22:20.491947",
+  "sample_size": {
+    "patients": 128003,
+    "controls": 595571,
+    "matching_ratio": 4.65
+  },
+  "balance_before_psm": {
+    "mean_smd": 0.1718,
+    "max_smd": 0.3717,
+    "worst_feature": "readability_grade"
+  },
+  "balance_after_psm": {
+    "mean_smd": 0.0386,
+    "max_smd": 0.0536,
+    "n_below_0.1": 5,
+    "n_below_0.25": 5
+  },
+  "balance_after_iptw": {
+    "mean_smd": 0.0025,
+    "max_smd": 0.0064,
+    "n_below_0.1": 5,
+    "n_below_0.25": 5
+  },
+  "conclusion": "EXCELLENT: All covariates well-balanced after PSM+IPTW (all SMD < 0.1)"
+}

@@ -1,0 +1,70 @@
+{
+  "subtype_0": {
+    "name": "Acute on Chronic",
+    "description": "Both high pre-t0 erosion AND sudden step deterioration at t0",
+    "n_patients": 54373,
+    "pct_of_total": 93.77727186492126,
+    "feature_medians": {
+      "p_factor_severity_z_step_height": 0.05758181393467797,
+      "p_factor_severity_z_slope_pre": 0.0001910510716267545,
+      "p_factor_severity_z_slope_post": -0.0002900489486969655,
+      "p_factor_severity_z_volatility_pre": 0.1143957546354036,
+      "p_factor_severity_z_turning_angle": 0.019946831177117326,
+      "p_factor_severity_z_recovery_pct": 0.745329890102937
+    },
+    "disorder_distribution": {
+      "adhd": 18098,
+      "depression": 12727,
+      "anxiety": 5904,
+      "autism": 4694,
+      "bipolar": 3739,
+      "ptsd": 3348,
+      "ocd": 2269,
+      "bpd": 2108,
+      "schizophrenia": 853,
+      "eating_disorders": 633
+    },
+    "ranks_among_subtypes": {
+      "step": 1,
+      "slope_pre": 1,
+      "slope_post": 1,
+      "volatility": 2,
+      "turning_angle": 2,
+      "recovery": 1
+    }
+  },
+  "subtype_1": {
+    "name": "Fluctuating",
+    "description": "Highest volatility and direction changes, no clear linear trend (vol=0.145)",
+    "n_patients": 3608,
+    "pct_of_total": 6.222728135078732,
+    "feature_medians": {
+      "p_factor_severity_z_step_height": -0.027164336508601943,
+      "p_factor_severity_z_slope_pre": -8.082574146380179e-05,
+      "p_factor_severity_z_slope_post": 7.009779479108823e-05,
+      "p_factor_severity_z_volatility_pre": 0.1448108395567249,
+      "p_factor_severity_z_turning_angle": 0.08046924348034955,
+      "p_factor_severity_z_recovery_pct": 0.552643818870842
+    },
+    "disorder_distribution": {
+      "adhd": 1050,
+      "depression": 843,
+      "anxiety": 364,
+      "autism": 299,
+      "ptsd": 286,
+      "bipolar": 277,
+      "bpd": 207,
+      "ocd": 166,
+      "schizophrenia": 75,
+      "eating_disorders": 41
+    },
+    "ranks_among_subtypes": {
+      "step": 2,
+      "slope_pre": 2,
+      "slope_post": 2,
+      "volatility": 1,
+      "turning_angle": 1,
+      "recovery": 2
+    }
+  }
+}

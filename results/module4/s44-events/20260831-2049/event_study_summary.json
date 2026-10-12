@@ -1,0 +1,49 @@
+{
+  "events": {
+    "E1_election_2016": {
+      "date": "2016-11-01",
+      "label": "US Presidential Election 2016"
+    },
+    "E2_celebrity_suicide_2018": {
+      "date": "2018-06-01",
+      "label": "Celebrity suicides 2018"
+    },
+    "E3_covid_2020": {
+      "date": "2020-03-01",
+      "label": "COVID-19 onset"
+    },
+    "E4_blm_2020": {
+      "date": "2020-05-01",
+      "label": "George Floyd / BLM"
+    },
+    "E5_capitol_2021": {
+      "date": "2021-01-01",
+      "label": "US Capitol attack"
+    }
+  },
+  "method": "financial event study: linear-trend expected model, estimation [-12,-2], CAR over [0,+3]",
+  "n_fits": 55,
+  "n_significant_car_fdr": 32,
+  "pooled_car": {
+    "E1_election_2016": {
+      "car": -0.0019084141777456418,
+      "p_fdr": 0.8205432254976086
+    },
+    "E2_celebrity_suicide_2018": {
+      "car": 0.006599776168596024,
+      "p_fdr": 0.08889003120906395
+    },
+    "E3_covid_2020": {
+      "car": -0.018573966390513952,
+      "p_fdr": 8.611031509721147e-06
+    },
+    "E4_blm_2020": {
+      "car": 0.0019042100371904729,
+      "p_fdr": 0.6499862452909381
+    },
+    "E5_capitol_2021": {
+      "car": 0.035975497485079215,
+      "p_fdr": 5.054171703658812e-05
+    }
+  }
+}

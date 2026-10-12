@@ -1,0 +1,101 @@
+{
+  "pipeline_version": "v1.2",
+  "effect_matrix_source": "clean",
+  "n_features_analyzed": 93,
+  "n_disorders": 10,
+  "factor_analysis": {
+    "n_factors": 3,
+    "variance_explained": [
+      0.9385792132533969,
+      0.024896760274172362,
+      0.01106754670335214
+    ],
+    "cumulative_variance": [
+      0.9385792132533969,
+      0.9634759735275692,
+      0.9745435202309214
+    ],
+    "orientation": "features_as_observations_98x10",
+    "rotation": "varimax"
+  },
+  "clustering": {
+    "optimal_k": 2,
+    "silhouette": 0.6530580584606197,
+    "cluster_labels": {
+      "adhd": 1,
+      "anxiety": 1,
+      "autism": 2,
+      "bipolar": 1,
+      "bpd": 1,
+      "depression": 1,
+      "eating_disorders": 1,
+      "ocd": 1,
+      "ptsd": 1,
+      "schizophrenia": 1
+    },
+    "ari_vs_hitop": 0.0880503144654088,
+    "nmi_vs_hitop": 0.35530693444685724,
+    "disorder_pca_variance": [
+      0.5714475866657464,
+      0.12505739357980517,
+      0.10428619924364194,
+      0.07785870709417733,
+      0.05954368043137603
+    ]
+  },
+  "transdiagnostic_summary": {
+    "n_transdiagnostic": 32,
+    "n_specific": 21,
+    "n_mixed": 5,
+    "n_non_significant": 35,
+    "top_transdiagnostic": [
+      {
+        "feature": "anxiety_rate",
+        "n_sig_disorders": 10,
+        "mean_abs_g_all": 1.3239107688798026,
+        "direction_consistency": 1.0
+      },
+      {
+        "feature": "first_person_rate",
+        "n_sig_disorders": 10,
+        "mean_abs_g_all": 1.0601994171548255,
+        "direction_consistency": 1.0
+      },
+      {
+        "feature": "self_focus_index",
+        "n_sig_disorders": 10,
+        "mean_abs_g_all": 0.8790426885441243,
+        "direction_consistency": 1.0
+      },
+      {
+        "feature": "vader_compound_std",
+        "n_sig_disorders": 10,
+        "mean_abs_g_all": 0.7850438304421299,
+        "direction_consistency": 1.0
+      },
+      {
+        "feature": "sadness_rate",
+        "n_sig_disorders": 10,
+        "mean_abs_g_all": 0.749793690703225,
+        "direction_consistency": 1.0
+      }
+    ]
+  },
+  "pca": {
+    "variance_top5": [
+      0.18593914534434947,
+      0.15053603888725892,
+      0.11466663494476932,
+      0.07974202520309476,
+      0.05584823662335682
+    ],
+    "cumulative_top5": [
+      0.18593914534434947,
+      0.3364751842316084,
+      0.4511418191763777,
+      0.5308838443794724,
+      0.5867320810028293
+    ],
+    "tsne_samples": 50000
+  }
+}

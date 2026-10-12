@@ -1,0 +1,160 @@
+{
+  "n_diag_posts": 128030,
+  "n_multi_diag_posts": 39065,
+  "n_users_with_diagnosis": 128003,
+  "n_users_multi": 39059,
+  "pct_users_multi": 0.3051412857511152,
+  "n_disorders_dist": {
+    "0": 24380,
+    "1": 64564,
+    "2": 25974,
+    "3": 9501,
+    "4": 2698,
+    "5": 702,
+    "6": 151,
+    "7": 28,
+    "8": 5
+  },
+  "top_comorbidity_pairs": [
+    {
+      "pair": [
+        "anxiety",
+        "depression"
+      ],
+      "n": 15140
+    },
+    {
+      "pair": [
+        "adhd",
+        "anxiety"
+      ],
+      "n": 8742
+    },
+    {
+      "pair": [
+        "adhd",
+        "depression"
+      ],
+      "n": 8316
+    },
+    {
+      "pair": [
+        "bipolar",
+        "depression"
+      ],
+      "n": 4187
+    },
+    {
+      "pair": [
+        "adhd",
+        "autism"
+      ],
+      "n": 3522
+    },
+    {
+      "pair": [
+        "anxiety",
+        "ptsd"
+      ],
+      "n": 3482
+    },
+    {
+      "pair": [
+        "depression",
+        "ptsd"
+      ],
+      "n": 3101
+    },
+    {
+      "pair": [
+        "anxiety",
+        "ocd"
+      ],
+      "n": 2892
+    },
+    {
+      "pair": [
+        "anxiety",
+        "bipolar"
+      ],
+      "n": 2658
+    },
+    {
+      "pair": [
+        "adhd",
+        "bipolar"
+      ],
+      "n": 2526
+    },
+    {
+      "pair": [
+        "bpd",
+        "depression"
+      ],
+      "n": 1955
+    },
+    {
+      "pair": [
+        "adhd",
+        "ptsd"
+      ],
+      "n": 1810
+    },
+    {
+      "pair": [
+        "depression",
+        "ocd"
+      ],
+      "n": 1701
+    },
+    {
+      "pair": [
+        "anxiety",
+        "bpd"
+      ],
+      "n": 1664
+    },
+    {
+      "pair": [
+        "anxiety",
+        "autism"
+      ],
+      "n": 1651
+    },
+    {
+      "pair": [
+        "adhd",
+        "ocd"
+      ],
+      "n": 1612
+    },
+    {
+      "pair": [
+        "autism",
+        "depression"
+      ],
+      "n": 1397
+    },
+    {
+      "pair": [
+        "bipolar",
+        "bpd"
+      ],
+      "n": 1389
+    },
+    {
+      "pair": [
+        "adhd",
+        "bpd"
+      ],
+      "n": 1343
+    },
+    {
+      "pair": [
+        "bpd",
+        "ptsd"
+      ],
+      "n": 1066
+    }
+  ]
+}

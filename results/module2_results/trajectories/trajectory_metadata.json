@@ -1,0 +1,41 @@
+{
+  "pipeline_version": "v1.5",
+  "window_size_days": 90,
+  "window_step_days": 30,
+  "trajectory_pre_days": 720,
+  "trajectory_post_days": 720,
+  "min_posts_per_window": 5,
+  "min_reliable_windows": 4,
+  "pfactor_weight_source": "module1_factor1",
+  "pfactor_direction_method": "data_driven_factor1_sign",
+  "baseline_definition_days": "(-360, -270)",
+  "n_users": 689584,
+  "n_patients": 123986,
+  "n_controls": 565598,
+  "n_windows_total": 33789616,
+  "n_windows_reliable": 17451019,
+  "n_windows_high_quality": 10796720,
+  "reliable_rate": 0.5164610038776409,
+  "mean_windows_per_user": 49.0,
+  "t0_validation": {
+    "patient": {
+      "n_users": 68628,
+      "mean_shift": 0.0011893791210263794,
+      "test_method": "ttest_1samp",
+      "statistic": 1.491334793308974,
+      "p_val": 0.13587821479128462,
+      "cohen_d": 0.005692781026007971,
+      "is_significant": "False"
+    },
+    "control": {
+      "n_users": 349104,
+      "mean_shift": -0.02761214940531325,
+      "test_method": "ttest_1samp",
+      "statistic": -80.85857498687115,
+      "p_val": 0.0,
+      "cohen_d": -0.13685121917567045,
+      "is_significant": "False"
+    }
+  },
+  "construction_timestamp": "2026-08-28T12:37:57.232210"
+}

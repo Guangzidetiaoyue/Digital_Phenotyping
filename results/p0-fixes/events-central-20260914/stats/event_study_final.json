@@ -1,0 +1,153 @@
+{
+  "events": {
+    "E1_election_2016": {
+      "label": "US Presidential Election 2016",
+      "p_factor_severity_z": {
+        "coef_group_event": -0.0005479816232156761,
+        "se": 0.004400293397984787,
+        "p": 0.9008932941213116,
+        "n": 100283
+      },
+      "posting_intensity": {
+        "coef_group_event": -0.08892460915083175,
+        "se": 0.09219503597642079,
+        "p": 0.3347817367346243,
+        "n": 120630
+      },
+      "social_withdrawal_index": {
+        "coef_group_event": 0.017155695429147837,
+        "se": 0.015350872001494563,
+        "p": 0.2637500916697837,
+        "n": 100283
+      },
+      "volatility_index": {
+        "coef_group_event": -0.004932643787133464,
+        "se": 0.013402442752691895,
+        "p": 0.7128429213823395,
+        "n": 100283
+      }
+    },
+    "E2_celebrity_2018": {
+      "label": "Celebrity suicides 2018",
+      "p_factor_severity_z": {
+        "coef_group_event": 0.004831024653730791,
+        "se": 0.003171552442415893,
+        "p": 0.1276995307013092,
+        "n": 201241
+      },
+      "posting_intensity": {
+        "coef_group_event": -0.003042665801222409,
+        "se": 0.04947129465627073,
+        "p": 0.9509580978180925,
+        "n": 240878
+      },
+      "social_withdrawal_index": {
+        "coef_group_event": 0.004079717304219637,
+        "se": 0.008638970393273158,
+        "p": 0.6367513670444074,
+        "n": 201241
+      },
+      "volatility_index": {
+        "coef_group_event": 0.033940478521406005,
+        "se": 0.010787859887084826,
+        "p": 0.0016542186282420103,
+        "n": 201241
+      }
+    },
+    "E3_covid_2020": {
+      "label": "COVID-19 onset",
+      "p_factor_severity_z": {
+        "coef_group_event": -0.00323380956660984,
+        "se": 0.0026183633713813765,
+        "p": 0.21681191257679244,
+        "n": 439628
+      },
+      "posting_intensity": {
+        "coef_group_event": 0.005893147064695789,
+        "se": 0.041312095332219204,
+        "p": 0.8865670530683945,
+        "n": 538394
+      },
+      "social_withdrawal_index": {
+        "coef_group_event": -0.010233050817373447,
+        "se": 0.007139722562074202,
+        "p": 0.15178466658518985,
+        "n": 439628
+      },
+      "volatility_index": {
+        "coef_group_event": -0.025307412038322742,
+        "se": 0.008091702116525566,
+        "p": 0.0017625434097280344,
+        "n": 439628
+      }
+    },
+    "E4_blm_2020": {
+      "label": "George Floyd / BLM",
+      "p_factor_severity_z": {
+        "coef_group_event": -0.004683545544109224,
+        "se": 0.0023479813973294964,
+        "p": 0.04607435212511663,
+        "n": 469226
+      },
+      "posting_intensity": {
+        "coef_group_event": -0.05110818791382926,
+        "se": 0.03383368438469566,
+        "p": 0.1308977461138221,
+        "n": 574272
+      },
+      "social_withdrawal_index": {
+        "coef_group_event": -0.0007772502907050587,
+        "se": 0.005873377518225394,
+        "p": 0.894719745388619,
+        "n": 469226
+      },
+      "volatility_index": {
+        "coef_group_event": -0.011416381555355704,
+        "se": 0.008032124085247918,
+        "p": 0.15521785672177452,
+        "n": 469226
+      }
+    },
+    "E5_capitol_2021": {
+      "label": "US Capitol attack",
+      "p_factor_severity_z": {
+        "coef_group_event": 0.011093083289138977,
+        "se": 0.0021795649022995846,
+        "p": 3.5884584899150875e-07,
+        "n": 588622
+      },
+      "posting_intensity": {
+        "coef_group_event": 0.0319328735791536,
+        "se": 0.033472448753128096,
+        "p": 0.34008126106698033,
+        "n": 722408
+      },
+      "social_withdrawal_index": {
+        "coef_group_event": -0.0070990244137987945,
+        "se": 0.0054929082793715766,
+        "p": 0.1962193023873262,
+        "n": 588622
+      },
+      "volatility_index": {
+        "coef_group_event": 0.044364433903097474,
+        "se": 0.007553663708513165,
+        "p": 4.273747526984916e-09,
+        "n": 588622
+      }
+    }
+  },
+  "method": "window-level DID (gold standard)",
+  "conclusions": {
+    "robust_effects": [
+      "E4_blm_2020 (George Floyd / BLM): patient-control p_factor gap NARROWS (coef=-0.0047, p=0.0461)",
+      "E5_capitol_2021 (US Capitol attack): patient-control p_factor gap WIDENS (coef=+0.0111, p=3.59e-07)"
+    ],
+    "non_effects": [
+      "E1_election_2016 (US Presidential Election 2016): patient-control p_factor gap NARROWS (coef=-0.0005, p=0.901)",
+      "E2_celebrity_2018 (Celebrity suicides 2018): patient-control p_factor gap WIDENS (coef=+0.0048, p=0.128)",
+      "E3_covid_2020 (COVID-19 onset): patient-control p_factor gap NARROWS (coef=-0.0032, p=0.217)"
+    ],
+    "alpha": 0.05,
+    "note": "Computed from window-level DID (cluster-robust SE). The COVID LONG-TERM effect (s43c) is a distinct analysis from the short event-window effect reported here."
+  }
+}

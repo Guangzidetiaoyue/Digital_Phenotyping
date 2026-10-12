@@ -1,0 +1,25 @@
+2026-08-30 19:04:24,946 - INFO - Loading and preparing data...
+2026-08-30 19:04:33,377 - INFO - Subsampled: 18000 users
+2026-08-30 19:04:33,448 - INFO - Features: 108
+2026-08-30 19:04:33,590 - INFO - PCA: 108 -> 50 (explained 97.45%)
+2026-08-30 19:04:33,590 - INFO - Running UMAP...
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+2026-08-30 19:05:00,309 - INFO - UMAP done.
+2026-08-30 19:05:00,469 - INFO - Saved UMAP embedding.
+2026-08-30 19:05:00,536 - INFO - 
+=== Spectrum separation (UMAP centroid distances) ===
+2026-08-30 19:05:00,536 - INFO -   within-spectrum mean dist: 0.369 (n=7)
+2026-08-30 19:05:00,536 - INFO -   between-spectrum mean dist: 0.486 (n=38)
+2026-08-30 19:05:00,536 - INFO -   observed diff: 0.117, permutation p=1.0000
+2026-08-30 19:05:01,362 - INFO - 
+=== Structural fit (digital distance vs taxonomy) ===
+2026-08-30 19:05:01,362 - INFO -   HiTOP co-membership: r=-0.154, p=0.3182
+2026-08-30 19:05:01,362 - INFO -   DSM-5 chapter:      r=-0.212, p=0.1529
+2026-08-30 19:05:01,362 - INFO -   Clinical comorbidity: r=-0.022, p=0.9172
+2026-08-30 19:05:01,408 - INFO - 
+=== User-level separation ===
+2026-08-30 19:05:01,409 - INFO -   mean dist to own centroid: 2.898
+2026-08-30 19:05:01,409 - INFO -   mean dist to other-spectrum centroid: 2.927
+2026-08-30 19:05:01,409 - INFO -   own/other ratio: 1.009 (<1 means own spectrum closer)
+2026-08-30 19:05:01,447 - INFO - DONE

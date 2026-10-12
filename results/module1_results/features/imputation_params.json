@@ -1,0 +1,305 @@
+{
+  "anxiety_rate": {
+    "global_median": 0.23260244032042993
+  },
+  "anger_rate": {
+    "global_median": 0.7737188480319843
+  },
+  "sadness_rate": {
+    "global_median": 0.34360683048729695
+  },
+  "positive_affect_rate": {
+    "global_median": 3.445065176908752
+  },
+  "negative_affect_rate": {
+    "global_median": 2.139074612683809
+  },
+  "net_emotion_tone": {
+    "global_median": 0.17624275656405483
+  },
+  "vader_compound_mean": {
+    "global_median": 0.14525681818181815
+  },
+  "vader_compound_std": {
+    "global_median": 0.4795554940400348
+  },
+  "vader_positive_mean": {
+    "global_median": 0.13305208127835866
+  },
+  "vader_negative_mean": {
+    "global_median": 0.0745652853792025
+  },
+  "vader_within_post_volatility": {
+    "global_median": 0.0
+  },
+  "vader_compound_min_mean": {
+    "global_median": 0.14412786206896552
+  },
+  "vader_compound_last_mean": {
+    "global_median": 0.14530499359795135
+  },
+  "vader_truncation_rate": {
+    "global_median": 0.0
+  },
+  "emotion_inertia": {
+    "global_median": 0.04931552683003113
+  },
+  "first_person_rate": {
+    "global_median": 4.7789754147995644
+  },
+  "second_person_rate": {
+    "global_median": 1.9728535353535352
+  },
+  "third_person_rate": {
+    "global_median": 1.896289359709704
+  },
+  "impersonal_pronoun_rate": {
+    "global_median": 5.860995850622406
+  },
+  "self_focus_index": {
+    "global_median": 0.2671734667936512
+  },
+  "social_focus_index": {
+    "global_median": 0.12552603021534306
+  },
+  "self_focus_variability": {
+    "global_median": 0.30371629647516235
+  },
+  "social_focus_variability": {
+    "global_median": 0.2399200386813046
+  },
+  "insight_rate": {
+    "global_median": 2.215541342729118
+  },
+  "causal_thinking_rate": {
+    "global_median": 1.8062048448788781
+  },
+  "certainty_rate": {
+    "global_median": 1.5412511332728922
+  },
+  "tentative_language_rate": {
+    "global_median": 3.2571032571032568
+  },
+  "discrepancy_rate": {
+    "global_median": 1.7822549399457575
+  },
+  "inhibition_rate": {
+    "global_median": 0.0
+  },
+  "cognitive_flexibility": {
+    "global_median": 0.37153457924403127
+  },
+  "past_focus_rate": {
+    "global_median": 3.069902509852728
+  },
+  "present_focus_rate": {
+    "global_median": 9.386475223831333
+  },
+  "future_focus_rate": {
+    "global_median": 0.9829046944251817
+  },
+  "temporal_balance": {
+    "global_median": 0.22222222222222224
+  },
+  "death_mortality_rate": {
+    "global_median": 0.17341811552314465
+  },
+  "swearing_rate": {
+    "global_median": 0.35674051821254227
+  },
+  "assent_rate": {
+    "global_median": 0.3231145086295216
+  },
+  "nonfluency_rate": {
+    "global_median": 0.2079002079002079
+  },
+  "inhibition_marker_rate": {
+    "global_median": 0.0
+  },
+  "question_ratio": {
+    "global_median": 0.10074320861096873
+  },
+  "exclamation_ratio": {
+    "global_median": 0.056451612903225805
+  },
+  "url_usage_rate": {
+    "global_median": 0.06056568348373812
+  },
+  "netspeak_usage_rate": {
+    "global_median": 0.19216397992953987
+  },
+  "filler_word_rate": {
+    "global_median": 0.7098606091894683
+  },
+  "ari_mean": {
+    "global_median": 3.8375718711657703
+  },
+  "ari_std": {
+    "global_median": 4.441301805568424
+  },
+  "mattr_vocabulary_diversity": {
+    "global_median": 0.8892466882818484
+  },
+  "post_length_mean": {
+    "global_median": 31.354360812425327
+  },
+  "post_length_std": {
+    "global_median": 41.22086252965765
+  },
+  "post_length_cv": {
+    "global_median": 1.2410888187245779
+  },
+  "circadian_mean_hour": {
+    "global_median": 18.473418087473586
+  },
+  "circadian_concentration": {
+    "global_median": 0.3382861360059098
+  },
+  "night_activity_ratio": {
+    "global_median": 0.2927765869410158
+  },
+  "weekend_activity_ratio": {
+    "global_median": 0.26791277258566976
+  },
+  "social_jetlag_hours": {
+    "global_median": 0.13427249035007804
+  },
+  "sleep_disruption_index": {
+    "global_median": 0.27912475837357287
+  },
+  "posting_regularity_cv": {
+    "global_median": 3.674761258527428
+  },
+  "posting_burstiness": {
+    "global_median": 0.5721706651101547
+  },
+  "interval_mean_hours": {
+    "global_median": 40.986201948317486
+  },
+  "interval_kurtosis": {
+    "global_median": 112.87278763834084
+  },
+  "n_active_days": {
+    "global_median": 252.0
+  },
+  "active_day_ratio": {
+    "global_median": 0.21082902053885674
+  },
+  "mean_gap_days": {
+    "global_median": 4.76595744680851
+  },
+  "gap_regularity_cv": {
+    "global_median": 2.0031403740073097
+  },
+  "hourly_entropy": {
+    "global_median": 2.906508858499947
+  },
+  "weekly_entropy": {
+    "global_median": 1.9213614739102964
+  },
+  "temporal_diversity_index": {
+    "global_median": 2.410837874321889
+  },
+  "submission_ratio": {
+    "global_median": 0.05
+  },
+  "n_submissions": {
+    "global_median": 34.0
+  },
+  "n_comments": {
+    "global_median": 672.0
+  },
+  "top_level_comment_ratio": {
+    "global_median": 0.45652173913043476
+  },
+  "avg_comment_depth": {
+    "global_median": 2.0
+  },
+  "score_median": {
+    "global_median": 2.0
+  },
+  "score_std": {
+    "global_median": 42.706044323183406
+  },
+  "score_max": {
+    "global_median": 879.0
+  },
+  "score_min": {
+    "global_median": -17.0
+  },
+  "score_range": {
+    "global_median": 916.0
+  },
+  "neg_score_ratio": {
+    "global_median": 0.01794453507340946
+  },
+  "high_engagement_ratio": {
+    "global_median": 0.09742120343839542
+  },
+  "avg_comments_received": {
+    "global_median": 9.0
+  },
+  "total_comments_received": {
+    "global_median": 340.0
+  },
+  "discussion_initiated_ratio": {
+    "global_median": 0.8535031847133758
+  },
+  "controversy_rate": {
+    "global_median": 0.009900990099009901
+  },
+  "gilded_rate": {
+    "global_median": 0.0
+  },
+  "n_unique_subreddits": {
+    "global_median": 71.0
+  },
+  "subreddit_entropy": {
+    "global_median": 3.010513964588689
+  },
+  "subreddit_herfindahl": {
+    "global_median": 0.09765625
+  },
+  "primary_subreddit_ratio": {
+    "global_median": 0.22583126302719891
+  },
+  "mental_health_sub_ratio": {
+    "global_median": 0.0
+  },
+  "support_sub_ratio": {
+    "global_median": 0.0
+  },
+  "entertainment_sub_ratio": {
+    "global_median": 0.016876700907391233
+  },
+  "information_sub_ratio": {
+    "global_median": 0.002544529262086514
+  },
+  "social_sub_ratio": {
+    "global_median": 0.015151515151515152
+  },
+  "other_sub_ratio": {
+    "global_median": 0.9027340984484055
+  },
+  "posts_per_day_log": {
+    "global_median": 0.45918564309605914
+  },
+  "posts_per_active_day_log": {
+    "global_median": 1.339189891932417
+  },
+  "interval_median_hours_log": {
+    "global_median": 1.1086542911535553
+  },
+  "max_gap_days_log": {
+    "global_median": 4.836281906951478
+  },
+  "tenure_days_log": {
+    "global_median": 7.239639044998199
+  },
+  "n_posts_total_log": {
+    "global_median": 6.616065185132817
+  },
+  "score_mean_log_signed": {
+    "global_median": 2.229834205609931
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "method": "MacKinlay (1997) event study on composition-adjusted (band-equalized) data",
+  "events": {
+    "E1_election_2016": {
+      "date": "2016-11-01",
+      "label": "US Presidential Election 2016"
+    },
+    "E2_celebrity_2018": {
+      "date": "2018-06-01",
+      "label": "Celebrity suicides"
+    },
+    "E3_covid_2020": {
+      "date": "2020-03-01",
+      "label": "COVID-19 onset"
+    },
+    "E4_blm_2020": {
+      "date": "2020-05-01",
+      "label": "George Floyd / BLM"
+    },
+    "E5_capitol_2021": {
+      "date": "2021-01-01",
+      "label": "US Capitol attack"
+    }
+  },
+  "n_fits": 200,
+  "n_significant_fdr": 106,
+  "mean_car_by_event_pfactor": {
+    "E1_election_2016": -0.00212728313711838,
+    "E2_celebrity_2018": 0.006979726250805429,
+    "E3_covid_2020": -0.005914213890423741,
+    "E4_blm_2020": -0.0007298916449276778,
+    "E5_capitol_2021": 0.04735446251761292
+  },
+  "note": "Corrected for event-time composition bias; original s44 CAR was confounded. Window-level DID validation confirms only Capitol-2021 effect robust."
+}

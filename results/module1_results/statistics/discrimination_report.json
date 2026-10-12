@@ -1,0 +1,223 @@
+{
+  "pipeline_version": "v1.2",
+  "n_features": 93,
+  "excluded_artifact_features": [
+    "subreddit_herfindahl",
+    "primary_subreddit_ratio",
+    "support_sub_ratio",
+    "mental_health_sub_ratio",
+    "subreddit_entropy"
+  ],
+  "control_subsampling": {
+    "ratio": 3,
+    "min_controls": 5000,
+    "n_trials": 5,
+    "rationale": "Statistical power for AUROC saturates at ~5K controls. Using 3x n_patient (min 5000) reduces computation by 10-80x while changing AUROC by <0.01."
+  },
+  "disorder_vs_control_summary": {
+    "depression": {
+      "logistic_l2_auroc": 0.8619234786188213,
+      "logistic_l2_auroc_std": 0.000451502256700046,
+      "logistic_l2_auprc": 0.6979081680790721,
+      "logistic_l2_best_c": 3.2892857161853315,
+      "gbm_auroc": 0.8654171537802784,
+      "n_patient": 26043,
+      "n_subsample_trials": 5,
+      "test_auroc": 0.8641306323809783,
+      "test_auprc": 0.70335682281183,
+      "dev_test_gap": -0.002207153762156966
+    },
+    "bipolar": {
+      "logistic_l2_auroc": 0.9025201599547845,
+      "logistic_l2_auroc_std": 0.0004798588009815651,
+      "logistic_l2_auprc": 0.7844854370095817,
+      "logistic_l2_best_c": 16.6302849760154,
+      "gbm_auroc": 0.903037521127098,
+      "n_patient": 8505,
+      "n_subsample_trials": 5,
+      "test_auroc": 0.8969774666666668,
+      "test_auprc": 0.7580100881726943,
+      "dev_test_gap": 0.005542693288117739
+    },
+    "anxiety": {
+      "logistic_l2_auroc": 0.8927725024730385,
+      "logistic_l2_auroc_std": 0.00046938863740708333,
+      "logistic_l2_auprc": 0.7637808740847705,
+      "logistic_l2_best_c": 0.18412069867563507,
+      "gbm_auroc": 0.8938265328417557,
+      "n_patient": 12259,
+      "n_subsample_trials": 5,
+      "test_auroc": 0.8940544483584516,
+      "test_auprc": 0.7639624418112912,
+      "dev_test_gap": -0.0012819458854130827
+    },
+    "ocd": {
+      "logistic_l2_auroc": 0.8842399879791307,
+      "logistic_l2_auroc_std": 0.0009056790762091522,
+      "logistic_l2_auprc": 0.7518691029983353,
+      "logistic_l2_best_c": 0.5156797518812755,
+      "gbm_auroc": 0.8837006937422215,
+      "n_patient": 4876,
+      "n_subsample_trials": 5,
+      "test_auroc": 0.8809558139534883,
+      "test_auprc": 0.6509252263632718,
+      "dev_test_gap": 0.0032841740256424057
+    },
+    "ptsd": {
+      "logistic_l2_auroc": 0.9047549581396348,
+      "logistic_l2_auroc_std": 0.0005756846336402264,
+      "logistic_l2_auprc": 0.7773384386735064,
+      "logistic_l2_best_c": 0.6501627306796622,
+      "gbm_auroc": 0.9050862293926482,
+      "n_patient": 7040,
+      "n_subsample_trials": 5,
+      "test_auroc": 0.90605346215781,
+      "test_auprc": 0.7313530744167147,
+      "dev_test_gap": -0.0012985040181752172
+    },
+    "bpd": {
+      "logistic_l2_auroc": 0.9219792309924018,
+      "logistic_l2_auroc_std": 0.0010693405274018327,
+      "logistic_l2_auprc": 0.8135512664944301,
+      "logistic_l2_best_c": 1.206779987737997,
+      "gbm_auroc": 0.9209483436485792,
+      "n_patient": 5169,
+      "n_subsample_trials": 5,
+      "test_auroc": 0.9213530701754387,
+      "test_auprc": 0.7307364806180395,
+      "dev_test_gap": 0.000626160816963095
+    },
+    "eating_disorders": {
+      "logistic_l2_auroc": 0.9231139723690944,
+      "logistic_l2_auroc_std": 0.0011129083952421599,
+      "logistic_l2_auprc": 0.7919089908508388,
+      "logistic_l2_best_c": 0.07145312657967455,
+      "gbm_auroc": 0.9176414853439242,
+      "n_patient": 1434,
+      "n_subsample_trials": 5,
+      "test_auroc": 0.938600790513834,
+      "test_auprc": 0.5358498718887507,
+      "dev_test_gap": -0.015486818144739622
+    },
+    "schizophrenia": {
+      "logistic_l2_auroc": 0.8780153961509978,
+      "logistic_l2_auroc_std": 0.0012159603494964564,
+      "logistic_l2_auprc": 0.7473315530297484,
+      "logistic_l2_best_c": 0.10900898394499473,
+      "gbm_auroc": 0.8754549972409553,
+      "n_patient": 2089,
+      "n_subsample_trials": 5,
+      "test_auroc": 0.878369647696477,
+      "test_auprc": 0.4658783141321538,
+      "dev_test_gap": -0.00035425154547918947
+    },
+    "adhd": {
+      "logistic_l2_auroc": 0.8351264349311952,
+      "logistic_l2_auroc_std": 0.0006488436338136589,
+      "logistic_l2_auprc": 0.6458048599292618,
+      "logistic_l2_best_c": 3.5080854305915294,
+      "gbm_auroc": 0.8392677179332623,
+      "n_patient": 31987,
+      "n_subsample_trials": 5,
+      "test_auroc": 0.8338176788601652,
+      "test_auprc": 0.6415599176637703,
+      "dev_test_gap": 0.0013087560710299817
+    },
+    "autism": {
+      "logistic_l2_auroc": 0.851091403795402,
+      "logistic_l2_auroc_std": 0.0005809454411757946,
+      "logistic_l2_auprc": 0.6800561620188426,
+      "logistic_l2_best_c": 15.129341976166467,
+      "gbm_auroc": 0.8507794161195896,
+      "n_patient": 8691,
+      "n_subsample_trials": 5,
+      "test_auroc": 0.8484196870925685,
+      "test_auprc": 0.6643087477731029,
+      "dev_test_gap": 0.0026717167028335043
+    }
+  },
+  "pairwise_mean_auroc": 0.7388857883370368,
+  "multiclass_macro_auroc": 0.7186035796210465,
+  "multiclass_balanced_accuracy": 0.2598804216841168,
+  "multiclass_median_c": 0.046415888336127774,
+  "test_set_results": {
+    "depression": {
+      "test_auroc": 0.8641306323809783,
+      "test_auprc": 0.70335682281183,
+      "n_patient": 4596,
+      "n_control": 13788,
+      "best_c_used": 3.2892857161853315
+    },
+    "bipolar": {
+      "test_auroc": 0.8969774666666668,
+      "test_auprc": 0.7580100881726943,
+      "n_patient": 1500,
+      "n_control": 5000,
+      "best_c_used": 16.6302849760154
+    },
+    "anxiety": {
+      "test_auroc": 0.8940544483584516,
+      "test_auprc": 0.7639624418112912,
+      "n_patient": 2164,
+      "n_control": 6492,
+      "best_c_used": 0.18412069867563507
+    },
+    "ocd": {
+      "test_auroc": 0.8809558139534883,
+      "test_auprc": 0.6509252263632718,
+      "n_patient": 860,
+      "n_control": 5000,
+      "best_c_used": 0.5156797518812755
+    },
+    "ptsd": {
+      "test_auroc": 0.90605346215781,
+      "test_auprc": 0.7313530744167147,
+      "n_patient": 1242,
+      "n_control": 5000,
+      "best_c_used": 0.6501627306796622
+    },
+    "bpd": {
+      "test_auroc": 0.9213530701754387,
+      "test_auprc": 0.7307364806180395,
+      "n_patient": 912,
+      "n_control": 5000,
+      "best_c_used": 1.206779987737997
+    },
+    "eating_disorders": {
+      "test_auroc": 0.938600790513834,
+      "test_auprc": 0.5358498718887507,
+      "n_patient": 253,
+      "n_control": 5000,
+      "best_c_used": 0.07145312657967455
+    },
+    "schizophrenia": {
+      "test_auroc": 0.878369647696477,
+      "test_auprc": 0.4658783141321538,
+      "n_patient": 369,
+      "n_control": 5000,
+      "best_c_used": 0.10900898394499473
+    },
+    "adhd": {
+      "test_auroc": 0.8338176788601652,
+      "test_auprc": 0.6415599176637703,
+      "n_patient": 5645,
+      "n_control": 16935,
+      "best_c_used": 3.5080854305915294
+    },
+    "autism": {
+      "test_auroc": 0.8484196870925685,
+      "test_auprc": 0.6643087477731029,
+      "n_patient": 1534,
+      "n_control": 5000,
+      "best_c_used": 15.129341976166467
+    }
+  },
+  "dev_median_c": 0.9284713592088296,
+  "max_dev_test_gap": 0.005542693288117739,
+  "leakage_prevention": {
+    "artifacts_excluded": true,
+    "features_from_selection_json": true,
+    "hyperparameter_from_cv": true,
+    "control_subsampling": true
+  }
+}

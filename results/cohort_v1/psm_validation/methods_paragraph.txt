@@ -1,0 +1,14 @@
+
+Propensity score matching yielded 128,003 patients matched with 595,571 controls 
+(ratio 1:4.65). Matching reduced mean SMD from 
+0.172 to 0.039 
+across 5 covariates. To address residual imbalance 
+(max post-matching SMD = 0.054, 
+driven primarily by account tenure), we applied stabilized inverse probability of treatment 
+weighting (sIPTW) with propensity score trimming at the 5th and 95th percentiles and weight 
+capping at the 99th percentile. After IPTW adjustment, covariate balance improved substantially 
+(mean SMD = 0.003, 
+max SMD = 0.006). 
+All primary analyses employed doubly robust estimation combining IPTW weighting with 
+outcome regression adjustment to ensure consistency under potential model misspecification. 
+Results were verified through tenure-stratified sensitivity analyses.

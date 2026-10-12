@@ -1,0 +1,259 @@
+{
+  "n_factors": 3,
+  "variance_explained": [
+    0.9385792132533969,
+    0.024896760274172362,
+    0.01106754670335214
+  ],
+  "cumulative_variance": [
+    0.9385792132533969,
+    0.9634759735275692,
+    0.9745435202309214
+  ],
+  "selection_criteria": {
+    "selected_n": 3,
+    "rationale": "Forced 3-factor based on clinical theory: HiTOP hierarchy requires p-factor + Internalizing + Neurodevelopmental. Supported by Disorder PCA showing 3 components explaining 80.2% variance."
+  },
+  "factor_interpretation": {
+    "Factor_1": {
+      "variance_explained": 0.9385792132533969,
+      "top_features": [
+        {
+          "feature": "other_sub_ratio",
+          "loading": -2.4149632957972504
+        },
+        {
+          "feature": "insight_rate",
+          "loading": 1.9286590059214679
+        },
+        {
+          "feature": "mattr_vocabulary_diversity",
+          "loading": -1.7763042270252072
+        },
+        {
+          "feature": "posts_per_day_log",
+          "loading": 1.7198480315082485
+        },
+        {
+          "feature": "net_emotion_tone",
+          "loading": -1.6451313259513343
+        },
+        {
+          "feature": "active_day_ratio",
+          "loading": 1.5596276593561709
+        },
+        {
+          "feature": "interval_median_hours_log",
+          "loading": -1.536711972205967
+        },
+        {
+          "feature": "n_posts_total_log",
+          "loading": 1.535298975196527
+        },
+        {
+          "feature": "social_sub_ratio",
+          "loading": 1.4938470603647143
+        },
+        {
+          "feature": "interval_mean_hours",
+          "loading": -1.4842089561023004
+        }
+      ],
+      "top_disorders": [
+        {
+          "disorder": "autism",
+          "loading": 0.21582137243850374
+        },
+        {
+          "disorder": "ptsd",
+          "loading": 0.17195781144637948
+        },
+        {
+          "disorder": "bpd",
+          "loading": 0.1644803669424808
+        },
+        {
+          "disorder": "ocd",
+          "loading": 0.16087805475958586
+        },
+        {
+          "disorder": "schizophrenia",
+          "loading": 0.16085503537850604
+        }
+      ],
+      "direction_split": "5+/5-",
+      "disorder_scores": {
+        "adhd": 0.13468647480713225,
+        "anxiety": 0.13855246905958438,
+        "autism": 0.21582137243850374,
+        "bipolar": 0.14327803340633907,
+        "bpd": 0.1644803669424808,
+        "depression": 0.1387816039367318,
+        "eating_disorders": 0.14662432605843506,
+        "ocd": 0.16087805475958586,
+        "ptsd": 0.17195781144637948,
+        "schizophrenia": 0.16085503537850604
+      }
+    },
+    "Factor_2": {
+      "variance_explained": 0.024896760274172362,
+      "top_features": [
+        {
+          "feature": "anxiety_rate",
+          "loading": 5.726044751081366
+        },
+        {
+          "feature": "first_person_rate",
+          "loading": 2.411353362123829
+        },
+        {
+          "feature": "self_focus_index",
+          "loading": 2.000277255363572
+        },
+        {
+          "feature": "past_focus_rate",
+          "loading": 1.638676051811656
+        },
+        {
+          "feature": "vader_compound_std",
+          "loading": 1.62107652049072
+        },
+        {
+          "feature": "mattr_vocabulary_diversity",
+          "loading": -1.5711172612131865
+        },
+        {
+          "feature": "ari_std",
+          "loading": -1.4989326824717317
+        },
+        {
+          "feature": "death_mortality_rate",
+          "loading": -1.4575638432717717
+        },
+        {
+          "feature": "exclamation_ratio",
+          "loading": 1.3502804374427362
+        },
+        {
+          "feature": "temporal_balance",
+          "loading": 1.2240176990970242
+        }
+      ],
+      "top_disorders": [
+        {
+          "disorder": "bpd",
+          "loading": 0.31868993171444676
+        },
+        {
+          "disorder": "eating_disorders",
+          "loading": 0.3155478383436946
+        },
+        {
+          "disorder": "anxiety",
+          "loading": 0.30621970305646895
+        },
+        {
+          "disorder": "bipolar",
+          "loading": 0.2935537133281263
+        },
+        {
+          "disorder": "ocd",
+          "loading": 0.28860685679374243
+        }
+      ],
+      "direction_split": "7+/3-",
+      "disorder_scores": {
+        "adhd": 0.18484877185283993,
+        "anxiety": 0.30621970305646895,
+        "autism": 0.09785022899782651,
+        "bipolar": 0.2935537133281263,
+        "bpd": 0.31868993171444676,
+        "depression": 0.22040675379605665,
+        "eating_disorders": 0.3155478383436946,
+        "ocd": 0.28860685679374243,
+        "ptsd": 0.2752700205401389,
+        "schizophrenia": 0.20894251977447978
+      }
+    },
+    "Factor_3": {
+      "variance_explained": 0.01106754670335214,
+      "top_features": [
+        {
+          "feature": "anxiety_rate",
+          "loading": 4.756388357203213
+        },
+        {
+          "feature": "sadness_rate",
+          "loading": -4.656532943551012
+        },
+        {
+          "feature": "other_sub_ratio",
+          "loading": 3.096826614470864
+        },
+        {
+          "feature": "first_person_rate",
+          "loading": -2.064207349316321
+        },
+        {
+          "feature": "vader_compound_std",
+          "loading": -1.3876923211209768
+        },
+        {
+          "feature": "self_focus_index",
+          "loading": -1.241490871665745
+        },
+        {
+          "feature": "active_day_ratio",
+          "loading": 1.095674901326651
+        },
+        {
+          "feature": "question_ratio",
+          "loading": 1.0487094426321357
+        },
+        {
+          "feature": "n_active_days",
+          "loading": 1.0400585896865295
+        },
+        {
+          "feature": "n_posts_total_log",
+          "loading": 1.0205516519400661
+        }
+      ],
+      "top_disorders": [
+        {
+          "disorder": "bpd",
+          "loading": -0.12985434799267148
+        },
+        {
+          "disorder": "bipolar",
+          "loading": -0.11984898380939212
+        },
+        {
+          "disorder": "ptsd",
+          "loading": -0.10205912838816368
+        },
+        {
+          "disorder": "eating_disorders",
+          "loading": -0.10193710418591148
+        },
+        {
+          "disorder": "depression",
+          "loading": -0.09596023416936611
+        }
+      ],
+      "direction_split": "6+/4-",
+      "disorder_scores": {
+        "adhd": -0.04612687207717076,
+        "anxiety": -0.036512524898939074,
+        "autism": -0.031105440395693622,
+        "bipolar": -0.11984898380939212,
+        "bpd": -0.12985434799267148,
+        "depression": -0.09596023416936611,
+        "eating_disorders": -0.10193710418591148,
+        "ocd": -0.04581511767722487,
+        "ptsd": -0.10205912838816368,
+        "schizophrenia": -0.09121797172392639
+      }
+    }
+  }
+}

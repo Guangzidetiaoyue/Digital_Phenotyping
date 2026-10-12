@@ -1,0 +1,25 @@
+{
+  "optimal_k": 2,
+  "silhouette": 0.6530580584606197,
+  "cluster_labels": {
+    "adhd": 1,
+    "anxiety": 1,
+    "autism": 2,
+    "bipolar": 1,
+    "bpd": 1,
+    "depression": 1,
+    "eating_disorders": 1,
+    "ocd": 1,
+    "ptsd": 1,
+    "schizophrenia": 1
+  },
+  "ari_vs_hitop": 0.0880503144654088,
+  "nmi_vs_hitop": 0.35530693444685724,
+  "disorder_pca_variance": [
+    0.5714475866657464,
+    0.12505739357980517,
+    0.10428619924364194,
+    0.07785870709417733,
+    0.05954368043137603
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "pipeline_version": "v1.0",
+  "event_study": {
+    "n_significant_pre_t0_windows": 42
+  },
+  "changepoint_detection": {
+    "n_total_changepoints": 1309,
+    "n_pre_t0_changepoints": 749
+  },
+  "parallel_trends": {
+    "conclusion": "FAIL",
+    "n_significant_pre_t0": 17
+  },
+  "multivariate_consensus": {
+    "n_consensus_changepoints": 2769
+  }
+}

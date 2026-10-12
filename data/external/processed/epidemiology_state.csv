@@ -1,0 +1,53 @@
+state,indicator,value,unit,source,year
+New Jersey,adult_depression_prevalence,19.69,percent,MHA,2025
+Florida,adult_depression_prevalence,19.97,percent,MHA,2025
+Mississippi,adult_depression_prevalence,20.47,percent,MHA,2025
+South Carolina,adult_depression_prevalence,20.52,percent,MHA,2025
+California,adult_depression_prevalence,20.99,percent,MHA,2025
+Texas,adult_depression_prevalence,21.02,percent,MHA,2025
+Hawaii,adult_depression_prevalence,21.16,percent,MHA,2025
+New York,adult_depression_prevalence,21.29,percent,MHA,2025
+North Carolina,adult_depression_prevalence,21.32,percent,MHA,2025
+Delaware,adult_depression_prevalence,21.9,percent,MHA,2025
+Alabama,adult_depression_prevalence,22.09,percent,MHA,2025
+Oklahoma,adult_depression_prevalence,22.2,percent,MHA,2025
+Maryland,adult_depression_prevalence,22.29,percent,MHA,2025
+Louisiana,adult_depression_prevalence,22.59,percent,MHA,2025
+Illinois,adult_depression_prevalence,22.61,percent,MHA,2025
+Georgia,adult_depression_prevalence,23.08,percent,MHA,2025
+Michigan,adult_depression_prevalence,23.16,percent,MHA,2025
+Nevada,adult_depression_prevalence,23.16,percent,MHA,2025
+Virginia,adult_depression_prevalence,23.25,percent,MHA,2025
+Ohio,adult_depression_prevalence,23.37,percent,MHA,2025
+Alaska,adult_depression_prevalence,23.47,percent,MHA,2025
+North Dakota,adult_depression_prevalence,23.53,percent,MHA,2025
+Kansas,adult_depression_prevalence,23.72,percent,MHA,2025
+Indiana,adult_depression_prevalence,23.73,percent,MHA,2025
+Minnesota,adult_depression_prevalence,23.74,percent,MHA,2025
+Massachusetts,adult_depression_prevalence,23.99,percent,MHA,2025
+Connecticut,adult_depression_prevalence,24.13,percent,MHA,2025
+South Dakota,adult_depression_prevalence,24.14,percent,MHA,2025
+Rhode Island,adult_depression_prevalence,24.37,percent,MHA,2025
+Pennsylvania,adult_depression_prevalence,24.39,percent,MHA,2025
+Nebraska,adult_depression_prevalence,24.43,percent,MHA,2025
+Arkansas,adult_depression_prevalence,24.47,percent,MHA,2025
+Montana,adult_depression_prevalence,24.6,percent,MHA,2025
+Wisconsin,adult_depression_prevalence,24.81,percent,MHA,2025
+New Mexico,adult_depression_prevalence,24.88,percent,MHA,2025
+Wyoming,adult_depression_prevalence,24.89,percent,MHA,2025
+Kentucky,adult_depression_prevalence,25.22,percent,MHA,2025
+Arizona,adult_depression_prevalence,25.7,percent,MHA,2025
+Iowa,adult_depression_prevalence,25.72,percent,MHA,2025
+Maine,adult_depression_prevalence,25.76,percent,MHA,2025
+Missouri,adult_depression_prevalence,26.08,percent,MHA,2025
+Tennessee,adult_depression_prevalence,26.48,percent,MHA,2025
+Idaho,adult_depression_prevalence,26.72,percent,MHA,2025
+New Hampshire,adult_depression_prevalence,26.93,percent,MHA,2025
+Vermont,adult_depression_prevalence,27.02,percent,MHA,2025
+Colorado,adult_depression_prevalence,27.73,percent,MHA,2025
+Washington,adult_depression_prevalence,27.99,percent,MHA,2025
+District of Columbia,adult_depression_prevalence,28.55,percent,MHA,2025
+West Virginia,adult_depression_prevalence,29.33,percent,MHA,2025
+Utah,adult_depression_prevalence,29.93,percent,MHA,2025
+Oregon,adult_depression_prevalence,30.16,percent,MHA,2025
+National,adult_depression_prevalence,22.95,percent,MHA,2025

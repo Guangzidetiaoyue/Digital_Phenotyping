@@ -1,0 +1,57 @@
+{
+  "pipeline_version": "v1.3",
+  "timestamp": "2026-06-11T23:50:27.729559",
+  "total_users": 721985,
+  "patients": 127168,
+  "controls": 594817,
+  "disorders": {
+    "adhd": 37632,
+    "depression": 30639,
+    "anxiety": 14423,
+    "autism": 10225,
+    "bipolar": 10005,
+    "ptsd": 8282,
+    "bpd": 6081,
+    "ocd": 5736,
+    "schizophrenia": 2458,
+    "eating_disorders": 1687
+  },
+  "splits": {
+    "train": 505370,
+    "val": 108308,
+    "test": 108307
+  },
+  "split_ratios": {
+    "train": "70.0%",
+    "val": "15.0%",
+    "test": "15.0%"
+  },
+  "n_features_total": 101,
+  "n_features_valid": 98,
+  "n_features_zero_iqr": 3,
+  "feature_dimensions": {
+    "affective": 15,
+    "pronoun": 8,
+    "cognitive": 7,
+    "temporal_linguistic": 4,
+    "risk": 5,
+    "behavioral": 5,
+    "readability": 3,
+    "post_length": 3,
+    "temporal": 23,
+    "social": 19,
+    "community": 10,
+    "quality": 10,
+    "log_transforms": 6,
+    "signed_log_transforms": 1
+  },
+  "psm_pair_structure": false,
+  "remaining_missing": 0,
+  "remaining_infinite": 0,
+  "leakage_prevention": {
+    "imputation_source": "train_only",
+    "winsorization_source": "train_only",
+    "scaler_fit_source": "train_only",
+    "split_before_preprocessing": true
+  }
+}

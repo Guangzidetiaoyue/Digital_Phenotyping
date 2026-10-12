@@ -1,0 +1,24 @@
+{
+  "n_users": 18000,
+  "n_features": 108,
+  "pca_components": 50,
+  "pca_explained_variance": 0.97451178919149,
+  "spectrum_separation": {
+    "within_mean": 0.3692680937903268,
+    "between_mean": 0.4861052472536501,
+    "perm_p": 0.3123687631236876
+  },
+  "structural_fit": {
+    "hitop_r": -0.15438138289803846,
+    "hitop_p": 0.29117088291170884,
+    "dsm5_r": -0.21169026340857908,
+    "dsm5_p": 0.1546845315468453,
+    "comorbidity_r": 0.035236333368360885,
+    "comorbidity_p": 0.8817118288171183
+  },
+  "user_separation": {
+    "own_mean": 2.897852897644043,
+    "other_mean": 2.926741123199463,
+    "ratio": 1.0087074041366577
+  }
+}

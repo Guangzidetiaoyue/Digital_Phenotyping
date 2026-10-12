@@ -1,0 +1,604 @@
+{
+  "confound_adjustment": {
+    "correlation_with_original": 0.9892035020922838,
+    "mean_abs_difference": 0.033214097843831523
+  },
+  "sample_size_stability": {
+    "depression": {
+      "0.25": {
+        "mean_auroc": 0.8596481298869278,
+        "std_auroc": 0.0029208694612584893,
+        "ci_lower": 0.855316567271465,
+        "ci_upper": 0.8651661780325974,
+        "n_repeats": 10
+      },
+      "0.5": {
+        "mean_auroc": 0.8607461587212718,
+        "std_auroc": 0.0019293848760343804,
+        "ci_lower": 0.8580669585050413,
+        "ci_upper": 0.8632540737362873,
+        "n_repeats": 10
+      },
+      "0.75": {
+        "mean_auroc": 0.8608323619831815,
+        "std_auroc": 0.0010859712224316114,
+        "ci_lower": 0.8596933953700305,
+        "ci_upper": 0.8628706663174318,
+        "n_repeats": 10
+      },
+      "1.0": {
+        "mean_auroc": 0.8610245786842181,
+        "std_auroc": 0.0006792423951396026,
+        "ci_lower": 0.8601761126034025,
+        "ci_upper": 0.8620471175566433,
+        "n_repeats": 10
+      }
+    },
+    "bipolar": {
+      "0.25": {
+        "mean_auroc": 0.9005643731784143,
+        "std_auroc": 0.0018815026152923058,
+        "ci_lower": 0.8979655992099022,
+        "ci_upper": 0.9036129030807578,
+        "n_repeats": 10
+      },
+      "0.5": {
+        "mean_auroc": 0.9017831604664925,
+        "std_auroc": 0.0021188893116841218,
+        "ci_lower": 0.8985740341104087,
+        "ci_upper": 0.9041993025802757,
+        "n_repeats": 10
+      },
+      "0.75": {
+        "mean_auroc": 0.9019812307809276,
+        "std_auroc": 0.000981401876538379,
+        "ci_lower": 0.9004452370440265,
+        "ci_upper": 0.9032642928035575,
+        "n_repeats": 10
+      },
+      "1.0": {
+        "mean_auroc": 0.9024861573387088,
+        "std_auroc": 0.0008500153912878495,
+        "ci_lower": 0.9009794460586809,
+        "ci_upper": 0.9033686221140447,
+        "n_repeats": 10
+      }
+    },
+    "anxiety": {
+      "0.25": {
+        "mean_auroc": 0.8867930588685542,
+        "std_auroc": 0.004158392839113553,
+        "ci_lower": 0.879430493711555,
+        "ci_upper": 0.892755083922695,
+        "n_repeats": 10
+      },
+      "0.5": {
+        "mean_auroc": 0.8906601531509148,
+        "std_auroc": 0.002034368836535734,
+        "ci_lower": 0.8879912389233269,
+        "ci_upper": 0.8936885600815114,
+        "n_repeats": 10
+      },
+      "0.75": {
+        "mean_auroc": 0.891178728928471,
+        "std_auroc": 0.001211125237713162,
+        "ci_lower": 0.8889731600059049,
+        "ci_upper": 0.8931177625591994,
+        "n_repeats": 10
+      },
+      "1.0": {
+        "mean_auroc": 0.8915844550506176,
+        "std_auroc": 0.000847052908648032,
+        "ci_lower": 0.8899513087476326,
+        "ci_upper": 0.8926473988248624,
+        "n_repeats": 10
+      }
+    },
+    "ocd": {
+      "0.25": {
+        "mean_auroc": 0.8765886101680428,
+        "std_auroc": 0.003656638846886445,
+        "ci_lower": 0.8706908836138328,
+        "ci_upper": 0.880896123847447,
+        "n_repeats": 10
+      },
+      "0.5": {
+        "mean_auroc": 0.8814619186608704,
+        "std_auroc": 0.002337471431303482,
+        "ci_lower": 0.8781430911093684,
+        "ci_upper": 0.8852211827611829,
+        "n_repeats": 10
+      },
+      "0.75": {
+        "mean_auroc": 0.8820155845798874,
+        "std_auroc": 0.0012702276345781674,
+        "ci_lower": 0.880813884937413,
+        "ci_upper": 0.8843592005771506,
+        "n_repeats": 10
+      },
+      "1.0": {
+        "mean_auroc": 0.8843779799383809,
+        "std_auroc": 0.0013507655292437392,
+        "ci_lower": 0.8815635752393485,
+        "ci_upper": 0.8857633999802106,
+        "n_repeats": 10
+      }
+    },
+    "ptsd": {
+      "0.25": {
+        "mean_auroc": 0.8993119511302133,
+        "std_auroc": 0.004626411422204263,
+        "ci_lower": 0.8935079083728663,
+        "ci_upper": 0.9077228231638251,
+        "n_repeats": 10
+      },
+      "0.5": {
+        "mean_auroc": 0.9014962009448462,
+        "std_auroc": 0.002155462562847413,
+        "ci_lower": 0.8988441285987194,
+        "ci_upper": 0.9051022670497871,
+        "n_repeats": 10
+      },
+      "0.75": {
+        "mean_auroc": 0.9026569916008909,
+        "std_auroc": 0.001727506926199368,
+        "ci_lower": 0.8996865475868986,
+        "ci_upper": 0.9050981710334487,
+        "n_repeats": 10
+      },
+      "1.0": {
+        "mean_auroc": 0.9037629918956414,
+        "std_auroc": 0.0009410300297680826,
+        "ci_lower": 0.9026176285579115,
+        "ci_upper": 0.9053471451318046,
+        "n_repeats": 10
+      }
+    },
+    "bpd": {
+      "0.25": {
+        "mean_auroc": 0.9157641820769244,
+        "std_auroc": 0.003356605178209054,
+        "ci_lower": 0.9107934545017149,
+        "ci_upper": 0.9198386392935127,
+        "n_repeats": 10
+      },
+      "0.5": {
+        "mean_auroc": 0.9198027526876549,
+        "std_auroc": 0.002390664501459477,
+        "ci_lower": 0.915880557218674,
+        "ci_upper": 0.9230323856321807,
+        "n_repeats": 10
+      },
+      "0.75": {
+        "mean_auroc": 0.9212964271581209,
+        "std_auroc": 0.001082602325309056,
+        "ci_lower": 0.919764453132361,
+        "ci_upper": 0.9233233189686308,
+        "n_repeats": 10
+      },
+      "1.0": {
+        "mean_auroc": 0.9226162615496737,
+        "std_auroc": 0.0011842011046462688,
+        "ci_lower": 0.9206439155969615,
+        "ci_upper": 0.9240374101736508,
+        "n_repeats": 10
+      }
+    },
+    "eating_disorders": {
+      "0.25": {
+        "mean_auroc": 0.9014581882391515,
+        "std_auroc": 0.010599160647979252,
+        "ci_lower": 0.8786289755399714,
+        "ci_upper": 0.9119755237900727,
+        "n_repeats": 10
+      },
+      "0.5": {
+        "mean_auroc": 0.9152437975120012,
+        "std_auroc": 0.003981230147263703,
+        "ci_lower": 0.9087783925990653,
+        "ci_upper": 0.9222676230014416,
+        "n_repeats": 10
+      },
+      "0.75": {
+        "mean_auroc": 0.920177663289244,
+        "std_auroc": 0.002141168496662343,
+        "ci_lower": 0.9156792834974828,
+        "ci_upper": 0.9225413355280396,
+        "n_repeats": 10
+      },
+      "1.0": {
+        "mean_auroc": 0.9222278088211375,
+        "std_auroc": 0.002804060459958448,
+        "ci_lower": 0.9163518212926235,
+        "ci_upper": 0.9258104049742847,
+        "n_repeats": 10
+      }
+    },
+    "schizophrenia": {
+      "0.25": {
+        "mean_auroc": 0.8618497048516506,
+        "std_auroc": 0.010481836572512943,
+        "ci_lower": 0.8460093952723644,
+        "ci_upper": 0.8807413333266421,
+        "n_repeats": 10
+      },
+      "0.5": {
+        "mean_auroc": 0.8669945099621941,
+        "std_auroc": 0.0044976137158628205,
+        "ci_lower": 0.8617038129431617,
+        "ci_upper": 0.8757048854998781,
+        "n_repeats": 10
+      },
+      "0.75": {
+        "mean_auroc": 0.872150335950845,
+        "std_auroc": 0.0030601997135314193,
+        "ci_lower": 0.8675969032163025,
+        "ci_upper": 0.8775039917056373,
+        "n_repeats": 10
+      },
+      "1.0": {
+        "mean_auroc": 0.8741225924847595,
+        "std_auroc": 0.0017761761349275424,
+        "ci_lower": 0.8713104601768238,
+        "ci_upper": 0.8770307215429296,
+        "n_repeats": 10
+      }
+    },
+    "adhd": {
+      "0.25": {
+        "mean_auroc": 0.8308607272804844,
+        "std_auroc": 0.0026734654521540866,
+        "ci_lower": 0.8267384981974518,
+        "ci_upper": 0.8351511015636305,
+        "n_repeats": 10
+      },
+      "0.5": {
+        "mean_auroc": 0.8327473334252768,
+        "std_auroc": 0.0016280832367929622,
+        "ci_lower": 0.8303316331455542,
+        "ci_upper": 0.8354926765141284,
+        "n_repeats": 10
+      },
+      "0.75": {
+        "mean_auroc": 0.8329017597619954,
+        "std_auroc": 0.000849423881219177,
+        "ci_lower": 0.8320787705636962,
+        "ci_upper": 0.8345130884930936,
+        "n_repeats": 10
+      },
+      "1.0": {
+        "mean_auroc": 0.8336068089182034,
+        "std_auroc": 0.00048815125420089,
+        "ci_lower": 0.8329003425405864,
+        "ci_upper": 0.8343570477690659,
+        "n_repeats": 10
+      }
+    },
+    "autism": {
+      "0.25": {
+        "mean_auroc": 0.8444743870043261,
+        "std_auroc": 0.0025670337512198375,
+        "ci_lower": 0.8404931080511006,
+        "ci_upper": 0.8491239395287519,
+        "n_repeats": 10
+      },
+      "0.5": {
+        "mean_auroc": 0.8484862174179477,
+        "std_auroc": 0.002914262414581512,
+        "ci_lower": 0.8446539135230067,
+        "ci_upper": 0.8541787093190424,
+        "n_repeats": 10
+      },
+      "0.75": {
+        "mean_auroc": 0.8493283680306355,
+        "std_auroc": 0.002469681399423464,
+        "ci_lower": 0.8458071531339916,
+        "ci_upper": 0.8535232527592991,
+        "n_repeats": 10
+      },
+      "1.0": {
+        "mean_auroc": 0.8496477504780117,
+        "std_auroc": 0.001246939292344135,
+        "ci_lower": 0.8481102644291172,
+        "ci_upper": 0.8520580323996645,
+        "n_repeats": 10
+      }
+    }
+  },
+  "multiple_comparison": {
+    "none": {
+      "n_significant": 770,
+      "n_total": 930,
+      "proportion_significant": 0.8279569892473119
+    },
+    "bonferroni": {
+      "n_significant": 642,
+      "n_total": 930,
+      "proportion_significant": 0.6903225806451613
+    },
+    "holm": {
+      "n_significant": 666,
+      "n_total": 930,
+      "proportion_significant": 0.7161290322580646
+    },
+    "fdr_bh": {
+      "n_significant": 765,
+      "n_total": 930,
+      "proportion_significant": 0.8225806451612904
+    },
+    "fdr_by": {
+      "n_significant": 720,
+      "n_total": 930,
+      "proportion_significant": 0.7741935483870968
+    }
+  },
+  "outlier_handling": {
+    "no_outlier_treatment": {
+      "per_disorder": {
+        "depression": 0.8607895274763099,
+        "bipolar": 0.9020720224595348,
+        "anxiety": 0.8926432958190612
+      },
+      "mean_auroc": 0.8851682819183019,
+      "sample_retention_rate": 1.0,
+      "outliers_replaced": 0
+    },
+    "winsorize_1_99": {
+      "per_disorder": {
+        "depression": 0.8624565408175683,
+        "bipolar": 0.9012369777130426,
+        "anxiety": 0.8939197721529695
+      },
+      "mean_auroc": 0.8858710968945268,
+      "sample_retention_rate": 1.0,
+      "outliers_replaced": 1145933
+    },
+    "winsorize_5_95": {
+      "per_disorder": {
+        "depression": 0.8628317667361083,
+        "bipolar": 0.8998606443904484,
+        "anxiety": 0.8940210010151756
+      },
+      "mean_auroc": 0.8855711373805774,
+      "sample_retention_rate": 1.0,
+      "outliers_replaced": 6156647
+    },
+    "z3_median_replace": {
+      "per_disorder": {
+        "depression": 0.8549433837662296,
+        "bipolar": 0.8906649423913731,
+        "anxiety": 0.8829946487017324
+      },
+      "mean_auroc": 0.8762009916197783,
+      "sample_retention_rate": 1.0,
+      "outliers_replaced": "942889"
+    },
+    "z2.5_median_replace": {
+      "per_disorder": {
+        "depression": 0.8507460936304406,
+        "bipolar": 0.8870962519739631,
+        "anxiety": 0.8779491438447984
+      },
+      "mean_auroc": 0.8719304964830674,
+      "sample_retention_rate": 1.0,
+      "outliers_replaced": "1579774"
+    },
+    "trimmed_winsorize": {
+      "per_disorder": {
+        "depression": 0.8628317891042353,
+        "bipolar": 0.8998614635710632,
+        "anxiety": 0.8940188181007805
+      },
+      "mean_auroc": 0.885570690258693,
+      "sample_retention_rate": 1.0,
+      "outliers_replaced": 6156647
+    },
+    "baseline_s02": {
+      "per_disorder": {
+        "depression": 0.8604419822520807,
+        "bipolar": 0.9021551112090744,
+        "anxiety": 0.8898756807150492
+      },
+      "mean_auroc": 0.8841575913920682,
+      "sample_retention_rate": 1.0,
+      "outliers_replaced": -1
+    }
+  },
+  "cv_scheme": {
+    "depression": {
+      "5fold": {
+        "mean_auroc": 0.8603328643131711,
+        "std_auroc": 0.0011925022808010495
+      },
+      "10fold": {
+        "mean_auroc": 0.8604043605501955,
+        "std_auroc": 0.0026573527249105335
+      },
+      "repeated_5fold_x3": {
+        "mean_auroc": 0.8603824258647275,
+        "std_auroc": 0.002631143773740815
+      }
+    },
+    "bipolar": {
+      "5fold": {
+        "mean_auroc": 0.9023354208432772,
+        "std_auroc": 0.005659037520006432
+      },
+      "10fold": {
+        "mean_auroc": 0.9024668434766234,
+        "std_auroc": 0.006213448413796211
+      },
+      "repeated_5fold_x3": {
+        "mean_auroc": 0.9022492799074489,
+        "std_auroc": 0.004544857994514178
+      }
+    },
+    "anxiety": {
+      "5fold": {
+        "mean_auroc": 0.8903800308135169,
+        "std_auroc": 0.003549825526303223
+      },
+      "10fold": {
+        "mean_auroc": 0.8904360468374115,
+        "std_auroc": 0.005915973172052219
+      },
+      "repeated_5fold_x3": {
+        "mean_auroc": 0.8903099961129783,
+        "std_auroc": 0.0037929620323743723
+      }
+    }
+  },
+  "feature_set": {
+    "depression": {
+      "all_features": {
+        "n_features": 93,
+        "mean_auroc": 0.8604419822520807
+      },
+      "top_10": {
+        "n_features": 10,
+        "mean_auroc": 0.8355671637817101
+      },
+      "top_20": {
+        "n_features": 20,
+        "mean_auroc": 0.8379013053762807
+      },
+      "top_50": {
+        "n_features": 50,
+        "mean_auroc": 0.8465803451865669
+      },
+      "pca_10": {
+        "n_features": 10,
+        "mean_auroc": 0.7521904404778837,
+        "var_explained": 0.7386713806585558
+      }
+    },
+    "bipolar": {
+      "all_features": {
+        "n_features": 93,
+        "mean_auroc": 0.9021551112090744
+      },
+      "top_10": {
+        "n_features": 10,
+        "mean_auroc": 0.8760689411787856
+      },
+      "top_20": {
+        "n_features": 20,
+        "mean_auroc": 0.8786123339765636
+      },
+      "top_50": {
+        "n_features": 50,
+        "mean_auroc": 0.8974203874822949
+      },
+      "pca_10": {
+        "n_features": 10,
+        "mean_auroc": 0.7992374101248458,
+        "var_explained": 0.740120289158985
+      }
+    },
+    "anxiety": {
+      "all_features": {
+        "n_features": 93,
+        "mean_auroc": 0.8898756807150492
+      },
+      "top_10": {
+        "n_features": 10,
+        "mean_auroc": 0.8727459827095769
+      },
+      "top_20": {
+        "n_features": 20,
+        "mean_auroc": 0.8749948792070201
+      },
+      "top_50": {
+        "n_features": 50,
+        "mean_auroc": 0.882703694400135
+      },
+      "pca_10": {
+        "n_features": 10,
+        "mean_auroc": 0.7961431611185695,
+        "var_explained": 0.7401049428577755
+      }
+    }
+  },
+  "temporal_stability": {
+    "pearson_r": 0.9766831828540068,
+    "pearson_p": 0.0,
+    "icc": 0.9717349771156432,
+    "mean_abs_difference": 0.07579322292920371,
+    "n_comparisons": 500,
+    "time_span_days": 5586,
+    "n_periods": 3
+  },
+  "permutation_test": {
+    "depression": {
+      "observed_auroc": 0.8604419822520807,
+      "null_mean": 0.49985486242326466,
+      "null_std": 0.003148436265911297,
+      "null_95th": 0.505357680158698,
+      "null_99th": 0.5065020557507438,
+      "p_empirical": 0.001996007984031936,
+      "p_empirical_note": "Min detectable p = 0.0020. True p may be smaller.",
+      "z_equivalent": 114.52895640066137,
+      "n_permutations": 500,
+      "significant_005": "True",
+      "significant_001": "True",
+      "likely_highly_significant": "True"
+    },
+    "bipolar": {
+      "observed_auroc": 0.9021551112090744,
+      "null_mean": 0.5003387958764122,
+      "null_std": 0.005477501431394667,
+      "null_95th": 0.5095214342418696,
+      "null_99th": 0.513951580604943,
+      "p_empirical": 0.001996007984031936,
+      "p_empirical_note": "Min detectable p = 0.0020. True p may be smaller.",
+      "z_equivalent": 73.3575920272015,
+      "n_permutations": 500,
+      "significant_005": "True",
+      "significant_001": "True",
+      "likely_highly_significant": "True"
+    },
+    "anxiety": {
+      "observed_auroc": 0.8898756807150492,
+      "null_mean": 0.4998811304044017,
+      "null_std": 0.004631983784795209,
+      "null_95th": 0.5072260456483739,
+      "null_99th": 0.51011138929285,
+      "p_empirical": 0.001996007984031936,
+      "p_empirical_note": "Min detectable p = 0.0020. True p may be smaller.",
+      "z_equivalent": 84.19600940547984,
+      "n_permutations": 500,
+      "significant_005": "True",
+      "significant_001": "True",
+      "likely_highly_significant": "True"
+    }
+  },
+  "heterogeneity": {
+    "mean_I_squared": 95.83798857489823,
+    "median_I_squared": 97.32324446759678,
+    "pct_high": 100.0,
+    "pct_low": 0.0
+  },
+  "robustness_summary": [
+    {
+      "check": "confound_adjustment",
+      "status": "PASS",
+      "detail": "r = 0.989"
+    },
+    {
+      "check": "permutation_test",
+      "status": "PASS",
+      "detail": "All significant"
+    },
+    {
+      "check": "temporal_stability",
+      "status": "PASS",
+      "detail": "r = 0.977, ICC = 0.972"
+    },
+    {
+      "check": "heterogeneity",
+      "status": "PASS_WITH_INTERPRETATION",
+      "detail": "100% high I\u00b2 (expected: severity gradient), direction consistency = 1.00"
+    }
+  ],
+  "overall_robustness": "4/4 passed (0 warning, 0 inconclusive)"
+}

@@ -1,0 +1,5 @@
+raw_OR: Mantel r=-0.247 p=0.2973 | Spearman r=-0.095 p=0.6826 | n=21
+log_OR: Mantel r=-0.244 p=0.3020 | Spearman r=-0.095 p=0.6826 | n=21
+uncited_in_code_pct: Mantel r=-0.363 p=0.0844 | Spearman r=-0.412 p=0.0050 | n=45
+WROTE /path/to/project/module3_results/statistics/s31c_external_or_sensitivity.json
+EXIT_OK

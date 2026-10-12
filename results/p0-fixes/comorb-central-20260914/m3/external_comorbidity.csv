@@ -1,0 +1,22 @@
+disorder_a,disorder_b,value,measure,ci_low,ci_high,source,ref,eating_subtype,mapping_note
+depression,anxiety,4.2,adjusted OR,3.81,4.57,Hasin2018 NESARC-III,10.1001/jamapsychiatry.2017.4602,,class 'any anxiety' = our aggregate anxiety
+depression,ocd,3.5,adjusted OR,2.0,6.2,Ruscio2010 NCS-R,10.1038/mp.2008.94,,MDD subset of our depression
+depression,ptsd,4.4,adjusted OR,3.92,5.03,Hasin2018 NESARC-III,10.1001/jamapsychiatry.2017.4602,,
+depression,bpd,5.2,adjusted OR,4.70,5.74,Hasin2018 NESARC-III,10.1001/jamapsychiatry.2017.4602,,borderline PD
+depression,eating_disorders,5.73,adjusted OR (Model1),4.33,7.60,Udo2019a NESARC-III,10.1002/eat.23004,BED,"subtype BED; AN 2.40, BN 8.49"
+depression,adhd,4.51,pooled OR,2.44,8.34,Hartman2023 meta,10.1016/j.neubiorev.2023.105209,,pooled 7 studies
+bipolar,ocd,7.4,adjusted OR,3.6,15.4,Ruscio2010 NCS-R,10.1038/mp.2008.94,,'broad' bipolar
+bipolar,schizophrenia,6.9,adjusted OR (lifetime),1.2,41.4,Kessler2005-NAP NCS-R,10.1016/j.biopsych.2005.04.034,,NAP aggregate (broad
+bipolar,adhd,8.72,pooled OR,5.47,13.89,Hartman2023 meta,10.1016/j.neubiorev.2023.105209,,pooled 6 studies
+bipolar,eating_disorders,4.58,adjusted OR (Model1),2.93,7.16,Udo2019a NESARC-III,10.1002/eat.23004,BED,"bipolar I; subtype BED; AN 4.22, BN 6.51"
+anxiety,ocd,7.6,adjusted OR,3.4,16.9,Ruscio2010 NCS-R,10.1038/mp.2008.94,,class 'any anxiety' = our aggregate
+anxiety,ptsd,9.55,adjusted OR,5.14,17.74,Smith2016 NESARC-III,10.1016/j.jpsychires.2016.06.022,,class 'any anxiety'
+anxiety,adhd,4.95,pooled OR,3.29,7.46,Hartman2023 meta,10.1016/j.neubiorev.2023.105209,,pooled 9 studies
+anxiety,eating_disorders,6.21,adjusted OR (Model1),4.77,8.06,Udo2019a NESARC-III,10.1002/eat.23004,BED,"subtype BED; AN 2.44, BN 3.00"
+ocd,ptsd,2.9,adjusted OR,1.6,5.4,Ruscio2010 NCS-R,10.1038/mp.2008.94,,
+ocd,adhd,3.8,adjusted OR,1.7,8.2,Ruscio2010 NCS-R,10.1038/mp.2008.94,,
+ocd,eating_disorders,4.2,adjusted OR,1.4,12.8,Hudson2007 NCS-R,10.1016/j.biopsych.2006.03.040,BED,"subtype BED; BN 7.5, AN not estimable"
+ptsd,schizophrenia,6.0,adjusted OR (lifetime),1.7,21.6,Kessler2005-NAP NCS-R,10.1016/j.biopsych.2005.04.034,,NAP aggregate
+ptsd,eating_disorders,6.24,adjusted OR (Model1),4.66,8.35,Udo2019a NESARC-III,10.1002/eat.23004,BED,"subtype BED; AN 3.46, BN 5.54"
+bpd,eating_disorders,7.75,adjusted OR (Model1),5.83,10.31,Udo2019a NESARC-III,10.1002/eat.23004,BED,"borderline; subtype BED; AN 3.34, BN 6.59"
+eating_disorders,adhd,3.1,adjusted OR,1.5,6.2,Hudson2007 NCS-R,10.1016/j.biopsych.2006.03.040,BED,"subtype BED; BN 8.4, AN 2.1 ns"

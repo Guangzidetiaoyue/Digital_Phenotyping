@@ -1,0 +1,1186 @@
+2026-04-17 19:58:06,472 - INFO - ================================================================================
+2026-04-17 19:58:49,538 - INFO - MODULE 1 - Step 03: Effect Size Matrix Computation (v1.4)
+2026-04-17 19:58:50,172 - INFO - ================================================================================
+2026-04-17 19:59:05,111 - INFO - Loaded features: (722100, 133)
+2026-04-17 19:59:08,920 - INFO - Loading feature columns from Step 02 outputs...
+2026-04-17 20:00:19,467 - INFO -   Loaded from feature_selection.json:   103 valid features (2 dropped: ['inhibition_rate', 'inhibition_marker_rate'])
+2026-04-17 20:00:32,378 - INFO - ================================================================================
+2026-04-17 20:00:34,465 - INFO - MODULE 1 - Step 03: Effect Size Matrix Computation (v1.4)
+2026-04-17 20:00:34,466 - INFO - ================================================================================
+2026-04-17 20:00:40,674 - INFO - Loaded features: (722100, 133)
+2026-04-17 20:00:40,675 - INFO - Loading feature columns from Step 02 outputs...
+2026-04-17 20:00:47,139 - INFO -   Loaded from feature_selection.json:   103 valid features (2 dropped: ['inhibition_rate', 'inhibition_marker_rate'])
+2026-04-17 20:06:35,869 - INFO - ================================================================================
+2026-04-17 20:06:38,271 - INFO - MODULE 1 - Step 03: Effect Size Matrix Computation (v1.4)
+2026-04-17 20:06:38,301 - INFO - ================================================================================
+2026-04-17 20:06:46,746 - INFO - Loaded features: (722100, 133)
+2026-04-17 20:06:46,747 - INFO - Loading feature columns from Step 02 outputs...
+2026-04-17 20:07:07,471 - INFO -   Loaded from feature_selection.json: 103 valid features (2 dropped: ['inhibition_rate', 'inhibition_marker_rate'])
+2026-04-17 20:07:14,382 - INFO - Total features to analyze: 103
+2026-04-17 20:07:28,415 - INFO - Restricted to training set: 505461 users (70.0%)
+2026-04-17 20:08:17,472 - INFO - Disorders to analyze: 10/10
+2026-04-17 20:08:24,123 - INFO - 
+--- Analysis 1: Disorder vs Controls Effect Sizes ---
+2026-04-17 20:08:34,001 - INFO -   Computing effect sizes for: depression
+2026-04-17 20:09:04,074 - INFO -     Patients: 21445, Controls: 416447
+2026-04-17 20:09:16,561 - INFO -     IPTW weights available: 21445/21445 patients, 416447/416447 controls
+2026-04-17 20:53:44,147 - INFO -     Effect sizes: mean |g|=0.190, max |g|=1.269, n_sig(p<0.05)=86
+2026-04-17 20:54:11,738 - INFO -   Computing effect sizes for: bipolar
+2026-04-17 20:54:12,037 - INFO -     Patients: 7004, Controls: 416447
+2026-04-17 20:54:12,040 - INFO -     IPTW weights available: 7004/7004 patients, 416447/416447 controls
+2026-04-17 21:24:05,289 - INFO -     Effect sizes: mean |g|=0.268, max |g|=3.329, n_sig(p<0.05)=91
+2026-04-17 21:24:05,333 - INFO -   Computing effect sizes for: anxiety
+2026-04-17 21:24:05,588 - INFO -     Patients: 10096, Controls: 416447
+2026-04-17 21:24:05,591 - INFO -     IPTW weights available: 10096/10096 patients, 416447/416447 controls
+2026-04-17 21:53:59,702 - INFO -     Effect sizes: mean |g|=0.221, max |g|=1.912, n_sig(p<0.05)=90
+2026-04-17 21:53:59,771 - INFO -   Computing effect sizes for: ocd
+2026-04-17 21:54:00,081 - INFO -     Patients: 4015, Controls: 416447
+2026-04-17 21:54:00,085 - INFO -     IPTW weights available: 4015/4015 patients, 416447/416447 controls
+2026-04-17 22:23:14,477 - INFO -     Effect sizes: mean |g|=0.234, max |g|=2.343, n_sig(p<0.05)=83
+2026-04-17 22:23:14,514 - INFO -   Computing effect sizes for: ptsd
+2026-04-17 22:23:14,753 - INFO -     Patients: 5797, Controls: 416447
+2026-04-17 22:23:14,755 - INFO -     IPTW weights available: 5797/5797 patients, 416447/416447 controls
+2026-04-17 22:52:40,337 - INFO -     Effect sizes: mean |g|=0.252, max |g|=1.970, n_sig(p<0.05)=89
+2026-04-17 22:52:40,392 - INFO -   Computing effect sizes for: bpd
+2026-04-17 22:52:40,644 - INFO -     Patients: 4257, Controls: 416447
+2026-04-17 22:52:40,647 - INFO -     IPTW weights available: 4257/4257 patients, 416447/416447 controls
+2026-04-17 23:23:18,194 - INFO -     Effect sizes: mean |g|=0.294, max |g|=3.189, n_sig(p<0.05)=87
+2026-04-17 23:23:18,215 - INFO -   Computing effect sizes for: eating_disorders
+2026-04-17 23:23:18,449 - INFO -     Patients: 1181, Controls: 416447
+2026-04-17 23:23:18,451 - INFO -     IPTW weights available: 1181/1181 patients, 416447/416447 controls
+2026-04-18 00:06:09,543 - INFO -     Effect sizes: mean |g|=0.291, max |g|=3.229, n_sig(p<0.05)=72
+2026-04-18 00:06:09,561 - INFO -   Computing effect sizes for: schizophrenia
+2026-04-18 00:06:09,814 - INFO -     Patients: 1721, Controls: 416447
+2026-04-18 00:06:09,815 - INFO -     IPTW weights available: 1721/1721 patients, 416447/416447 controls
+2026-04-18 00:54:16,810 - INFO -     Effect sizes: mean |g|=0.237, max |g|=3.418, n_sig(p<0.05)=76
+2026-04-18 00:54:16,828 - INFO -   Computing effect sizes for: adhd
+2026-04-18 00:54:17,090 - INFO -     Patients: 26341, Controls: 416447
+2026-04-18 00:54:17,092 - INFO -     IPTW weights available: 26341/26341 patients, 416447/416447 controls
+2026-04-18 01:24:39,560 - INFO -     Effect sizes: mean |g|=0.183, max |g|=1.356, n_sig(p<0.05)=90
+2026-04-18 01:24:39,578 - INFO -   Computing effect sizes for: autism
+2026-04-18 01:24:39,817 - INFO -     Patients: 7157, Controls: 416447
+2026-04-18 01:24:39,819 - INFO -     IPTW weights available: 7157/7157 patients, 416447/416447 controls
+2026-04-18 01:55:04,977 - INFO -     Effect sizes: mean |g|=0.223, max |g|=1.944, n_sig(p<0.05)=95
+2026-04-18 01:55:04,999 - INFO - Applying FDR correction...
+2026-04-18 01:55:05,035 - INFO -   Total tests: 1030
+2026-04-18 01:55:05,035 - INFO -   Significant (global FDR): 846 (82.1%)
+2026-04-18 01:55:05,035 - INFO -   Significant (within-disorder FDR): 847 (82.2%)
+2026-04-18 01:55:05,035 - INFO -   Effect categories: {'negligible': 490, 'small': 209, 'minimal': 193, 'medium': 77, 'large': 61}
+2026-04-18 01:55:05,568 - INFO - Effect size matrix shape: (103, 10)
+2026-04-18 01:55:05,569 - INFO - Computing feature specificity scores...
+2026-04-18 01:55:05,580 - INFO -   Specificity range: 0.003 - 0.269
+2026-04-18 01:55:05,581 - INFO -   High specificity (>0.7): 0 features
+2026-04-18 01:55:05,581 - INFO -   Low specificity (<0.3, transdiagnostic): 103 features
+2026-04-18 01:55:05,586 - INFO - Computing diagnostic value scores...
+2026-04-18 01:55:05,596 - INFO -   Diagnostic value range: 0.000 - 0.089
+2026-04-18 01:55:05,597 - INFO -   High diagnostic value (>0.3): 0 features
+2026-04-18 01:55:05,614 - INFO -   Top 5 diagnostic features:
+2026-04-18 01:55:05,614 - INFO -     mental_health_sub_ratio: DV=0.089 (best: schizophrenia g=3.418)
+2026-04-18 01:55:05,615 - INFO -     support_sub_ratio: DV=0.049 (best: bipolar g=2.537)
+2026-04-18 01:55:05,615 - INFO -     interval_median_hours_log: DV=0.035 (best: autism g=-0.224)
+2026-04-18 01:55:05,615 - INFO -     sadness_rate: DV=0.032 (best: bpd g=1.167)
+2026-04-18 01:55:05,615 - INFO -     anxiety_rate: DV=0.031 (best: anxiety g=1.912)
+2026-04-18 01:55:05,620 - INFO - Detecting direction inconsistency across disorders...
+2026-04-18 01:55:05,690 - INFO -   Features with direction inconsistency: 52/103
+2026-04-18 01:55:05,691 - INFO -   These features are valuable for differential diagnosis:
+2026-04-18 01:55:05,692 - INFO -     active_day_ratio: +1 sig+ (autism), -7 sig- (anxiety;bipolar;bpd;depression;eating_disorders;ocd;schizophrenia), spread=0.464
+2026-04-18 01:55:05,692 - INFO -     anger_rate: +1 sig+ (autism), -8 sig- (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;schizophrenia), spread=0.303
+2026-04-18 01:55:05,692 - INFO -     ari_mean: +2 sig+ (adhd;autism), -5 sig- (anxiety;bipolar;bpd;depression;ptsd), spread=0.248
+2026-04-18 01:55:05,692 - INFO -     avg_comments_received: +4 sig+ (adhd;autism;eating_disorders;ptsd), -2 sig- (bipolar;schizophrenia), spread=0.185
+2026-04-18 01:55:05,692 - INFO -     circadian_concentration: +3 sig+ (anxiety;ocd;schizophrenia), -3 sig- (adhd;depression;ptsd), spread=0.112
+2026-04-18 01:55:05,692 - INFO -     circadian_mean_hour: +1 sig+ (adhd), -3 sig- (bipolar;depression;schizophrenia), spread=0.129
+2026-04-18 01:55:05,693 - INFO -     exclamation_ratio: +8 sig+ (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 sig- (autism), spread=0.635
+2026-04-18 01:55:05,693 - INFO -     future_focus_rate: +9 sig+ (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd;schizophrenia), -1 sig- (autism), spread=0.233
+2026-04-18 01:55:05,693 - INFO -     gap_regularity_cv: +2 sig+ (bipolar;schizophrenia), -2 sig- (anxiety;ocd), spread=0.134
+2026-04-18 01:55:05,693 - INFO -     hourly_entropy: +4 sig+ (adhd;autism;depression;ptsd), -2 sig- (anxiety;ocd), spread=0.210
+2026-04-18 01:55:05,784 - INFO -   Saved feature ranking (top 10 by diagnostic value):
+2026-04-18 01:55:05,785 - INFO -     mental_health_sub_ratio: DV=0.089, spec=0.026, max|g|=3.418, best=schizophrenia
+2026-04-18 01:55:05,785 - INFO -     support_sub_ratio: DV=0.049, spec=0.019, max|g|=2.537, best=bipolar
+2026-04-18 01:55:05,785 - INFO -     interval_median_hours_log: DV=0.035, spec=0.157, max|g|=0.224, best=autism
+2026-04-18 01:55:05,785 - INFO -     sadness_rate: DV=0.032, spec=0.027, max|g|=1.167, best=bpd
+2026-04-18 01:55:05,786 - INFO -     anxiety_rate: DV=0.031, spec=0.016, max|g|=1.912, best=anxiety
+2026-04-18 01:55:05,786 - INFO -     score_median: DV=0.030, spec=0.218, max|g|=0.389, best=eating_disorders
+2026-04-18 01:55:05,786 - INFO -     third_person_rate: DV=0.028, spec=0.086, max|g|=0.504, best=ptsd
+2026-04-18 01:55:05,786 - INFO -     net_emotion_tone: DV=0.024, spec=0.145, max|g|=0.257, best=autism
+2026-04-18 01:55:05,786 - INFO -     positive_affect_rate: DV=0.022, spec=0.113, max|g|=0.198, best=autism
+2026-04-18 01:55:05,786 - INFO -     post_length_cv: DV=0.020, spec=0.097, max|g|=0.202, best=autism
+2026-04-18 01:55:05,786 - INFO - 
+--- Analysis 2: Pairwise Disorder Effect Sizes ---
+2026-04-18 01:55:05,786 - INFO - Total disorder pairs: 45
+2026-04-18 01:55:05,909 - INFO -     Bootstrap enabled for depression vs bipolar (n=21445 vs 7004)
+2026-04-18 02:01:21,383 - INFO -     Bootstrap enabled for depression vs anxiety (n=21445 vs 10096)
+2026-04-18 02:07:47,930 - INFO -     Bootstrap enabled for depression vs ocd (n=21445 vs 4015)
+2026-04-18 02:13:43,585 - INFO -     Bootstrap enabled for depression vs ptsd (n=21445 vs 5797)
+2026-04-18 02:19:42,407 - INFO -     Bootstrap enabled for depression vs bpd (n=21445 vs 4257)
+2026-04-18 02:25:52,023 - INFO -     Bootstrap enabled for depression vs eating_disorders (n=21445 vs 1181)
+2026-04-18 02:31:42,872 - INFO -     Bootstrap enabled for depression vs schizophrenia (n=21445 vs 1721)
+2026-04-18 02:37:36,225 - INFO -     Bootstrap enabled for depression vs adhd (n=21445 vs 26341)
+2026-04-18 02:44:49,047 - INFO -     Bootstrap enabled for depression vs autism (n=21445 vs 7157)
+2026-04-18 02:50:53,490 - INFO -     Bootstrap enabled for bipolar vs anxiety (n=7004 vs 10096)
+2026-04-18 02:56:04,336 - INFO -     Bootstrap enabled for bipolar vs ocd (n=7004 vs 4015)
+2026-04-18 03:00:46,267 - INFO -     Bootstrap enabled for bipolar vs ptsd (n=7004 vs 5797)
+2026-04-18 03:05:38,755 - INFO -     Bootstrap enabled for bipolar vs bpd (n=7004 vs 4257)
+2026-04-18 03:10:31,029 - INFO -     Bootstrap enabled for bipolar vs eating_disorders (n=7004 vs 1181)
+2026-04-18 03:15:09,745 - INFO -     Bootstrap enabled for bipolar vs schizophrenia (n=7004 vs 1721)
+2026-04-18 03:19:42,571 - INFO -     Bootstrap enabled for bipolar vs adhd (n=7004 vs 26341)
+2026-04-18 03:25:45,411 - INFO -     Bootstrap enabled for bipolar vs autism (n=7004 vs 7157)
+2026-04-18 03:30:31,600 - INFO -     Bootstrap enabled for anxiety vs ocd (n=10096 vs 4015)
+2026-04-18 03:35:36,335 - INFO -     Bootstrap enabled for anxiety vs ptsd (n=10096 vs 5797)
+2026-04-18 03:40:51,038 - INFO -     Bootstrap enabled for anxiety vs bpd (n=10096 vs 4257)
+2026-04-18 03:46:11,102 - INFO -     Bootstrap enabled for anxiety vs eating_disorders (n=10096 vs 1181)
+2026-04-18 03:51:14,189 - INFO -     Bootstrap enabled for anxiety vs schizophrenia (n=10096 vs 1721)
+2026-04-18 03:56:11,869 - INFO -     Bootstrap enabled for anxiety vs adhd (n=10096 vs 26341)
+2026-04-18 04:02:35,854 - INFO -     Bootstrap enabled for anxiety vs autism (n=10096 vs 7157)
+2026-04-18 04:07:44,944 - INFO -     Bootstrap enabled for ocd vs ptsd (n=4015 vs 5797)
+2026-04-18 04:12:21,527 - INFO -     Bootstrap enabled for ocd vs bpd (n=4015 vs 4257)
+2026-04-18 04:17:00,506 - INFO -     Bootstrap enabled for ocd vs eating_disorders (n=4015 vs 1181)
+2026-04-18 04:21:24,627 - INFO -     Bootstrap enabled for ocd vs schizophrenia (n=4015 vs 1721)
+2026-04-18 04:25:46,232 - INFO -     Bootstrap enabled for ocd vs adhd (n=4015 vs 26341)
+2026-04-18 04:31:33,850 - INFO -     Bootstrap enabled for ocd vs autism (n=4015 vs 7157)
+2026-04-18 04:36:07,739 - INFO -     Bootstrap enabled for ptsd vs bpd (n=5797 vs 4257)
+2026-04-18 04:41:01,737 - INFO -     Bootstrap enabled for ptsd vs eating_disorders (n=5797 vs 1181)
+2026-04-18 04:45:37,677 - INFO -     Bootstrap enabled for ptsd vs schizophrenia (n=5797 vs 1721)
+2026-04-18 04:50:11,373 - INFO -     Bootstrap enabled for ptsd vs adhd (n=5797 vs 26341)
+2026-04-18 04:56:14,728 - INFO -     Bootstrap enabled for ptsd vs autism (n=5797 vs 7157)
+2026-04-18 05:01:02,030 - INFO -     Bootstrap enabled for bpd vs eating_disorders (n=4257 vs 1181)
+2026-04-18 05:05:38,800 - INFO -     Bootstrap enabled for bpd vs schizophrenia (n=4257 vs 1721)
+2026-04-18 05:10:13,917 - INFO -     Bootstrap enabled for bpd vs adhd (n=4257 vs 26341)
+2026-04-18 05:16:18,315 - INFO -     Bootstrap enabled for bpd vs autism (n=4257 vs 7157)
+2026-04-18 05:21:06,891 - INFO -     Bootstrap enabled for eating_disorders vs schizophrenia (n=1181 vs 1721)
+2026-04-18 05:25:25,013 - INFO -     Bootstrap enabled for eating_disorders vs adhd (n=1181 vs 26341)
+2026-04-18 05:31:09,311 - INFO -     Bootstrap enabled for eating_disorders vs autism (n=1181 vs 7157)
+2026-04-18 05:35:42,006 - INFO -     Bootstrap enabled for schizophrenia vs adhd (n=1721 vs 26341)
+2026-04-18 05:41:25,929 - INFO -     Bootstrap enabled for schizophrenia vs autism (n=1721 vs 7157)
+2026-04-18 05:45:58,506 - INFO -     Bootstrap enabled for adhd vs autism (n=26341 vs 7157)
+2026-04-18 05:52:01,095 - INFO - 
+============================================================
+2026-04-18 05:52:01,096 - INFO - SUMMARY REPORT
+2026-04-18 05:52:01,096 - INFO - ============================================================
+2026-04-18 05:52:01,096 - INFO -   Features analyzed: 103
+2026-04-18 05:52:01,096 - INFO -   Disorders: 10
+2026-04-18 05:52:01,097 - INFO -   Total tests: 1030
+2026-04-18 05:52:01,097 - INFO -   Significant (global FDR): 846 (82.1%)
+2026-04-18 05:52:01,097 - INFO -   Effect categories: {'negligible': 490, 'small': 209, 'minimal': 193, 'medium': 77, 'large': 61}
+2026-04-18 05:52:01,097 - INFO -   Direction-inconsistent features: 52
+2026-04-18 05:52:01,097 - INFO -   IPTW-weighted: True
+2026-04-18 05:52:01,098 - INFO - 
+  Top 5 largest effects:
+2026-04-18 05:52:01,098 - INFO -     schizophrenia / mental_health_sub_ratio: g=3.418 (large)
+2026-04-18 05:52:01,098 - INFO -     bipolar / mental_health_sub_ratio: g=3.329 (large)
+2026-04-18 05:52:01,098 - INFO -     eating_disorders / mental_health_sub_ratio: g=3.229 (large)
+2026-04-18 05:52:01,099 - INFO -     bpd / mental_health_sub_ratio: g=3.189 (large)
+2026-04-18 05:52:01,099 - INFO -     bipolar / support_sub_ratio: g=2.537 (large)
+2026-04-18 05:52:01,099 - INFO - 
+  Top 5 diagnostic value features:
+2026-04-18 05:52:01,099 - INFO -     mental_health_sub_ratio: DV=0.089
+2026-04-18 05:52:01,099 - INFO -     support_sub_ratio: DV=0.049
+2026-04-18 05:52:01,099 - INFO -     interval_median_hours_log: DV=0.035
+2026-04-18 05:52:01,099 - INFO -     sadness_rate: DV=0.032
+2026-04-18 05:52:01,099 - INFO -     anxiety_rate: DV=0.031
+2026-04-18 05:52:01,099 - INFO - 
+  Report saved to: /path/to/project/module1_results/statistics/effect_sizes_report.json
+2026-04-18 05:52:01,099 - INFO - ================================================================================
+2026-04-18 05:52:01,099 - INFO - EFFECT SIZE COMPUTATION COMPLETE
+2026-04-18 05:52:01,099 - INFO - ================================================================================
+2026-04-18 22:35:46,367 - INFO - ================================================================================
+2026-04-18 22:35:46,412 - INFO - MODULE 1 - Step 03: Effect Size Matrix Computation (v1.5)
+2026-04-18 22:35:46,412 - INFO - ================================================================================
+2026-04-18 22:35:48,067 - INFO - ================================================================================
+2026-04-18 22:35:48,102 - INFO - MODULE 1 - Step 03: Effect Size Matrix Computation (v1.5)
+2026-04-18 22:35:48,137 - INFO - ================================================================================
+2026-04-18 22:35:53,232 - INFO - Loaded features: (722100, 133)
+2026-04-18 22:35:53,233 - INFO - Loading feature columns from Step 02 outputs...
+2026-04-18 22:35:53,299 - INFO -   Loaded from feature_selection.json: 103 valid features (2 dropped: ['inhibition_rate', 'inhibition_marker_rate'])
+2026-04-18 22:35:53,307 - INFO - Loaded features: (722100, 133)
+2026-04-18 22:35:53,348 - INFO - Loading feature columns from Step 02 outputs...
+2026-04-18 22:35:53,349 - INFO -   Loaded from feature_selection.json: 103 valid features (2 dropped: ['inhibition_rate', 'inhibition_marker_rate'])
+2026-04-18 22:35:53,349 - INFO - Total features from Step 02: 103
+2026-04-18 22:35:53,350 - INFO -   Selection artifact features (excluded from primary analysis): 5: ['subreddit_entropy', 'subreddit_herfindahl', 'primary_subreddit_ratio', 'mental_health_sub_ratio', 'support_sub_ratio']
+2026-04-18 22:35:53,350 - INFO -   Analysis features: 98
+2026-04-18 22:35:53,351 - INFO - Total features from Step 02: 103
+2026-04-18 22:35:53,351 - INFO -   Selection artifact features (excluded from primary analysis): 5: ['subreddit_entropy', 'subreddit_herfindahl', 'primary_subreddit_ratio', 'mental_health_sub_ratio', 'support_sub_ratio']
+2026-04-18 22:35:53,351 - INFO -   Analysis features: 98
+2026-04-18 22:35:53,848 - INFO - Restricted to training set: 505461 users (70.0%)
+2026-04-18 22:35:53,924 - INFO - Restricted to training set: 505461 users (70.0%)
+2026-04-18 22:35:54,259 - INFO - Disorders to analyze: 10/10
+2026-04-18 22:35:54,260 - INFO - 
+--- Analysis 1: Disorder vs Controls Effect Sizes ---
+2026-04-18 22:35:54,260 - INFO -     Using 98 non-artifact features
+2026-04-18 22:35:54,260 - INFO -     Bootstrap iterations: 1000
+2026-04-18 22:35:54,260 - INFO -   Computing effect sizes for: depression
+2026-04-18 22:35:54,436 - INFO - Disorders to analyze: 10/10
+2026-04-18 22:35:54,437 - INFO - 
+--- Analysis 1: Disorder vs Controls Effect Sizes ---
+2026-04-18 22:35:54,437 - INFO -     Using 98 non-artifact features
+2026-04-18 22:35:54,437 - INFO -     Bootstrap iterations: 1000
+2026-04-18 22:35:54,438 - INFO -   Computing effect sizes for: depression
+2026-04-18 22:35:54,567 - INFO -     Patients: 21445, Controls: 416447
+2026-04-18 22:35:54,698 - INFO -     Patients: 21445, Controls: 416447
+2026-04-18 22:53:37,881 - INFO -     Effect sizes: mean |g|=0.190, max |g|=1.269, n_sig(p<0.05)=86
+2026-04-18 22:53:37,982 - INFO -   Computing effect sizes for: bipolar
+2026-04-18 22:53:38,230 - INFO -     Patients: 7004, Controls: 416447
+2026-04-18 22:53:42,482 - INFO -     Effect sizes: mean |g|=0.190, max |g|=1.269, n_sig(p<0.05)=86
+2026-04-18 22:53:42,520 - INFO -   Computing effect sizes for: bipolar
+2026-04-18 22:53:42,770 - INFO -     Patients: 7004, Controls: 416447
+2026-04-18 23:10:30,259 - INFO -     Effect sizes: mean |g|=0.268, max |g|=3.329, n_sig(p<0.05)=91
+2026-04-18 23:10:30,313 - INFO -   Computing effect sizes for: anxiety
+2026-04-18 23:10:30,556 - INFO -     Patients: 10096, Controls: 416447
+2026-04-18 23:10:33,693 - INFO -     Effect sizes: mean |g|=0.268, max |g|=3.329, n_sig(p<0.05)=91
+2026-04-18 23:10:33,710 - INFO -   Computing effect sizes for: anxiety
+2026-04-18 23:10:33,968 - INFO -     Patients: 10096, Controls: 416447
+2026-04-18 23:27:17,568 - INFO -     Effect sizes: mean |g|=0.221, max |g|=1.912, n_sig(p<0.05)=90
+2026-04-18 23:27:17,687 - INFO -   Computing effect sizes for: ocd
+2026-04-18 23:27:17,782 - INFO -     Effect sizes: mean |g|=0.221, max |g|=1.912, n_sig(p<0.05)=90
+2026-04-18 23:27:17,800 - INFO -   Computing effect sizes for: ocd
+2026-04-18 23:27:17,924 - INFO -     Patients: 4015, Controls: 416447
+2026-04-18 23:27:18,032 - INFO -     Patients: 4015, Controls: 416447
+2026-04-18 23:43:50,471 - INFO -     Effect sizes: mean |g|=0.234, max |g|=2.343, n_sig(p<0.05)=83
+2026-04-18 23:43:50,487 - INFO -   Computing effect sizes for: ptsd
+2026-04-18 23:43:50,733 - INFO -     Patients: 5797, Controls: 416447
+2026-04-18 23:43:51,161 - INFO -     Effect sizes: mean |g|=0.234, max |g|=2.343, n_sig(p<0.05)=83
+2026-04-18 23:43:51,179 - INFO -   Computing effect sizes for: ptsd
+2026-04-18 23:43:51,426 - INFO -     Patients: 5797, Controls: 416447
+2026-04-19 00:00:31,855 - INFO -     Effect sizes: mean |g|=0.252, max |g|=1.970, n_sig(p<0.05)=89
+2026-04-19 00:00:31,872 - INFO -   Computing effect sizes for: bpd
+2026-04-19 00:00:32,108 - INFO -     Patients: 4257, Controls: 416447
+2026-04-19 00:00:32,476 - INFO -     Effect sizes: mean |g|=0.252, max |g|=1.970, n_sig(p<0.05)=89
+2026-04-19 00:00:32,493 - INFO -   Computing effect sizes for: bpd
+2026-04-19 00:00:32,731 - INFO -     Patients: 4257, Controls: 416447
+2026-04-19 00:17:12,429 - INFO -     Effect sizes: mean |g|=0.294, max |g|=3.189, n_sig(p<0.05)=87
+2026-04-19 00:17:12,446 - INFO -   Computing effect sizes for: eating_disorders
+2026-04-19 00:17:12,674 - INFO -     Patients: 1181, Controls: 416447
+2026-04-19 00:17:18,772 - INFO -     Effect sizes: mean |g|=0.294, max |g|=3.189, n_sig(p<0.05)=87
+2026-04-19 00:17:18,790 - INFO -   Computing effect sizes for: eating_disorders
+2026-04-19 00:17:19,015 - INFO -     Patients: 1181, Controls: 416447
+2026-04-19 00:33:44,033 - INFO -     Effect sizes: mean |g|=0.291, max |g|=3.229, n_sig(p<0.05)=72
+2026-04-19 00:33:44,050 - INFO -   Computing effect sizes for: schizophrenia
+2026-04-19 00:33:44,282 - INFO -     Patients: 1721, Controls: 416447
+2026-04-19 00:33:48,434 - INFO -     Effect sizes: mean |g|=0.291, max |g|=3.229, n_sig(p<0.05)=72
+2026-04-19 00:33:48,451 - INFO -   Computing effect sizes for: schizophrenia
+2026-04-19 00:33:48,692 - INFO -     Patients: 1721, Controls: 416447
+2026-04-19 00:50:15,641 - INFO -     Effect sizes: mean |g|=0.237, max |g|=3.418, n_sig(p<0.05)=76
+2026-04-19 00:50:15,657 - INFO -   Computing effect sizes for: adhd
+2026-04-19 00:50:15,915 - INFO -     Patients: 26341, Controls: 416447
+2026-04-19 00:50:18,085 - INFO -     Effect sizes: mean |g|=0.237, max |g|=3.418, n_sig(p<0.05)=76
+2026-04-19 00:50:18,102 - INFO -   Computing effect sizes for: adhd
+2026-04-19 00:50:18,355 - INFO -     Patients: 26341, Controls: 416447
+2026-04-19 01:07:35,860 - INFO -     Effect sizes: mean |g|=0.183, max |g|=1.356, n_sig(p<0.05)=90
+2026-04-19 01:07:35,877 - INFO -   Computing effect sizes for: autism
+2026-04-19 01:07:36,136 - INFO -     Patients: 7157, Controls: 416447
+2026-04-19 01:07:39,692 - INFO -     Effect sizes: mean |g|=0.183, max |g|=1.356, n_sig(p<0.05)=90
+2026-04-19 01:07:39,710 - INFO -   Computing effect sizes for: autism
+2026-04-19 01:07:39,946 - INFO -     Patients: 7157, Controls: 416447
+2026-04-19 01:24:22,226 - INFO -     Effect sizes: mean |g|=0.223, max |g|=1.944, n_sig(p<0.05)=95
+2026-04-19 01:24:22,247 - INFO - Applying FDR correction...
+2026-04-19 01:24:22,301 - INFO -   Total tests: 1030 (980 non-artifact, 50 artifact)
+2026-04-19 01:24:22,302 - INFO -   Significant (global FDR): 846 (82.1%)
+2026-04-19 01:24:22,302 - INFO -   Significant non-artifact: 806 (82.2%)
+2026-04-19 01:24:22,302 - INFO -   Effect categories (all): {'negligible': 490, 'small': 209, 'minimal': 193, 'medium': 77, 'large': 61}
+2026-04-19 01:24:22,302 - INFO -   Effect categories (non-artifact): {'negligible': 467, 'small': 209, 'minimal': 186, 'medium': 77, 'large': 41}
+2026-04-19 01:24:22,726 - INFO - Effect size matrix shape: (103, 10)
+2026-04-19 01:24:22,765 - INFO - Clean effect size matrix (no artifacts): (98, 10)
+2026-04-19 01:24:22,765 - INFO - Computing feature specificity scores (magnitude-based)...
+2026-04-19 01:24:22,801 - INFO - Computing differential specificity (polarity-based)...
+2026-04-19 01:24:22,810 - INFO -   Differential specificity range: 0.000 - 0.203
+2026-04-19 01:24:22,810 - INFO -   No features with high differential specificity (>0.3)
+2026-04-19 01:24:22,818 - INFO - Computing clinical utility scores...
+2026-04-19 01:24:22,852 - INFO -   Clinical utility range: 0.043 - 0.736
+2026-04-19 01:24:22,853 - INFO -   High utility (>0.5): 14 features
+2026-04-19 01:24:22,853 - INFO -   Moderate utility (0.3-0.5): 22 features
+2026-04-19 01:24:22,855 - INFO -   Top 5 clinical utility features:
+2026-04-19 01:24:22,855 - INFO -     sadness_rate: CU=0.736 (best: bpd g=1.167)
+2026-04-19 01:24:22,855 - INFO -     self_focus_index: CU=0.725 (best: eating_disorders g=1.061)
+2026-04-19 01:24:22,855 - INFO -     first_person_rate: CU=0.722 (best: bpd g=1.218)
+2026-04-19 01:24:22,856 - INFO -     anxiety_rate: CU=0.716 (best: anxiety g=1.912)
+2026-04-19 01:24:22,856 - INFO -     past_focus_rate: CU=0.714 (best: ptsd g=0.885)
+2026-04-19 01:24:22,876 - INFO - Detecting direction inconsistency across disorders...
+2026-04-19 01:24:22,945 - INFO -   Direction-inconsistent features: 49/98 (49 non-artifact)
+2026-04-19 01:24:22,946 - INFO -   Non-artifact features with direction inconsistency (top 10 by spread):
+2026-04-19 01:24:22,947 - INFO -     exclamation_ratio: +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism), spread=0.635
+2026-04-19 01:24:22,947 - INFO -     score_median: +8 (adhd;anxiety;autism;bipolar;bpd;eating_disorders;ocd;ptsd), -1 (schizophrenia), spread=0.558
+2026-04-19 01:24:22,947 - INFO -     n_posts_total_log: +2 (adhd;autism), -6 (anxiety;bipolar;bpd;eating_disorders;ocd;schizophrenia), spread=0.507
+2026-04-19 01:24:22,947 - INFO -     vader_positive_mean: +9 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd;schizophrenia), -1 (autism), spread=0.489
+2026-04-19 01:24:22,947 - INFO -     active_day_ratio: +1 (autism), -7 (anxiety;bipolar;bpd;depression;eating_disorders;ocd;schizophrenia), spread=0.464
+2026-04-19 01:24:22,947 - INFO -     posts_per_day_log: +2 (autism;ptsd), -6 (anxiety;bipolar;bpd;depression;eating_disorders;ocd), spread=0.444
+2026-04-19 01:24:22,947 - INFO -     score_mean_log_signed: +7 (adhd;autism;bpd;depression;eating_disorders;ocd;ptsd), -1 (schizophrenia), spread=0.434
+2026-04-19 01:24:22,948 - INFO -     n_active_days: +2 (adhd;autism), -7 (anxiety;bipolar;bpd;eating_disorders;ocd;ptsd;schizophrenia), spread=0.408
+2026-04-19 01:24:22,948 - INFO -     vader_compound_mean: +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism), spread=0.398
+2026-04-19 01:24:22,948 - INFO -     n_posts_total: +3 (adhd;autism;depression), -5 (anxiety;bipolar;bpd;eating_disorders;schizophrenia), spread=0.376
+2026-04-19 01:24:23,038 - INFO -   Feature ranking (top 10 by clinical utility):
+2026-04-19 01:24:23,038 - INFO -     sadness_rate: CU=0.736, diff_spec=0.000, max|g|=1.167, best=bpd
+2026-04-19 01:24:23,038 - INFO -     self_focus_index: CU=0.725, diff_spec=0.000, max|g|=1.061, best=eating_disorders
+2026-04-19 01:24:23,039 - INFO -     first_person_rate: CU=0.722, diff_spec=0.000, max|g|=1.218, best=bpd
+2026-04-19 01:24:23,039 - INFO -     anxiety_rate: CU=0.716, diff_spec=0.000, max|g|=1.912, best=anxiety
+2026-04-19 01:24:23,039 - INFO -     past_focus_rate: CU=0.714, diff_spec=0.000, max|g|=0.885, best=ptsd
+2026-04-19 01:24:23,039 - INFO -     vader_compound_std: CU=0.700, diff_spec=0.000, max|g|=1.027, best=bpd
+2026-04-19 01:24:23,039 - INFO -     emotional_volatility: CU=0.700, diff_spec=0.000, max|g|=1.027, best=bpd
+2026-04-19 01:24:23,039 - INFO -     other_sub_ratio: CU=0.693, diff_spec=0.000, max|g|=0.935, best=bipolar
+2026-04-19 01:24:23,040 - INFO -     post_length_mean: CU=0.671, diff_spec=0.000, max|g|=0.768, best=ptsd
+2026-04-19 01:24:23,040 - INFO -     insight_rate: CU=0.666, diff_spec=0.000, max|g|=0.962, best=ocd
+2026-04-19 01:24:23,040 - INFO - 
+--- Analysis 2: Pairwise Disorder Effect Sizes ---
+2026-04-19 01:24:23,040 - INFO -     Using analytical CI only (no bootstrap)
+2026-04-19 01:24:23,040 - INFO -     Using 98 non-artifact features
+2026-04-19 01:24:23,040 - INFO - Total disorder pairs: 45
+2026-04-19 01:24:26,304 - INFO -     Effect sizes: mean |g|=0.223, max |g|=1.944, n_sig(p<0.05)=95
+2026-04-19 01:24:26,326 - INFO - Applying FDR correction...
+2026-04-19 01:24:26,351 - INFO -   Total tests: 1030 (980 non-artifact, 50 artifact)
+2026-04-19 01:24:26,351 - INFO -   Significant (global FDR): 846 (82.1%)
+2026-04-19 01:24:26,351 - INFO -   Significant non-artifact: 806 (82.2%)
+2026-04-19 01:24:26,351 - INFO -   Effect categories (all): {'negligible': 490, 'small': 209, 'minimal': 193, 'medium': 77, 'large': 61}
+2026-04-19 01:24:26,351 - INFO -   Effect categories (non-artifact): {'negligible': 467, 'small': 209, 'minimal': 186, 'medium': 77, 'large': 41}
+2026-04-19 01:24:26,480 - INFO - Effect size matrix shape: (103, 10)
+2026-04-19 01:24:26,502 - INFO - Clean effect size matrix (no artifacts): (98, 10)
+2026-04-19 01:24:26,502 - INFO - Computing feature specificity scores (magnitude-based)...
+2026-04-19 01:24:26,520 - INFO - Computing differential specificity (polarity-based)...
+2026-04-19 01:24:26,529 - INFO -   Differential specificity range: 0.000 - 0.203
+2026-04-19 01:24:26,529 - INFO -   No features with high differential specificity (>0.3)
+2026-04-19 01:24:26,538 - INFO - Computing clinical utility scores...
+2026-04-19 01:24:26,572 - INFO -   Clinical utility range: 0.043 - 0.736
+2026-04-19 01:24:26,573 - INFO -   High utility (>0.5): 14 features
+2026-04-19 01:24:26,573 - INFO -   Moderate utility (0.3-0.5): 22 features
+2026-04-19 01:24:26,575 - INFO -   Top 5 clinical utility features:
+2026-04-19 01:24:26,575 - INFO -     sadness_rate: CU=0.736 (best: bpd g=1.167)
+2026-04-19 01:24:26,575 - INFO -     self_focus_index: CU=0.725 (best: eating_disorders g=1.061)
+2026-04-19 01:24:26,575 - INFO -     first_person_rate: CU=0.722 (best: bpd g=1.218)
+2026-04-19 01:24:26,576 - INFO -     anxiety_rate: CU=0.716 (best: anxiety g=1.912)
+2026-04-19 01:24:26,576 - INFO -     past_focus_rate: CU=0.714 (best: ptsd g=0.885)
+2026-04-19 01:24:26,584 - INFO - Detecting direction inconsistency across disorders...
+2026-04-19 01:24:26,651 - INFO -   Direction-inconsistent features: 49/98 (49 non-artifact)
+2026-04-19 01:24:26,652 - INFO -   Non-artifact features with direction inconsistency (top 10 by spread):
+2026-04-19 01:24:26,652 - INFO -     exclamation_ratio: +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism), spread=0.635
+2026-04-19 01:24:26,653 - INFO -     score_median: +8 (adhd;anxiety;autism;bipolar;bpd;eating_disorders;ocd;ptsd), -1 (schizophrenia), spread=0.558
+2026-04-19 01:24:26,653 - INFO -     n_posts_total_log: +2 (adhd;autism), -6 (anxiety;bipolar;bpd;eating_disorders;ocd;schizophrenia), spread=0.507
+2026-04-19 01:24:26,653 - INFO -     vader_positive_mean: +9 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd;schizophrenia), -1 (autism), spread=0.489
+2026-04-19 01:24:26,653 - INFO -     active_day_ratio: +1 (autism), -7 (anxiety;bipolar;bpd;depression;eating_disorders;ocd;schizophrenia), spread=0.464
+2026-04-19 01:24:26,653 - INFO -     posts_per_day_log: +2 (autism;ptsd), -6 (anxiety;bipolar;bpd;depression;eating_disorders;ocd), spread=0.444
+2026-04-19 01:24:26,653 - INFO -     score_mean_log_signed: +7 (adhd;autism;bpd;depression;eating_disorders;ocd;ptsd), -1 (schizophrenia), spread=0.434
+2026-04-19 01:24:26,654 - INFO -     n_active_days: +2 (adhd;autism), -7 (anxiety;bipolar;bpd;eating_disorders;ocd;ptsd;schizophrenia), spread=0.408
+2026-04-19 01:24:26,654 - INFO -     vader_compound_mean: +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism), spread=0.398
+2026-04-19 01:24:26,654 - INFO -     n_posts_total: +3 (adhd;autism;depression), -5 (anxiety;bipolar;bpd;eating_disorders;schizophrenia), spread=0.376
+2026-04-19 01:24:26,742 - INFO -   Feature ranking (top 10 by clinical utility):
+2026-04-19 01:24:26,743 - INFO -     sadness_rate: CU=0.736, diff_spec=0.000, max|g|=1.167, best=bpd
+2026-04-19 01:24:26,743 - INFO -     self_focus_index: CU=0.725, diff_spec=0.000, max|g|=1.061, best=eating_disorders
+2026-04-19 01:24:26,743 - INFO -     first_person_rate: CU=0.722, diff_spec=0.000, max|g|=1.218, best=bpd
+2026-04-19 01:24:26,743 - INFO -     anxiety_rate: CU=0.716, diff_spec=0.000, max|g|=1.912, best=anxiety
+2026-04-19 01:24:26,743 - INFO -     past_focus_rate: CU=0.714, diff_spec=0.000, max|g|=0.885, best=ptsd
+2026-04-19 01:24:26,743 - INFO -     vader_compound_std: CU=0.700, diff_spec=0.000, max|g|=1.027, best=bpd
+2026-04-19 01:24:26,744 - INFO -     emotional_volatility: CU=0.700, diff_spec=0.000, max|g|=1.027, best=bpd
+2026-04-19 01:24:26,744 - INFO -     other_sub_ratio: CU=0.693, diff_spec=0.000, max|g|=0.935, best=bipolar
+2026-04-19 01:24:26,744 - INFO -     post_length_mean: CU=0.671, diff_spec=0.000, max|g|=0.768, best=ptsd
+2026-04-19 01:24:26,744 - INFO -     insight_rate: CU=0.666, diff_spec=0.000, max|g|=0.962, best=ocd
+2026-04-19 01:24:26,744 - INFO - 
+--- Analysis 2: Pairwise Disorder Effect Sizes ---
+2026-04-19 01:24:26,744 - INFO -     Using analytical CI only (no bootstrap)
+2026-04-19 01:24:26,744 - INFO -     Using 98 non-artifact features
+2026-04-19 01:24:26,744 - INFO - Total disorder pairs: 45
+2026-04-19 01:24:35,278 - INFO - 
+============================================================
+2026-04-19 01:24:35,278 - INFO - SUMMARY REPORT (v1.5)
+2026-04-19 01:24:35,278 - INFO - ============================================================
+2026-04-19 01:24:35,279 - INFO -   Features: 98 analysis + 5 artifacts (excluded)
+2026-04-19 01:24:35,279 - INFO -   Disorders: 10
+2026-04-19 01:24:35,279 - INFO -   Tests (non-artifact): 980
+2026-04-19 01:24:35,279 - INFO -   Significant (FDR, non-artifact): 806 (82.2%)
+2026-04-19 01:24:35,279 - INFO -   Effect categories: {'negligible': 467, 'small': 209, 'minimal': 186, 'medium': 77, 'large': 41}
+2026-04-19 01:24:35,279 - INFO - 
+  Top 5 largest effects (non-artifact):
+2026-04-19 01:24:35,279 - INFO -     anxiety / anxiety_rate: g=1.912 (large)
+2026-04-19 01:24:35,279 - INFO -     ocd / anxiety_rate: g=1.791 (large)
+2026-04-19 01:24:35,279 - INFO -     eating_disorders / anxiety_rate: g=1.658 (large)
+2026-04-19 01:24:35,279 - INFO -     bpd / anxiety_rate: g=1.589 (large)
+2026-04-19 01:24:35,279 - INFO -     ptsd / anxiety_rate: g=1.422 (large)
+2026-04-19 01:24:35,280 - INFO - 
+  Top 5 clinical utility:
+2026-04-19 01:24:35,280 - INFO -     sadness_rate: CU=0.736
+2026-04-19 01:24:35,280 - INFO -     self_focus_index: CU=0.725
+2026-04-19 01:24:35,280 - INFO -     first_person_rate: CU=0.722
+2026-04-19 01:24:35,280 - INFO -     anxiety_rate: CU=0.716
+2026-04-19 01:24:35,280 - INFO -     past_focus_rate: CU=0.714
+2026-04-19 01:24:35,280 - INFO - 
+  Artifact features (excluded from primary analysis):
+2026-04-19 01:24:35,280 - INFO -     subreddit_entropy: max|g|=0.182 (circular with patient identification)
+2026-04-19 01:24:35,281 - INFO -     subreddit_herfindahl: max|g|=0.133 (circular with patient identification)
+2026-04-19 01:24:35,281 - INFO -     primary_subreddit_ratio: max|g|=0.162 (circular with patient identification)
+2026-04-19 01:24:35,281 - INFO -     mental_health_sub_ratio: max|g|=3.418 (circular with patient identification)
+2026-04-19 01:24:35,281 - INFO -     support_sub_ratio: max|g|=2.537 (circular with patient identification)
+2026-04-19 01:24:35,281 - INFO - 
+  Report saved to: /path/to/project/module1_results/statistics/effect_sizes_report.json
+2026-04-19 01:24:35,281 - INFO - ================================================================================
+2026-04-19 01:24:35,281 - INFO - EFFECT SIZE COMPUTATION COMPLETE
+2026-04-19 01:24:35,281 - INFO - ================================================================================
+2026-04-19 01:24:38,893 - INFO - 
+============================================================
+2026-04-19 01:24:38,893 - INFO - SUMMARY REPORT (v1.5)
+2026-04-19 01:24:38,893 - INFO - ============================================================
+2026-04-19 01:24:38,893 - INFO -   Features: 98 analysis + 5 artifacts (excluded)
+2026-04-19 01:24:38,893 - INFO -   Disorders: 10
+2026-04-19 01:24:38,894 - INFO -   Tests (non-artifact): 980
+2026-04-19 01:24:38,894 - INFO -   Significant (FDR, non-artifact): 806 (82.2%)
+2026-04-19 01:24:38,894 - INFO -   Effect categories: {'negligible': 467, 'small': 209, 'minimal': 186, 'medium': 77, 'large': 41}
+2026-04-19 01:24:38,894 - INFO - 
+  Top 5 largest effects (non-artifact):
+2026-04-19 01:24:38,894 - INFO -     anxiety / anxiety_rate: g=1.912 (large)
+2026-04-19 01:24:38,894 - INFO -     ocd / anxiety_rate: g=1.791 (large)
+2026-04-19 01:24:38,894 - INFO -     eating_disorders / anxiety_rate: g=1.658 (large)
+2026-04-19 01:24:38,894 - INFO -     bpd / anxiety_rate: g=1.589 (large)
+2026-04-19 01:24:38,894 - INFO -     ptsd / anxiety_rate: g=1.422 (large)
+2026-04-19 01:24:38,895 - INFO - 
+  Top 5 clinical utility:
+2026-04-19 01:24:38,895 - INFO -     sadness_rate: CU=0.736
+2026-04-19 01:24:38,895 - INFO -     self_focus_index: CU=0.725
+2026-04-19 01:24:38,895 - INFO -     first_person_rate: CU=0.722
+2026-04-19 01:24:38,895 - INFO -     anxiety_rate: CU=0.716
+2026-04-19 01:24:38,895 - INFO -     past_focus_rate: CU=0.714
+2026-04-19 01:24:38,895 - INFO - 
+  Artifact features (excluded from primary analysis):
+2026-04-19 01:24:38,895 - INFO -     subreddit_entropy: max|g|=0.182 (circular with patient identification)
+2026-04-19 01:24:38,896 - INFO -     subreddit_herfindahl: max|g|=0.133 (circular with patient identification)
+2026-04-19 01:24:38,896 - INFO -     primary_subreddit_ratio: max|g|=0.162 (circular with patient identification)
+2026-04-19 01:24:38,896 - INFO -     mental_health_sub_ratio: max|g|=3.418 (circular with patient identification)
+2026-04-19 01:24:38,896 - INFO -     support_sub_ratio: max|g|=2.537 (circular with patient identification)
+2026-04-19 01:24:38,896 - INFO - 
+  Report saved to: /path/to/project/module1_results/statistics/effect_sizes_report.json
+2026-04-19 01:24:38,896 - INFO - ================================================================================
+2026-04-19 01:24:38,896 - INFO - EFFECT SIZE COMPUTATION COMPLETE
+2026-04-19 01:24:38,896 - INFO - ================================================================================
+2026-04-20 15:30:57,815 - INFO - ================================================================================
+2026-04-20 15:30:57,844 - INFO - MODULE 1 - Step 03: Effect Size Matrix Computation (v1.6)
+2026-04-20 15:30:57,844 - INFO - Fixes: DiffSpec noise gate, weight trimming, deterministic seed,
+2026-04-20 15:30:57,845 - INFO -        strict direction inconsistency, CU weight sensitivity
+2026-04-20 15:30:57,845 - INFO - ================================================================================
+2026-04-20 15:31:10,282 - INFO - Loaded features: (722100, 133)
+2026-04-20 15:31:10,327 - INFO - Loading feature columns from Step 02 outputs...
+2026-04-20 15:31:10,546 - INFO -   Loaded from feature_selection.json: 103 valid features (2 dropped: ['inhibition_rate', 'inhibition_marker_rate'])
+2026-04-20 15:31:10,673 - INFO - Total features from Step 02: 103
+2026-04-20 15:31:10,709 - INFO -   Selection artifact features (excluded from primary analysis): 5: ['subreddit_entropy', 'subreddit_herfindahl', 'primary_subreddit_ratio', 'mental_health_sub_ratio', 'support_sub_ratio']
+2026-04-20 15:31:10,711 - INFO -   Analysis features: 98
+2026-04-20 15:31:11,300 - INFO - Restricted to training set: 505461 users (70.0%)
+2026-04-20 15:31:11,762 - INFO - Disorders to analyze: 10/10
+2026-04-20 15:31:11,763 - INFO - 
+--- Analysis 1: Disorder vs Controls Effect Sizes ---
+2026-04-20 15:31:11,763 - INFO -     Using 98 non-artifact features
+2026-04-20 15:31:11,764 - INFO -     Bootstrap iterations: 500
+2026-04-20 15:31:11,764 - INFO -   Computing effect sizes for: depression
+2026-04-20 15:31:12,033 - INFO -     Patients: 21445, Controls: 416447
+2026-04-20 15:39:51,388 - INFO -     Effect sizes: mean |g|=0.190, max |g|=1.270, n_sig(p<0.05)=85
+2026-04-20 15:39:51,439 - INFO -   Computing effect sizes for: bipolar
+2026-04-20 15:39:51,696 - INFO -     Patients: 7004, Controls: 416447
+2026-04-20 15:48:00,395 - INFO -     Effect sizes: mean |g|=0.269, max |g|=3.333, n_sig(p<0.05)=91
+2026-04-20 15:48:00,412 - INFO -   Computing effect sizes for: anxiety
+2026-04-20 15:48:00,663 - INFO -     Patients: 10096, Controls: 416447
+2026-04-20 15:56:20,711 - INFO -     Effect sizes: mean |g|=0.222, max |g|=1.915, n_sig(p<0.05)=90
+2026-04-20 15:56:20,729 - INFO -   Computing effect sizes for: ocd
+2026-04-20 15:56:20,988 - INFO -     Patients: 4015, Controls: 416447
+2026-04-20 16:04:28,627 - INFO -     Effect sizes: mean |g|=0.234, max |g|=2.347, n_sig(p<0.05)=83
+2026-04-20 16:04:28,645 - INFO -   Computing effect sizes for: ptsd
+2026-04-20 16:04:28,892 - INFO -     Patients: 5797, Controls: 416447
+2026-04-20 16:12:49,972 - INFO -     Effect sizes: mean |g|=0.252, max |g|=1.974, n_sig(p<0.05)=89
+2026-04-20 16:12:49,990 - INFO -   Computing effect sizes for: bpd
+2026-04-20 16:12:50,269 - INFO -     Patients: 4257, Controls: 416447
+2026-04-20 16:21:10,362 - INFO -     Effect sizes: mean |g|=0.295, max |g|=3.194, n_sig(p<0.05)=87
+2026-04-20 16:21:10,380 - INFO -   Computing effect sizes for: eating_disorders
+2026-04-20 16:21:10,640 - INFO -     Patients: 1181, Controls: 416447
+2026-04-20 16:29:23,128 - INFO -     Effect sizes: mean |g|=0.291, max |g|=3.235, n_sig(p<0.05)=72
+2026-04-20 16:29:23,145 - INFO -   Computing effect sizes for: schizophrenia
+2026-04-20 16:29:23,383 - INFO -     Patients: 1721, Controls: 416447
+2026-04-20 16:37:37,855 - INFO -     Effect sizes: mean |g|=0.237, max |g|=3.424, n_sig(p<0.05)=76
+2026-04-20 16:37:37,873 - INFO -   Computing effect sizes for: adhd
+2026-04-20 16:37:38,144 - INFO -     Patients: 26341, Controls: 416447
+2026-04-20 16:46:22,550 - INFO -     Effect sizes: mean |g|=0.182, max |g|=1.357, n_sig(p<0.05)=90
+2026-04-20 16:46:22,569 - INFO -   Computing effect sizes for: autism
+2026-04-20 16:46:23,940 - INFO -     Patients: 7157, Controls: 416447
+2026-04-20 16:54:55,839 - INFO -     Effect sizes: mean |g|=0.222, max |g|=1.947, n_sig(p<0.05)=94
+2026-04-20 16:54:55,878 - INFO - Applying FDR correction...
+2026-04-20 16:54:55,963 - INFO -   Total tests: 1030 (980 non-artifact, 50 artifact)
+2026-04-20 16:54:55,964 - INFO -   Significant (global FDR): 848 (82.3%)
+2026-04-20 16:54:55,964 - INFO -   Significant non-artifact: 808 (82.4%)
+2026-04-20 16:54:55,964 - INFO -   Effect categories (all): {'negligible': 491, 'small': 209, 'minimal': 192, 'medium': 77, 'large': 61}
+2026-04-20 16:54:55,964 - INFO -   Effect categories (non-artifact): {'negligible': 468, 'small': 209, 'minimal': 185, 'medium': 77, 'large': 41}
+2026-04-20 16:54:56,429 - INFO - Effect size matrix shape: (103, 10)
+2026-04-20 16:54:56,494 - INFO - Clean effect size matrix (no artifacts): (98, 10)
+2026-04-20 16:54:56,494 - INFO - Computing feature specificity scores (magnitude-based)...
+2026-04-20 16:54:56,514 - INFO - Computing differential specificity (polarity-based, v1.6)...
+2026-04-20 16:54:56,524 - INFO -   Differential specificity range: 0.000 - 0.199
+2026-04-20 16:54:56,530 - INFO -   Noise gate impact: 18/98 features attenuated (max|g| < 0.15)
+2026-04-20 16:54:56,531 - INFO -   No features with high differential specificity (>0.3)
+2026-04-20 16:54:56,539 - INFO - Computing clinical utility scores (v1.6)...
+2026-04-20 16:54:56,573 - INFO -   Clinical utility range: 0.043 - 0.736
+2026-04-20 16:54:56,573 - INFO -   High utility (>0.5): 14 features
+2026-04-20 16:54:56,573 - INFO -   Moderate utility (0.3-0.5): 21 features
+2026-04-20 16:54:56,575 - INFO -   Top 5 clinical utility features:
+2026-04-20 16:54:56,575 - INFO -     sadness_rate: CU=0.736 (best: bpd g=1.168)
+2026-04-20 16:54:56,576 - INFO -     self_focus_index: CU=0.725 (best: eating_disorders g=1.063)
+2026-04-20 16:54:56,576 - INFO -     first_person_rate: CU=0.722 (best: bpd g=1.219)
+2026-04-20 16:54:56,576 - INFO -     anxiety_rate: CU=0.716 (best: anxiety g=1.915)
+2026-04-20 16:54:56,576 - INFO -     past_focus_rate: CU=0.715 (best: ptsd g=0.886)
+2026-04-20 16:54:56,576 - INFO -   Computing weight sensitivity analysis...
+2026-04-20 16:54:56,634 - INFO -     vs spread_heavy: ρ=0.998 (p=7.30e-119), Jaccard(top-20)=0.905 (19/20 shared)
+2026-04-20 16:54:56,671 - INFO -     vs significance_heavy: ρ=0.998 (p=9.94e-118), Jaccard(top-20)=1.000 (20/20 shared)
+2026-04-20 16:54:56,671 - INFO -   Weight sensitivity: high stability (min Jaccard = 0.905)
+2026-04-20 16:54:56,701 - INFO -   Saved CU weight sensitivity to: /path/to/project/module1_results/statistics/cu_weight_sensitivity.json
+2026-04-20 16:54:56,701 - INFO - Detecting direction inconsistency across disorders (v1.6)...
+2026-04-20 16:54:56,769 - INFO -   Direction-inconsistent features (exploratory): 49/98 (49 non-artifact)
+2026-04-20 16:54:56,770 - INFO -   Direction-inconsistent features (strict): 19/98 (19 non-artifact)
+2026-04-20 16:54:56,776 - INFO -   Null expectation: 96.0 exploratory direction-inconsistent features by chance (observed: 49)
+2026-04-20 16:54:56,776 - INFO -   Observed/Expected ratio: 0.5x
+2026-04-20 16:54:56,777 - INFO -   Strict direction-inconsistent features (non-artifact, top 10 by sig_g_range):
+2026-04-20 16:54:56,778 - INFO -     score_median: range=0.558, +max=0.388, -min=-0.170, +8 (adhd;anxiety;autism;bipolar;bpd;eating_disorders;ocd;ptsd), -1 (schizophrenia)
+2026-04-20 16:54:56,778 - INFO -     n_posts_total_log: range=0.508, +max=0.282, -min=-0.227, +2 (adhd;autism), -6 (anxiety;bipolar;bpd;eating_disorders;ocd;schizophrenia)
+2026-04-20 16:54:56,778 - INFO -     active_day_ratio: range=0.464, +max=0.275, -min=-0.189, +1 (autism), -7 (anxiety;bipolar;bpd;depression;eating_disorders;ocd;schizophrenia)
+2026-04-20 16:54:56,778 - INFO -     posts_per_day_log: range=0.444, +max=0.316, -min=-0.128, +2 (autism;ptsd), -6 (anxiety;bipolar;bpd;depression;eating_disorders;ocd)
+2026-04-20 16:54:56,778 - INFO -     score_mean_log_signed: range=0.434, +max=0.251, -min=-0.183, +7 (adhd;autism;bpd;depression;eating_disorders;ocd;ptsd), -1 (schizophrenia)
+2026-04-20 16:54:56,778 - INFO -     n_active_days: range=0.408, +max=0.188, -min=-0.220, +2 (adhd;autism), -7 (anxiety;bipolar;bpd;eating_disorders;ocd;ptsd;schizophrenia)
+2026-04-20 16:54:56,779 - INFO -     vader_compound_mean: range=0.399, +max=0.266, -min=-0.133, +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism)
+2026-04-20 16:54:56,779 - INFO -     n_posts_total: range=0.376, +max=0.248, -min=-0.127, +3 (adhd;autism;depression), -5 (anxiety;bipolar;bpd;eating_disorders;schizophrenia)
+2026-04-20 16:54:56,779 - INFO -     n_comments: range=0.375, +max=0.253, -min=-0.121, +3 (adhd;autism;depression), -5 (anxiety;bipolar;bpd;eating_disorders;schizophrenia)
+2026-04-20 16:54:56,779 - INFO -     netspeak_usage_rate: range=0.370, +max=0.195, -min=-0.175, +2 (bpd;eating_disorders), -7 (adhd;autism;bipolar;depression;ocd;ptsd;schizophrenia)
+2026-04-20 16:54:56,871 - INFO -   Feature ranking (top 10 by clinical utility):
+2026-04-20 16:54:56,871 - INFO -     sadness_rate: CU=0.736, diff_spec=0.000, max|g|=1.168, best=bpd
+2026-04-20 16:54:56,871 - INFO -     self_focus_index: CU=0.725, diff_spec=0.000, max|g|=1.063, best=eating_disorders
+2026-04-20 16:54:56,872 - INFO -     first_person_rate: CU=0.722, diff_spec=0.000, max|g|=1.219, best=bpd
+2026-04-20 16:54:56,872 - INFO -     anxiety_rate: CU=0.716, diff_spec=0.000, max|g|=1.915, best=anxiety
+2026-04-20 16:54:56,872 - INFO -     past_focus_rate: CU=0.715, diff_spec=0.000, max|g|=0.886, best=ptsd
+2026-04-20 16:54:56,872 - INFO -     vader_compound_std: CU=0.700, diff_spec=0.000, max|g|=1.027, best=bpd
+2026-04-20 16:54:56,872 - INFO -     emotional_volatility: CU=0.700, diff_spec=0.000, max|g|=1.027, best=bpd
+2026-04-20 16:54:56,872 - INFO -     other_sub_ratio: CU=0.693, diff_spec=0.000, max|g|=0.936, best=bipolar
+2026-04-20 16:54:56,873 - INFO -     post_length_mean: CU=0.674, diff_spec=0.000, max|g|=0.771, best=ptsd
+2026-04-20 16:54:56,873 - INFO -     insight_rate: CU=0.666, diff_spec=0.000, max|g|=0.963, best=ocd
+2026-04-20 16:54:56,873 - INFO - 
+--- Analysis 2: Pairwise Disorder Effect Sizes ---
+2026-04-20 16:54:56,873 - INFO -     Using analytical CI only (no bootstrap)
+2026-04-20 16:54:56,873 - INFO -     Using 98 non-artifact features
+2026-04-20 16:54:56,873 - INFO - Total disorder pairs: 45
+2026-04-20 16:55:09,941 - INFO - 
+============================================================
+2026-04-20 16:55:09,941 - INFO - SUMMARY REPORT (v1.6)
+2026-04-20 16:55:09,941 - INFO - ============================================================
+2026-04-20 16:55:09,941 - INFO -   Features: 98 analysis + 5 artifacts (excluded)
+2026-04-20 16:55:09,941 - INFO -   Disorders: 10
+2026-04-20 16:55:09,941 - INFO -   Tests (non-artifact): 980
+2026-04-20 16:55:09,941 - INFO -   Significant (FDR, non-artifact): 808 (82.4%)
+2026-04-20 16:55:09,941 - INFO -   Effect categories: {'negligible': 468, 'small': 209, 'minimal': 185, 'medium': 77, 'large': 41}
+2026-04-20 16:55:09,941 - INFO - 
+  Top 5 largest effects (non-artifact):
+2026-04-20 16:55:09,942 - INFO -     anxiety / anxiety_rate: g=1.915 (large)
+2026-04-20 16:55:09,942 - INFO -     ocd / anxiety_rate: g=1.793 (large)
+2026-04-20 16:55:09,942 - INFO -     eating_disorders / anxiety_rate: g=1.660 (large)
+2026-04-20 16:55:09,942 - INFO -     bpd / anxiety_rate: g=1.591 (large)
+2026-04-20 16:55:09,942 - INFO -     ptsd / anxiety_rate: g=1.423 (large)
+2026-04-20 16:55:09,943 - INFO - 
+  Top 5 clinical utility:
+2026-04-20 16:55:09,943 - INFO -     sadness_rate: CU=0.736
+2026-04-20 16:55:09,943 - INFO -     self_focus_index: CU=0.725
+2026-04-20 16:55:09,943 - INFO -     first_person_rate: CU=0.722
+2026-04-20 16:55:09,943 - INFO -     anxiety_rate: CU=0.716
+2026-04-20 16:55:09,944 - INFO -     past_focus_rate: CU=0.715
+2026-04-20 16:55:09,944 - INFO - 
+  Direction inconsistency:
+2026-04-20 16:55:09,944 - INFO -     Exploratory: 49 features (null expectation: 96.0)
+2026-04-20 16:55:09,944 - INFO -     Strict: 19 features (effect-size-gated)
+2026-04-20 16:55:09,944 - INFO - 
+  CU weight sensitivity: high (min Jaccard = 0.9047619047619048)
+2026-04-20 16:55:09,944 - INFO - 
+  Artifact features (excluded from primary analysis):
+2026-04-20 16:55:09,944 - INFO -     subreddit_entropy: max|g|=0.183 (circular with patient identification)
+2026-04-20 16:55:09,944 - INFO -     subreddit_herfindahl: max|g|=0.134 (circular with patient identification)
+2026-04-20 16:55:09,944 - INFO -     primary_subreddit_ratio: max|g|=0.163 (circular with patient identification)
+2026-04-20 16:55:09,945 - INFO -     mental_health_sub_ratio: max|g|=3.424 (circular with patient identification)
+2026-04-20 16:55:09,945 - INFO -     support_sub_ratio: max|g|=2.540 (circular with patient identification)
+2026-04-20 16:55:09,945 - INFO - 
+  Report saved to: /path/to/project/module1_results/statistics/effect_sizes_report.json
+2026-04-20 16:55:09,945 - INFO - ================================================================================
+2026-04-20 16:55:09,945 - INFO - EFFECT SIZE COMPUTATION COMPLETE
+2026-04-20 16:55:09,945 - INFO - ================================================================================
+2026-04-30 09:29:47,637 - INFO - ================================================================================
+2026-04-30 09:29:47,673 - INFO - MODULE 1 - Step 03: Effect Size Matrix Computation (v1.6)
+2026-04-30 09:29:47,674 - INFO - Fixes: DiffSpec noise gate, weight trimming, deterministic seed,
+2026-04-30 09:29:47,674 - INFO -        strict direction inconsistency, CU weight sensitivity
+2026-04-30 09:29:47,675 - INFO - ================================================================================
+2026-04-30 09:30:04,112 - INFO - Loaded features: (722100, 133)
+2026-04-30 09:30:04,178 - INFO - Loading feature columns from Step 02 outputs...
+2026-04-30 09:30:04,216 - INFO -   Loaded from feature_selection.json: 103 valid features (2 dropped: ['inhibition_rate', 'inhibition_marker_rate'])
+2026-04-30 09:30:04,222 - INFO - Total features from Step 02: 103
+2026-04-30 09:30:04,224 - INFO -   Selection artifact features (excluded from primary analysis): 5: ['subreddit_entropy', 'subreddit_herfindahl', 'primary_subreddit_ratio', 'mental_health_sub_ratio', 'support_sub_ratio']
+2026-04-30 09:30:04,224 - INFO -   Analysis features: 98
+2026-04-30 09:30:04,831 - INFO - Restricted to training set: 505461 users (70.0%)
+2026-04-30 09:30:05,429 - INFO - Disorders to analyze: 10/10
+2026-04-30 09:30:05,429 - INFO - 
+--- Analysis 1: Disorder vs Controls Effect Sizes ---
+2026-04-30 09:30:05,429 - INFO -     Using 98 non-artifact features
+2026-04-30 09:30:05,429 - INFO -     Bootstrap iterations: 500
+2026-04-30 09:30:05,429 - INFO -   Computing effect sizes for: depression
+2026-04-30 09:30:05,755 - INFO -     Patients: 21445, Controls: 416447
+2026-04-30 09:36:56,855 - INFO -     Effect sizes: mean |g|=0.190, max |g|=1.270, n_sig(p<0.05)=85
+2026-04-30 09:36:56,890 - INFO -   Computing effect sizes for: bipolar
+2026-04-30 09:36:57,132 - INFO -     Patients: 7004, Controls: 416447
+2026-04-30 09:43:22,867 - INFO -     Effect sizes: mean |g|=0.269, max |g|=3.333, n_sig(p<0.05)=91
+2026-04-30 09:43:22,884 - INFO -   Computing effect sizes for: anxiety
+2026-04-30 09:43:23,128 - INFO -     Patients: 10096, Controls: 416447
+2026-04-30 09:49:59,975 - INFO -     Effect sizes: mean |g|=0.222, max |g|=1.915, n_sig(p<0.05)=90
+2026-04-30 09:49:59,992 - INFO -   Computing effect sizes for: ocd
+2026-04-30 09:50:00,225 - INFO -     Patients: 4015, Controls: 416447
+2026-04-30 09:56:28,196 - INFO -     Effect sizes: mean |g|=0.234, max |g|=2.347, n_sig(p<0.05)=83
+2026-04-30 09:56:28,212 - INFO -   Computing effect sizes for: ptsd
+2026-04-30 09:56:28,446 - INFO -     Patients: 5797, Controls: 416447
+2026-04-30 10:02:54,587 - INFO -     Effect sizes: mean |g|=0.252, max |g|=1.974, n_sig(p<0.05)=89
+2026-04-30 10:02:54,604 - INFO -   Computing effect sizes for: bpd
+2026-04-30 10:02:54,836 - INFO -     Patients: 4257, Controls: 416447
+2026-04-30 10:09:28,349 - INFO -     Effect sizes: mean |g|=0.295, max |g|=3.194, n_sig(p<0.05)=87
+2026-04-30 10:09:28,365 - INFO -   Computing effect sizes for: eating_disorders
+2026-04-30 10:09:28,591 - INFO -     Patients: 1181, Controls: 416447
+2026-04-30 10:15:37,994 - INFO -     Effect sizes: mean |g|=0.291, max |g|=3.235, n_sig(p<0.05)=72
+2026-04-30 10:15:38,010 - INFO -   Computing effect sizes for: schizophrenia
+2026-04-30 10:15:38,230 - INFO -     Patients: 1721, Controls: 416447
+2026-04-30 10:21:44,198 - INFO -     Effect sizes: mean |g|=0.237, max |g|=3.424, n_sig(p<0.05)=76
+2026-04-30 10:21:44,214 - INFO -   Computing effect sizes for: adhd
+2026-04-30 10:21:44,468 - INFO -     Patients: 26341, Controls: 416447
+2026-04-30 10:28:09,847 - INFO -     Effect sizes: mean |g|=0.182, max |g|=1.357, n_sig(p<0.05)=90
+2026-04-30 10:28:09,865 - INFO -   Computing effect sizes for: autism
+2026-04-30 10:28:10,090 - INFO -     Patients: 7157, Controls: 416447
+2026-04-30 10:34:18,865 - INFO -     Effect sizes: mean |g|=0.222, max |g|=1.947, n_sig(p<0.05)=94
+2026-04-30 10:34:18,883 - INFO - Applying FDR correction...
+2026-04-30 10:34:18,894 - INFO -   Total tests: 1030 (980 non-artifact, 50 artifact)
+2026-04-30 10:34:18,894 - INFO -   Significant (global FDR): 848 (82.3%)
+2026-04-30 10:34:18,894 - INFO -   Significant non-artifact: 808 (82.4%)
+2026-04-30 10:34:18,894 - INFO -   Effect categories (all): {'negligible': 491, 'small': 209, 'minimal': 192, 'medium': 77, 'large': 61}
+2026-04-30 10:34:18,894 - INFO -   Effect categories (non-artifact): {'negligible': 468, 'small': 209, 'minimal': 185, 'medium': 77, 'large': 41}
+2026-04-30 10:34:19,312 - INFO - Effect size matrix shape: (103, 10)
+2026-04-30 10:34:19,338 - INFO - Clean effect size matrix (no artifacts): (98, 10)
+2026-04-30 10:34:19,338 - INFO - Computing feature specificity scores (magnitude-based)...
+2026-04-30 10:34:19,350 - INFO - Computing differential specificity (polarity-based, v1.6)...
+2026-04-30 10:34:19,354 - INFO -   Differential specificity range: 0.000 - 0.199
+2026-04-30 10:34:19,357 - INFO -   Noise gate impact: 18/98 features attenuated (max|g| < 0.15)
+2026-04-30 10:34:19,357 - INFO -   No features with high differential specificity (>0.3)
+2026-04-30 10:34:19,363 - INFO - Computing clinical utility scores (v1.6)...
+2026-04-30 10:34:19,378 - INFO -   Clinical utility range: 0.043 - 0.736
+2026-04-30 10:34:19,378 - INFO -   High utility (>0.5): 14 features
+2026-04-30 10:34:19,378 - INFO -   Moderate utility (0.3-0.5): 21 features
+2026-04-30 10:34:19,379 - INFO -   Top 5 clinical utility features:
+2026-04-30 10:34:19,379 - INFO -     sadness_rate: CU=0.736 (best: bpd g=1.168)
+2026-04-30 10:34:19,379 - INFO -     self_focus_index: CU=0.725 (best: eating_disorders g=1.063)
+2026-04-30 10:34:19,379 - INFO -     first_person_rate: CU=0.722 (best: bpd g=1.219)
+2026-04-30 10:34:19,379 - INFO -     anxiety_rate: CU=0.716 (best: anxiety g=1.915)
+2026-04-30 10:34:19,379 - INFO -     past_focus_rate: CU=0.715 (best: ptsd g=0.886)
+2026-04-30 10:34:19,379 - INFO -   Computing weight sensitivity analysis...
+2026-04-30 10:34:19,395 - INFO -     vs spread_heavy: ρ=0.998 (p=7.30e-119), Jaccard(top-20)=0.905 (19/20 shared)
+2026-04-30 10:34:19,410 - INFO -     vs significance_heavy: ρ=0.998 (p=9.94e-118), Jaccard(top-20)=1.000 (20/20 shared)
+2026-04-30 10:34:19,410 - INFO -   Weight sensitivity: high stability (min Jaccard = 0.905)
+2026-04-30 10:34:19,447 - INFO -   Saved CU weight sensitivity to: /path/to/project/module1_results/statistics/cu_weight_sensitivity.json
+2026-04-30 10:34:19,447 - INFO - Detecting direction inconsistency across disorders (v1.6)...
+2026-04-30 10:34:19,473 - INFO -   Direction-inconsistent features (exploratory): 49/98 (49 non-artifact)
+2026-04-30 10:34:19,473 - INFO -   Direction-inconsistent features (strict): 19/98 (19 non-artifact)
+2026-04-30 10:34:19,475 - INFO -   Null expectation: 96.0 exploratory direction-inconsistent features by chance (observed: 49)
+2026-04-30 10:34:19,475 - INFO -   Observed/Expected ratio: 0.5x
+2026-04-30 10:34:19,476 - INFO -   Strict direction-inconsistent features (non-artifact, top 10 by sig_g_range):
+2026-04-30 10:34:19,476 - INFO -     score_median: range=0.558, +max=0.388, -min=-0.170, +8 (adhd;anxiety;autism;bipolar;bpd;eating_disorders;ocd;ptsd), -1 (schizophrenia)
+2026-04-30 10:34:19,476 - INFO -     n_posts_total_log: range=0.508, +max=0.282, -min=-0.227, +2 (adhd;autism), -6 (anxiety;bipolar;bpd;eating_disorders;ocd;schizophrenia)
+2026-04-30 10:34:19,476 - INFO -     active_day_ratio: range=0.464, +max=0.275, -min=-0.189, +1 (autism), -7 (anxiety;bipolar;bpd;depression;eating_disorders;ocd;schizophrenia)
+2026-04-30 10:34:19,476 - INFO -     posts_per_day_log: range=0.444, +max=0.316, -min=-0.128, +2 (autism;ptsd), -6 (anxiety;bipolar;bpd;depression;eating_disorders;ocd)
+2026-04-30 10:34:19,476 - INFO -     score_mean_log_signed: range=0.434, +max=0.251, -min=-0.183, +7 (adhd;autism;bpd;depression;eating_disorders;ocd;ptsd), -1 (schizophrenia)
+2026-04-30 10:34:19,476 - INFO -     n_active_days: range=0.408, +max=0.188, -min=-0.220, +2 (adhd;autism), -7 (anxiety;bipolar;bpd;eating_disorders;ocd;ptsd;schizophrenia)
+2026-04-30 10:34:19,476 - INFO -     vader_compound_mean: range=0.399, +max=0.266, -min=-0.133, +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism)
+2026-04-30 10:34:19,476 - INFO -     n_posts_total: range=0.376, +max=0.248, -min=-0.127, +3 (adhd;autism;depression), -5 (anxiety;bipolar;bpd;eating_disorders;schizophrenia)
+2026-04-30 10:34:19,476 - INFO -     n_comments: range=0.375, +max=0.253, -min=-0.121, +3 (adhd;autism;depression), -5 (anxiety;bipolar;bpd;eating_disorders;schizophrenia)
+2026-04-30 10:34:19,476 - INFO -     netspeak_usage_rate: range=0.370, +max=0.195, -min=-0.175, +2 (bpd;eating_disorders), -7 (adhd;autism;bipolar;depression;ocd;ptsd;schizophrenia)
+2026-04-30 10:34:19,519 - INFO -   Feature ranking (top 10 by clinical utility):
+2026-04-30 10:34:19,519 - INFO -     sadness_rate: CU=0.736, diff_spec=0.000, max|g|=1.168, best=bpd
+2026-04-30 10:34:19,519 - INFO -     self_focus_index: CU=0.725, diff_spec=0.000, max|g|=1.063, best=eating_disorders
+2026-04-30 10:34:19,519 - INFO -     first_person_rate: CU=0.722, diff_spec=0.000, max|g|=1.219, best=bpd
+2026-04-30 10:34:19,519 - INFO -     anxiety_rate: CU=0.716, diff_spec=0.000, max|g|=1.915, best=anxiety
+2026-04-30 10:34:19,519 - INFO -     past_focus_rate: CU=0.715, diff_spec=0.000, max|g|=0.886, best=ptsd
+2026-04-30 10:34:19,519 - INFO -     vader_compound_std: CU=0.700, diff_spec=0.000, max|g|=1.027, best=bpd
+2026-04-30 10:34:19,519 - INFO -     emotional_volatility: CU=0.700, diff_spec=0.000, max|g|=1.027, best=bpd
+2026-04-30 10:34:19,519 - INFO -     other_sub_ratio: CU=0.693, diff_spec=0.000, max|g|=0.936, best=bipolar
+2026-04-30 10:34:19,519 - INFO -     post_length_mean: CU=0.674, diff_spec=0.000, max|g|=0.771, best=ptsd
+2026-04-30 10:34:19,519 - INFO -     insight_rate: CU=0.666, diff_spec=0.000, max|g|=0.963, best=ocd
+2026-04-30 10:34:19,519 - INFO - 
+--- Analysis 2: Pairwise Disorder Effect Sizes ---
+2026-04-30 10:34:19,519 - INFO -     Using analytical CI only (no bootstrap)
+2026-04-30 10:34:19,519 - INFO -     Using 98 non-artifact features
+2026-04-30 10:34:19,519 - INFO - Total disorder pairs: 45
+2026-04-30 10:34:27,660 - INFO - 
+============================================================
+2026-04-30 10:34:27,660 - INFO - SUMMARY REPORT (v1.6)
+2026-04-30 10:34:27,660 - INFO - ============================================================
+2026-04-30 10:34:27,660 - INFO -   Features: 98 analysis + 5 artifacts (excluded)
+2026-04-30 10:34:27,660 - INFO -   Disorders: 10
+2026-04-30 10:34:27,660 - INFO -   Tests (non-artifact): 980
+2026-04-30 10:34:27,661 - INFO -   Significant (FDR, non-artifact): 808 (82.4%)
+2026-04-30 10:34:27,661 - INFO -   Effect categories: {'negligible': 468, 'small': 209, 'minimal': 185, 'medium': 77, 'large': 41}
+2026-04-30 10:34:27,661 - INFO - 
+  Top 5 largest effects (non-artifact):
+2026-04-30 10:34:27,661 - INFO -     anxiety / anxiety_rate: g=1.915 (large)
+2026-04-30 10:34:27,661 - INFO -     ocd / anxiety_rate: g=1.793 (large)
+2026-04-30 10:34:27,661 - INFO -     eating_disorders / anxiety_rate: g=1.660 (large)
+2026-04-30 10:34:27,661 - INFO -     bpd / anxiety_rate: g=1.591 (large)
+2026-04-30 10:34:27,661 - INFO -     ptsd / anxiety_rate: g=1.423 (large)
+2026-04-30 10:34:27,661 - INFO - 
+  Top 5 clinical utility:
+2026-04-30 10:34:27,661 - INFO -     sadness_rate: CU=0.736
+2026-04-30 10:34:27,661 - INFO -     self_focus_index: CU=0.725
+2026-04-30 10:34:27,661 - INFO -     first_person_rate: CU=0.722
+2026-04-30 10:34:27,661 - INFO -     anxiety_rate: CU=0.716
+2026-04-30 10:34:27,661 - INFO -     past_focus_rate: CU=0.715
+2026-04-30 10:34:27,661 - INFO - 
+  Direction inconsistency:
+2026-04-30 10:34:27,661 - INFO -     Exploratory: 49 features (null expectation: 96.0)
+2026-04-30 10:34:27,661 - INFO -     Strict: 19 features (effect-size-gated)
+2026-04-30 10:34:27,662 - INFO - 
+  CU weight sensitivity: high (min Jaccard = 0.9047619047619048)
+2026-04-30 10:34:27,662 - INFO - 
+  Artifact features (excluded from primary analysis):
+2026-04-30 10:34:27,662 - INFO -     subreddit_entropy: max|g|=0.183 (circular with patient identification)
+2026-04-30 10:34:27,662 - INFO -     subreddit_herfindahl: max|g|=0.134 (circular with patient identification)
+2026-04-30 10:34:27,662 - INFO -     primary_subreddit_ratio: max|g|=0.163 (circular with patient identification)
+2026-04-30 10:34:27,662 - INFO -     mental_health_sub_ratio: max|g|=3.424 (circular with patient identification)
+2026-04-30 10:34:27,662 - INFO -     support_sub_ratio: max|g|=2.540 (circular with patient identification)
+2026-04-30 10:34:27,662 - INFO - 
+  Report saved to: /path/to/project/module1_results/statistics/effect_sizes_report.json
+2026-04-30 10:34:27,662 - INFO - ================================================================================
+2026-04-30 10:34:27,662 - INFO - EFFECT SIZE COMPUTATION COMPLETE
+2026-04-30 10:34:27,662 - INFO - ================================================================================
+2026-05-04 18:24:51,073 - INFO - ================================================================================
+2026-05-04 18:24:51,109 - INFO - MODULE 1 - Step 03: Effect Size Matrix Computation (v1.6)
+2026-05-04 18:24:51,181 - INFO - Fixes: DiffSpec noise gate, weight trimming, deterministic seed,
+2026-05-04 18:24:51,216 - INFO -        strict direction inconsistency, CU weight sensitivity
+2026-05-04 18:24:51,252 - INFO - ================================================================================
+2026-05-04 18:24:58,829 - INFO - Loaded features: (722100, 133)
+2026-05-04 18:24:58,860 - INFO - Loading feature columns from Step 02 outputs...
+2026-05-04 18:24:59,527 - INFO -   Loaded from feature_selection.json: 103 valid features (2 dropped: ['inhibition_rate', 'inhibition_marker_rate'])
+2026-05-04 18:24:59,604 - INFO - Total features from Step 02: 103
+2026-05-04 18:24:59,639 - INFO -   Selection artifact features (excluded from primary analysis): 5: ['subreddit_entropy', 'subreddit_herfindahl', 'primary_subreddit_ratio', 'mental_health_sub_ratio', 'support_sub_ratio']
+2026-05-04 18:24:59,675 - INFO -   Analysis features: 98
+2026-05-04 18:25:00,212 - INFO - Restricted to training set: 505464 users (70.0%)
+2026-05-04 18:25:00,614 - INFO - Disorders to analyze: 10/10
+2026-05-04 18:25:00,641 - INFO - 
+--- Analysis 1: Disorder vs Controls Effect Sizes ---
+2026-05-04 18:25:00,683 - INFO -     Using 98 non-artifact features
+2026-05-04 18:25:00,718 - INFO -     Bootstrap iterations: 500
+2026-05-04 18:25:00,753 - INFO -   Computing effect sizes for: depression
+2026-05-04 18:25:01,061 - INFO -     Patients: 21445, Controls: 416450
+2026-05-04 18:31:18,901 - INFO -     Effect sizes: mean |g|=0.189, max |g|=1.257, n_sig(p<0.05)=84
+2026-05-04 18:31:18,938 - INFO -   Computing effect sizes for: bipolar
+2026-05-04 18:31:19,186 - INFO -     Patients: 7004, Controls: 416450
+2026-05-04 18:37:18,622 - INFO -     Effect sizes: mean |g|=0.267, max |g|=3.274, n_sig(p<0.05)=90
+2026-05-04 18:37:18,640 - INFO -   Computing effect sizes for: anxiety
+2026-05-04 18:37:18,875 - INFO -     Patients: 10096, Controls: 416450
+2026-05-04 18:43:27,177 - INFO -     Effect sizes: mean |g|=0.220, max |g|=1.902, n_sig(p<0.05)=87
+2026-05-04 18:43:27,195 - INFO -   Computing effect sizes for: ocd
+2026-05-04 18:43:27,430 - INFO -     Patients: 4015, Controls: 416450
+2026-05-04 18:49:22,980 - INFO -     Effect sizes: mean |g|=0.235, max |g|=2.304, n_sig(p<0.05)=78
+2026-05-04 18:49:23,027 - INFO -   Computing effect sizes for: ptsd
+2026-05-04 18:49:23,265 - INFO -     Patients: 5797, Controls: 416450
+2026-05-04 18:55:25,609 - INFO -     Effect sizes: mean |g|=0.252, max |g|=1.958, n_sig(p<0.05)=89
+2026-05-04 18:55:25,628 - INFO -   Computing effect sizes for: bpd
+2026-05-04 18:55:25,850 - INFO -     Patients: 4257, Controls: 416450
+2026-05-04 19:01:25,763 - INFO -     Effect sizes: mean |g|=0.298, max |g|=3.220, n_sig(p<0.05)=88
+2026-05-04 19:01:25,820 - INFO -   Computing effect sizes for: eating_disorders
+2026-05-04 19:01:26,086 - INFO -     Patients: 1181, Controls: 416450
+2026-05-04 19:07:21,464 - INFO -     Effect sizes: mean |g|=0.292, max |g|=3.257, n_sig(p<0.05)=70
+2026-05-04 19:07:21,482 - INFO -   Computing effect sizes for: schizophrenia
+2026-05-04 19:07:21,716 - INFO -     Patients: 1721, Controls: 416450
+2026-05-04 19:13:24,656 - INFO -     Effect sizes: mean |g|=0.232, max |g|=3.311, n_sig(p<0.05)=75
+2026-05-04 19:13:24,674 - INFO -   Computing effect sizes for: adhd
+2026-05-04 19:13:24,920 - INFO -     Patients: 26341, Controls: 416450
+2026-05-04 19:19:38,072 - INFO -     Effect sizes: mean |g|=0.183, max |g|=1.353, n_sig(p<0.05)=91
+2026-05-04 19:19:38,091 - INFO -   Computing effect sizes for: autism
+2026-05-04 19:19:38,324 - INFO -     Patients: 7157, Controls: 416450
+2026-05-04 19:25:37,635 - INFO -     Effect sizes: mean |g|=0.221, max |g|=1.945, n_sig(p<0.05)=93
+2026-05-04 19:25:37,655 - INFO - Applying FDR correction...
+2026-05-04 19:25:37,666 - INFO -   Total tests: 1030 (980 non-artifact, 50 artifact)
+2026-05-04 19:25:37,666 - INFO -   Significant (global FDR): 840 (81.6%)
+2026-05-04 19:25:37,667 - INFO -   Significant non-artifact: 802 (81.8%)
+2026-05-04 19:25:37,667 - INFO -   Effect categories (all): {'negligible': 480, 'small': 208, 'minimal': 205, 'medium': 76, 'large': 61}
+2026-05-04 19:25:37,667 - INFO -   Effect categories (non-artifact): {'negligible': 457, 'small': 208, 'minimal': 198, 'medium': 76, 'large': 41}
+2026-05-04 19:25:37,996 - INFO - Effect size matrix shape: (103, 10)
+2026-05-04 19:25:38,089 - INFO - Clean effect size matrix (no artifacts): (98, 10)
+2026-05-04 19:25:38,089 - INFO - Computing feature specificity scores (magnitude-based)...
+2026-05-04 19:25:38,100 - INFO - Computing differential specificity (polarity-based, v1.6)...
+2026-05-04 19:25:38,105 - INFO -   Differential specificity range: 0.000 - 0.177
+2026-05-04 19:25:38,108 - INFO -   Noise gate impact: 18/98 features attenuated (max|g| < 0.15)
+2026-05-04 19:25:38,108 - INFO -   No features with high differential specificity (>0.3)
+2026-05-04 19:25:38,115 - INFO - Computing clinical utility scores (v1.6)...
+2026-05-04 19:25:38,129 - INFO -   Clinical utility range: 0.048 - 0.736
+2026-05-04 19:25:38,129 - INFO -   High utility (>0.5): 14 features
+2026-05-04 19:25:38,129 - INFO -   Moderate utility (0.3-0.5): 19 features
+2026-05-04 19:25:38,130 - INFO -   Top 5 clinical utility features:
+2026-05-04 19:25:38,130 - INFO -     sadness_rate: CU=0.736 (best: bpd g=1.178)
+2026-05-04 19:25:38,130 - INFO -     self_focus_index: CU=0.723 (best: eating_disorders g=1.073)
+2026-05-04 19:25:38,130 - INFO -     first_person_rate: CU=0.721 (best: bpd g=1.220)
+2026-05-04 19:25:38,130 - INFO -     anxiety_rate: CU=0.716 (best: anxiety g=1.902)
+2026-05-04 19:25:38,130 - INFO -     past_focus_rate: CU=0.713 (best: ptsd g=0.884)
+2026-05-04 19:25:38,130 - INFO -   Computing weight sensitivity analysis...
+2026-05-04 19:25:38,147 - INFO -     vs spread_heavy: ρ=0.997 (p=8.98e-112), Jaccard(top-20)=0.905 (19/20 shared)
+2026-05-04 19:25:38,161 - INFO -     vs significance_heavy: ρ=0.998 (p=2.18e-113), Jaccard(top-20)=1.000 (20/20 shared)
+2026-05-04 19:25:38,161 - INFO -   Weight sensitivity: high stability (min Jaccard = 0.905)
+2026-05-04 19:25:38,173 - INFO -   Saved CU weight sensitivity to: /path/to/project/module1_results/statistics/cu_weight_sensitivity.json
+2026-05-04 19:25:38,173 - INFO - Detecting direction inconsistency across disorders (v1.6)...
+2026-05-04 19:25:38,197 - INFO -   Direction-inconsistent features (exploratory): 50/98 (50 non-artifact)
+2026-05-04 19:25:38,197 - INFO -   Direction-inconsistent features (strict): 18/98 (18 non-artifact)
+2026-05-04 19:25:38,199 - INFO -   Null expectation: 96.0 exploratory direction-inconsistent features by chance (observed: 50)
+2026-05-04 19:25:38,199 - INFO -   Observed/Expected ratio: 0.5x
+2026-05-04 19:25:38,199 - INFO -   Strict direction-inconsistent features (non-artifact, top 10 by sig_g_range):
+2026-05-04 19:25:38,199 - INFO -     score_median: range=0.567, +max=0.393, -min=-0.174, +7 (adhd;autism;bipolar;bpd;eating_disorders;ocd;ptsd), -1 (schizophrenia)
+2026-05-04 19:25:38,199 - INFO -     n_posts_total_log: range=0.516, +max=0.279, -min=-0.238, +2 (adhd;autism), -6 (anxiety;bipolar;bpd;eating_disorders;ocd;schizophrenia)
+2026-05-04 19:25:38,199 - INFO -     active_day_ratio: range=0.463, +max=0.272, -min=-0.191, +1 (autism), -7 (anxiety;bipolar;bpd;depression;eating_disorders;ocd;schizophrenia)
+2026-05-04 19:25:38,199 - INFO -     posts_per_day_log: range=0.444, +max=0.312, -min=-0.132, +3 (adhd;autism;ptsd), -5 (anxiety;bipolar;bpd;depression;eating_disorders)
+2026-05-04 19:25:38,199 - INFO -     score_mean_log_signed: range=0.428, +max=0.251, -min=-0.178, +7 (adhd;autism;bpd;depression;eating_disorders;ocd;ptsd), -1 (schizophrenia)
+2026-05-04 19:25:38,200 - INFO -     n_active_days: range=0.420, +max=0.186, -min=-0.234, +2 (adhd;autism), -7 (anxiety;bipolar;bpd;eating_disorders;ocd;ptsd;schizophrenia)
+2026-05-04 19:25:38,200 - INFO -     vader_compound_mean: range=0.388, +max=0.265, -min=-0.123, +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism)
+2026-05-04 19:25:38,200 - INFO -     n_comments: range=0.380, +max=0.246, -min=-0.134, +3 (adhd;autism;depression), -5 (anxiety;bipolar;bpd;eating_disorders;schizophrenia)
+2026-05-04 19:25:38,200 - INFO -     n_posts_total: range=0.379, +max=0.241, -min=-0.138, +3 (adhd;autism;depression), -5 (anxiety;bipolar;bpd;eating_disorders;schizophrenia)
+2026-05-04 19:25:38,200 - INFO -     posts_per_day: range=0.370, +max=0.258, -min=-0.113, +2 (autism;ptsd), -5 (anxiety;bipolar;bpd;depression;eating_disorders)
+2026-05-04 19:25:38,241 - INFO -   Feature ranking (top 10 by clinical utility):
+2026-05-04 19:25:38,241 - INFO -     sadness_rate: CU=0.736, diff_spec=0.000, max|g|=1.178, best=bpd
+2026-05-04 19:25:38,241 - INFO -     self_focus_index: CU=0.723, diff_spec=0.000, max|g|=1.073, best=eating_disorders
+2026-05-04 19:25:38,241 - INFO -     first_person_rate: CU=0.721, diff_spec=0.000, max|g|=1.220, best=bpd
+2026-05-04 19:25:38,241 - INFO -     anxiety_rate: CU=0.716, diff_spec=0.000, max|g|=1.902, best=anxiety
+2026-05-04 19:25:38,241 - INFO -     past_focus_rate: CU=0.713, diff_spec=0.000, max|g|=0.884, best=ptsd
+2026-05-04 19:25:38,241 - INFO -     emotional_volatility: CU=0.699, diff_spec=0.000, max|g|=1.028, best=bpd
+2026-05-04 19:25:38,242 - INFO -     vader_compound_std: CU=0.699, diff_spec=0.000, max|g|=1.028, best=bpd
+2026-05-04 19:25:38,242 - INFO -     other_sub_ratio: CU=0.693, diff_spec=0.000, max|g|=0.918, best=bipolar
+2026-05-04 19:25:38,242 - INFO -     post_length_mean: CU=0.677, diff_spec=0.000, max|g|=0.776, best=ptsd
+2026-05-04 19:25:38,242 - INFO -     insight_rate: CU=0.669, diff_spec=0.000, max|g|=0.975, best=bpd
+2026-05-04 19:25:38,242 - INFO - 
+--- Analysis 2: Pairwise Disorder Effect Sizes ---
+2026-05-04 19:25:38,242 - INFO -     Using analytical CI only (no bootstrap)
+2026-05-04 19:25:38,242 - INFO -     Using 98 non-artifact features
+2026-05-04 19:25:38,242 - INFO - Total disorder pairs: 45
+2026-05-04 19:25:47,526 - INFO - 
+============================================================
+2026-05-04 19:25:47,527 - INFO - SUMMARY REPORT (v1.6)
+2026-05-04 19:25:47,527 - INFO - ============================================================
+2026-05-04 19:25:47,527 - INFO -   Features: 98 analysis + 5 artifacts (excluded)
+2026-05-04 19:25:47,527 - INFO -   Disorders: 10
+2026-05-04 19:25:47,527 - INFO -   Tests (non-artifact): 980
+2026-05-04 19:25:47,527 - INFO -   Significant (FDR, non-artifact): 802 (81.8%)
+2026-05-04 19:25:47,527 - INFO -   Effect categories: {'negligible': 457, 'small': 208, 'minimal': 198, 'medium': 76, 'large': 41}
+2026-05-04 19:25:47,527 - INFO - 
+  Top 5 largest effects (non-artifact):
+2026-05-04 19:25:47,527 - INFO -     anxiety / anxiety_rate: g=1.902 (large)
+2026-05-04 19:25:47,527 - INFO -     ocd / anxiety_rate: g=1.807 (large)
+2026-05-04 19:25:47,527 - INFO -     eating_disorders / anxiety_rate: g=1.672 (large)
+2026-05-04 19:25:47,527 - INFO -     bpd / anxiety_rate: g=1.610 (large)
+2026-05-04 19:25:47,527 - INFO -     ptsd / anxiety_rate: g=1.416 (large)
+2026-05-04 19:25:47,528 - INFO - 
+  Top 5 clinical utility:
+2026-05-04 19:25:47,528 - INFO -     sadness_rate: CU=0.736
+2026-05-04 19:25:47,528 - INFO -     self_focus_index: CU=0.723
+2026-05-04 19:25:47,528 - INFO -     first_person_rate: CU=0.721
+2026-05-04 19:25:47,528 - INFO -     anxiety_rate: CU=0.716
+2026-05-04 19:25:47,528 - INFO -     past_focus_rate: CU=0.713
+2026-05-04 19:25:47,528 - INFO - 
+  Direction inconsistency:
+2026-05-04 19:25:47,528 - INFO -     Exploratory: 50 features (null expectation: 96.0)
+2026-05-04 19:25:47,528 - INFO -     Strict: 18 features (effect-size-gated)
+2026-05-04 19:25:47,528 - INFO - 
+  CU weight sensitivity: high (min Jaccard = 0.9047619047619048)
+2026-05-04 19:25:47,528 - INFO - 
+  Artifact features (excluded from primary analysis):
+2026-05-04 19:25:47,528 - INFO -     subreddit_entropy: max|g|=0.169 (circular with patient identification)
+2026-05-04 19:25:47,528 - INFO -     subreddit_herfindahl: max|g|=0.132 (circular with patient identification)
+2026-05-04 19:25:47,528 - INFO -     primary_subreddit_ratio: max|g|=0.158 (circular with patient identification)
+2026-05-04 19:25:47,528 - INFO -     mental_health_sub_ratio: max|g|=3.311 (circular with patient identification)
+2026-05-04 19:25:47,528 - INFO -     support_sub_ratio: max|g|=2.501 (circular with patient identification)
+2026-05-04 19:25:47,528 - INFO - 
+  Report saved to: /path/to/project/module1_results/statistics/effect_sizes_report.json
+2026-05-04 19:25:47,528 - INFO - ================================================================================
+2026-05-04 19:25:47,528 - INFO - EFFECT SIZE COMPUTATION COMPLETE
+2026-05-04 19:25:47,528 - INFO - ================================================================================
+2026-06-05 03:07:48,896 - INFO - ================================================================================
+2026-06-05 03:07:48,931 - INFO - MODULE 1 - Step 03: Effect Size Matrix Computation (v1.6)
+2026-06-05 03:07:48,931 - INFO - Fixes: DiffSpec noise gate, weight trimming, deterministic seed,
+2026-06-05 03:07:48,931 - INFO -        strict direction inconsistency, CU weight sensitivity
+2026-06-05 03:07:48,932 - INFO - ================================================================================
+2026-06-05 03:07:55,006 - INFO - Loaded features: (721995, 136)
+2026-06-05 03:07:55,007 - INFO - Loading feature columns from Step 02 outputs...
+2026-06-05 03:07:55,015 - INFO -   Loaded from feature_selection.json: 95 valid features (2 dropped: ['inhibition_rate', 'inhibition_marker_rate'])
+2026-06-05 03:07:55,015 - INFO - Total features from Step 02: 95
+2026-06-05 03:07:55,016 - INFO -   Selection artifact features (excluded from primary analysis): 5: ['subreddit_entropy', 'subreddit_herfindahl', 'primary_subreddit_ratio', 'mental_health_sub_ratio', 'support_sub_ratio']
+2026-06-05 03:07:55,016 - INFO -   Analysis features: 90
+2026-06-05 03:07:55,608 - INFO - Restricted to training set: 505384 users (70.0%)
+2026-06-05 03:07:56,209 - INFO - Disorders to analyze: 10/10
+2026-06-05 03:07:56,210 - INFO - 
+--- Analysis 1: Disorder vs Controls Effect Sizes ---
+2026-06-05 03:07:56,210 - INFO -     Computing all 95 features (artifact features flagged for exclusion)
+2026-06-05 03:07:56,210 - INFO -     Bootstrap iterations: 500
+2026-06-05 03:07:56,211 - INFO -   Computing effect sizes for: depression
+2026-06-05 03:07:56,514 - INFO -     Patients: 21447, Controls: 416367
+2026-06-05 03:13:34,790 - INFO -     Effect sizes: mean |g|=0.196, max |g|=1.253, n_sig(p<0.05)=80
+2026-06-05 03:13:34,812 - INFO -   Computing effect sizes for: bipolar
+2026-06-05 03:13:35,063 - INFO -     Patients: 7004, Controls: 416367
+2026-06-05 03:18:58,594 - INFO -     Effect sizes: mean |g|=0.279, max |g|=3.322, n_sig(p<0.05)=81
+2026-06-05 03:18:58,611 - INFO -   Computing effect sizes for: anxiety
+2026-06-05 03:18:58,842 - INFO -     Patients: 10096, Controls: 416367
+2026-06-05 03:24:27,051 - INFO -     Effect sizes: mean |g|=0.230, max |g|=1.871, n_sig(p<0.05)=78
+2026-06-05 03:24:27,067 - INFO -   Computing effect sizes for: ocd
+2026-06-05 03:24:27,286 - INFO -     Patients: 4015, Controls: 416367
+2026-06-05 03:29:48,588 - INFO -     Effect sizes: mean |g|=0.247, max |g|=2.299, n_sig(p<0.05)=76
+2026-06-05 03:29:48,607 - INFO -   Computing effect sizes for: ptsd
+2026-06-05 03:29:48,830 - INFO -     Patients: 5797, Controls: 416367
+2026-06-05 03:35:12,936 - INFO -     Effect sizes: mean |g|=0.259, max |g|=1.980, n_sig(p<0.05)=81
+2026-06-05 03:35:12,955 - INFO -   Computing effect sizes for: bpd
+2026-06-05 03:35:13,176 - INFO -     Patients: 4257, Controls: 416367
+2026-06-05 03:40:37,681 - INFO -     Effect sizes: mean |g|=0.300, max |g|=3.147, n_sig(p<0.05)=82
+2026-06-05 03:40:37,744 - INFO -   Computing effect sizes for: eating_disorders
+2026-06-05 03:40:37,962 - INFO -     Patients: 1181, Controls: 416367
+2026-06-05 03:45:58,896 - INFO -     Effect sizes: mean |g|=0.295, max |g|=3.256, n_sig(p<0.05)=64
+2026-06-05 03:45:58,957 - INFO -   Computing effect sizes for: schizophrenia
+2026-06-05 03:45:59,175 - INFO -     Patients: 1721, Controls: 416367
+2026-06-05 03:51:23,527 - INFO -     Effect sizes: mean |g|=0.245, max |g|=3.451, n_sig(p<0.05)=69
+2026-06-05 03:51:23,543 - INFO -   Computing effect sizes for: adhd
+2026-06-05 03:51:23,786 - INFO -     Patients: 26342, Controls: 416367
+2026-06-05 03:57:00,794 - INFO -     Effect sizes: mean |g|=0.190, max |g|=1.358, n_sig(p<0.05)=83
+2026-06-05 03:57:00,810 - INFO -   Computing effect sizes for: autism
+2026-06-05 03:57:01,035 - INFO -     Patients: 7157, Controls: 416367
+2026-06-05 04:02:24,359 - INFO -     Effect sizes: mean |g|=0.226, max |g|=1.948, n_sig(p<0.05)=89
+2026-06-05 04:02:24,377 - INFO - Applying FDR correction...
+2026-06-05 04:02:24,386 - INFO -   Total tests: 950 (900 non-artifact, 50 artifact)
+2026-06-05 04:02:24,386 - INFO -   Significant (global FDR): 777 (81.8%)
+2026-06-05 04:02:24,386 - INFO -   Significant non-artifact: 738 (82.0%)
+2026-06-05 04:02:24,386 - INFO -   Effect categories (all): {'negligible': 434, 'small': 196, 'minimal': 187, 'medium': 72, 'large': 61}
+2026-06-05 04:02:24,386 - INFO -   Effect categories (non-artifact): {'negligible': 411, 'small': 196, 'minimal': 180, 'medium': 72, 'large': 41}
+2026-06-05 04:02:25,005 - INFO - Effect size matrix shape: (95, 10)
+2026-06-05 04:02:25,133 - INFO - Clean effect size matrix (no artifacts): (90, 10)
+2026-06-05 04:02:25,134 - INFO - Computing feature specificity scores (magnitude-based)...
+2026-06-05 04:02:25,162 - INFO - Computing differential specificity (polarity-based, v1.6)...
+2026-06-05 04:02:25,167 - INFO -   Differential specificity range: 0.000 - 0.183
+2026-06-05 04:02:25,169 - INFO -   Noise gate impact: 18/90 features attenuated (max|g| < 0.15)
+2026-06-05 04:02:25,169 - INFO -   No features with high differential specificity (>0.3)
+2026-06-05 04:02:25,203 - INFO - Computing clinical utility scores (v1.6)...
+2026-06-05 04:02:25,215 - INFO -   Clinical utility range: 0.038 - 0.737
+2026-06-05 04:02:25,215 - INFO -   High utility (>0.5): 14 features
+2026-06-05 04:02:25,215 - INFO -   Moderate utility (0.3-0.5): 17 features
+2026-06-05 04:02:25,230 - INFO -   Top 5 clinical utility features:
+2026-06-05 04:02:25,231 - INFO -     sadness_rate: CU=0.737 (best: bpd g=1.118)
+2026-06-05 04:02:25,231 - INFO -     anxiety_rate: CU=0.717 (best: anxiety g=1.871)
+2026-06-05 04:02:25,232 - INFO -     past_focus_rate: CU=0.715 (best: ptsd g=0.856)
+2026-06-05 04:02:25,232 - INFO -     first_person_rate: CU=0.704 (best: bpd g=1.349)
+2026-06-05 04:02:25,232 - INFO -     vader_compound_std: CU=0.700 (best: bpd g=1.024)
+2026-06-05 04:02:25,232 - INFO -   Computing weight sensitivity analysis...
+2026-06-05 04:02:25,277 - INFO -     vs spread_heavy: ρ=0.998 (p=7.00e-108), Jaccard(top-20)=1.000 (20/20 shared)
+2026-06-05 04:02:25,289 - INFO -     vs significance_heavy: ρ=0.998 (p=1.25e-106), Jaccard(top-20)=1.000 (20/20 shared)
+2026-06-05 04:02:25,289 - INFO -   Weight sensitivity: high stability (min Jaccard = 1.000)
+2026-06-05 04:02:25,337 - INFO -   Saved CU weight sensitivity to: /path/to/project/module1_results/statistics/cu_weight_sensitivity.json
+2026-06-05 04:02:25,337 - INFO - Detecting direction inconsistency across disorders (v1.6)...
+2026-06-05 04:02:25,360 - INFO -   Direction-inconsistent features (exploratory): 44/90 (44 non-artifact)
+2026-06-05 04:02:25,360 - INFO -   Direction-inconsistent features (strict): 16/90 (16 non-artifact)
+2026-06-05 04:02:25,362 - INFO -   Null expectation: 87.8 exploratory direction-inconsistent features by chance (observed: 44)
+2026-06-05 04:02:25,362 - INFO -   Observed/Expected ratio: 0.5x
+2026-06-05 04:02:25,362 - INFO -   Strict direction-inconsistent features (non-artifact, top 10 by sig_g_range):
+2026-06-05 04:02:25,362 - INFO -     score_median: range=0.568, +max=0.404, -min=-0.164, +8 (adhd;anxiety;autism;bipolar;bpd;eating_disorders;ocd;ptsd), -1 (schizophrenia)
+2026-06-05 04:02:25,362 - INFO -     n_posts_total_log: range=0.498, +max=0.280, -min=-0.218, +2 (adhd;autism), -6 (anxiety;bipolar;bpd;eating_disorders;ocd;schizophrenia)
+2026-06-05 04:02:25,363 - INFO -     active_day_ratio: range=0.464, +max=0.275, -min=-0.189, +1 (autism), -7 (anxiety;bipolar;bpd;depression;eating_disorders;ocd;schizophrenia)
+2026-06-05 04:02:25,363 - INFO -     posts_per_day_log: range=0.446, +max=0.318, -min=-0.128, +2 (autism;ptsd), -5 (anxiety;bipolar;bpd;depression;eating_disorders)
+2026-06-05 04:02:25,363 - INFO -     score_mean_log_signed: range=0.429, +max=0.257, -min=-0.172, +7 (adhd;autism;bpd;depression;eating_disorders;ocd;ptsd), -1 (schizophrenia)
+2026-06-05 04:02:25,363 - INFO -     n_active_days: range=0.397, +max=0.182, -min=-0.215, +2 (adhd;autism), -7 (anxiety;bipolar;bpd;eating_disorders;ocd;ptsd;schizophrenia)
+2026-06-05 04:02:25,363 - INFO -     vader_compound_mean: range=0.378, +max=0.243, -min=-0.135, +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism)
+2026-06-05 04:02:25,363 - INFO -     n_comments: range=0.367, +max=0.245, -min=-0.122, +3 (adhd;autism;depression), -5 (anxiety;bipolar;bpd;eating_disorders;schizophrenia)
+2026-06-05 04:02:25,363 - INFO -     netspeak_usage_rate: range=0.342, +max=0.159, -min=-0.183, +2 (bpd;eating_disorders), -8 (adhd;anxiety;autism;bipolar;depression;ocd;ptsd;schizophrenia)
+2026-06-05 04:02:25,363 - INFO -     n_unique_subreddits: range=0.334, +max=0.166, -min=-0.168, +2 (adhd;autism), -8 (anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd;schizophrenia)
+2026-06-05 04:02:25,427 - INFO -   Feature ranking (top 10 by clinical utility):
+2026-06-05 04:02:25,427 - INFO -     sadness_rate: CU=0.737, diff_spec=0.000, max|g|=1.118, best=bpd
+2026-06-05 04:02:25,427 - INFO -     anxiety_rate: CU=0.717, diff_spec=0.000, max|g|=1.871, best=anxiety
+2026-06-05 04:02:25,427 - INFO -     past_focus_rate: CU=0.715, diff_spec=0.000, max|g|=0.856, best=ptsd
+2026-06-05 04:02:25,427 - INFO -     first_person_rate: CU=0.704, diff_spec=0.000, max|g|=1.349, best=bpd
+2026-06-05 04:02:25,427 - INFO -     vader_compound_std: CU=0.700, diff_spec=0.000, max|g|=1.024, best=bpd
+2026-06-05 04:02:25,427 - INFO -     self_focus_index: CU=0.700, diff_spec=0.000, max|g|=1.161, best=eating_disorders
+2026-06-05 04:02:25,427 - INFO -     post_length_mean: CU=0.698, diff_spec=0.000, max|g|=0.813, best=ptsd
+2026-06-05 04:02:25,427 - INFO -     other_sub_ratio: CU=0.692, diff_spec=0.000, max|g|=0.924, best=bipolar
+2026-06-05 04:02:25,427 - INFO -     insight_rate: CU=0.669, diff_spec=0.000, max|g|=0.914, best=ocd
+2026-06-05 04:02:25,427 - INFO -     temporal_balance: CU=0.666, diff_spec=0.000, max|g|=0.761, best=ptsd
+2026-06-05 04:02:25,427 - INFO - 
+--- Analysis 2: Pairwise Disorder Effect Sizes ---
+2026-06-05 04:02:25,428 - INFO -     Using analytical CI only (no bootstrap)
+2026-06-05 04:02:25,428 - INFO -     Computing all 95 features (artifact features flagged for exclusion)
+2026-06-05 04:02:25,428 - INFO - Total disorder pairs: 45
+2026-06-05 04:02:32,696 - INFO - 
+============================================================
+2026-06-05 04:02:32,696 - INFO - SUMMARY REPORT (v1.6)
+2026-06-05 04:02:32,696 - INFO - ============================================================
+2026-06-05 04:02:32,696 - INFO -   Features: 90 analysis + 5 artifacts (excluded)
+2026-06-05 04:02:32,696 - INFO -   Disorders: 10
+2026-06-05 04:02:32,696 - INFO -   Tests (non-artifact): 900
+2026-06-05 04:02:32,696 - INFO -   Significant (FDR, non-artifact): 738 (82.0%)
+2026-06-05 04:02:32,696 - INFO -   Effect categories: {'negligible': 411, 'small': 196, 'minimal': 180, 'medium': 72, 'large': 41}
+2026-06-05 04:02:32,696 - INFO - 
+  Top 5 largest effects (non-artifact):
+2026-06-05 04:02:32,696 - INFO -     anxiety / anxiety_rate: g=1.871 (large)
+2026-06-05 04:02:32,696 - INFO -     ocd / anxiety_rate: g=1.766 (large)
+2026-06-05 04:02:32,696 - INFO -     eating_disorders / anxiety_rate: g=1.603 (large)
+2026-06-05 04:02:32,696 - INFO -     bpd / anxiety_rate: g=1.538 (large)
+2026-06-05 04:02:32,696 - INFO -     ptsd / anxiety_rate: g=1.405 (large)
+2026-06-05 04:02:32,697 - INFO - 
+  Top 5 clinical utility:
+2026-06-05 04:02:32,697 - INFO -     sadness_rate: CU=0.737
+2026-06-05 04:02:32,697 - INFO -     anxiety_rate: CU=0.717
+2026-06-05 04:02:32,697 - INFO -     past_focus_rate: CU=0.715
+2026-06-05 04:02:32,697 - INFO -     first_person_rate: CU=0.704
+2026-06-05 04:02:32,697 - INFO -     vader_compound_std: CU=0.700
+2026-06-05 04:02:32,697 - INFO - 
+  Direction inconsistency:
+2026-06-05 04:02:32,697 - INFO -     Exploratory: 44 features (null expectation: 87.8)
+2026-06-05 04:02:32,697 - INFO -     Strict: 16 features (effect-size-gated)
+2026-06-05 04:02:32,697 - INFO - 
+  CU weight sensitivity: high (min Jaccard = 1.0)
+2026-06-05 04:02:32,697 - INFO - 
+  Artifact features (excluded from primary analysis):
+2026-06-05 04:02:32,698 - INFO -     subreddit_entropy: max|g|=0.176 (circular with patient identification)
+2026-06-05 04:02:32,698 - INFO -     subreddit_herfindahl: max|g|=0.130 (circular with patient identification)
+2026-06-05 04:02:32,698 - INFO -     primary_subreddit_ratio: max|g|=0.155 (circular with patient identification)
+2026-06-05 04:02:32,698 - INFO -     mental_health_sub_ratio: max|g|=3.451 (circular with patient identification)
+2026-06-05 04:02:32,698 - INFO -     support_sub_ratio: max|g|=2.547 (circular with patient identification)
+2026-06-05 04:02:32,698 - INFO - 
+  Report saved to: /path/to/project/module1_results/statistics/effect_sizes_report.json
+2026-06-05 04:02:32,698 - INFO - ================================================================================
+2026-06-05 04:02:32,698 - INFO - EFFECT SIZE COMPUTATION COMPLETE
+2026-06-05 04:02:32,698 - INFO - ================================================================================
+2026-06-11 23:50:30,081 - INFO - ================================================================================
+2026-06-11 23:50:30,167 - INFO - MODULE 1 - Step 03: Effect Size Matrix Computation (v1.6)
+2026-06-11 23:50:30,167 - INFO - Fixes: DiffSpec noise gate, weight trimming, deterministic seed,
+2026-06-11 23:50:30,168 - INFO -        strict direction inconsistency, CU weight sensitivity
+2026-06-11 23:50:30,168 - INFO - ================================================================================
+2026-06-11 23:50:36,085 - INFO - Loaded features: (721985, 136)
+2026-06-11 23:50:36,086 - INFO - Loading feature columns from Step 02 outputs...
+2026-06-11 23:50:36,093 - INFO -   Loaded from feature_selection.json: 98 valid features (3 dropped: ['vader_truncation_rate', 'inhibition_rate', 'inhibition_marker_rate'])
+2026-06-11 23:50:36,094 - INFO - Total features from Step 02: 98
+2026-06-11 23:50:36,094 - INFO -   Selection artifact features (excluded from primary analysis): 5: ['subreddit_entropy', 'subreddit_herfindahl', 'primary_subreddit_ratio', 'mental_health_sub_ratio', 'support_sub_ratio']
+2026-06-11 23:50:36,094 - INFO -   Analysis features: 93
+2026-06-11 23:50:36,608 - INFO - Restricted to training set: 505370 users (70.0%)
+2026-06-11 23:50:36,964 - INFO - Disorders to analyze: 10/10
+2026-06-11 23:50:36,965 - INFO - 
+--- Analysis 1: Disorder vs Controls Effect Sizes ---
+2026-06-11 23:50:36,965 - INFO -     Computing all 98 features (artifact features flagged for exclusion)
+2026-06-11 23:50:36,965 - INFO -     Bootstrap iterations: 500
+2026-06-11 23:50:36,966 - INFO -   Computing effect sizes for: depression
+2026-06-11 23:50:37,220 - INFO -     Patients: 21447, Controls: 416353
+2026-06-11 23:56:51,379 - INFO -     Effect sizes: mean |g|=0.194, max |g|=1.250, n_sig(p<0.05)=82
+2026-06-11 23:56:51,425 - INFO -   Computing effect sizes for: bipolar
+2026-06-11 23:56:51,659 - INFO -     Patients: 7004, Controls: 416353
+2026-06-12 00:02:53,512 - INFO -     Effect sizes: mean |g|=0.277, max |g|=3.312, n_sig(p<0.05)=85
+2026-06-12 00:02:53,529 - INFO -   Computing effect sizes for: anxiety
+2026-06-12 00:02:53,770 - INFO -     Patients: 10096, Controls: 416353
+2026-06-12 00:08:49,806 - INFO -     Effect sizes: mean |g|=0.229, max |g|=1.867, n_sig(p<0.05)=84
+2026-06-12 00:08:49,891 - INFO -   Computing effect sizes for: ocd
+2026-06-12 00:08:50,114 - INFO -     Patients: 4015, Controls: 416353
+2026-06-12 00:14:31,259 - INFO -     Effect sizes: mean |g|=0.245, max |g|=2.295, n_sig(p<0.05)=77
+2026-06-12 00:14:31,275 - INFO -   Computing effect sizes for: ptsd
+2026-06-12 00:14:31,500 - INFO -     Patients: 5797, Controls: 416353
+2026-06-12 00:20:03,492 - INFO -     Effect sizes: mean |g|=0.256, max |g|=1.941, n_sig(p<0.05)=83
+2026-06-12 00:20:03,507 - INFO -   Computing effect sizes for: bpd
+2026-06-12 00:20:03,730 - INFO -     Patients: 4257, Controls: 416353
+2026-06-12 00:25:52,668 - INFO -     Effect sizes: mean |g|=0.298, max |g|=3.145, n_sig(p<0.05)=84
+2026-06-12 00:25:52,684 - INFO -   Computing effect sizes for: eating_disorders
+2026-06-12 00:25:52,905 - INFO -     Patients: 1181, Controls: 416353
+2026-06-12 00:31:53,754 - INFO -     Effect sizes: mean |g|=0.291, max |g|=3.163, n_sig(p<0.05)=65
+2026-06-12 00:31:53,803 - INFO -   Computing effect sizes for: schizophrenia
+2026-06-12 00:31:55,732 - INFO -     Patients: 1721, Controls: 416353
+2026-06-12 00:37:55,216 - INFO -     Effect sizes: mean |g|=0.241, max |g|=3.396, n_sig(p<0.05)=71
+2026-06-12 00:37:58,651 - INFO -   Computing effect sizes for: adhd
+2026-06-12 00:38:21,693 - INFO -     Patients: 26342, Controls: 416353
+2026-06-12 00:45:10,311 - INFO -     Effect sizes: mean |g|=0.191, max |g|=1.352, n_sig(p<0.05)=86
+2026-06-12 00:45:10,338 - INFO -   Computing effect sizes for: autism
+2026-06-12 00:45:10,575 - INFO -     Patients: 7157, Controls: 416353
+2026-06-12 00:50:57,289 - INFO -     Effect sizes: mean |g|=0.224, max |g|=1.937, n_sig(p<0.05)=91
+2026-06-12 00:50:58,873 - INFO - Applying FDR correction...
+2026-06-12 00:51:00,959 - INFO -   Total tests: 980 (930 non-artifact, 50 artifact)
+2026-06-12 00:51:00,960 - INFO -   Significant (global FDR): 803 (81.9%)
+2026-06-12 00:51:00,961 - INFO -   Significant non-artifact: 765 (82.3%)
+2026-06-12 00:51:00,961 - INFO -   Effect categories (all): {'negligible': 438, 'small': 212, 'minimal': 197, 'medium': 73, 'large': 60}
+2026-06-12 00:51:00,961 - INFO -   Effect categories (non-artifact): {'negligible': 415, 'small': 212, 'minimal': 190, 'medium': 73, 'large': 40}
+2026-06-12 00:51:10,874 - INFO - Effect size matrix shape: (98, 10)
+2026-06-12 00:51:10,901 - INFO - Clean effect size matrix (no artifacts): (93, 10)
+2026-06-12 00:51:10,901 - INFO - Computing feature specificity scores (magnitude-based)...
+2026-06-12 00:51:11,045 - INFO - Computing differential specificity (polarity-based, v1.6)...
+2026-06-12 00:51:11,124 - INFO -   Differential specificity range: 0.000 - 0.185
+2026-06-12 00:51:11,135 - INFO -   Noise gate impact: 18/93 features attenuated (max|g| < 0.15)
+2026-06-12 00:51:11,152 - INFO -   No features with high differential specificity (>0.3)
+2026-06-12 00:51:11,166 - INFO - Computing clinical utility scores (v1.6)...
+2026-06-12 00:51:11,247 - INFO -   Clinical utility range: 0.052 - 0.737
+2026-06-12 00:51:11,249 - INFO -   High utility (>0.5): 14 features
+2026-06-12 00:51:11,250 - INFO -   Moderate utility (0.3-0.5): 20 features
+2026-06-12 00:51:11,376 - INFO -   Top 5 clinical utility features:
+2026-06-12 00:51:11,397 - INFO -     sadness_rate: CU=0.737 (best: bpd g=1.124)
+2026-06-12 00:51:11,398 - INFO -     anxiety_rate: CU=0.717 (best: anxiety g=1.867)
+2026-06-12 00:51:11,398 - INFO -     past_focus_rate: CU=0.714 (best: ptsd g=0.852)
+2026-06-12 00:51:11,399 - INFO -     first_person_rate: CU=0.704 (best: bpd g=1.360)
+2026-06-12 00:51:11,399 - INFO -     vader_compound_std: CU=0.701 (best: bpd g=1.027)
+2026-06-12 00:51:11,404 - INFO -   Computing weight sensitivity analysis...
+2026-06-12 00:51:11,912 - INFO -     vs spread_heavy: ρ=0.997 (p=7.77e-103), Jaccard(top-20)=0.905 (19/20 shared)
+2026-06-12 00:51:11,937 - INFO -     vs significance_heavy: ρ=0.998 (p=1.04e-108), Jaccard(top-20)=1.000 (20/20 shared)
+2026-06-12 00:51:11,938 - INFO -   Weight sensitivity: high stability (min Jaccard = 0.905)
+2026-06-12 00:51:11,973 - INFO -   Saved CU weight sensitivity to: /path/to/project/module1_results/statistics/cu_weight_sensitivity.json
+2026-06-12 00:51:11,974 - INFO - Detecting direction inconsistency across disorders (v1.6)...
+2026-06-12 00:51:12,011 - INFO -   Direction-inconsistent features (exploratory): 46/93 (46 non-artifact)
+2026-06-12 00:51:12,011 - INFO -   Direction-inconsistent features (strict): 18/93 (18 non-artifact)
+2026-06-12 00:51:12,026 - INFO -   Null expectation: 90.7 exploratory direction-inconsistent features by chance (observed: 46)
+2026-06-12 00:51:12,026 - INFO -   Observed/Expected ratio: 0.5x
+2026-06-12 00:51:12,033 - INFO -   Strict direction-inconsistent features (non-artifact, top 10 by sig_g_range):
+2026-06-12 00:51:12,034 - INFO -     score_median: range=0.574, +max=0.413, -min=-0.161, +8 (adhd;anxiety;autism;bipolar;bpd;eating_disorders;ocd;ptsd), -1 (schizophrenia)
+2026-06-12 00:51:12,034 - INFO -     n_posts_total_log: range=0.500, +max=0.282, -min=-0.219, +2 (adhd;autism), -6 (anxiety;bipolar;bpd;eating_disorders;ocd;schizophrenia)
+2026-06-12 00:51:12,034 - INFO -     active_day_ratio: range=0.465, +max=0.279, -min=-0.186, +1 (autism), -7 (anxiety;bipolar;bpd;depression;eating_disorders;ocd;schizophrenia)
+2026-06-12 00:51:12,035 - INFO -     posts_per_day_log: range=0.450, +max=0.321, -min=-0.129, +2 (autism;ptsd), -4 (anxiety;bipolar;bpd;depression)
+2026-06-12 00:51:12,035 - INFO -     score_mean_log_signed: range=0.445, +max=0.276, -min=-0.169, +7 (adhd;autism;bpd;depression;eating_disorders;ocd;ptsd), -1 (schizophrenia)
+2026-06-12 00:51:12,035 - INFO -     n_active_days: range=0.402, +max=0.185, -min=-0.217, +2 (adhd;autism), -7 (anxiety;bipolar;bpd;eating_disorders;ocd;ptsd;schizophrenia)
+2026-06-12 00:51:12,035 - INFO -     vader_compound_last_mean: range=0.379, +max=0.254, -min=-0.125, +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism)
+2026-06-12 00:51:12,035 - INFO -     n_comments: range=0.377, +max=0.250, -min=-0.127, +3 (adhd;autism;depression), -5 (anxiety;bipolar;bpd;eating_disorders;schizophrenia)
+2026-06-12 00:51:12,035 - INFO -     vader_compound_min_mean: range=0.375, +max=0.241, -min=-0.134, +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism)
+2026-06-12 00:51:12,035 - INFO -     vader_compound_mean: range=0.374, +max=0.248, -min=-0.126, +8 (adhd;anxiety;bipolar;bpd;depression;eating_disorders;ocd;ptsd), -1 (autism)
+2026-06-12 00:51:12,257 - INFO -   Feature ranking (top 10 by clinical utility):
+2026-06-12 00:51:12,258 - INFO -     sadness_rate: CU=0.737, diff_spec=0.000, max|g|=1.124, best=bpd
+2026-06-12 00:51:12,258 - INFO -     anxiety_rate: CU=0.717, diff_spec=0.000, max|g|=1.867, best=anxiety
+2026-06-12 00:51:12,258 - INFO -     past_focus_rate: CU=0.714, diff_spec=0.000, max|g|=0.852, best=ptsd
+2026-06-12 00:51:12,258 - INFO -     first_person_rate: CU=0.704, diff_spec=0.000, max|g|=1.360, best=bpd
+2026-06-12 00:51:12,258 - INFO -     vader_compound_std: CU=0.701, diff_spec=0.000, max|g|=1.027, best=bpd
+2026-06-12 00:51:12,258 - INFO -     self_focus_index: CU=0.698, diff_spec=0.000, max|g|=1.140, best=eating_disorders
+2026-06-12 00:51:12,258 - INFO -     post_length_mean: CU=0.695, diff_spec=0.000, max|g|=0.799, best=ptsd
+2026-06-12 00:51:12,258 - INFO -     other_sub_ratio: CU=0.692, diff_spec=0.000, max|g|=0.924, best=bipolar
+2026-06-12 00:51:12,259 - INFO -     insight_rate: CU=0.669, diff_spec=0.000, max|g|=0.912, best=ocd
+2026-06-12 00:51:12,259 - INFO -     temporal_balance: CU=0.662, diff_spec=0.000, max|g|=0.759, best=ptsd
+2026-06-12 00:51:12,259 - INFO - 
+--- Analysis 2: Pairwise Disorder Effect Sizes ---
+2026-06-12 00:51:12,259 - INFO -     Using analytical CI only (no bootstrap)
+2026-06-12 00:51:12,259 - INFO -     Computing all 98 features (artifact features flagged for exclusion)
+2026-06-12 00:51:12,270 - INFO - Total disorder pairs: 45
+2026-06-12 00:51:54,761 - INFO - 
+============================================================
+2026-06-12 00:51:54,762 - INFO - SUMMARY REPORT (v1.6)
+2026-06-12 00:51:54,762 - INFO - ============================================================
+2026-06-12 00:51:54,762 - INFO -   Features: 93 analysis + 5 artifacts (excluded)
+2026-06-12 00:51:54,762 - INFO -   Disorders: 10
+2026-06-12 00:51:54,762 - INFO -   Tests (non-artifact): 930
+2026-06-12 00:51:54,762 - INFO -   Significant (FDR, non-artifact): 765 (82.3%)
+2026-06-12 00:51:54,763 - INFO -   Effect categories: {'negligible': 415, 'small': 212, 'minimal': 190, 'medium': 73, 'large': 40}
+2026-06-12 00:51:54,763 - INFO - 
+  Top 5 largest effects (non-artifact):
+2026-06-12 00:51:54,763 - INFO -     anxiety / anxiety_rate: g=1.867 (large)
+2026-06-12 00:51:54,763 - INFO -     ocd / anxiety_rate: g=1.760 (large)
+2026-06-12 00:51:54,763 - INFO -     eating_disorders / anxiety_rate: g=1.587 (large)
+2026-06-12 00:51:54,763 - INFO -     bpd / anxiety_rate: g=1.549 (large)
+2026-06-12 00:51:54,763 - INFO -     ptsd / anxiety_rate: g=1.399 (large)
+2026-06-12 00:51:54,763 - INFO - 
+  Top 5 clinical utility:
+2026-06-12 00:51:54,763 - INFO -     sadness_rate: CU=0.737
+2026-06-12 00:51:54,763 - INFO -     anxiety_rate: CU=0.717
+2026-06-12 00:51:54,763 - INFO -     past_focus_rate: CU=0.714
+2026-06-12 00:51:54,763 - INFO -     first_person_rate: CU=0.704
+2026-06-12 00:51:54,764 - INFO -     vader_compound_std: CU=0.701
+2026-06-12 00:51:54,764 - INFO - 
+  Direction inconsistency:
+2026-06-12 00:51:54,764 - INFO -     Exploratory: 46 features (null expectation: 90.7)
+2026-06-12 00:51:54,764 - INFO -     Strict: 18 features (effect-size-gated)
+2026-06-12 00:51:54,764 - INFO - 
+  CU weight sensitivity: high (min Jaccard = 0.9047619047619048)
+2026-06-12 00:51:54,764 - INFO - 
+  Artifact features (excluded from primary analysis):
+2026-06-12 00:51:54,764 - INFO -     subreddit_entropy: max|g|=0.177 (circular with patient identification)
+2026-06-12 00:51:54,764 - INFO -     subreddit_herfindahl: max|g|=0.134 (circular with patient identification)
+2026-06-12 00:51:54,764 - INFO -     primary_subreddit_ratio: max|g|=0.163 (circular with patient identification)
+2026-06-12 00:51:54,764 - INFO -     mental_health_sub_ratio: max|g|=3.396 (circular with patient identification)
+2026-06-12 00:51:54,764 - INFO -     support_sub_ratio: max|g|=2.548 (circular with patient identification)
+2026-06-12 00:51:54,764 - INFO - 
+  Report saved to: /path/to/project/module1_results/statistics/effect_sizes_report.json
+2026-06-12 00:51:54,764 - INFO - ================================================================================
+2026-06-12 00:51:54,764 - INFO - EFFECT SIZE COMPUTATION COMPLETE
+2026-06-12 00:51:54,764 - INFO - ================================================================================

@@ -1,0 +1,181 @@
+{
+  "window": [
+    "2015-01",
+    "2022-12"
+  ],
+  "breakpoint": "2020-03",
+  "n_fits": 40,
+  "n_significant_shift_fdr": 15,
+  "n_significant_trend_fdr": 28,
+  "significant_trends": [
+    {
+      "disorder": "adhd",
+      "metric": "p_factor_severity_z_diff",
+      "b_post_trend": 0.0009732138901102205,
+      "p_post_trend_fdr": 2.626202139779976e-48
+    },
+    {
+      "disorder": "adhd",
+      "metric": "posting_intensity_diff",
+      "b_post_trend": 0.007360400411525134,
+      "p_post_trend_fdr": 5.476444575378671e-12
+    },
+    {
+      "disorder": "adhd",
+      "metric": "social_withdrawal_index_diff",
+      "b_post_trend": -0.0013231800541321558,
+      "p_post_trend_fdr": 7.758131108312146e-19
+    },
+    {
+      "disorder": "adhd",
+      "metric": "volatility_index_diff",
+      "b_post_trend": 0.002181111402126396,
+      "p_post_trend_fdr": 4.951418539343629e-06
+    },
+    {
+      "disorder": "anxiety",
+      "metric": "p_factor_severity_z_diff",
+      "b_post_trend": 0.0008778223686618473,
+      "p_post_trend_fdr": 4.013384970690868e-29
+    },
+    {
+      "disorder": "anxiety",
+      "metric": "social_withdrawal_index_diff",
+      "b_post_trend": -0.0011433113296394496,
+      "p_post_trend_fdr": 3.3133474541476434e-06
+    },
+    {
+      "disorder": "anxiety",
+      "metric": "volatility_index_diff",
+      "b_post_trend": 0.0024484737804401956,
+      "p_post_trend_fdr": 2.9966714103016864e-15
+    },
+    {
+      "disorder": "autism",
+      "metric": "p_factor_severity_z_diff",
+      "b_post_trend": 0.0007542928281163849,
+      "p_post_trend_fdr": 4.8398497556927366e-06
+    },
+    {
+      "disorder": "autism",
+      "metric": "posting_intensity_diff",
+      "b_post_trend": 0.006529082535496288,
+      "p_post_trend_fdr": 0.048584657520801246
+    },
+    {
+      "disorder": "autism",
+      "metric": "social_withdrawal_index_diff",
+      "b_post_trend": -0.0008649748624810425,
+      "p_post_trend_fdr": 0.03556016830682345
+    },
+    {
+      "disorder": "bipolar",
+      "metric": "p_factor_severity_z_diff",
+      "b_post_trend": 0.0010859243894437932,
+      "p_post_trend_fdr": 1.3915112188927633e-09
+    },
+    {
+      "disorder": "bipolar",
+      "metric": "volatility_index_diff",
+      "b_post_trend": 0.005191518736145021,
+      "p_post_trend_fdr": 1.2897921162367202e-16
+    },
+    {
+      "disorder": "bpd",
+      "metric": "p_factor_severity_z_diff",
+      "b_post_trend": 0.0012346280319490747,
+      "p_post_trend_fdr": 1.4221461758511468e-11
+    },
+    {
+      "disorder": "bpd",
+      "metric": "volatility_index_diff",
+      "b_post_trend": 0.002980349126301083,
+      "p_post_trend_fdr": 0.0012139550915464628
+    },
+    {
+      "disorder": "depression",
+      "metric": "p_factor_severity_z_diff",
+      "b_post_trend": 0.0009123174731016639,
+      "p_post_trend_fdr": 7.360564423358008e-23
+    },
+    {
+      "disorder": "depression",
+      "metric": "posting_intensity_diff",
+      "b_post_trend": 0.007469716864424292,
+      "p_post_trend_fdr": 1.277571132523581e-10
+    },
+    {
+      "disorder": "depression",
+      "metric": "social_withdrawal_index_diff",
+      "b_post_trend": -0.0013510828044001125,
+      "p_post_trend_fdr": 7.119272730570944e-06
+    },
+    {
+      "disorder": "depression",
+      "metric": "volatility_index_diff",
+      "b_post_trend": 0.002788284132316644,
+      "p_post_trend_fdr": 1.2897921162367202e-16
+    },
+    {
+      "disorder": "eating_disorders",
+      "metric": "p_factor_severity_z_diff",
+      "b_post_trend": 0.0009781678739778747,
+      "p_post_trend_fdr": 0.008995991579799405
+    },
+    {
+      "disorder": "eating_disorders",
+      "metric": "posting_intensity_diff",
+      "b_post_trend": 0.00941387719003936,
+      "p_post_trend_fdr": 0.007434180916645096
+    },
+    {
+      "disorder": "ocd",
+      "metric": "p_factor_severity_z_diff",
+      "b_post_trend": 0.0007668860917359248,
+      "p_post_trend_fdr": 8.309462011118883e-06
+    },
+    {
+      "disorder": "ocd",
+      "metric": "posting_intensity_diff",
+      "b_post_trend": 0.012843973465368882,
+      "p_post_trend_fdr": 0.007106858096068527
+    },
+    {
+      "disorder": "ocd",
+      "metric": "volatility_index_diff",
+      "b_post_trend": 0.0011876394384325215,
+      "p_post_trend_fdr": 0.003109479213572032
+    },
+    {
+      "disorder": "ptsd",
+      "metric": "p_factor_severity_z_diff",
+      "b_post_trend": 0.0013280910130208119,
+      "p_post_trend_fdr": 6.249399850410447e-22
+    },
+    {
+      "disorder": "ptsd",
+      "metric": "posting_intensity_diff",
+      "b_post_trend": 0.02836944974315868,
+      "p_post_trend_fdr": 5.486346636347916e-23
+    },
+    {
+      "disorder": "ptsd",
+      "metric": "social_withdrawal_index_diff",
+      "b_post_trend": -0.003177476575120152,
+      "p_post_trend_fdr": 4.96828210522739e-25
+    },
+    {
+      "disorder": "schizophrenia",
+      "metric": "p_factor_severity_z_diff",
+      "b_post_trend": 0.0011964235537926936,
+      "p_post_trend_fdr": 0.011726125594435555
+    },
+    {
+      "disorder": "schizophrenia",
+      "metric": "social_withdrawal_index_diff",
+      "b_post_trend": -0.003634478043871162,
+      "p_post_trend_fdr": 9.361932914753831e-05
+    }
+  ],
+  "note": "Composition-adjusted (band-equalized) per-disorder diff; original s43 result was confounded by event-time window composition."
+}

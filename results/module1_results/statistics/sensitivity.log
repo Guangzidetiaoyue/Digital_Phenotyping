@@ -1,0 +1,1264 @@
+2026-04-28 23:38:30,256 - INFO - ================================================================================
+2026-04-28 23:38:30,256 - INFO - MODULE 1 - Step 06: Sensitivity & Robustness Analyses (v1.2)
+2026-04-28 23:38:30,256 - INFO - ================================================================================
+2026-04-28 23:38:41,476 - INFO - Loaded: (722100, 133)
+2026-04-28 23:38:41,764 - INFO - Analysis features: 98
+2026-04-28 23:38:42,217 - INFO - Training set: 505461
+2026-04-28 23:38:47,598 - INFO - 
+=== Sensitivity 1: Confound-Adjusted Effect Sizes ===
+2026-04-28 23:38:47,599 - WARNING -   No confound columns found. Skipping.
+2026-04-28 23:38:47,599 - INFO - 
+=== Sensitivity 2: Sample Size Stability ===
+2026-04-28 23:38:48,440 - INFO -   depression: 21445 patients
+2026-04-28 23:42:29,540 - INFO -     frac=25%: AUROC = 0.856 ± 0.003
+2026-04-28 23:46:37,907 - INFO -     frac=50%: AUROC = 0.858 ± 0.001
+2026-04-28 23:51:18,585 - INFO -     frac=75%: AUROC = 0.858 ± 0.001
+2026-04-28 23:56:12,339 - INFO -     frac=100%: AUROC = 0.858 ± 0.001
+2026-04-28 23:56:12,441 - INFO -   bipolar: 7004 patients
+2026-04-28 23:59:18,251 - INFO -     frac=25%: AUROC = 0.894 ± 0.003
+2026-04-29 00:02:45,868 - INFO -     frac=50%: AUROC = 0.899 ± 0.001
+2026-04-29 00:06:23,605 - INFO -     frac=75%: AUROC = 0.900 ± 0.001
+2026-04-29 00:10:09,330 - INFO -     frac=100%: AUROC = 0.900 ± 0.001
+2026-04-29 00:10:09,499 - INFO -   anxiety: 10096 patients
+2026-04-29 00:13:36,873 - INFO -     frac=25%: AUROC = 0.884 ± 0.003
+2026-04-29 00:17:24,495 - INFO -     frac=50%: AUROC = 0.889 ± 0.002
+2026-04-29 00:21:33,983 - INFO -     frac=75%: AUROC = 0.890 ± 0.002
+2026-04-29 00:25:58,015 - INFO -     frac=100%: AUROC = 0.890 ± 0.001
+2026-04-29 00:25:58,181 - INFO -   ocd: 4015 patients
+2026-04-29 00:29:14,031 - INFO -     frac=25%: AUROC = 0.869 ± 0.006
+2026-04-29 00:32:29,186 - INFO -     frac=50%: AUROC = 0.874 ± 0.003
+2026-04-29 00:36:06,818 - INFO -     frac=75%: AUROC = 0.878 ± 0.002
+2026-04-29 00:39:55,393 - INFO -     frac=100%: AUROC = 0.880 ± 0.001
+2026-04-29 00:39:55,505 - INFO -   ptsd: 5797 patients
+2026-04-29 00:43:14,519 - INFO -     frac=25%: AUROC = 0.894 ± 0.005
+2026-04-29 00:46:42,688 - INFO -     frac=50%: AUROC = 0.900 ± 0.002
+2026-04-29 00:50:17,504 - INFO -     frac=75%: AUROC = 0.901 ± 0.001
+2026-04-29 00:54:10,295 - INFO -     frac=100%: AUROC = 0.902 ± 0.001
+2026-04-29 00:54:10,436 - INFO -   bpd: 4257 patients
+2026-04-29 00:57:33,279 - INFO -     frac=25%: AUROC = 0.908 ± 0.003
+2026-04-29 01:00:50,356 - INFO -     frac=50%: AUROC = 0.914 ± 0.002
+2026-04-29 01:04:16,443 - INFO -     frac=75%: AUROC = 0.917 ± 0.001
+2026-04-29 01:08:42,051 - INFO -     frac=100%: AUROC = 0.918 ± 0.001
+2026-04-29 01:08:42,183 - INFO -   eating_disorders: 1181 patients
+2026-04-29 01:12:05,055 - INFO -     frac=25%: AUROC = 0.897 ± 0.009
+2026-04-29 01:15:21,015 - INFO -     frac=50%: AUROC = 0.913 ± 0.005
+2026-04-29 01:18:38,324 - INFO -     frac=75%: AUROC = 0.916 ± 0.003
+2026-04-29 01:22:57,974 - INFO -     frac=100%: AUROC = 0.920 ± 0.002
+2026-04-29 01:22:58,188 - INFO -   schizophrenia: 1721 patients
+2026-04-29 01:27:57,083 - INFO -     frac=25%: AUROC = 0.852 ± 0.007
+2026-04-29 01:32:52,039 - INFO -     frac=50%: AUROC = 0.863 ± 0.003
+2026-04-29 01:37:55,504 - INFO -     frac=75%: AUROC = 0.866 ± 0.003
+2026-04-29 01:42:55,635 - INFO -     frac=100%: AUROC = 0.869 ± 0.002
+2026-04-29 01:42:55,924 - INFO -   adhd: 26341 patients
+2026-04-29 01:48:55,672 - INFO -     frac=25%: AUROC = 0.827 ± 0.002
+2026-04-29 01:55:24,993 - INFO -     frac=50%: AUROC = 0.829 ± 0.001
+2026-04-29 02:02:29,326 - INFO -     frac=75%: AUROC = 0.830 ± 0.001
+2026-04-29 02:09:57,364 - INFO -     frac=100%: AUROC = 0.830 ± 0.001
+2026-04-29 02:09:57,602 - INFO -   autism: 7157 patients
+2026-04-29 02:15:06,124 - INFO -     frac=25%: AUROC = 0.838 ± 0.006
+2026-04-29 02:20:41,440 - INFO -     frac=50%: AUROC = 0.842 ± 0.003
+2026-04-29 02:27:08,206 - INFO -     frac=75%: AUROC = 0.843 ± 0.002
+2026-04-29 02:34:00,732 - INFO -     frac=100%: AUROC = 0.843 ± 0.001
+2026-04-29 02:34:00,827 - INFO - 
+=== Sensitivity 3: Multiple Comparison Correction Methods ===
+2026-04-29 02:34:01,165 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-04-29 02:34:01,166 - INFO -   none           :   817 / 980 (83.4%)
+2026-04-29 02:34:01,166 - INFO -   bonferroni     :   657 / 980 (67.0%)
+2026-04-29 02:34:01,257 - INFO -   holm           :   682 / 980 (69.6%)
+2026-04-29 02:34:01,258 - INFO -   fdr_bh         :   808 / 980 (82.4%)
+2026-04-29 02:34:01,259 - INFO -   fdr_by         :   758 / 980 (77.3%)
+2026-04-29 02:34:01,259 - INFO - 
+=== Sensitivity 4: Outlier Handling Strategies ===
+2026-04-29 02:34:01,259 - INFO -   Note: Testing on RAW features (pre-s02 standardization)
+2026-04-29 02:34:11,100 - INFO -   Strategy: winsorize_1_99
+2026-04-29 02:34:16,742 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-04-29 02:34:16,742 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-04-29 02:36:15,255 - INFO -     Mean AUROC: 0.882
+2026-04-29 02:36:15,255 - INFO -   Strategy: winsorize_5_95
+2026-04-29 02:36:20,793 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-04-29 02:36:20,794 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-04-29 02:37:44,987 - INFO -     Mean AUROC: 0.883
+2026-04-29 02:37:44,988 - INFO -   Strategy: z3_median_replace
+2026-04-29 02:37:49,550 - INFO -     Outliers replaced: 963296 (1.94% of values)
+2026-04-29 02:37:49,551 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-04-29 02:38:55,528 - INFO -     Mean AUROC: 0.872
+2026-04-29 02:38:55,538 - INFO -   Strategy: z2.5_median_replace
+2026-04-29 02:38:59,542 - INFO -     Outliers replaced: 1538837 (3.11% of values)
+2026-04-29 02:38:59,543 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-04-29 02:39:57,707 - INFO -     Mean AUROC: 0.868
+2026-04-29 02:39:57,719 - INFO -   Strategy: trimmed_winsorize
+2026-04-29 02:40:04,821 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-04-29 02:40:04,821 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-04-29 02:41:22,984 - INFO -     Mean AUROC: 0.883
+2026-04-29 02:43:13,561 - INFO -   Baseline (s02 default): 0.882
+2026-04-29 02:43:13,562 - INFO -   AUROC range across strategies: 0.015
+2026-04-29 02:43:13,562 - INFO -   ✅ Results robust to outlier handling (Δ < 0.02)
+2026-04-29 02:43:13,791 - INFO - 
+=== Sensitivity 5: Cross-Validation Scheme Comparison ===
+2026-04-29 02:44:28,450 - INFO -     depression 5-fold: 0.858 ± 0.003
+2026-04-29 02:46:53,657 - INFO -     depression 10-fold: 0.858 ± 0.007
+2026-04-29 02:50:17,796 - INFO -     depression Repeated 5-fold×3: 0.858
+2026-04-29 02:51:12,908 - INFO -     bipolar 5-fold: 0.899 ± 0.005
+2026-04-29 02:53:05,495 - INFO -     bipolar 10-fold: 0.900 ± 0.007
+2026-04-29 02:55:51,333 - INFO -     bipolar Repeated 5-fold×3: 0.900
+2026-04-29 02:56:45,756 - INFO -     anxiety 5-fold: 0.890 ± 0.006
+2026-04-29 02:58:40,883 - INFO -     anxiety 10-fold: 0.890 ± 0.007
+2026-04-29 03:01:25,833 - INFO -     anxiety Repeated 5-fold×3: 0.890
+2026-04-29 03:01:25,868 - INFO - 
+=== Sensitivity 6: Feature Set Variations ===
+2026-04-29 03:01:25,914 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-04-29 03:02:08,904 - INFO -     depression All (98): 0.858
+2026-04-29 03:02:11,718 - INFO -     depression Top-10: 0.830
+2026-04-29 03:02:16,321 - INFO -     depression Top-20: 0.835
+2026-04-29 03:02:23,816 - INFO -     depression Top-50: 0.845
+2026-04-29 03:02:26,744 - INFO -     depression PCA-10: 0.778
+2026-04-29 03:02:56,840 - INFO -     bipolar All (98): 0.899
+2026-04-29 03:02:58,647 - INFO -     bipolar Top-10: 0.870
+2026-04-29 03:03:02,120 - INFO -     bipolar Top-20: 0.875
+2026-04-29 03:03:08,423 - INFO -     bipolar Top-50: 0.893
+2026-04-29 03:03:10,932 - INFO -     bipolar PCA-10: 0.821
+2026-04-29 03:03:47,379 - INFO -     anxiety All (98): 0.890
+2026-04-29 03:03:49,653 - INFO -     anxiety Top-10: 0.869
+2026-04-29 03:03:53,020 - INFO -     anxiety Top-20: 0.873
+2026-04-29 03:03:59,580 - INFO -     anxiety Top-50: 0.881
+2026-04-29 03:04:02,060 - INFO -     anxiety PCA-10: 0.812
+2026-04-29 03:04:02,113 - INFO - 
+=== Sensitivity 7: Temporal Stability ===
+2026-04-29 03:04:02,114 - INFO -   Using time column: t0_date
+2026-04-29 03:04:03,385 - INFO -   Time boundaries: ≤2019-04-23 | ≤2021-07-28 | >2021-07-28
+2026-04-29 03:04:03,386 - INFO -   Sample sizes: Early=29411, Mid=30280, Late=29323
+2026-04-29 03:04:03,390 - INFO -     Early: 29411 patients, 0 controls
+2026-04-29 03:04:03,394 - INFO -     Mid: 30280 patients, 0 controls
+2026-04-29 03:04:03,409 - INFO -     Late: 29323 patients, 0 controls
+2026-04-29 03:04:20,360 - WARNING -   No valid temporal comparisons.
+2026-04-29 03:04:20,412 - INFO - 
+=== Sensitivity 8: Permutation Test (n=200) ===
+2026-04-29 03:04:20,412 - INFO -   Minimum detectable p-value: 0.0050
+2026-04-29 03:04:20,412 - INFO -   Note: True p-values below 0.0050 will be reported as 0.0050
+2026-04-29 03:04:21,749 - INFO -   Disorder: depression
+2026-04-29 03:35:00,849 - INFO -     Permutation 100/200
+2026-04-29 04:04:58,983 - INFO -     Permutation 200/200
+2026-04-29 04:04:59,015 - INFO -     Observed: 0.858, Null: 0.500 ± 0.003
+2026-04-29 04:04:59,016 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-04-29 04:04:59,017 - INFO -     Z-equivalent: 118.1
+2026-04-29 04:04:59,017 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-04-29 04:04:59,018 - INFO -     Observed is 118.1σ above null mean
+2026-04-29 04:04:59,018 - INFO -   Disorder: bipolar
+2026-04-29 04:33:19,073 - INFO -     Permutation 100/200
+2026-04-29 05:01:04,563 - INFO -     Permutation 200/200
+2026-04-29 05:01:04,586 - INFO -     Observed: 0.899, Null: 0.500 ± 0.006
+2026-04-29 05:01:04,587 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-04-29 05:01:04,587 - INFO -     Z-equivalent: 69.1
+2026-04-29 05:01:04,588 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-04-29 05:01:04,588 - INFO -     Observed is 69.1σ above null mean
+2026-04-29 05:01:04,588 - INFO -   Disorder: anxiety
+2026-04-29 05:29:24,050 - INFO -     Permutation 100/200
+2026-04-29 05:56:47,086 - INFO -     Permutation 200/200
+2026-04-29 05:56:47,087 - INFO -     Observed: 0.890, Null: 0.500 ± 0.005
+2026-04-29 05:56:47,088 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-04-29 05:56:47,088 - INFO -     Z-equivalent: 83.8
+2026-04-29 05:56:47,089 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-04-29 05:56:47,089 - INFO -     Observed is 83.8σ above null mean
+2026-04-29 05:56:47,143 - INFO - 
+=== Sensitivity 9: Effect Size Heterogeneity (I²) ===
+2026-04-29 05:56:47,392 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-04-29 05:56:47,584 - INFO -   Heterogeneity classification:
+2026-04-29 05:56:47,585 - INFO -     high: 97 (99.0%)
+2026-04-29 05:56:47,640 - INFO -     moderate: 1 (1.0%)
+2026-04-29 05:56:47,641 - INFO -   Mean I²: 95.9%
+2026-04-29 05:56:47,669 - INFO -   Most heterogeneous:
+2026-04-29 05:56:47,671 - INFO -     anxiety_rate: I²=99.9%
+2026-04-29 05:56:47,672 - INFO -     sadness_rate: I²=99.9%
+2026-04-29 05:56:47,673 - INFO -     first_person_rate: I²=99.8%
+2026-04-29 05:56:47,674 - INFO -     negative_affect_rate: I²=99.6%
+2026-04-29 05:56:47,675 - INFO -     self_focus_index: I²=99.6%
+2026-04-29 05:56:47,752 - INFO - 
+============================================================
+2026-04-29 05:56:47,753 - INFO - SENSITIVITY ANALYSIS SUMMARY
+2026-04-29 05:56:47,754 - INFO - ============================================================
+2026-04-29 05:56:47,754 - INFO -   [PASS] permutation_test: All significant
+2026-04-29 05:56:47,754 - INFO -   [WARNING] heterogeneity: 99% high I²
+2026-04-29 05:56:47,755 - INFO - 
+  Overall: 1/2 passed
+2026-04-29 05:56:47,762 - INFO - 
+Saved to /path/to/project/module1_results/statistics/sensitivity_report.json
+2026-04-29 05:56:47,763 - INFO - ================================================================================
+2026-04-29 05:56:47,763 - INFO - SENSITIVITY ANALYSIS COMPLETE
+2026-04-29 05:56:47,763 - INFO - ================================================================================
+2026-04-30 14:20:17,508 - INFO - ================================================================================
+2026-04-30 14:20:17,521 - INFO - MODULE 1 - Step 06: Sensitivity & Robustness Analyses (v1.2)
+2026-04-30 14:20:17,521 - INFO - ================================================================================
+2026-04-30 14:20:23,629 - INFO - Loaded: (722100, 133)
+2026-04-30 14:20:23,637 - INFO - Analysis features: 98
+2026-04-30 14:20:24,088 - INFO - Training set: 505461
+2026-04-30 14:20:29,390 - INFO - 
+=== Sensitivity 1: Confound-Adjusted Effect Sizes ===
+2026-04-30 14:20:29,390 - WARNING -   No confound columns found. Skipping.
+2026-04-30 14:20:29,391 - INFO - 
+=== Sensitivity 2: Sample Size Stability ===
+2026-04-30 14:20:30,265 - INFO -   depression: 21445 patients
+2026-04-30 14:24:12,148 - INFO -     frac=25%: AUROC = 0.856 ± 0.003
+2026-04-30 14:28:28,624 - INFO -     frac=50%: AUROC = 0.858 ± 0.001
+2026-04-30 14:33:11,956 - INFO -     frac=75%: AUROC = 0.858 ± 0.001
+2026-04-30 14:38:27,979 - INFO -     frac=100%: AUROC = 0.858 ± 0.001
+2026-04-30 14:38:28,120 - INFO -   bipolar: 7004 patients
+2026-04-30 14:41:27,497 - INFO -     frac=25%: AUROC = 0.894 ± 0.003
+2026-04-30 14:45:09,421 - INFO -     frac=50%: AUROC = 0.899 ± 0.001
+2026-04-30 14:49:01,764 - INFO -     frac=75%: AUROC = 0.900 ± 0.001
+2026-04-30 14:52:45,283 - INFO -     frac=100%: AUROC = 0.900 ± 0.001
+2026-04-30 14:52:45,416 - INFO -   anxiety: 10096 patients
+2026-04-30 14:55:54,296 - INFO -     frac=25%: AUROC = 0.884 ± 0.003
+2026-04-30 14:59:31,777 - INFO -     frac=50%: AUROC = 0.889 ± 0.002
+2026-04-30 15:03:23,011 - INFO -     frac=75%: AUROC = 0.890 ± 0.002
+2026-04-30 15:07:26,460 - INFO -     frac=100%: AUROC = 0.890 ± 0.001
+2026-04-30 15:07:26,531 - INFO -   ocd: 4015 patients
+2026-04-30 15:10:25,832 - INFO -     frac=25%: AUROC = 0.869 ± 0.006
+2026-04-30 15:13:31,117 - INFO -     frac=50%: AUROC = 0.874 ± 0.003
+2026-04-30 15:16:49,468 - INFO -     frac=75%: AUROC = 0.878 ± 0.002
+2026-04-30 15:20:15,686 - INFO -     frac=100%: AUROC = 0.880 ± 0.001
+2026-04-30 15:20:15,854 - INFO -   ptsd: 5797 patients
+2026-04-30 15:23:19,788 - INFO -     frac=25%: AUROC = 0.894 ± 0.005
+2026-04-30 15:26:38,509 - INFO -     frac=50%: AUROC = 0.900 ± 0.002
+2026-04-30 15:30:02,482 - INFO -     frac=75%: AUROC = 0.901 ± 0.001
+2026-04-30 15:33:33,066 - INFO -     frac=100%: AUROC = 0.902 ± 0.001
+2026-04-30 15:33:33,188 - INFO -   bpd: 4257 patients
+2026-04-30 15:36:31,659 - INFO -     frac=25%: AUROC = 0.908 ± 0.003
+2026-04-30 15:39:26,636 - INFO -     frac=50%: AUROC = 0.914 ± 0.002
+2026-04-30 15:42:30,481 - INFO -     frac=75%: AUROC = 0.917 ± 0.001
+2026-04-30 15:45:56,540 - INFO -     frac=100%: AUROC = 0.918 ± 0.001
+2026-04-30 15:45:56,662 - INFO -   eating_disorders: 1181 patients
+2026-04-30 15:49:01,515 - INFO -     frac=25%: AUROC = 0.897 ± 0.009
+2026-04-30 15:52:02,137 - INFO -     frac=50%: AUROC = 0.913 ± 0.005
+2026-04-30 15:54:55,769 - INFO -     frac=75%: AUROC = 0.916 ± 0.003
+2026-04-30 15:57:46,748 - INFO -     frac=100%: AUROC = 0.920 ± 0.002
+2026-04-30 15:57:46,919 - INFO -   schizophrenia: 1721 patients
+2026-04-30 16:00:56,035 - INFO -     frac=25%: AUROC = 0.852 ± 0.007
+2026-04-30 16:04:05,579 - INFO -     frac=50%: AUROC = 0.863 ± 0.003
+2026-04-30 16:07:03,098 - INFO -     frac=75%: AUROC = 0.866 ± 0.003
+2026-04-30 16:10:03,388 - INFO -     frac=100%: AUROC = 0.869 ± 0.002
+2026-04-30 16:10:03,571 - INFO -   adhd: 26341 patients
+2026-04-30 16:13:47,926 - INFO -     frac=25%: AUROC = 0.827 ± 0.002
+2026-04-30 16:18:15,234 - INFO -     frac=50%: AUROC = 0.829 ± 0.001
+2026-04-30 16:22:52,043 - INFO -     frac=75%: AUROC = 0.830 ± 0.001
+2026-04-30 16:27:54,701 - INFO -     frac=100%: AUROC = 0.830 ± 0.001
+2026-04-30 16:27:54,864 - INFO -   autism: 7157 patients
+2026-04-30 16:31:16,540 - INFO -     frac=25%: AUROC = 0.838 ± 0.006
+2026-04-30 16:35:10,060 - INFO -     frac=50%: AUROC = 0.842 ± 0.003
+2026-04-30 16:39:36,398 - INFO -     frac=75%: AUROC = 0.843 ± 0.002
+2026-04-30 16:44:24,950 - INFO -     frac=100%: AUROC = 0.843 ± 0.001
+2026-04-30 16:44:24,974 - INFO - 
+=== Sensitivity 3: Multiple Comparison Correction Methods ===
+2026-04-30 16:44:25,429 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-04-30 16:44:25,429 - INFO -   none           :   817 / 980 (83.4%)
+2026-04-30 16:44:25,430 - INFO -   bonferroni     :   657 / 980 (67.0%)
+2026-04-30 16:44:25,463 - INFO -   holm           :   682 / 980 (69.6%)
+2026-04-30 16:44:25,463 - INFO -   fdr_bh         :   808 / 980 (82.4%)
+2026-04-30 16:44:25,463 - INFO -   fdr_by         :   758 / 980 (77.3%)
+2026-04-30 16:44:25,463 - INFO - 
+=== Sensitivity 4: Outlier Handling Strategies ===
+2026-04-30 16:44:25,464 - INFO -   Note: Testing on RAW features (pre-s02 standardization)
+2026-04-30 16:44:42,480 - INFO -   Strategy: winsorize_1_99
+2026-04-30 16:44:44,408 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-04-30 16:44:44,409 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-04-30 16:46:00,563 - INFO -     Mean AUROC: 0.882
+2026-04-30 16:46:00,563 - INFO -   Strategy: winsorize_5_95
+2026-04-30 16:46:02,562 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-04-30 16:46:02,562 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-04-30 16:46:52,603 - INFO -     Mean AUROC: 0.883
+2026-04-30 16:46:52,604 - INFO -   Strategy: z3_median_replace
+2026-04-30 16:46:53,998 - INFO -     Outliers replaced: 963296 (1.94% of values)
+2026-04-30 16:46:53,998 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-04-30 16:47:33,415 - INFO -     Mean AUROC: 0.872
+2026-04-30 16:47:33,415 - INFO -   Strategy: z2.5_median_replace
+2026-04-30 16:47:34,855 - INFO -     Outliers replaced: 1538837 (3.11% of values)
+2026-04-30 16:47:34,855 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-04-30 16:48:08,755 - INFO -     Mean AUROC: 0.868
+2026-04-30 16:48:08,757 - INFO -   Strategy: trimmed_winsorize
+2026-04-30 16:48:10,782 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-04-30 16:48:10,782 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-04-30 16:49:00,308 - INFO -     Mean AUROC: 0.883
+2026-04-30 16:50:16,079 - INFO -   Baseline (s02 default): 0.882
+2026-04-30 16:50:16,079 - INFO -   AUROC range across strategies: 0.015
+2026-04-30 16:50:16,079 - INFO -   ✅ Results robust to outlier handling (Δ < 0.02)
+2026-04-30 16:50:16,234 - INFO - 
+=== Sensitivity 5: Cross-Validation Scheme Comparison ===
+2026-04-30 16:51:09,219 - INFO -     depression 5-fold: 0.858 ± 0.003
+2026-04-30 16:52:48,945 - INFO -     depression 10-fold: 0.858 ± 0.007
+2026-04-30 16:55:15,675 - INFO -     depression Repeated 5-fold×3: 0.858
+2026-04-30 16:55:54,239 - INFO -     bipolar 5-fold: 0.899 ± 0.005
+2026-04-30 16:57:09,686 - INFO -     bipolar 10-fold: 0.900 ± 0.007
+2026-04-30 16:59:06,412 - INFO -     bipolar Repeated 5-fold×3: 0.900
+2026-04-30 16:59:41,209 - INFO -     anxiety 5-fold: 0.890 ± 0.006
+2026-04-30 17:01:00,812 - INFO -     anxiety 10-fold: 0.890 ± 0.007
+2026-04-30 17:02:59,330 - INFO -     anxiety Repeated 5-fold×3: 0.890
+2026-04-30 17:02:59,382 - INFO - 
+=== Sensitivity 6: Feature Set Variations ===
+2026-04-30 17:02:59,528 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-04-30 17:03:30,871 - INFO -     depression All (98): 0.858
+2026-04-30 17:03:32,477 - INFO -     depression Top-10: 0.830
+2026-04-30 17:03:35,261 - INFO -     depression Top-20: 0.835
+2026-04-30 17:03:40,968 - INFO -     depression Top-50: 0.845
+2026-04-30 17:03:43,404 - INFO -     depression PCA-10: 0.778
+2026-04-30 17:04:04,296 - INFO -     bipolar All (98): 0.899
+2026-04-30 17:04:05,083 - INFO -     bipolar Top-10: 0.870
+2026-04-30 17:04:06,600 - INFO -     bipolar Top-20: 0.875
+2026-04-30 17:04:10,210 - INFO -     bipolar Top-50: 0.893
+2026-04-30 17:04:11,570 - INFO -     bipolar PCA-10: 0.821
+2026-04-30 17:04:33,958 - INFO -     anxiety All (98): 0.890
+2026-04-30 17:04:35,039 - INFO -     anxiety Top-10: 0.869
+2026-04-30 17:04:37,079 - INFO -     anxiety Top-20: 0.873
+2026-04-30 17:04:41,856 - INFO -     anxiety Top-50: 0.881
+2026-04-30 17:04:43,769 - INFO -     anxiety PCA-10: 0.812
+2026-04-30 17:04:43,859 - INFO - 
+=== Sensitivity 7: Temporal Stability ===
+2026-04-30 17:04:43,859 - INFO -   Using time column: t0_date
+2026-04-30 17:04:44,343 - INFO -   Placeholder values: 416447/505461 (82.4%)
+2026-04-30 17:04:44,380 - INFO -   patient: 89014/89014 with valid time (100.0%)
+2026-04-30 17:04:44,382 - INFO -     Sample: ['2022-11-09', '2019-01-03', '2020-01-19']
+2026-04-30 17:04:44,400 - INFO -   control: 0/416447 with valid time (0.0%)
+2026-04-30 17:04:44,406 - WARNING -   No controls with valid timestamps after recovery!
+2026-04-30 17:04:44,406 - WARNING -   Falling back to patient-only temporal analysis
+2026-04-30 17:04:44,878 - INFO -   Patient-only time split:
+2026-04-30 17:04:44,878 - INFO -     Early (≤2019-04-23): 29411
+2026-04-30 17:04:44,878 - INFO -     Mid (≤2021-07-28): 30280
+2026-04-30 17:04:44,878 - INFO -     Late (>2021-07-28): 29323
+2026-04-30 17:04:44,878 - INFO -     Controls (all periods): 416447
+2026-04-30 17:04:52,880 - INFO -   Pearson r (early vs late): 0.8994 (p = 4.59e-181)
+2026-04-30 17:04:52,880 - INFO -   ICC: 0.8805
+2026-04-30 17:04:52,880 - INFO -   Mean absolute difference: 0.1258
+2026-04-30 17:04:52,880 - INFO -   Method: patient tertiles vs all controls (not period-matched)
+2026-04-30 17:04:53,661 - INFO - 
+=== Sensitivity 8: Permutation Test (n=200) ===
+2026-04-30 17:04:53,661 - INFO -   Minimum detectable p-value: 0.0050
+2026-04-30 17:04:53,661 - INFO -   Note: True p-values below 0.0050 will be reported as 0.0050
+2026-04-30 17:04:54,299 - INFO -   Disorder: depression
+2026-04-30 17:26:51,399 - INFO -     Permutation 100/200
+2026-04-30 17:48:40,399 - INFO -     Permutation 200/200
+2026-04-30 17:48:40,400 - INFO -     Observed: 0.858, Null: 0.500 ± 0.003
+2026-04-30 17:48:40,400 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-04-30 17:48:40,400 - INFO -     Z-equivalent: 118.1
+2026-04-30 17:48:40,400 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-04-30 17:48:40,400 - INFO -     Observed is 118.1σ above null mean
+2026-04-30 17:48:40,400 - INFO -   Disorder: bipolar
+2026-04-30 18:08:46,086 - INFO -     Permutation 100/200
+2026-04-30 18:28:20,905 - INFO -     Permutation 200/200
+2026-04-30 18:28:20,906 - INFO -     Observed: 0.899, Null: 0.500 ± 0.006
+2026-04-30 18:28:20,906 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-04-30 18:28:20,906 - INFO -     Z-equivalent: 69.1
+2026-04-30 18:28:20,906 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-04-30 18:28:20,907 - INFO -     Observed is 69.1σ above null mean
+2026-04-30 18:28:20,907 - INFO -   Disorder: anxiety
+2026-04-30 18:48:26,288 - INFO -     Permutation 100/200
+2026-04-30 19:08:04,150 - INFO -     Permutation 200/200
+2026-04-30 19:08:04,151 - INFO -     Observed: 0.890, Null: 0.500 ± 0.005
+2026-04-30 19:08:04,151 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-04-30 19:08:04,151 - INFO -     Z-equivalent: 83.8
+2026-04-30 19:08:04,151 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-04-30 19:08:04,152 - INFO -     Observed is 83.8σ above null mean
+2026-04-30 19:08:04,196 - INFO - 
+=== Sensitivity 9: Effect Size Heterogeneity (I²) ===
+2026-04-30 19:08:04,584 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-04-30 19:08:04,638 - INFO -   Heterogeneity classification:
+2026-04-30 19:08:04,638 - INFO -     high: 97 (99.0%)
+2026-04-30 19:08:04,638 - INFO -     moderate: 1 (1.0%)
+2026-04-30 19:08:04,638 - INFO -   Mean I²: 95.9%
+2026-04-30 19:08:04,639 - INFO -   Most heterogeneous:
+2026-04-30 19:08:04,639 - INFO -     anxiety_rate: I²=99.9%
+2026-04-30 19:08:04,639 - INFO -     sadness_rate: I²=99.9%
+2026-04-30 19:08:04,639 - INFO -     first_person_rate: I²=99.8%
+2026-04-30 19:08:04,639 - INFO -     negative_affect_rate: I²=99.6%
+2026-04-30 19:08:04,640 - INFO -     self_focus_index: I²=99.6%
+2026-04-30 19:08:04,797 - INFO - 
+============================================================
+2026-04-30 19:08:04,797 - INFO - SENSITIVITY ANALYSIS SUMMARY
+2026-04-30 19:08:04,797 - INFO - ============================================================
+2026-04-30 19:08:04,797 - INFO -   [PASS] permutation_test: All significant
+2026-04-30 19:08:04,797 - INFO -   [PASS] temporal_stability: r = 0.8993606193743157
+2026-04-30 19:08:04,797 - INFO -   [WARNING] heterogeneity: 99% high I²
+2026-04-30 19:08:04,797 - INFO - 
+  Overall: 2/3 passed
+2026-04-30 19:08:04,805 - INFO - 
+Saved to /path/to/project/module1_results/statistics/sensitivity_report.json
+2026-04-30 19:08:04,805 - INFO - ================================================================================
+2026-04-30 19:08:04,805 - INFO - SENSITIVITY ANALYSIS COMPLETE
+2026-04-30 19:08:04,805 - INFO - ================================================================================
+2026-05-04 23:11:02,620 - INFO - ================================================================================
+2026-05-04 23:11:02,643 - INFO - MODULE 1 - Step 06: Sensitivity & Robustness Analyses (v1.2)
+2026-05-04 23:11:02,644 - INFO - ================================================================================
+2026-05-04 23:11:08,823 - INFO - Loaded: (722100, 133)
+2026-05-04 23:11:08,897 - INFO - Analysis features: 98
+2026-05-04 23:11:09,362 - INFO - Training set: 505464
+2026-05-04 23:11:14,738 - INFO - 
+=== Sensitivity 1: Confound-Adjusted Effect Sizes ===
+2026-05-04 23:11:14,739 - WARNING -   No confound columns found. Skipping.
+2026-05-04 23:11:14,739 - INFO - 
+=== Sensitivity 2: Sample Size Stability ===
+2026-05-04 23:11:15,570 - INFO -   depression: 21445 patients
+2026-05-04 23:15:04,130 - INFO -     frac=25%: AUROC = 0.855 ± 0.001
+2026-05-04 23:19:16,826 - INFO -     frac=50%: AUROC = 0.856 ± 0.002
+2026-05-04 23:23:59,151 - INFO -     frac=75%: AUROC = 0.857 ± 0.001
+2026-05-04 23:29:07,075 - INFO -     frac=100%: AUROC = 0.857 ± 0.001
+2026-05-04 23:29:07,260 - INFO -   bipolar: 7004 patients
+2026-05-04 23:32:11,618 - INFO -     frac=25%: AUROC = 0.893 ± 0.004
+2026-05-04 23:35:23,514 - INFO -     frac=50%: AUROC = 0.897 ± 0.002
+2026-05-04 23:38:49,581 - INFO -     frac=75%: AUROC = 0.898 ± 0.001
+2026-05-04 23:42:36,945 - INFO -     frac=100%: AUROC = 0.899 ± 0.001
+2026-05-04 23:42:37,147 - INFO -   anxiety: 10096 patients
+2026-05-04 23:45:54,282 - INFO -     frac=25%: AUROC = 0.884 ± 0.002
+2026-05-04 23:49:24,511 - INFO -     frac=50%: AUROC = 0.889 ± 0.002
+2026-05-04 23:53:16,579 - INFO -     frac=75%: AUROC = 0.890 ± 0.002
+2026-05-04 23:57:28,201 - INFO -     frac=100%: AUROC = 0.891 ± 0.001
+2026-05-04 23:57:28,330 - INFO -   ocd: 4015 patients
+2026-05-05 00:00:39,351 - INFO -     frac=25%: AUROC = 0.872 ± 0.008
+2026-05-05 00:04:00,752 - INFO -     frac=50%: AUROC = 0.878 ± 0.005
+2026-05-05 00:07:39,774 - INFO -     frac=75%: AUROC = 0.880 ± 0.002
+2026-05-05 00:11:14,437 - INFO -     frac=100%: AUROC = 0.880 ± 0.001
+2026-05-05 00:11:14,556 - INFO -   ptsd: 5797 patients
+2026-05-05 00:14:13,473 - INFO -     frac=25%: AUROC = 0.897 ± 0.003
+2026-05-05 00:17:22,452 - INFO -     frac=50%: AUROC = 0.900 ± 0.002
+2026-05-05 00:20:41,494 - INFO -     frac=75%: AUROC = 0.900 ± 0.002
+2026-05-05 00:23:51,530 - INFO -     frac=100%: AUROC = 0.901 ± 0.001
+2026-05-05 00:23:51,638 - INFO -   bpd: 4257 patients
+2026-05-05 00:26:49,730 - INFO -     frac=25%: AUROC = 0.912 ± 0.005
+2026-05-05 00:29:56,715 - INFO -     frac=50%: AUROC = 0.918 ± 0.002
+2026-05-05 00:33:17,353 - INFO -     frac=75%: AUROC = 0.919 ± 0.002
+2026-05-05 00:36:30,497 - INFO -     frac=100%: AUROC = 0.920 ± 0.001
+2026-05-05 00:36:30,657 - INFO -   eating_disorders: 1181 patients
+2026-05-05 00:39:24,131 - INFO -     frac=25%: AUROC = 0.902 ± 0.008
+2026-05-05 00:42:16,196 - INFO -     frac=50%: AUROC = 0.912 ± 0.007
+2026-05-05 00:45:08,501 - INFO -     frac=75%: AUROC = 0.920 ± 0.002
+2026-05-05 00:48:00,830 - INFO -     frac=100%: AUROC = 0.922 ± 0.002
+2026-05-05 00:48:00,908 - INFO -   schizophrenia: 1721 patients
+2026-05-05 00:51:14,207 - INFO -     frac=25%: AUROC = 0.848 ± 0.013
+2026-05-05 00:54:12,923 - INFO -     frac=50%: AUROC = 0.863 ± 0.006
+2026-05-05 00:57:08,360 - INFO -     frac=75%: AUROC = 0.868 ± 0.004
+2026-05-05 00:59:55,691 - INFO -     frac=100%: AUROC = 0.869 ± 0.004
+2026-05-05 00:59:55,861 - INFO -   adhd: 26341 patients
+2026-05-05 01:03:47,142 - INFO -     frac=25%: AUROC = 0.827 ± 0.002
+2026-05-05 01:07:55,999 - INFO -     frac=50%: AUROC = 0.829 ± 0.002
+2026-05-05 01:12:30,893 - INFO -     frac=75%: AUROC = 0.829 ± 0.001
+2026-05-05 01:17:14,228 - INFO -     frac=100%: AUROC = 0.830 ± 0.001
+2026-05-05 01:17:14,369 - INFO -   autism: 7157 patients
+2026-05-05 01:20:48,171 - INFO -     frac=25%: AUROC = 0.838 ± 0.006
+2026-05-05 01:24:49,443 - INFO -     frac=50%: AUROC = 0.842 ± 0.003
+2026-05-05 01:28:55,554 - INFO -     frac=75%: AUROC = 0.843 ± 0.002
+2026-05-05 01:33:18,389 - INFO -     frac=100%: AUROC = 0.844 ± 0.002
+2026-05-05 01:33:18,464 - INFO - 
+=== Sensitivity 3: Multiple Comparison Correction Methods ===
+2026-05-05 01:33:18,727 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-05-05 01:33:18,727 - INFO -   none           :   807 / 980 (82.3%)
+2026-05-05 01:33:18,727 - INFO -   bonferroni     :   658 / 980 (67.1%)
+2026-05-05 01:33:18,760 - INFO -   holm           :   690 / 980 (70.4%)
+2026-05-05 01:33:18,760 - INFO -   fdr_bh         :   802 / 980 (81.8%)
+2026-05-05 01:33:18,760 - INFO -   fdr_by         :   758 / 980 (77.3%)
+2026-05-05 01:33:18,760 - INFO - 
+=== Sensitivity 4: Outlier Handling Strategies ===
+2026-05-05 01:33:18,760 - INFO -   Note: Testing on RAW features (pre-s02 standardization)
+2026-05-05 01:33:29,625 - INFO -   Strategy: winsorize_1_99
+2026-05-05 01:33:31,601 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-05-05 01:33:31,601 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-05-05 01:34:48,264 - INFO -     Mean AUROC: 0.883
+2026-05-05 01:34:48,264 - INFO -   Strategy: winsorize_5_95
+2026-05-05 01:34:50,253 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-05-05 01:34:50,253 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-05-05 01:35:45,536 - INFO -     Mean AUROC: 0.883
+2026-05-05 01:35:45,536 - INFO -   Strategy: z3_median_replace
+2026-05-05 01:35:46,954 - INFO -     Outliers replaced: 962476 (1.94% of values)
+2026-05-05 01:35:46,954 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-05-05 01:36:22,911 - INFO -     Mean AUROC: 0.873
+2026-05-05 01:36:22,913 - INFO -   Strategy: z2.5_median_replace
+2026-05-05 01:36:24,371 - INFO -     Outliers replaced: 1538532 (3.11% of values)
+2026-05-05 01:36:24,371 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-05-05 01:36:58,811 - INFO -     Mean AUROC: 0.869
+2026-05-05 01:36:58,811 - INFO -   Strategy: trimmed_winsorize
+2026-05-05 01:37:00,843 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-05-05 01:37:00,843 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-05-05 01:37:48,476 - INFO -     Mean AUROC: 0.883
+2026-05-05 01:39:10,063 - INFO -   Baseline (s02 default): 0.883
+2026-05-05 01:39:10,063 - INFO -   AUROC range across strategies: 0.014
+2026-05-05 01:39:10,064 - INFO -   ✅ Results robust to outlier handling (Δ < 0.02)
+2026-05-05 01:39:10,221 - INFO - 
+=== Sensitivity 5: Cross-Validation Scheme Comparison ===
+2026-05-05 01:40:11,260 - INFO -     depression 5-fold: 0.858 ± 0.004
+2026-05-05 01:42:08,880 - INFO -     depression 10-fold: 0.858 ± 0.005
+2026-05-05 01:44:57,841 - INFO -     depression Repeated 5-fold×3: 0.858
+2026-05-05 01:45:34,971 - INFO -     bipolar 5-fold: 0.900 ± 0.003
+2026-05-05 01:46:46,886 - INFO -     bipolar 10-fold: 0.900 ± 0.004
+2026-05-05 01:48:29,133 - INFO -     bipolar Repeated 5-fold×3: 0.900
+2026-05-05 01:49:06,536 - INFO -     anxiety 5-fold: 0.892 ± 0.004
+2026-05-05 01:50:31,024 - INFO -     anxiety 10-fold: 0.892 ± 0.008
+2026-05-05 01:52:24,409 - INFO -     anxiety Repeated 5-fold×3: 0.892
+2026-05-05 01:52:24,442 - INFO - 
+=== Sensitivity 6: Feature Set Variations ===
+2026-05-05 01:52:24,586 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-05-05 01:52:56,057 - INFO -     depression All (98): 0.857
+2026-05-05 01:52:57,917 - INFO -     depression Top-10: 0.830
+2026-05-05 01:53:00,635 - INFO -     depression Top-20: 0.835
+2026-05-05 01:53:06,757 - INFO -     depression Top-50: 0.847
+2026-05-05 01:53:09,025 - INFO -     depression PCA-10: 0.778
+2026-05-05 01:53:32,438 - INFO -     bipolar All (98): 0.899
+2026-05-05 01:53:33,516 - INFO -     bipolar Top-10: 0.872
+2026-05-05 01:53:36,048 - INFO -     bipolar Top-20: 0.876
+2026-05-05 01:53:41,198 - INFO -     bipolar Top-50: 0.895
+2026-05-05 01:53:42,676 - INFO -     bipolar PCA-10: 0.821
+2026-05-05 01:54:06,140 - INFO -     anxiety All (98): 0.892
+2026-05-05 01:54:07,264 - INFO -     anxiety Top-10: 0.872
+2026-05-05 01:54:09,625 - INFO -     anxiety Top-20: 0.875
+2026-05-05 01:54:14,323 - INFO -     anxiety Top-50: 0.885
+2026-05-05 01:54:15,914 - INFO -     anxiety PCA-10: 0.815
+2026-05-05 01:54:16,063 - INFO - 
+=== Sensitivity 7: Temporal Stability ===
+2026-05-05 01:54:16,063 - INFO -   Using time column: t0_date
+2026-05-05 01:54:16,563 - INFO -   Placeholder values: 0/505464 (0.0%)
+2026-05-05 01:54:16,637 - INFO -   patient: 89014/89014 with valid time (100.0%)
+2026-05-05 01:54:16,640 - INFO -     Sample: ['2022-11-09', '2019-01-03', '2020-01-19']
+2026-05-05 01:54:16,660 - INFO -   control: 416450/416450 with valid time (100.0%)
+2026-05-05 01:54:16,665 - INFO -     Sample: ['2022-10-27', '2021-12-10', '2021-07-31']
+2026-05-05 01:54:17,018 - INFO -   Time boundaries: ≤2020-04-04 | ≤2021-12-03 | >2021-12-03
+2026-05-05 01:54:17,018 - INFO -   Sample sizes: Early=166942, Mid=171963, Late=166559
+2026-05-05 01:54:17,033 - INFO -     Early: 39942 patients, 127000 controls
+2026-05-05 01:54:17,046 - INFO -     Mid: 25546 patients, 146417 controls
+2026-05-05 01:54:17,059 - INFO -     Late: 23526 patients, 143033 controls
+2026-05-05 01:54:52,014 - INFO -   Pearson r (early vs late): 0.9711 (p = 5.16e-312)
+2026-05-05 01:54:52,014 - INFO -   ICC: 0.9675
+2026-05-05 01:54:52,014 - INFO -   Mean absolute difference: 0.0818
+2026-05-05 01:54:52,014 - INFO -   Features with significant temporal trend: 278/500 (55.6%)
+2026-05-05 01:54:52,015 - INFO -     Increasing |g| over time: 157
+2026-05-05 01:54:52,015 - INFO -     Decreasing |g| over time: 121
+2026-05-05 01:54:52,037 - INFO -   Total time span: 5846 days (16.0 years)
+2026-05-05 01:54:52,215 - INFO - 
+=== Sensitivity 8: Permutation Test (n=200) ===
+2026-05-05 01:54:52,215 - INFO -   Minimum detectable p-value: 0.0050
+2026-05-05 01:54:52,215 - INFO -   Note: True p-values below 0.0050 will be reported as 0.0050
+2026-05-05 01:54:52,883 - INFO -   Disorder: depression
+2026-05-05 02:16:50,303 - INFO -     Permutation 100/200
+2026-05-05 02:37:38,331 - INFO -     Permutation 200/200
+2026-05-05 02:37:38,332 - INFO -     Observed: 0.857, Null: 0.500 ± 0.003
+2026-05-05 02:37:38,332 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-05-05 02:37:38,332 - INFO -     Z-equivalent: 126.0
+2026-05-05 02:37:38,333 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-05-05 02:37:38,333 - INFO -     Observed is 126.0σ above null mean
+2026-05-05 02:37:38,333 - INFO -   Disorder: bipolar
+2026-05-05 02:57:01,950 - INFO -     Permutation 100/200
+2026-05-05 03:16:29,276 - INFO -     Permutation 200/200
+2026-05-05 03:16:29,276 - INFO -     Observed: 0.899, Null: 0.500 ± 0.006
+2026-05-05 03:16:29,276 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-05-05 03:16:29,277 - INFO -     Z-equivalent: 71.4
+2026-05-05 03:16:29,277 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-05-05 03:16:29,283 - INFO -     Observed is 71.4σ above null mean
+2026-05-05 03:16:29,283 - INFO -   Disorder: anxiety
+2026-05-05 03:37:17,959 - INFO -     Permutation 100/200
+2026-05-05 03:58:08,641 - INFO -     Permutation 200/200
+2026-05-05 03:58:08,644 - INFO -     Observed: 0.892, Null: 0.500 ± 0.005
+2026-05-05 03:58:08,645 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-05-05 03:58:08,645 - INFO -     Z-equivalent: 84.0
+2026-05-05 03:58:08,645 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-05-05 03:58:08,646 - INFO -     Observed is 84.0σ above null mean
+2026-05-05 03:58:08,679 - INFO - 
+=== Sensitivity 9: Effect Size Heterogeneity (I²) ===
+2026-05-05 03:58:08,844 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-05-05 03:58:08,885 - INFO -   Heterogeneity classification:
+2026-05-05 03:58:08,886 - INFO -     high: 98 (100.0%)
+2026-05-05 03:58:08,886 - INFO -   Mean I²: 95.9%
+2026-05-05 03:58:08,887 - INFO -   Most heterogeneous:
+2026-05-05 03:58:08,887 - INFO -     anxiety_rate: I²=99.9%
+2026-05-05 03:58:08,887 - INFO -     sadness_rate: I²=99.9%
+2026-05-05 03:58:08,887 - INFO -     first_person_rate: I²=99.8%
+2026-05-05 03:58:08,887 - INFO -     self_focus_index: I²=99.6%
+2026-05-05 03:58:08,887 - INFO -     negative_affect_rate: I²=99.6%
+2026-05-05 03:58:09,035 - INFO - 
+============================================================
+2026-05-05 03:58:09,035 - INFO - SENSITIVITY ANALYSIS SUMMARY
+2026-05-05 03:58:09,035 - INFO - ============================================================
+2026-05-05 03:58:09,035 - INFO -   [PASS] permutation_test: All significant
+2026-05-05 03:58:09,035 - INFO -   [PASS] temporal_stability: r = 0.9710997719290038
+2026-05-05 03:58:09,036 - INFO -   [WARNING] heterogeneity: 100% high I²
+2026-05-05 03:58:09,036 - INFO - 
+  Overall: 2/3 passed
+2026-05-05 03:58:09,044 - INFO - 
+Saved to /path/to/project/module1_results/statistics/sensitivity_report.json
+2026-05-05 03:58:09,044 - INFO - ================================================================================
+2026-05-05 03:58:09,044 - INFO - SENSITIVITY ANALYSIS COMPLETE
+2026-05-05 03:58:09,045 - INFO - ================================================================================
+2026-05-05 18:34:33,690 - INFO - ================================================================================
+2026-05-05 18:34:34,107 - INFO - MODULE 1 - Step 06: Sensitivity & Robustness Analyses (v1.2)
+2026-05-05 18:34:34,200 - INFO - ================================================================================
+2026-05-05 18:34:49,574 - INFO - Loaded: (722100, 133)
+2026-05-05 18:34:49,748 - INFO - Analysis features: 98
+2026-05-05 18:34:50,190 - INFO - Training set: 505464
+2026-05-05 18:34:55,642 - INFO - 
+=== Sensitivity 1: Confound-Adjusted Effect Sizes ===
+2026-05-05 18:34:59,409 - INFO -   Supplemented 4 confound columns from PSM file: ['total_posts', 'circadian_regularity', 'readability_grade', 'vocab_density']
+2026-05-05 18:34:59,429 - INFO -   is_comorbid unavailable — no reliable proxy exists. Factor 1 in s05 captures the shared severity/comorbidity dimension indirectly.
+2026-05-05 18:34:59,430 - INFO -   Confounders identified (7):
+2026-05-05 18:34:59,466 - INFO -     tenure_days (proxy_for_account_age_days)
+2026-05-05 18:34:59,502 - INFO -     n_posts_total (proxy_for_total_posts)
+2026-05-05 18:34:59,538 - INFO -     n_unique_subreddits (proxy_for_total_subreddits)
+2026-05-05 18:34:59,573 - INFO -     total_posts (psm_file)
+2026-05-05 18:34:59,609 - INFO -     circadian_regularity (psm_file)
+2026-05-05 18:34:59,645 - INFO -     readability_grade (psm_file)
+2026-05-05 18:34:59,680 - INFO -     vocab_density (psm_file)
+2026-05-05 18:34:59,716 - INFO -   Method A: Linear residualization...
+2026-05-05 18:35:19,028 - INFO -   Method B: Polynomial (degree=2) residualization...
+2026-05-05 18:35:19,727 - INFO -     Poly2: 7 → 35 confound features
+2026-05-05 18:36:53,974 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-05-05 18:36:53,978 - INFO -   linear: r=0.9904, MAD=0.0332
+2026-05-05 18:36:53,981 - INFO -   poly2: r=0.9854, MAD=0.0369
+2026-05-05 18:36:53,982 - INFO -   Nonlinearity ratio (poly_MAD / linear_MAD): 1.112
+2026-05-05 18:36:53,982 - INFO -   ✅ Minimal nonlinear confounding. Linear adjustment is sufficient.
+2026-05-05 18:36:54,152 - ERROR - Confound adjustment failed: 'correlation_with_original'
+2026-05-05 18:36:54,152 - INFO - 
+=== Sensitivity 2: Sample Size Stability ===
+2026-05-05 18:36:55,008 - INFO -   depression: 21445 patients
+2026-05-05 18:40:56,183 - INFO -     frac=25%: AUROC = 0.855 ± 0.001
+2026-05-05 18:45:21,784 - INFO -     frac=50%: AUROC = 0.856 ± 0.002
+2026-05-05 18:50:26,875 - INFO -     frac=75%: AUROC = 0.857 ± 0.001
+2026-05-05 18:56:09,667 - INFO -     frac=100%: AUROC = 0.857 ± 0.001
+2026-05-05 18:56:09,811 - INFO -   bipolar: 7004 patients
+2026-05-05 18:59:32,102 - INFO -     frac=25%: AUROC = 0.893 ± 0.004
+2026-05-05 19:02:58,533 - INFO -     frac=50%: AUROC = 0.897 ± 0.002
+2026-05-05 19:06:52,883 - INFO -     frac=75%: AUROC = 0.898 ± 0.001
+2026-05-05 19:10:54,787 - INFO -     frac=100%: AUROC = 0.899 ± 0.001
+2026-05-05 19:10:54,905 - INFO -   anxiety: 10096 patients
+2026-05-05 19:14:26,463 - INFO -     frac=25%: AUROC = 0.884 ± 0.002
+2026-05-05 19:18:20,803 - INFO -     frac=50%: AUROC = 0.889 ± 0.002
+2026-05-05 19:22:40,650 - INFO -     frac=75%: AUROC = 0.890 ± 0.002
+2026-05-05 19:26:59,344 - INFO -     frac=100%: AUROC = 0.891 ± 0.001
+2026-05-05 19:26:59,483 - INFO -   ocd: 4015 patients
+2026-05-05 19:30:26,123 - INFO -     frac=25%: AUROC = 0.872 ± 0.008
+2026-05-05 19:34:03,832 - INFO -     frac=50%: AUROC = 0.878 ± 0.005
+2026-05-05 19:37:58,254 - INFO -     frac=75%: AUROC = 0.880 ± 0.002
+2026-05-05 19:41:59,216 - INFO -     frac=100%: AUROC = 0.880 ± 0.001
+2026-05-05 19:41:59,354 - INFO -   ptsd: 5797 patients
+2026-05-05 19:45:24,723 - INFO -     frac=25%: AUROC = 0.897 ± 0.003
+2026-05-05 19:48:54,033 - INFO -     frac=50%: AUROC = 0.900 ± 0.002
+2026-05-05 19:52:31,550 - INFO -     frac=75%: AUROC = 0.900 ± 0.002
+2026-05-05 19:56:15,187 - INFO -     frac=100%: AUROC = 0.901 ± 0.001
+2026-05-05 19:56:15,354 - INFO -   bpd: 4257 patients
+2026-05-05 19:59:22,914 - INFO -     frac=25%: AUROC = 0.912 ± 0.005
+2026-05-05 20:02:52,726 - INFO -     frac=50%: AUROC = 0.918 ± 0.002
+2026-05-05 20:06:12,236 - INFO -     frac=75%: AUROC = 0.919 ± 0.002
+2026-05-05 20:09:35,672 - INFO -     frac=100%: AUROC = 0.920 ± 0.001
+2026-05-05 20:09:35,820 - INFO -   eating_disorders: 1181 patients
+2026-05-05 20:13:00,955 - INFO -     frac=25%: AUROC = 0.902 ± 0.008
+2026-05-05 20:16:16,206 - INFO -     frac=50%: AUROC = 0.912 ± 0.007
+2026-05-05 20:19:29,160 - INFO -     frac=75%: AUROC = 0.920 ± 0.002
+2026-05-05 20:22:36,177 - INFO -     frac=100%: AUROC = 0.922 ± 0.002
+2026-05-05 20:22:36,329 - INFO -   schizophrenia: 1721 patients
+2026-05-05 20:26:12,930 - INFO -     frac=25%: AUROC = 0.848 ± 0.013
+2026-05-05 20:29:34,871 - INFO -     frac=50%: AUROC = 0.863 ± 0.006
+2026-05-05 20:32:53,801 - INFO -     frac=75%: AUROC = 0.868 ± 0.004
+2026-05-05 20:36:13,078 - INFO -     frac=100%: AUROC = 0.869 ± 0.004
+2026-05-05 20:36:13,254 - INFO -   adhd: 26341 patients
+2026-05-05 20:40:32,256 - INFO -     frac=25%: AUROC = 0.827 ± 0.002
+2026-05-05 20:45:07,585 - INFO -     frac=50%: AUROC = 0.829 ± 0.002
+2026-05-05 20:50:05,731 - INFO -     frac=75%: AUROC = 0.829 ± 0.001
+2026-05-05 20:55:37,118 - INFO -     frac=100%: AUROC = 0.830 ± 0.001
+2026-05-05 20:55:37,228 - INFO -   autism: 7157 patients
+2026-05-05 20:59:40,864 - INFO -     frac=25%: AUROC = 0.838 ± 0.006
+2026-05-05 21:04:14,269 - INFO -     frac=50%: AUROC = 0.842 ± 0.003
+2026-05-05 21:08:48,150 - INFO -     frac=75%: AUROC = 0.843 ± 0.002
+2026-05-05 21:13:36,039 - INFO -     frac=100%: AUROC = 0.844 ± 0.002
+2026-05-05 21:13:36,097 - INFO - 
+=== Sensitivity 3: Multiple Comparison Correction Methods ===
+2026-05-05 21:13:36,353 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-05-05 21:13:36,353 - INFO -   none           :   807 / 980 (82.3%)
+2026-05-05 21:13:36,353 - INFO -   bonferroni     :   658 / 980 (67.1%)
+2026-05-05 21:13:36,394 - INFO -   holm           :   690 / 980 (70.4%)
+2026-05-05 21:13:36,394 - INFO -   fdr_bh         :   802 / 980 (81.8%)
+2026-05-05 21:13:36,394 - INFO -   fdr_by         :   758 / 980 (77.3%)
+2026-05-05 21:13:36,394 - INFO - 
+=== Sensitivity 4: Outlier Handling Strategies ===
+2026-05-05 21:13:36,394 - INFO -   Note: Testing on RAW features (pre-s02 standardization)
+2026-05-05 21:13:44,278 - INFO -   Strategy: winsorize_1_99
+2026-05-05 21:13:46,260 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-05-05 21:13:46,260 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-05-05 21:15:12,163 - INFO -     Mean AUROC: 0.883
+2026-05-05 21:15:12,163 - INFO -   Strategy: winsorize_5_95
+2026-05-05 21:15:14,245 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-05-05 21:15:14,245 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-05-05 21:16:05,794 - INFO -     Mean AUROC: 0.883
+2026-05-05 21:16:05,795 - INFO -   Strategy: z3_median_replace
+2026-05-05 21:16:07,326 - INFO -     Outliers replaced: 962476 (1.94% of values)
+2026-05-05 21:16:07,326 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-05-05 21:16:44,579 - INFO -     Mean AUROC: 0.873
+2026-05-05 21:16:44,579 - INFO -   Strategy: z2.5_median_replace
+2026-05-05 21:16:46,057 - INFO -     Outliers replaced: 1538532 (3.11% of values)
+2026-05-05 21:16:46,057 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-05-05 21:17:23,835 - INFO -     Mean AUROC: 0.869
+2026-05-05 21:17:23,835 - INFO -   Strategy: trimmed_winsorize
+2026-05-05 21:17:25,904 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-05-05 21:17:25,904 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-05-05 21:18:17,460 - INFO -     Mean AUROC: 0.883
+2026-05-05 21:19:47,768 - INFO -   Baseline (s02 default): 0.883
+2026-05-05 21:19:47,768 - INFO -   AUROC range across strategies: 0.014
+2026-05-05 21:19:47,768 - INFO -   ✅ Results robust to outlier handling (Δ < 0.02)
+2026-05-05 21:19:47,977 - INFO - 
+=== Sensitivity 5: Cross-Validation Scheme Comparison ===
+2026-05-05 21:20:54,001 - INFO -     depression 5-fold: 0.858 ± 0.004
+2026-05-05 21:23:07,156 - INFO -     depression 10-fold: 0.858 ± 0.005
+2026-05-05 21:26:11,560 - INFO -     depression Repeated 5-fold×3: 0.858
+2026-05-05 21:26:54,449 - INFO -     bipolar 5-fold: 0.900 ± 0.003
+2026-05-05 21:28:14,029 - INFO -     bipolar 10-fold: 0.900 ± 0.004
+2026-05-05 21:30:15,179 - INFO -     bipolar Repeated 5-fold×3: 0.900
+2026-05-05 21:30:58,908 - INFO -     anxiety 5-fold: 0.892 ± 0.004
+2026-05-05 21:32:31,443 - INFO -     anxiety 10-fold: 0.892 ± 0.008
+2026-05-05 21:34:43,363 - INFO -     anxiety Repeated 5-fold×3: 0.892
+2026-05-05 21:34:43,453 - INFO - 
+=== Sensitivity 6: Feature Set Variations ===
+2026-05-05 21:34:43,640 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-05-05 21:35:19,233 - INFO -     depression All (98): 0.857
+2026-05-05 21:35:21,265 - INFO -     depression Top-10: 0.830
+2026-05-05 21:35:24,278 - INFO -     depression Top-20: 0.835
+2026-05-05 21:35:31,286 - INFO -     depression Top-50: 0.847
+2026-05-05 21:35:33,362 - INFO -     depression PCA-10: 0.778
+2026-05-05 21:36:01,399 - INFO -     bipolar All (98): 0.899
+2026-05-05 21:36:02,863 - INFO -     bipolar Top-10: 0.872
+2026-05-05 21:36:05,716 - INFO -     bipolar Top-20: 0.876
+2026-05-05 21:36:11,467 - INFO -     bipolar Top-50: 0.895
+2026-05-05 21:36:13,127 - INFO -     bipolar PCA-10: 0.821
+2026-05-05 21:36:39,931 - INFO -     anxiety All (98): 0.892
+2026-05-05 21:36:41,646 - INFO -     anxiety Top-10: 0.872
+2026-05-05 21:36:44,253 - INFO -     anxiety Top-20: 0.875
+2026-05-05 21:36:49,468 - INFO -     anxiety Top-50: 0.885
+2026-05-05 21:36:51,157 - INFO -     anxiety PCA-10: 0.815
+2026-05-05 21:36:51,230 - INFO - 
+=== Sensitivity 7: Temporal Stability ===
+2026-05-05 21:36:51,230 - INFO -   Using time column: t0_date
+2026-05-05 21:36:51,699 - INFO -   Placeholder values: 0/505464 (0.0%)
+2026-05-05 21:36:51,766 - INFO -   patient: 89014/89014 with valid time (100.0%)
+2026-05-05 21:36:51,769 - INFO -     Sample: ['2022-11-09', '2019-01-03', '2020-01-19']
+2026-05-05 21:36:51,789 - INFO -   control: 416450/416450 with valid time (100.0%)
+2026-05-05 21:36:51,793 - INFO -     Sample: ['2022-10-27', '2021-12-10', '2021-07-31']
+2026-05-05 21:36:52,112 - INFO -   Time boundaries: ≤2020-04-04 | ≤2021-12-03 | >2021-12-03
+2026-05-05 21:36:52,112 - INFO -   Sample sizes: Early=166942, Mid=171963, Late=166559
+2026-05-05 21:36:52,126 - INFO -     Early: 39942 patients, 127000 controls
+2026-05-05 21:36:52,138 - INFO -     Mid: 25546 patients, 146417 controls
+2026-05-05 21:36:52,150 - INFO -     Late: 23526 patients, 143033 controls
+2026-05-05 21:37:28,091 - INFO -   Pearson r (early vs late): 0.9711 (p = 5.16e-312)
+2026-05-05 21:37:28,091 - INFO -   ICC: 0.9675
+2026-05-05 21:37:28,091 - INFO -   Mean absolute difference: 0.0818
+2026-05-05 21:37:28,091 - INFO -   Features with significant temporal trend: 278/500 (55.6%)
+2026-05-05 21:37:28,092 - INFO -     Increasing |g| over time: 157
+2026-05-05 21:37:28,092 - INFO -     Decreasing |g| over time: 121
+2026-05-05 21:37:28,101 - INFO -   Total time span: 5846 days (16.0 years)
+2026-05-05 21:37:28,360 - INFO - 
+=== Sensitivity 8: Permutation Test (n=200) ===
+2026-05-05 21:37:28,360 - INFO -   Minimum detectable p-value: 0.0050
+2026-05-05 21:37:28,360 - INFO -   Note: True p-values below 0.0050 will be reported as 0.0050
+2026-05-05 21:37:28,982 - INFO -   Disorder: depression
+2026-05-05 22:01:46,760 - INFO -     Permutation 100/200
+2026-05-05 22:25:29,311 - INFO -     Permutation 200/200
+2026-05-05 22:25:29,312 - INFO -     Observed: 0.857, Null: 0.500 ± 0.003
+2026-05-05 22:25:29,312 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-05-05 22:25:29,312 - INFO -     Z-equivalent: 126.0
+2026-05-05 22:25:29,312 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-05-05 22:25:29,312 - INFO -     Observed is 126.0σ above null mean
+2026-05-05 22:25:29,312 - INFO -   Disorder: bipolar
+2026-05-05 22:48:40,482 - INFO -     Permutation 100/200
+2026-05-05 23:14:17,007 - INFO -     Permutation 200/200
+2026-05-05 23:14:17,008 - INFO -     Observed: 0.899, Null: 0.500 ± 0.006
+2026-05-05 23:14:17,008 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-05-05 23:14:17,008 - INFO -     Z-equivalent: 71.4
+2026-05-05 23:14:17,008 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-05-05 23:14:17,008 - INFO -     Observed is 71.4σ above null mean
+2026-05-05 23:14:17,008 - INFO -   Disorder: anxiety
+2026-05-05 23:43:10,491 - INFO -     Permutation 100/200
+2026-05-06 00:12:46,636 - INFO -     Permutation 200/200
+2026-05-06 00:12:46,639 - INFO -     Observed: 0.892, Null: 0.500 ± 0.005
+2026-05-06 00:12:46,640 - INFO -     p = 0.0050 (min detectable: 0.0050)
+2026-05-06 00:12:46,640 - INFO -     Z-equivalent: 84.0
+2026-05-06 00:12:46,640 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0050
+2026-05-06 00:12:46,640 - INFO -     Observed is 84.0σ above null mean
+2026-05-06 00:12:46,717 - INFO - 
+=== Sensitivity 9: Effect Size Heterogeneity (I²) ===
+2026-05-06 00:12:47,033 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 980 records
+2026-05-06 00:12:47,137 - INFO -   Heterogeneity classification:
+2026-05-06 00:12:47,138 - INFO -     high: 98 (100.0%)
+2026-05-06 00:12:47,138 - INFO -   Mean I²: 95.9%
+2026-05-06 00:12:47,139 - INFO -   Most heterogeneous:
+2026-05-06 00:12:47,139 - INFO -     anxiety_rate: I²=99.9%
+2026-05-06 00:12:47,139 - INFO -     sadness_rate: I²=99.9%
+2026-05-06 00:12:47,139 - INFO -     first_person_rate: I²=99.8%
+2026-05-06 00:12:47,139 - INFO -     self_focus_index: I²=99.6%
+2026-05-06 00:12:47,139 - INFO -     negative_affect_rate: I²=99.6%
+2026-05-06 00:12:47,267 - INFO - 
+============================================================
+2026-05-06 00:12:47,267 - INFO - SENSITIVITY ANALYSIS SUMMARY
+2026-05-06 00:12:47,267 - INFO - ============================================================
+2026-05-06 00:12:47,267 - INFO -   [PASS] permutation_test: All significant
+2026-05-06 00:12:47,267 - INFO -   [PASS] temporal_stability: r = 0.9710997719290038
+2026-05-06 00:12:47,267 - INFO -   [WARNING] heterogeneity: 100% high I²
+2026-05-06 00:12:47,267 - INFO - 
+  Overall: 2/3 passed
+2026-05-06 00:12:47,275 - INFO - 
+Saved to /path/to/project/module1_results/statistics/sensitivity_report.json
+2026-05-06 00:12:47,275 - INFO - ================================================================================
+2026-05-06 00:12:47,275 - INFO - SENSITIVITY ANALYSIS COMPLETE
+2026-05-06 00:12:47,275 - INFO - ================================================================================
+2026-06-05 07:14:08,512 - INFO - ================================================================================
+2026-06-05 07:14:08,562 - INFO - MODULE 1 - Step 06: Sensitivity & Robustness Analyses (v1.2)
+2026-06-05 07:14:08,589 - INFO - ================================================================================
+2026-06-05 07:14:15,572 - INFO - Loaded: (721995, 136)
+2026-06-05 07:14:15,597 - INFO - Analysis features: 90
+2026-06-05 07:14:16,040 - INFO - Training set: 505384
+2026-06-05 07:14:20,661 - INFO - 
+=== Sensitivity 1: Confound-Adjusted Effect Sizes ===
+2026-06-05 07:14:23,510 - INFO -   Supplemented 4 confound columns from PSM file: ['total_posts', 'circadian_regularity', 'readability_grade', 'vocab_density']
+2026-06-05 07:14:23,511 - INFO -   is_comorbid unavailable — no reliable proxy exists. Factor 1 in s05 captures the shared severity/comorbidity dimension indirectly.
+2026-06-05 07:14:23,511 - INFO -   Confounders identified (7):
+2026-06-05 07:14:23,512 - INFO -     tenure_days (proxy_for_account_age_days)
+2026-06-05 07:14:23,512 - INFO -     n_posts_total (proxy_for_total_posts)
+2026-06-05 07:14:23,512 - INFO -     n_unique_subreddits (proxy_for_total_subreddits)
+2026-06-05 07:14:23,512 - INFO -     total_posts (psm_file)
+2026-06-05 07:14:23,512 - INFO -     circadian_regularity (psm_file)
+2026-06-05 07:14:23,513 - INFO -     readability_grade (psm_file)
+2026-06-05 07:14:23,513 - INFO -     vocab_density (psm_file)
+2026-06-05 07:14:23,513 - INFO -   Method A: Linear residualization...
+2026-06-05 07:14:38,513 - INFO -   Method B: Polynomial (degree=2) residualization...
+2026-06-05 07:14:39,053 - ERROR - Confound adjustment failed: Input X contains NaN.
+PolynomialFeatures does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-06-05 07:14:39,166 - INFO - 
+=== Sensitivity 2: Sample Size Stability ===
+2026-06-05 07:14:40,007 - INFO -   depression: 21447 patients
+2026-06-05 07:17:56,562 - INFO -     frac=25%: AUROC = 0.858 ± 0.003
+2026-06-05 07:21:49,078 - INFO -     frac=50%: AUROC = 0.861 ± 0.002
+2026-06-05 07:26:17,807 - INFO -     frac=75%: AUROC = 0.861 ± 0.001
+2026-06-05 07:31:05,391 - INFO -     frac=100%: AUROC = 0.861 ± 0.000
+2026-06-05 07:31:05,527 - INFO -   bipolar: 7004 patients
+2026-06-05 07:33:31,251 - INFO -     frac=25%: AUROC = 0.899 ± 0.004
+2026-06-05 07:36:11,202 - INFO -     frac=50%: AUROC = 0.902 ± 0.002
+2026-06-05 07:39:03,469 - INFO -     frac=75%: AUROC = 0.902 ± 0.001
+2026-06-05 07:42:00,003 - INFO -     frac=100%: AUROC = 0.903 ± 0.001
+2026-06-05 07:42:00,149 - INFO -   anxiety: 10096 patients
+2026-06-05 07:44:54,544 - INFO -     frac=25%: AUROC = 0.886 ± 0.003
+2026-06-05 07:48:05,863 - INFO -     frac=50%: AUROC = 0.890 ± 0.002
+2026-06-05 07:51:17,733 - INFO -     frac=75%: AUROC = 0.892 ± 0.001
+2026-06-05 07:54:29,907 - INFO -     frac=100%: AUROC = 0.892 ± 0.001
+2026-06-05 07:54:30,026 - INFO -   ocd: 4015 patients
+2026-06-05 07:57:11,435 - INFO -     frac=25%: AUROC = 0.875 ± 0.003
+2026-06-05 07:59:52,080 - INFO -     frac=50%: AUROC = 0.881 ± 0.002
+2026-06-05 08:02:41,659 - INFO -     frac=75%: AUROC = 0.883 ± 0.002
+2026-06-05 08:05:38,638 - INFO -     frac=100%: AUROC = 0.884 ± 0.002
+2026-06-05 08:05:38,785 - INFO -   ptsd: 5797 patients
+2026-06-05 08:08:06,921 - INFO -     frac=25%: AUROC = 0.899 ± 0.004
+2026-06-05 08:10:59,167 - INFO -     frac=50%: AUROC = 0.902 ± 0.002
+2026-06-05 08:14:02,396 - INFO -     frac=75%: AUROC = 0.903 ± 0.002
+2026-06-05 08:17:04,335 - INFO -     frac=100%: AUROC = 0.904 ± 0.001
+2026-06-05 08:17:04,470 - INFO -   bpd: 4257 patients
+2026-06-05 08:19:22,624 - INFO -     frac=25%: AUROC = 0.912 ± 0.004
+2026-06-05 08:21:43,829 - INFO -     frac=50%: AUROC = 0.917 ± 0.002
+2026-06-05 08:24:02,973 - INFO -     frac=75%: AUROC = 0.920 ± 0.002
+2026-06-05 08:26:19,690 - INFO -     frac=100%: AUROC = 0.921 ± 0.001
+2026-06-05 08:26:19,775 - INFO -   eating_disorders: 1181 patients
+2026-06-05 08:28:40,352 - INFO -     frac=25%: AUROC = 0.902 ± 0.010
+2026-06-05 08:30:55,327 - INFO -     frac=50%: AUROC = 0.916 ± 0.005
+2026-06-05 08:33:10,330 - INFO -     frac=75%: AUROC = 0.920 ± 0.003
+2026-06-05 08:35:25,761 - INFO -     frac=100%: AUROC = 0.922 ± 0.003
+2026-06-05 08:35:25,889 - INFO -   schizophrenia: 1721 patients
+2026-06-05 08:38:04,580 - INFO -     frac=25%: AUROC = 0.862 ± 0.009
+2026-06-05 08:40:37,066 - INFO -     frac=50%: AUROC = 0.868 ± 0.006
+2026-06-05 08:43:08,908 - INFO -     frac=75%: AUROC = 0.871 ± 0.004
+2026-06-05 08:45:37,546 - INFO -     frac=100%: AUROC = 0.873 ± 0.003
+2026-06-05 08:45:37,724 - INFO -   adhd: 26342 patients
+2026-06-05 08:48:49,418 - INFO -     frac=25%: AUROC = 0.830 ± 0.003
+2026-06-05 08:52:20,114 - INFO -     frac=50%: AUROC = 0.833 ± 0.002
+2026-06-05 08:56:20,653 - INFO -     frac=75%: AUROC = 0.833 ± 0.001
+2026-06-05 09:00:37,234 - INFO -     frac=100%: AUROC = 0.833 ± 0.001
+2026-06-05 09:00:37,345 - INFO -   autism: 7157 patients
+2026-06-05 09:03:16,560 - INFO -     frac=25%: AUROC = 0.843 ± 0.005
+2026-06-05 09:06:16,938 - INFO -     frac=50%: AUROC = 0.847 ± 0.003
+2026-06-05 09:09:46,207 - INFO -     frac=75%: AUROC = 0.848 ± 0.002
+2026-06-05 09:13:14,044 - INFO -     frac=100%: AUROC = 0.849 ± 0.001
+2026-06-05 09:13:14,067 - INFO - 
+=== Sensitivity 3: Multiple Comparison Correction Methods ===
+2026-06-05 09:13:14,302 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 900 records
+2026-06-05 09:13:14,302 - INFO -   none           :   743 / 900 (82.6%)
+2026-06-05 09:13:14,302 - INFO -   bonferroni     :   614 / 900 (68.2%)
+2026-06-05 09:13:14,332 - INFO -   holm           :   637 / 900 (70.8%)
+2026-06-05 09:13:14,332 - INFO -   fdr_bh         :   739 / 900 (82.1%)
+2026-06-05 09:13:14,333 - INFO -   fdr_by         :   684 / 900 (76.0%)
+2026-06-05 09:13:14,333 - INFO - 
+=== Sensitivity 4: Outlier Handling Strategies ===
+2026-06-05 09:13:14,333 - INFO -   Note: Testing on RAW features (pre-s02 standardization)
+2026-06-05 09:13:21,811 - INFO -   Strategy: winsorize_1_99
+2026-06-05 09:13:23,534 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-06-05 09:13:23,534 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-06-05 09:14:30,532 - INFO -     Mean AUROC: 0.885
+2026-06-05 09:14:30,532 - INFO -   Strategy: winsorize_5_95
+2026-06-05 09:14:32,356 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-06-05 09:14:32,356 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-06-05 09:15:08,469 - INFO -     Mean AUROC: 0.885
+2026-06-05 09:15:08,470 - INFO -   Strategy: z3_median_replace
+2026-06-05 09:15:09,731 - INFO -     Outliers replaced: 851788 (1.87% of values)
+2026-06-05 09:15:09,731 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-06-05 09:15:35,372 - INFO -     Mean AUROC: 0.874
+2026-06-05 09:15:35,372 - INFO -   Strategy: z2.5_median_replace
+2026-06-05 09:15:36,687 - INFO -     Outliers replaced: 1383648 (3.04% of values)
+2026-06-05 09:15:36,687 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-06-05 09:16:05,108 - INFO -     Mean AUROC: 0.870
+2026-06-05 09:16:05,108 - INFO -   Strategy: trimmed_winsorize
+2026-06-05 09:16:07,795 - INFO -     Outliers replaced: 0 (0.00% of values)
+2026-06-05 09:16:07,795 - INFO -     Sample retention: 100% (median replacement preserves rows)
+2026-06-05 09:16:44,136 - INFO -     Mean AUROC: 0.885
+2026-06-05 09:17:53,404 - INFO -   Baseline (s02 default): 0.885
+2026-06-05 09:17:53,404 - INFO -   AUROC range across strategies: 0.016
+2026-06-05 09:17:53,404 - INFO -   ✅ Results robust to outlier handling (Δ < 0.02)
+2026-06-05 09:17:53,572 - INFO - 
+=== Sensitivity 5: Cross-Validation Scheme Comparison ===
+2026-06-05 09:18:50,080 - INFO -     depression 5-fold: 0.861 ± 0.002
+2026-06-05 09:20:54,095 - INFO -     depression 10-fold: 0.861 ± 0.004
+2026-06-05 09:23:38,534 - INFO -     depression Repeated 5-fold×3: 0.861
+2026-06-05 09:24:50,914 - INFO -     bipolar 5-fold: 0.904 ± 0.005
+2026-06-05 09:27:15,852 - INFO -     bipolar 10-fold: 0.904 ± 0.007
+2026-06-05 09:29:15,730 - INFO -     bipolar Repeated 5-fold×3: 0.904
+2026-06-05 09:29:49,974 - INFO -     anxiety 5-fold: 0.891 ± 0.004
+2026-06-05 09:30:49,257 - INFO -     anxiety 10-fold: 0.892 ± 0.007
+2026-06-05 09:32:17,239 - INFO -     anxiety Repeated 5-fold×3: 0.891
+2026-06-05 09:32:17,262 - INFO - 
+=== Sensitivity 6: Feature Set Variations ===
+2026-06-05 09:32:17,324 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 900 records
+2026-06-05 09:32:49,423 - INFO -     depression All (90): 0.861
+2026-06-05 09:32:51,002 - INFO -     depression Top-10: 0.837
+2026-06-05 09:32:54,105 - INFO -     depression Top-20: 0.839
+2026-06-05 09:32:59,230 - INFO -     depression Top-50: 0.852
+2026-06-05 09:33:01,269 - INFO -     depression PCA-10: 0.788
+2026-06-05 09:33:22,347 - INFO -     bipolar All (90): 0.904
+2026-06-05 09:33:23,358 - INFO -     bipolar Top-10: 0.877
+2026-06-05 09:33:25,638 - INFO -     bipolar Top-20: 0.880
+2026-06-05 09:33:29,858 - INFO -     bipolar Top-50: 0.898
+2026-06-05 09:33:31,331 - INFO -     bipolar PCA-10: 0.837
+2026-06-05 09:33:48,263 - INFO -     anxiety All (90): 0.891
+2026-06-05 09:33:49,012 - INFO -     anxiety Top-10: 0.874
+2026-06-05 09:33:50,658 - INFO -     anxiety Top-20: 0.876
+2026-06-05 09:33:54,656 - INFO -     anxiety Top-50: 0.884
+2026-06-05 09:33:56,322 - INFO -     anxiety PCA-10: 0.830
+2026-06-05 09:33:56,408 - INFO - 
+=== Sensitivity 7: Temporal Stability ===
+2026-06-05 09:33:56,408 - INFO -   Using time column: t0_date
+2026-06-05 09:33:56,803 - INFO -   Placeholder values: 0/505384 (0.0%)
+2026-06-05 09:33:56,871 - INFO -   patient: 89017/89017 with valid time (100.0%)
+2026-06-05 09:33:56,873 - INFO -     Sample: ['2022-11-09', '2019-01-03', '2020-01-19']
+2026-06-05 09:33:56,891 - INFO -   control: 416367/416367 with valid time (100.0%)
+2026-06-05 09:33:56,894 - INFO -     Sample: ['2022-10-27', '2021-12-10', '2021-07-31']
+2026-06-05 09:33:57,185 - INFO -   Time boundaries: ≤2020-04-04 | ≤2021-12-03 | >2021-12-03
+2026-06-05 09:33:57,185 - INFO -   Sample sizes: Early=166843, Mid=171855, Late=166686
+2026-06-05 09:33:57,197 - INFO -     Early: 40042 patients, 126801 controls
+2026-06-05 09:33:57,209 - INFO -     Mid: 25559 patients, 146296 controls
+2026-06-05 09:33:57,220 - INFO -     Late: 23416 patients, 143270 controls
+2026-06-05 09:34:27,432 - INFO -   Pearson r (early vs late): 0.9774 (p = 0.00e+00)
+2026-06-05 09:34:27,432 - INFO -   ICC: 0.9726
+2026-06-05 09:34:27,432 - INFO -   Mean absolute difference: 0.0743
+2026-06-05 09:34:27,432 - INFO -   Features with significant temporal trend: 273/500 (54.6%)
+2026-06-05 09:34:27,433 - INFO -     Increasing |g| over time: 166
+2026-06-05 09:34:27,433 - INFO -     Decreasing |g| over time: 107
+2026-06-05 09:34:27,454 - INFO -   Total time span: 5846 days (16.0 years)
+2026-06-05 09:34:27,683 - INFO - 
+=== Sensitivity 8: Permutation Test (n=500) ===
+2026-06-05 09:34:27,683 - INFO -   Minimum detectable p-value: 0.0020
+2026-06-05 09:34:27,683 - INFO -   Note: True p-values below 0.0020 will be reported as 0.0020
+2026-06-05 09:34:28,260 - INFO -   Disorder: depression
+2026-06-05 10:07:59,644 - INFO -     Permutation 100/500
+2026-06-05 10:46:11,079 - INFO -     Permutation 200/500
+2026-06-05 11:20:52,007 - INFO -     Permutation 300/500
+2026-06-05 12:00:32,165 - INFO -     Permutation 400/500
+2026-06-05 12:38:21,346 - INFO -     Permutation 500/500
+2026-06-05 12:38:21,347 - INFO -     Observed: 0.861, Null: 0.500 ± 0.003
+2026-06-05 12:38:21,347 - INFO -     p = 0.0020 (min detectable: 0.0020)
+2026-06-05 12:38:21,347 - INFO -     Z-equivalent: 112.3
+2026-06-05 12:38:21,347 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0020
+2026-06-05 12:38:21,347 - INFO -     Observed is 112.3σ above null mean
+2026-06-05 12:38:21,347 - INFO -   Disorder: bipolar
+2026-06-05 13:19:20,620 - INFO -     Permutation 100/500
+2026-06-05 13:58:43,493 - INFO -     Permutation 200/500
+2026-06-05 14:39:38,460 - INFO -     Permutation 300/500
+2026-06-05 15:24:04,270 - INFO -     Permutation 400/500
+2026-06-05 16:07:51,131 - INFO -     Permutation 500/500
+2026-06-05 16:07:51,132 - INFO -     Observed: 0.904, Null: 0.500 ± 0.005
+2026-06-05 16:07:51,132 - INFO -     p = 0.0020 (min detectable: 0.0020)
+2026-06-05 16:07:51,132 - INFO -     Z-equivalent: 76.9
+2026-06-05 16:07:51,132 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0020
+2026-06-05 16:07:51,132 - INFO -     Observed is 76.9σ above null mean
+2026-06-05 16:07:51,132 - INFO -   Disorder: anxiety
+2026-06-05 16:50:16,388 - INFO -     Permutation 100/500
+2026-06-05 17:27:59,589 - INFO -     Permutation 200/500
+2026-06-05 18:05:26,500 - INFO -     Permutation 300/500
+2026-06-05 18:42:16,646 - INFO -     Permutation 400/500
+2026-06-05 19:15:17,334 - INFO -     Permutation 500/500
+2026-06-05 19:15:17,335 - INFO -     Observed: 0.891, Null: 0.500 ± 0.004
+2026-06-05 19:15:17,335 - INFO -     p = 0.0020 (min detectable: 0.0020)
+2026-06-05 19:15:17,335 - INFO -     Z-equivalent: 88.5
+2026-06-05 19:15:17,335 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0020
+2026-06-05 19:15:17,335 - INFO -     Observed is 88.5σ above null mean
+2026-06-05 19:15:17,434 - INFO - 
+=== Sensitivity 9: Effect Size Heterogeneity (I²) ===
+2026-06-05 19:15:17,554 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 900 records
+2026-06-05 19:15:17,623 - INFO -   Heterogeneity classification:
+2026-06-05 19:15:17,623 - INFO -     high: 89 (98.9%)
+2026-06-05 19:15:17,623 - INFO -     moderate: 1 (1.1%)
+2026-06-05 19:15:17,623 - INFO -   Mean I²: 95.7%
+2026-06-05 19:15:17,624 - INFO -   Most heterogeneous:
+2026-06-05 19:15:17,624 - INFO -     anxiety_rate: I²=99.9%
+2026-06-05 19:15:17,624 - INFO -     sadness_rate: I²=99.9%
+2026-06-05 19:15:17,624 - INFO -     first_person_rate: I²=99.7%
+2026-06-05 19:15:17,624 - INFO -     negative_affect_rate: I²=99.5%
+2026-06-05 19:15:17,625 - INFO -     self_focus_index: I²=99.5%
+2026-06-05 19:15:17,792 - INFO - 
+============================================================
+2026-06-05 19:15:17,793 - INFO - SENSITIVITY ANALYSIS SUMMARY
+2026-06-05 19:15:17,793 - INFO - ============================================================
+2026-06-05 19:15:17,793 - INFO -   [PASS] permutation_test: All significant
+2026-06-05 19:15:17,793 - INFO -   [PASS] temporal_stability: r = 0.9774051673145971
+2026-06-05 19:15:17,793 - INFO -   [WARNING] heterogeneity: 99% high I²
+2026-06-05 19:15:17,793 - INFO - 
+  Overall: 2/3 passed
+2026-06-05 19:15:17,816 - INFO - 
+Saved to /path/to/project/module1_results/statistics/sensitivity_report.json
+2026-06-05 19:15:17,816 - INFO - ================================================================================
+2026-06-05 19:15:17,816 - INFO - SENSITIVITY ANALYSIS COMPLETE
+2026-06-05 19:15:17,816 - INFO - ================================================================================
+2026-06-12 04:32:57,232 - INFO - ================================================================================
+2026-06-12 04:32:57,271 - INFO - MODULE 1 - Step 06: Sensitivity & Robustness Analyses (v1.2)
+2026-06-12 04:32:57,271 - INFO - ================================================================================
+2026-06-12 04:33:03,197 - INFO - Loaded: (721985, 136)
+2026-06-12 04:33:03,205 - INFO - Analysis features: 93
+2026-06-12 04:33:03,665 - INFO - Training set: 505370
+2026-06-12 04:33:08,618 - INFO - 
+=== Sensitivity 1: Confound-Adjusted Effect Sizes ===
+2026-06-12 04:33:11,166 - INFO -   Supplemented 4 confound columns from PSM file: ['total_posts', 'circadian_regularity', 'readability_grade', 'vocab_density']
+2026-06-12 04:33:11,166 - INFO -   is_comorbid unavailable — no reliable proxy exists. Factor 1 in s05 captures the shared severity/comorbidity dimension indirectly.
+2026-06-12 04:33:11,166 - INFO -   Confounders identified (7):
+2026-06-12 04:33:11,166 - INFO -     tenure_days (proxy_for_account_age_days)
+2026-06-12 04:33:11,167 - INFO -     n_posts_total (proxy_for_total_posts)
+2026-06-12 04:33:11,167 - INFO -     n_unique_subreddits (proxy_for_total_subreddits)
+2026-06-12 04:33:11,167 - INFO -     total_posts (psm_file)
+2026-06-12 04:33:11,167 - INFO -     circadian_regularity (psm_file)
+2026-06-12 04:33:11,167 - INFO -     readability_grade (psm_file)
+2026-06-12 04:33:11,167 - INFO -     vocab_density (psm_file)
+2026-06-12 04:33:11,167 - INFO -   Method A: Linear residualization...
+2026-06-12 04:33:11,904 - INFO -     Imputed 1746 rows with NaN confounds (0.3%) for residualization
+2026-06-12 04:33:24,910 - INFO -   Method B: Polynomial (degree=2) residualization...
+2026-06-12 04:33:25,629 - INFO -     Imputed 1746 rows with NaN confounds (0.3%) for residualization
+2026-06-12 04:33:25,768 - INFO -     Poly2: 7 → 35 confound features
+2026-06-12 04:34:40,903 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 930 records
+2026-06-12 04:34:40,905 - INFO -   linear: r=0.9925, MAD=0.0318
+2026-06-12 04:34:40,908 - INFO -   poly2: r=0.9892, MAD=0.0332
+2026-06-12 04:34:40,908 - INFO -   Nonlinearity ratio (poly_MAD / linear_MAD): 1.046
+2026-06-12 04:34:40,908 - INFO -   ✅ Minimal nonlinear confounding. Linear adjustment is sufficient.
+2026-06-12 04:34:41,119 - INFO - 
+=== Sensitivity 2: Sample Size Stability ===
+2026-06-12 04:34:41,962 - INFO -   depression: 21447 patients
+2026-06-12 04:38:30,567 - INFO -     frac=25%: AUROC = 0.860 ± 0.003
+2026-06-12 04:43:08,194 - INFO -     frac=50%: AUROC = 0.861 ± 0.002
+2026-06-12 04:48:12,144 - INFO -     frac=75%: AUROC = 0.861 ± 0.001
+2026-06-12 04:53:37,789 - INFO -     frac=100%: AUROC = 0.861 ± 0.001
+2026-06-12 04:53:37,926 - INFO -   bipolar: 7004 patients
+2026-06-12 04:56:38,504 - INFO -     frac=25%: AUROC = 0.901 ± 0.002
+2026-06-12 05:00:09,791 - INFO -     frac=50%: AUROC = 0.902 ± 0.002
+2026-06-12 05:04:07,848 - INFO -     frac=75%: AUROC = 0.902 ± 0.001
+2026-06-12 05:08:35,978 - INFO -     frac=100%: AUROC = 0.902 ± 0.001
+2026-06-12 05:08:36,134 - INFO -   anxiety: 10096 patients
+2026-06-12 05:12:01,711 - INFO -     frac=25%: AUROC = 0.887 ± 0.004
+2026-06-12 05:15:38,960 - INFO -     frac=50%: AUROC = 0.891 ± 0.002
+2026-06-12 05:19:13,194 - INFO -     frac=75%: AUROC = 0.891 ± 0.001
+2026-06-12 05:22:44,620 - INFO -     frac=100%: AUROC = 0.892 ± 0.001
+2026-06-12 05:22:44,758 - INFO -   ocd: 4015 patients
+2026-06-12 05:25:31,137 - INFO -     frac=25%: AUROC = 0.877 ± 0.004
+2026-06-12 05:28:32,995 - INFO -     frac=50%: AUROC = 0.881 ± 0.002
+2026-06-12 05:31:47,631 - INFO -     frac=75%: AUROC = 0.882 ± 0.001
+2026-06-12 05:35:03,717 - INFO -     frac=100%: AUROC = 0.884 ± 0.001
+2026-06-12 05:35:03,842 - INFO -   ptsd: 5797 patients
+2026-06-12 05:38:07,096 - INFO -     frac=25%: AUROC = 0.899 ± 0.005
+2026-06-12 05:41:39,206 - INFO -     frac=50%: AUROC = 0.901 ± 0.002
+2026-06-12 05:45:11,500 - INFO -     frac=75%: AUROC = 0.903 ± 0.002
+2026-06-12 05:49:00,621 - INFO -     frac=100%: AUROC = 0.904 ± 0.001
+2026-06-12 05:49:00,774 - INFO -   bpd: 4257 patients
+2026-06-12 05:51:37,635 - INFO -     frac=25%: AUROC = 0.916 ± 0.003
+2026-06-12 05:54:16,306 - INFO -     frac=50%: AUROC = 0.920 ± 0.002
+2026-06-12 05:57:15,258 - INFO -     frac=75%: AUROC = 0.921 ± 0.001
+2026-06-12 06:00:17,608 - INFO -     frac=100%: AUROC = 0.923 ± 0.001
+2026-06-12 06:00:17,671 - INFO -   eating_disorders: 1181 patients
+2026-06-12 06:03:15,328 - INFO -     frac=25%: AUROC = 0.901 ± 0.011
+2026-06-12 06:06:02,586 - INFO -     frac=50%: AUROC = 0.915 ± 0.004
+2026-06-12 06:08:51,242 - INFO -     frac=75%: AUROC = 0.920 ± 0.002
+2026-06-12 06:11:40,741 - INFO -     frac=100%: AUROC = 0.922 ± 0.003
+2026-06-12 06:11:40,864 - INFO -   schizophrenia: 1721 patients
+2026-06-12 06:14:49,824 - INFO -     frac=25%: AUROC = 0.862 ± 0.010
+2026-06-12 06:18:07,585 - INFO -     frac=50%: AUROC = 0.867 ± 0.004
+2026-06-12 06:21:14,963 - INFO -     frac=75%: AUROC = 0.872 ± 0.003
+2026-06-12 06:24:24,642 - INFO -     frac=100%: AUROC = 0.874 ± 0.002
+2026-06-12 06:24:24,814 - INFO -   adhd: 26342 patients
+2026-06-12 06:28:01,030 - INFO -     frac=25%: AUROC = 0.831 ± 0.003
+2026-06-12 06:31:49,722 - INFO -     frac=50%: AUROC = 0.833 ± 0.002
+2026-06-12 06:36:02,546 - INFO -     frac=75%: AUROC = 0.833 ± 0.001
+2026-06-12 06:40:36,797 - INFO -     frac=100%: AUROC = 0.834 ± 0.000
+2026-06-12 06:40:36,912 - INFO -   autism: 7157 patients
+2026-06-12 06:44:12,801 - INFO -     frac=25%: AUROC = 0.844 ± 0.003
+2026-06-12 06:48:27,097 - INFO -     frac=50%: AUROC = 0.848 ± 0.003
+2026-06-12 06:53:07,918 - INFO -     frac=75%: AUROC = 0.849 ± 0.002
+2026-06-12 06:58:21,319 - INFO -     frac=100%: AUROC = 0.850 ± 0.001
+2026-06-12 06:58:21,343 - INFO - 
+=== Sensitivity 3: Multiple Comparison Correction Methods ===
+2026-06-12 06:58:21,369 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 930 records
+2026-06-12 06:58:21,369 - INFO -   none           :   770 / 930 (82.8%)
+2026-06-12 06:58:21,369 - INFO -   bonferroni     :   642 / 930 (69.0%)
+2026-06-12 06:58:21,429 - INFO -   holm           :   666 / 930 (71.6%)
+2026-06-12 06:58:21,430 - INFO -   fdr_bh         :   765 / 930 (82.3%)
+2026-06-12 06:58:21,431 - INFO -   fdr_by         :   720 / 930 (77.4%)
+2026-06-12 06:58:21,431 - INFO - 
+=== Sensitivity 4: Outlier Handling Strategies ===
+2026-06-12 06:58:21,431 - INFO -   Note: Testing on RAW features (pre-s02 standardization)
+2026-06-12 06:58:26,830 - INFO -   Using: s01_raw (pre-winsorization)
+2026-06-12 06:58:26,830 - INFO -   Raw data shape: (722346, 133)
+2026-06-12 06:58:27,352 - INFO -   Extreme values (3×IQR): 0.14% (suspiciously low)
+2026-06-12 06:58:27,902 - INFO -   Strategy: no_outlier_treatment
+2026-06-12 06:58:28,117 - INFO -     Sample retention: 100%
+2026-06-12 07:02:53,323 - INFO -     Mean AUROC: 0.885
+2026-06-12 07:02:53,323 - INFO -   Strategy: winsorize_1_99
+2026-06-12 07:02:56,191 - INFO -     Outliers replaced: 1145933 (1.71% of values)
+2026-06-12 07:02:56,191 - INFO -     Sample retention: 100%
+2026-06-12 07:04:07,706 - INFO -     Mean AUROC: 0.886
+2026-06-12 07:04:07,706 - INFO -   Strategy: winsorize_5_95
+2026-06-12 07:04:10,600 - INFO -     Outliers replaced: 6156647 (9.19% of values)
+2026-06-12 07:04:10,600 - INFO -     Sample retention: 100%
+2026-06-12 07:05:01,175 - INFO -     Mean AUROC: 0.886
+2026-06-12 07:05:01,175 - INFO -   Strategy: z3_median_replace
+2026-06-12 07:05:02,951 - INFO -     Outliers replaced: 942889 (1.41% of values)
+2026-06-12 07:05:02,951 - INFO -     Sample retention: 100%
+2026-06-12 07:06:10,827 - INFO -     Mean AUROC: 0.876
+2026-06-12 07:06:10,827 - INFO -   Strategy: z2.5_median_replace
+2026-06-12 07:06:12,489 - INFO -     Outliers replaced: 1579774 (2.36% of values)
+2026-06-12 07:06:12,489 - INFO -     Sample retention: 100%
+2026-06-12 07:07:07,464 - INFO -     Mean AUROC: 0.872
+2026-06-12 07:07:07,464 - INFO -   Strategy: trimmed_winsorize
+2026-06-12 07:07:11,285 - INFO -     Outliers replaced: 6156647 (9.19% of values)
+2026-06-12 07:07:11,285 - INFO -     Sample retention: 100%
+2026-06-12 07:08:00,843 - INFO -     Mean AUROC: 0.886
+2026-06-12 07:09:24,831 - INFO -   Baseline (s02 default): 0.884
+2026-06-12 07:09:24,831 - INFO -   AUROC range across strategies: 0.014
+2026-06-12 07:09:24,831 - INFO -   ✅ Results robust to outlier handling (Δ < 0.02)
+2026-06-12 07:09:25,044 - INFO - 
+=== Sensitivity 5: Cross-Validation Scheme Comparison ===
+2026-06-12 07:10:23,103 - INFO -     depression 5-fold: 0.860 ± 0.001
+2026-06-12 07:12:07,157 - INFO -     depression 10-fold: 0.860 ± 0.003
+2026-06-12 07:14:39,949 - INFO -     depression Repeated 5-fold×3: 0.860
+2026-06-12 07:15:26,145 - INFO -     bipolar 5-fold: 0.902 ± 0.006
+2026-06-12 07:17:02,843 - INFO -     bipolar 10-fold: 0.902 ± 0.006
+2026-06-12 07:19:23,321 - INFO -     bipolar Repeated 5-fold×3: 0.902
+2026-06-12 07:20:04,367 - INFO -     anxiety 5-fold: 0.890 ± 0.004
+2026-06-12 07:21:20,300 - INFO -     anxiety 10-fold: 0.890 ± 0.006
+2026-06-12 07:23:17,319 - INFO -     anxiety Repeated 5-fold×3: 0.890
+2026-06-12 07:23:17,358 - INFO - 
+=== Sensitivity 6: Feature Set Variations ===
+2026-06-12 07:23:17,375 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 930 records
+2026-06-12 07:23:47,322 - INFO -     depression All (93): 0.860
+2026-06-12 07:23:48,719 - INFO -     depression Top-10: 0.836
+2026-06-12 07:23:53,368 - INFO -     depression Top-20: 0.838
+2026-06-12 07:24:00,269 - INFO -     depression Top-50: 0.847
+2026-06-12 07:24:02,077 - INFO -     depression PCA-10: 0.752
+2026-06-12 07:24:27,096 - INFO -     bipolar All (93): 0.902
+2026-06-12 07:24:28,356 - INFO -     bipolar Top-10: 0.876
+2026-06-12 07:24:32,012 - INFO -     bipolar Top-20: 0.879
+2026-06-12 07:24:39,603 - INFO -     bipolar Top-50: 0.897
+2026-06-12 07:24:40,866 - INFO -     bipolar PCA-10: 0.799
+2026-06-12 07:25:04,944 - INFO -     anxiety All (93): 0.890
+2026-06-12 07:25:06,375 - INFO -     anxiety Top-10: 0.873
+2026-06-12 07:25:08,737 - INFO -     anxiety Top-20: 0.875
+2026-06-12 07:25:16,153 - INFO -     anxiety Top-50: 0.883
+2026-06-12 07:25:17,701 - INFO -     anxiety PCA-10: 0.796
+2026-06-12 07:25:17,812 - INFO - 
+=== Sensitivity 7: Temporal Stability ===
+2026-06-12 07:25:17,812 - INFO -   Using time column: t0_date
+2026-06-12 07:25:18,187 - INFO -   Placeholder values: 0/505370 (0.0%)
+2026-06-12 07:25:18,275 - INFO -   patient: 89017/89017 with valid time (100.0%)
+2026-06-12 07:25:18,277 - INFO -     Sample: ['2022-11-09', '2019-01-03', '2020-01-19']
+2026-06-12 07:25:18,296 - INFO -   control: 416353/416353 with valid time (100.0%)
+2026-06-12 07:25:18,300 - INFO -     Sample: ['2022-10-27', '2021-12-10', '2021-07-31']
+2026-06-12 07:25:18,614 - INFO -   Time boundaries: ≤2020-04-05 | ≤2021-12-04 | >2021-12-04
+2026-06-12 07:25:18,614 - INFO -   Sample sizes: Early=166911, Mid=172004, Late=166455
+2026-06-12 07:25:18,627 - INFO -     Early: 40026 patients, 126885 controls
+2026-06-12 07:25:18,640 - INFO -     Mid: 25520 patients, 146484 controls
+2026-06-12 07:25:18,652 - INFO -     Late: 23471 patients, 142984 controls
+2026-06-12 07:25:48,833 - INFO -   Pearson r (early vs late): 0.9767 (p = 0.00e+00)
+2026-06-12 07:25:48,833 - INFO -   ICC: 0.9717
+2026-06-12 07:25:48,833 - INFO -   Mean absolute difference: 0.0758
+2026-06-12 07:25:48,833 - INFO -   Features with significant temporal trend: 271/500 (54.2%)
+2026-06-12 07:25:48,833 - INFO -     Increasing |g| over time: 172
+2026-06-12 07:25:48,833 - INFO -     Decreasing |g| over time: 99
+2026-06-12 07:25:48,854 - INFO -   Total time span: 5586 days (15.3 years)
+2026-06-12 07:25:48,906 - INFO - 
+=== Sensitivity 8: Permutation Test (n=500) ===
+2026-06-12 07:25:48,906 - INFO -   Minimum detectable p-value: 0.0020
+2026-06-12 07:25:48,906 - INFO -   Note: True p-values below 0.0020 will be reported as 0.0020
+2026-06-12 07:25:49,368 - INFO -   Disorder: depression
+2026-06-12 08:02:41,988 - INFO -     Permutation 100/500
+2026-06-12 08:40:20,760 - INFO -     Permutation 200/500
+2026-06-12 09:16:05,687 - INFO -     Permutation 300/500
+2026-06-12 09:50:56,447 - INFO -     Permutation 400/500
+2026-06-12 10:27:24,036 - INFO -     Permutation 500/500
+2026-06-12 10:27:24,037 - INFO -     Observed: 0.860, Null: 0.500 ± 0.003
+2026-06-12 10:27:24,037 - INFO -     p = 0.0020 (min detectable: 0.0020)
+2026-06-12 10:27:24,037 - INFO -     Z-equivalent: 114.5
+2026-06-12 10:27:24,037 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0020
+2026-06-12 10:27:24,037 - INFO -     Observed is 114.5σ above null mean
+2026-06-12 10:27:24,037 - INFO -   Disorder: bipolar
+2026-06-12 11:04:22,067 - INFO -     Permutation 100/500
+2026-06-12 11:40:22,933 - INFO -     Permutation 200/500
+2026-06-12 12:17:06,226 - INFO -     Permutation 300/500
+2026-06-12 12:55:29,975 - INFO -     Permutation 400/500
+2026-06-12 13:33:06,035 - INFO -     Permutation 500/500
+2026-06-12 13:33:06,036 - INFO -     Observed: 0.902, Null: 0.500 ± 0.005
+2026-06-12 13:33:06,037 - INFO -     p = 0.0020 (min detectable: 0.0020)
+2026-06-12 13:33:06,037 - INFO -     Z-equivalent: 73.4
+2026-06-12 13:33:06,037 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0020
+2026-06-12 13:33:06,037 - INFO -     Observed is 73.4σ above null mean
+2026-06-12 13:33:06,037 - INFO -   Disorder: anxiety
+2026-06-12 14:10:55,946 - INFO -     Permutation 100/500
+2026-06-12 14:48:31,770 - INFO -     Permutation 200/500
+2026-06-12 15:25:32,035 - INFO -     Permutation 300/500
+2026-06-12 16:03:12,500 - INFO -     Permutation 400/500
+2026-06-12 16:40:59,077 - INFO -     Permutation 500/500
+2026-06-12 16:40:59,078 - INFO -     Observed: 0.890, Null: 0.500 ± 0.005
+2026-06-12 16:40:59,078 - INFO -     p = 0.0020 (min detectable: 0.0020)
+2026-06-12 16:40:59,078 - INFO -     Z-equivalent: 84.2
+2026-06-12 16:40:59,078 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0020
+2026-06-12 16:40:59,078 - INFO -     Observed is 84.2σ above null mean
+2026-06-12 16:40:59,120 - INFO - 
+=== Sensitivity 9: Effect Size Heterogeneity (I²) ===
+2026-06-12 16:40:59,508 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 930 records
+2026-06-12 16:40:59,598 - INFO -   Heterogeneity classification:
+2026-06-12 16:40:59,598 - INFO -     high: 93 (100.0%)
+2026-06-12 16:40:59,598 - INFO -   Mean I²: 95.8%
+2026-06-12 16:40:59,599 - INFO -   Most heterogeneous:
+2026-06-12 16:40:59,599 - INFO -     anxiety_rate: I²=99.9%
+2026-06-12 16:40:59,600 - INFO -     sadness_rate: I²=99.9%
+2026-06-12 16:40:59,600 - INFO -     first_person_rate: I²=99.7%
+2026-06-12 16:40:59,600 - INFO -     negative_affect_rate: I²=99.5%
+2026-06-12 16:40:59,600 - INFO -     self_focus_index: I²=99.5%
+2026-06-12 16:40:59,709 - INFO - 
+============================================================
+2026-06-12 16:40:59,709 - INFO - SENSITIVITY ANALYSIS SUMMARY
+2026-06-12 16:40:59,709 - INFO - ============================================================
+2026-06-12 16:40:59,768 - INFO -   [✅ PASS] confound_adjustment: r = 0.989
+2026-06-12 16:40:59,769 - INFO -   [✅ PASS] permutation_test: All significant
+2026-06-12 16:40:59,769 - INFO -   [✅ PASS] temporal_stability: r = 0.977, ICC = 0.972
+2026-06-12 16:40:59,769 - INFO -   [📋 PASS_WITH_INTERPRETATION] heterogeneity: 100% high I² (expected: severity gradient), direction consistency = 1.00
+2026-06-12 16:40:59,769 - INFO - 
+  Overall: 4/4 passed (0 warning, 0 inconclusive)
+2026-06-12 16:40:59,769 - INFO - 
+  📝 Note for manuscript:
+2026-06-12 16:40:59,769 - INFO -   High I² in transdiagnostic analysis is EXPECTED and MEANINGFUL.
+2026-06-12 16:40:59,769 - INFO -   It reflects the severity gradient across disorders
+2026-06-12 16:40:59,769 - INFO -   (e.g., anxiety_rate: g=0.84 in ADHD vs g=1.87 in Anxiety),
+2026-06-12 16:40:59,769 - INFO -   NOT methodological inconsistency.
+2026-06-12 16:40:59,769 - INFO -   Direction consistency = 1.00 across all transdiagnostic features.
+2026-06-12 16:40:59,769 - INFO -   Recommended phrasing:
+2026-06-12 16:40:59,769 - INFO -   'I² was high (95.7%), reflecting meaningful variation in
+2026-06-12 16:40:59,769 - INFO -    effect magnitude across diagnostic categories, consistent
+2026-06-12 16:40:59,769 - INFO -    with the p-factor framework where disorders share direction
+2026-06-12 16:40:59,769 - INFO -    but differ in severity (Cohen, 1988; Cheung et al., 2023).'
+2026-06-12 16:40:59,776 - INFO - 
+Saved to /path/to/project/module1_results/statistics/sensitivity_report.json
+2026-06-12 16:40:59,776 - INFO - ================================================================================
+2026-06-12 16:40:59,776 - INFO - SENSITIVITY ANALYSIS COMPLETE
+2026-06-12 16:40:59,776 - INFO - ================================================================================

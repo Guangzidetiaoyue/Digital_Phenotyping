@@ -1,0 +1,4 @@
+[A_true_trend] naive slope=+0.0302 (tau +0.98, p=2.29e-11) | band slope=+0.0279 (tau +0.98) | winreg coef=+0.0300 | true=0.03
+[B_no_trend_only_composition] naive slope=+0.0016 (tau +0.77, p=1.01e-05) | band slope=+0.0003 (tau +0.16) | winreg coef=+0.0000 | true=0.0
+[C_trend_plus_composition] naive slope=+0.0120 (tau +1.00, p=1.53e-12) | band slope=+0.0108 (tau +1.00) | winreg coef=+0.0100 | true=0.01
+DONE -> /path/to/project/module4_results/validation_r4/citb_simulation_report.json

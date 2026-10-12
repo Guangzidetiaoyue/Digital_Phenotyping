@@ -1,0 +1,49 @@
+2026-08-28 12:41:14,359 - INFO - ================================================================================
+2026-08-28 12:41:14,371 - INFO - MODULE 2 - Step 08: Trajectory Morphology Analysis
+2026-08-28 12:41:14,372 - INFO - ================================================================================
+2026-08-28 12:43:06,576 - INFO - Loaded trajectories: (33789616, 135)
+2026-08-28 12:43:09,818 - INFO - Group distribution after normalization: {'control': 27714302, 'patient': 6075314}
+2026-08-28 12:43:12,187 - INFO - Users: 689584
+2026-08-28 12:43:12,187 - INFO - ============================================================
+2026-08-28 12:43:12,188 - INFO - Analysis 1: Event Study (TWFE Panel Regression)
+2026-08-28 12:43:12,188 - INFO - ============================================================
+2026-08-28 12:43:32,594 - INFO -   Reliable observations for TWFE: 13838068
+2026-08-28 12:54:04,517 - INFO -   Earliest significant signal: t0-675d (coef=-0.0676, p_FDR=0.0000), Cohen's d=-0.068
+2026-08-28 12:54:05,000 - INFO - ============================================================
+2026-08-28 12:54:05,000 - INFO - Analysis 2: Changepoint Detection (PELT via ruptures)
+2026-08-28 12:54:05,001 - INFO - ============================================================
+2026-08-28 13:38:13,909 - INFO -   Signal lead time (patients with pre-t0 changepoints):
+2026-08-28 13:38:13,909 - INFO -     N patients: 67
+2026-08-28 13:38:13,909 - INFO -     Median: 161 days
+2026-08-28 13:38:13,909 - INFO -     Mean: 159 days
+2026-08-28 13:38:13,910 - INFO -     IQR: 84 - 208 days
+2026-08-28 13:38:13,911 - INFO -   Changepoint distribution (patient vs control):
+2026-08-28 13:38:13,911 - INFO -     KS statistic: 0.1047, p=0.0442
+2026-08-28 13:38:13,911 - INFO -     Near-t0 changepoints: patient=21.89%, control=19.86%
+2026-08-28 13:38:13,912 - INFO -     depression: pre-t0 CPs=46.7%, median lead=123d
+2026-08-28 13:38:13,913 - INFO -     bipolar: pre-t0 CPs=78.6%, median lead=233d
+2026-08-28 13:38:13,913 - INFO -     anxiety: pre-t0 CPs=54.5%, median lead=186d
+2026-08-28 13:38:13,914 - INFO -     ptsd: pre-t0 CPs=52.6%, median lead=260d
+2026-08-28 13:38:13,915 - INFO -     schizophrenia: pre-t0 CPs=46.2%, median lead=181d
+2026-08-28 13:38:13,916 - INFO -     adhd: pre-t0 CPs=65.5%, median lead=192d
+2026-08-28 13:38:13,916 - INFO -     autism: pre-t0 CPs=72.0%, median lead=229d
+2026-08-28 13:38:14,218 - INFO -   Running PELT Sensitivity Analysis (Penalty Multipliers)...
+2026-08-28 13:38:36,703 - INFO -   Sensitivity analysis saved. BIC (2.0) avg CPs: 0.00
+2026-08-28 13:38:36,715 - INFO - ============================================================
+2026-08-28 13:38:36,715 - INFO - Analysis 3: Parallel Trends Test (Joint Inference)
+2026-08-28 13:38:36,715 - INFO - ============================================================
+2026-08-28 13:38:36,716 - INFO -   Result: FAIL - Significant pre-t0 differences: 17 windows significant at FDR<0.05
+2026-08-28 13:38:36,740 - INFO - ============================================================
+2026-08-28 13:38:36,741 - INFO - Analysis 4: Multi-variable Changepoint Consensus
+2026-08-28 13:38:36,741 - INFO - ============================================================
+2026-08-28 15:49:19,205 - INFO -   Multi-variable consensus changepoints: 2769
+2026-08-28 15:49:19,205 - INFO -   Pre-t0: 1528 (55.2%)
+2026-08-28 15:49:19,206 - INFO -   Most common variable pairs:
+2026-08-28 15:49:19,206 - INFO -     volatility_index × social_withdrawal_index: 1568
+2026-08-28 15:49:19,206 - INFO -     p_factor_severity_z × social_withdrawal_index: 640
+2026-08-28 15:49:19,206 - INFO -     social_withdrawal_index × volatility_index: 391
+2026-08-28 15:49:19,206 - INFO -     p_factor_severity_z × volatility_index: 110
+2026-08-28 15:49:19,206 - INFO -     social_withdrawal_index × p_factor_severity_z: 42
+2026-08-28 15:49:20,327 - INFO - ================================================================================
+2026-08-28 15:49:20,327 - INFO - TRAJECTORY MORPHOLOGY ANALYSIS COMPLETE
+2026-08-28 15:49:20,327 - INFO - ================================================================================

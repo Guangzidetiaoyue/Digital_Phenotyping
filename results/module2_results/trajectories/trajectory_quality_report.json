@@ -1,0 +1,17 @@
+{
+  "n_users_total": 689584,
+  "n_users_with_sufficient_pre": 625090,
+  "n_users_with_sufficient_post": 600247,
+  "n_users_with_both": 539346,
+  "mean_windows_per_user": 49.0,
+  "mean_reliable_windows": 25.30658919000441,
+  "mean_high_quality_windows": 15.656859787930115,
+  "patient_n_users": 123986,
+  "patient_with_sufficient_pre": 110438,
+  "patient_with_sufficient_post": 112037,
+  "control_n_users": 565598,
+  "control_with_sufficient_pre": 514652,
+  "control_with_sufficient_post": 488210,
+  "reliable_rate_median": 0.5102040816326531,
+  "reliable_rate_q25": 0.2857142857142857
+}

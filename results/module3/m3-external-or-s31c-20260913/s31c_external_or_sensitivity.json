@@ -1,0 +1,36 @@
+{
+  "disorders": [
+    "adhd",
+    "anxiety",
+    "autism",
+    "bipolar",
+    "bpd",
+    "depression",
+    "eating_disorders",
+    "ocd",
+    "ptsd",
+    "schizophrenia"
+  ],
+  "n_external_pairs_in_csv": 21,
+  "raw_OR": {
+    "mantel_r_pearson": -0.2466300824734997,
+    "mantel_p": 0.29727027297270275,
+    "spearman_r": -0.09483599071141723,
+    "spearman_p": 0.6826091168371505,
+    "n_pairs": 21
+  },
+  "log_OR": {
+    "mantel_r_pearson": -0.24381997499573901,
+    "mantel_p": 0.30196980301969806,
+    "spearman_r": -0.09483599071141723,
+    "spearman_p": 0.6826091168371505,
+    "n_pairs": 21
+  },
+  "uncited_in_code_pct": {
+    "mantel_r_pearson": -0.3629803054451896,
+    "mantel_p": 0.08439156084391561,
+    "spearman_r": -0.4115816342716533,
+    "spearman_p": 0.004970208411591017,
+    "n_pairs": 45
+  }
+}

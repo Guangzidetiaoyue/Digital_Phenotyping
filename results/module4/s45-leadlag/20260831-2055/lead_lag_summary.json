@@ -1,0 +1,29 @@
+{
+  "rq4a_temporal": {
+    "method": "annual cross-correlation at lags -1/0/+1; bootstrap CI; sample-size limited",
+    "best_by_target": {
+      "MDE": {
+        "lag": -1,
+        "r": -0.7380807881904862,
+        "p": 0.15443293072568176,
+        "sample": "2015-2020 (pre-2021 break)"
+      },
+      "suicide_rate": {
+        "lag": -1,
+        "r": 0.580156602852818,
+        "p": 0.07871055826920349,
+        "sample": "2008-2018"
+      }
+    },
+    "nsduh_break_note": "2021 methodological break; pre-2021 primary"
+  },
+  "rq4b_spatial": {
+    "status": "NOT_FEASIBLE",
+    "reason": "NOT_FEASIBLE: trajectory data has no state-level geographic label; spatial external validity cannot be computed with Reddit state signal."
+  },
+  "limitations": [
+    "Annual samples (8-15 yrs) limit power for Granger/lead-lag; results descriptive",
+    "CDC suicide rate overlap 2008-2018 (11 yrs); NSDUH MDE 2015-2022 (8 yrs)",
+    "Population mismatch: Reddit users vs US general population"
+  ]
+}

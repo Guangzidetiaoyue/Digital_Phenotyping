@@ -1,0 +1,1814 @@
+===== START s05 Sun Sep 13 20:59:09 CST 2026 =====
+2026-09-13 20:59:11,513 - INFO - ================================================================================
+2026-09-13 20:59:11,597 - INFO - MODULE 1 - Step 05: Transdiagnostic Factor Analysis (v1.2)
+2026-09-13 20:59:11,599 - INFO - Fixes: clean matrix, FA orientation, varimax rotation,
+2026-09-13 20:59:11,600 - INFO -        consistent features, train-only PCA, subsampled t-SNE
+2026-09-13 20:59:11,600 - INFO - ================================================================================
+2026-09-13 20:59:11,637 - INFO - Using CLEAN effect size matrix: (93, 10)
+2026-09-13 20:59:11,652 - INFO - Effect size matrix: (93, 10)
+2026-09-13 20:59:11,652 - INFO - Significance matrix: (93, 10)
+2026-09-13 20:59:11,652 - INFO - Loading analysis features (consistent with s03/s04)...
+2026-09-13 20:59:11,671 - INFO -   Analysis features: 93
+2026-09-13 20:59:18,163 - INFO - Loaded user features: (721985, 136)
+2026-09-13 20:59:18,163 - INFO - 
+--- Factor Analysis on Effect-Size Profiles ---
+2026-09-13 20:59:18,163 - INFO -   Matrix shape: (93, 10) (features × disorders)
+2026-09-13 20:59:18,163 - INFO -   Features: 93, Disorders: 10
+2026-09-13 20:59:18,164 - INFO - Determining optimal number of factors...
+2026-09-13 20:59:18,164 - INFO -   Matrix: 93 observations × 10 variables
+2026-09-13 20:59:18,164 - INFO -   Max factors to test: 4
+2026-09-13 20:59:18,164 - INFO -   Kaiser criterion: 1 factors
+2026-09-13 20:59:18,264 - INFO -   Parallel analysis: 1 factors
+2026-09-13 20:59:18,264 - INFO -   Scree heuristic: 4 factors
+2026-09-13 20:59:18,264 - INFO -   Selected n_factors = 2
+2026-09-13 20:59:18,264 - INFO -   Analyst-selected n_factors = 3 (HiTOP theory); data-driven parallel analysis suggested n = 2
+2026-09-13 20:59:18,381 - INFO - 
+  Factor Analysis Results (n_factors=3):
+2026-09-13 20:59:18,381 - INFO -   Variance explained: [0.939 0.025 0.011]
+2026-09-13 20:59:18,382 - INFO -   Cumulative: [0.939 0.963 0.975]
+2026-09-13 20:59:18,382 - INFO - 
+  Factor_1 (variance=0.939):
+2026-09-13 20:59:18,382 - INFO -     Top features:
+2026-09-13 20:59:18,382 - INFO -       other_sub_ratio: -2.415
+2026-09-13 20:59:18,382 - INFO -       insight_rate: +1.929
+2026-09-13 20:59:18,382 - INFO -       mattr_vocabulary_diversity: -1.776
+2026-09-13 20:59:18,382 - INFO -       posts_per_day_log: +1.720
+2026-09-13 20:59:18,382 - INFO -       net_emotion_tone: -1.645
+2026-09-13 20:59:18,382 - INFO -     Top disorders:
+2026-09-13 20:59:18,382 - INFO -       autism: +0.216
+2026-09-13 20:59:18,382 - INFO -       ptsd: +0.172
+2026-09-13 20:59:18,382 - INFO -       bpd: +0.164
+2026-09-13 20:59:18,382 - INFO -       ocd: +0.161
+2026-09-13 20:59:18,382 - INFO -       schizophrenia: +0.161
+2026-09-13 20:59:18,382 - INFO - 
+  Factor_2 (variance=0.025):
+2026-09-13 20:59:18,382 - INFO -     Top features:
+2026-09-13 20:59:18,382 - INFO -       anxiety_rate: +5.726
+2026-09-13 20:59:18,382 - INFO -       first_person_rate: +2.411
+2026-09-13 20:59:18,382 - INFO -       self_focus_index: +2.000
+2026-09-13 20:59:18,382 - INFO -       past_focus_rate: +1.639
+2026-09-13 20:59:18,382 - INFO -       vader_compound_std: +1.621
+2026-09-13 20:59:18,382 - INFO -     Top disorders:
+2026-09-13 20:59:18,382 - INFO -       bpd: +0.319
+2026-09-13 20:59:18,382 - INFO -       eating_disorders: +0.316
+2026-09-13 20:59:18,382 - INFO -       anxiety: +0.306
+2026-09-13 20:59:18,382 - INFO -       bipolar: +0.294
+2026-09-13 20:59:18,382 - INFO -       ocd: +0.289
+2026-09-13 20:59:18,382 - INFO - 
+  Factor_3 (variance=0.011):
+2026-09-13 20:59:18,382 - INFO -     Top features:
+2026-09-13 20:59:18,382 - INFO -       anxiety_rate: +4.756
+2026-09-13 20:59:18,383 - INFO -       sadness_rate: -4.657
+2026-09-13 20:59:18,383 - INFO -       other_sub_ratio: +3.097
+2026-09-13 20:59:18,383 - INFO -       first_person_rate: -2.064
+2026-09-13 20:59:18,383 - INFO -       vader_compound_std: -1.388
+2026-09-13 20:59:18,383 - INFO -     Top disorders:
+2026-09-13 20:59:18,383 - INFO -       bpd: -0.130
+2026-09-13 20:59:18,383 - INFO -       bipolar: -0.120
+2026-09-13 20:59:18,383 - INFO -       ptsd: -0.102
+2026-09-13 20:59:18,383 - INFO -       eating_disorders: -0.102
+2026-09-13 20:59:18,383 - INFO -       depression: -0.096
+2026-09-13 20:59:18,383 - INFO - 
+--- Disorder Clustering Analysis ---
+2026-09-13 20:59:18,387 - INFO -   Optimal clusters: 2 (silhouette = 0.653)
+2026-09-13 20:59:18,388 - INFO -   Cluster assignments: {'adhd': 1, 'anxiety': 1, 'autism': 2, 'bipolar': 1, 'bpd': 1, 'depression': 1, 'eating_disorders': 1, 'ocd': 1, 'ptsd': 1, 'schizophrenia': 1}
+2026-09-13 20:59:18,430 - INFO -   ARI (data-driven vs HiTOP): 0.088
+2026-09-13 20:59:18,430 - INFO -   NMI (data-driven vs HiTOP): 0.355
+2026-09-13 20:59:18,462 - INFO -   Disorder PCA variance: [0.571 0.125 0.104 0.078 0.06 ]
+2026-09-13 20:59:18,462 - INFO - 
+--- User-Level PCA ---
+2026-09-13 20:59:19,099 - INFO -   Using training set: 505370 users
+2026-09-13 20:59:19,953 - INFO -   Variance explained (top 10 PCs): [0.186 0.151 0.115 0.08  0.056 0.046 0.033 0.029 0.021 0.021]
+2026-09-13 20:59:19,954 - INFO -   Cumulative: [0.186 0.336 0.451 0.531 0.587 0.633 0.666 0.695 0.716 0.737]
+2026-09-13 20:59:19,963 - INFO -   Running t-SNE on 50000 subsampled users...
+2026-09-13 21:01:15,847 - INFO -   t-SNE complete: (50000, 4)
+2026-09-13 21:01:15,869 - INFO - 
+--- Transdiagnostic vs Specific Feature Classification ---
+2026-09-13 21:01:15,877 - INFO -   Feature categories:
+2026-09-13 21:01:15,877 - INFO -     non_significant: 35
+2026-09-13 21:01:15,877 - INFO -     transdiagnostic: 32
+2026-09-13 21:01:15,877 - INFO -     specific: 21
+2026-09-13 21:01:15,877 - INFO -     mixed: 5
+2026-09-13 21:01:15,878 - INFO - 
+  Top transdiagnostic features:
+2026-09-13 21:01:15,878 - INFO -     anxiety_rate: n_disorders=10, mean |g|=1.324, dir_consistency=1.00
+2026-09-13 21:01:15,878 - INFO -     first_person_rate: n_disorders=10, mean |g|=1.060, dir_consistency=1.00
+2026-09-13 21:01:15,878 - INFO -     self_focus_index: n_disorders=10, mean |g|=0.879, dir_consistency=1.00
+2026-09-13 21:01:15,878 - INFO -     vader_compound_std: n_disorders=10, mean |g|=0.785, dir_consistency=1.00
+2026-09-13 21:01:15,878 - INFO -     sadness_rate: n_disorders=10, mean |g|=0.750, dir_consistency=1.00
+2026-09-13 21:01:15,878 - INFO -     insight_rate: n_disorders=10, mean |g|=0.715, dir_consistency=1.00
+2026-09-13 21:01:15,878 - INFO -     other_sub_ratio: n_disorders=10, mean |g|=0.673, dir_consistency=1.00
+2026-09-13 21:01:15,878 - INFO -     mattr_vocabulary_diversity: n_disorders=10, mean |g|=0.652, dir_consistency=1.00
+2026-09-13 21:01:15,878 - INFO -     past_focus_rate: n_disorders=10, mean |g|=0.637, dir_consistency=1.00
+2026-09-13 21:01:15,878 - INFO -     post_length_mean: n_disorders=10, mean |g|=0.602, dir_consistency=1.00
+2026-09-13 21:01:15,879 - INFO - 
+  Top specific features:
+2026-09-13 21:01:15,879 - INFO -     score_median: specific to eating_disorders, max |g|=0.413
+2026-09-13 21:01:15,879 - INFO -     posts_per_day_log: specific to autism, max |g|=0.321
+2026-09-13 21:01:15,879 - INFO -     causal_thinking_rate: specific to adhd;autism, max |g|=0.283
+2026-09-13 21:01:15,879 - INFO -     n_posts_total_log: specific to autism;bpd, max |g|=0.282
+2026-09-13 21:01:15,879 - INFO -     posts_per_active_day_log: specific to autism, max |g|=0.279
+2026-09-13 21:01:15,879 - INFO -     active_day_ratio: specific to autism, max |g|=0.279
+2026-09-13 21:01:15,879 - INFO -     score_mean_log_signed: specific to eating_disorders, max |g|=0.276
+2026-09-13 21:01:15,879 - INFO -     anger_rate: specific to anxiety;eating_disorders, max |g|=0.273
+2026-09-13 21:01:15,879 - INFO -     score_min: specific to bpd;eating_disorders, max |g|=0.262
+2026-09-13 21:01:15,879 - INFO -     information_sub_ratio: specific to bpd;eating_disorders, max |g|=0.258
+2026-09-13 21:01:15,880 - INFO - 
+--- Building Disorder Digital Phenotype Profiles ---
+2026-09-13 21:01:15,883 - INFO - 
+  ADHD:
+2026-09-13 21:01:15,883 - INFO -     anxiety_rate                             g=+0.843 (elevated) [affective] ***
+2026-09-13 21:01:15,883 - INFO -     first_person_rate                        g=+0.735 (elevated) [pronoun] ***
+2026-09-13 21:01:15,883 - INFO -     self_focus_index                         g=+0.677 (elevated) [pronoun] ***
+2026-09-13 21:01:15,883 - INFO -     vader_compound_std                       g=+0.632 (elevated) [affective] ***
+2026-09-13 21:01:15,883 - INFO -     insight_rate                             g=+0.624 (elevated) [cognitive] ***
+2026-09-13 21:01:15,887 - INFO - 
+  Anxiety Disorders:
+2026-09-13 21:01:15,887 - INFO -     anxiety_rate                             g=+1.867 (elevated) [affective] ***
+2026-09-13 21:01:15,887 - INFO -     first_person_rate                        g=+1.076 (elevated) [pronoun] ***
+2026-09-13 21:01:15,887 - INFO -     self_focus_index                         g=+0.921 (elevated) [pronoun] ***
+2026-09-13 21:01:15,887 - INFO -     vader_compound_std                       g=+0.782 (elevated) [affective] ***
+2026-09-13 21:01:15,887 - INFO -     past_focus_rate                          g=+0.695 (elevated) [temporal_linguistic] ***
+2026-09-13 21:01:15,891 - INFO - 
+  Autism Spectrum:
+2026-09-13 21:01:15,891 - INFO -     anxiety_rate                             g=+0.775 (elevated) [affective] ***
+2026-09-13 21:01:15,891 - INFO -     first_person_rate                        g=+0.647 (elevated) [pronoun] ***
+2026-09-13 21:01:15,891 - INFO -     insight_rate                             g=+0.607 (elevated) [cognitive] ***
+2026-09-13 21:01:15,891 - INFO -     other_sub_ratio                          g=-0.590 (reduced) [community] ***
+2026-09-13 21:01:15,891 - INFO -     self_focus_index                         g=+0.581 (elevated) [pronoun] ***
+2026-09-13 21:01:15,895 - INFO - 
+  Bipolar Disorder:
+2026-09-13 21:01:15,895 - INFO -     anxiety_rate                             g=+1.308 (elevated) [affective] ***
+2026-09-13 21:01:15,895 - INFO -     first_person_rate                        g=+1.231 (elevated) [pronoun] ***
+2026-09-13 21:01:15,895 - INFO -     self_focus_index                         g=+1.036 (elevated) [pronoun] ***
+2026-09-13 21:01:15,895 - INFO -     sadness_rate                             g=+0.937 (elevated) [affective] ***
+2026-09-13 21:01:15,895 - INFO -     other_sub_ratio                          g=-0.924 (reduced) [community] ***
+2026-09-13 21:01:15,899 - INFO - 
+  Borderline PD:
+2026-09-13 21:01:15,899 - INFO -     anxiety_rate                             g=+1.549 (elevated) [affective] ***
+2026-09-13 21:01:15,899 - INFO -     first_person_rate                        g=+1.360 (elevated) [pronoun] ***
+2026-09-13 21:01:15,899 - INFO -     sadness_rate                             g=+1.124 (elevated) [affective] ***
+2026-09-13 21:01:15,899 - INFO -     self_focus_index                         g=+1.062 (elevated) [pronoun] ***
+2026-09-13 21:01:15,899 - INFO -     vader_compound_std                       g=+1.027 (elevated) [affective] ***
+2026-09-13 21:01:15,903 - INFO - 
+  Depression:
+2026-09-13 21:01:15,903 - INFO -     anxiety_rate                             g=+1.041 (elevated) [affective] ***
+2026-09-13 21:01:15,903 - INFO -     first_person_rate                        g=+0.998 (elevated) [pronoun] ***
+2026-09-13 21:01:15,903 - INFO -     sadness_rate                             g=+0.964 (elevated) [affective] ***
+2026-09-13 21:01:15,903 - INFO -     self_focus_index                         g=+0.815 (elevated) [pronoun] ***
+2026-09-13 21:01:15,903 - INFO -     vader_compound_std                       g=+0.706 (elevated) [affective] ***
+2026-09-13 21:01:15,907 - INFO - 
+  Eating Disorders:
+2026-09-13 21:01:15,907 - INFO -     anxiety_rate                             g=+1.587 (elevated) [affective] ***
+2026-09-13 21:01:15,907 - INFO -     first_person_rate                        g=+1.303 (elevated) [pronoun] ***
+2026-09-13 21:01:15,907 - INFO -     self_focus_index                         g=+1.140 (elevated) [pronoun] ***
+2026-09-13 21:01:15,907 - INFO -     sadness_rate                             g=+1.044 (elevated) [affective] ***
+2026-09-13 21:01:15,907 - INFO -     vader_compound_std                       g=+0.946 (elevated) [affective] ***
+2026-09-13 21:01:15,911 - INFO - 
+  OCD:
+2026-09-13 21:01:15,911 - INFO -     anxiety_rate                             g=+1.760 (elevated) [affective] ***
+2026-09-13 21:01:15,911 - INFO -     first_person_rate                        g=+1.068 (elevated) [pronoun] ***
+2026-09-13 21:01:15,911 - INFO -     insight_rate                             g=+0.912 (elevated) [cognitive] ***
+2026-09-13 21:01:15,911 - INFO -     self_focus_index                         g=+0.863 (elevated) [pronoun] ***
+2026-09-13 21:01:15,911 - INFO -     vader_compound_std                       g=+0.772 (elevated) [affective] ***
+2026-09-13 21:01:15,915 - INFO - 
+  PTSD:
+2026-09-13 21:01:15,915 - INFO -     anxiety_rate                             g=+1.399 (elevated) [affective] ***
+2026-09-13 21:01:15,915 - INFO -     first_person_rate                        g=+1.085 (elevated) [pronoun] ***
+2026-09-13 21:01:15,915 - INFO -     vader_compound_std                       g=+1.010 (elevated) [affective] ***
+2026-09-13 21:01:15,915 - INFO -     self_focus_index                         g=+0.866 (elevated) [pronoun] ***
+2026-09-13 21:01:15,915 - INFO -     sadness_rate                             g=+0.853 (elevated) [affective] ***
+2026-09-13 21:01:15,918 - INFO - 
+  Schizophrenia:
+2026-09-13 21:01:15,918 - INFO -     anxiety_rate                             g=+1.111 (elevated) [affective] ***
+2026-09-13 21:01:15,918 - INFO -     first_person_rate                        g=+1.098 (elevated) [pronoun] ***
+2026-09-13 21:01:15,918 - INFO -     other_sub_ratio                          g=-0.852 (reduced) [community] ***
+2026-09-13 21:01:15,918 - INFO -     insight_rate                             g=+0.846 (elevated) [cognitive] ***
+2026-09-13 21:01:15,918 - INFO -     self_focus_index                         g=+0.830 (elevated) [pronoun] ***
+2026-09-13 21:01:15,918 - INFO - 
+Saving factor analysis results...
+2026-09-13 21:01:19,016 - INFO - 
+============================================================
+2026-09-13 21:01:19,016 - INFO - FACTOR ANALYSIS SUMMARY
+2026-09-13 21:01:19,016 - INFO - ============================================================
+2026-09-13 21:01:19,016 - INFO -   Features analyzed: 93 (artifacts excluded)
+2026-09-13 21:01:19,016 - INFO -   Factors extracted: 3
+2026-09-13 21:01:19,017 - INFO -   Variance explained: 97.5%
+2026-09-13 21:01:19,017 - INFO -   Optimal clusters: 2 (silhouette=0.653)
+2026-09-13 21:01:19,017 - INFO -   Transdiagnostic features: 32
+2026-09-13 21:01:19,017 - INFO -   Specific features: 21
+2026-09-13 21:01:19,017 - INFO -   Data-driven vs HiTOP: ARI=0.088, NMI=0.355
+2026-09-13 21:01:19,017 - INFO - ================================================================================
+2026-09-13 21:01:19,017 - INFO - FACTOR ANALYSIS COMPLETE
+2026-09-13 21:01:19,017 - INFO - ================================================================================
+===== END s05 rc=0 Sun Sep 13 21:01:19 CST 2026 =====
+===== START s06 Sun Sep 13 21:01:19 CST 2026 =====
+2026-09-13 21:01:20,095 - INFO - ================================================================================
+2026-09-13 21:01:20,126 - INFO - MODULE 1 - Step 06: Sensitivity & Robustness Analyses (v1.2)
+2026-09-13 21:01:20,128 - INFO - ================================================================================
+2026-09-13 21:01:26,410 - INFO - Loaded: (721985, 136)
+2026-09-13 21:01:26,447 - INFO - Analysis features: 93
+2026-09-13 21:01:26,965 - INFO - Training set: 505370
+2026-09-13 21:01:32,317 - INFO - 
+=== Sensitivity 1: Confound-Adjusted Effect Sizes ===
+2026-09-13 21:01:34,848 - INFO -   Supplemented 4 confound columns from PSM file: ['total_posts', 'circadian_regularity', 'readability_grade', 'vocab_density']
+2026-09-13 21:01:34,849 - INFO -   is_comorbid unavailable — no reliable proxy exists. Factor 1 in s05 captures the shared severity/comorbidity dimension indirectly.
+2026-09-13 21:01:34,850 - INFO -   Confounders identified (7):
+2026-09-13 21:01:34,851 - INFO -     tenure_days (proxy_for_account_age_days)
+2026-09-13 21:01:34,852 - INFO -     n_posts_total (proxy_for_total_posts)
+2026-09-13 21:01:34,853 - INFO -     n_unique_subreddits (proxy_for_total_subreddits)
+2026-09-13 21:01:34,855 - INFO -     total_posts (psm_file)
+2026-09-13 21:01:34,855 - INFO -     circadian_regularity (psm_file)
+2026-09-13 21:01:34,855 - INFO -     readability_grade (psm_file)
+2026-09-13 21:01:34,855 - INFO -     vocab_density (psm_file)
+2026-09-13 21:01:34,855 - INFO -   Method A: Linear residualization...
+2026-09-13 21:01:35,615 - INFO -     Imputed 1746 rows with NaN confounds (0.3%) for residualization
+2026-09-13 21:01:50,285 - INFO -   Method B: Polynomial (degree=2) residualization...
+2026-09-13 21:01:51,077 - INFO -     Imputed 1746 rows with NaN confounds (0.3%) for residualization
+2026-09-13 21:01:51,250 - INFO -     Poly2: 7 → 35 confound features
+2026-09-13 21:03:12,074 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 930 records
+2026-09-13 21:03:12,077 - INFO -   linear: r=0.9925, MAD=0.0318
+2026-09-13 21:03:12,081 - INFO -   poly2: r=0.9892, MAD=0.0332
+2026-09-13 21:03:12,081 - INFO -   Nonlinearity ratio (poly_MAD / linear_MAD): 1.046
+2026-09-13 21:03:12,081 - INFO -   ✅ Minimal nonlinear confounding. Linear adjustment is sufficient.
+2026-09-13 21:03:12,312 - INFO - 
+=== Sensitivity 2: Sample Size Stability ===
+2026-09-13 21:03:13,163 - INFO -   depression: 21447 patients
+2026-09-13 21:07:26,783 - INFO -     frac=25%: AUROC = 0.860 ± 0.003
+2026-09-13 21:12:28,568 - INFO -     frac=50%: AUROC = 0.861 ± 0.002
+2026-09-13 21:17:37,965 - INFO -     frac=75%: AUROC = 0.861 ± 0.001
+2026-09-13 21:23:42,701 - INFO -     frac=100%: AUROC = 0.861 ± 0.001
+2026-09-13 21:23:42,847 - INFO -   bipolar: 7004 patients
+2026-09-13 21:26:48,137 - INFO -     frac=25%: AUROC = 0.901 ± 0.002
+2026-09-13 21:30:22,049 - INFO -     frac=50%: AUROC = 0.902 ± 0.002
+2026-09-13 21:34:21,312 - INFO -     frac=75%: AUROC = 0.902 ± 0.001
+2026-09-13 21:38:58,171 - INFO -     frac=100%: AUROC = 0.902 ± 0.001
+2026-09-13 21:38:58,310 - INFO -   anxiety: 10096 patients
+2026-09-13 21:43:29,731 - INFO -     frac=25%: AUROC = 0.887 ± 0.004
+2026-09-13 21:48:27,805 - INFO -     frac=50%: AUROC = 0.891 ± 0.002
+2026-09-13 21:53:09,096 - INFO -     frac=75%: AUROC = 0.891 ± 0.001
+2026-09-13 21:57:39,679 - INFO -     frac=100%: AUROC = 0.892 ± 0.001
+2026-09-13 21:57:39,847 - INFO -   ocd: 4015 patients
+2026-09-13 22:01:47,012 - INFO -     frac=25%: AUROC = 0.877 ± 0.004
+2026-09-13 22:07:20,905 - INFO -     frac=50%: AUROC = 0.881 ± 0.002
+2026-09-13 22:12:01,215 - INFO -     frac=75%: AUROC = 0.882 ± 0.001
+2026-09-13 22:15:28,881 - INFO -     frac=100%: AUROC = 0.884 ± 0.001
+2026-09-13 22:15:29,025 - INFO -   ptsd: 5797 patients
+2026-09-13 22:18:32,525 - INFO -     frac=25%: AUROC = 0.899 ± 0.005
+2026-09-13 22:22:06,166 - INFO -     frac=50%: AUROC = 0.901 ± 0.002
+2026-09-13 22:25:43,870 - INFO -     frac=75%: AUROC = 0.903 ± 0.002
+2026-09-13 22:29:30,874 - INFO -     frac=100%: AUROC = 0.904 ± 0.001
+2026-09-13 22:29:30,999 - INFO -   bpd: 4257 patients
+2026-09-13 22:32:08,815 - INFO -     frac=25%: AUROC = 0.916 ± 0.003
+2026-09-13 22:34:52,427 - INFO -     frac=50%: AUROC = 0.920 ± 0.002
+2026-09-13 22:37:50,573 - INFO -     frac=75%: AUROC = 0.921 ± 0.001
+2026-09-13 22:41:07,905 - INFO -     frac=100%: AUROC = 0.923 ± 0.001
+2026-09-13 22:41:08,028 - INFO -   eating_disorders: 1181 patients
+2026-09-13 22:44:02,448 - INFO -     frac=25%: AUROC = 0.901 ± 0.011
+2026-09-13 22:47:04,799 - INFO -     frac=50%: AUROC = 0.915 ± 0.004
+2026-09-13 22:49:57,495 - INFO -     frac=75%: AUROC = 0.920 ± 0.002
+2026-09-13 22:52:52,513 - INFO -     frac=100%: AUROC = 0.922 ± 0.003
+2026-09-13 22:52:52,659 - INFO -   schizophrenia: 1721 patients
+2026-09-13 22:56:07,392 - INFO -     frac=25%: AUROC = 0.862 ± 0.010
+2026-09-13 22:59:25,523 - INFO -     frac=50%: AUROC = 0.867 ± 0.004
+2026-09-13 23:02:31,090 - INFO -     frac=75%: AUROC = 0.872 ± 0.003
+2026-09-13 23:06:04,618 - INFO -     frac=100%: AUROC = 0.874 ± 0.002
+2026-09-13 23:06:04,813 - INFO -   adhd: 26342 patients
+2026-09-13 23:10:13,772 - INFO -     frac=25%: AUROC = 0.831 ± 0.003
+2026-09-13 23:14:08,994 - INFO -     frac=50%: AUROC = 0.833 ± 0.002
+2026-09-13 23:18:40,708 - INFO -     frac=75%: AUROC = 0.833 ± 0.001
+2026-09-13 23:23:47,843 - INFO -     frac=100%: AUROC = 0.834 ± 0.000
+2026-09-13 23:23:47,983 - INFO -   autism: 7157 patients
+2026-09-13 23:27:25,252 - INFO -     frac=25%: AUROC = 0.844 ± 0.003
+2026-09-13 23:32:10,469 - INFO -     frac=50%: AUROC = 0.848 ± 0.003
+2026-09-13 23:37:44,144 - INFO -     frac=75%: AUROC = 0.849 ± 0.002
+2026-09-13 23:43:06,531 - INFO -     frac=100%: AUROC = 0.850 ± 0.001
+2026-09-13 23:43:06,554 - INFO - 
+=== Sensitivity 3: Multiple Comparison Correction Methods ===
+2026-09-13 23:43:06,908 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 930 records
+2026-09-13 23:43:06,908 - INFO -   none           :   770 / 930 (82.8%)
+2026-09-13 23:43:06,908 - INFO -   bonferroni     :   642 / 930 (69.0%)
+2026-09-13 23:43:06,938 - INFO -   holm           :   666 / 930 (71.6%)
+2026-09-13 23:43:06,939 - INFO -   fdr_bh         :   765 / 930 (82.3%)
+2026-09-13 23:43:06,939 - INFO -   fdr_by         :   720 / 930 (77.4%)
+2026-09-13 23:43:06,939 - INFO - 
+=== Sensitivity 4: Outlier Handling Strategies ===
+2026-09-13 23:43:06,939 - INFO -   Note: Testing on RAW features (pre-s02 standardization)
+2026-09-13 23:43:12,378 - INFO -   Using: s01_raw (pre-winsorization)
+2026-09-13 23:43:12,379 - INFO -   Raw data shape: (722346, 133)
+2026-09-13 23:43:12,974 - INFO -   Extreme values (3×IQR): 0.14% (suspiciously low)
+2026-09-13 23:43:13,361 - INFO -   Strategy: no_outlier_treatment
+2026-09-13 23:43:13,580 - INFO -     Sample retention: 100%
+2026-09-13 23:48:02,151 - INFO -     Mean AUROC: 0.885
+2026-09-13 23:48:02,151 - INFO -   Strategy: winsorize_1_99
+2026-09-13 23:48:05,309 - INFO -     Outliers replaced: 1145933 (1.71% of values)
+2026-09-13 23:48:05,309 - INFO -     Sample retention: 100%
+2026-09-13 23:49:27,138 - INFO -     Mean AUROC: 0.886
+2026-09-13 23:49:27,139 - INFO -   Strategy: winsorize_5_95
+2026-09-13 23:49:30,351 - INFO -     Outliers replaced: 6156647 (9.19% of values)
+2026-09-13 23:49:30,351 - INFO -     Sample retention: 100%
+2026-09-13 23:50:24,029 - INFO -     Mean AUROC: 0.886
+2026-09-13 23:50:24,029 - INFO -   Strategy: z3_median_replace
+2026-09-13 23:50:25,809 - INFO -     Outliers replaced: 942889 (1.41% of values)
+2026-09-13 23:50:25,809 - INFO -     Sample retention: 100%
+2026-09-13 23:51:32,948 - INFO -     Mean AUROC: 0.876
+2026-09-13 23:51:32,949 - INFO -   Strategy: z2.5_median_replace
+2026-09-13 23:51:34,747 - INFO -     Outliers replaced: 1579774 (2.36% of values)
+2026-09-13 23:51:34,747 - INFO -     Sample retention: 100%
+2026-09-13 23:52:31,380 - INFO -     Mean AUROC: 0.872
+2026-09-13 23:52:31,380 - INFO -   Strategy: trimmed_winsorize
+2026-09-13 23:52:35,409 - INFO -     Outliers replaced: 6156647 (9.19% of values)
+2026-09-13 23:52:35,409 - INFO -     Sample retention: 100%
+2026-09-13 23:53:32,772 - INFO -     Mean AUROC: 0.886
+2026-09-13 23:54:57,167 - INFO -   Baseline (s02 default): 0.884
+2026-09-13 23:54:57,167 - INFO -   AUROC range across strategies: 0.014
+2026-09-13 23:54:57,167 - INFO -   ✅ Results robust to outlier handling (Δ < 0.02)
+2026-09-13 23:54:57,349 - INFO - 
+=== Sensitivity 5: Cross-Validation Scheme Comparison ===
+2026-09-13 23:56:03,619 - INFO -     depression 5-fold: 0.860 ± 0.001
+2026-09-13 23:57:52,857 - INFO -     depression 10-fold: 0.860 ± 0.003
+2026-09-14 00:00:42,556 - INFO -     depression Repeated 5-fold×3: 0.860
+2026-09-14 00:01:28,138 - INFO -     bipolar 5-fold: 0.902 ± 0.006
+2026-09-14 00:03:04,111 - INFO -     bipolar 10-fold: 0.902 ± 0.006
+2026-09-14 00:05:29,981 - INFO -     bipolar Repeated 5-fold×3: 0.902
+2026-09-14 00:06:10,880 - INFO -     anxiety 5-fold: 0.890 ± 0.004
+2026-09-14 00:07:21,857 - INFO -     anxiety 10-fold: 0.890 ± 0.006
+2026-09-14 00:09:21,900 - INFO -     anxiety Repeated 5-fold×3: 0.890
+2026-09-14 00:09:21,946 - INFO - 
+=== Sensitivity 6: Feature Set Variations ===
+2026-09-14 00:09:22,245 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 930 records
+2026-09-14 00:09:53,096 - INFO -     depression All (93): 0.860
+2026-09-14 00:09:55,032 - INFO -     depression Top-10: 0.836
+2026-09-14 00:10:00,243 - INFO -     depression Top-20: 0.838
+2026-09-14 00:10:08,023 - INFO -     depression Top-50: 0.847
+2026-09-14 00:10:10,197 - INFO -     depression PCA-10: 0.752
+2026-09-14 00:10:38,438 - INFO -     bipolar All (93): 0.902
+2026-09-14 00:10:39,668 - INFO -     bipolar Top-10: 0.876
+2026-09-14 00:10:41,891 - INFO -     bipolar Top-20: 0.879
+2026-09-14 00:10:47,791 - INFO -     bipolar Top-50: 0.897
+2026-09-14 00:10:49,271 - INFO -     bipolar PCA-10: 0.799
+2026-09-14 00:11:13,142 - INFO -     anxiety All (93): 0.890
+2026-09-14 00:11:14,422 - INFO -     anxiety Top-10: 0.873
+2026-09-14 00:11:16,414 - INFO -     anxiety Top-20: 0.875
+2026-09-14 00:11:25,140 - INFO -     anxiety Top-50: 0.883
+2026-09-14 00:11:27,083 - INFO -     anxiety PCA-10: 0.796
+2026-09-14 00:11:27,140 - INFO - 
+=== Sensitivity 7: Temporal Stability ===
+2026-09-14 00:11:27,140 - INFO -   Using time column: t0_date
+2026-09-14 00:11:27,466 - INFO -   Placeholder values: 0/505370 (0.0%)
+2026-09-14 00:11:27,537 - INFO -   patient: 89017/89017 with valid time (100.0%)
+2026-09-14 00:11:27,540 - INFO -     Sample: ['2022-11-09', '2019-01-03', '2020-01-19']
+2026-09-14 00:11:27,561 - INFO -   control: 416353/416353 with valid time (100.0%)
+2026-09-14 00:11:27,565 - INFO -     Sample: ['2022-10-27', '2021-12-10', '2021-07-31']
+2026-09-14 00:11:27,846 - INFO -   Time boundaries: ≤2020-04-05 | ≤2021-12-04 | >2021-12-04
+2026-09-14 00:11:27,846 - INFO -   Sample sizes: Early=166911, Mid=172004, Late=166455
+2026-09-14 00:11:27,860 - INFO -     Early: 40026 patients, 126885 controls
+2026-09-14 00:11:27,873 - INFO -     Mid: 25520 patients, 146484 controls
+2026-09-14 00:11:27,888 - INFO -     Late: 23471 patients, 142984 controls
+2026-09-14 00:12:01,266 - INFO -   Pearson r (early vs late): 0.9767 (p = 0.00e+00)
+2026-09-14 00:12:01,266 - INFO -   ICC: 0.9717
+2026-09-14 00:12:01,266 - INFO -   Mean absolute difference: 0.0758
+2026-09-14 00:12:01,266 - INFO -   Features with significant temporal trend: 271/500 (54.2%)
+2026-09-14 00:12:01,266 - INFO -     Increasing |g| over time: 172
+2026-09-14 00:12:01,266 - INFO -     Decreasing |g| over time: 99
+2026-09-14 00:12:01,275 - INFO -   Total time span: 5586 days (15.3 years)
+2026-09-14 00:12:01,514 - INFO - 
+=== Sensitivity 8: Permutation Test (n=500) ===
+2026-09-14 00:12:01,514 - INFO -   Minimum detectable p-value: 0.0020
+2026-09-14 00:12:01,514 - INFO -   Note: True p-values below 0.0020 will be reported as 0.0020
+2026-09-14 00:12:01,923 - INFO -   Disorder: depression
+2026-09-14 00:50:05,051 - INFO -     Permutation 100/500
+2026-09-14 01:39:24,420 - INFO -     Permutation 200/500
+2026-09-14 02:28:44,955 - INFO -     Permutation 300/500
+2026-09-14 03:16:15,785 - INFO -     Permutation 400/500
+2026-09-14 04:01:21,604 - INFO -     Permutation 500/500
+2026-09-14 04:01:21,605 - INFO -     Observed: 0.860, Null: 0.500 ± 0.003
+2026-09-14 04:01:21,605 - INFO -     p = 0.0020 (min detectable: 0.0020)
+2026-09-14 04:01:21,605 - INFO -     Z-equivalent: 114.5
+2026-09-14 04:01:21,605 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0020
+2026-09-14 04:01:21,605 - INFO -     Observed is 114.5σ above null mean
+2026-09-14 04:01:21,605 - INFO -   Disorder: bipolar
+2026-09-14 04:39:11,405 - INFO -     Permutation 100/500
+2026-09-14 05:16:12,923 - INFO -     Permutation 200/500
+2026-09-14 05:53:48,530 - INFO -     Permutation 300/500
+2026-09-14 06:32:49,829 - INFO -     Permutation 400/500
+2026-09-14 07:09:30,291 - INFO -     Permutation 500/500
+2026-09-14 07:09:30,292 - INFO -     Observed: 0.902, Null: 0.500 ± 0.005
+2026-09-14 07:09:30,292 - INFO -     p = 0.0020 (min detectable: 0.0020)
+2026-09-14 07:09:30,292 - INFO -     Z-equivalent: 73.4
+2026-09-14 07:09:30,292 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0020
+2026-09-14 07:09:30,292 - INFO -     Observed is 73.4σ above null mean
+2026-09-14 07:09:30,292 - INFO -   Disorder: anxiety
+2026-09-14 07:46:45,094 - INFO -     Permutation 100/500
+2026-09-14 08:24:37,720 - INFO -     Permutation 200/500
+2026-09-14 09:01:51,424 - INFO -     Permutation 300/500
+2026-09-14 09:39:59,716 - INFO -     Permutation 400/500
+2026-09-14 10:18:45,021 - INFO -     Permutation 500/500
+2026-09-14 10:18:45,022 - INFO -     Observed: 0.890, Null: 0.500 ± 0.005
+2026-09-14 10:18:45,022 - INFO -     p = 0.0020 (min detectable: 0.0020)
+2026-09-14 10:18:45,022 - INFO -     Z-equivalent: 84.2
+2026-09-14 10:18:45,022 - INFO -     ⚡ No null AUROC exceeded observed. True p << 0.0020
+2026-09-14 10:18:45,022 - INFO -     Observed is 84.2σ above null mean
+2026-09-14 10:18:45,066 - INFO - 
+=== Sensitivity 9: Effect Size Heterogeneity (I²) ===
+2026-09-14 10:18:45,314 - INFO -   Loaded effect sizes from effect_sizes_full.csv: 930 records
+2026-09-14 10:18:45,368 - INFO -   Heterogeneity classification:
+2026-09-14 10:18:45,368 - INFO -     high: 93 (100.0%)
+2026-09-14 10:18:45,369 - INFO -   Mean I²: 95.8%
+2026-09-14 10:18:45,369 - INFO -   Most heterogeneous:
+2026-09-14 10:18:45,369 - INFO -     anxiety_rate: I²=99.9%
+2026-09-14 10:18:45,369 - INFO -     sadness_rate: I²=99.9%
+2026-09-14 10:18:45,370 - INFO -     first_person_rate: I²=99.7%
+2026-09-14 10:18:45,370 - INFO -     negative_affect_rate: I²=99.5%
+2026-09-14 10:18:45,370 - INFO -     self_focus_index: I²=99.5%
+2026-09-14 10:18:45,506 - INFO - 
+============================================================
+2026-09-14 10:18:45,506 - INFO - SENSITIVITY ANALYSIS SUMMARY
+2026-09-14 10:18:45,506 - INFO - ============================================================
+2026-09-14 10:18:45,564 - INFO -   [✅ PASS] confound_adjustment: r = 0.989
+2026-09-14 10:18:45,564 - INFO -   [✅ PASS] permutation_test: All significant
+2026-09-14 10:18:45,564 - INFO -   [✅ PASS] temporal_stability: r = 0.977, ICC = 0.972
+2026-09-14 10:18:45,564 - INFO -   [📋 PASS_WITH_INTERPRETATION] heterogeneity: 100% high I² (expected: severity gradient), direction consistency = 1.00
+2026-09-14 10:18:45,564 - INFO - 
+  Overall: 4/4 passed (0 warning, 0 inconclusive)
+2026-09-14 10:18:45,564 - INFO - 
+  Note for manuscript (computed values):
+2026-09-14 10:18:45,564 - INFO -   High I² in the transdiagnostic analysis is EXPECTED and MEANINGFUL.
+2026-09-14 10:18:45,564 - INFO -   It reflects the severity gradient across disorders, not
+2026-09-14 10:18:45,564 - INFO -   methodological inconsistency.
+2026-09-14 10:18:45,564 - INFO -   Mean I² = 95.8%
+2026-09-14 10:18:45,564 - INFO -   Mean direction consistency = 1.00
+2026-09-14 10:18:45,564 - INFO -   Recommended phrasing: report the computed mean I² and direction
+2026-09-14 10:18:45,564 - INFO -   consistency; do not quote example effect sizes from logs.
+2026-09-14 10:18:45,609 - INFO - Saved to /path/to/project/module1_results/statistics/sensitivity_outlier_strategies.json
+2026-09-14 10:18:45,609 - INFO - 
+Saved to /path/to/project/module1_results/statistics/sensitivity_report.json
+2026-09-14 10:18:45,609 - INFO - ================================================================================
+2026-09-14 10:18:45,609 - INFO - SENSITIVITY ANALYSIS COMPLETE
+2026-09-14 10:18:45,609 - INFO - ================================================================================
+===== END s06 rc=0 Mon Sep 14 10:18:45 CST 2026 =====
+===== START s07 Mon Sep 14 10:18:45 CST 2026 =====
+2026-09-14 10:18:50,502 - INFO - ======================================================================
+2026-09-14 10:18:50,574 - INFO - PUBLICATION-QUALITY VISUALIZATION PIPELINE (v5.1 - Modular CLI)
+2026-09-14 10:18:50,574 - INFO - ======================================================================
+2026-09-14 10:18:50,575 - INFO - Targeted plots for execution: ['fig1', 'fig2', 'fig3', 'fig4', 'edfig1', 'edfig2', 'edfig3', 'edfig4', 'edfig5', 'edfig6', 'edfig7', 'edfig8']
+
+2026-09-14 10:18:50,575 - INFO - MAIN Fig 1: The Atlas...
+2026-09-14 10:18:52,096 - INFO - maxp pruned
+2026-09-14 10:18:52,108 - INFO - cmap pruned
+2026-09-14 10:18:52,113 - INFO - kern dropped
+2026-09-14 10:18:52,116 - INFO - post pruned
+2026-09-14 10:18:52,119 - INFO - FFTM dropped
+2026-09-14 10:18:52,123 - INFO - GPOS pruned
+2026-09-14 10:18:52,128 - INFO - GSUB pruned
+2026-09-14 10:18:52,134 - INFO - glyf pruned
+2026-09-14 10:18:52,138 - INFO - Added gid0 to subset
+2026-09-14 10:18:52,140 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:52,143 - INFO - Closing glyph list over 'GSUB': 45 glyphs before
+2026-09-14 10:18:52,146 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'O', 'P', 'R', 'S', 'T', 'a', 'b', 'bar', 'c', 'colon', 'd', 'e', 'f', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'u', 'v', 'x', 'y', 'z']
+2026-09-14 10:18:52,150 - INFO - Glyph IDs:   [0, 1, 2, 3, 16, 17, 20, 29, 36, 37, 38, 39, 40, 41, 43, 47, 50, 51, 53, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95]
+2026-09-14 10:18:52,155 - INFO - Closed glyph list over 'GSUB': 50 glyphs after
+2026-09-14 10:18:52,158 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'O', 'P', 'R', 'S', 'T', 'a', 'b', 'bar', 'c', 'colon', 'd', 'e', 'f', 'fi', 'fl', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y', 'z']
+2026-09-14 10:18:52,161 - INFO - Glyph IDs:   [0, 1, 2, 3, 16, 17, 20, 29, 36, 37, 38, 39, 40, 41, 43, 47, 50, 51, 53, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:52,164 - INFO - Closing glyph list over 'glyf': 50 glyphs before
+2026-09-14 10:18:52,167 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'O', 'P', 'R', 'S', 'T', 'a', 'b', 'bar', 'c', 'colon', 'd', 'e', 'f', 'fi', 'fl', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y', 'z']
+2026-09-14 10:18:52,171 - INFO - Glyph IDs:   [0, 1, 2, 3, 16, 17, 20, 29, 36, 37, 38, 39, 40, 41, 43, 47, 50, 51, 53, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:52,171 - INFO - Closed glyph list over 'glyf': 50 glyphs after
+2026-09-14 10:18:52,171 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'O', 'P', 'R', 'S', 'T', 'a', 'b', 'bar', 'c', 'colon', 'd', 'e', 'f', 'fi', 'fl', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y', 'z']
+2026-09-14 10:18:52,171 - INFO - Glyph IDs:   [0, 1, 2, 3, 16, 17, 20, 29, 36, 37, 38, 39, 40, 41, 43, 47, 50, 51, 53, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:52,172 - INFO - Retaining 50 glyphs
+2026-09-14 10:18:52,172 - INFO - head subsetting not needed
+2026-09-14 10:18:52,172 - INFO - hhea subsetting not needed
+2026-09-14 10:18:52,173 - INFO - maxp subsetting not needed
+2026-09-14 10:18:52,173 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:52,175 - INFO - hmtx subsetted
+2026-09-14 10:18:52,176 - INFO - cmap subsetted
+2026-09-14 10:18:52,176 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:52,176 - INFO - prep subsetting not needed
+2026-09-14 10:18:52,176 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:52,176 - INFO - loca subsetting not needed
+2026-09-14 10:18:52,176 - INFO - post subsetted
+2026-09-14 10:18:52,176 - INFO - gasp subsetting not needed
+2026-09-14 10:18:52,177 - INFO - GDEF subsetted
+2026-09-14 10:18:52,190 - INFO - GPOS subsetted
+2026-09-14 10:18:52,191 - INFO - GSUB subsetted
+2026-09-14 10:18:52,191 - INFO - name subsetting not needed
+2026-09-14 10:18:52,191 - INFO - glyf subsetted
+2026-09-14 10:18:52,191 - INFO - head pruned
+2026-09-14 10:18:52,192 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:18:52,192 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:52,192 - INFO - glyf pruned
+2026-09-14 10:18:52,192 - INFO - GDEF pruned
+2026-09-14 10:18:52,192 - INFO - GPOS pruned
+2026-09-14 10:18:52,192 - INFO - GSUB pruned
+2026-09-14 10:18:52,197 - INFO - name pruned
+2026-09-14 10:18:52,202 - INFO - maxp pruned
+2026-09-14 10:18:52,206 - INFO - cmap pruned
+2026-09-14 10:18:52,206 - INFO - kern dropped
+2026-09-14 10:18:52,206 - INFO - post pruned
+2026-09-14 10:18:52,206 - INFO - FFTM dropped
+2026-09-14 10:18:52,207 - INFO - GPOS pruned
+2026-09-14 10:18:52,209 - INFO - GSUB pruned
+2026-09-14 10:18:52,212 - INFO - glyf pruned
+2026-09-14 10:18:52,212 - INFO - Added gid0 to subset
+2026-09-14 10:18:52,212 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:52,212 - INFO - Closing glyph list over 'MATH': 35 glyphs before
+2026-09-14 10:18:52,212 - INFO - Glyph names: ['.notdef', '.null', 'C', 'H', 'L', 'N', 'P', 'S', 'a', 'c', 'd', 'e', 'f', 'five', 'g', 'greater', 'hyphen', 'i', 'l', 'less', 'm', 'n', 'nonmarkingreturn', 'o', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'space', 't', 'two', 'y', 'zero']
+2026-09-14 10:18:52,213 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 21, 24, 31, 33, 38, 43, 47, 49, 51, 54, 68, 70, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 92]
+2026-09-14 10:18:52,213 - INFO - Closed glyph list over 'MATH': 41 glyphs after
+2026-09-14 10:18:52,213 - INFO - Glyph names: ['.notdef', '.null', 'C', 'H', 'L', 'N', 'P', 'S', 'a', 'c', 'd', 'e', 'f', 'five', 'g', 'greater', 'hyphen', 'i', 'l', 'less', 'm', 'n', 'nonmarkingreturn', 'o', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'space', 't', 'two', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'y', 'zero']
+2026-09-14 10:18:52,213 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 21, 24, 31, 33, 38, 43, 47, 49, 51, 54, 68, 70, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 92, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:18:52,213 - INFO - Closing glyph list over 'GSUB': 41 glyphs before
+2026-09-14 10:18:52,214 - INFO - Glyph names: ['.notdef', '.null', 'C', 'H', 'L', 'N', 'P', 'S', 'a', 'c', 'd', 'e', 'f', 'five', 'g', 'greater', 'hyphen', 'i', 'l', 'less', 'm', 'n', 'nonmarkingreturn', 'o', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'space', 't', 'two', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'y', 'zero']
+2026-09-14 10:18:52,214 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 21, 24, 31, 33, 38, 43, 47, 49, 51, 54, 68, 70, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 92, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:18:52,216 - INFO - Closed glyph list over 'GSUB': 46 glyphs after
+2026-09-14 10:18:52,216 - INFO - Glyph names: ['.notdef', '.null', 'C', 'H', 'L', 'N', 'P', 'S', 'a', 'c', 'd', 'e', 'f', 'fi', 'five', 'fl', 'g', 'greater', 'hyphen', 'i', 'l', 'less', 'm', 'n', 'nonmarkingreturn', 'o', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'space', 't', 'two', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uniFB00', 'uniFB03', 'uniFB04', 'y', 'zero']
+2026-09-14 10:18:52,216 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 21, 24, 31, 33, 38, 43, 47, 49, 51, 54, 68, 70, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 92, 3506, 3507, 3508, 3509, 3510, 3511, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:52,216 - INFO - Closing glyph list over 'glyf': 46 glyphs before
+2026-09-14 10:18:52,216 - INFO - Glyph names: ['.notdef', '.null', 'C', 'H', 'L', 'N', 'P', 'S', 'a', 'c', 'd', 'e', 'f', 'fi', 'five', 'fl', 'g', 'greater', 'hyphen', 'i', 'l', 'less', 'm', 'n', 'nonmarkingreturn', 'o', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'space', 't', 'two', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uniFB00', 'uniFB03', 'uniFB04', 'y', 'zero']
+2026-09-14 10:18:52,216 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 21, 24, 31, 33, 38, 43, 47, 49, 51, 54, 68, 70, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 92, 3506, 3507, 3508, 3509, 3510, 3511, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:52,216 - INFO - Closed glyph list over 'glyf': 46 glyphs after
+2026-09-14 10:18:52,216 - INFO - Glyph names: ['.notdef', '.null', 'C', 'H', 'L', 'N', 'P', 'S', 'a', 'c', 'd', 'e', 'f', 'fi', 'five', 'fl', 'g', 'greater', 'hyphen', 'i', 'l', 'less', 'm', 'n', 'nonmarkingreturn', 'o', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'space', 't', 'two', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uniFB00', 'uniFB03', 'uniFB04', 'y', 'zero']
+2026-09-14 10:18:52,216 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 21, 24, 31, 33, 38, 43, 47, 49, 51, 54, 68, 70, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 92, 3506, 3507, 3508, 3509, 3510, 3511, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:52,217 - INFO - Retaining 46 glyphs
+2026-09-14 10:18:52,217 - INFO - head subsetting not needed
+2026-09-14 10:18:52,217 - INFO - hhea subsetting not needed
+2026-09-14 10:18:52,217 - INFO - maxp subsetting not needed
+2026-09-14 10:18:52,217 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:52,219 - INFO - hmtx subsetted
+2026-09-14 10:18:52,220 - INFO - cmap subsetted
+2026-09-14 10:18:52,220 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:52,220 - INFO - prep subsetting not needed
+2026-09-14 10:18:52,220 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:52,220 - INFO - loca subsetting not needed
+2026-09-14 10:18:52,220 - INFO - post subsetted
+2026-09-14 10:18:52,220 - INFO - gasp subsetting not needed
+2026-09-14 10:18:52,220 - INFO - MATH subsetted
+2026-09-14 10:18:52,221 - INFO - GDEF subsetted
+2026-09-14 10:18:52,301 - INFO - GPOS subsetted
+2026-09-14 10:18:52,302 - INFO - GSUB subsetted
+2026-09-14 10:18:52,302 - INFO - name subsetting not needed
+2026-09-14 10:18:52,303 - INFO - glyf subsetted
+2026-09-14 10:18:52,303 - INFO - head pruned
+2026-09-14 10:18:52,303 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:18:52,303 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:52,303 - INFO - glyf pruned
+2026-09-14 10:18:52,304 - INFO - GDEF pruned
+2026-09-14 10:18:52,304 - INFO - GPOS pruned
+2026-09-14 10:18:52,304 - INFO - GSUB pruned
+2026-09-14 10:18:52,307 - INFO - name pruned
+2026-09-14 10:18:53,014 - INFO -   Saved: main/fig1_atlas (pdf+png)
+2026-09-14 10:18:53,015 - INFO - MAIN Fig 2: p-Factor Evidence...
+2026-09-14 10:18:53,517 - INFO - maxp pruned
+2026-09-14 10:18:53,521 - INFO - cmap pruned
+2026-09-14 10:18:53,521 - INFO - kern dropped
+2026-09-14 10:18:53,521 - INFO - post pruned
+2026-09-14 10:18:53,521 - INFO - FFTM dropped
+2026-09-14 10:18:53,522 - INFO - GPOS pruned
+2026-09-14 10:18:53,524 - INFO - GSUB pruned
+2026-09-14 10:18:53,527 - INFO - glyf pruned
+2026-09-14 10:18:53,527 - INFO - Added gid0 to subset
+2026-09-14 10:18:53,527 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:53,527 - INFO - Closing glyph list over 'GSUB': 56 glyphs before
+2026-09-14 10:18:53,527 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'N', 'O', 'P', 'S', 'T', 'a', 'b', 'bar', 'c', 'colon', 'comma', 'd', 'e', 'eight', 'f', 'four', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'percent', 'period', 'q', 'r', 's', 'six', 'space', 't', 'three', 'two', 'u', 'v', 'w', 'x', 'y', 'z']
+2026-09-14 10:18:53,528 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 15, 16, 17, 20, 21, 22, 23, 25, 27, 28, 29, 36, 37, 38, 39, 40, 41, 42, 43, 44, 49, 50, 51, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 95]
+2026-09-14 10:18:53,530 - INFO - Closed glyph list over 'GSUB': 61 glyphs after
+2026-09-14 10:18:53,530 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'N', 'O', 'P', 'S', 'T', 'a', 'b', 'bar', 'c', 'colon', 'comma', 'd', 'e', 'eight', 'f', 'fi', 'fl', 'four', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'percent', 'period', 'q', 'r', 's', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'w', 'x', 'y', 'z']
+2026-09-14 10:18:53,530 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 15, 16, 17, 20, 21, 22, 23, 25, 27, 28, 29, 36, 37, 38, 39, 40, 41, 42, 43, 44, 49, 50, 51, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:53,530 - INFO - Closing glyph list over 'glyf': 61 glyphs before
+2026-09-14 10:18:53,530 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'N', 'O', 'P', 'S', 'T', 'a', 'b', 'bar', 'c', 'colon', 'comma', 'd', 'e', 'eight', 'f', 'fi', 'fl', 'four', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'percent', 'period', 'q', 'r', 's', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'w', 'x', 'y', 'z']
+2026-09-14 10:18:53,530 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 15, 16, 17, 20, 21, 22, 23, 25, 27, 28, 29, 36, 37, 38, 39, 40, 41, 42, 43, 44, 49, 50, 51, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:53,530 - INFO - Closed glyph list over 'glyf': 61 glyphs after
+2026-09-14 10:18:53,530 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'N', 'O', 'P', 'S', 'T', 'a', 'b', 'bar', 'c', 'colon', 'comma', 'd', 'e', 'eight', 'f', 'fi', 'fl', 'four', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'percent', 'period', 'q', 'r', 's', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'w', 'x', 'y', 'z']
+2026-09-14 10:18:53,530 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 15, 16, 17, 20, 21, 22, 23, 25, 27, 28, 29, 36, 37, 38, 39, 40, 41, 42, 43, 44, 49, 50, 51, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:53,531 - INFO - Retaining 61 glyphs
+2026-09-14 10:18:53,531 - INFO - head subsetting not needed
+2026-09-14 10:18:53,531 - INFO - hhea subsetting not needed
+2026-09-14 10:18:53,531 - INFO - maxp subsetting not needed
+2026-09-14 10:18:53,531 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:53,533 - INFO - hmtx subsetted
+2026-09-14 10:18:53,534 - INFO - cmap subsetted
+2026-09-14 10:18:53,534 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:53,534 - INFO - prep subsetting not needed
+2026-09-14 10:18:53,534 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:53,534 - INFO - loca subsetting not needed
+2026-09-14 10:18:53,534 - INFO - post subsetted
+2026-09-14 10:18:53,534 - INFO - gasp subsetting not needed
+2026-09-14 10:18:53,536 - INFO - GDEF subsetted
+2026-09-14 10:18:53,547 - INFO - GPOS subsetted
+2026-09-14 10:18:53,548 - INFO - GSUB subsetted
+2026-09-14 10:18:53,548 - INFO - name subsetting not needed
+2026-09-14 10:18:53,549 - INFO - glyf subsetted
+2026-09-14 10:18:53,549 - INFO - head pruned
+2026-09-14 10:18:53,549 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:18:53,549 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:53,549 - INFO - glyf pruned
+2026-09-14 10:18:53,549 - INFO - GDEF pruned
+2026-09-14 10:18:53,549 - INFO - GPOS pruned
+2026-09-14 10:18:53,550 - INFO - GSUB pruned
+2026-09-14 10:18:53,555 - INFO - name pruned
+2026-09-14 10:18:53,560 - INFO - maxp pruned
+2026-09-14 10:18:53,564 - INFO - cmap pruned
+2026-09-14 10:18:53,564 - INFO - kern dropped
+2026-09-14 10:18:53,564 - INFO - post pruned
+2026-09-14 10:18:53,564 - INFO - FFTM dropped
+2026-09-14 10:18:53,565 - INFO - GPOS pruned
+2026-09-14 10:18:53,567 - INFO - GSUB pruned
+2026-09-14 10:18:53,569 - INFO - glyf pruned
+2026-09-14 10:18:53,570 - INFO - Added gid0 to subset
+2026-09-14 10:18:53,570 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:53,570 - INFO - Closing glyph list over 'MATH': 59 glyphs before
+2026-09-14 10:18:53,570 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'S', 'a', 'arrowright', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'f', 'five', 'four', 'g', 'greater', 'h', 'hyphen', 'i', 'l', 'less', 'm', 'multiply', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'plus', 'quotesingle', 'r', 's', 'seven', 'six', 'slash', 'space', 't', 'three', 'two', 'u', 'v', 'w', 'x', 'zero']
+2026-09-14 10:18:53,570 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 31, 32, 33, 38, 39, 40, 41, 43, 44, 47, 48, 49, 50, 51, 54, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 95, 153, 3100]
+2026-09-14 10:18:53,571 - INFO - Closed glyph list over 'MATH': 66 glyphs after
+2026-09-14 10:18:53,571 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'S', 'a', 'arrowright', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'f', 'five', 'four', 'g', 'greater', 'h', 'hyphen', 'i', 'l', 'less', 'm', 'multiply', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'plus', 'quotesingle', 'r', 's', 'seven', 'six', 'slash', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uni27F6', 'v', 'w', 'x', 'zero']
+2026-09-14 10:18:53,571 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 31, 32, 33, 38, 39, 40, 41, 43, 44, 47, 48, 49, 50, 51, 54, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 95, 153, 3100, 3506, 3507, 3508, 3509, 3510, 3511, 4177]
+2026-09-14 10:18:53,571 - INFO - Closing glyph list over 'GSUB': 66 glyphs before
+2026-09-14 10:18:53,571 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'S', 'a', 'arrowright', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'f', 'five', 'four', 'g', 'greater', 'h', 'hyphen', 'i', 'l', 'less', 'm', 'multiply', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'plus', 'quotesingle', 'r', 's', 'seven', 'six', 'slash', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uni27F6', 'v', 'w', 'x', 'zero']
+2026-09-14 10:18:53,571 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 31, 32, 33, 38, 39, 40, 41, 43, 44, 47, 48, 49, 50, 51, 54, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 95, 153, 3100, 3506, 3507, 3508, 3509, 3510, 3511, 4177]
+2026-09-14 10:18:53,574 - INFO - Closed glyph list over 'GSUB': 71 glyphs after
+2026-09-14 10:18:53,574 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'S', 'a', 'arrowright', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'f', 'fi', 'five', 'fl', 'four', 'g', 'greater', 'h', 'hyphen', 'i', 'l', 'less', 'm', 'multiply', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'plus', 'quotesingle', 'r', 's', 'seven', 'six', 'slash', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uni27F6', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'w', 'x', 'zero']
+2026-09-14 10:18:53,574 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 31, 32, 33, 38, 39, 40, 41, 43, 44, 47, 48, 49, 50, 51, 54, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 95, 153, 3100, 3506, 3507, 3508, 3509, 3510, 3511, 4177, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:53,574 - INFO - Closing glyph list over 'glyf': 71 glyphs before
+2026-09-14 10:18:53,574 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'S', 'a', 'arrowright', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'f', 'fi', 'five', 'fl', 'four', 'g', 'greater', 'h', 'hyphen', 'i', 'l', 'less', 'm', 'multiply', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'plus', 'quotesingle', 'r', 's', 'seven', 'six', 'slash', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uni27F6', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'w', 'x', 'zero']
+2026-09-14 10:18:53,574 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 31, 32, 33, 38, 39, 40, 41, 43, 44, 47, 48, 49, 50, 51, 54, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 95, 153, 3100, 3506, 3507, 3508, 3509, 3510, 3511, 4177, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:53,574 - INFO - Closed glyph list over 'glyf': 71 glyphs after
+2026-09-14 10:18:53,574 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'S', 'a', 'arrowright', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'f', 'fi', 'five', 'fl', 'four', 'g', 'greater', 'h', 'hyphen', 'i', 'l', 'less', 'm', 'multiply', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'plus', 'quotesingle', 'r', 's', 'seven', 'six', 'slash', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uni27F6', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'w', 'x', 'zero']
+2026-09-14 10:18:53,574 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 31, 32, 33, 38, 39, 40, 41, 43, 44, 47, 48, 49, 50, 51, 54, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 95, 153, 3100, 3506, 3507, 3508, 3509, 3510, 3511, 4177, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:53,574 - INFO - Retaining 71 glyphs
+2026-09-14 10:18:53,574 - INFO - head subsetting not needed
+2026-09-14 10:18:53,574 - INFO - hhea subsetting not needed
+2026-09-14 10:18:53,574 - INFO - maxp subsetting not needed
+2026-09-14 10:18:53,575 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:53,576 - INFO - hmtx subsetted
+2026-09-14 10:18:53,577 - INFO - cmap subsetted
+2026-09-14 10:18:53,577 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:53,577 - INFO - prep subsetting not needed
+2026-09-14 10:18:53,577 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:53,577 - INFO - loca subsetting not needed
+2026-09-14 10:18:53,577 - INFO - post subsetted
+2026-09-14 10:18:53,577 - INFO - gasp subsetting not needed
+2026-09-14 10:18:53,577 - INFO - MATH subsetted
+2026-09-14 10:18:53,578 - INFO - GDEF subsetted
+2026-09-14 10:18:53,590 - INFO - GPOS subsetted
+2026-09-14 10:18:53,591 - INFO - GSUB subsetted
+2026-09-14 10:18:53,591 - INFO - name subsetting not needed
+2026-09-14 10:18:53,592 - INFO - glyf subsetted
+2026-09-14 10:18:53,592 - INFO - head pruned
+2026-09-14 10:18:53,592 - INFO - OS/2 Unicode ranges pruned: [0, 1, 37]
+2026-09-14 10:18:53,592 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:53,593 - INFO - glyf pruned
+2026-09-14 10:18:53,593 - INFO - GDEF pruned
+2026-09-14 10:18:53,593 - INFO - GPOS pruned
+2026-09-14 10:18:53,593 - INFO - GSUB pruned
+2026-09-14 10:18:53,599 - INFO - name pruned
+2026-09-14 10:18:54,042 - INFO -   Saved: main/fig2_pfactor (pdf+png)
+2026-09-14 10:18:54,043 - INFO - MAIN Fig 3: Detectability...
+2026-09-14 10:18:54,684 - INFO - maxp pruned
+2026-09-14 10:18:54,688 - INFO - cmap pruned
+2026-09-14 10:18:54,688 - INFO - kern dropped
+2026-09-14 10:18:54,688 - INFO - post pruned
+2026-09-14 10:18:54,688 - INFO - FFTM dropped
+2026-09-14 10:18:54,689 - INFO - GPOS pruned
+2026-09-14 10:18:54,691 - INFO - GSUB pruned
+2026-09-14 10:18:54,694 - INFO - glyf pruned
+2026-09-14 10:18:54,695 - INFO - Added gid0 to subset
+2026-09-14 10:18:54,695 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:54,695 - INFO - Closing glyph list over 'GSUB': 56 glyphs before
+2026-09-14 10:18:54,695 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'O', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'f', 'five', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'plus', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'v', 'w', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:54,695 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 43, 50, 51, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92, 93, 95]
+2026-09-14 10:18:54,697 - INFO - Closed glyph list over 'GSUB': 61 glyphs after
+2026-09-14 10:18:54,697 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'O', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'f', 'fi', 'five', 'fl', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'plus', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'w', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:54,697 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 43, 50, 51, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:54,697 - INFO - Closing glyph list over 'glyf': 61 glyphs before
+2026-09-14 10:18:54,697 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'O', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'f', 'fi', 'five', 'fl', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'plus', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'w', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:54,698 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 43, 50, 51, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:54,698 - INFO - Closed glyph list over 'glyf': 61 glyphs after
+2026-09-14 10:18:54,698 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'O', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'f', 'fi', 'five', 'fl', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'plus', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'w', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:54,698 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 43, 50, 51, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:54,698 - INFO - Retaining 61 glyphs
+2026-09-14 10:18:54,698 - INFO - head subsetting not needed
+2026-09-14 10:18:54,698 - INFO - hhea subsetting not needed
+2026-09-14 10:18:54,698 - INFO - maxp subsetting not needed
+2026-09-14 10:18:54,698 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:54,700 - INFO - hmtx subsetted
+2026-09-14 10:18:54,701 - INFO - cmap subsetted
+2026-09-14 10:18:54,701 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:54,701 - INFO - prep subsetting not needed
+2026-09-14 10:18:54,701 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:54,701 - INFO - loca subsetting not needed
+2026-09-14 10:18:54,701 - INFO - post subsetted
+2026-09-14 10:18:54,701 - INFO - gasp subsetting not needed
+2026-09-14 10:18:54,702 - INFO - GDEF subsetted
+2026-09-14 10:18:54,712 - INFO - GPOS subsetted
+2026-09-14 10:18:54,713 - INFO - GSUB subsetted
+2026-09-14 10:18:54,713 - INFO - name subsetting not needed
+2026-09-14 10:18:54,714 - INFO - glyf subsetted
+2026-09-14 10:18:54,714 - INFO - head pruned
+2026-09-14 10:18:54,714 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:18:54,714 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:54,715 - INFO - glyf pruned
+2026-09-14 10:18:54,715 - INFO - GDEF pruned
+2026-09-14 10:18:54,715 - INFO - GPOS pruned
+2026-09-14 10:18:54,715 - INFO - GSUB pruned
+2026-09-14 10:18:54,720 - INFO - name pruned
+2026-09-14 10:18:54,725 - INFO - maxp pruned
+2026-09-14 10:18:54,729 - INFO - cmap pruned
+2026-09-14 10:18:54,729 - INFO - kern dropped
+2026-09-14 10:18:54,729 - INFO - post pruned
+2026-09-14 10:18:54,729 - INFO - FFTM dropped
+2026-09-14 10:18:54,730 - INFO - GPOS pruned
+2026-09-14 10:18:54,732 - INFO - GSUB pruned
+2026-09-14 10:18:54,735 - INFO - glyf pruned
+2026-09-14 10:18:54,735 - INFO - Added gid0 to subset
+2026-09-14 10:18:54,735 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:54,735 - INFO - Closing glyph list over 'MATH': 36 glyphs before
+2026-09-14 10:18:54,735 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'O', 'R', 'S', 'T', 'U', 'a', 'c', 'e', 'eight', 'emdash', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'v', 'y', 'zero']
+2026-09-14 10:18:54,736 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 36, 38, 39, 50, 53, 54, 55, 56, 68, 70, 72, 76, 79, 81, 82, 85, 86, 87, 89, 92, 2806]
+2026-09-14 10:18:54,736 - INFO - Closed glyph list over 'MATH': 36 glyphs after
+2026-09-14 10:18:54,736 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'O', 'R', 'S', 'T', 'U', 'a', 'c', 'e', 'eight', 'emdash', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'v', 'y', 'zero']
+2026-09-14 10:18:54,736 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 36, 38, 39, 50, 53, 54, 55, 56, 68, 70, 72, 76, 79, 81, 82, 85, 86, 87, 89, 92, 2806]
+2026-09-14 10:18:54,736 - INFO - Closing glyph list over 'GSUB': 36 glyphs before
+2026-09-14 10:18:54,736 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'O', 'R', 'S', 'T', 'U', 'a', 'c', 'e', 'eight', 'emdash', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'v', 'y', 'zero']
+2026-09-14 10:18:54,736 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 36, 38, 39, 50, 53, 54, 55, 56, 68, 70, 72, 76, 79, 81, 82, 85, 86, 87, 89, 92, 2806]
+2026-09-14 10:18:54,738 - INFO - Closed glyph list over 'GSUB': 36 glyphs after
+2026-09-14 10:18:54,738 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'O', 'R', 'S', 'T', 'U', 'a', 'c', 'e', 'eight', 'emdash', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'v', 'y', 'zero']
+2026-09-14 10:18:54,739 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 36, 38, 39, 50, 53, 54, 55, 56, 68, 70, 72, 76, 79, 81, 82, 85, 86, 87, 89, 92, 2806]
+2026-09-14 10:18:54,739 - INFO - Closing glyph list over 'glyf': 36 glyphs before
+2026-09-14 10:18:54,739 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'O', 'R', 'S', 'T', 'U', 'a', 'c', 'e', 'eight', 'emdash', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'v', 'y', 'zero']
+2026-09-14 10:18:54,739 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 36, 38, 39, 50, 53, 54, 55, 56, 68, 70, 72, 76, 79, 81, 82, 85, 86, 87, 89, 92, 2806]
+2026-09-14 10:18:54,739 - INFO - Closed glyph list over 'glyf': 36 glyphs after
+2026-09-14 10:18:54,739 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'O', 'R', 'S', 'T', 'U', 'a', 'c', 'e', 'eight', 'emdash', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'v', 'y', 'zero']
+2026-09-14 10:18:54,739 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 36, 38, 39, 50, 53, 54, 55, 56, 68, 70, 72, 76, 79, 81, 82, 85, 86, 87, 89, 92, 2806]
+2026-09-14 10:18:54,739 - INFO - Retaining 36 glyphs
+2026-09-14 10:18:54,739 - INFO - head subsetting not needed
+2026-09-14 10:18:54,739 - INFO - hhea subsetting not needed
+2026-09-14 10:18:54,739 - INFO - maxp subsetting not needed
+2026-09-14 10:18:54,739 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:54,741 - INFO - hmtx subsetted
+2026-09-14 10:18:54,742 - INFO - cmap subsetted
+2026-09-14 10:18:54,742 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:54,742 - INFO - prep subsetting not needed
+2026-09-14 10:18:54,742 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:54,742 - INFO - loca subsetting not needed
+2026-09-14 10:18:54,742 - INFO - post subsetted
+2026-09-14 10:18:54,742 - INFO - gasp subsetting not needed
+2026-09-14 10:18:54,742 - INFO - MATH subsetted
+2026-09-14 10:18:54,743 - INFO - GDEF subsetted
+2026-09-14 10:18:54,754 - INFO - GPOS subsetted
+2026-09-14 10:18:54,755 - INFO - GSUB subsetted
+2026-09-14 10:18:54,755 - INFO - name subsetting not needed
+2026-09-14 10:18:54,755 - INFO - glyf subsetted
+2026-09-14 10:18:54,755 - INFO - head pruned
+2026-09-14 10:18:54,756 - INFO - OS/2 Unicode ranges pruned: [0, 31]
+2026-09-14 10:18:54,756 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:54,756 - INFO - glyf pruned
+2026-09-14 10:18:54,756 - INFO - GDEF pruned
+2026-09-14 10:18:54,756 - INFO - GPOS pruned
+2026-09-14 10:18:54,756 - INFO - GSUB pruned
+2026-09-14 10:18:54,760 - INFO - name pruned
+2026-09-14 10:18:55,358 - INFO -   Saved: main/fig3_detectability (pdf+png)
+2026-09-14 10:18:55,358 - INFO - MAIN Fig 4: Specificity Paradox...
+2026-09-14 10:18:55,898 - INFO - maxp pruned
+2026-09-14 10:18:55,903 - INFO - cmap pruned
+2026-09-14 10:18:55,903 - INFO - kern dropped
+2026-09-14 10:18:55,903 - INFO - post pruned
+2026-09-14 10:18:55,903 - INFO - FFTM dropped
+2026-09-14 10:18:55,904 - INFO - GPOS pruned
+2026-09-14 10:18:55,906 - INFO - GSUB pruned
+2026-09-14 10:18:55,909 - INFO - glyf pruned
+2026-09-14 10:18:55,909 - INFO - Added gid0 to subset
+2026-09-14 10:18:55,909 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:55,909 - INFO - Closing glyph list over 'GSUB': 45 glyphs before
+2026-09-14 10:18:55,909 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'F', 'H', 'L', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'colon', 'comma', 'd', 'e', 'f', 'five', 'four', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'three', 'two', 'u', 'w', 'x', 'y']
+2026-09-14 10:18:55,910 - INFO - Glyph IDs:   [0, 1, 2, 3, 15, 17, 20, 21, 22, 23, 24, 29, 36, 37, 38, 39, 41, 43, 47, 51, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 90, 91, 92, 95]
+2026-09-14 10:18:55,912 - INFO - Closed glyph list over 'GSUB': 50 glyphs after
+2026-09-14 10:18:55,912 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'F', 'H', 'L', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'colon', 'comma', 'd', 'e', 'f', 'fi', 'five', 'fl', 'four', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'w', 'x', 'y']
+2026-09-14 10:18:55,912 - INFO - Glyph IDs:   [0, 1, 2, 3, 15, 17, 20, 21, 22, 23, 24, 29, 36, 37, 38, 39, 41, 43, 47, 51, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 90, 91, 92, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:55,912 - INFO - Closing glyph list over 'glyf': 50 glyphs before
+2026-09-14 10:18:55,912 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'F', 'H', 'L', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'colon', 'comma', 'd', 'e', 'f', 'fi', 'five', 'fl', 'four', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'w', 'x', 'y']
+2026-09-14 10:18:55,912 - INFO - Glyph IDs:   [0, 1, 2, 3, 15, 17, 20, 21, 22, 23, 24, 29, 36, 37, 38, 39, 41, 43, 47, 51, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 90, 91, 92, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:55,912 - INFO - Closed glyph list over 'glyf': 50 glyphs after
+2026-09-14 10:18:55,912 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'F', 'H', 'L', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'colon', 'comma', 'd', 'e', 'f', 'fi', 'five', 'fl', 'four', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'w', 'x', 'y']
+2026-09-14 10:18:55,912 - INFO - Glyph IDs:   [0, 1, 2, 3, 15, 17, 20, 21, 22, 23, 24, 29, 36, 37, 38, 39, 41, 43, 47, 51, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 90, 91, 92, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:55,912 - INFO - Retaining 50 glyphs
+2026-09-14 10:18:55,913 - INFO - head subsetting not needed
+2026-09-14 10:18:55,913 - INFO - hhea subsetting not needed
+2026-09-14 10:18:55,913 - INFO - maxp subsetting not needed
+2026-09-14 10:18:55,913 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:55,979 - INFO - hmtx subsetted
+2026-09-14 10:18:55,980 - INFO - cmap subsetted
+2026-09-14 10:18:55,980 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:55,980 - INFO - prep subsetting not needed
+2026-09-14 10:18:55,980 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:55,980 - INFO - loca subsetting not needed
+2026-09-14 10:18:55,980 - INFO - post subsetted
+2026-09-14 10:18:55,980 - INFO - gasp subsetting not needed
+2026-09-14 10:18:55,982 - INFO - GDEF subsetted
+2026-09-14 10:18:55,992 - INFO - GPOS subsetted
+2026-09-14 10:18:55,993 - INFO - GSUB subsetted
+2026-09-14 10:18:55,993 - INFO - name subsetting not needed
+2026-09-14 10:18:55,994 - INFO - glyf subsetted
+2026-09-14 10:18:55,994 - INFO - head pruned
+2026-09-14 10:18:55,995 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:18:55,995 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:55,995 - INFO - glyf pruned
+2026-09-14 10:18:55,995 - INFO - GDEF pruned
+2026-09-14 10:18:55,995 - INFO - GPOS pruned
+2026-09-14 10:18:55,995 - INFO - GSUB pruned
+2026-09-14 10:18:55,999 - INFO - name pruned
+2026-09-14 10:18:56,004 - INFO - maxp pruned
+2026-09-14 10:18:56,007 - INFO - cmap pruned
+2026-09-14 10:18:56,007 - INFO - kern dropped
+2026-09-14 10:18:56,007 - INFO - post pruned
+2026-09-14 10:18:56,007 - INFO - FFTM dropped
+2026-09-14 10:18:56,008 - INFO - GPOS pruned
+2026-09-14 10:18:56,009 - INFO - GSUB pruned
+2026-09-14 10:18:56,012 - INFO - glyf pruned
+2026-09-14 10:18:56,012 - INFO - Added gid0 to subset
+2026-09-14 10:18:56,012 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:56,012 - INFO - Closing glyph list over 'GSUB': 33 glyphs before
+2026-09-14 10:18:56,012 - INFO - Glyph names: ['.notdef', '.null', 'A', 'D', 'Q', 'S', 'a', 'arrowright', 'c', 'd', 'e', 'f', 'greater', 'i', 'l', 'less', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'period', 'q', 'r', 's', 'space', 't', 'two', 'u', 'v', 'y', 'zero']
+2026-09-14 10:18:56,013 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 17, 19, 21, 31, 33, 36, 39, 52, 54, 68, 70, 71, 72, 73, 76, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 92, 2852]
+2026-09-14 10:18:56,014 - INFO - Closed glyph list over 'GSUB': 38 glyphs after
+2026-09-14 10:18:56,014 - INFO - Glyph names: ['.notdef', '.null', 'A', 'D', 'Q', 'S', 'a', 'arrowright', 'c', 'd', 'e', 'f', 'fi', 'fl', 'greater', 'i', 'l', 'less', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'period', 'q', 'r', 's', 'space', 't', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'y', 'zero']
+2026-09-14 10:18:56,014 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 17, 19, 21, 31, 33, 36, 39, 52, 54, 68, 70, 71, 72, 73, 76, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 92, 2852, 4731, 4732, 4733, 4734, 4735]
+2026-09-14 10:18:56,014 - INFO - Closing glyph list over 'glyf': 38 glyphs before
+2026-09-14 10:18:56,014 - INFO - Glyph names: ['.notdef', '.null', 'A', 'D', 'Q', 'S', 'a', 'arrowright', 'c', 'd', 'e', 'f', 'fi', 'fl', 'greater', 'i', 'l', 'less', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'period', 'q', 'r', 's', 'space', 't', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'y', 'zero']
+2026-09-14 10:18:56,014 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 17, 19, 21, 31, 33, 36, 39, 52, 54, 68, 70, 71, 72, 73, 76, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 92, 2852, 4731, 4732, 4733, 4734, 4735]
+2026-09-14 10:18:56,014 - INFO - Closed glyph list over 'glyf': 38 glyphs after
+2026-09-14 10:18:56,014 - INFO - Glyph names: ['.notdef', '.null', 'A', 'D', 'Q', 'S', 'a', 'arrowright', 'c', 'd', 'e', 'f', 'fi', 'fl', 'greater', 'i', 'l', 'less', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'period', 'q', 'r', 's', 'space', 't', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'y', 'zero']
+2026-09-14 10:18:56,015 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 17, 19, 21, 31, 33, 36, 39, 52, 54, 68, 70, 71, 72, 73, 76, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 92, 2852, 4731, 4732, 4733, 4734, 4735]
+2026-09-14 10:18:56,015 - INFO - Retaining 38 glyphs
+2026-09-14 10:18:56,015 - INFO - head subsetting not needed
+2026-09-14 10:18:56,015 - INFO - hhea subsetting not needed
+2026-09-14 10:18:56,015 - INFO - maxp subsetting not needed
+2026-09-14 10:18:56,015 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:56,016 - INFO - hmtx subsetted
+2026-09-14 10:18:56,017 - INFO - cmap subsetted
+2026-09-14 10:18:56,017 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:56,017 - INFO - prep subsetting not needed
+2026-09-14 10:18:56,017 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:56,017 - INFO - loca subsetting not needed
+2026-09-14 10:18:56,017 - INFO - post subsetted
+2026-09-14 10:18:56,017 - INFO - gasp subsetting not needed
+2026-09-14 10:18:56,018 - INFO - GDEF subsetted
+2026-09-14 10:18:56,025 - INFO - GPOS subsetted
+2026-09-14 10:18:56,026 - INFO - GSUB subsetted
+2026-09-14 10:18:56,026 - INFO - name subsetting not needed
+2026-09-14 10:18:56,027 - INFO - glyf subsetted
+2026-09-14 10:18:56,027 - INFO - head pruned
+2026-09-14 10:18:56,027 - INFO - OS/2 Unicode ranges pruned: [0, 37]
+2026-09-14 10:18:56,027 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:56,027 - INFO - glyf pruned
+2026-09-14 10:18:56,027 - INFO - GDEF pruned
+2026-09-14 10:18:56,028 - INFO - GPOS pruned
+2026-09-14 10:18:56,028 - INFO - GSUB pruned
+2026-09-14 10:18:56,030 - INFO - name pruned
+2026-09-14 10:18:56,034 - INFO - maxp pruned
+2026-09-14 10:18:56,038 - INFO - cmap pruned
+2026-09-14 10:18:56,039 - INFO - kern dropped
+2026-09-14 10:18:56,039 - INFO - post pruned
+2026-09-14 10:18:56,039 - INFO - FFTM dropped
+2026-09-14 10:18:56,039 - INFO - GPOS pruned
+2026-09-14 10:18:56,041 - INFO - GSUB pruned
+2026-09-14 10:18:56,044 - INFO - glyf pruned
+2026-09-14 10:18:56,044 - INFO - Added gid0 to subset
+2026-09-14 10:18:56,044 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:56,045 - INFO - Closing glyph list over 'MATH': 61 glyphs before
+2026-09-14 10:18:56,045 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'endash', 'f', 'five', 'four', 'g', 'greaterequal', 'h', 'hyphen', 'i', 'k', 'l', 'lessequal', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:56,045 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 40, 41, 43, 47, 48, 49, 50, 51, 53, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 2805, 3310, 3311]
+2026-09-14 10:18:56,045 - INFO - Closed glyph list over 'MATH': 67 glyphs after
+2026-09-14 10:18:56,045 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'endash', 'f', 'five', 'four', 'g', 'greaterequal', 'h', 'hyphen', 'i', 'k', 'l', 'lessequal', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:56,045 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 40, 41, 43, 47, 48, 49, 50, 51, 53, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 2805, 3310, 3311, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:18:56,046 - INFO - Closing glyph list over 'GSUB': 67 glyphs before
+2026-09-14 10:18:56,046 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'endash', 'f', 'five', 'four', 'g', 'greaterequal', 'h', 'hyphen', 'i', 'k', 'l', 'lessequal', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:56,046 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 40, 41, 43, 47, 48, 49, 50, 51, 53, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 2805, 3310, 3311, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:18:56,047 - INFO - Closed glyph list over 'GSUB': 72 glyphs after
+2026-09-14 10:18:56,048 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'endash', 'f', 'fi', 'five', 'fl', 'four', 'g', 'greaterequal', 'h', 'hyphen', 'i', 'k', 'l', 'lessequal', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:56,048 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 40, 41, 43, 47, 48, 49, 50, 51, 53, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 2805, 3310, 3311, 3506, 3507, 3508, 3509, 3510, 3511, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:56,048 - INFO - Closing glyph list over 'glyf': 72 glyphs before
+2026-09-14 10:18:56,048 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'endash', 'f', 'fi', 'five', 'fl', 'four', 'g', 'greaterequal', 'h', 'hyphen', 'i', 'k', 'l', 'lessequal', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:56,048 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 40, 41, 43, 47, 48, 49, 50, 51, 53, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 2805, 3310, 3311, 3506, 3507, 3508, 3509, 3510, 3511, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:56,048 - INFO - Closed glyph list over 'glyf': 72 glyphs after
+2026-09-14 10:18:56,048 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'endash', 'f', 'fi', 'five', 'fl', 'four', 'g', 'greaterequal', 'h', 'hyphen', 'i', 'k', 'l', 'lessequal', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'period', 'quotesingle', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:56,048 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 40, 41, 43, 47, 48, 49, 50, 51, 53, 54, 55, 56, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 2805, 3310, 3311, 3506, 3507, 3508, 3509, 3510, 3511, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:56,048 - INFO - Retaining 72 glyphs
+2026-09-14 10:18:56,048 - INFO - head subsetting not needed
+2026-09-14 10:18:56,048 - INFO - hhea subsetting not needed
+2026-09-14 10:18:56,048 - INFO - maxp subsetting not needed
+2026-09-14 10:18:56,048 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:56,050 - INFO - hmtx subsetted
+2026-09-14 10:18:56,051 - INFO - cmap subsetted
+2026-09-14 10:18:56,051 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:56,051 - INFO - prep subsetting not needed
+2026-09-14 10:18:56,051 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:56,051 - INFO - loca subsetting not needed
+2026-09-14 10:18:56,051 - INFO - post subsetted
+2026-09-14 10:18:56,051 - INFO - gasp subsetting not needed
+2026-09-14 10:18:56,051 - INFO - MATH subsetted
+2026-09-14 10:18:56,052 - INFO - GDEF subsetted
+2026-09-14 10:18:56,065 - INFO - GPOS subsetted
+2026-09-14 10:18:56,066 - INFO - GSUB subsetted
+2026-09-14 10:18:56,066 - INFO - name subsetting not needed
+2026-09-14 10:18:56,067 - INFO - glyf subsetted
+2026-09-14 10:18:56,067 - INFO - head pruned
+2026-09-14 10:18:56,067 - INFO - OS/2 Unicode ranges pruned: [0, 31, 38]
+2026-09-14 10:18:56,067 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:56,067 - INFO - glyf pruned
+2026-09-14 10:18:56,067 - INFO - GDEF pruned
+2026-09-14 10:18:56,068 - INFO - GPOS pruned
+2026-09-14 10:18:56,068 - INFO - GSUB pruned
+2026-09-14 10:18:56,075 - INFO - name pruned
+2026-09-14 10:18:56,422 - INFO -   Saved: main/fig4_specificity (pdf+png, fixed canvas)
+2026-09-14 10:18:56,422 - INFO - ED Fig 1: Factor Details...
+2026-09-14 10:18:57,077 - INFO - maxp pruned
+2026-09-14 10:18:57,082 - INFO - cmap pruned
+2026-09-14 10:18:57,082 - INFO - kern dropped
+2026-09-14 10:18:57,082 - INFO - post pruned
+2026-09-14 10:18:57,082 - INFO - FFTM dropped
+2026-09-14 10:18:57,083 - INFO - GPOS pruned
+2026-09-14 10:18:57,085 - INFO - GSUB pruned
+2026-09-14 10:18:57,088 - INFO - glyf pruned
+2026-09-14 10:18:57,088 - INFO - Added gid0 to subset
+2026-09-14 10:18:57,088 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:57,088 - INFO - Closing glyph list over 'GSUB': 40 glyphs before
+2026-09-14 10:18:57,088 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'L', 'P', 'S', 'T', 'V', 'a', 'asterisk', 'b', 'bar', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'u', 'v', 'x', 'y']
+2026-09-14 10:18:57,089 - INFO - Glyph IDs:   [0, 1, 2, 3, 13, 17, 20, 36, 37, 38, 39, 40, 41, 47, 51, 54, 55, 57, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 95]
+2026-09-14 10:18:57,091 - INFO - Closed glyph list over 'GSUB': 45 glyphs after
+2026-09-14 10:18:57,091 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'L', 'P', 'S', 'T', 'V', 'a', 'asterisk', 'b', 'bar', 'c', 'd', 'e', 'f', 'fi', 'fl', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y']
+2026-09-14 10:18:57,091 - INFO - Glyph IDs:   [0, 1, 2, 3, 13, 17, 20, 36, 37, 38, 39, 40, 41, 47, 51, 54, 55, 57, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:57,091 - INFO - Closing glyph list over 'glyf': 45 glyphs before
+2026-09-14 10:18:57,091 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'L', 'P', 'S', 'T', 'V', 'a', 'asterisk', 'b', 'bar', 'c', 'd', 'e', 'f', 'fi', 'fl', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y']
+2026-09-14 10:18:57,091 - INFO - Glyph IDs:   [0, 1, 2, 3, 13, 17, 20, 36, 37, 38, 39, 40, 41, 47, 51, 54, 55, 57, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:57,091 - INFO - Closed glyph list over 'glyf': 45 glyphs after
+2026-09-14 10:18:57,091 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'L', 'P', 'S', 'T', 'V', 'a', 'asterisk', 'b', 'bar', 'c', 'd', 'e', 'f', 'fi', 'fl', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y']
+2026-09-14 10:18:57,091 - INFO - Glyph IDs:   [0, 1, 2, 3, 13, 17, 20, 36, 37, 38, 39, 40, 41, 47, 51, 54, 55, 57, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:18:57,091 - INFO - Retaining 45 glyphs
+2026-09-14 10:18:57,092 - INFO - head subsetting not needed
+2026-09-14 10:18:57,092 - INFO - hhea subsetting not needed
+2026-09-14 10:18:57,092 - INFO - maxp subsetting not needed
+2026-09-14 10:18:57,092 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:57,157 - INFO - hmtx subsetted
+2026-09-14 10:18:57,158 - INFO - cmap subsetted
+2026-09-14 10:18:57,158 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:57,158 - INFO - prep subsetting not needed
+2026-09-14 10:18:57,158 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:57,158 - INFO - loca subsetting not needed
+2026-09-14 10:18:57,158 - INFO - post subsetted
+2026-09-14 10:18:57,158 - INFO - gasp subsetting not needed
+2026-09-14 10:18:57,159 - INFO - GDEF subsetted
+2026-09-14 10:18:57,169 - INFO - GPOS subsetted
+2026-09-14 10:18:57,170 - INFO - GSUB subsetted
+2026-09-14 10:18:57,170 - INFO - name subsetting not needed
+2026-09-14 10:18:57,171 - INFO - glyf subsetted
+2026-09-14 10:18:57,171 - INFO - head pruned
+2026-09-14 10:18:57,171 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:18:57,171 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:57,172 - INFO - glyf pruned
+2026-09-14 10:18:57,172 - INFO - GDEF pruned
+2026-09-14 10:18:57,172 - INFO - GPOS pruned
+2026-09-14 10:18:57,172 - INFO - GSUB pruned
+2026-09-14 10:18:57,176 - INFO - name pruned
+2026-09-14 10:18:57,180 - INFO - maxp pruned
+2026-09-14 10:18:57,184 - INFO - cmap pruned
+2026-09-14 10:18:57,184 - INFO - kern dropped
+2026-09-14 10:18:57,184 - INFO - post pruned
+2026-09-14 10:18:57,184 - INFO - FFTM dropped
+2026-09-14 10:18:57,185 - INFO - GPOS pruned
+2026-09-14 10:18:57,187 - INFO - GSUB pruned
+2026-09-14 10:18:57,189 - INFO - glyf pruned
+2026-09-14 10:18:57,189 - INFO - Added gid0 to subset
+2026-09-14 10:18:57,190 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:57,190 - INFO - Closing glyph list over 'MATH': 50 glyphs before
+2026-09-14 10:18:57,190 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'I', 'K', 'L', 'N', 'T', 'V', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'five', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'percent', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'v', 'x', 'zero']
+2026-09-14 10:18:57,190 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 38, 39, 40, 41, 44, 46, 47, 49, 55, 57, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 3228]
+2026-09-14 10:18:57,190 - INFO - Closed glyph list over 'MATH': 56 glyphs after
+2026-09-14 10:18:57,190 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'I', 'K', 'L', 'N', 'T', 'V', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'five', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'percent', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'v', 'x', 'zero']
+2026-09-14 10:18:57,190 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 38, 39, 40, 41, 44, 46, 47, 49, 55, 57, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 3228, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:18:57,190 - INFO - Closing glyph list over 'GSUB': 56 glyphs before
+2026-09-14 10:18:57,190 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'I', 'K', 'L', 'N', 'T', 'V', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'five', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'percent', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'v', 'x', 'zero']
+2026-09-14 10:18:57,191 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 38, 39, 40, 41, 44, 46, 47, 49, 55, 57, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 3228, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:18:57,192 - INFO - Closed glyph list over 'GSUB': 61 glyphs after
+2026-09-14 10:18:57,192 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'I', 'K', 'L', 'N', 'T', 'V', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'fi', 'five', 'fl', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'percent', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'zero']
+2026-09-14 10:18:57,193 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 38, 39, 40, 41, 44, 46, 47, 49, 55, 57, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 3228, 3506, 3507, 3508, 3509, 3510, 3511, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:57,193 - INFO - Closing glyph list over 'glyf': 61 glyphs before
+2026-09-14 10:18:57,193 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'I', 'K', 'L', 'N', 'T', 'V', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'fi', 'five', 'fl', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'percent', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'zero']
+2026-09-14 10:18:57,193 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 38, 39, 40, 41, 44, 46, 47, 49, 55, 57, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 3228, 3506, 3507, 3508, 3509, 3510, 3511, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:57,193 - INFO - Closed glyph list over 'glyf': 61 glyphs after
+2026-09-14 10:18:57,193 - INFO - Glyph names: ['.notdef', '.null', 'C', 'D', 'E', 'F', 'I', 'K', 'L', 'N', 'T', 'V', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'fi', 'five', 'fl', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'parenleft', 'parenright', 'percent', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'zero']
+2026-09-14 10:18:57,193 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 38, 39, 40, 41, 44, 46, 47, 49, 55, 57, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 3228, 3506, 3507, 3508, 3509, 3510, 3511, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:18:57,193 - INFO - Retaining 61 glyphs
+2026-09-14 10:18:57,193 - INFO - head subsetting not needed
+2026-09-14 10:18:57,193 - INFO - hhea subsetting not needed
+2026-09-14 10:18:57,193 - INFO - maxp subsetting not needed
+2026-09-14 10:18:57,193 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:57,195 - INFO - hmtx subsetted
+2026-09-14 10:18:57,196 - INFO - cmap subsetted
+2026-09-14 10:18:57,196 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:57,196 - INFO - prep subsetting not needed
+2026-09-14 10:18:57,196 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:57,196 - INFO - loca subsetting not needed
+2026-09-14 10:18:57,196 - INFO - post subsetted
+2026-09-14 10:18:57,196 - INFO - gasp subsetting not needed
+2026-09-14 10:18:57,196 - INFO - MATH subsetted
+2026-09-14 10:18:57,197 - INFO - GDEF subsetted
+2026-09-14 10:18:57,208 - INFO - GPOS subsetted
+2026-09-14 10:18:57,209 - INFO - GSUB subsetted
+2026-09-14 10:18:57,209 - INFO - name subsetting not needed
+2026-09-14 10:18:57,210 - INFO - glyf subsetted
+2026-09-14 10:18:57,210 - INFO - head pruned
+2026-09-14 10:18:57,210 - INFO - OS/2 Unicode ranges pruned: [0, 38]
+2026-09-14 10:18:57,210 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:57,211 - INFO - glyf pruned
+2026-09-14 10:18:57,211 - INFO - GDEF pruned
+2026-09-14 10:18:57,211 - INFO - GPOS pruned
+2026-09-14 10:18:57,211 - INFO - GSUB pruned
+2026-09-14 10:18:57,216 - INFO - name pruned
+2026-09-14 10:18:57,735 - INFO -   Saved: ed/ed_fig1_factor (pdf+png)
+2026-09-14 10:18:57,735 - INFO - ED Fig 2: Clustering (Optimized Layout & Connections)...
+2026-09-14 10:18:58,018 - INFO - maxp pruned
+2026-09-14 10:18:58,023 - INFO - cmap pruned
+2026-09-14 10:18:58,023 - INFO - kern dropped
+2026-09-14 10:18:58,023 - INFO - post pruned
+2026-09-14 10:18:58,023 - INFO - FFTM dropped
+2026-09-14 10:18:58,024 - INFO - GPOS pruned
+2026-09-14 10:18:58,026 - INFO - GSUB pruned
+2026-09-14 10:18:58,030 - INFO - glyf pruned
+2026-09-14 10:18:58,030 - INFO - Added gid0 to subset
+2026-09-14 10:18:58,030 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:58,030 - INFO - Closing glyph list over 'GSUB': 40 glyphs before
+2026-09-14 10:18:58,030 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'M', 'O', 'P', 'S', 'T', 'a', 'ampersand', 'b', 'bar', 'c', 'd', 'e', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'period', 'r', 's', 'space', 't', 'two', 'u', 'x', 'y', 'z']
+2026-09-14 10:18:58,031 - INFO - Glyph IDs:   [0, 1, 2, 3, 9, 17, 21, 36, 37, 38, 39, 40, 41, 43, 48, 50, 51, 54, 55, 68, 69, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95]
+2026-09-14 10:18:58,032 - INFO - Closed glyph list over 'GSUB': 40 glyphs after
+2026-09-14 10:18:58,032 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'M', 'O', 'P', 'S', 'T', 'a', 'ampersand', 'b', 'bar', 'c', 'd', 'e', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'period', 'r', 's', 'space', 't', 'two', 'u', 'x', 'y', 'z']
+2026-09-14 10:18:58,033 - INFO - Glyph IDs:   [0, 1, 2, 3, 9, 17, 21, 36, 37, 38, 39, 40, 41, 43, 48, 50, 51, 54, 55, 68, 69, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95]
+2026-09-14 10:18:58,033 - INFO - Closing glyph list over 'glyf': 40 glyphs before
+2026-09-14 10:18:58,033 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'M', 'O', 'P', 'S', 'T', 'a', 'ampersand', 'b', 'bar', 'c', 'd', 'e', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'period', 'r', 's', 'space', 't', 'two', 'u', 'x', 'y', 'z']
+2026-09-14 10:18:58,033 - INFO - Glyph IDs:   [0, 1, 2, 3, 9, 17, 21, 36, 37, 38, 39, 40, 41, 43, 48, 50, 51, 54, 55, 68, 69, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95]
+2026-09-14 10:18:58,033 - INFO - Closed glyph list over 'glyf': 40 glyphs after
+2026-09-14 10:18:58,033 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'M', 'O', 'P', 'S', 'T', 'a', 'ampersand', 'b', 'bar', 'c', 'd', 'e', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'period', 'r', 's', 'space', 't', 'two', 'u', 'x', 'y', 'z']
+2026-09-14 10:18:58,033 - INFO - Glyph IDs:   [0, 1, 2, 3, 9, 17, 21, 36, 37, 38, 39, 40, 41, 43, 48, 50, 51, 54, 55, 68, 69, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95]
+2026-09-14 10:18:58,033 - INFO - Retaining 40 glyphs
+2026-09-14 10:18:58,033 - INFO - head subsetting not needed
+2026-09-14 10:18:58,033 - INFO - hhea subsetting not needed
+2026-09-14 10:18:58,033 - INFO - maxp subsetting not needed
+2026-09-14 10:18:58,033 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:58,035 - INFO - hmtx subsetted
+2026-09-14 10:18:58,036 - INFO - cmap subsetted
+2026-09-14 10:18:58,036 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:58,036 - INFO - prep subsetting not needed
+2026-09-14 10:18:58,036 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:58,036 - INFO - loca subsetting not needed
+2026-09-14 10:18:58,036 - INFO - post subsetted
+2026-09-14 10:18:58,036 - INFO - gasp subsetting not needed
+2026-09-14 10:18:58,037 - INFO - GDEF subsetted
+2026-09-14 10:18:58,049 - INFO - GPOS subsetted
+2026-09-14 10:18:58,050 - INFO - GSUB subsetted
+2026-09-14 10:18:58,050 - INFO - name subsetting not needed
+2026-09-14 10:18:58,050 - INFO - glyf subsetted
+2026-09-14 10:18:58,051 - INFO - head pruned
+2026-09-14 10:18:58,051 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:18:58,051 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:58,051 - INFO - glyf pruned
+2026-09-14 10:18:58,051 - INFO - GDEF pruned
+2026-09-14 10:18:58,051 - INFO - GPOS pruned
+2026-09-14 10:18:58,051 - INFO - GSUB pruned
+2026-09-14 10:18:58,054 - INFO - name pruned
+2026-09-14 10:18:58,059 - INFO - maxp pruned
+2026-09-14 10:18:58,063 - INFO - cmap pruned
+2026-09-14 10:18:58,063 - INFO - kern dropped
+2026-09-14 10:18:58,063 - INFO - post pruned
+2026-09-14 10:18:58,063 - INFO - FFTM dropped
+2026-09-14 10:18:58,064 - INFO - GPOS pruned
+2026-09-14 10:18:58,065 - INFO - GSUB pruned
+2026-09-14 10:18:58,068 - INFO - glyf pruned
+2026-09-14 10:18:58,069 - INFO - Added gid0 to subset
+2026-09-14 10:18:58,069 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:58,069 - INFO - Closing glyph list over 'MATH': 46 glyphs before
+2026-09-14 10:18:58,069 - INFO - Glyph names: ['.notdef', '.null', 'A', 'D', 'E', 'I', 'M', 'N', 'P', 'R', 'S', 'T', 'a', 'c', 'comma', 'd', 'e', 'eight', 'equal', 'five', 'g', 'h', 'i', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'slash', 'space', 't', 'three', 'two', 'u', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:58,069 - INFO - Glyph IDs:   [0, 1, 2, 3, 15, 17, 18, 19, 20, 21, 22, 24, 26, 27, 32, 36, 39, 40, 44, 48, 49, 51, 53, 54, 55, 68, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 3228]
+2026-09-14 10:18:58,070 - INFO - Closed glyph list over 'MATH': 46 glyphs after
+2026-09-14 10:18:58,070 - INFO - Glyph names: ['.notdef', '.null', 'A', 'D', 'E', 'I', 'M', 'N', 'P', 'R', 'S', 'T', 'a', 'c', 'comma', 'd', 'e', 'eight', 'equal', 'five', 'g', 'h', 'i', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'slash', 'space', 't', 'three', 'two', 'u', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:58,070 - INFO - Glyph IDs:   [0, 1, 2, 3, 15, 17, 18, 19, 20, 21, 22, 24, 26, 27, 32, 36, 39, 40, 44, 48, 49, 51, 53, 54, 55, 68, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 3228]
+2026-09-14 10:18:58,070 - INFO - Closing glyph list over 'GSUB': 46 glyphs before
+2026-09-14 10:18:58,070 - INFO - Glyph names: ['.notdef', '.null', 'A', 'D', 'E', 'I', 'M', 'N', 'P', 'R', 'S', 'T', 'a', 'c', 'comma', 'd', 'e', 'eight', 'equal', 'five', 'g', 'h', 'i', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'slash', 'space', 't', 'three', 'two', 'u', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:58,070 - INFO - Glyph IDs:   [0, 1, 2, 3, 15, 17, 18, 19, 20, 21, 22, 24, 26, 27, 32, 36, 39, 40, 44, 48, 49, 51, 53, 54, 55, 68, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 3228]
+2026-09-14 10:18:58,071 - INFO - Closed glyph list over 'GSUB': 46 glyphs after
+2026-09-14 10:18:58,071 - INFO - Glyph names: ['.notdef', '.null', 'A', 'D', 'E', 'I', 'M', 'N', 'P', 'R', 'S', 'T', 'a', 'c', 'comma', 'd', 'e', 'eight', 'equal', 'five', 'g', 'h', 'i', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'slash', 'space', 't', 'three', 'two', 'u', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:58,072 - INFO - Glyph IDs:   [0, 1, 2, 3, 15, 17, 18, 19, 20, 21, 22, 24, 26, 27, 32, 36, 39, 40, 44, 48, 49, 51, 53, 54, 55, 68, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 3228]
+2026-09-14 10:18:58,072 - INFO - Closing glyph list over 'glyf': 46 glyphs before
+2026-09-14 10:18:58,072 - INFO - Glyph names: ['.notdef', '.null', 'A', 'D', 'E', 'I', 'M', 'N', 'P', 'R', 'S', 'T', 'a', 'c', 'comma', 'd', 'e', 'eight', 'equal', 'five', 'g', 'h', 'i', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'slash', 'space', 't', 'three', 'two', 'u', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:58,072 - INFO - Glyph IDs:   [0, 1, 2, 3, 15, 17, 18, 19, 20, 21, 22, 24, 26, 27, 32, 36, 39, 40, 44, 48, 49, 51, 53, 54, 55, 68, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 3228]
+2026-09-14 10:18:58,072 - INFO - Closed glyph list over 'glyf': 46 glyphs after
+2026-09-14 10:18:58,072 - INFO - Glyph names: ['.notdef', '.null', 'A', 'D', 'E', 'I', 'M', 'N', 'P', 'R', 'S', 'T', 'a', 'c', 'comma', 'd', 'e', 'eight', 'equal', 'five', 'g', 'h', 'i', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'slash', 'space', 't', 'three', 'two', 'u', 'v', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:58,072 - INFO - Glyph IDs:   [0, 1, 2, 3, 15, 17, 18, 19, 20, 21, 22, 24, 26, 27, 32, 36, 39, 40, 44, 48, 49, 51, 53, 54, 55, 68, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 3228]
+2026-09-14 10:18:58,072 - INFO - Retaining 46 glyphs
+2026-09-14 10:18:58,072 - INFO - head subsetting not needed
+2026-09-14 10:18:58,072 - INFO - hhea subsetting not needed
+2026-09-14 10:18:58,072 - INFO - maxp subsetting not needed
+2026-09-14 10:18:58,072 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:58,074 - INFO - hmtx subsetted
+2026-09-14 10:18:58,074 - INFO - cmap subsetted
+2026-09-14 10:18:58,075 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:58,075 - INFO - prep subsetting not needed
+2026-09-14 10:18:58,075 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:58,075 - INFO - loca subsetting not needed
+2026-09-14 10:18:58,075 - INFO - post subsetted
+2026-09-14 10:18:58,075 - INFO - gasp subsetting not needed
+2026-09-14 10:18:58,075 - INFO - MATH subsetted
+2026-09-14 10:18:58,076 - INFO - GDEF subsetted
+2026-09-14 10:18:58,149 - INFO - GPOS subsetted
+2026-09-14 10:18:58,150 - INFO - GSUB subsetted
+2026-09-14 10:18:58,150 - INFO - name subsetting not needed
+2026-09-14 10:18:58,151 - INFO - glyf subsetted
+2026-09-14 10:18:58,151 - INFO - head pruned
+2026-09-14 10:18:58,151 - INFO - OS/2 Unicode ranges pruned: [0, 38]
+2026-09-14 10:18:58,151 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:58,151 - INFO - glyf pruned
+2026-09-14 10:18:58,151 - INFO - GDEF pruned
+2026-09-14 10:18:58,152 - INFO - GPOS pruned
+2026-09-14 10:18:58,152 - INFO - GSUB pruned
+2026-09-14 10:18:58,156 - INFO - name pruned
+2026-09-14 10:18:58,469 - INFO -   Saved: ed/ed_fig2_clustering (pdf+png)
+2026-09-14 10:18:58,469 - INFO - ED Fig 3: t-SNE...
+2026-09-14 10:18:59,817 - INFO - maxp pruned
+2026-09-14 10:18:59,822 - INFO - cmap pruned
+2026-09-14 10:18:59,822 - INFO - kern dropped
+2026-09-14 10:18:59,822 - INFO - post pruned
+2026-09-14 10:18:59,822 - INFO - FFTM dropped
+2026-09-14 10:18:59,823 - INFO - GPOS pruned
+2026-09-14 10:18:59,824 - INFO - GSUB pruned
+2026-09-14 10:18:59,828 - INFO - glyf pruned
+2026-09-14 10:18:59,829 - INFO - Added gid0 to subset
+2026-09-14 10:18:59,829 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:59,829 - INFO - Closing glyph list over 'GSUB': 51 glyphs before
+2026-09-14 10:18:59,829 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'N', 'O', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'five', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:59,829 - INFO - Glyph IDs:   [0, 1, 2, 3, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 43, 49, 50, 51, 54, 55, 56, 68, 69, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95]
+2026-09-14 10:18:59,831 - INFO - Closed glyph list over 'GSUB': 51 glyphs after
+2026-09-14 10:18:59,831 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'N', 'O', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'five', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:59,832 - INFO - Glyph IDs:   [0, 1, 2, 3, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 43, 49, 50, 51, 54, 55, 56, 68, 69, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95]
+2026-09-14 10:18:59,832 - INFO - Closing glyph list over 'glyf': 51 glyphs before
+2026-09-14 10:18:59,832 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'N', 'O', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'five', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:59,832 - INFO - Glyph IDs:   [0, 1, 2, 3, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 43, 49, 50, 51, 54, 55, 56, 68, 69, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95]
+2026-09-14 10:18:59,832 - INFO - Closed glyph list over 'glyf': 51 glyphs after
+2026-09-14 10:18:59,832 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'N', 'O', 'P', 'S', 'T', 'U', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'equal', 'five', 'four', 'g', 'h', 'hyphen', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'x', 'y', 'z', 'zero']
+2026-09-14 10:18:59,832 - INFO - Glyph IDs:   [0, 1, 2, 3, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 43, 49, 50, 51, 54, 55, 56, 68, 69, 70, 71, 72, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95]
+2026-09-14 10:18:59,832 - INFO - Retaining 51 glyphs
+2026-09-14 10:18:59,832 - INFO - head subsetting not needed
+2026-09-14 10:18:59,832 - INFO - hhea subsetting not needed
+2026-09-14 10:18:59,832 - INFO - maxp subsetting not needed
+2026-09-14 10:18:59,832 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:59,834 - INFO - hmtx subsetted
+2026-09-14 10:18:59,835 - INFO - cmap subsetted
+2026-09-14 10:18:59,835 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:59,835 - INFO - prep subsetting not needed
+2026-09-14 10:18:59,835 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:59,835 - INFO - loca subsetting not needed
+2026-09-14 10:18:59,835 - INFO - post subsetted
+2026-09-14 10:18:59,835 - INFO - gasp subsetting not needed
+2026-09-14 10:18:59,836 - INFO - GDEF subsetted
+2026-09-14 10:18:59,848 - INFO - GPOS subsetted
+2026-09-14 10:18:59,849 - INFO - GSUB subsetted
+2026-09-14 10:18:59,849 - INFO - name subsetting not needed
+2026-09-14 10:18:59,850 - INFO - glyf subsetted
+2026-09-14 10:18:59,850 - INFO - head pruned
+2026-09-14 10:18:59,850 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:18:59,850 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:59,851 - INFO - glyf pruned
+2026-09-14 10:18:59,851 - INFO - GDEF pruned
+2026-09-14 10:18:59,851 - INFO - GPOS pruned
+2026-09-14 10:18:59,851 - INFO - GSUB pruned
+2026-09-14 10:18:59,855 - INFO - name pruned
+2026-09-14 10:18:59,859 - INFO - maxp pruned
+2026-09-14 10:18:59,864 - INFO - cmap pruned
+2026-09-14 10:18:59,864 - INFO - kern dropped
+2026-09-14 10:18:59,864 - INFO - post pruned
+2026-09-14 10:18:59,864 - INFO - FFTM dropped
+2026-09-14 10:18:59,865 - INFO - GPOS pruned
+2026-09-14 10:18:59,867 - INFO - GSUB pruned
+2026-09-14 10:18:59,870 - INFO - glyf pruned
+2026-09-14 10:18:59,870 - INFO - Added gid0 to subset
+2026-09-14 10:18:59,870 - INFO - Added first four glyphs to subset
+2026-09-14 10:18:59,870 - INFO - Closing glyph list over 'MATH': 14 glyphs before
+2026-09-14 10:18:59,870 - INFO - Glyph names: ['.notdef', '.null', 'C', 'P', 'a', 'e', 'i', 'l', 'n', 'nonmarkingreturn', 'o', 'r', 'space', 't']
+2026-09-14 10:18:59,871 - INFO - Glyph IDs:   [0, 1, 2, 3, 38, 51, 68, 72, 76, 79, 81, 82, 85, 87]
+2026-09-14 10:18:59,871 - INFO - Closed glyph list over 'MATH': 14 glyphs after
+2026-09-14 10:18:59,871 - INFO - Glyph names: ['.notdef', '.null', 'C', 'P', 'a', 'e', 'i', 'l', 'n', 'nonmarkingreturn', 'o', 'r', 'space', 't']
+2026-09-14 10:18:59,871 - INFO - Glyph IDs:   [0, 1, 2, 3, 38, 51, 68, 72, 76, 79, 81, 82, 85, 87]
+2026-09-14 10:18:59,871 - INFO - Closing glyph list over 'GSUB': 14 glyphs before
+2026-09-14 10:18:59,871 - INFO - Glyph names: ['.notdef', '.null', 'C', 'P', 'a', 'e', 'i', 'l', 'n', 'nonmarkingreturn', 'o', 'r', 'space', 't']
+2026-09-14 10:18:59,871 - INFO - Glyph IDs:   [0, 1, 2, 3, 38, 51, 68, 72, 76, 79, 81, 82, 85, 87]
+2026-09-14 10:18:59,873 - INFO - Closed glyph list over 'GSUB': 14 glyphs after
+2026-09-14 10:18:59,873 - INFO - Glyph names: ['.notdef', '.null', 'C', 'P', 'a', 'e', 'i', 'l', 'n', 'nonmarkingreturn', 'o', 'r', 'space', 't']
+2026-09-14 10:18:59,873 - INFO - Glyph IDs:   [0, 1, 2, 3, 38, 51, 68, 72, 76, 79, 81, 82, 85, 87]
+2026-09-14 10:18:59,873 - INFO - Closing glyph list over 'glyf': 14 glyphs before
+2026-09-14 10:18:59,873 - INFO - Glyph names: ['.notdef', '.null', 'C', 'P', 'a', 'e', 'i', 'l', 'n', 'nonmarkingreturn', 'o', 'r', 'space', 't']
+2026-09-14 10:18:59,873 - INFO - Glyph IDs:   [0, 1, 2, 3, 38, 51, 68, 72, 76, 79, 81, 82, 85, 87]
+2026-09-14 10:18:59,873 - INFO - Closed glyph list over 'glyf': 14 glyphs after
+2026-09-14 10:18:59,873 - INFO - Glyph names: ['.notdef', '.null', 'C', 'P', 'a', 'e', 'i', 'l', 'n', 'nonmarkingreturn', 'o', 'r', 'space', 't']
+2026-09-14 10:18:59,873 - INFO - Glyph IDs:   [0, 1, 2, 3, 38, 51, 68, 72, 76, 79, 81, 82, 85, 87]
+2026-09-14 10:18:59,873 - INFO - Retaining 14 glyphs
+2026-09-14 10:18:59,874 - INFO - head subsetting not needed
+2026-09-14 10:18:59,874 - INFO - hhea subsetting not needed
+2026-09-14 10:18:59,874 - INFO - maxp subsetting not needed
+2026-09-14 10:18:59,874 - INFO - OS/2 subsetting not needed
+2026-09-14 10:18:59,875 - INFO - hmtx subsetted
+2026-09-14 10:18:59,876 - INFO - cmap subsetted
+2026-09-14 10:18:59,876 - INFO - fpgm subsetting not needed
+2026-09-14 10:18:59,876 - INFO - prep subsetting not needed
+2026-09-14 10:18:59,876 - INFO - cvt  subsetting not needed
+2026-09-14 10:18:59,876 - INFO - loca subsetting not needed
+2026-09-14 10:18:59,876 - INFO - post subsetted
+2026-09-14 10:18:59,876 - INFO - gasp subsetting not needed
+2026-09-14 10:18:59,876 - INFO - MATH subsetted
+2026-09-14 10:18:59,877 - INFO - GDEF subsetted
+2026-09-14 10:18:59,889 - INFO - GPOS subsetted
+2026-09-14 10:18:59,890 - INFO - GSUB subsetted
+2026-09-14 10:18:59,890 - INFO - name subsetting not needed
+2026-09-14 10:18:59,891 - INFO - glyf subsetted
+2026-09-14 10:18:59,891 - INFO - head pruned
+2026-09-14 10:18:59,891 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:18:59,891 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:18:59,891 - INFO - glyf pruned
+2026-09-14 10:18:59,891 - INFO - GDEF pruned
+2026-09-14 10:18:59,892 - INFO - GPOS pruned
+2026-09-14 10:18:59,892 - INFO - GSUB pruned
+2026-09-14 10:18:59,893 - INFO - name pruned
+2026-09-14 10:19:00,759 - INFO -   Saved: ed/ed_fig3_tsne (pdf+png)
+2026-09-14 10:19:00,760 - INFO - ED Fig 4: Confusion Matrix...
+2026-09-14 10:19:00,805 - INFO -   Colormap: Blues 0–fixed
+2026-09-14 10:19:01,009 - INFO - maxp pruned
+2026-09-14 10:19:01,014 - INFO - cmap pruned
+2026-09-14 10:19:01,014 - INFO - kern dropped
+2026-09-14 10:19:01,014 - INFO - post pruned
+2026-09-14 10:19:01,014 - INFO - FFTM dropped
+2026-09-14 10:19:01,016 - INFO - GPOS pruned
+2026-09-14 10:19:01,085 - INFO - GSUB pruned
+2026-09-14 10:19:01,088 - INFO - glyf pruned
+2026-09-14 10:19:01,088 - INFO - Added gid0 to subset
+2026-09-14 10:19:01,088 - INFO - Added first four glyphs to subset
+2026-09-14 10:19:01,088 - INFO - Closing glyph list over 'GSUB': 38 glyphs before
+2026-09-14 10:19:01,089 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'M', 'O', 'P', 'S', 'T', 'a', 'bar', 'c', 'd', 'e', 'f', 'four', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'r', 's', 'space', 't', 'u', 'x', 'y', 'z']
+2026-09-14 10:19:01,089 - INFO - Glyph IDs:   [0, 1, 2, 3, 23, 36, 37, 38, 39, 40, 41, 43, 48, 50, 51, 54, 55, 68, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95]
+2026-09-14 10:19:01,091 - INFO - Closed glyph list over 'GSUB': 43 glyphs after
+2026-09-14 10:19:01,091 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'M', 'O', 'P', 'S', 'T', 'a', 'bar', 'c', 'd', 'e', 'f', 'fi', 'fl', 'four', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'x', 'y', 'z']
+2026-09-14 10:19:01,091 - INFO - Glyph IDs:   [0, 1, 2, 3, 23, 36, 37, 38, 39, 40, 41, 43, 48, 50, 51, 54, 55, 68, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:01,091 - INFO - Closing glyph list over 'glyf': 43 glyphs before
+2026-09-14 10:19:01,091 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'M', 'O', 'P', 'S', 'T', 'a', 'bar', 'c', 'd', 'e', 'f', 'fi', 'fl', 'four', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'x', 'y', 'z']
+2026-09-14 10:19:01,091 - INFO - Glyph IDs:   [0, 1, 2, 3, 23, 36, 37, 38, 39, 40, 41, 43, 48, 50, 51, 54, 55, 68, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:01,091 - INFO - Closed glyph list over 'glyf': 43 glyphs after
+2026-09-14 10:19:01,091 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'M', 'O', 'P', 'S', 'T', 'a', 'bar', 'c', 'd', 'e', 'f', 'fi', 'fl', 'four', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'x', 'y', 'z']
+2026-09-14 10:19:01,091 - INFO - Glyph IDs:   [0, 1, 2, 3, 23, 36, 37, 38, 39, 40, 41, 43, 48, 50, 51, 54, 55, 68, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:01,092 - INFO - Retaining 43 glyphs
+2026-09-14 10:19:01,092 - INFO - head subsetting not needed
+2026-09-14 10:19:01,092 - INFO - hhea subsetting not needed
+2026-09-14 10:19:01,092 - INFO - maxp subsetting not needed
+2026-09-14 10:19:01,092 - INFO - OS/2 subsetting not needed
+2026-09-14 10:19:01,094 - INFO - hmtx subsetted
+2026-09-14 10:19:01,095 - INFO - cmap subsetted
+2026-09-14 10:19:01,095 - INFO - fpgm subsetting not needed
+2026-09-14 10:19:01,095 - INFO - prep subsetting not needed
+2026-09-14 10:19:01,095 - INFO - cvt  subsetting not needed
+2026-09-14 10:19:01,095 - INFO - loca subsetting not needed
+2026-09-14 10:19:01,095 - INFO - post subsetted
+2026-09-14 10:19:01,095 - INFO - gasp subsetting not needed
+2026-09-14 10:19:01,096 - INFO - GDEF subsetted
+2026-09-14 10:19:01,108 - INFO - GPOS subsetted
+2026-09-14 10:19:01,109 - INFO - GSUB subsetted
+2026-09-14 10:19:01,109 - INFO - name subsetting not needed
+2026-09-14 10:19:01,110 - INFO - glyf subsetted
+2026-09-14 10:19:01,110 - INFO - head pruned
+2026-09-14 10:19:01,110 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:19:01,110 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:19:01,110 - INFO - glyf pruned
+2026-09-14 10:19:01,111 - INFO - GDEF pruned
+2026-09-14 10:19:01,111 - INFO - GPOS pruned
+2026-09-14 10:19:01,111 - INFO - GSUB pruned
+2026-09-14 10:19:01,114 - INFO - name pruned
+2026-09-14 10:19:01,118 - INFO - maxp pruned
+2026-09-14 10:19:01,123 - INFO - cmap pruned
+2026-09-14 10:19:01,123 - INFO - kern dropped
+2026-09-14 10:19:01,123 - INFO - post pruned
+2026-09-14 10:19:01,123 - INFO - FFTM dropped
+2026-09-14 10:19:01,124 - INFO - GPOS pruned
+2026-09-14 10:19:01,126 - INFO - GSUB pruned
+2026-09-14 10:19:01,128 - INFO - glyf pruned
+2026-09-14 10:19:01,129 - INFO - Added gid0 to subset
+2026-09-14 10:19:01,129 - INFO - Added first four glyphs to subset
+2026-09-14 10:19:01,129 - INFO - Closing glyph list over 'MATH': 38 glyphs before
+2026-09-14 10:19:01,129 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'M', 'O', 'P', 'R', 'T', 'U', 'a', 'c', 'd', 'e', 'eight', 'equal', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'y', 'zero']
+2026-09-14 10:19:01,129 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 48, 50, 51, 53, 55, 56, 68, 70, 71, 72, 76, 79, 81, 82, 83, 85, 87, 88, 92]
+2026-09-14 10:19:01,129 - INFO - Closed glyph list over 'MATH': 38 glyphs after
+2026-09-14 10:19:01,129 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'M', 'O', 'P', 'R', 'T', 'U', 'a', 'c', 'd', 'e', 'eight', 'equal', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'y', 'zero']
+2026-09-14 10:19:01,130 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 48, 50, 51, 53, 55, 56, 68, 70, 71, 72, 76, 79, 81, 82, 83, 85, 87, 88, 92]
+2026-09-14 10:19:01,130 - INFO - Closing glyph list over 'GSUB': 38 glyphs before
+2026-09-14 10:19:01,130 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'M', 'O', 'P', 'R', 'T', 'U', 'a', 'c', 'd', 'e', 'eight', 'equal', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'y', 'zero']
+2026-09-14 10:19:01,130 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 48, 50, 51, 53, 55, 56, 68, 70, 71, 72, 76, 79, 81, 82, 83, 85, 87, 88, 92]
+2026-09-14 10:19:01,132 - INFO - Closed glyph list over 'GSUB': 38 glyphs after
+2026-09-14 10:19:01,132 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'M', 'O', 'P', 'R', 'T', 'U', 'a', 'c', 'd', 'e', 'eight', 'equal', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'y', 'zero']
+2026-09-14 10:19:01,132 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 48, 50, 51, 53, 55, 56, 68, 70, 71, 72, 76, 79, 81, 82, 83, 85, 87, 88, 92]
+2026-09-14 10:19:01,132 - INFO - Closing glyph list over 'glyf': 38 glyphs before
+2026-09-14 10:19:01,132 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'M', 'O', 'P', 'R', 'T', 'U', 'a', 'c', 'd', 'e', 'eight', 'equal', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'y', 'zero']
+2026-09-14 10:19:01,132 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 48, 50, 51, 53, 55, 56, 68, 70, 71, 72, 76, 79, 81, 82, 83, 85, 87, 88, 92]
+2026-09-14 10:19:01,132 - INFO - Closed glyph list over 'glyf': 38 glyphs after
+2026-09-14 10:19:01,132 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'M', 'O', 'P', 'R', 'T', 'U', 'a', 'c', 'd', 'e', 'eight', 'equal', 'five', 'four', 'i', 'l', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'y', 'zero']
+2026-09-14 10:19:01,132 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 48, 50, 51, 53, 55, 56, 68, 70, 71, 72, 76, 79, 81, 82, 83, 85, 87, 88, 92]
+2026-09-14 10:19:01,132 - INFO - Retaining 38 glyphs
+2026-09-14 10:19:01,132 - INFO - head subsetting not needed
+2026-09-14 10:19:01,132 - INFO - hhea subsetting not needed
+2026-09-14 10:19:01,132 - INFO - maxp subsetting not needed
+2026-09-14 10:19:01,132 - INFO - OS/2 subsetting not needed
+2026-09-14 10:19:01,134 - INFO - hmtx subsetted
+2026-09-14 10:19:01,135 - INFO - cmap subsetted
+2026-09-14 10:19:01,135 - INFO - fpgm subsetting not needed
+2026-09-14 10:19:01,135 - INFO - prep subsetting not needed
+2026-09-14 10:19:01,135 - INFO - cvt  subsetting not needed
+2026-09-14 10:19:01,136 - INFO - loca subsetting not needed
+2026-09-14 10:19:01,136 - INFO - post subsetted
+2026-09-14 10:19:01,136 - INFO - gasp subsetting not needed
+2026-09-14 10:19:01,136 - INFO - MATH subsetted
+2026-09-14 10:19:01,137 - INFO - GDEF subsetted
+2026-09-14 10:19:01,148 - INFO - GPOS subsetted
+2026-09-14 10:19:01,149 - INFO - GSUB subsetted
+2026-09-14 10:19:01,149 - INFO - name subsetting not needed
+2026-09-14 10:19:01,149 - INFO - glyf subsetted
+2026-09-14 10:19:01,150 - INFO - head pruned
+2026-09-14 10:19:01,150 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:19:01,150 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:19:01,150 - INFO - glyf pruned
+2026-09-14 10:19:01,150 - INFO - GDEF pruned
+2026-09-14 10:19:01,150 - INFO - GPOS pruned
+2026-09-14 10:19:01,150 - INFO - GSUB pruned
+2026-09-14 10:19:01,154 - INFO - name pruned
+2026-09-14 10:19:01,459 - INFO -   Saved: ed/ed_fig4_confusion (pdf+png, fixed canvas)
+2026-09-14 10:19:01,460 - INFO - ED Fig 5: Ablation...
+2026-09-14 10:19:01,490 - INFO -   Ablation ΔAUROC: n=110, min=-0.0002, max=+0.0364, n_negative=5
+2026-09-14 10:19:01,490 - INFO -   Colormap: Blues 0–max
+2026-09-14 10:19:01,653 - INFO - maxp pruned
+2026-09-14 10:19:01,659 - INFO - cmap pruned
+2026-09-14 10:19:01,659 - INFO - kern dropped
+2026-09-14 10:19:01,659 - INFO - post pruned
+2026-09-14 10:19:01,659 - INFO - FFTM dropped
+2026-09-14 10:19:01,660 - INFO - GPOS pruned
+2026-09-14 10:19:01,662 - INFO - GSUB pruned
+2026-09-14 10:19:01,667 - INFO - glyf pruned
+2026-09-14 10:19:01,667 - INFO - Added gid0 to subset
+2026-09-14 10:19:01,667 - INFO - Added first four glyphs to subset
+2026-09-14 10:19:01,667 - INFO - Closing glyph list over 'GSUB': 49 glyphs before
+2026-09-14 10:19:01,667 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'O', 'P', 'R', 'S', 'T', 'U', 'W', 'a', 'b', 'bar', 'c', 'd', 'e', 'f', 'five', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'period', 'r', 's', 'space', 't', 'u', 'uni0394', 'v', 'x', 'y', 'z']
+2026-09-14 10:19:01,668 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 24, 36, 37, 38, 39, 40, 41, 43, 47, 50, 51, 53, 54, 55, 56, 58, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 809]
+2026-09-14 10:19:01,671 - INFO - Closed glyph list over 'GSUB': 54 glyphs after
+2026-09-14 10:19:01,671 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'O', 'P', 'R', 'S', 'T', 'U', 'W', 'a', 'b', 'bar', 'c', 'd', 'e', 'f', 'fi', 'five', 'fl', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'period', 'r', 's', 'space', 't', 'u', 'uni0394', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y', 'z']
+2026-09-14 10:19:01,671 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 24, 36, 37, 38, 39, 40, 41, 43, 47, 50, 51, 53, 54, 55, 56, 58, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 809, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:01,671 - INFO - Closing glyph list over 'glyf': 54 glyphs before
+2026-09-14 10:19:01,671 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'O', 'P', 'R', 'S', 'T', 'U', 'W', 'a', 'b', 'bar', 'c', 'd', 'e', 'f', 'fi', 'five', 'fl', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'period', 'r', 's', 'space', 't', 'u', 'uni0394', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y', 'z']
+2026-09-14 10:19:01,671 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 24, 36, 37, 38, 39, 40, 41, 43, 47, 50, 51, 53, 54, 55, 56, 58, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 809, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:01,671 - INFO - Closed glyph list over 'glyf': 54 glyphs after
+2026-09-14 10:19:01,671 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'L', 'O', 'P', 'R', 'S', 'T', 'U', 'W', 'a', 'b', 'bar', 'c', 'd', 'e', 'f', 'fi', 'five', 'fl', 'g', 'h', 'hyphen', 'i', 'k', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'period', 'r', 's', 'space', 't', 'u', 'uni0394', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'x', 'y', 'z']
+2026-09-14 10:19:01,671 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 24, 36, 37, 38, 39, 40, 41, 43, 47, 50, 51, 53, 54, 55, 56, 58, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 92, 93, 95, 809, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:01,671 - INFO - Retaining 54 glyphs
+2026-09-14 10:19:01,672 - INFO - head subsetting not needed
+2026-09-14 10:19:01,672 - INFO - hhea subsetting not needed
+2026-09-14 10:19:01,672 - INFO - maxp subsetting not needed
+2026-09-14 10:19:01,672 - INFO - OS/2 subsetting not needed
+2026-09-14 10:19:01,674 - INFO - hmtx subsetted
+2026-09-14 10:19:01,675 - INFO - cmap subsetted
+2026-09-14 10:19:01,675 - INFO - fpgm subsetting not needed
+2026-09-14 10:19:01,675 - INFO - prep subsetting not needed
+2026-09-14 10:19:01,675 - INFO - cvt  subsetting not needed
+2026-09-14 10:19:01,675 - INFO - loca subsetting not needed
+2026-09-14 10:19:01,675 - INFO - post subsetted
+2026-09-14 10:19:01,675 - INFO - gasp subsetting not needed
+2026-09-14 10:19:01,677 - INFO - GDEF subsetted
+2026-09-14 10:19:01,690 - INFO - GPOS subsetted
+2026-09-14 10:19:01,691 - INFO - GSUB subsetted
+2026-09-14 10:19:01,691 - INFO - name subsetting not needed
+2026-09-14 10:19:01,692 - INFO - glyf subsetted
+2026-09-14 10:19:01,692 - INFO - head pruned
+2026-09-14 10:19:01,692 - INFO - OS/2 Unicode ranges pruned: [0, 7]
+2026-09-14 10:19:01,692 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:19:01,693 - INFO - glyf pruned
+2026-09-14 10:19:01,693 - INFO - GDEF pruned
+2026-09-14 10:19:01,693 - INFO - GPOS pruned
+2026-09-14 10:19:01,693 - INFO - GSUB pruned
+2026-09-14 10:19:01,699 - INFO - name pruned
+2026-09-14 10:19:01,705 - INFO - maxp pruned
+2026-09-14 10:19:01,709 - INFO - cmap pruned
+2026-09-14 10:19:01,709 - INFO - kern dropped
+2026-09-14 10:19:01,709 - INFO - post pruned
+2026-09-14 10:19:01,709 - INFO - FFTM dropped
+2026-09-14 10:19:01,710 - INFO - GPOS pruned
+2026-09-14 10:19:01,712 - INFO - GSUB pruned
+2026-09-14 10:19:01,775 - INFO - glyf pruned
+2026-09-14 10:19:01,776 - INFO - Added gid0 to subset
+2026-09-14 10:19:01,776 - INFO - Added first four glyphs to subset
+2026-09-14 10:19:01,776 - INFO - Closing glyph list over 'MATH': 31 glyphs before
+2026-09-14 10:19:01,776 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'F', 'O', 'R', 'U', 'W', 'five', 'four', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'nonmarkingreturn', 'o', 'one', 'parenleft', 'parenright', 'period', 'space', 't', 'three', 'two', 'u', 'uni0394', 'zero']
+2026-09-14 10:19:01,777 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 36, 38, 39, 41, 50, 53, 56, 58, 75, 76, 79, 80, 82, 87, 88, 809, 3228]
+2026-09-14 10:19:01,777 - INFO - Closed glyph list over 'MATH': 37 glyphs after
+2026-09-14 10:19:01,777 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'F', 'O', 'R', 'U', 'W', 'five', 'four', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'nonmarkingreturn', 'o', 'one', 'parenleft', 'parenright', 'period', 'space', 't', 'three', 'two', 'u', 'uni0394', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'zero']
+2026-09-14 10:19:01,777 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 36, 38, 39, 41, 50, 53, 56, 58, 75, 76, 79, 80, 82, 87, 88, 809, 3228, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:19:01,777 - INFO - Closing glyph list over 'GSUB': 37 glyphs before
+2026-09-14 10:19:01,777 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'F', 'O', 'R', 'U', 'W', 'five', 'four', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'nonmarkingreturn', 'o', 'one', 'parenleft', 'parenright', 'period', 'space', 't', 'three', 'two', 'u', 'uni0394', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'zero']
+2026-09-14 10:19:01,778 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 36, 38, 39, 41, 50, 53, 56, 58, 75, 76, 79, 80, 82, 87, 88, 809, 3228, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:19:01,779 - INFO - Closed glyph list over 'GSUB': 37 glyphs after
+2026-09-14 10:19:01,779 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'F', 'O', 'R', 'U', 'W', 'five', 'four', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'nonmarkingreturn', 'o', 'one', 'parenleft', 'parenright', 'period', 'space', 't', 'three', 'two', 'u', 'uni0394', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'zero']
+2026-09-14 10:19:01,780 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 36, 38, 39, 41, 50, 53, 56, 58, 75, 76, 79, 80, 82, 87, 88, 809, 3228, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:19:01,780 - INFO - Closing glyph list over 'glyf': 37 glyphs before
+2026-09-14 10:19:01,780 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'F', 'O', 'R', 'U', 'W', 'five', 'four', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'nonmarkingreturn', 'o', 'one', 'parenleft', 'parenright', 'period', 'space', 't', 'three', 'two', 'u', 'uni0394', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'zero']
+2026-09-14 10:19:01,780 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 36, 38, 39, 41, 50, 53, 56, 58, 75, 76, 79, 80, 82, 87, 88, 809, 3228, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:19:01,780 - INFO - Closed glyph list over 'glyf': 37 glyphs after
+2026-09-14 10:19:01,780 - INFO - Glyph names: ['.notdef', '.null', 'A', 'C', 'D', 'F', 'O', 'R', 'U', 'W', 'five', 'four', 'h', 'hyphen', 'i', 'l', 'm', 'minus', 'nonmarkingreturn', 'o', 'one', 'parenleft', 'parenright', 'period', 'space', 't', 'three', 'two', 'u', 'uni0394', 'uni239B', 'uni239C', 'uni239D', 'uni239E', 'uni239F', 'uni23A0', 'zero']
+2026-09-14 10:19:01,780 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 36, 38, 39, 41, 50, 53, 56, 58, 75, 76, 79, 80, 82, 87, 88, 809, 3228, 3506, 3507, 3508, 3509, 3510, 3511]
+2026-09-14 10:19:01,780 - INFO - Retaining 37 glyphs
+2026-09-14 10:19:01,780 - INFO - head subsetting not needed
+2026-09-14 10:19:01,780 - INFO - hhea subsetting not needed
+2026-09-14 10:19:01,780 - INFO - maxp subsetting not needed
+2026-09-14 10:19:01,780 - INFO - OS/2 subsetting not needed
+2026-09-14 10:19:01,782 - INFO - hmtx subsetted
+2026-09-14 10:19:01,783 - INFO - cmap subsetted
+2026-09-14 10:19:01,783 - INFO - fpgm subsetting not needed
+2026-09-14 10:19:01,783 - INFO - prep subsetting not needed
+2026-09-14 10:19:01,783 - INFO - cvt  subsetting not needed
+2026-09-14 10:19:01,783 - INFO - loca subsetting not needed
+2026-09-14 10:19:01,783 - INFO - post subsetted
+2026-09-14 10:19:01,783 - INFO - gasp subsetting not needed
+2026-09-14 10:19:01,783 - INFO - MATH subsetted
+2026-09-14 10:19:01,784 - INFO - GDEF subsetted
+2026-09-14 10:19:01,795 - INFO - GPOS subsetted
+2026-09-14 10:19:01,796 - INFO - GSUB subsetted
+2026-09-14 10:19:01,796 - INFO - name subsetting not needed
+2026-09-14 10:19:01,797 - INFO - glyf subsetted
+2026-09-14 10:19:01,797 - INFO - head pruned
+2026-09-14 10:19:01,797 - INFO - OS/2 Unicode ranges pruned: [0, 7, 38]
+2026-09-14 10:19:01,797 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:19:01,797 - INFO - glyf pruned
+2026-09-14 10:19:01,797 - INFO - GDEF pruned
+2026-09-14 10:19:01,798 - INFO - GPOS pruned
+2026-09-14 10:19:01,798 - INFO - GSUB pruned
+2026-09-14 10:19:01,800 - INFO - name pruned
+2026-09-14 10:19:02,116 - INFO -   Saved: ed/ed_fig5_ablation (pdf+png, fixed canvas)
+2026-09-14 10:19:02,117 - INFO - ED Fig 6: Sensitivity (Optimized Aesthetics)...
+2026-09-14 10:19:02,559 - INFO - maxp pruned
+2026-09-14 10:19:02,564 - INFO - cmap pruned
+2026-09-14 10:19:02,564 - INFO - kern dropped
+2026-09-14 10:19:02,564 - INFO - post pruned
+2026-09-14 10:19:02,564 - INFO - FFTM dropped
+2026-09-14 10:19:02,565 - INFO - GPOS pruned
+2026-09-14 10:19:02,567 - INFO - GSUB pruned
+2026-09-14 10:19:02,571 - INFO - glyf pruned
+2026-09-14 10:19:02,571 - INFO - Added gid0 to subset
+2026-09-14 10:19:02,571 - INFO - Added first four glyphs to subset
+2026-09-14 10:19:02,571 - INFO - Closing glyph list over 'GSUB': 45 glyphs before
+2026-09-14 10:19:02,571 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'M', 'O', 'S', 'a', 'b', 'bar', 'd', 'e', 'eight', 'equal', 'f', 'five', 'four', 'g', 'i', 'j', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'p', 'percent', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'v', 'y', 'zero']
+2026-09-14 10:19:02,572 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 17, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 48, 50, 54, 68, 69, 71, 72, 73, 74, 76, 77, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 92, 95]
+2026-09-14 10:19:02,574 - INFO - Closed glyph list over 'GSUB': 50 glyphs after
+2026-09-14 10:19:02,574 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'M', 'O', 'S', 'a', 'b', 'bar', 'd', 'e', 'eight', 'equal', 'f', 'fi', 'five', 'fl', 'four', 'g', 'i', 'j', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'p', 'percent', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'y', 'zero']
+2026-09-14 10:19:02,574 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 17, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 48, 50, 54, 68, 69, 71, 72, 73, 74, 76, 77, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 92, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:02,574 - INFO - Closing glyph list over 'glyf': 50 glyphs before
+2026-09-14 10:19:02,574 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'M', 'O', 'S', 'a', 'b', 'bar', 'd', 'e', 'eight', 'equal', 'f', 'fi', 'five', 'fl', 'four', 'g', 'i', 'j', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'p', 'percent', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'y', 'zero']
+2026-09-14 10:19:02,574 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 17, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 48, 50, 54, 68, 69, 71, 72, 73, 74, 76, 77, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 92, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:02,574 - INFO - Closed glyph list over 'glyf': 50 glyphs after
+2026-09-14 10:19:02,574 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'M', 'O', 'S', 'a', 'b', 'bar', 'd', 'e', 'eight', 'equal', 'f', 'fi', 'five', 'fl', 'four', 'g', 'i', 'j', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'p', 'percent', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'v', 'y', 'zero']
+2026-09-14 10:19:02,575 - INFO - Glyph IDs:   [0, 1, 2, 3, 8, 17, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 36, 37, 38, 39, 40, 41, 48, 50, 54, 68, 69, 71, 72, 73, 74, 76, 77, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 92, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:02,575 - INFO - Retaining 50 glyphs
+2026-09-14 10:19:02,575 - INFO - head subsetting not needed
+2026-09-14 10:19:02,575 - INFO - hhea subsetting not needed
+2026-09-14 10:19:02,575 - INFO - maxp subsetting not needed
+2026-09-14 10:19:02,575 - INFO - OS/2 subsetting not needed
+2026-09-14 10:19:02,577 - INFO - hmtx subsetted
+2026-09-14 10:19:02,578 - INFO - cmap subsetted
+2026-09-14 10:19:02,578 - INFO - fpgm subsetting not needed
+2026-09-14 10:19:02,578 - INFO - prep subsetting not needed
+2026-09-14 10:19:02,578 - INFO - cvt  subsetting not needed
+2026-09-14 10:19:02,578 - INFO - loca subsetting not needed
+2026-09-14 10:19:02,578 - INFO - post subsetted
+2026-09-14 10:19:02,578 - INFO - gasp subsetting not needed
+2026-09-14 10:19:02,579 - INFO - GDEF subsetted
+2026-09-14 10:19:02,591 - INFO - GPOS subsetted
+2026-09-14 10:19:02,592 - INFO - GSUB subsetted
+2026-09-14 10:19:02,592 - INFO - name subsetting not needed
+2026-09-14 10:19:02,593 - INFO - glyf subsetted
+2026-09-14 10:19:02,593 - INFO - head pruned
+2026-09-14 10:19:02,593 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:19:02,593 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:19:02,593 - INFO - glyf pruned
+2026-09-14 10:19:02,593 - INFO - GDEF pruned
+2026-09-14 10:19:02,593 - INFO - GPOS pruned
+2026-09-14 10:19:02,594 - INFO - GSUB pruned
+2026-09-14 10:19:02,597 - INFO - name pruned
+2026-09-14 10:19:02,601 - INFO - maxp pruned
+2026-09-14 10:19:02,605 - INFO - cmap pruned
+2026-09-14 10:19:02,606 - INFO - kern dropped
+2026-09-14 10:19:02,606 - INFO - post pruned
+2026-09-14 10:19:02,606 - INFO - FFTM dropped
+2026-09-14 10:19:02,607 - INFO - GPOS pruned
+2026-09-14 10:19:02,609 - INFO - GSUB pruned
+2026-09-14 10:19:02,612 - INFO - glyf pruned
+2026-09-14 10:19:02,612 - INFO - Added gid0 to subset
+2026-09-14 10:19:02,612 - INFO - Added first four glyphs to subset
+2026-09-14 10:19:02,612 - INFO - Closing glyph list over 'MATH': 47 glyphs before
+2026-09-14 10:19:02,612 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'F', 'M', 'N', 'O', 'P', 'R', 'S', 'U', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'five', 'four', 'g', 'i', 'j', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'w', 'z', 'zero']
+2026-09-14 10:19:02,613 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 41, 48, 49, 50, 51, 53, 54, 56, 68, 69, 70, 71, 72, 73, 74, 76, 77, 79, 80, 81, 82, 83, 85, 86, 87, 88, 90, 93, 3228]
+2026-09-14 10:19:02,613 - INFO - Closed glyph list over 'MATH': 47 glyphs after
+2026-09-14 10:19:02,613 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'F', 'M', 'N', 'O', 'P', 'R', 'S', 'U', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'five', 'four', 'g', 'i', 'j', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'w', 'z', 'zero']
+2026-09-14 10:19:02,613 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 41, 48, 49, 50, 51, 53, 54, 56, 68, 69, 70, 71, 72, 73, 74, 76, 77, 79, 80, 81, 82, 83, 85, 86, 87, 88, 90, 93, 3228]
+2026-09-14 10:19:02,613 - INFO - Closing glyph list over 'GSUB': 47 glyphs before
+2026-09-14 10:19:02,613 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'F', 'M', 'N', 'O', 'P', 'R', 'S', 'U', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'five', 'four', 'g', 'i', 'j', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'w', 'z', 'zero']
+2026-09-14 10:19:02,613 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 41, 48, 49, 50, 51, 53, 54, 56, 68, 69, 70, 71, 72, 73, 74, 76, 77, 79, 80, 81, 82, 83, 85, 86, 87, 88, 90, 93, 3228]
+2026-09-14 10:19:02,616 - INFO - Closed glyph list over 'GSUB': 52 glyphs after
+2026-09-14 10:19:02,616 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'F', 'M', 'N', 'O', 'P', 'R', 'S', 'U', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'fi', 'five', 'fl', 'four', 'g', 'i', 'j', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'w', 'z', 'zero']
+2026-09-14 10:19:02,616 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 41, 48, 49, 50, 51, 53, 54, 56, 68, 69, 70, 71, 72, 73, 74, 76, 77, 79, 80, 81, 82, 83, 85, 86, 87, 88, 90, 93, 3228, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:19:02,616 - INFO - Closing glyph list over 'glyf': 52 glyphs before
+2026-09-14 10:19:02,616 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'F', 'M', 'N', 'O', 'P', 'R', 'S', 'U', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'fi', 'five', 'fl', 'four', 'g', 'i', 'j', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'w', 'z', 'zero']
+2026-09-14 10:19:02,616 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 41, 48, 49, 50, 51, 53, 54, 56, 68, 69, 70, 71, 72, 73, 74, 76, 77, 79, 80, 81, 82, 83, 85, 86, 87, 88, 90, 93, 3228, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:19:02,616 - INFO - Closed glyph list over 'glyf': 52 glyphs after
+2026-09-14 10:19:02,616 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'F', 'M', 'N', 'O', 'P', 'R', 'S', 'U', 'a', 'b', 'c', 'd', 'e', 'eight', 'f', 'fi', 'five', 'fl', 'four', 'g', 'i', 'j', 'l', 'm', 'minus', 'n', 'nonmarkingreturn', 'o', 'one', 'p', 'period', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'w', 'z', 'zero']
+2026-09-14 10:19:02,616 - INFO - Glyph IDs:   [0, 1, 2, 3, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 36, 37, 38, 39, 41, 48, 49, 50, 51, 53, 54, 56, 68, 69, 70, 71, 72, 73, 74, 76, 77, 79, 80, 81, 82, 83, 85, 86, 87, 88, 90, 93, 3228, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:19:02,616 - INFO - Retaining 52 glyphs
+2026-09-14 10:19:02,617 - INFO - head subsetting not needed
+2026-09-14 10:19:02,617 - INFO - hhea subsetting not needed
+2026-09-14 10:19:02,617 - INFO - maxp subsetting not needed
+2026-09-14 10:19:02,617 - INFO - OS/2 subsetting not needed
+2026-09-14 10:19:02,618 - INFO - hmtx subsetted
+2026-09-14 10:19:02,619 - INFO - cmap subsetted
+2026-09-14 10:19:02,619 - INFO - fpgm subsetting not needed
+2026-09-14 10:19:02,619 - INFO - prep subsetting not needed
+2026-09-14 10:19:02,619 - INFO - cvt  subsetting not needed
+2026-09-14 10:19:02,620 - INFO - loca subsetting not needed
+2026-09-14 10:19:02,620 - INFO - post subsetted
+2026-09-14 10:19:02,620 - INFO - gasp subsetting not needed
+2026-09-14 10:19:02,620 - INFO - MATH subsetted
+2026-09-14 10:19:02,621 - INFO - GDEF subsetted
+2026-09-14 10:19:02,634 - INFO - GPOS subsetted
+2026-09-14 10:19:02,635 - INFO - GSUB subsetted
+2026-09-14 10:19:02,635 - INFO - name subsetting not needed
+2026-09-14 10:19:02,636 - INFO - glyf subsetted
+2026-09-14 10:19:02,636 - INFO - head pruned
+2026-09-14 10:19:02,636 - INFO - OS/2 Unicode ranges pruned: [0, 38]
+2026-09-14 10:19:02,636 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:19:02,637 - INFO - glyf pruned
+2026-09-14 10:19:02,637 - INFO - GDEF pruned
+2026-09-14 10:19:02,637 - INFO - GPOS pruned
+2026-09-14 10:19:02,637 - INFO - GSUB pruned
+2026-09-14 10:19:02,642 - INFO - name pruned
+2026-09-14 10:19:02,914 - INFO -   Saved: ed/ed_fig6_sensitivity (pdf+png)
+2026-09-14 10:19:02,914 - INFO - ED Fig 7: Strict Direction Inconsistency (Optimized Aesthetics)...
+2026-09-14 10:19:02,980 - INFO -   Strict-inconsistent heatmap: features=18, g range [-0.225, +0.413]
+2026-09-14 10:19:02,980 - INFO -   Colormap: RdBu diverging
+2026-09-14 10:19:03,275 - INFO - maxp pruned
+2026-09-14 10:19:03,280 - INFO - cmap pruned
+2026-09-14 10:19:03,280 - INFO - kern dropped
+2026-09-14 10:19:03,280 - INFO - post pruned
+2026-09-14 10:19:03,280 - INFO - FFTM dropped
+2026-09-14 10:19:03,281 - INFO - GPOS pruned
+2026-09-14 10:19:03,283 - INFO - GSUB pruned
+2026-09-14 10:19:03,287 - INFO - glyf pruned
+2026-09-14 10:19:03,287 - INFO - Added gid0 to subset
+2026-09-14 10:19:03,287 - INFO - Added first four glyphs to subset
+2026-09-14 10:19:03,287 - INFO - Closing glyph list over 'GSUB': 51 glyphs before
+2026-09-14 10:19:03,287 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'I', 'O', 'P', 'R', 'S', 'T', 'a', 'asterisk', 'b', 'bar', 'c', 'd', 'dagger', 'e', 'equal', 'g', 'greater', 'h', 'hyphen', 'i', 'k', 'l', 'less', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'q', 'r', 's', 'semicolon', 'seven', 'space', 't', 'u', 'v', 'x', 'y', 'z']
+2026-09-14 10:19:03,288 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 13, 16, 26, 30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 43, 44, 50, 51, 53, 54, 55, 68, 69, 70, 71, 72, 74, 75, 76, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 95, 2818]
+2026-09-14 10:19:03,290 - INFO - Closed glyph list over 'GSUB': 51 glyphs after
+2026-09-14 10:19:03,290 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'I', 'O', 'P', 'R', 'S', 'T', 'a', 'asterisk', 'b', 'bar', 'c', 'd', 'dagger', 'e', 'equal', 'g', 'greater', 'h', 'hyphen', 'i', 'k', 'l', 'less', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'q', 'r', 's', 'semicolon', 'seven', 'space', 't', 'u', 'v', 'x', 'y', 'z']
+2026-09-14 10:19:03,290 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 13, 16, 26, 30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 43, 44, 50, 51, 53, 54, 55, 68, 69, 70, 71, 72, 74, 75, 76, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 95, 2818]
+2026-09-14 10:19:03,290 - INFO - Closing glyph list over 'glyf': 51 glyphs before
+2026-09-14 10:19:03,290 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'I', 'O', 'P', 'R', 'S', 'T', 'a', 'asterisk', 'b', 'bar', 'c', 'd', 'dagger', 'e', 'equal', 'g', 'greater', 'h', 'hyphen', 'i', 'k', 'l', 'less', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'q', 'r', 's', 'semicolon', 'seven', 'space', 't', 'u', 'v', 'x', 'y', 'z']
+2026-09-14 10:19:03,290 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 13, 16, 26, 30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 43, 44, 50, 51, 53, 54, 55, 68, 69, 70, 71, 72, 74, 75, 76, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 95, 2818]
+2026-09-14 10:19:03,290 - INFO - Closed glyph list over 'glyf': 51 glyphs after
+2026-09-14 10:19:03,290 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'I', 'O', 'P', 'R', 'S', 'T', 'a', 'asterisk', 'b', 'bar', 'c', 'd', 'dagger', 'e', 'equal', 'g', 'greater', 'h', 'hyphen', 'i', 'k', 'l', 'less', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'parenleft', 'parenright', 'q', 'r', 's', 'semicolon', 'seven', 'space', 't', 'u', 'v', 'x', 'y', 'z']
+2026-09-14 10:19:03,290 - INFO - Glyph IDs:   [0, 1, 2, 3, 11, 12, 13, 16, 26, 30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 43, 44, 50, 51, 53, 54, 55, 68, 69, 70, 71, 72, 74, 75, 76, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 95, 2818]
+2026-09-14 10:19:03,290 - INFO - Retaining 51 glyphs
+2026-09-14 10:19:03,291 - INFO - head subsetting not needed
+2026-09-14 10:19:03,291 - INFO - hhea subsetting not needed
+2026-09-14 10:19:03,291 - INFO - maxp subsetting not needed
+2026-09-14 10:19:03,291 - INFO - OS/2 subsetting not needed
+2026-09-14 10:19:03,293 - INFO - hmtx subsetted
+2026-09-14 10:19:03,294 - INFO - cmap subsetted
+2026-09-14 10:19:03,294 - INFO - fpgm subsetting not needed
+2026-09-14 10:19:03,294 - INFO - prep subsetting not needed
+2026-09-14 10:19:03,294 - INFO - cvt  subsetting not needed
+2026-09-14 10:19:03,294 - INFO - loca subsetting not needed
+2026-09-14 10:19:03,294 - INFO - post subsetted
+2026-09-14 10:19:03,294 - INFO - gasp subsetting not needed
+2026-09-14 10:19:03,295 - INFO - GDEF subsetted
+2026-09-14 10:19:03,307 - INFO - GPOS subsetted
+2026-09-14 10:19:03,308 - INFO - GSUB subsetted
+2026-09-14 10:19:03,308 - INFO - name subsetting not needed
+2026-09-14 10:19:03,308 - INFO - glyf subsetted
+2026-09-14 10:19:03,309 - INFO - head pruned
+2026-09-14 10:19:03,309 - INFO - OS/2 Unicode ranges pruned: [0, 31]
+2026-09-14 10:19:03,309 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:19:03,309 - INFO - glyf pruned
+2026-09-14 10:19:03,309 - INFO - GDEF pruned
+2026-09-14 10:19:03,309 - INFO - GPOS pruned
+2026-09-14 10:19:03,310 - INFO - GSUB pruned
+2026-09-14 10:19:03,314 - INFO - name pruned
+2026-09-14 10:19:03,318 - INFO - maxp pruned
+2026-09-14 10:19:03,323 - INFO - cmap pruned
+2026-09-14 10:19:03,323 - INFO - kern dropped
+2026-09-14 10:19:03,323 - INFO - post pruned
+2026-09-14 10:19:03,323 - INFO - FFTM dropped
+2026-09-14 10:19:03,324 - INFO - GPOS pruned
+2026-09-14 10:19:03,326 - INFO - GSUB pruned
+2026-09-14 10:19:03,328 - INFO - glyf pruned
+2026-09-14 10:19:03,329 - INFO - Added gid0 to subset
+2026-09-14 10:19:03,329 - INFO - Added first four glyphs to subset
+2026-09-14 10:19:03,329 - INFO - Closing glyph list over 'MATH': 24 glyphs before
+2026-09-14 10:19:03,329 - INFO - Glyph names: ['.notdef', '.null', 'H', 'd', 'e', 'eight', 'emdash', 'five', 'four', 'g', 'hyphen', 'minus', 'nine', 'nonmarkingreturn', 'one', 'period', 'quotesingle', 's', 'seven', 'six', 'space', 'three', 'two', 'zero']
+2026-09-14 10:19:03,329 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 43, 71, 72, 74, 86, 2806, 3228]
+2026-09-14 10:19:03,330 - INFO - Closed glyph list over 'MATH': 24 glyphs after
+2026-09-14 10:19:03,330 - INFO - Glyph names: ['.notdef', '.null', 'H', 'd', 'e', 'eight', 'emdash', 'five', 'four', 'g', 'hyphen', 'minus', 'nine', 'nonmarkingreturn', 'one', 'period', 'quotesingle', 's', 'seven', 'six', 'space', 'three', 'two', 'zero']
+2026-09-14 10:19:03,330 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 43, 71, 72, 74, 86, 2806, 3228]
+2026-09-14 10:19:03,330 - INFO - Closing glyph list over 'GSUB': 24 glyphs before
+2026-09-14 10:19:03,330 - INFO - Glyph names: ['.notdef', '.null', 'H', 'd', 'e', 'eight', 'emdash', 'five', 'four', 'g', 'hyphen', 'minus', 'nine', 'nonmarkingreturn', 'one', 'period', 'quotesingle', 's', 'seven', 'six', 'space', 'three', 'two', 'zero']
+2026-09-14 10:19:03,330 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 43, 71, 72, 74, 86, 2806, 3228]
+2026-09-14 10:19:03,331 - INFO - Closed glyph list over 'GSUB': 24 glyphs after
+2026-09-14 10:19:03,331 - INFO - Glyph names: ['.notdef', '.null', 'H', 'd', 'e', 'eight', 'emdash', 'five', 'four', 'g', 'hyphen', 'minus', 'nine', 'nonmarkingreturn', 'one', 'period', 'quotesingle', 's', 'seven', 'six', 'space', 'three', 'two', 'zero']
+2026-09-14 10:19:03,331 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 43, 71, 72, 74, 86, 2806, 3228]
+2026-09-14 10:19:03,331 - INFO - Closing glyph list over 'glyf': 24 glyphs before
+2026-09-14 10:19:03,331 - INFO - Glyph names: ['.notdef', '.null', 'H', 'd', 'e', 'eight', 'emdash', 'five', 'four', 'g', 'hyphen', 'minus', 'nine', 'nonmarkingreturn', 'one', 'period', 'quotesingle', 's', 'seven', 'six', 'space', 'three', 'two', 'zero']
+2026-09-14 10:19:03,331 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 43, 71, 72, 74, 86, 2806, 3228]
+2026-09-14 10:19:03,331 - INFO - Closed glyph list over 'glyf': 24 glyphs after
+2026-09-14 10:19:03,331 - INFO - Glyph names: ['.notdef', '.null', 'H', 'd', 'e', 'eight', 'emdash', 'five', 'four', 'g', 'hyphen', 'minus', 'nine', 'nonmarkingreturn', 'one', 'period', 'quotesingle', 's', 'seven', 'six', 'space', 'three', 'two', 'zero']
+2026-09-14 10:19:03,331 - INFO - Glyph IDs:   [0, 1, 2, 3, 10, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 43, 71, 72, 74, 86, 2806, 3228]
+2026-09-14 10:19:03,332 - INFO - Retaining 24 glyphs
+2026-09-14 10:19:03,332 - INFO - head subsetting not needed
+2026-09-14 10:19:03,332 - INFO - hhea subsetting not needed
+2026-09-14 10:19:03,332 - INFO - maxp subsetting not needed
+2026-09-14 10:19:03,332 - INFO - OS/2 subsetting not needed
+2026-09-14 10:19:03,334 - INFO - hmtx subsetted
+2026-09-14 10:19:03,335 - INFO - cmap subsetted
+2026-09-14 10:19:03,335 - INFO - fpgm subsetting not needed
+2026-09-14 10:19:03,335 - INFO - prep subsetting not needed
+2026-09-14 10:19:03,335 - INFO - cvt  subsetting not needed
+2026-09-14 10:19:03,335 - INFO - loca subsetting not needed
+2026-09-14 10:19:03,335 - INFO - post subsetted
+2026-09-14 10:19:03,335 - INFO - gasp subsetting not needed
+2026-09-14 10:19:03,335 - INFO - MATH subsetted
+2026-09-14 10:19:03,337 - INFO - GDEF subsetted
+2026-09-14 10:19:03,348 - INFO - GPOS subsetted
+2026-09-14 10:19:03,348 - INFO - GSUB subsetted
+2026-09-14 10:19:03,348 - INFO - name subsetting not needed
+2026-09-14 10:19:03,349 - INFO - glyf subsetted
+2026-09-14 10:19:03,349 - INFO - head pruned
+2026-09-14 10:19:03,350 - INFO - OS/2 Unicode ranges pruned: [0, 31, 38]
+2026-09-14 10:19:03,350 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:19:03,350 - INFO - glyf pruned
+2026-09-14 10:19:03,350 - INFO - GDEF pruned
+2026-09-14 10:19:03,350 - INFO - GPOS pruned
+2026-09-14 10:19:03,350 - INFO - GSUB pruned
+2026-09-14 10:19:03,351 - INFO - name pruned
+2026-09-14 10:19:03,667 - INFO -   Saved: ed/ed_fig7_strict_inconsistency (pdf+png, fixed canvas)
+2026-09-14 10:19:03,667 - INFO - ED Fig 8: Effect Size Categories (Optimized Aesthetics)...
+2026-09-14 10:19:03,796 - INFO - maxp pruned
+2026-09-14 10:19:03,800 - INFO - cmap pruned
+2026-09-14 10:19:03,800 - INFO - kern dropped
+2026-09-14 10:19:03,800 - INFO - post pruned
+2026-09-14 10:19:03,801 - INFO - FFTM dropped
+2026-09-14 10:19:03,801 - INFO - GPOS pruned
+2026-09-14 10:19:03,803 - INFO - GSUB pruned
+2026-09-14 10:19:03,807 - INFO - glyf pruned
+2026-09-14 10:19:03,808 - INFO - Added gid0 to subset
+2026-09-14 10:19:03,808 - INFO - Added first four glyphs to subset
+2026-09-14 10:19:03,808 - INFO - Closing glyph list over 'GSUB': 38 glyphs before
+2026-09-14 10:19:03,808 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'O', 'P', 'S', 'T', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'f', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'r', 's', 'space', 't', 'u', 'x', 'y', 'z']
+2026-09-14 10:19:03,808 - INFO - Glyph IDs:   [0, 1, 2, 3, 27, 36, 37, 38, 39, 40, 41, 43, 50, 51, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95]
+2026-09-14 10:19:03,811 - INFO - Closed glyph list over 'GSUB': 43 glyphs after
+2026-09-14 10:19:03,811 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'O', 'P', 'S', 'T', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'f', 'fi', 'fl', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'x', 'y', 'z']
+2026-09-14 10:19:03,811 - INFO - Glyph IDs:   [0, 1, 2, 3, 27, 36, 37, 38, 39, 40, 41, 43, 50, 51, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:03,811 - INFO - Closing glyph list over 'glyf': 43 glyphs before
+2026-09-14 10:19:03,811 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'O', 'P', 'S', 'T', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'f', 'fi', 'fl', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'x', 'y', 'z']
+2026-09-14 10:19:03,811 - INFO - Glyph IDs:   [0, 1, 2, 3, 27, 36, 37, 38, 39, 40, 41, 43, 50, 51, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:03,811 - INFO - Closed glyph list over 'glyf': 43 glyphs after
+2026-09-14 10:19:03,811 - INFO - Glyph names: ['.notdef', '.null', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'O', 'P', 'S', 'T', 'a', 'b', 'bar', 'c', 'd', 'e', 'eight', 'f', 'fi', 'fl', 'g', 'h', 'i', 'l', 'm', 'n', 'nonmarkingreturn', 'o', 'p', 'r', 's', 'space', 't', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'x', 'y', 'z']
+2026-09-14 10:19:03,811 - INFO - Glyph IDs:   [0, 1, 2, 3, 27, 36, 37, 38, 39, 40, 41, 43, 50, 51, 54, 55, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 80, 81, 82, 83, 85, 86, 87, 88, 91, 92, 93, 95, 5034, 5035, 5036, 5037, 5038]
+2026-09-14 10:19:03,811 - INFO - Retaining 43 glyphs
+2026-09-14 10:19:03,812 - INFO - head subsetting not needed
+2026-09-14 10:19:03,812 - INFO - hhea subsetting not needed
+2026-09-14 10:19:03,812 - INFO - maxp subsetting not needed
+2026-09-14 10:19:03,812 - INFO - OS/2 subsetting not needed
+2026-09-14 10:19:03,814 - INFO - hmtx subsetted
+2026-09-14 10:19:03,815 - INFO - cmap subsetted
+2026-09-14 10:19:03,815 - INFO - fpgm subsetting not needed
+2026-09-14 10:19:03,815 - INFO - prep subsetting not needed
+2026-09-14 10:19:03,815 - INFO - cvt  subsetting not needed
+2026-09-14 10:19:03,815 - INFO - loca subsetting not needed
+2026-09-14 10:19:03,815 - INFO - post subsetted
+2026-09-14 10:19:03,815 - INFO - gasp subsetting not needed
+2026-09-14 10:19:03,816 - INFO - GDEF subsetted
+2026-09-14 10:19:03,891 - INFO - GPOS subsetted
+2026-09-14 10:19:03,892 - INFO - GSUB subsetted
+2026-09-14 10:19:03,892 - INFO - name subsetting not needed
+2026-09-14 10:19:03,893 - INFO - glyf subsetted
+2026-09-14 10:19:03,894 - INFO - head pruned
+2026-09-14 10:19:03,894 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:19:03,894 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:19:03,894 - INFO - glyf pruned
+2026-09-14 10:19:03,894 - INFO - GDEF pruned
+2026-09-14 10:19:03,894 - INFO - GPOS pruned
+2026-09-14 10:19:03,894 - INFO - GSUB pruned
+2026-09-14 10:19:03,898 - INFO - name pruned
+2026-09-14 10:19:03,902 - INFO - maxp pruned
+2026-09-14 10:19:03,907 - INFO - cmap pruned
+2026-09-14 10:19:03,907 - INFO - kern dropped
+2026-09-14 10:19:03,907 - INFO - post pruned
+2026-09-14 10:19:03,907 - INFO - FFTM dropped
+2026-09-14 10:19:03,908 - INFO - GPOS pruned
+2026-09-14 10:19:03,910 - INFO - GSUB pruned
+2026-09-14 10:19:03,913 - INFO - glyf pruned
+2026-09-14 10:19:03,913 - INFO - Added gid0 to subset
+2026-09-14 10:19:03,913 - INFO - Added first four glyphs to subset
+2026-09-14 10:19:03,913 - INFO - Closing glyph list over 'MATH': 34 glyphs before
+2026-09-14 10:19:03,913 - INFO - Glyph names: ['.notdef', '.null', 'F', 'L', 'M', 'N', 'S', 'a', 'b', 'd', 'e', 'eight', 'f', 'five', 'four', 'g', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'zero']
+2026-09-14 10:19:03,914 - INFO - Glyph IDs:   [0, 1, 2, 3, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 41, 47, 48, 49, 54, 68, 69, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 88]
+2026-09-14 10:19:03,914 - INFO - Closed glyph list over 'MATH': 34 glyphs after
+2026-09-14 10:19:03,914 - INFO - Glyph names: ['.notdef', '.null', 'F', 'L', 'M', 'N', 'S', 'a', 'b', 'd', 'e', 'eight', 'f', 'five', 'four', 'g', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'zero']
+2026-09-14 10:19:03,914 - INFO - Glyph IDs:   [0, 1, 2, 3, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 41, 47, 48, 49, 54, 68, 69, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 88]
+2026-09-14 10:19:03,914 - INFO - Closing glyph list over 'GSUB': 34 glyphs before
+2026-09-14 10:19:03,915 - INFO - Glyph names: ['.notdef', '.null', 'F', 'L', 'M', 'N', 'S', 'a', 'b', 'd', 'e', 'eight', 'f', 'five', 'four', 'g', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'zero']
+2026-09-14 10:19:03,915 - INFO - Glyph IDs:   [0, 1, 2, 3, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 41, 47, 48, 49, 54, 68, 69, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 88]
+2026-09-14 10:19:03,917 - INFO - Closed glyph list over 'GSUB': 39 glyphs after
+2026-09-14 10:19:03,917 - INFO - Glyph names: ['.notdef', '.null', 'F', 'L', 'M', 'N', 'S', 'a', 'b', 'd', 'e', 'eight', 'f', 'fi', 'five', 'fl', 'four', 'g', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'zero']
+2026-09-14 10:19:03,917 - INFO - Glyph IDs:   [0, 1, 2, 3, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 41, 47, 48, 49, 54, 68, 69, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 88, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:19:03,917 - INFO - Closing glyph list over 'glyf': 39 glyphs before
+2026-09-14 10:19:03,917 - INFO - Glyph names: ['.notdef', '.null', 'F', 'L', 'M', 'N', 'S', 'a', 'b', 'd', 'e', 'eight', 'f', 'fi', 'five', 'fl', 'four', 'g', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'zero']
+2026-09-14 10:19:03,917 - INFO - Glyph IDs:   [0, 1, 2, 3, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 41, 47, 48, 49, 54, 68, 69, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 88, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:19:03,917 - INFO - Closed glyph list over 'glyf': 39 glyphs after
+2026-09-14 10:19:03,917 - INFO - Glyph names: ['.notdef', '.null', 'F', 'L', 'M', 'N', 'S', 'a', 'b', 'd', 'e', 'eight', 'f', 'fi', 'five', 'fl', 'four', 'g', 'i', 'l', 'm', 'n', 'nine', 'nonmarkingreturn', 'o', 'one', 'r', 's', 'seven', 'six', 'space', 't', 'three', 'two', 'u', 'uniFB00', 'uniFB03', 'uniFB04', 'zero']
+2026-09-14 10:19:03,917 - INFO - Glyph IDs:   [0, 1, 2, 3, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 41, 47, 48, 49, 54, 68, 69, 71, 72, 73, 74, 76, 79, 80, 81, 82, 85, 86, 87, 88, 5038, 5039, 5040, 5041, 5042]
+2026-09-14 10:19:03,917 - INFO - Retaining 39 glyphs
+2026-09-14 10:19:03,918 - INFO - head subsetting not needed
+2026-09-14 10:19:03,918 - INFO - hhea subsetting not needed
+2026-09-14 10:19:03,918 - INFO - maxp subsetting not needed
+2026-09-14 10:19:03,918 - INFO - OS/2 subsetting not needed
+2026-09-14 10:19:03,919 - INFO - hmtx subsetted
+2026-09-14 10:19:03,920 - INFO - cmap subsetted
+2026-09-14 10:19:03,920 - INFO - fpgm subsetting not needed
+2026-09-14 10:19:03,920 - INFO - prep subsetting not needed
+2026-09-14 10:19:03,920 - INFO - cvt  subsetting not needed
+2026-09-14 10:19:03,920 - INFO - loca subsetting not needed
+2026-09-14 10:19:03,921 - INFO - post subsetted
+2026-09-14 10:19:03,921 - INFO - gasp subsetting not needed
+2026-09-14 10:19:03,921 - INFO - MATH subsetted
+2026-09-14 10:19:03,922 - INFO - GDEF subsetted
+2026-09-14 10:19:03,933 - INFO - GPOS subsetted
+2026-09-14 10:19:03,934 - INFO - GSUB subsetted
+2026-09-14 10:19:03,934 - INFO - name subsetting not needed
+2026-09-14 10:19:03,935 - INFO - glyf subsetted
+2026-09-14 10:19:03,935 - INFO - head pruned
+2026-09-14 10:19:03,935 - INFO - OS/2 Unicode ranges pruned: [0]
+2026-09-14 10:19:03,935 - INFO - OS/2 CodePage ranges pruned: [0]
+2026-09-14 10:19:03,935 - INFO - glyf pruned
+2026-09-14 10:19:03,936 - INFO - GDEF pruned
+2026-09-14 10:19:03,936 - INFO - GPOS pruned
+2026-09-14 10:19:03,936 - INFO - GSUB pruned
+2026-09-14 10:19:03,939 - INFO - name pruned
+2026-09-14 10:19:04,120 - INFO -   Saved: ed/ed_fig8_effect_categories (pdf+png, fixed canvas)
+2026-09-14 10:19:04,120 - INFO - 
+======================================================================
+2026-09-14 10:19:04,120 - INFO - TARGETED VISUALIZATIONS COMPLETE
+2026-09-14 10:19:04,120 - INFO -   Main:     /path/to/project/module1_results/figures_lyc/main
+2026-09-14 10:19:04,120 - INFO -   Extended: /path/to/project/module1_results/figures_lyc/ed
+2026-09-14 10:19:04,120 - INFO - ======================================================================
+===== END s07 rc=0 Mon Sep 14 10:19:04 CST 2026 =====
+===== START s40 Mon Sep 14 10:19:04 CST 2026 =====
+2026-09-14 10:19:04,522 - INFO - === M4 external data pipeline ===
+2026-09-14 10:19:04,616 - INFO - Saved /path/to/project/module4_results/data/external/processed/epidemiology_annual.csv (45 rows)
+2026-09-14 10:19:04,632 - INFO - Saved /path/to/project/module4_results/data/external/processed/epidemiology_monthly.csv (45 rows)
+2026-09-14 10:19:04,640 - INFO - Saved /path/to/project/module4_results/data/external/processed/epidemiology_state.csv (52 rows)
+2026-09-14 10:19:04,645 - INFO - Saved /path/to/project/module4_results/data/external/processed/variable_dictionary.csv
+2026-09-14 10:19:04,645 - INFO - DONE
+===== END s40 rc=0 Mon Sep 14 10:19:04 CST 2026 =====
+===== START s44f Mon Sep 14 10:19:04 CST 2026 =====
+2026-09-14 10:19:06,613 - INFO - Reading trajectory (20% sample)...
+/path/to/code/Module4/s44f_final_events.py:51: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  tr["period"] = ts.dt.to_period("M").astype(str)
+2026-09-14 10:19:18,319 - INFO - Sample: 2686809
+2026-09-14 10:19:19,626 - INFO -   E1_election_2016: p_factor coef=-0.0005479816232156761
+2026-09-14 10:19:22,056 - INFO -   E2_celebrity_2018: p_factor coef=0.004831024653730791
+2026-09-14 10:19:27,125 - INFO -   E3_covid_2020: p_factor coef=-0.00323380956660984
+2026-09-14 10:19:32,374 - INFO -   E4_blm_2020: p_factor coef=-0.004683545544109224
+2026-09-14 10:19:38,349 - INFO -   E5_capitol_2021: p_factor coef=0.011093083289138977
+2026-09-14 10:19:38,614 - INFO - DONE
+===== END s44f rc=0 Mon Sep 14 10:19:38 CST 2026 =====
+===== START s36 Mon Sep 14 10:19:39 CST 2026 =====
+2026-09-14 10:19:39,904 - INFO - === M3 figures v2 (M1-compatible) ===
+2026-09-14 10:19:40,727 - INFO -   Saved: main/fig1_pairwise_distinguishability
+2026-09-14 10:19:41,479 - INFO -   Saved: main/fig2_phenotype_geometry
+2026-09-14 10:19:42,026 - INFO -   Saved: main/fig3_disorder_networks
+2026-09-14 10:19:42,663 - INFO -   Saved: main/fig4_comorbidity
+2026-09-14 10:19:43,035 - INFO -   Saved: ed/ed_fig1_mantel
+2026-09-14 10:19:43,544 - INFO -   Saved: ed/ed_fig2_bridge_matrix
+2026-09-14 10:19:43,726 - INFO -   Saved: ed/ed_fig3_intermediate_detail
+2026-09-14 10:19:44,834 - INFO -   Saved: ed/ed_fig4_umap_small_multiples
+2026-09-14 10:19:44,836 - INFO - DONE
+===== END s36 rc=0 Mon Sep 14 10:19:45 CST 2026 =====
+s05=0
+s06=0
+s07=0
+s40=0
+s44f=0
+s36=0
+ALL_DONE rc=0

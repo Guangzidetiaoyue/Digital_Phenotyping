@@ -1,0 +1,35 @@
+{
+  "primary_scheme": "default",
+  "primary_weights": {
+    "base": 0.3,
+    "direction_spread": 0.4,
+    "significance": 0.3
+  },
+  "top_k": 20,
+  "comparisons": {
+    "spread_heavy": {
+      "weights": {
+        "base": 0.2,
+        "direction_spread": 0.5,
+        "significance": 0.3
+      },
+      "spearman_rho": 0.9969860642774012,
+      "spearman_p": 7.765498348671285e-103,
+      "jaccard_top_k": 0.9047619047619048,
+      "n_shared_top_k": 19
+    },
+    "significance_heavy": {
+      "weights": {
+        "base": 0.3,
+        "direction_spread": 0.3,
+        "significance": 0.4
+      },
+      "spearman_rho": 0.9977619289188623,
+      "spearman_p": 1.037957438197946e-108,
+      "jaccard_top_k": 1.0,
+      "n_shared_top_k": 20
+    }
+  },
+  "overall_stability": "high",
+  "min_jaccard": 0.9047619047619048
+}

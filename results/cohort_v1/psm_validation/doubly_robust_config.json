@@ -1,0 +1,14 @@
+{
+  "weight_column": "weight_satt",
+  "dr_covariates": [],
+  "all_covariates": [
+    "posts_per_day",
+    "tenure_days",
+    "readability_grade",
+    "subreddit_entropy",
+    "submission_ratio"
+  ],
+  "ess": 591859.8775272883,
+  "mean_smd": 0.002498265675822098,
+  "max_smd": 0.006393282447537251
+}

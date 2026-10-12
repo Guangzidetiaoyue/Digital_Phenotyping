@@ -1,0 +1,75 @@
+2026-08-30 13:46:37,060 - INFO - ================================================================================
+2026-08-30 13:46:37,091 - INFO - MODULE 2 - Step 09: Trajectory Heterogeneity Analysis
+2026-08-30 13:46:37,094 - INFO - ================================================================================
+2026-08-30 13:48:55,938 - INFO - Loaded trajectories: (33789616, 135)
+2026-08-30 13:48:58,161 - INFO - Extracting trajectory shape features (enhanced)...
+2026-08-30 13:48:58,465 - INFO -   Loaded Step 08 changepoints: 89 users with pre-t0 CPs
+2026-08-30 13:57:37,747 - INFO -   Shape features extracted: (689584, 31)
+2026-08-30 13:57:39,021 - INFO - ============================================================
+2026-08-30 13:57:39,022 - INFO - Trajectory Subtype Discovery (GMM)
+2026-08-30 13:57:39,023 - INFO - ============================================================
+2026-08-30 13:57:39,082 - INFO -   Patients for clustering: 123986
+2026-08-30 13:57:39,969 - INFO -   Patients with complete shape features: 57981
+2026-08-30 13:57:46,421 - INFO -   k=2: Successfully fitted with covariance_type='full'
+2026-08-30 13:58:19,291 - INFO -   k=2: BIC=648193, Silhouette=0.498
+2026-08-30 13:58:32,746 - INFO -   k=3: Successfully fitted with covariance_type='full'
+2026-08-30 13:59:04,772 - INFO -   k=3: BIC=385674, Silhouette=0.065
+2026-08-30 13:59:27,684 - INFO -   k=4: Successfully fitted with covariance_type='full'
+2026-08-30 13:59:58,386 - INFO -   k=4: BIC=330091, Silhouette=0.068
+2026-08-30 14:00:21,936 - INFO -   k=5: Successfully fitted with covariance_type='full'
+2026-08-30 14:00:52,476 - INFO -   k=5: BIC=318391, Silhouette=0.080
+2026-08-30 14:00:52,498 - INFO -   Selected k=2
+2026-08-30 14:00:53,155 - INFO - Saved GMM model selection metrics: /path/to/project/module2_results/statistics/gmm_model_selection.csv
+2026-08-30 14:01:04,780 - INFO -   Final model: Successfully fitted with covariance_type='full'
+2026-08-30 14:01:04,848 - INFO -   Running Bootstrap Stability Validation (100 iterations, aligned ARI)...
+2026-08-30 14:03:32,176 - INFO -   Bootstrap ARI: 0.525 ± 0.013 (n=100)
+2026-08-30 14:03:32,197 - WARNING -   WARNING: Low ARI indicates subtype structure may be unstable or arbitrary!
+2026-08-30 14:03:32,223 - INFO -   Label alignment mapping (by step_height desc): {0: 0, 1: 1}
+2026-08-30 14:03:32,264 - INFO -   Subtype 0 (Acute on Chronic): n=54373 (93.8%)
+2026-08-30 14:03:32,267 - INFO -     Ranks: {'step': 1, 'slope_pre': 1, 'slope_post': 1, 'volatility': 2, 'turning_angle': 2, 'recovery': 1}
+2026-08-30 14:03:32,274 - INFO -   Subtype 1 (Fluctuating): n=3608 (6.2%)
+2026-08-30 14:03:32,277 - INFO -     Ranks: {'step': 2, 'slope_pre': 2, 'slope_post': 2, 'volatility': 1, 'turning_angle': 1, 'recovery': 2}
+2026-08-30 14:03:32,678 - INFO -   Checking control group subtype structure...
+2026-08-30 14:03:33,229 - INFO -   Subtype distribution comparison:
+2026-08-30 14:03:33,233 - INFO -     Subtype 0: Patient=93.8%, Control=91.0%
+2026-08-30 14:03:33,236 - INFO -     Subtype 1: Patient=6.2%, Control=9.0%
+2026-08-30 14:03:33,254 - INFO -   Chi-square test: χ²=476.86, p=0.0000
+2026-08-30 14:03:33,257 - INFO -   → Patient and control subtype distributions differ significantly
+2026-08-30 14:03:33,307 - INFO -   High-severity subtype (Subtype 0) Odds Ratio (Patient vs Control): OR=1.49 (95% CI: 1.44-1.55)
+2026-08-30 14:03:35,073 - INFO -   Control subtype assignment entropy: 0.02 / 1.00 bits
+2026-08-30 14:03:35,113 - INFO - ============================================================
+2026-08-30 14:03:35,113 - INFO - Subtype Predictor Analysis
+2026-08-30 14:03:35,114 - INFO - ============================================================
+2026-08-30 14:03:45,333 - INFO -   Merged with Module 1 features: 57981/57981 (100.0%) patients retained
+2026-08-30 14:04:15,184 - INFO -   Top subtype predictors (Permutation Importance):
+2026-08-30 14:04:15,185 - INFO -     score_max: 0.1552 ± 0.0045
+2026-08-30 14:04:15,185 - INFO -     n_posts_total_log: 0.1309 ± 0.0028
+2026-08-30 14:04:15,185 - INFO -     score_range: 0.0928 ± 0.0031
+2026-08-30 14:04:15,186 - INFO -     post_length_std: 0.0427 ± 0.0026
+2026-08-30 14:04:15,186 - INFO -     tenure_days_log: 0.0360 ± 0.0032
+2026-08-30 14:04:15,186 - INFO -     posts_per_active_day_log: 0.0249 ± 0.0019
+2026-08-30 14:04:15,186 - INFO -     active_day_ratio: 0.0192 ± 0.0027
+2026-08-30 14:04:15,186 - INFO -     post_length_cv: 0.0174 ± 0.0021
+2026-08-30 14:04:15,186 - INFO -     post_length_mean: 0.0152 ± 0.0020
+2026-08-30 14:04:15,186 - INFO -     posts_per_day_log: 0.0120 ± 0.0017
+2026-08-30 14:04:15,382 - INFO - ============================================================
+2026-08-30 14:04:15,383 - INFO - Disorder-Specific Subtype Analysis
+2026-08-30 14:04:15,383 - INFO - ============================================================
+2026-08-30 14:04:15,432 - INFO -   depression (n=13570): {0.0: '93.8%', 1.0: '6.2%'}
+2026-08-30 14:04:15,436 - INFO -   bipolar (n=4016): {0.0: '93.1%', 1.0: '6.9%'}
+2026-08-30 14:04:15,440 - INFO -   anxiety (n=6268): {0.0: '94.2%', 1.0: '5.8%'}
+2026-08-30 14:04:15,443 - INFO -   ocd (n=2435): {0.0: '93.2%', 1.0: '6.8%'}
+2026-08-30 14:04:15,447 - INFO -   ptsd (n=3634): {0.0: '92.1%', 1.0: '7.9%'}
+2026-08-30 14:04:15,450 - INFO -   bpd (n=2315): {0.0: '91.1%', 1.0: '8.9%'}
+2026-08-30 14:04:15,453 - INFO -   eating_disorders (n=674): {0.0: '93.9%', 1.0: '6.1%'}
+2026-08-30 14:04:15,456 - INFO -   schizophrenia (n=928): {0.0: '91.9%', 1.0: '8.1%'}
+2026-08-30 14:04:15,461 - INFO -   adhd (n=19148): {0.0: '94.5%', 1.0: '5.5%'}
+2026-08-30 14:04:15,466 - INFO -   autism (n=4993): {0.0: '94.0%', 1.0: '6.0%'}
+2026-08-30 14:04:15,466 - INFO - 
+  Cross-disorder chi-square: χ²=76.61, df=9, p=0.0000
+2026-08-30 14:04:15,466 - INFO -   → Subtype distributions differ significantly across disorders
+2026-08-30 14:04:30,837 - INFO - Aggregating subtype trajectories for visualization...
+2026-08-30 14:04:53,671 - INFO - Saved aggregated subtype trajectories: /path/to/project/module2_results/statistics/subtype_aggregated_trajectories.csv
+2026-08-30 14:04:53,735 - INFO - ================================================================================
+2026-08-30 14:04:53,735 - INFO - TRAJECTORY HETEROGENEITY ANALYSIS COMPLETE
+2026-08-30 14:04:53,735 - INFO - ================================================================================

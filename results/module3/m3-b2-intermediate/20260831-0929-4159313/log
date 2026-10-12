@@ -1,0 +1,52 @@
+2026-08-31 09:29:10,869 - INFO - Loading data...
+2026-08-31 09:29:21,260 - INFO - Features: 108
+2026-08-31 09:29:21,781 - INFO - Single-dx users: 63753, dual-dx users: 25560
+2026-08-31 09:29:22,328 - INFO - Disorders: ['adhd', 'anxiety', 'autism', 'bipolar', 'bpd', 'depression', 'eating_disorders', 'ocd', 'ptsd', 'schizophrenia']
+2026-08-31 09:29:23,134 - INFO - Dual users mapped to pairs: 25560
+2026-08-31 09:29:23,369 - INFO -   adhd-anxiety: n=2831, frac_int=0.16, res_ratio=0.99, p_res=0.034
+2026-08-31 09:29:23,473 - INFO -   adhd-autism: n=2186, frac_int=0.24, res_ratio=0.96, p_res=0.562
+2026-08-31 09:29:23,555 - INFO -   adhd-bipolar: n=805, frac_int=0.22, res_ratio=0.99, p_res=0.277
+2026-08-31 09:29:23,647 - INFO -   adhd-bpd: n=398, frac_int=0.25, res_ratio=1.00, p_res=0.593
+2026-08-31 09:29:23,793 - INFO -   adhd-depression: n=2553, frac_int=0.22, res_ratio=0.98, p_res=0.405
+2026-08-31 09:29:23,883 - INFO -   adhd-eating_disorders: n=196, frac_int=0.37, res_ratio=0.92, p_res=0.176
+2026-08-31 09:29:23,952 - INFO -   adhd-ocd: n=513, frac_int=0.26, res_ratio=0.92, p_res=0.006
+2026-08-31 09:29:24,047 - INFO -   adhd-ptsd: n=500, frac_int=0.28, res_ratio=0.98, p_res=0.828
+2026-08-31 09:29:24,139 - INFO -   adhd-schizophrenia: n=108, frac_int=0.31, res_ratio=0.96, p_res=0.383
+2026-08-31 09:29:24,208 - INFO -   anxiety-autism: n=406, frac_int=0.24, res_ratio=1.03, p_res=0.878
+2026-08-31 09:29:24,261 - INFO -   anxiety-bipolar: n=423, frac_int=0.25, res_ratio=1.02, p_res=0.932
+2026-08-31 09:29:24,326 - INFO -   anxiety-bpd: n=210, frac_int=0.29, res_ratio=0.98, p_res=0.342
+2026-08-31 09:29:24,402 - INFO -   anxiety-depression: n=6404, frac_int=0.13, res_ratio=0.99, p_res=0.000
+2026-08-31 09:29:24,448 - INFO -   anxiety-eating_disorders: n=71, frac_int=0.34, res_ratio=1.00, p_res=0.669
+2026-08-31 09:29:24,505 - INFO -   anxiety-ocd: n=1067, frac_int=0.15, res_ratio=1.01, p_res=0.618
+2026-08-31 09:29:24,578 - INFO -   anxiety-ptsd: n=839, frac_int=0.19, res_ratio=1.03, p_res=0.926
+2026-08-31 09:29:24,624 - INFO -   anxiety-schizophrenia: n=100, frac_int=0.40, res_ratio=1.11, p_res=0.982
+2026-08-31 09:29:24,706 - INFO -   autism-bipolar: n=78, frac_int=0.29, res_ratio=0.90, p_res=0.174
+2026-08-31 09:29:24,750 - INFO -   autism-bpd: n=155, frac_int=0.28, res_ratio=0.95, p_res=0.238
+2026-08-31 09:29:24,837 - INFO -   autism-depression: n=264, frac_int=0.16, res_ratio=1.05, p_res=0.895
+2026-08-31 09:29:24,882 - INFO -   autism-ocd: n=134, frac_int=0.21, res_ratio=1.00, p_res=0.207
+2026-08-31 09:29:24,937 - INFO -   autism-ptsd: n=111, frac_int=0.23, res_ratio=0.95, p_res=0.096
+2026-08-31 09:29:25,005 - INFO -   autism-schizophrenia: n=64, frac_int=0.17, res_ratio=0.79, p_res=0.036
+2026-08-31 09:29:25,053 - INFO -   bipolar-bpd: n=511, frac_int=0.23, res_ratio=1.16, p_res=0.832
+2026-08-31 09:29:25,127 - INFO -   bipolar-depression: n=1590, frac_int=0.23, res_ratio=0.96, p_res=0.017
+2026-08-31 09:29:25,167 - INFO -   bipolar-ocd: n=80, frac_int=0.19, res_ratio=0.88, p_res=0.047
+2026-08-31 09:29:25,221 - INFO -   bipolar-ptsd: n=180, frac_int=0.21, res_ratio=0.92, p_res=0.394
+2026-08-31 09:29:25,266 - INFO -   bipolar-schizophrenia: n=372, frac_int=0.29, res_ratio=0.98, p_res=0.339
+2026-08-31 09:29:25,350 - INFO -   bpd-depression: n=406, frac_int=0.27, res_ratio=0.94, p_res=0.003
+2026-08-31 09:29:25,398 - INFO -   bpd-ocd: n=72, frac_int=0.18, res_ratio=0.98, p_res=0.084
+2026-08-31 09:29:25,448 - INFO -   bpd-ptsd: n=323, frac_int=0.20, res_ratio=1.01, p_res=0.579
+2026-08-31 09:29:25,492 - INFO -   bpd-schizophrenia: n=67, frac_int=0.36, res_ratio=1.01, p_res=0.535
+2026-08-31 09:29:25,565 - INFO -   depression-eating_disorders: n=113, frac_int=0.42, res_ratio=0.92, p_res=0.371
+2026-08-31 09:29:25,619 - INFO -   depression-ocd: n=230, frac_int=0.19, res_ratio=0.91, p_res=0.019
+2026-08-31 09:29:25,704 - INFO -   depression-ptsd: n=613, frac_int=0.29, res_ratio=1.00, p_res=0.365
+2026-08-31 09:29:25,768 - INFO -   depression-schizophrenia: n=208, frac_int=0.31, res_ratio=0.99, p_res=0.953
+2026-08-31 09:29:25,814 - INFO -   ocd-ptsd: n=75, frac_int=0.27, res_ratio=0.91, p_res=0.007
+2026-08-31 09:29:25,856 - INFO -   ocd-schizophrenia: n=71, frac_int=0.23, res_ratio=0.88, p_res=0.216
+2026-08-31 09:29:25,908 - INFO -   ptsd-schizophrenia: n=54, frac_int=0.26, res_ratio=1.11, p_res=0.894
+2026-08-31 09:29:26,232 - INFO - 
+=== Aggregate ===
+2026-08-31 09:29:26,232 - INFO -   pairs tested: 39
+2026-08-31 09:29:26,232 - INFO -   mean fraction intermediate: 0.250
+2026-08-31 09:29:26,232 - INFO -   median residual ratio (dual/single): 0.983
+2026-08-31 09:29:26,232 - INFO -   pairs with significant smaller residual: 1
+2026-08-31 09:29:26,232 - INFO -   pairs with fraction > 0.5: 0
+2026-08-31 09:29:26,275 - INFO - DONE

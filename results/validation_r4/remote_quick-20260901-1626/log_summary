@@ -1,0 +1,26 @@
+[feature-family] mean AUROC across 10 disorders:
+   all_dimensions       0.886  (delta +0.000)
+   only_affective       0.825  (delta -0.061)
+   only_pronoun         0.799  (delta -0.086)
+   only_cognitive       0.742  (delta -0.143)
+   only_behavioral      0.666  (delta -0.219)
+   only_readability     0.715  (delta -0.171)
+   only_temporal        0.597  (delta -0.288)
+   only_social          0.653  (delta -0.232)
+[confounder] corr_with_original=0.989 mean_abs_diff=0.033
+[sample-size] AUROC at 0.25/0.5/0.75/1.0:
+   depression {'0.25': 0.86, '0.5': 0.861, '0.75': 0.861, '1.0': 0.861}
+   bipolar    {'0.25': 0.901, '0.5': 0.902, '0.75': 0.902, '1.0': 0.902}
+   anxiety    {'0.25': 0.887, '0.5': 0.891, '0.75': 0.891, '1.0': 0.892}
+   ocd        {'0.25': 0.877, '0.5': 0.881, '0.75': 0.882, '1.0': 0.884}
+   ptsd       {'0.25': 0.899, '0.5': 0.901, '0.75': 0.903, '1.0': 0.904}
+   bpd        {'0.25': 0.916, '0.5': 0.92, '0.75': 0.921, '1.0': 0.923}
+   eating_disorders {'0.25': 0.901, '0.5': 0.915, '0.75': 0.92, '1.0': 0.922}
+   schizophrenia {'0.25': 0.862, '0.5': 0.867, '0.75': 0.872, '1.0': 0.874}
+   adhd       {'0.25': 0.831, '0.5': 0.833, '0.75': 0.833, '1.0': 0.834}
+   autism     {'0.25': 0.844, '0.5': 0.848, '0.75': 0.849, '1.0': 0.85}
+[temporal] 271/500 (54.2%) feature-periods strong monotone (|rho|=1, p<1e-3)
+[heterogeneity] median I^2=97.3%, 100% classified high
+[placebo/negative-control] true DID=0.0161, placebo mean=0.0061 sd=0.0437, n_exceeding=100, p=1.0, conclusion=INCONCLUSIVE
+[multiclass] macro AUROC=0.719, bal acc=0.260
+DONE -> /path/to/project/module4_results/validation_r4/r4_existing_evidence_summary.json

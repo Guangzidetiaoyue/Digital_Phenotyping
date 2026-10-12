@@ -1,0 +1,176 @@
+2026-09-14 12:55:59,388 - INFO - Loading features...
+2026-09-14 12:56:09,622 - INFO - Patients: 127168, disorders: 10
+2026-09-14 12:56:09,626 - INFO - Using 108 features
+2026-09-14 12:56:09,631 - INFO - Disorders: ['adhd', 'anxiety', 'autism', 'bipolar', 'bpd', 'depression', 'eating_disorders', 'ocd', 'ptsd', 'schizophrenia']
+2026-09-14 12:56:09,855 - INFO - Users with complete features: 126114
+2026-09-14 12:56:09,933 - INFO -   adhd: 37333 users
+2026-09-14 12:56:09,969 - INFO -   anxiety: 14294 users
+2026-09-14 12:56:09,996 - INFO -   autism: 10179 users
+2026-09-14 12:56:10,022 - INFO -   bipolar: 9906 users
+2026-09-14 12:56:10,042 - INFO -   bpd: 6007 users
+2026-09-14 12:56:10,098 - INFO -   depression: 30365 users
+2026-09-14 12:56:10,112 - INFO -   eating_disorders: 1681 users
+2026-09-14 12:56:10,131 - INFO -   ocd: 5691 users
+2026-09-14 12:56:10,154 - INFO -   ptsd: 8223 users
+2026-09-14 12:56:10,167 - INFO -   schizophrenia: 2435 users
+2026-09-14 12:56:10,168 - INFO - Running 45 pairwise classifiers...
+2026-09-14 12:56:43,462 - INFO -   adhd vs anxiety: AUROC=0.732 [0.728,0.736]
+2026-09-14 12:57:32,385 - INFO -   adhd vs autism: AUROC=0.730 [0.718,0.742]
+2026-09-14 12:58:20,544 - INFO -   adhd vs bipolar: AUROC=0.714 [0.707,0.722]
+2026-09-14 12:58:56,279 - INFO -   adhd vs bpd: AUROC=0.764 [0.757,0.772]
+2026-09-14 12:59:36,499 - INFO -   adhd vs depression: AUROC=0.694 [0.689,0.698]
+2026-09-14 13:00:14,286 - INFO -   adhd vs eating_disorders: AUROC=0.772 [0.756,0.787]
+2026-09-14 13:00:55,276 - INFO -   adhd vs ocd: AUROC=0.711 [0.701,0.721]
+2026-09-14 13:01:34,379 - INFO -   adhd vs ptsd: AUROC=0.757 [0.749,0.766]
+2026-09-14 13:02:15,823 - INFO -   adhd vs schizophrenia: AUROC=0.765 [0.741,0.789]
+2026-09-14 13:03:05,240 - INFO -   anxiety vs autism: AUROC=0.807 [0.801,0.814]
+2026-09-14 13:03:53,667 - INFO -   anxiety vs bipolar: AUROC=0.753 [0.743,0.764]
+2026-09-14 13:04:46,966 - INFO -   anxiety vs bpd: AUROC=0.757 [0.744,0.770]
+2026-09-14 13:05:32,676 - INFO -   anxiety vs depression: AUROC=0.719 [0.710,0.727]
+2026-09-14 13:06:08,115 - INFO -   anxiety vs eating_disorders: AUROC=0.749 [0.729,0.769]
+2026-09-14 13:06:57,801 - INFO -   anxiety vs ocd: AUROC=0.626 [0.618,0.635]
+2026-09-14 13:07:47,665 - INFO -   anxiety vs ptsd: AUROC=0.730 [0.723,0.738]
+2026-09-14 13:08:34,411 - INFO -   anxiety vs schizophrenia: AUROC=0.787 [0.759,0.816]
+2026-09-14 13:09:36,798 - INFO -   autism vs bipolar: AUROC=0.788 [0.776,0.799]
+2026-09-14 13:10:28,536 - INFO -   autism vs bpd: AUROC=0.802 [0.795,0.809]
+2026-09-14 13:11:35,903 - INFO -   autism vs depression: AUROC=0.763 [0.757,0.770]
+2026-09-14 13:12:04,430 - INFO -   autism vs eating_disorders: AUROC=0.829 [0.804,0.854]
+2026-09-14 13:12:51,109 - INFO -   autism vs ocd: AUROC=0.766 [0.749,0.784]
+2026-09-14 13:13:37,882 - INFO -   autism vs ptsd: AUROC=0.819 [0.804,0.834]
+2026-09-14 13:14:21,779 - INFO -   autism vs schizophrenia: AUROC=0.729 [0.708,0.750]
+2026-09-14 13:15:23,008 - INFO -   bipolar vs bpd: AUROC=0.663 [0.649,0.678]
+2026-09-14 13:16:14,320 - INFO -   bipolar vs depression: AUROC=0.691 [0.681,0.702]
+2026-09-14 13:17:07,636 - INFO -   bipolar vs eating_disorders: AUROC=0.740 [0.708,0.772]
+2026-09-14 13:18:01,565 - INFO -   bipolar vs ocd: AUROC=0.727 [0.716,0.737]
+2026-09-14 13:18:46,405 - INFO -   bipolar vs ptsd: AUROC=0.701 [0.693,0.709]
+2026-09-14 13:19:33,967 - INFO -   bipolar vs schizophrenia: AUROC=0.715 [0.704,0.727]
+2026-09-14 13:20:24,589 - INFO -   bpd vs depression: AUROC=0.705 [0.692,0.719]
+2026-09-14 13:21:07,236 - INFO -   bpd vs eating_disorders: AUROC=0.683 [0.650,0.716]
+2026-09-14 13:21:59,812 - INFO -   bpd vs ocd: AUROC=0.731 [0.723,0.739]
+2026-09-14 13:22:41,140 - INFO -   bpd vs ptsd: AUROC=0.679 [0.671,0.686]
+2026-09-14 13:23:36,893 - INFO -   bpd vs schizophrenia: AUROC=0.763 [0.751,0.776]
+2026-09-14 13:24:12,983 - INFO -   depression vs eating_disorders: AUROC=0.742 [0.714,0.770]
+2026-09-14 13:24:56,279 - INFO -   depression vs ocd: AUROC=0.714 [0.705,0.723]
+2026-09-14 13:25:41,008 - INFO -   depression vs ptsd: AUROC=0.714 [0.702,0.726]
+2026-09-14 13:26:30,720 - INFO -   depression vs schizophrenia: AUROC=0.743 [0.729,0.758]
+2026-09-14 13:27:10,246 - INFO -   eating_disorders vs ocd: AUROC=0.728 [0.710,0.746]
+2026-09-14 13:27:41,549 - INFO -   eating_disorders vs ptsd: AUROC=0.734 [0.719,0.750]
+2026-09-14 13:28:16,790 - INFO -   eating_disorders vs schizophrenia: AUROC=0.827 [0.812,0.843]
+2026-09-14 13:28:59,646 - INFO -   ocd vs ptsd: AUROC=0.729 [0.715,0.743]
+2026-09-14 13:29:45,879 - INFO -   ocd vs schizophrenia: AUROC=0.758 [0.745,0.771]
+2026-09-14 13:30:25,561 - INFO -   ptsd vs schizophrenia: AUROC=0.791 [0.775,0.806]
+2026-09-14 13:30:27,559 - INFO -   Using EXTERNAL comorbidity matrix: external_comorbidity.csv [adjusted OR] refs: 10.1001/jamapsychiatry.2017.4602; 10.1002/eat.23004; 10.1016/j.biopsych.2005.04.034; 10.1016/j.biopsych.2006.03.040; 10.1016/j.jpsychires.2016.06.022; 10.1016/j.neubiorev.2023.105209; 10.1038/mp.2008.94 (21 pairs)
+2026-09-14 13:30:28,994 - INFO - 
+=== Mantel test: AUROC distinguishability vs clinical comorbidity ===
+2026-09-14 13:30:28,994 - INFO -   r = -0.247, p = 0.2973
+2026-09-14 13:30:28,998 - INFO -   Spearman(AUROC, comorbidity) = -0.095, p = 0.6826
+2026-09-14 13:30:29,018 - INFO - DONE
+STATUS s31=0
+raw_OR: Mantel r=-0.247 p=0.2973 | Spearman r=-0.095 p=0.6826 | n=21
+log_OR: Mantel r=-0.244 p=0.3020 | Spearman r=-0.095 p=0.6826 | n=21
+WROTE /path/to/project/module3_results/statistics/s31c_external_or_sensitivity.json
+STATUS s31c=0
+2026-09-14 13:30:33,282 - {
+ "disorders": [
+  "adhd",
+  "anxiety",
+  "autism",
+  "bipolar",
+  "bpd",
+  "depression",
+  "eating_disorders",
+  "ocd",
+  "ptsd",
+  "schizophrenia"
+ ],
+ "empirical_jaccard": {
+  "mantel_r": 0.4008046974340034,
+  "pearson_p": 0.006363317174801911,
+  "perm_p": 0.007799220077992201,
+  "n_pairs": 45
+ },
+ "empirical_phi": {
+  "mantel_r": 0.4112292357737012,
+  "pearson_p": 0.005011160782013198,
+  "perm_p": 0.005599440055994401,
+  "n_pairs": 45
+ },
+ "external_sourced_comorbidity": {
+  "mantel_r": 0.2466300824734997,
+  "pearson_p": 0.2811435906025173,
+  "perm_p": 0.28447155284471554,
+  "n_pairs": 21,
+  "measure": "adjusted OR",
+  "refs": [
+   "10.1001/jamapsychiatry.2017.4602",
+   "10.1002/eat.23004",
+   "10.1016/j.biopsych.2005.04.034",
+   "10.1016/j.biopsych.2006.03.040",
+   "10.1016/j.jpsychires.2016.06.022",
+   "10.1016/j.neubiorev.2023.105209",
+   "10.1038/mp.2008.94"
+  ]
+ },
+ "note": "Empirical matrices share cohort with phenotype classifiers -> internal consistency, not external convergence. Primary Mantel uses the externally sourced comorbidity matrix."
+}
+STATUS s31b=0
+2026-09-14 13:30:45,960 - INFO - Loading and preparing data...
+2026-09-14 13:30:53,864 - INFO - Subsampled: 18000 users
+2026-09-14 13:30:53,920 - INFO - Features: 108
+2026-09-14 13:30:53,995 - INFO - PCA: 108 -> 50 (explained 97.45%)
+2026-09-14 13:30:53,995 - INFO - Running UMAP...
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+2026-09-14 13:31:20,534 - INFO - UMAP done.
+2026-09-14 13:31:20,608 - INFO - Saved UMAP embedding.
+2026-09-14 13:31:20,670 - INFO - 
+=== Spectrum separation (UMAP centroid distances) ===
+2026-09-14 13:31:20,670 - INFO -   within-spectrum mean dist: 0.369 (n=7)
+2026-09-14 13:31:20,670 - INFO -   between-spectrum mean dist: 0.486 (n=38)
+2026-09-14 13:31:20,670 - INFO -   observed diff: 0.117, permutation p=0.3124
+2026-09-14 13:31:22,653 - INFO - 
+=== Structural fit (digital distance vs taxonomy) ===
+2026-09-14 13:31:22,653 - INFO -   HiTOP co-membership: r=-0.154, p=0.2912
+2026-09-14 13:31:22,653 - INFO -   DSM-5 chapter:      r=-0.212, p=0.1547
+2026-09-14 13:31:22,653 - INFO -   Clinical comorbidity: r=0.035, p=0.8817
+2026-09-14 13:31:22,694 - INFO - 
+=== User-level separation ===
+2026-09-14 13:31:22,694 - INFO -   mean dist to own centroid: 2.898
+2026-09-14 13:31:22,694 - INFO -   mean dist to other-spectrum centroid: 2.927
+2026-09-14 13:31:22,694 - INFO -   own/other ratio: 1.009 (<1 means own spectrum closer)
+2026-09-14 13:31:22,717 - INFO - DONE
+STATUS s32=0
+2026-09-14 13:31:24,390 - INFO - === M3 figures v2 (M1-compatible) ===
+2026-09-14 13:31:25,448 - INFO -   Saved: main/fig1_pairwise_distinguishability
+2026-09-14 13:31:26,300 - INFO -   Saved: main/fig2_phenotype_geometry
+2026-09-14 13:31:26,990 - INFO -   Saved: main/fig3_disorder_networks
+2026-09-14 13:31:27,583 - INFO -   Saved: main/fig4_comorbidity
+2026-09-14 13:31:27,804 - INFO -   Saved: ed/ed_fig1_mantel
+2026-09-14 13:31:28,395 - INFO -   Saved: ed/ed_fig2_bridge_matrix
+2026-09-14 13:31:28,540 - INFO -   Saved: ed/ed_fig3_intermediate_detail
+2026-09-14 13:31:29,698 - INFO -   Saved: ed/ed_fig4_umap_small_multiples
+2026-09-14 13:31:29,699 - INFO - DONE
+STATUS s36=0
+2026-09-14 13:31:30,734 - INFO - ======================================================================
+2026-09-14 13:31:30,828 - INFO - Module 3 Publication Visualizations (lyc — Modular CLI)
+2026-09-14 13:31:30,828 - INFO - ======================================================================
+2026-09-14 13:31:30,828 - INFO - Targets: ['fig1', 'fig2', 'fig3', 'fig4', 'edfig1', 'edfig2', 'edfig3', 'edfig4']
+
+2026-09-14 13:31:31,968 - INFO -   Saved: main/fig1_pairwise_distinguishability
+2026-09-14 13:31:32,721 - INFO -   Saved: main/fig2_phenotype_geometry
+2026-09-14 13:31:33,443 - INFO -   Saved: main/fig3_disorder_networks
+2026-09-14 13:31:33,465 - WARNING - Ignoring 24380 legacy rows with zero validated disorders; rerun s34_multi_diagnosis_parser.py to regenerate corrected stats
+2026-09-14 13:31:34,076 - INFO -   Saved: main/fig4_comorbidity
+2026-09-14 13:31:34,086 - WARNING - ED Fig 1 matched 21/45 AUROC pairs to comorbidity rates
+2026-09-14 13:31:34,349 - INFO -   Saved: ed/ed_fig1_mantel
+2026-09-14 13:31:34,904 - INFO -   Saved: ed/ed_fig2_bridge_matrix
+2026-09-14 13:31:35,119 - INFO -   Saved: ed/ed_fig3_intermediate_detail
+2026-09-14 13:31:35,989 - INFO -   Saved: ed/ed_fig4_umap_small_multiples
+2026-09-14 13:31:35,992 - INFO - 
+======================================================================
+2026-09-14 13:31:35,992 - INFO - TARGETED VISUALIZATIONS COMPLETE
+2026-09-14 13:31:35,994 - INFO -   Main: /path/to/project/module3_results/figures_lyc/main
+2026-09-14 13:31:35,995 - INFO -   ED:   /path/to/project/module3_results/figures_lyc/ed
+2026-09-14 13:31:35,995 - INFO - ======================================================================
+STATUS s36lyc=0
+ALL_DONE

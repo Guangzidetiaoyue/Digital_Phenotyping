@@ -1,0 +1,54 @@
+{
+  "method": "annual cross-correlation on band-adjusted (composition-controlled) signals",
+  "samples_small_note": "8-13 years only; descriptive, not Granger",
+  "best": {
+    "p_factor_severity_z_diff__MDE": {
+      "lag": 1,
+      "r": -0.38108989408199534,
+      "p": 0.39897852400946193,
+      "n": 7
+    },
+    "p_factor_severity_z_diff__suicide_rate": {
+      "lag": 1,
+      "r": -0.6163337665162089,
+      "p": 0.032823154377449267,
+      "n": 12
+    },
+    "posting_intensity_diff__MDE": {
+      "lag": 1,
+      "r": -0.935858515746331,
+      "p": 0.0019329147856766151,
+      "n": 7
+    },
+    "posting_intensity_diff__suicide_rate": {
+      "lag": -1,
+      "r": -0.9481666459030257,
+      "p": 2.7002514045568624e-06,
+      "n": 12
+    },
+    "social_withdrawal_index_diff__MDE": {
+      "lag": 1,
+      "r": 0.8854512420360418,
+      "p": 0.008012074160388735,
+      "n": 7
+    },
+    "social_withdrawal_index_diff__suicide_rate": {
+      "lag": 0,
+      "r": 0.48479804744513433,
+      "p": 0.09313812262879617,
+      "n": 13
+    },
+    "volatility_index_diff__MDE": {
+      "lag": 1,
+      "r": 0.8045436121469485,
+      "p": 0.02910852630087566,
+      "n": 7
+    },
+    "volatility_index_diff__suicide_rate": {
+      "lag": 0,
+      "r": 0.9058704912633376,
+      "p": 2.0103237724474048e-05,
+      "n": 13
+    }
+  }
+}

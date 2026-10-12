@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# large raw/intermediate artifacts (not part of the review release)
+*.parquet
+*.zst
+*.tar
+*.gz
+*.zip

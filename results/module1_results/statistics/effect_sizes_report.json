@@ -1,0 +1,241 @@
+{
+  "pipeline_version": "v1.6",
+  "analysis_scope": "train_only",
+  "n_features_total": 98,
+  "n_features_analysis": 93,
+  "selection_artifact_features": [
+    "subreddit_entropy",
+    "subreddit_herfindahl",
+    "primary_subreddit_ratio",
+    "mental_health_sub_ratio",
+    "support_sub_ratio"
+  ],
+  "selection_artifact_rationale": "These features are circular with patient identification: patients were identified by posting in mental health subreddits, so mental_health_sub_ratio and support_sub_ratio are confounded with the selection criterion.",
+  "v16_parameters": {
+    "min_abs_g_for_diffspec": 0.15,
+    "weight_trim_percentiles": [
+      1,
+      99
+    ],
+    "cu_primary_scheme": "default",
+    "cu_primary_weights": {
+      "base": 0.3,
+      "direction_spread": 0.4,
+      "significance": 0.3
+    },
+    "strict_direction_min_abs_g": 0.1,
+    "strict_direction_min_range": 0.2
+  },
+  "n_disorders": 10,
+  "disorders_analyzed": [
+    "depression",
+    "bipolar",
+    "anxiety",
+    "ocd",
+    "ptsd",
+    "bpd",
+    "eating_disorders",
+    "schizophrenia",
+    "adhd",
+    "autism"
+  ],
+  "effect_thresholds": {
+    "minimal": 0.1,
+    "small": 0.2,
+    "medium": 0.5,
+    "large": 0.8
+  },
+  "total_tests": 980,
+  "total_tests_nonartifact": 930,
+  "significant_global_fdr": 803,
+  "significant_nonartifact": 765,
+  "pct_significant_nonartifact": 82.25806451612904,
+  "effect_categories_nonartifact": {
+    "negligible": 415,
+    "small": 212,
+    "minimal": 190,
+    "medium": 73,
+    "large": 40
+  },
+  "specificity_range": [
+    0.0025082901293146387,
+    0.28657515428974356
+  ],
+  "differential_specificity_range": [
+    0.0,
+    0.1852267720225869
+  ],
+  "clinical_utility_range": [
+    0.05152754487974061,
+    0.737196241895242
+  ],
+  "n_direction_inconsistent_exploratory": 46,
+  "n_direction_inconsistent_strict": 18,
+  "direction_inconsistent_features_exploratory": [
+    "active_day_ratio",
+    "anger_rate",
+    "ari_mean",
+    "ari_std",
+    "avg_comments_received",
+    "circadian_concentration",
+    "circadian_mean_hour",
+    "exclamation_ratio",
+    "future_focus_rate",
+    "gap_regularity_cv"
+  ],
+  "direction_inconsistent_features_strict": [
+    "active_day_ratio",
+    "ari_mean",
+    "max_gap_days_log",
+    "n_active_days",
+    "n_comments",
+    "n_posts_total_log",
+    "n_submissions",
+    "n_unique_subreddits",
+    "netspeak_usage_rate",
+    "night_activity_ratio"
+  ],
+  "direction_inconsistency_null_expectation": {
+    "expected_exploratory": 90.73828125,
+    "p_sig_overall": 0.8225806451612904,
+    "method": "binomial_null (independent, p=0.5 sign assignment)",
+    "caveat": "This is a lower bound because it assumes independence and equal sign probability. Real correlations among disorders will increase the expected count."
+  },
+  "cu_weight_sensitivity": {
+    "primary_scheme": "default",
+    "primary_weights": {
+      "base": 0.3,
+      "direction_spread": 0.4,
+      "significance": 0.3
+    },
+    "top_k": 20,
+    "comparisons": {
+      "spread_heavy": {
+        "weights": {
+          "base": 0.2,
+          "direction_spread": 0.5,
+          "significance": 0.3
+        },
+        "spearman_rho": 0.9969860642774012,
+        "spearman_p": 7.765498348671285e-103,
+        "jaccard_top_k": 0.9047619047619048,
+        "n_shared_top_k": 19
+      },
+      "significance_heavy": {
+        "weights": {
+          "base": 0.3,
+          "direction_spread": 0.3,
+          "significance": 0.4
+        },
+        "spearman_rho": 0.9977619289188623,
+        "spearman_p": 1.037957438197946e-108,
+        "jaccard_top_k": 1.0,
+        "n_shared_top_k": 20
+      }
+    },
+    "overall_stability": "high",
+    "min_jaccard": 0.9047619047619048
+  },
+  "top10_largest_effects_nonartifact": [
+    {
+      "disorder": "anxiety",
+      "feature": "anxiety_rate",
+      "hedges_g": 1.8667134106763912,
+      "p_fdr_global": 0.0,
+      "effect_category": "large"
+    },
+    {
+      "disorder": "ocd",
+      "feature": "anxiety_rate",
+      "hedges_g": 1.7597974082582497,
+      "p_fdr_global": 0.0,
+      "effect_category": "large"
+    },
+    {
+      "disorder": "eating_disorders",
+      "feature": "anxiety_rate",
+      "hedges_g": 1.586930346170758,
+      "p_fdr_global": 2.2263334097209058e-199,
+      "effect_category": "large"
+    },
+    {
+      "disorder": "bpd",
+      "feature": "anxiety_rate",
+      "hedges_g": 1.5485955359912962,
+      "p_fdr_global": 0.0,
+      "effect_category": "large"
+    },
+    {
+      "disorder": "ptsd",
+      "feature": "anxiety_rate",
+      "hedges_g": 1.398546592137343,
+      "p_fdr_global": 0.0,
+      "effect_category": "large"
+    },
+    {
+      "disorder": "bpd",
+      "feature": "first_person_rate",
+      "hedges_g": 1.359823480441289,
+      "p_fdr_global": 1.385468834799722e-151,
+      "effect_category": "large"
+    },
+    {
+      "disorder": "bipolar",
+      "feature": "anxiety_rate",
+      "hedges_g": 1.3076441671221055,
+      "p_fdr_global": 2.1846457592761476e-282,
+      "effect_category": "large"
+    },
+    {
+      "disorder": "eating_disorders",
+      "feature": "first_person_rate",
+      "hedges_g": 1.302727106118345,
+      "p_fdr_global": 1.8317366320267306e-247,
+      "effect_category": "large"
+    },
+    {
+      "disorder": "bipolar",
+      "feature": "first_person_rate",
+      "hedges_g": 1.2310944907111954,
+      "p_fdr_global": 4.1170224347619064e-77,
+      "effect_category": "large"
+    },
+    {
+      "disorder": "eating_disorders",
+      "feature": "self_focus_index",
+      "hedges_g": 1.1398892042889415,
+      "p_fdr_global": 1.4707272769834236e-225,
+      "effect_category": "large"
+    }
+  ],
+  "top10_clinical_utility": {
+    "sadness_rate": 0.737196241895242,
+    "anxiety_rate": 0.716605012625255,
+    "past_focus_rate": 0.7142442327537875,
+    "first_person_rate": 0.7044910412684917,
+    "vader_compound_std": 0.700707304869804,
+    "self_focus_index": 0.6976096938266374,
+    "post_length_mean": 0.694613846755978,
+    "other_sub_ratio": 0.6916906654257328,
+    "insight_rate": 0.6689648692017925,
+    "temporal_balance": 0.6618768424522843
+  },
+  "most_similar_pair": [
+    {
+      "disorder_a": "anxiety",
+      "disorder_b": "ocd",
+      "mean_abs_g": 0.040025067173522715
+    }
+  ],
+  "most_distinct_pair": [
+    {
+      "disorder_a": "eating_disorders",
+      "disorder_b": "autism",
+      "mean_abs_g": 0.21471905498264152
+    }
+  ],
+  "iptw_weighted": true,
+  "bootstrap_iterations_analysis1": 500,
+  "bootstrap_iterations_analysis2": 0,
+  "computation_timestamp": "2026-06-12T00:51:54.614059"
+}

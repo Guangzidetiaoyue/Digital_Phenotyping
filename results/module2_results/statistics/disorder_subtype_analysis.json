@@ -1,0 +1,112 @@
+{
+  "depression": {
+    "n_patients": 13570,
+    "subtype_distribution": {
+      "0.0": 12727,
+      "1.0": 843
+    },
+    "subtype_percentages": {
+      "0.0": "93.8%",
+      "1.0": "6.2%"
+    }
+  },
+  "bipolar": {
+    "n_patients": 4016,
+    "subtype_distribution": {
+      "0.0": 3739,
+      "1.0": 277
+    },
+    "subtype_percentages": {
+      "0.0": "93.1%",
+      "1.0": "6.9%"
+    }
+  },
+  "anxiety": {
+    "n_patients": 6268,
+    "subtype_distribution": {
+      "0.0": 5904,
+      "1.0": 364
+    },
+    "subtype_percentages": {
+      "0.0": "94.2%",
+      "1.0": "5.8%"
+    }
+  },
+  "ocd": {
+    "n_patients": 2435,
+    "subtype_distribution": {
+      "0.0": 2269,
+      "1.0": 166
+    },
+    "subtype_percentages": {
+      "0.0": "93.2%",
+      "1.0": "6.8%"
+    }
+  },
+  "ptsd": {
+    "n_patients": 3634,
+    "subtype_distribution": {
+      "0.0": 3348,
+      "1.0": 286
+    },
+    "subtype_percentages": {
+      "0.0": "92.1%",
+      "1.0": "7.9%"
+    }
+  },
+  "bpd": {
+    "n_patients": 2315,
+    "subtype_distribution": {
+      "0.0": 2108,
+      "1.0": 207
+    },
+    "subtype_percentages": {
+      "0.0": "91.1%",
+      "1.0": "8.9%"
+    }
+  },
+  "eating_disorders": {
+    "n_patients": 674,
+    "subtype_distribution": {
+      "0.0": 633,
+      "1.0": 41
+    },
+    "subtype_percentages": {
+      "0.0": "93.9%",
+      "1.0": "6.1%"
+    }
+  },
+  "schizophrenia": {
+    "n_patients": 928,
+    "subtype_distribution": {
+      "0.0": 853,
+      "1.0": 75
+    },
+    "subtype_percentages": {
+      "0.0": "91.9%",
+      "1.0": "8.1%"
+    }
+  },
+  "adhd": {
+    "n_patients": 19148,
+    "subtype_distribution": {
+      "0.0": 18098,
+      "1.0": 1050
+    },
+    "subtype_percentages": {
+      "0.0": "94.5%",
+      "1.0": "5.5%"
+    }
+  },
+  "autism": {
+    "n_patients": 4993,
+    "subtype_distribution": {
+      "0.0": 4694,
+      "1.0": 299
+    },
+    "subtype_percentages": {
+      "0.0": "94.0%",
+      "1.0": "6.0%"
+    }
+  }
+}

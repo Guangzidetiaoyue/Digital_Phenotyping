@@ -1,0 +1,2542 @@
+{
+  "adhd": {
+    "top_features": [
+      {
+        "feature": "anxiety_rate",
+        "hedges_g": 0.8431381571144277,
+        "abs_g": 0.8431381571144277,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "first_person_rate",
+        "hedges_g": 0.7351529763043202,
+        "abs_g": 0.7351529763043202,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "self_focus_index",
+        "hedges_g": 0.6765114194362115,
+        "abs_g": 0.6765114194362115,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "vader_compound_std",
+        "hedges_g": 0.6323765245070424,
+        "abs_g": 0.6323765245070424,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "insight_rate",
+        "hedges_g": 0.6238480520977812,
+        "abs_g": 0.6238480520977812,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "post_length_mean",
+        "hedges_g": 0.584411490500171,
+        "abs_g": 0.584411490500171,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "mattr_vocabulary_diversity",
+        "hedges_g": -0.5785559896233978,
+        "abs_g": 0.5785559896233978,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "temporal_balance",
+        "hedges_g": 0.5692524533776736,
+        "abs_g": 0.5692524533776736,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "other_sub_ratio",
+        "hedges_g": -0.5201805504972351,
+        "abs_g": 0.5201805504972351,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "cognitive_flexibility",
+        "hedges_g": 0.517566960096505,
+        "abs_g": 0.517566960096505,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "past_focus_rate",
+        "hedges_g": 0.4955354037118978,
+        "abs_g": 0.4955354037118978,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "post_length_std",
+        "hedges_g": 0.4766420599241959,
+        "abs_g": 0.4766420599241959,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "sadness_rate",
+        "hedges_g": 0.3753942503215847,
+        "abs_g": 0.3753942503215847,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "social_sub_ratio",
+        "hedges_g": 0.3342407468991958,
+        "abs_g": 0.3342407468991958,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "tentative_language_rate",
+        "hedges_g": 0.3068946679956392,
+        "abs_g": 0.3068946679956392,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "impersonal_pronoun_rate",
+        "hedges_g": 0.2892557023535422,
+        "abs_g": 0.2892557023535422,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "death_mortality_rate",
+        "hedges_g": -0.2889926899330751,
+        "abs_g": 0.2889926899330751,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "risk"
+      },
+      {
+        "feature": "vader_within_post_volatility",
+        "hedges_g": 0.266143735407764,
+        "abs_g": 0.266143735407764,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "social_focus_variability",
+        "hedges_g": -0.2527651369127515,
+        "abs_g": 0.2527651369127515,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "neg_score_ratio",
+        "hedges_g": -0.2390601690821578,
+        "abs_g": 0.2390601690821578,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      }
+    ],
+    "dimension_summary": {
+      "affective": {
+        "mean_g": 0.18867912519286062,
+        "mean_abs_g": 0.2494152032188741,
+        "max_abs_g": 0.8431381571144277,
+        "n_features": 14,
+        "top_feature": "anxiety_rate",
+        "top_feature_g": 0.8431381571144277
+      },
+      "pronoun": {
+        "mean_g": 0.16892708592536743,
+        "mean_abs_g": 0.28303461226846727,
+        "max_abs_g": 0.7351529763043202,
+        "n_features": 8,
+        "top_feature": "first_person_rate",
+        "top_feature_g": 0.7351529763043202
+      },
+      "cognitive": {
+        "mean_g": 0.3274611138559351,
+        "mean_abs_g": 0.3274611138559351,
+        "max_abs_g": 0.6238480520977812,
+        "n_features": 6,
+        "top_feature": "insight_rate",
+        "top_feature_g": 0.6238480520977812
+      },
+      "temporal_linguistic": {
+        "mean_g": 0.32082016374766986,
+        "mean_abs_g": 0.32082016374766986,
+        "max_abs_g": 0.5692524533776736,
+        "n_features": 4,
+        "top_feature": "temporal_balance",
+        "top_feature_g": 0.5692524533776736
+      },
+      "risk": {
+        "mean_g": -0.1880224961970521,
+        "mean_abs_g": 0.1880224961970521,
+        "max_abs_g": 0.2889926899330751,
+        "n_features": 4,
+        "top_feature": "death_mortality_rate",
+        "top_feature_g": -0.2889926899330751
+      },
+      "behavioral": {
+        "mean_g": -0.004629131133077907,
+        "mean_abs_g": 0.14249313627536897,
+        "max_abs_g": 0.2332943333209719,
+        "n_features": 5,
+        "top_feature": "url_usage_rate",
+        "top_feature_g": -0.2332943333209719
+      },
+      "readability": {
+        "mean_g": -0.25053169536091896,
+        "mean_abs_g": 0.27547077400813663,
+        "max_abs_g": 0.5785559896233978,
+        "n_features": 3,
+        "top_feature": "mattr_vocabulary_diversity",
+        "top_feature_g": -0.5785559896233978
+      },
+      "post_length": {
+        "mean_g": 0.3758876086505904,
+        "mean_abs_g": 0.3758876086505904,
+        "max_abs_g": 0.584411490500171,
+        "n_features": 3,
+        "top_feature": "post_length_mean",
+        "top_feature_g": 0.584411490500171
+      },
+      "temporal": {
+        "mean_g": 0.02165066427766014,
+        "mean_abs_g": 0.04194438185810325,
+        "max_abs_g": 0.1081233673269533,
+        "n_features": 23,
+        "top_feature": "n_active_days",
+        "top_feature_g": 0.1081233673269533
+      },
+      "social": {
+        "mean_g": 0.004871116455137336,
+        "mean_abs_g": 0.08510802213230281,
+        "max_abs_g": 0.2390601690821578,
+        "n_features": 18,
+        "top_feature": "neg_score_ratio",
+        "top_feature_g": -0.2390601690821578
+      },
+      "community": {
+        "mean_g": -0.0416009849346447,
+        "mean_abs_g": 0.2096188108124843,
+        "max_abs_g": 0.5201805504972351,
+        "n_features": 5,
+        "top_feature": "other_sub_ratio",
+        "top_feature_g": -0.5201805504972351
+      }
+    }
+  },
+  "anxiety": {
+    "top_features": [
+      {
+        "feature": "anxiety_rate",
+        "hedges_g": 1.8667134106763912,
+        "abs_g": 1.8667134106763912,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "first_person_rate",
+        "hedges_g": 1.076433859107498,
+        "abs_g": 1.076433859107498,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "self_focus_index",
+        "hedges_g": 0.920746154912108,
+        "abs_g": 0.920746154912108,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "vader_compound_std",
+        "hedges_g": 0.7822319301437355,
+        "abs_g": 0.7822319301437355,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "past_focus_rate",
+        "hedges_g": 0.6946432616606812,
+        "abs_g": 0.6946432616606812,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "mattr_vocabulary_diversity",
+        "hedges_g": -0.6594738431073537,
+        "abs_g": 0.6594738431073537,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "insight_rate",
+        "hedges_g": 0.6528031851132557,
+        "abs_g": 0.6528031851132557,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "post_length_mean",
+        "hedges_g": 0.6122148145038115,
+        "abs_g": 0.6122148145038115,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "sadness_rate",
+        "hedges_g": 0.6118087368802356,
+        "abs_g": 0.6118087368802356,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "temporal_balance",
+        "hedges_g": 0.6085710751440089,
+        "abs_g": 0.6085710751440089,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "cognitive_flexibility",
+        "hedges_g": 0.5271651177250651,
+        "abs_g": 0.5271651177250651,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "other_sub_ratio",
+        "hedges_g": -0.4982552136915517,
+        "abs_g": 0.4982552136915517,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "negative_affect_rate",
+        "hedges_g": 0.4822216173710127,
+        "abs_g": 0.4822216173710127,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "post_length_std",
+        "hedges_g": 0.4789384040610516,
+        "abs_g": 0.4789384040610516,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "social_sub_ratio",
+        "hedges_g": 0.3933531851845888,
+        "abs_g": 0.3933531851845888,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "neg_score_ratio",
+        "hedges_g": -0.3511874293759287,
+        "abs_g": 0.3511874293759287,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      },
+      {
+        "feature": "exclamation_ratio",
+        "hedges_g": 0.3196052109990198,
+        "abs_g": 0.3196052109990198,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "behavioral"
+      },
+      {
+        "feature": "death_mortality_rate",
+        "hedges_g": -0.3057379103678714,
+        "abs_g": 0.3057379103678714,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "risk"
+      },
+      {
+        "feature": "ari_std",
+        "hedges_g": -0.3046183097218227,
+        "abs_g": 0.3046183097218227,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "controversy_rate",
+        "hedges_g": -0.3036477522223829,
+        "abs_g": 0.3036477522223829,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      }
+    ],
+    "dimension_summary": {
+      "affective": {
+        "mean_g": 0.335820929353115,
+        "mean_abs_g": 0.38854239977928046,
+        "max_abs_g": 1.8667134106763912,
+        "n_features": 14,
+        "top_feature": "anxiety_rate",
+        "top_feature_g": 1.8667134106763912
+      },
+      "pronoun": {
+        "mean_g": 0.24013572453911605,
+        "mean_abs_g": 0.36815760741000914,
+        "max_abs_g": 1.076433859107498,
+        "n_features": 8,
+        "top_feature": "first_person_rate",
+        "top_feature_g": 1.076433859107498
+      },
+      "cognitive": {
+        "mean_g": 0.31179966941499204,
+        "mean_abs_g": 0.31179966941499204,
+        "max_abs_g": 0.6528031851132557,
+        "n_features": 6,
+        "top_feature": "insight_rate",
+        "top_feature_g": 0.6528031851132557
+      },
+      "temporal_linguistic": {
+        "mean_g": 0.41605828829778335,
+        "mean_abs_g": 0.41605828829778335,
+        "max_abs_g": 0.6946432616606812,
+        "n_features": 4,
+        "top_feature": "past_focus_rate",
+        "top_feature_g": 0.6946432616606812
+      },
+      "risk": {
+        "mean_g": -0.20294782986107496,
+        "mean_abs_g": 0.20294782986107496,
+        "max_abs_g": 0.3057379103678714,
+        "n_features": 4,
+        "top_feature": "death_mortality_rate",
+        "top_feature_g": -0.3057379103678714
+      },
+      "behavioral": {
+        "mean_g": 0.024750310076165294,
+        "mean_abs_g": 0.16765232988287448,
+        "max_abs_g": 0.3196052109990198,
+        "n_features": 5,
+        "top_feature": "exclamation_ratio",
+        "top_feature_g": 0.3196052109990198
+      },
+      "readability": {
+        "mean_g": -0.34336757675166113,
+        "mean_abs_g": 0.34336757675166113,
+        "max_abs_g": 0.6594738431073537,
+        "n_features": 3,
+        "top_feature": "mattr_vocabulary_diversity",
+        "top_feature_g": -0.6594738431073537
+      },
+      "post_length": {
+        "mean_g": 0.37412475307165893,
+        "mean_abs_g": 0.37412475307165893,
+        "max_abs_g": 0.6122148145038115,
+        "n_features": 3,
+        "top_feature": "post_length_mean",
+        "top_feature_g": 0.6122148145038115
+      },
+      "temporal": {
+        "mean_g": -0.01227266738760278,
+        "mean_abs_g": 0.037446594516414036,
+        "max_abs_g": 0.0912577094233726,
+        "n_features": 23,
+        "top_feature": "active_day_ratio",
+        "top_feature_g": -0.0912577094233726
+      },
+      "social": {
+        "mean_g": -0.004315667974738523,
+        "mean_abs_g": 0.08510881022026776,
+        "max_abs_g": 0.3511874293759287,
+        "n_features": 18,
+        "top_feature": "neg_score_ratio",
+        "top_feature_g": -0.3511874293759287
+      },
+      "community": {
+        "mean_g": -0.115220877526956,
+        "mean_abs_g": 0.27256215160079156,
+        "max_abs_g": 0.4982552136915517,
+        "n_features": 5,
+        "top_feature": "other_sub_ratio",
+        "top_feature_g": -0.4982552136915517
+      }
+    }
+  },
+  "autism": {
+    "top_features": [
+      {
+        "feature": "anxiety_rate",
+        "hedges_g": 0.775457581262493,
+        "abs_g": 0.775457581262493,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "first_person_rate",
+        "hedges_g": 0.6467643473463031,
+        "abs_g": 0.6467643473463031,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "insight_rate",
+        "hedges_g": 0.6072850542282775,
+        "abs_g": 0.6072850542282775,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "other_sub_ratio",
+        "hedges_g": -0.5897886937029797,
+        "abs_g": 0.5897886937029797,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "self_focus_index",
+        "hedges_g": 0.5811277808086114,
+        "abs_g": 0.5811277808086114,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "vader_compound_std",
+        "hedges_g": 0.5073386390711849,
+        "abs_g": 0.5073386390711849,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "mattr_vocabulary_diversity",
+        "hedges_g": -0.4774621034978609,
+        "abs_g": 0.4774621034978609,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "social_sub_ratio",
+        "hedges_g": 0.440370850125202,
+        "abs_g": 0.440370850125202,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "post_length_std",
+        "hedges_g": 0.4157582639579359,
+        "abs_g": 0.4157582639579359,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "post_length_mean",
+        "hedges_g": 0.4152758626569161,
+        "abs_g": 0.4152758626569161,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "temporal_balance",
+        "hedges_g": 0.4091390729417375,
+        "abs_g": 0.4091390729417375,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "cognitive_flexibility",
+        "hedges_g": 0.3901227727740925,
+        "abs_g": 0.3901227727740925,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "past_focus_rate",
+        "hedges_g": 0.3624453949551759,
+        "abs_g": 0.3624453949551759,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "negative_affect_rate",
+        "hedges_g": 0.3502329292455846,
+        "abs_g": 0.3502329292455846,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "sadness_rate",
+        "hedges_g": 0.3494097179822591,
+        "abs_g": 0.3494097179822591,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "impersonal_pronoun_rate",
+        "hedges_g": 0.3242623880109714,
+        "abs_g": 0.3242623880109714,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "posts_per_day_log",
+        "hedges_g": 0.3206809985330501,
+        "abs_g": 0.3206809985330501,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal"
+      },
+      {
+        "feature": "filler_word_rate",
+        "hedges_g": 0.3139131783564641,
+        "abs_g": 0.3139131783564641,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "behavioral"
+      },
+      {
+        "feature": "tentative_language_rate",
+        "hedges_g": 0.3095283951010257,
+        "abs_g": 0.3095283951010257,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "vader_within_post_volatility",
+        "hedges_g": 0.2858570316926175,
+        "abs_g": 0.2858570316926175,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      }
+    ],
+    "dimension_summary": {
+      "affective": {
+        "mean_g": 0.10935053362170907,
+        "mean_abs_g": 0.25324365170036506,
+        "max_abs_g": 0.775457581262493,
+        "n_features": 14,
+        "top_feature": "anxiety_rate",
+        "top_feature_g": 0.775457581262493
+      },
+      "pronoun": {
+        "mean_g": 0.14731297854003111,
+        "mean_abs_g": 0.3023819982826713,
+        "max_abs_g": 0.6467643473463031,
+        "n_features": 8,
+        "top_feature": "first_person_rate",
+        "top_feature_g": 0.6467643473463031
+      },
+      "cognitive": {
+        "mean_g": 0.3050511575914453,
+        "mean_abs_g": 0.3050511575914453,
+        "max_abs_g": 0.6072850542282775,
+        "n_features": 6,
+        "top_feature": "insight_rate",
+        "top_feature_g": 0.6072850542282775
+      },
+      "temporal_linguistic": {
+        "mean_g": 0.21214181850844072,
+        "mean_abs_g": 0.2575189418355621,
+        "max_abs_g": 0.4091390729417375,
+        "n_features": 4,
+        "top_feature": "temporal_balance",
+        "top_feature_g": 0.4091390729417375
+      },
+      "risk": {
+        "mean_g": -0.05249161007256267,
+        "mean_abs_g": 0.05265808330560773,
+        "max_abs_g": 0.128819577665776,
+        "n_features": 4,
+        "top_feature": "swearing_rate",
+        "top_feature_g": -0.128819577665776
+      },
+      "behavioral": {
+        "mean_g": -0.04188275107855586,
+        "mean_abs_g": 0.16744802242114148,
+        "max_abs_g": 0.3139131783564641,
+        "n_features": 5,
+        "top_feature": "filler_word_rate",
+        "top_feature_g": 0.3139131783564641
+      },
+      "readability": {
+        "mean_g": -0.10143321166530729,
+        "mean_abs_g": 0.2168748573332666,
+        "max_abs_g": 0.4774621034978609,
+        "n_features": 3,
+        "top_feature": "mattr_vocabulary_diversity",
+        "top_feature_g": -0.4774621034978609
+      },
+      "post_length": {
+        "mean_g": 0.34529218397259315,
+        "mean_abs_g": 0.34529218397259315,
+        "max_abs_g": 0.4157582639579359,
+        "n_features": 3,
+        "top_feature": "post_length_std",
+        "top_feature_g": 0.4157582639579359
+      },
+      "temporal": {
+        "mean_g": 0.05572364709171433,
+        "mean_abs_g": 0.1568745270033314,
+        "max_abs_g": 0.3206809985330501,
+        "n_features": 23,
+        "top_feature": "posts_per_day_log",
+        "top_feature_g": 0.3206809985330501
+      },
+      "social": {
+        "mean_g": 0.04722694981946015,
+        "mean_abs_g": 0.1067426912038437,
+        "max_abs_g": 0.2499902505894625,
+        "n_features": 18,
+        "top_feature": "n_comments",
+        "top_feature_g": 0.2499902505894625
+      },
+      "community": {
+        "mean_g": -0.045486649522022825,
+        "mean_abs_g": 0.2883094597845425,
+        "max_abs_g": 0.5897886937029797,
+        "n_features": 5,
+        "top_feature": "other_sub_ratio",
+        "top_feature_g": -0.5897886937029797
+      }
+    }
+  },
+  "bipolar": {
+    "top_features": [
+      {
+        "feature": "anxiety_rate",
+        "hedges_g": 1.3076441671221055,
+        "abs_g": 1.3076441671221055,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "first_person_rate",
+        "hedges_g": 1.2310944907111954,
+        "abs_g": 1.2310944907111954,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "self_focus_index",
+        "hedges_g": 1.036117758071453,
+        "abs_g": 1.036117758071453,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "sadness_rate",
+        "hedges_g": 0.9367949537646112,
+        "abs_g": 0.9367949537646112,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "other_sub_ratio",
+        "hedges_g": -0.9242924117200108,
+        "abs_g": 0.9242924117200108,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "vader_compound_std",
+        "hedges_g": 0.8606165155927973,
+        "abs_g": 0.8606165155927973,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "insight_rate",
+        "hedges_g": 0.7616228676983527,
+        "abs_g": 0.7616228676983527,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "past_focus_rate",
+        "hedges_g": 0.7455745160416675,
+        "abs_g": 0.7455745160416675,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "mattr_vocabulary_diversity",
+        "hedges_g": -0.7102544503568772,
+        "abs_g": 0.7102544503568772,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "temporal_balance",
+        "hedges_g": 0.6679526186877023,
+        "abs_g": 0.6679526186877023,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "post_length_mean",
+        "hedges_g": 0.6649881590074885,
+        "abs_g": 0.6649881590074885,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "post_length_std",
+        "hedges_g": 0.5461684749562918,
+        "abs_g": 0.5461684749562918,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "cognitive_flexibility",
+        "hedges_g": 0.5011878726590986,
+        "abs_g": 0.5011878726590986,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "negative_affect_rate",
+        "hedges_g": 0.4294492910605088,
+        "abs_g": 0.4294492910605088,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "social_sub_ratio",
+        "hedges_g": 0.4041869244801543,
+        "abs_g": 0.4041869244801543,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "ari_std",
+        "hedges_g": -0.3458304696974436,
+        "abs_g": 0.3458304696974436,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "neg_score_ratio",
+        "hedges_g": -0.3388843182075089,
+        "abs_g": 0.3388843182075089,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      },
+      {
+        "feature": "controversy_rate",
+        "hedges_g": -0.3294183269586831,
+        "abs_g": 0.3294183269586831,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      },
+      {
+        "feature": "vader_within_post_volatility",
+        "hedges_g": 0.3134739199187325,
+        "abs_g": 0.3134739199187325,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "social_focus_variability",
+        "hedges_g": -0.3091381161052692,
+        "abs_g": 0.3091381161052692,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "pronoun"
+      }
+    ],
+    "dimension_summary": {
+      "affective": {
+        "mean_g": 0.3301034216172873,
+        "mean_abs_g": 0.37536451823446504,
+        "max_abs_g": 1.3076441671221055,
+        "n_features": 14,
+        "top_feature": "anxiety_rate",
+        "top_feature_g": 1.3076441671221055
+      },
+      "pronoun": {
+        "mean_g": 0.26857928642045703,
+        "mean_abs_g": 0.39597329481009147,
+        "max_abs_g": 1.2310944907111954,
+        "n_features": 8,
+        "top_feature": "first_person_rate",
+        "top_feature_g": 1.2310944907111954
+      },
+      "cognitive": {
+        "mean_g": 0.3027123786342828,
+        "mean_abs_g": 0.3027123786342828,
+        "max_abs_g": 0.7616228676983527,
+        "n_features": 6,
+        "top_feature": "insight_rate",
+        "top_feature_g": 0.7616228676983527
+      },
+      "temporal_linguistic": {
+        "mean_g": 0.4231101422648483,
+        "mean_abs_g": 0.4231101422648483,
+        "max_abs_g": 0.7455745160416675,
+        "n_features": 4,
+        "top_feature": "past_focus_rate",
+        "top_feature_g": 0.7455745160416675
+      },
+      "risk": {
+        "mean_g": -0.20130541984371608,
+        "mean_abs_g": 0.20130541984371608,
+        "max_abs_g": 0.2363790037044064,
+        "n_features": 4,
+        "top_feature": "death_mortality_rate",
+        "top_feature_g": -0.2363790037044064
+      },
+      "behavioral": {
+        "mean_g": -0.01833329740114455,
+        "mean_abs_g": 0.19218433415855826,
+        "max_abs_g": 0.3015267729144878,
+        "n_features": 5,
+        "top_feature": "url_usage_rate",
+        "top_feature_g": -0.3015267729144878
+      },
+      "readability": {
+        "mean_g": -0.38763424177403144,
+        "mean_abs_g": 0.38763424177403144,
+        "max_abs_g": 0.7102544503568772,
+        "n_features": 3,
+        "top_feature": "mattr_vocabulary_diversity",
+        "top_feature_g": -0.7102544503568772
+      },
+      "post_length": {
+        "mean_g": 0.42813660587619945,
+        "mean_abs_g": 0.42813660587619945,
+        "max_abs_g": 0.6649881590074885,
+        "n_features": 3,
+        "top_feature": "post_length_mean",
+        "top_feature_g": 0.6649881590074885
+      },
+      "temporal": {
+        "mean_g": -0.007148023049095456,
+        "mean_abs_g": 0.06623755698307288,
+        "max_abs_g": 0.1862280605639585,
+        "n_features": 23,
+        "top_feature": "active_day_ratio",
+        "top_feature_g": -0.1862280605639585
+      },
+      "social": {
+        "mean_g": -0.021504060312309746,
+        "mean_abs_g": 0.09373013289968803,
+        "max_abs_g": 0.3388843182075089,
+        "n_features": 18,
+        "top_feature": "neg_score_ratio",
+        "top_feature_g": -0.3388843182075089
+      },
+      "community": {
+        "mean_g": -0.20701800858270597,
+        "mean_abs_g": 0.3686927783747677,
+        "max_abs_g": 0.9242924117200108,
+        "n_features": 5,
+        "top_feature": "other_sub_ratio",
+        "top_feature_g": -0.9242924117200108
+      }
+    }
+  },
+  "bpd": {
+    "top_features": [
+      {
+        "feature": "anxiety_rate",
+        "hedges_g": 1.5485955359912962,
+        "abs_g": 1.5485955359912962,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "first_person_rate",
+        "hedges_g": 1.359823480441289,
+        "abs_g": 1.359823480441289,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "sadness_rate",
+        "hedges_g": 1.1236258296552766,
+        "abs_g": 1.1236258296552766,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "self_focus_index",
+        "hedges_g": 1.0619550916469358,
+        "abs_g": 1.0619550916469358,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "vader_compound_std",
+        "hedges_g": 1.0269764981691538,
+        "abs_g": 1.0269764981691538,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "insight_rate",
+        "hedges_g": 0.8955584748057873,
+        "abs_g": 0.8955584748057873,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "mattr_vocabulary_diversity",
+        "hedges_g": -0.7703450404786794,
+        "abs_g": 0.7703450404786794,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "past_focus_rate",
+        "hedges_g": 0.7491902250416255,
+        "abs_g": 0.7491902250416255,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "other_sub_ratio",
+        "hedges_g": -0.7409160554060779,
+        "abs_g": 0.7409160554060779,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "post_length_mean",
+        "hedges_g": 0.739044643080472,
+        "abs_g": 0.739044643080472,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "temporal_balance",
+        "hedges_g": 0.65678602280269,
+        "abs_g": 0.65678602280269,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "negative_affect_rate",
+        "hedges_g": 0.6525544539166053,
+        "abs_g": 0.6525544539166053,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "post_length_std",
+        "hedges_g": 0.6190112720792603,
+        "abs_g": 0.6190112720792603,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "cognitive_flexibility",
+        "hedges_g": 0.494065891374142,
+        "abs_g": 0.494065891374142,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "third_person_rate",
+        "hedges_g": 0.3927622059611983,
+        "abs_g": 0.3927622059611983,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "vader_within_post_volatility",
+        "hedges_g": 0.3799103341331414,
+        "abs_g": 0.3799103341331414,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "neg_score_ratio",
+        "hedges_g": -0.3612670523719355,
+        "abs_g": 0.3612670523719355,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      },
+      {
+        "feature": "vader_negative_mean",
+        "hedges_g": 0.3520432119219939,
+        "abs_g": 0.3520432119219939,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "social_sub_ratio",
+        "hedges_g": 0.3496892716765519,
+        "abs_g": 0.3496892716765519,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "vader_positive_mean",
+        "hedges_g": 0.3466559407883849,
+        "abs_g": 0.3466559407883849,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      }
+    ],
+    "dimension_summary": {
+      "affective": {
+        "mean_g": 0.3932691454561175,
+        "mean_abs_g": 0.43564919374250516,
+        "max_abs_g": 1.5485955359912962,
+        "n_features": 14,
+        "top_feature": "anxiety_rate",
+        "top_feature_g": 1.5485955359912962
+      },
+      "pronoun": {
+        "mean_g": 0.3275714249624143,
+        "mean_abs_g": 0.4543057981310151,
+        "max_abs_g": 1.359823480441289,
+        "n_features": 8,
+        "top_feature": "first_person_rate",
+        "top_feature_g": 1.359823480441289
+      },
+      "cognitive": {
+        "mean_g": 0.36486466580423565,
+        "mean_abs_g": 0.36486466580423565,
+        "max_abs_g": 0.8955584748057873,
+        "n_features": 6,
+        "top_feature": "insight_rate",
+        "top_feature_g": 0.8955584748057873
+      },
+      "temporal_linguistic": {
+        "mean_g": 0.4402342518220756,
+        "mean_abs_g": 0.4402342518220756,
+        "max_abs_g": 0.7491902250416255,
+        "n_features": 4,
+        "top_feature": "past_focus_rate",
+        "top_feature_g": 0.7491902250416255
+      },
+      "risk": {
+        "mean_g": -0.17575895306797854,
+        "mean_abs_g": 0.17575895306797854,
+        "max_abs_g": 0.1941665629852648,
+        "n_features": 4,
+        "top_feature": "death_mortality_rate",
+        "top_feature_g": -0.1941665629852648
+      },
+      "behavioral": {
+        "mean_g": 0.034669149807979305,
+        "mean_abs_g": 0.23135997033998926,
+        "max_abs_g": 0.3331571412602654,
+        "n_features": 5,
+        "top_feature": "exclamation_ratio",
+        "top_feature_g": 0.3331571412602654
+      },
+      "readability": {
+        "mean_g": -0.3540563227718754,
+        "mean_abs_g": 0.3540563227718754,
+        "max_abs_g": 0.7703450404786794,
+        "n_features": 3,
+        "top_feature": "mattr_vocabulary_diversity",
+        "top_feature_g": -0.7703450404786794
+      },
+      "post_length": {
+        "mean_g": 0.4818654466164804,
+        "mean_abs_g": 0.4818654466164804,
+        "max_abs_g": 0.739044643080472,
+        "n_features": 3,
+        "top_feature": "post_length_mean",
+        "top_feature_g": 0.739044643080472
+      },
+      "temporal": {
+        "mean_g": -0.057398920848121524,
+        "mean_abs_g": 0.06857092254246075,
+        "max_abs_g": 0.2253893737722094,
+        "n_features": 23,
+        "top_feature": "tenure_days_log",
+        "top_feature_g": -0.2253893737722094
+      },
+      "social": {
+        "mean_g": -0.009008612860372604,
+        "mean_abs_g": 0.11544299733085271,
+        "max_abs_g": 0.3612670523719355,
+        "n_features": 18,
+        "top_feature": "neg_score_ratio",
+        "top_feature_g": -0.3612670523719355
+      },
+      "community": {
+        "mean_g": -0.22207856042974847,
+        "mean_abs_g": 0.3619542691003692,
+        "max_abs_g": 0.7409160554060779,
+        "n_features": 5,
+        "top_feature": "other_sub_ratio",
+        "top_feature_g": -0.7409160554060779
+      }
+    }
+  },
+  "depression": {
+    "top_features": [
+      {
+        "feature": "anxiety_rate",
+        "hedges_g": 1.0411501854700227,
+        "abs_g": 1.0411501854700227,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "first_person_rate",
+        "hedges_g": 0.9981922676737336,
+        "abs_g": 0.9981922676737336,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "sadness_rate",
+        "hedges_g": 0.9636438039356814,
+        "abs_g": 0.9636438039356814,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "self_focus_index",
+        "hedges_g": 0.8146803203324334,
+        "abs_g": 0.8146803203324334,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "vader_compound_std",
+        "hedges_g": 0.7058435709264688,
+        "abs_g": 0.7058435709264688,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "past_focus_rate",
+        "hedges_g": 0.6270421560799051,
+        "abs_g": 0.6270421560799051,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "other_sub_ratio",
+        "hedges_g": -0.5969984401672317,
+        "abs_g": 0.5969984401672317,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "insight_rate",
+        "hedges_g": 0.5960176848862624,
+        "abs_g": 0.5960176848862624,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "mattr_vocabulary_diversity",
+        "hedges_g": -0.5673877914729445,
+        "abs_g": 0.5673877914729445,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "social_sub_ratio",
+        "hedges_g": 0.5218049676604842,
+        "abs_g": 0.5218049676604842,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "temporal_balance",
+        "hedges_g": 0.5022634777472891,
+        "abs_g": 0.5022634777472891,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "post_length_mean",
+        "hedges_g": 0.498649559255966,
+        "abs_g": 0.498649559255966,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "negative_affect_rate",
+        "hedges_g": 0.4540508220351162,
+        "abs_g": 0.4540508220351162,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "post_length_std",
+        "hedges_g": 0.4482627709539091,
+        "abs_g": 0.4482627709539091,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "cognitive_flexibility",
+        "hedges_g": 0.4076101897280992,
+        "abs_g": 0.4076101897280992,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "neg_score_ratio",
+        "hedges_g": -0.2925703477940108,
+        "abs_g": 0.2925703477940108,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      },
+      {
+        "feature": "controversy_rate",
+        "hedges_g": -0.2774908801173929,
+        "abs_g": 0.2774908801173929,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      },
+      {
+        "feature": "url_usage_rate",
+        "hedges_g": -0.2573828337862978,
+        "abs_g": 0.2573828337862978,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "behavioral"
+      },
+      {
+        "feature": "vader_within_post_volatility",
+        "hedges_g": 0.2517792270928809,
+        "abs_g": 0.2517792270928809,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "ari_std",
+        "hedges_g": -0.250383553291459,
+        "abs_g": 0.250383553291459,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      }
+    ],
+    "dimension_summary": {
+      "affective": {
+        "mean_g": 0.2778782798455878,
+        "mean_abs_g": 0.31641218814189553,
+        "max_abs_g": 1.0411501854700227,
+        "n_features": 14,
+        "top_feature": "anxiety_rate",
+        "top_feature_g": 1.0411501854700227
+      },
+      "pronoun": {
+        "mean_g": 0.2542041890988917,
+        "mean_abs_g": 0.3271503402803971,
+        "max_abs_g": 0.9981922676737336,
+        "n_features": 8,
+        "top_feature": "first_person_rate",
+        "top_feature_g": 0.9981922676737336
+      },
+      "cognitive": {
+        "mean_g": 0.2730672621505379,
+        "mean_abs_g": 0.2730672621505379,
+        "max_abs_g": 0.5960176848862624,
+        "n_features": 6,
+        "top_feature": "insight_rate",
+        "top_feature_g": 0.5960176848862624
+      },
+      "temporal_linguistic": {
+        "mean_g": 0.36330638454513475,
+        "mean_abs_g": 0.36330638454513475,
+        "max_abs_g": 0.6270421560799051,
+        "n_features": 4,
+        "top_feature": "past_focus_rate",
+        "top_feature_g": 0.6270421560799051
+      },
+      "risk": {
+        "mean_g": -0.11717297116423887,
+        "mean_abs_g": 0.11717297116423887,
+        "max_abs_g": 0.1405950115179871,
+        "n_features": 4,
+        "top_feature": "swearing_rate",
+        "top_feature_g": -0.1405950115179871
+      },
+      "behavioral": {
+        "mean_g": -0.0014469443287335349,
+        "mean_abs_g": 0.15177994644971643,
+        "max_abs_g": 0.2573828337862978,
+        "n_features": 5,
+        "top_feature": "url_usage_rate",
+        "top_feature_g": -0.2573828337862978
+      },
+      "readability": {
+        "mean_g": -0.3124237856228187,
+        "mean_abs_g": 0.3124237856228187,
+        "max_abs_g": 0.5673877914729445,
+        "n_features": 3,
+        "top_feature": "mattr_vocabulary_diversity",
+        "top_feature_g": -0.5673877914729445
+      },
+      "post_length": {
+        "mean_g": 0.36065007816606326,
+        "mean_abs_g": 0.36065007816606326,
+        "max_abs_g": 0.498649559255966,
+        "n_features": 3,
+        "top_feature": "post_length_mean",
+        "top_feature_g": 0.498649559255966
+      },
+      "temporal": {
+        "mean_g": 0.0027290326691884266,
+        "mean_abs_g": 0.022266807323945658,
+        "max_abs_g": 0.0630590947824502,
+        "n_features": 23,
+        "top_feature": "active_day_ratio",
+        "top_feature_g": -0.0630590947824502
+      },
+      "social": {
+        "mean_g": -0.00023701116673882736,
+        "mean_abs_g": 0.07243654939434098,
+        "max_abs_g": 0.2925703477940108,
+        "n_features": 18,
+        "top_feature": "neg_score_ratio",
+        "top_feature_g": -0.2925703477940108
+      },
+      "community": {
+        "mean_g": -0.06931550749064799,
+        "mean_abs_g": 0.27803749455484167,
+        "max_abs_g": 0.5969984401672317,
+        "n_features": 5,
+        "top_feature": "other_sub_ratio",
+        "top_feature_g": -0.5969984401672317
+      }
+    }
+  },
+  "eating_disorders": {
+    "top_features": [
+      {
+        "feature": "anxiety_rate",
+        "hedges_g": 1.586930346170758,
+        "abs_g": 1.586930346170758,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "first_person_rate",
+        "hedges_g": 1.302727106118345,
+        "abs_g": 1.302727106118345,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "self_focus_index",
+        "hedges_g": 1.1398892042889417,
+        "abs_g": 1.1398892042889417,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "sadness_rate",
+        "hedges_g": 1.0439984634731343,
+        "abs_g": 1.0439984634731343,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "vader_compound_std",
+        "hedges_g": 0.9455484296779848,
+        "abs_g": 0.9455484296779848,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "mattr_vocabulary_diversity",
+        "hedges_g": -0.7458059561539269,
+        "abs_g": 0.7458059561539269,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "other_sub_ratio",
+        "hedges_g": -0.6894355115631419,
+        "abs_g": 0.6894355115631419,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "post_length_mean",
+        "hedges_g": 0.655112701605249,
+        "abs_g": 0.655112701605249,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "temporal_balance",
+        "hedges_g": 0.6300255918824323,
+        "abs_g": 0.6300255918824323,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "past_focus_rate",
+        "hedges_g": 0.6277521212984797,
+        "abs_g": 0.6277521212984797,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "insight_rate",
+        "hedges_g": 0.6065168224275556,
+        "abs_g": 0.6065168224275556,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "exclamation_ratio",
+        "hedges_g": 0.536139643826449,
+        "abs_g": 0.536139643826449,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "behavioral"
+      },
+      {
+        "feature": "cognitive_flexibility",
+        "hedges_g": 0.5105296400404327,
+        "abs_g": 0.5105296400404327,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "post_length_std",
+        "hedges_g": 0.5015277108201024,
+        "abs_g": 0.5015277108201024,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "negative_affect_rate",
+        "hedges_g": 0.4809217558183972,
+        "abs_g": 0.4809217558183972,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "neg_score_ratio",
+        "hedges_g": -0.4766278818491457,
+        "abs_g": 0.4766278818491457,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      },
+      {
+        "feature": "social_sub_ratio",
+        "hedges_g": 0.4633366110005295,
+        "abs_g": 0.4633366110005295,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "score_median",
+        "hedges_g": 0.4126825586817396,
+        "abs_g": 0.4126825586817396,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "social"
+      },
+      {
+        "feature": "vader_positive_mean",
+        "hedges_g": 0.3847240161629132,
+        "abs_g": 0.3847240161629132,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "entertainment_sub_ratio",
+        "hedges_g": -0.3781021879790898,
+        "abs_g": 0.3781021879790898,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      }
+    ],
+    "dimension_summary": {
+      "affective": {
+        "mean_g": 0.3743997062696947,
+        "mean_abs_g": 0.43452139417400415,
+        "max_abs_g": 1.586930346170758,
+        "n_features": 14,
+        "top_feature": "anxiety_rate",
+        "top_feature_g": 1.586930346170758
+      },
+      "pronoun": {
+        "mean_g": 0.32060351129567155,
+        "mean_abs_g": 0.3957388579117119,
+        "max_abs_g": 1.302727106118345,
+        "n_features": 8,
+        "top_feature": "first_person_rate",
+        "top_feature_g": 1.302727106118345
+      },
+      "cognitive": {
+        "mean_g": 0.30171746503529334,
+        "mean_abs_g": 0.30171746503529334,
+        "max_abs_g": 0.6065168224275556,
+        "n_features": 6,
+        "top_feature": "insight_rate",
+        "top_feature_g": 0.6065168224275556
+      },
+      "temporal_linguistic": {
+        "mean_g": 0.3796501009741642,
+        "mean_abs_g": 0.3796501009741642,
+        "max_abs_g": 0.6300255918824323,
+        "n_features": 4,
+        "top_feature": "temporal_balance",
+        "top_feature_g": 0.6300255918824323
+      },
+      "risk": {
+        "mean_g": -0.21488985685149858,
+        "mean_abs_g": 0.21488985685149858,
+        "max_abs_g": 0.3665603374380647,
+        "n_features": 4,
+        "top_feature": "death_mortality_rate",
+        "top_feature_g": -0.3665603374380647
+      },
+      "behavioral": {
+        "mean_g": 0.09417179919931552,
+        "mean_abs_g": 0.2954440262923152,
+        "max_abs_g": 0.536139643826449,
+        "n_features": 5,
+        "top_feature": "exclamation_ratio",
+        "top_feature_g": 0.536139643826449
+      },
+      "readability": {
+        "mean_g": -0.31696348312663014,
+        "mean_abs_g": 0.31965063514372033,
+        "max_abs_g": 0.7458059561539269,
+        "n_features": 3,
+        "top_feature": "mattr_vocabulary_diversity",
+        "top_feature_g": -0.7458059561539269
+      },
+      "post_length": {
+        "mean_g": 0.3941358405976441,
+        "mean_abs_g": 0.3941358405976441,
+        "max_abs_g": 0.655112701605249,
+        "n_features": 3,
+        "top_feature": "post_length_mean",
+        "top_feature_g": 0.655112701605249
+      },
+      "temporal": {
+        "mean_g": -0.02836136211324468,
+        "mean_abs_g": 0.04187224366379993,
+        "max_abs_g": 0.1641843396673265,
+        "n_features": 23,
+        "top_feature": "n_active_days",
+        "top_feature_g": -0.1641843396673265
+      },
+      "social": {
+        "mean_g": 0.046325265009221635,
+        "mean_abs_g": 0.1615896878668404,
+        "max_abs_g": 0.4766278818491457,
+        "n_features": 18,
+        "top_feature": "neg_score_ratio",
+        "top_feature_g": -0.4766278818491457
+      },
+      "community": {
+        "mean_g": -0.20721046219345393,
+        "mean_abs_g": 0.3925451065936657,
+        "max_abs_g": 0.6894355115631419,
+        "n_features": 5,
+        "top_feature": "other_sub_ratio",
+        "top_feature_g": -0.6894355115631419
+      }
+    }
+  },
+  "ocd": {
+    "top_features": [
+      {
+        "feature": "anxiety_rate",
+        "hedges_g": 1.7597974082582497,
+        "abs_g": 1.7597974082582497,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "first_person_rate",
+        "hedges_g": 1.0681397556719416,
+        "abs_g": 1.0681397556719416,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "insight_rate",
+        "hedges_g": 0.9123382454386564,
+        "abs_g": 0.9123382454386564,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "self_focus_index",
+        "hedges_g": 0.8628391691200519,
+        "abs_g": 0.8628391691200519,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "vader_compound_std",
+        "hedges_g": 0.7718051574062199,
+        "abs_g": 0.7718051574062199,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "mattr_vocabulary_diversity",
+        "hedges_g": -0.6575416567613165,
+        "abs_g": 0.6575416567613165,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "other_sub_ratio",
+        "hedges_g": -0.6369300688292331,
+        "abs_g": 0.6369300688292331,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "sadness_rate",
+        "hedges_g": 0.6192533783574529,
+        "abs_g": 0.6192533783574529,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "past_focus_rate",
+        "hedges_g": 0.6184004507247495,
+        "abs_g": 0.6184004507247495,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "temporal_balance",
+        "hedges_g": 0.5851636110705228,
+        "abs_g": 0.5851636110705228,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "post_length_mean",
+        "hedges_g": 0.5743000816004823,
+        "abs_g": 0.5743000816004823,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "negative_affect_rate",
+        "hedges_g": 0.5099604884301622,
+        "abs_g": 0.5099604884301622,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "post_length_std",
+        "hedges_g": 0.4884292685047567,
+        "abs_g": 0.4884292685047567,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "cognitive_flexibility",
+        "hedges_g": 0.4797514461482485,
+        "abs_g": 0.4797514461482485,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "social_sub_ratio",
+        "hedges_g": 0.4519703792187597,
+        "abs_g": 0.4519703792187597,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "impersonal_pronoun_rate",
+        "hedges_g": 0.410648460211903,
+        "abs_g": 0.410648460211903,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "tentative_language_rate",
+        "hedges_g": 0.3369234170651032,
+        "abs_g": 0.3369234170651032,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "neg_score_ratio",
+        "hedges_g": -0.3231204729178822,
+        "abs_g": 0.3231204729178822,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      },
+      {
+        "feature": "present_focus_rate",
+        "hedges_g": 0.3112475455990779,
+        "abs_g": 0.3112475455990779,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "exclamation_ratio",
+        "hedges_g": 0.3003583661335217,
+        "abs_g": 0.3003583661335217,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "behavioral"
+      }
+    ],
+    "dimension_summary": {
+      "affective": {
+        "mean_g": 0.3165101158105189,
+        "mean_abs_g": 0.37263565368477053,
+        "max_abs_g": 1.7597974082582497,
+        "n_features": 14,
+        "top_feature": "anxiety_rate",
+        "top_feature_g": 1.7597974082582497
+      },
+      "pronoun": {
+        "mean_g": 0.2514435455656036,
+        "mean_abs_g": 0.37682731754397353,
+        "max_abs_g": 1.0681397556719416,
+        "n_features": 8,
+        "top_feature": "first_person_rate",
+        "top_feature_g": 1.0681397556719416
+      },
+      "cognitive": {
+        "mean_g": 0.38516115212590324,
+        "mean_abs_g": 0.38516115212590324,
+        "max_abs_g": 0.9123382454386564,
+        "n_features": 6,
+        "top_feature": "insight_rate",
+        "top_feature_g": 0.9123382454386564
+      },
+      "temporal_linguistic": {
+        "mean_g": 0.3904661553908083,
+        "mean_abs_g": 0.3904661553908083,
+        "max_abs_g": 0.6184004507247495,
+        "n_features": 4,
+        "top_feature": "past_focus_rate",
+        "top_feature_g": 0.6184004507247495
+      },
+      "risk": {
+        "mean_g": -0.17218477829676243,
+        "mean_abs_g": 0.17218477829676243,
+        "max_abs_g": 0.2335414685260597,
+        "n_features": 4,
+        "top_feature": "death_mortality_rate",
+        "top_feature_g": -0.2335414685260597
+      },
+      "behavioral": {
+        "mean_g": 0.06342402097559646,
+        "mean_abs_g": 0.1908887406921255,
+        "max_abs_g": 0.3003583661335217,
+        "n_features": 5,
+        "top_feature": "exclamation_ratio",
+        "top_feature_g": 0.3003583661335217
+      },
+      "readability": {
+        "mean_g": -0.3149008048233079,
+        "mean_abs_g": 0.3149008048233079,
+        "max_abs_g": 0.6575416567613165,
+        "n_features": 3,
+        "top_feature": "mattr_vocabulary_diversity",
+        "top_feature_g": -0.6575416567613165
+      },
+      "post_length": {
+        "mean_g": 0.388759645643222,
+        "mean_abs_g": 0.388759645643222,
+        "max_abs_g": 0.5743000816004823,
+        "n_features": 3,
+        "top_feature": "post_length_mean",
+        "top_feature_g": 0.5743000816004823
+      },
+      "temporal": {
+        "mean_g": -0.015424135962929969,
+        "mean_abs_g": 0.04115845067807392,
+        "max_abs_g": 0.1126511556868438,
+        "n_features": 23,
+        "top_feature": "tenure_days_log",
+        "top_feature_g": -0.1126511556868438
+      },
+      "social": {
+        "mean_g": 0.00838675093401643,
+        "mean_abs_g": 0.09027142070357312,
+        "max_abs_g": 0.3231204729178822,
+        "n_features": 18,
+        "top_feature": "neg_score_ratio",
+        "top_feature_g": -0.3231204729178822
+      },
+      "community": {
+        "mean_g": -0.12574938865863167,
+        "mean_abs_g": 0.30653754034613556,
+        "max_abs_g": 0.6369300688292331,
+        "n_features": 5,
+        "top_feature": "other_sub_ratio",
+        "top_feature_g": -0.6369300688292331
+      }
+    }
+  },
+  "ptsd": {
+    "top_features": [
+      {
+        "feature": "anxiety_rate",
+        "hedges_g": 1.398546592137343,
+        "abs_g": 1.398546592137343,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "first_person_rate",
+        "hedges_g": 1.0854182044749698,
+        "abs_g": 1.0854182044749698,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "vader_compound_std",
+        "hedges_g": 1.0104105720238512,
+        "abs_g": 1.0104105720238512,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "self_focus_index",
+        "hedges_g": 0.8661083694654597,
+        "abs_g": 0.8661083694654597,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "sadness_rate",
+        "hedges_g": 0.8529379856537119,
+        "abs_g": 0.8529379856537119,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "past_focus_rate",
+        "hedges_g": 0.8519578624378871,
+        "abs_g": 0.8519578624378871,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "post_length_mean",
+        "hedges_g": 0.7990294223654308,
+        "abs_g": 0.7990294223654308,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "temporal_balance",
+        "hedges_g": 0.7591517272804605,
+        "abs_g": 0.7591517272804605,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "mattr_vocabulary_diversity",
+        "hedges_g": -0.7389056462096899,
+        "abs_g": 0.7389056462096899,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "other_sub_ratio",
+        "hedges_g": -0.6844195352080398,
+        "abs_g": 0.6844195352080398,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "post_length_std",
+        "hedges_g": 0.6609501023394856,
+        "abs_g": 0.6609501023394856,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "insight_rate",
+        "hedges_g": 0.64757074702609,
+        "abs_g": 0.64757074702609,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "negative_affect_rate",
+        "hedges_g": 0.6155334684434927,
+        "abs_g": 0.6155334684434927,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "cognitive_flexibility",
+        "hedges_g": 0.5107216927440409,
+        "abs_g": 0.5107216927440409,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "third_person_rate",
+        "hedges_g": 0.4761203426054518,
+        "abs_g": 0.4761203426054518,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "vader_within_post_volatility",
+        "hedges_g": 0.4645337548972718,
+        "abs_g": 0.4645337548972718,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "social_sub_ratio",
+        "hedges_g": 0.4386563758567912,
+        "abs_g": 0.4386563758567912,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "ari_std",
+        "hedges_g": -0.3770436739460725,
+        "abs_g": 0.3770436739460725,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "neg_score_ratio",
+        "hedges_g": -0.3138156284810571,
+        "abs_g": 0.3138156284810571,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      },
+      {
+        "feature": "exclamation_ratio",
+        "hedges_g": 0.3103087532543598,
+        "abs_g": 0.3103087532543598,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "behavioral"
+      }
+    ],
+    "dimension_summary": {
+      "affective": {
+        "mean_g": 0.3513975616721309,
+        "mean_abs_g": 0.39159519451283575,
+        "max_abs_g": 1.398546592137343,
+        "n_features": 14,
+        "top_feature": "anxiety_rate",
+        "top_feature_g": 1.398546592137343
+      },
+      "pronoun": {
+        "mean_g": 0.2871881269935463,
+        "mean_abs_g": 0.40265940777252257,
+        "max_abs_g": 1.0854182044749698,
+        "n_features": 8,
+        "top_feature": "first_person_rate",
+        "top_feature_g": 1.0854182044749698
+      },
+      "cognitive": {
+        "mean_g": 0.27663941335076586,
+        "mean_abs_g": 0.27663941335076586,
+        "max_abs_g": 0.64757074702609,
+        "n_features": 6,
+        "top_feature": "insight_rate",
+        "top_feature_g": 0.64757074702609
+      },
+      "temporal_linguistic": {
+        "mean_g": 0.47490767877845996,
+        "mean_abs_g": 0.47490767877845996,
+        "max_abs_g": 0.8519578624378871,
+        "n_features": 4,
+        "top_feature": "past_focus_rate",
+        "top_feature_g": 0.8519578624378871
+      },
+      "risk": {
+        "mean_g": -0.19091512730281693,
+        "mean_abs_g": 0.19091512730281693,
+        "max_abs_g": 0.2096226595416363,
+        "n_features": 4,
+        "top_feature": "death_mortality_rate",
+        "top_feature_g": -0.2096226595416363
+      },
+      "behavioral": {
+        "mean_g": -0.06686810202876438,
+        "mean_abs_g": 0.2046652359222889,
+        "max_abs_g": 0.3103087532543598,
+        "n_features": 5,
+        "top_feature": "exclamation_ratio",
+        "top_feature_g": 0.3103087532543598
+      },
+      "readability": {
+        "mean_g": -0.4014177353501817,
+        "mean_abs_g": 0.4014177353501817,
+        "max_abs_g": 0.7389056462096899,
+        "n_features": 3,
+        "top_feature": "mattr_vocabulary_diversity",
+        "top_feature_g": -0.7389056462096899
+      },
+      "post_length": {
+        "mean_g": 0.5116226577541542,
+        "mean_abs_g": 0.5116226577541542,
+        "max_abs_g": 0.7990294223654308,
+        "n_features": 3,
+        "top_feature": "post_length_mean",
+        "top_feature_g": 0.7990294223654308
+      },
+      "temporal": {
+        "mean_g": 0.008056298458485928,
+        "mean_abs_g": 0.05212904549322765,
+        "max_abs_g": 0.1297886263306811,
+        "n_features": 23,
+        "top_feature": "interval_median_hours_log",
+        "top_feature_g": -0.1297886263306811
+      },
+      "social": {
+        "mean_g": 0.010744103286733588,
+        "mean_abs_g": 0.09768194605465752,
+        "max_abs_g": 0.3138156284810571,
+        "n_features": 18,
+        "top_feature": "neg_score_ratio",
+        "top_feature_g": -0.3138156284810571
+      },
+      "community": {
+        "mean_g": -0.12734422454188238,
+        "mean_abs_g": 0.30280677488459884,
+        "max_abs_g": 0.6844195352080398,
+        "n_features": 5,
+        "top_feature": "other_sub_ratio",
+        "top_feature_g": -0.6844195352080398
+      }
+    }
+  },
+  "schizophrenia": {
+    "top_features": [
+      {
+        "feature": "anxiety_rate",
+        "hedges_g": 1.1111343045949371,
+        "abs_g": 1.1111343045949371,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "first_person_rate",
+        "hedges_g": 1.0982476836986592,
+        "abs_g": 1.0982476836986592,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "other_sub_ratio",
+        "hedges_g": -0.8517004676803056,
+        "abs_g": 0.8517004676803056,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "insight_rate",
+        "hedges_g": 0.84627815305315,
+        "abs_g": 0.84627815305315,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "self_focus_index",
+        "hedges_g": 0.8304516173590354,
+        "abs_g": 0.8304516173590354,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "sadness_rate",
+        "hedges_g": 0.6210697870083023,
+        "abs_g": 0.6210697870083023,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "mattr_vocabulary_diversity",
+        "hedges_g": -0.6167224293830643,
+        "abs_g": 0.6167224293830643,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "readability"
+      },
+      {
+        "feature": "vader_compound_std",
+        "hedges_g": 0.6072904669028595,
+        "abs_g": 0.6072904669028595,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "past_focus_rate",
+        "hedges_g": 0.5991101385797925,
+        "abs_g": 0.5991101385797925,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "post_length_std",
+        "hedges_g": 0.4795488000107166,
+        "abs_g": 0.4795488000107166,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "post_length_mean",
+        "hedges_g": 0.4758025618978988,
+        "abs_g": 0.4758025618978988,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "post_length"
+      },
+      {
+        "feature": "social_sub_ratio",
+        "hedges_g": 0.4045514589364505,
+        "abs_g": 0.4045514589364505,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "community"
+      },
+      {
+        "feature": "negative_affect_rate",
+        "hedges_g": 0.4021893719547544,
+        "abs_g": 0.4021893719547544,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "cognitive_flexibility",
+        "hedges_g": 0.4018346414314068,
+        "abs_g": 0.4018346414314068,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "temporal_balance",
+        "hedges_g": 0.3866622650849731,
+        "abs_g": 0.3866622650849731,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "present_focus_rate",
+        "hedges_g": 0.3470425538260485,
+        "abs_g": 0.3470425538260485,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "temporal_linguistic"
+      },
+      {
+        "feature": "vader_within_post_volatility",
+        "hedges_g": 0.3432831013023501,
+        "abs_g": 0.3432831013023501,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "affective"
+      },
+      {
+        "feature": "impersonal_pronoun_rate",
+        "hedges_g": 0.3111258637278729,
+        "abs_g": 0.3111258637278729,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "pronoun"
+      },
+      {
+        "feature": "tentative_language_rate",
+        "hedges_g": 0.2843768021512231,
+        "abs_g": 0.2843768021512231,
+        "direction": "elevated",
+        "significant": true,
+        "dimension": "cognitive"
+      },
+      {
+        "feature": "controversy_rate",
+        "hedges_g": -0.2740718848658807,
+        "abs_g": 0.2740718848658807,
+        "direction": "reduced",
+        "significant": true,
+        "dimension": "social"
+      }
+    ],
+    "dimension_summary": {
+      "affective": {
+        "mean_g": 0.2146649614420813,
+        "mean_abs_g": 0.2828720936117274,
+        "max_abs_g": 1.1111343045949371,
+        "n_features": 14,
+        "top_feature": "anxiety_rate",
+        "top_feature_g": 1.1111343045949371
+      },
+      "pronoun": {
+        "mean_g": 0.27427409646537065,
+        "mean_abs_g": 0.3163078076333816,
+        "max_abs_g": 1.0982476836986592,
+        "n_features": 8,
+        "top_feature": "first_person_rate",
+        "top_feature_g": 1.0982476836986592
+      },
+      "cognitive": {
+        "mean_g": 0.3062546248312279,
+        "mean_abs_g": 0.3062546248312279,
+        "max_abs_g": 0.84627815305315,
+        "n_features": 6,
+        "top_feature": "insight_rate",
+        "top_feature_g": 0.84627815305315
+      },
+      "temporal_linguistic": {
+        "mean_g": 0.36390000407317025,
+        "mean_abs_g": 0.36390000407317025,
+        "max_abs_g": 0.5991101385797925,
+        "n_features": 4,
+        "top_feature": "past_focus_rate",
+        "top_feature_g": 0.5991101385797925
+      },
+      "risk": {
+        "mean_g": -0.09682243465054888,
+        "mean_abs_g": 0.09682243465054888,
+        "max_abs_g": 0.1550750130971172,
+        "n_features": 4,
+        "top_feature": "assent_rate",
+        "top_feature_g": -0.1550750130971172
+      },
+      "behavioral": {
+        "mean_g": -0.02573125747616768,
+        "mean_abs_g": 0.12423430773152733,
+        "max_abs_g": 0.2314342194197802,
+        "n_features": 5,
+        "top_feature": "filler_word_rate",
+        "top_feature_g": 0.2314342194197802
+      },
+      "readability": {
+        "mean_g": -0.26078690401076793,
+        "mean_abs_g": 0.26078690401076793,
+        "max_abs_g": 0.6167224293830643,
+        "n_features": 3,
+        "top_feature": "mattr_vocabulary_diversity",
+        "top_feature_g": -0.6167224293830643
+      },
+      "post_length": {
+        "mean_g": 0.3873212078784984,
+        "mean_abs_g": 0.3873212078784984,
+        "max_abs_g": 0.4795488000107166,
+        "n_features": 3,
+        "top_feature": "post_length_std",
+        "top_feature_g": 0.4795488000107166
+      },
+      "temporal": {
+        "mean_g": -0.007152425264086064,
+        "mean_abs_g": 0.07222211050157624,
+        "max_abs_g": 0.1915141065202465,
+        "n_features": 23,
+        "top_feature": "tenure_days_log",
+        "top_feature_g": -0.1915141065202465
+      },
+      "social": {
+        "mean_g": -0.027855250040439303,
+        "mean_abs_g": 0.08228546638883133,
+        "max_abs_g": 0.2740718848658807,
+        "n_features": 18,
+        "top_feature": "controversy_rate",
+        "top_feature_g": -0.2740718848658807
+      },
+      "community": {
+        "mean_g": -0.16257974378953804,
+        "mean_abs_g": 0.3244003273641182,
+        "max_abs_g": 0.8517004676803056,
+        "n_features": 5,
+        "top_feature": "other_sub_ratio",
+        "top_feature_g": -0.8517004676803056
+      }
+    }
+  }
+}

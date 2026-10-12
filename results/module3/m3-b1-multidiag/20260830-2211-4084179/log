@@ -1,0 +1,46 @@
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-08-30 20:40:22,541 - INFO - Loading spaCy model...
+2026-08-30 20:40:23,497 - INFO - spaCy loaded.
+2026-08-30 20:40:36,552 - INFO - Scanning 500 partitions...
+2026-08-30 20:50:02,848 - INFO -   scanned 50/500 partitions, 12706 users
+2026-08-30 20:59:25,232 - INFO -   scanned 100/500 partitions, 25553 users
+2026-08-30 21:08:24,215 - INFO -   scanned 150/500 partitions, 38388 users
+2026-08-30 21:17:29,604 - INFO -   scanned 200/500 partitions, 51310 users
+2026-08-30 21:26:19,878 - INFO -   scanned 250/500 partitions, 64067 users
+2026-08-30 21:35:20,085 - INFO -   scanned 300/500 partitions, 76851 users
+2026-08-30 21:43:50,746 - INFO -   scanned 350/500 partitions, 89695 users
+2026-08-30 21:52:18,346 - INFO -   scanned 400/500 partitions, 102432 users
+2026-08-30 22:02:00,486 - INFO -   scanned 450/500 partitions, 115264 users
+2026-08-30 22:11:27,328 - INFO -   scanned 500/500 partitions, 128003 users
+2026-08-30 22:11:27,328 - INFO - Done: 128030 diag posts, 128003 users with diagnoses
+2026-08-30 22:11:28,584 - INFO - Saved user_multi_disorder.parquet: 128003 users
+2026-08-30 22:11:28,602 - INFO - 
+=== Multi-diagnosis statistics ===
+2026-08-30 22:11:28,602 - INFO -   total users with diagnosis: 128003
+2026-08-30 22:11:28,602 - INFO -   users with >1 disorder: 39059 (30.5%)
+2026-08-30 22:11:28,602 - INFO -   n_disorders distribution: {0: 24380, 1: 64564, 2: 25974, 3: 9501, 4: 2698, 5: 702, 6: 151, 7: 28, 8: 5}
+2026-08-30 22:11:28,602 - INFO -   multi-disorder posts: 39065/128030 (30.5%)
+2026-08-30 22:11:30,340 - INFO - 
+  Top comorbidity pairs:
+2026-08-30 22:11:30,340 - INFO -     anxiety-depression: 15140
+2026-08-30 22:11:30,340 - INFO -     adhd-anxiety: 8742
+2026-08-30 22:11:30,340 - INFO -     adhd-depression: 8316
+2026-08-30 22:11:30,340 - INFO -     bipolar-depression: 4187
+2026-08-30 22:11:30,340 - INFO -     adhd-autism: 3522
+2026-08-30 22:11:30,340 - INFO -     anxiety-ptsd: 3482
+2026-08-30 22:11:30,340 - INFO -     depression-ptsd: 3101
+2026-08-30 22:11:30,340 - INFO -     anxiety-ocd: 2892
+2026-08-30 22:11:30,340 - INFO -     anxiety-bipolar: 2658
+2026-08-30 22:11:30,340 - INFO -     adhd-bipolar: 2526
+2026-08-30 22:11:30,340 - INFO -     bpd-depression: 1955
+2026-08-30 22:11:30,340 - INFO -     adhd-ptsd: 1810
+2026-08-30 22:11:30,340 - INFO -     depression-ocd: 1701
+2026-08-30 22:11:30,340 - INFO -     anxiety-bpd: 1664
+2026-08-30 22:11:30,340 - INFO -     anxiety-autism: 1651
+2026-08-30 22:11:30,340 - INFO -     adhd-ocd: 1612
+2026-08-30 22:11:30,340 - INFO -     autism-depression: 1397
+2026-08-30 22:11:30,340 - INFO -     bipolar-bpd: 1389
+2026-08-30 22:11:30,340 - INFO -     adhd-bpd: 1343
+2026-08-30 22:11:30,340 - INFO -     bpd-ptsd: 1066
+2026-08-30 22:11:30,349 - INFO - DONE

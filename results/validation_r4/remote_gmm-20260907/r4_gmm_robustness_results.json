@@ -1,0 +1,96 @@
+{
+  "k_selection_scaled": [
+    {
+      "k": 1,
+      "bic": 855269.6337400255,
+      "silhouette": NaN
+    },
+    {
+      "k": 2,
+      "bic": 274643.01817739796,
+      "silhouette": 0.6218
+    },
+    {
+      "k": 3,
+      "bic": 188447.12908882837,
+      "silhouette": 0.2223
+    },
+    {
+      "k": 4,
+      "bic": 166936.63883155672,
+      "silhouette": 0.1648
+    },
+    {
+      "k": 5,
+      "bic": 149438.76544367571,
+      "silhouette": 0.0683
+    }
+  ],
+  "k2_init_seed_ari": {
+    "seeds": [
+      1,
+      7,
+      42,
+      2025
+    ],
+    "ari_vs_2025": [
+      0.9985776169444335,
+      0.9988623367072443,
+      1.0
+    ]
+  },
+  "k_selection_no_scaling": [
+    {
+      "k": 1,
+      "bic": -1823724.8066257755,
+      "silhouette": NaN
+    },
+    {
+      "k": 2,
+      "bic": -2390344.637109132,
+      "silhouette": 0.5837
+    },
+    {
+      "k": 3,
+      "bic": -2438676.1287510996,
+      "silhouette": 0.2833
+    },
+    {
+      "k": 4,
+      "bic": -2453210.5335383527,
+      "silhouette": 0.1131
+    }
+  ],
+  "k2_bootstrap_ari": {
+    "n": 30,
+    "mean": 0.7012166777920206,
+    "std": 0.03760065984715504,
+    "min": 0.6311226641033796
+  },
+  "k2_disorder_composition": {
+    "0": {
+      "adhd": 0.028,
+      "anxiety": 0.032,
+      "autism": 0.037,
+      "bipolar": 0.037,
+      "bpd": 0.05,
+      "depression": 0.032,
+      "eating_disorders": 0.039,
+      "ocd": 0.041,
+      "ptsd": 0.041,
+      "schizophrenia": 0.057
+    },
+    "1": {
+      "adhd": 0.972,
+      "anxiety": 0.968,
+      "autism": 0.963,
+      "bipolar": 0.963,
+      "bpd": 0.95,
+      "depression": 0.968,
+      "eating_disorders": 0.961,
+      "ocd": 0.959,
+      "ptsd": 0.959,
+      "schizophrenia": 0.943
+    }
+  }
+}

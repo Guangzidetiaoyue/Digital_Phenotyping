@@ -1,0 +1,34 @@
+{
+  "disorders": [
+    "adhd",
+    "anxiety",
+    "autism",
+    "bipolar",
+    "bpd",
+    "depression",
+    "eating_disorders",
+    "ocd",
+    "ptsd",
+    "schizophrenia"
+  ],
+  "empirical_jaccard": {
+    "mantel_r": 0.4008046974340034,
+    "pearson_p": 0.006363317174801911,
+    "perm_p": 0.007799220077992201,
+    "n_pairs": 45
+  },
+  "empirical_phi": {
+    "mantel_r": 0.4112292357737012,
+    "pearson_p": 0.005011160782013198,
+    "perm_p": 0.005599440055994401,
+    "n_pairs": 45
+  },
+  "literature_uncited": {
+    "mantel_r": 0.36298030544518955,
+    "pearson_p": 0.014259822812369819,
+    "perm_p": 0.014198580141985802,
+    "n_pairs": 45,
+    "status": "UNCITED / exploratory - must be sourced externally"
+  },
+  "note": "Empirical matrices share cohort with phenotype classifiers -> internal consistency, not external convergence. Primary Mantel requires an externally sourced comorbidity matrix."
+}

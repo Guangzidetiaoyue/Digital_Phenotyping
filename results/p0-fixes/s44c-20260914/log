@@ -1,0 +1,32 @@
+2026-09-14 12:42:54,976 - INFO - Band-adjusted by-disorder: 1548 rows
+2026-09-14 12:42:55,644 - INFO - Corrected event-study fits: 200
+2026-09-14 12:42:56,975 - INFO - Significant CAR (FDR<0.05): 106
+2026-09-14 12:42:56,975 - INFO - 
+Significant events (p_factor primary):
+2026-09-14 12:42:56,979 - INFO -             event         disorder       car    p_fdr
+ E1_election_2016              bpd  0.093002 0.001565
+ E1_election_2016    schizophrenia -0.148267 0.001898
+E2_celebrity_2018          anxiety -0.024938 0.015568
+E2_celebrity_2018           autism -0.045084 0.010718
+E2_celebrity_2018          bipolar -0.040598 0.015568
+E2_celebrity_2018             ptsd  0.093555 0.002795
+E2_celebrity_2018    schizophrenia  0.107818 0.005504
+    E3_covid_2020             adhd -0.028069 0.002279
+    E3_covid_2020          anxiety -0.032932 0.010827
+    E3_covid_2020           autism -0.037552 0.000434
+    E3_covid_2020              bpd -0.073643 0.005196
+    E3_covid_2020 eating_disorders -0.075123 0.005763
+    E3_covid_2020              ocd  0.068168 0.005196
+    E3_covid_2020    schizophrenia  0.100272 0.000434
+      E4_blm_2020          bipolar  0.039641 0.023880
+      E4_blm_2020 eating_disorders -0.069362 0.023880
+  E5_capitol_2021             adhd  0.021399 0.022088
+  E5_capitol_2021          anxiety  0.034898 0.004594
+  E5_capitol_2021           autism  0.036992 0.023765
+  E5_capitol_2021              bpd  0.127331 0.000011
+  E5_capitol_2021       depression  0.009640 0.024467
+  E5_capitol_2021              ocd -0.035509 0.011229
+  E5_capitol_2021             ptsd  0.045903 0.001984
+  E5_capitol_2021    schizophrenia  0.258494 0.000303
+2026-09-14 12:42:57,017 - INFO - DONE
+EXIT_OK

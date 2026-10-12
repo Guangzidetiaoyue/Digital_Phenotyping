@@ -1,0 +1,86 @@
+2026-09-14 11:55:45,780 - INFO - Loading features...
+2026-09-14 11:55:56,210 - INFO - Features: 108, patients: 126114
+2026-09-14 11:55:56,215 - INFO - Disorders: ['adhd', 'anxiety', 'autism', 'bipolar', 'bpd', 'depression', 'eating_disorders', 'ocd', 'ptsd', 'schizophrenia']
+2026-09-14 11:55:56,822 - INFO -   adhd: 108 nodes, 854 edges (n=10000)
+2026-09-14 11:55:57,199 - INFO -   anxiety: 108 nodes, 1030 edges (n=10000)
+2026-09-14 11:56:03,066 - INFO -   autism: 108 nodes, 820 edges (n=10000)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -9.832e-03
+  warnings.warn(
+2026-09-14 11:56:22,286 - INFO -   bipolar: 108 nodes, 745 edges (n=9906)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: 4.114e-04
+  warnings.warn(
+2026-09-14 11:56:45,205 - INFO -   bpd: 108 nodes, 123 edges (n=6007)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -1.890e-02
+  warnings.warn(
+2026-09-14 11:56:53,383 - INFO -   depression: 108 nodes, 989 edges (n=10000)
+2026-09-14 11:56:53,913 - INFO -   eating_disorders: 108 nodes, 10 edges (n=1681)
+2026-09-14 11:56:55,405 - INFO -   ocd: 108 nodes, 852 edges (n=5691)
+2026-09-14 11:56:57,239 - INFO -   ptsd: 108 nodes, 862 edges (n=8223)
+2026-09-14 11:57:00,098 - INFO -   schizophrenia: 108 nodes, 972 edges (n=2435)
+2026-09-14 11:57:01,613 - INFO - 
+=== Network topology ===
+2026-09-14 11:57:01,619 - INFO -         disorder  n_nodes  n_edges  density  mean_degree  global_efficiency  n_users
+            adhd      108      854 0.147802    15.814815           0.009308    10000
+         anxiety      108     1030 0.178262    19.074074           0.009323    10000
+          autism      108      820 0.141918    15.185185           0.009346    10000
+         bipolar      108      745 0.128937    13.796296           0.009346     9906
+             bpd      108      123 0.021288     2.277778           0.009346     6007
+      depression      108      989 0.171166    18.314815           0.009341    10000
+eating_disorders      108       10 0.001731     0.185185           0.009346     1681
+             ocd      108      852 0.147456    15.777778           0.009297     5691
+            ptsd      108      862 0.149187    15.962963           0.009335     8223
+   schizophrenia      108      972 0.168224    18.000000           0.009256     2435
+2026-09-14 11:57:01,783 - INFO - 
+=== Top bridge features (mean across disorders) ===
+2026-09-14 11:57:01,784 - INFO -                          mean_bridge  n_disorders_bridge
+interval_median_hours      15.106055                   8
+total_comments_received    11.965409                   9
+score_max                  10.090232                   9
+score_range                10.053867                   9
+interval_kurtosis           8.901044                   9
+n_posts_total               7.590086                   9
+n_submissions               6.929523                   9
+score_std                   6.851662                   9
+n_comments                  6.085668                   9
+score_mean                  5.013240                   9
+score_min                   4.945086                   8
+posts_per_day               4.273901                   9
+interval_mean_hours         3.982463                   8
+mean_gap_days               3.629189                   8
+weekly_entropy              3.459789                   8
+2026-09-14 11:57:01,800 - INFO - 
+Edges shared by >=5 disorders: 911/1320 (69.0%)
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -3.160e-02
+  warnings.warn(
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -4.072e-03
+  warnings.warn(
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: 8.830e-02
+  warnings.warn(
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -9.832e-03
+  warnings.warn(
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: 4.114e-04
+  warnings.warn(
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -1.890e-02
+  warnings.warn(
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: 1.195e-02
+  warnings.warn(
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: -5.343e-02
+  warnings.warn(
+/home/user/miniconda3/envs/my_py311/lib/python3.11/site-packages/sklearn/covariance/_graph_lasso.py:199: ConvergenceWarning: graphical_lasso: did not converge after 500 iteration: dual gap: 2.770e-02
+  warnings.warn(
+2026-09-14 11:59:49,785 - INFO - Saved network_alpha_sensitivity.json
+2026-09-14 11:59:49,904 - INFO - DONE
+STATUS s33=0
+2026-09-14 11:59:50,863 - INFO - === M4 figures (corrected analyses) ===
+2026-09-14 11:59:51,364 - INFO -   Saved: main/fig1_calendar_overview
+2026-09-14 11:59:51,758 - INFO -   Saved: main/fig2_corrected_trends
+2026-09-14 11:59:51,971 - INFO -   Saved: main/fig3_covid_its
+2026-09-14 11:59:52,218 - INFO -   Saved: main/fig4_events
+2026-09-14 11:59:52,477 - INFO -   Saved: main/fig5_leadlag
+2026-09-14 11:59:52,732 - INFO -   Saved: ed/ed_fig1_composition_bias
+2026-09-14 11:59:53,140 - INFO -   Saved: ed/ed_fig2_disorder_trends
+2026-09-14 11:59:53,315 - INFO -   Saved: ed/ed_fig3_disorder_covid
+2026-09-14 11:59:53,767 - INFO -   Saved: ed/ed_fig4_leadlag_matrix
+2026-09-14 11:59:53,767 - INFO - DONE
+STATUS s46=0
+ALL_DONE

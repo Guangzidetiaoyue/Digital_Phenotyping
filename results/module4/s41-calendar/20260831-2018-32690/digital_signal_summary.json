@@ -1,0 +1,11 @@
+{
+  "n_reliable_windows": 17247283,
+  "main_window": [
+    2008,
+    2022
+  ],
+  "n_months": 179,
+  "n_quarters": 60,
+  "n_years": 15,
+  "output_dir": "/path/to/project/module4_results/data"
+}

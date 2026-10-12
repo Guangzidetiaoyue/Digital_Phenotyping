@@ -1,0 +1,226 @@
+{
+  "n_disorders_networked": 10,
+  "n_features": 108,
+  "alpha_used": 0.8,
+  "alpha_sensitivity_density": {
+    "adhd": {
+      "0.4": 0.6292834890965732,
+      "0.6": 0.27223952924887507,
+      "0.8": 0.14780200761509174,
+      "1.0": 0.12149532710280374
+    },
+    "anxiety": {
+      "0.4": 0.6533402561439945,
+      "0.6": 0.31066112841813776,
+      "0.8": 0.17826237452405677,
+      "1.0": 0.11578400830737279
+    },
+    "autism": {
+      "0.4": 0.6471097265489789,
+      "0.6": 0.3778123918310834,
+      "0.8": 0.14191761855313256,
+      "1.0": 0.12184146763586017
+    },
+    "bipolar": {
+      "0.4": 0.606957424714434,
+      "0.6": 0.22066458982346832,
+      "0.8": 0.1289373485635168,
+      "1.0": 0.0976116303219107
+    },
+    "bpd": {
+      "0.4": 0.10038075458636206,
+      "0.6": 0.0579785392869505,
+      "0.8": 0.021287642782969886,
+      "1.0": 0.021460713049498096
+    },
+    "depression": {
+      "0.4": 0.6249567324333679,
+      "0.6": 0.3058151609553479,
+      "0.8": 0.17116649359640013,
+      "1.0": 0.14797507788161993
+    },
+    "eating_disorders": {
+      "0.4": 0.007095880927656628,
+      "0.6": 0.0027691242644513675,
+      "0.8": 0.0017307026652821046,
+      "1.0": 0.0017307026652821046
+    },
+    "ocd": {
+      "0.4": 0.6005538248528903,
+      "0.6": 0.2763932156455521,
+      "0.8": 0.1474558670820353,
+      "1.0": 0.1140533056420907
+    },
+    "ptsd": {
+      "0.4": 0.5860159224645206,
+      "0.6": 0.26116303219106957,
+      "0.8": 0.14918656974731742,
+      "1.0": 0.12184146763586017
+    },
+    "schizophrenia": {
+      "0.4": 0.6214953271028038,
+      "0.6": 0.25216337833160263,
+      "0.8": 0.16822429906542055,
+      "1.0": 0.12184146763586017
+    }
+  },
+  "topology": [
+    {
+      "disorder": "adhd",
+      "n_nodes": 108,
+      "n_edges": 854,
+      "density": 0.14780200761509174,
+      "mean_degree": 15.814814814814815,
+      "global_efficiency": 0.009307803358407417,
+      "n_users": 10000
+    },
+    {
+      "disorder": "anxiety",
+      "n_nodes": 108,
+      "n_edges": 1030,
+      "density": 0.17826237452405677,
+      "mean_degree": 19.074074074074073,
+      "global_efficiency": 0.009323220009932728,
+      "n_users": 10000
+    },
+    {
+      "disorder": "autism",
+      "n_nodes": 108,
+      "n_edges": 820,
+      "density": 0.14191761855313256,
+      "mean_degree": 15.185185185185185,
+      "global_efficiency": 0.009345794392523364,
+      "n_users": 10000
+    },
+    {
+      "disorder": "bipolar",
+      "n_nodes": 108,
+      "n_edges": 745,
+      "density": 0.1289373485635168,
+      "mean_degree": 13.796296296296296,
+      "global_efficiency": 0.009345794392523364,
+      "n_users": 9906
+    },
+    {
+      "disorder": "bpd",
+      "n_nodes": 108,
+      "n_edges": 123,
+      "density": 0.021287642782969886,
+      "mean_degree": 2.2777777777777777,
+      "global_efficiency": 0.009345794392523364,
+      "n_users": 6007
+    },
+    {
+      "disorder": "depression",
+      "n_nodes": 108,
+      "n_edges": 989,
+      "density": 0.17116649359640013,
+      "mean_degree": 18.314814814814813,
+      "global_efficiency": 0.009341074294345324,
+      "n_users": 10000
+    },
+    {
+      "disorder": "eating_disorders",
+      "n_nodes": 108,
+      "n_edges": 10,
+      "density": 0.0017307026652821046,
+      "mean_degree": 0.18518518518518517,
+      "global_efficiency": 0.009345794392523364,
+      "n_users": 1681
+    },
+    {
+      "disorder": "ocd",
+      "n_nodes": 108,
+      "n_edges": 852,
+      "density": 0.1474558670820353,
+      "mean_degree": 15.777777777777779,
+      "global_efficiency": 0.009296948777231431,
+      "n_users": 5691
+    },
+    {
+      "disorder": "ptsd",
+      "n_nodes": 108,
+      "n_edges": 862,
+      "density": 0.14918656974731742,
+      "mean_degree": 15.962962962962964,
+      "global_efficiency": 0.00933497750086535,
+      "n_users": 8223
+    },
+    {
+      "disorder": "schizophrenia",
+      "n_nodes": 108,
+      "n_edges": 972,
+      "density": 0.16822429906542055,
+      "mean_degree": 18.0,
+      "global_efficiency": 0.009256203023472938,
+      "n_users": 2435
+    }
+  ],
+  "top_bridge_features": {
+    "interval_median_hours": {
+      "mean_bridge": 15.106054500442843,
+      "n_disorders_bridge": 8
+    },
+    "total_comments_received": {
+      "mean_bridge": 11.965408839334973,
+      "n_disorders_bridge": 9
+    },
+    "score_max": {
+      "mean_bridge": 10.090232388641674,
+      "n_disorders_bridge": 9
+    },
+    "score_range": {
+      "mean_bridge": 10.053867480120228,
+      "n_disorders_bridge": 9
+    },
+    "interval_kurtosis": {
+      "mean_bridge": 8.901043704071302,
+      "n_disorders_bridge": 9
+    },
+    "n_posts_total": {
+      "mean_bridge": 7.590086017852687,
+      "n_disorders_bridge": 9
+    },
+    "n_submissions": {
+      "mean_bridge": 6.929523282054545,
+      "n_disorders_bridge": 9
+    },
+    "score_std": {
+      "mean_bridge": 6.851661910785559,
+      "n_disorders_bridge": 9
+    },
+    "n_comments": {
+      "mean_bridge": 6.085668365397534,
+      "n_disorders_bridge": 9
+    },
+    "score_mean": {
+      "mean_bridge": 5.013240110984829,
+      "n_disorders_bridge": 9
+    },
+    "score_min": {
+      "mean_bridge": 4.945085887460167,
+      "n_disorders_bridge": 8
+    },
+    "posts_per_day": {
+      "mean_bridge": 4.273901201806327,
+      "n_disorders_bridge": 9
+    },
+    "interval_mean_hours": {
+      "mean_bridge": 3.9824625942039176,
+      "n_disorders_bridge": 8
+    },
+    "mean_gap_days": {
+      "mean_bridge": 3.6291885303401434,
+      "n_disorders_bridge": 8
+    },
+    "weekly_entropy": {
+      "mean_bridge": 3.4597891512277847,
+      "n_disorders_bridge": 8
+    }
+  },
+  "edge_consistency": {
+    "n_edges_total": 1320,
+    "n_edges_shared_ge5": "911",
+    "pct_shared_ge5": 0.6901515151515152
+  }
+}

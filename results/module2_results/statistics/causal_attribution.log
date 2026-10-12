@@ -1,0 +1,105 @@
+2026-08-30 14:57:12,412 - INFO - ================================================================================
+2026-08-30 14:57:12,439 - INFO - MODULE 2 - Step 10: Causal Attribution Analysis
+2026-08-30 14:57:12,439 - INFO - ================================================================================
+2026-08-30 14:59:05,874 - INFO - Loaded trajectories: (33789616, 135)
+2026-08-30 14:59:21,342 - INFO -   Filtered to reliable windows: 17451019/33789616 (51.6%)
+2026-08-30 14:59:28,593 - INFO - ============================================================
+2026-08-30 14:59:28,593 - INFO - Analysis 1: Difference-in-Differences (Regression-Based)
+2026-08-30 14:59:28,594 - INFO - ============================================================
+2026-08-30 14:59:55,382 - INFO - 
+  DID for: p_factor_severity_z
+2026-08-30 15:01:57,030 - INFO -   Estimating Dynamic DID (Event Study) for p_factor_severity_z...
+2026-08-30 15:04:12,501 - INFO -     regression_clustered     : DID=0.0202 (SE=0.0008, p=0.0000) ✓
+2026-08-30 15:04:12,505 - INFO -     pair_fe                  : DID=0.0134 (SE=0.0010, p=0.0000) ✓
+2026-08-30 15:04:12,508 - INFO -     iptw_weighted            : DID=0.0202 (SE=0.0008, p=0.0000) ✓
+2026-08-30 15:04:12,511 - INFO - 
+  DID for: volatility_index
+2026-08-30 15:06:18,566 - INFO -   Estimating Dynamic DID (Event Study) for volatility_index...
+2026-08-30 15:08:37,494 - INFO -     regression_clustered     : DID=0.0366 (SE=0.0024, p=0.0000) ✓
+2026-08-30 15:08:37,505 - INFO -     pair_fe                  : DID=0.0320 (SE=0.0034, p=0.0000) ✓
+2026-08-30 15:08:37,505 - INFO -     iptw_weighted            : DID=0.0366 (SE=0.0024, p=0.0000) ✓
+2026-08-30 15:08:37,506 - INFO - 
+  DID for: social_withdrawal_index
+2026-08-30 15:10:44,776 - INFO -   Estimating Dynamic DID (Event Study) for social_withdrawal_index...
+2026-08-30 15:12:59,944 - INFO -     regression_clustered     : DID=-0.0420 (SE=0.0022, p=0.0000) ✓
+2026-08-30 15:12:59,952 - INFO -     pair_fe                  : DID=-0.0247 (SE=0.0023, p=0.0000) ✓
+2026-08-30 15:12:59,953 - INFO -     iptw_weighted            : DID=-0.0420 (SE=0.0022, p=0.0000) ✓
+2026-08-30 15:12:59,953 - INFO - 
+  DID for: vader_compound_mean
+2026-08-30 15:15:59,691 - INFO -   Estimating Dynamic DID (Event Study) for vader_compound_mean...
+2026-08-30 15:19:22,075 - INFO -     regression_clustered     : DID=0.0005 (SE=0.0006, p=0.3597) ✗
+2026-08-30 15:19:22,098 - INFO -     pair_fe                  : DID=0.0004 (SE=0.0008, p=0.6237) ✗
+2026-08-30 15:19:22,098 - INFO -     iptw_weighted            : DID=0.0006 (SE=0.0006, p=0.3020) ✗
+2026-08-30 15:19:22,793 - INFO - ============================================================
+2026-08-30 15:19:22,796 - INFO - Analysis 2: Placebo t0 Test (n=100, shift=±180d, FE-Regression based)
+2026-08-30 15:19:22,799 - INFO - ============================================================
+2026-08-30 15:19:25,111 - INFO -   True DID (subsample): 0.0161
+2026-08-30 15:19:28,814 - INFO -   Placebo 10/100: shift=+234d, DID=-0.0338
+2026-08-30 15:19:32,567 - INFO -   Placebo 20/100: shift=+304d, DID=-0.0353
+2026-08-30 15:19:36,336 - INFO -   Placebo 30/100: shift=-360d, DID=0.0517
+2026-08-30 15:19:40,096 - INFO -   Placebo 40/100: shift=+267d, DID=-0.0350
+2026-08-30 15:19:43,846 - INFO -   Placebo 50/100: shift=+127d, DID=-0.0261
+2026-08-30 15:19:47,582 - INFO -   Placebo 60/100: shift=-142d, DID=0.0574
+2026-08-30 15:19:51,303 - INFO -   Placebo 70/100: shift=+316d, DID=-0.0342
+2026-08-30 15:19:55,057 - INFO -   Placebo 80/100: shift=+233d, DID=-0.0340
+2026-08-30 15:19:58,802 - INFO -   Placebo 90/100: shift=+357d, DID=-0.0350
+2026-08-30 15:20:02,546 - INFO -   Placebo 100/100: shift=+208d, DID=-0.0342
+2026-08-30 15:20:02,612 - INFO - Saved placebo DID distribution for visualization: /path/to/project/module2_results/statistics/placebo_did_distribution.csv
+2026-08-30 15:20:02,612 - INFO - 
+  Placebo Test Result:
+2026-08-30 15:20:02,612 - INFO -     True DID: 0.0161
+2026-08-30 15:20:02,612 - INFO -     Placebo DID: 0.0061 ± 0.0437
+2026-08-30 15:20:02,612 - INFO -     N exceeding true: 100/100
+2026-08-30 15:20:02,612 - INFO -     Placebo p-value: 1.0000
+2026-08-30 15:20:02,612 - INFO -     Conclusion: INCONCLUSIVE
+2026-08-30 15:20:02,905 - INFO - ============================================================
+2026-08-30 15:20:02,905 - INFO - Analysis 3: Dose-Response (Cumulative Exposure × Post-Outcome)
+2026-08-30 15:20:02,905 - INFO - ============================================================
+2026-08-30 15:22:29,322 - INFO -   Uncontrolled Dose-Response: r=0.352, p=0.0000
+2026-08-30 15:22:29,360 - INFO -   Controlled Dose-Response OLS (HC1 SE):
+2026-08-30 15:22:29,360 - INFO -     Dose AUC coefficient: 0.0013
+2026-08-30 15:22:29,360 - INFO -     Dose AUC SE: 0.0001
+2026-08-30 15:22:29,360 - INFO -     Dose AUC p-value: 0.0000
+2026-08-30 15:22:29,360 - INFO -     Dose AUC 95% CI: [0.0012, 0.0015]
+2026-08-30 15:22:29,361 - INFO -     R-squared: 0.1670
+2026-08-30 15:22:29,361 - INFO -     Baseline severity coefficient: -0.3568 (p=0.0000)
+2026-08-30 15:22:29,361 - INFO - 
+  Dose-Response by disorder (within-disorder OLS):
+2026-08-30 15:22:29,370 - INFO -     depression: dose_coef=0.0015, p=0.0000
+2026-08-30 15:22:29,378 - INFO -     bipolar: dose_coef=0.0014, p=0.0000
+2026-08-30 15:22:29,385 - INFO -     anxiety: dose_coef=0.0015, p=0.0000
+2026-08-30 15:22:29,392 - INFO -     ocd: dose_coef=0.0014, p=0.0000
+2026-08-30 15:22:29,399 - INFO -     ptsd: dose_coef=0.0013, p=0.0000
+2026-08-30 15:22:29,405 - INFO -     bpd: dose_coef=0.0014, p=0.0000
+2026-08-30 15:22:29,411 - INFO -     eating_disorders: dose_coef=0.0013, p=0.0000
+2026-08-30 15:22:29,418 - INFO -     schizophrenia: dose_coef=0.0015, p=0.0000
+2026-08-30 15:22:29,427 - INFO -     adhd: dose_coef=0.0013, p=0.0000
+2026-08-30 15:22:29,434 - INFO -     autism: dose_coef=0.0010, p=0.0018
+2026-08-30 15:22:29,436 - WARNING - Failed to generate OLS predictions for plot: shapes (56527,13) and (12,) not aligned: 13 (dim 1) != 12 (dim 0)
+2026-08-30 15:22:29,975 - INFO - Saved dose-response scatter data: /path/to/project/module2_results/statistics/dose_response_scatter_data.csv
+2026-08-30 15:22:30,050 - INFO - ============================================================
+2026-08-30 15:22:30,050 - INFO - Analysis 4: Subtype-Stratified DID
+2026-08-30 15:22:30,050 - INFO - ============================================================
+2026-08-30 15:24:34,244 - INFO -   Subtype 0 control filtering: 14260981 → 9153858 (threshold=0.15)
+2026-08-30 15:26:22,106 - INFO -   Subtype 0: DID=0.0193 (p=0.0000) ✓
+2026-08-30 15:27:32,793 - INFO -   Subtype 1 control filtering: 14260981 → 724157 (threshold=0.15)
+2026-08-30 15:27:43,468 - INFO -   Subtype 1: DID=0.0235 (p=0.0067) ✓
+2026-08-30 15:27:44,354 - INFO - ============================================================
+2026-08-30 15:27:44,355 - INFO - Analysis 5: Cross-Disorder DID
+2026-08-30 15:27:44,355 - INFO - ============================================================
+2026-08-30 15:28:39,856 - INFO -   depression: DID=0.0122 (p=0.0000) ✓
+2026-08-30 15:29:26,116 - INFO -   bipolar: DID=0.0189 (p=0.0000) ✓
+2026-08-30 15:30:12,839 - INFO -   anxiety: DID=0.0157 (p=0.0000) ✓
+2026-08-30 15:30:57,980 - INFO -   ocd: DID=0.0196 (p=0.0000) ✓
+2026-08-30 15:31:44,233 - INFO -   ptsd: DID=0.0153 (p=0.0000) ✓
+2026-08-30 15:32:30,175 - INFO -   bpd: DID=0.0142 (p=0.0005) ✓
+2026-08-30 15:33:16,407 - INFO -   eating_disorders: DID=-0.0002 (p=0.9822) ✗
+2026-08-30 15:34:02,024 - INFO -   schizophrenia: DID=0.0311 (p=0.0000) ✓
+2026-08-30 15:34:48,573 - INFO -   adhd: DID=0.0259 (p=0.0000) ✓
+2026-08-30 15:35:33,103 - INFO -   autism: DID=0.0338 (p=0.0000) ✓
+2026-08-30 15:35:33,104 - INFO - 
+  Largest effect: autism (DID=0.0338)
+2026-08-30 15:35:33,104 - INFO -   Smallest effect: eating_disorders (DID=-0.0002)
+2026-08-30 15:35:34,197 - INFO - ================================================================================
+2026-08-30 15:35:34,197 - INFO - CAUSAL ATTRIBUTION ANALYSIS COMPLETE
+2026-08-30 15:35:34,197 - INFO - ================================================================================

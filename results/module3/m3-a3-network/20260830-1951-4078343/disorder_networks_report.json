@@ -1,0 +1,163 @@
+{
+  "n_disorders_networked": 10,
+  "n_features": 108,
+  "topology": [
+    {
+      "disorder": "adhd",
+      "n_nodes": 108,
+      "n_edges": 854,
+      "density": 0.14780200761509174,
+      "mean_degree": 15.814814814814815,
+      "global_efficiency": 0.009307803358407417,
+      "n_users": 10000
+    },
+    {
+      "disorder": "anxiety",
+      "n_nodes": 108,
+      "n_edges": 1030,
+      "density": 0.17826237452405677,
+      "mean_degree": 19.074074074074073,
+      "global_efficiency": 0.009323220009932728,
+      "n_users": 10000
+    },
+    {
+      "disorder": "autism",
+      "n_nodes": 108,
+      "n_edges": 820,
+      "density": 0.14191761855313256,
+      "mean_degree": 15.185185185185185,
+      "global_efficiency": 0.009345794392523364,
+      "n_users": 10000
+    },
+    {
+      "disorder": "bipolar",
+      "n_nodes": 108,
+      "n_edges": 745,
+      "density": 0.1289373485635168,
+      "mean_degree": 13.796296296296296,
+      "global_efficiency": 0.009345794392523364,
+      "n_users": 9906
+    },
+    {
+      "disorder": "bpd",
+      "n_nodes": 108,
+      "n_edges": 123,
+      "density": 0.021287642782969886,
+      "mean_degree": 2.2777777777777777,
+      "global_efficiency": 0.009345794392523364,
+      "n_users": 6007
+    },
+    {
+      "disorder": "depression",
+      "n_nodes": 108,
+      "n_edges": 989,
+      "density": 0.17116649359640013,
+      "mean_degree": 18.314814814814813,
+      "global_efficiency": 0.009341074294345324,
+      "n_users": 10000
+    },
+    {
+      "disorder": "eating_disorders",
+      "n_nodes": 108,
+      "n_edges": 10,
+      "density": 0.0017307026652821046,
+      "mean_degree": 0.18518518518518517,
+      "global_efficiency": 0.009345794392523364,
+      "n_users": 1681
+    },
+    {
+      "disorder": "ocd",
+      "n_nodes": 108,
+      "n_edges": 852,
+      "density": 0.1474558670820353,
+      "mean_degree": 15.777777777777779,
+      "global_efficiency": 0.009296948777231431,
+      "n_users": 5691
+    },
+    {
+      "disorder": "ptsd",
+      "n_nodes": 108,
+      "n_edges": 862,
+      "density": 0.14918656974731742,
+      "mean_degree": 15.962962962962964,
+      "global_efficiency": 0.00933497750086535,
+      "n_users": 8223
+    },
+    {
+      "disorder": "schizophrenia",
+      "n_nodes": 108,
+      "n_edges": 972,
+      "density": 0.16822429906542055,
+      "mean_degree": 18.0,
+      "global_efficiency": 0.009256203023472938,
+      "n_users": 2435
+    }
+  ],
+  "top_bridge_features": {
+    "interval_median_hours": {
+      "mean_bridge": 18.882568125553554,
+      "n_disorders_bridge": 9
+    },
+    "total_comments_received": {
+      "mean_bridge": 13.294898710372191,
+      "n_disorders_bridge": 10
+    },
+    "score_max": {
+      "mean_bridge": 11.21136932071297,
+      "n_disorders_bridge": 10
+    },
+    "score_range": {
+      "mean_bridge": 11.170963866800255,
+      "n_disorders_bridge": 10
+    },
+    "interval_kurtosis": {
+      "mean_bridge": 9.890048560079222,
+      "n_disorders_bridge": 10
+    },
+    "n_posts_total": {
+      "mean_bridge": 8.433428908725208,
+      "n_disorders_bridge": 10
+    },
+    "n_submissions": {
+      "mean_bridge": 7.699470313393939,
+      "n_disorders_bridge": 10
+    },
+    "score_std": {
+      "mean_bridge": 7.61295767865062,
+      "n_disorders_bridge": 10
+    },
+    "n_comments": {
+      "mean_bridge": 6.761853739330594,
+      "n_disorders_bridge": 10
+    },
+    "score_min": {
+      "mean_bridge": 6.181357359325209,
+      "n_disorders_bridge": 9
+    },
+    "score_mean": {
+      "mean_bridge": 5.570266789983143,
+      "n_disorders_bridge": 10
+    },
+    "interval_mean_hours": {
+      "mean_bridge": 4.978078242754897,
+      "n_disorders_bridge": 9
+    },
+    "posts_per_day": {
+      "mean_bridge": 4.7487791131181405,
+      "n_disorders_bridge": 10
+    },
+    "mean_gap_days": {
+      "mean_bridge": 4.5364856629251795,
+      "n_disorders_bridge": 9
+    },
+    "weekly_entropy": {
+      "mean_bridge": 4.324736439034731,
+      "n_disorders_bridge": 9
+    }
+  },
+  "edge_consistency": {
+    "n_edges_total": 1320,
+    "n_edges_shared_ge5": "911",
+    "pct_shared_ge5": 0.6901515151515152
+  }
+}

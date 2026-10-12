@@ -1,0 +1,27 @@
+{
+  "n_features_obs": 93,
+  "n_disorders_vars": 10,
+  "eigenvalues": [
+    9.229,
+    0.3774,
+    0.1376,
+    0.0899,
+    0.0725,
+    0.0426,
+    0.0229,
+    0.0159,
+    0.0066,
+    0.0056
+  ],
+  "variance_explained_1_5": [
+    9.229,
+    9.6064,
+    9.7441,
+    9.8339,
+    9.9064
+  ],
+  "parallel_95th_first_eigen": 1.7336,
+  "parallel_99th_first_eigen": 1.8258,
+  "n_factors_by_kaiser": 1,
+  "n_factors_by_parallel": 1
+}

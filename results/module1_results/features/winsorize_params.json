@@ -1,0 +1,394 @@
+{
+  "anxiety_rate": {
+    "lower": 0.0,
+    "upper": 1.1236220204954885
+  },
+  "anger_rate": {
+    "lower": 0.0,
+    "upper": 2.8993515906517846
+  },
+  "sadness_rate": {
+    "lower": 0.0,
+    "upper": 1.1507894507600058
+  },
+  "positive_affect_rate": {
+    "lower": 0.5024143817436718,
+    "upper": 9.64724391022228
+  },
+  "negative_affect_rate": {
+    "lower": 0.11788968757886524,
+    "upper": 4.761904761904762
+  },
+  "net_emotion_tone": {
+    "lower": -0.1424458965268095,
+    "upper": 0.6846332335329307
+  },
+  "vader_compound_mean": {
+    "lower": -0.1647237628840011,
+    "upper": 0.6282755605929167
+  },
+  "vader_compound_std": {
+    "lower": 0.19821332715085693,
+    "upper": 0.6828148109603579
+  },
+  "vader_positive_mean": {
+    "lower": 0.020808232701583648,
+    "upper": 0.3327139097222217
+  },
+  "vader_negative_mean": {
+    "lower": 0.007075518678604508,
+    "upper": 0.1509432881205671
+  },
+  "vader_within_post_volatility": {
+    "lower": 0.0,
+    "upper": 0.032340434467716034
+  },
+  "vader_compound_min_mean": {
+    "lower": -0.1690432220213251,
+    "upper": 0.6248371370781792
+  },
+  "vader_compound_last_mean": {
+    "lower": -0.16400694828990228,
+    "upper": 0.6273846996145529
+  },
+  "emotion_inertia": {
+    "lower": -0.2821570425570887,
+    "upper": 0.5438274988853735
+  },
+  "first_person_rate": {
+    "lower": 0.273972602739726,
+    "upper": 11.1562988991615
+  },
+  "second_person_rate": {
+    "lower": 0.08380572273883218,
+    "upper": 6.756756756756757
+  },
+  "third_person_rate": {
+    "lower": 0.0,
+    "upper": 5.852505359429963
+  },
+  "impersonal_pronoun_rate": {
+    "lower": 0.09181952686658335,
+    "upper": 8.52939529380577
+  },
+  "self_focus_index": {
+    "lower": 0.020868137933306982,
+    "upper": 0.5416615043195728
+  },
+  "social_focus_index": {
+    "lower": 0.006535947712418301,
+    "upper": 0.36111250901875874
+  },
+  "self_focus_variability": {
+    "lower": 0.10640973907842334,
+    "upper": 0.4172570749174533
+  },
+  "social_focus_variability": {
+    "lower": 0.04724963662302049,
+    "upper": 0.38345438926560815
+  },
+  "insight_rate": {
+    "lower": 0.10691080387030466,
+    "upper": 4.355949335427051
+  },
+  "causal_thinking_rate": {
+    "lower": 0.043982285998702256,
+    "upper": 3.292001071839378
+  },
+  "certainty_rate": {
+    "lower": 0.023754609047735784,
+    "upper": 2.829215404821527
+  },
+  "tentative_language_rate": {
+    "lower": 0.07110984526690195,
+    "upper": 5.476832088296652
+  },
+  "discrepancy_rate": {
+    "lower": 0.04107810026269548,
+    "upper": 3.721772614919146
+  },
+  "cognitive_flexibility": {
+    "lower": 0.010309278349484537,
+    "upper": 0.6860528358580131
+  },
+  "past_focus_rate": {
+    "lower": 0.023708880910956465,
+    "upper": 6.294788486768347
+  },
+  "present_focus_rate": {
+    "lower": 0.7851159881496117,
+    "upper": 13.95898461624941
+  },
+  "future_focus_rate": {
+    "lower": 0.0,
+    "upper": 2.2814406811653476
+  },
+  "temporal_balance": {
+    "lower": -0.11217708374566229,
+    "upper": 0.5447628457289326
+  },
+  "death_mortality_rate": {
+    "lower": 0.0,
+    "upper": 1.2766607903853144
+  },
+  "swearing_rate": {
+    "lower": 0.0,
+    "upper": 3.9576164697924434
+  },
+  "assent_rate": {
+    "lower": 0.0,
+    "upper": 1.3475842437499577
+  },
+  "nonfluency_rate": {
+    "lower": 0.0,
+    "upper": 1.0592104915782208
+  },
+  "question_ratio": {
+    "lower": 0.0,
+    "upper": 0.37176388699924323
+  },
+  "exclamation_ratio": {
+    "lower": 0.0,
+    "upper": 0.6003303171165689
+  },
+  "url_usage_rate": {
+    "lower": 0.0,
+    "upper": 2.6036806859085213
+  },
+  "netspeak_usage_rate": {
+    "lower": 0.0,
+    "upper": 2.2901652643058177
+  },
+  "filler_word_rate": {
+    "lower": 0.0,
+    "upper": 1.743176947818553
+  },
+  "ari_mean": {
+    "lower": -0.20181253707590632,
+    "upper": 12.671293298872751
+  },
+  "ari_std": {
+    "lower": 2.576965783998879,
+    "upper": 8.809829360730179
+  },
+  "mattr_vocabulary_diversity": {
+    "lower": 0.8060091897925228,
+    "upper": 0.9665540263370538
+  },
+  "post_length_mean": {
+    "lower": 7.4523593706488445,
+    "upper": 165.52588351042854
+  },
+  "post_length_std": {
+    "lower": 4.103303399167217,
+    "upper": 266.8435408363453
+  },
+  "post_length_cv": {
+    "lower": 0.4046272262826359,
+    "upper": 4.117395216089329
+  },
+  "circadian_mean_hour": {
+    "lower": 0.06529487962290949,
+    "upper": 23.936522654100187
+  },
+  "circadian_concentration": {
+    "lower": 0.04114482335681019,
+    "upper": 0.7940483878801341
+  },
+  "night_activity_ratio": {
+    "lower": 0.0,
+    "upper": 0.6706050323410851
+  },
+  "weekend_activity_ratio": {
+    "lower": 0.01704046013060664,
+    "upper": 0.59
+  },
+  "social_jetlag_hours": {
+    "lower": -10.363565048208669,
+    "upper": 10.420230645385368
+  },
+  "sleep_disruption_index": {
+    "lower": 0.0,
+    "upper": 0.6666666666666666
+  },
+  "posting_regularity_cv": {
+    "lower": 1.4240122757855842,
+    "upper": 30.93358241111918
+  },
+  "posting_burstiness": {
+    "lower": 0.17492167015343177,
+    "upper": 0.9373700083204342
+  },
+  "interval_mean_hours": {
+    "lower": 1.2007555324755026,
+    "upper": 1427.066666308858
+  },
+  "interval_kurtosis": {
+    "lower": 2.7187179604412233,
+    "upper": 12208.709746573402
+  },
+  "n_active_days": {
+    "lower": 8.0,
+    "upper": 3132.1549999999697
+  },
+  "active_day_ratio": {
+    "lower": 0.00806831272383976,
+    "upper": 0.9496422237210228
+  },
+  "mean_gap_days": {
+    "lower": 1.0541954545454546,
+    "upper": 136.72911067193638
+  },
+  "gap_regularity_cv": {
+    "lower": 0.32045053150223196,
+    "upper": 10.83677930611534
+  },
+  "hourly_entropy": {
+    "lower": 1.8202495327127899,
+    "upper": 3.1577414436750377
+  },
+  "weekly_entropy": {
+    "lower": 1.1328957831698911,
+    "upper": 1.9451897178496536
+  },
+  "temporal_diversity_index": {
+    "lower": 1.5501509667402935,
+    "upper": 2.5486438664093067
+  },
+  "submission_ratio": {
+    "lower": 0.0,
+    "upper": 0.9851145221249544
+  },
+  "n_submissions": {
+    "lower": 0.0,
+    "upper": 2668.1549999999697
+  },
+  "n_comments": {
+    "lower": 3.0,
+    "upper": 34970.5499999997
+  },
+  "top_level_comment_ratio": {
+    "lower": 0.03155346838695713,
+    "upper": 0.9954988434819749
+  },
+  "avg_comment_depth": {
+    "lower": 1.0,
+    "upper": 2.0
+  },
+  "score_median": {
+    "lower": 1.0,
+    "upper": 10.0
+  },
+  "score_std": {
+    "lower": 0.37267799624996495,
+    "upper": 2153.9646346234845
+  },
+  "score_max": {
+    "lower": 2.0,
+    "upper": 67303.70499999967
+  },
+  "score_min": {
+    "lower": -384.0,
+    "upper": 1.0
+  },
+  "score_range": {
+    "lower": 2.0,
+    "upper": 67421.15499999997
+  },
+  "neg_score_ratio": {
+    "lower": 0.0,
+    "upper": 0.21052631578947367
+  },
+  "high_engagement_ratio": {
+    "lower": 0.006925932035631809,
+    "upper": 0.125
+  },
+  "avg_comments_received": {
+    "lower": 0.0,
+    "upper": 115.52300318470888
+  },
+  "total_comments_received": {
+    "lower": 0.0,
+    "upper": 30996.0
+  },
+  "discussion_initiated_ratio": {
+    "lower": 0.0,
+    "upper": 1.0
+  },
+  "controversy_rate": {
+    "lower": 0.0,
+    "upper": 0.09683858955689606
+  },
+  "gilded_rate": {
+    "lower": 0.0,
+    "upper": 0.014925373134328358
+  },
+  "n_unique_subreddits": {
+    "lower": 2.0,
+    "upper": 798.0
+  },
+  "subreddit_entropy": {
+    "lower": 0.0568937800692028,
+    "upper": 5.367067234435568
+  },
+  "subreddit_herfindahl": {
+    "lower": 0.009973346196960269,
+    "upper": 0.9825722230771861
+  },
+  "primary_subreddit_ratio": {
+    "lower": 0.03871447426308843,
+    "upper": 0.9912280701754386
+  },
+  "mental_health_sub_ratio": {
+    "lower": 0.0,
+    "upper": 0.5265519858065062
+  },
+  "support_sub_ratio": {
+    "lower": 0.0,
+    "upper": 0.6192865390522618
+  },
+  "entertainment_sub_ratio": {
+    "lower": 0.0,
+    "upper": 0.44323769169614236
+  },
+  "information_sub_ratio": {
+    "lower": 0.0,
+    "upper": 0.4176477755105754
+  },
+  "social_sub_ratio": {
+    "lower": 0.0,
+    "upper": 0.6785148895148285
+  },
+  "other_sub_ratio": {
+    "lower": 0.138640164817156,
+    "upper": 1.0
+  },
+  "posts_per_day_log": {
+    "lower": 0.01169847316170506,
+    "upper": 3.0479447636912913
+  },
+  "posts_per_active_day_log": {
+    "lower": 0.7496593908232876,
+    "upper": 3.4399064664915397
+  },
+  "interval_median_hours_log": {
+    "lower": 0.005402049288994746,
+    "upper": 5.181761247389726
+  },
+  "max_gap_days_log": {
+    "lower": 1.3862943611198906,
+    "upper": 7.496097345175956
+  },
+  "tenure_days_log": {
+    "lower": 4.488424833321559,
+    "upper": 8.501091308642138
+  },
+  "n_posts_total_log": {
+    "lower": 2.833213344056216,
+    "upper": 10.513205293831497
+  },
+  "score_mean_log_signed": {
+    "lower": 0.6257058997644127,
+    "upper": 5.3675919171895154
+  }
+}
