@@ -1,4 +1,4 @@
-# Robust but scale-dependent digital phenotypes of mental disorders
+# Digital phenotypes of mental disorders across levels of inference
 
 Code and derived results accompanying the manuscript
 *"Digital phenotypes of mental disorders across levels of inference"*.
