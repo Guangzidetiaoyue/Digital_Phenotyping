@@ -1,7 +1,7 @@
 # Robust but scale-dependent digital phenotypes of mental disorders
 
 Code and derived results accompanying the manuscript
-*"Robust but scale-dependent digital phenotypes of mental disorders in 128,000 Reddit users"*.
+*"Digital phenotypes of mental disorders across levels of inference"*.
 
 This repository is provided for **double-blind peer review**. It contains no author-identifying
 information; filesystem paths in the code have been replaced with the placeholders
